@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "timer_expiry.test_blocked_worker_receives_expiry",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "timer_expiry.test_blocked_worker_receives_expiry"
+      ],
+      "uart_bytes": 889,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "fail",
+  "repeat": 4,
+  "run_id": "sol-range_present-pending-r04-nominal-004"
+}

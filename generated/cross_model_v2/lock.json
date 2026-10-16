@@ -1,0 +1,42 @@
+{
+  "exclude_rtc_bound_context_supplement": true,
+  "exclude_sol_feasibility_pilot": true,
+  "generations_per_task": 5,
+  "input_sha256": {
+    "analysis/PHASE2_SPLIT_GATE_PROTOCOL.md": "c98b52f94b188c4db3b4de091c87ec12415dc59f56a0dc170f82e13f6ea4b1cb",
+    "analysis/freeze_cross_model_v2.py": "c54f6ba44bce73a9b1b59370db9b05246f047fac286c2096566eb040276f7053",
+    "analysis/luna_rtc_extension_functional_decisions.json": "56b0bd755333202fc36a385ee8cb76013eb4a97ff8cf5688f2742cfa003b3f8f",
+    "analysis/luna_rtc_extension_gates.py": "94d2ad7f06ae8ca48a32e89bf693ab6d16ea8e74841780ddd8b936bcfe12d35c",
+    "analysis/phase2_oracle_review.py": "4dde0abc77f9da530d5ce29d541716ac30f5674be88ad3d65c7cb2a27431c68d",
+    "analysis/phase2_split_gate_decisions.json": "cfb9b617baed856974459a5936845df9dfb3dcba351d63dfbfb0541e2aeea5ef",
+    "analysis/phase2_summary.py": "27e387b20bc5982c5a982c2009703ab113c1d9123a27ac3bc3e217f14d95aaa7",
+    "analysis/rtc_extension_rq1_decisions.json": "bbe66366ef09e82a90f205572ece70fdfa300e1bf48c888372382b33637ac643",
+    "generated/cross_model_v2/PROTOCOL.md": "21a5cc30fcdb20bb5e17c85944a0cd8981942a3f9fcdcddf47a035e41431aca3",
+    "generated/luna_rtc_extension/CLI_TRANSPORT_AMENDMENT.md": "6082fc5938c79ef8a8cb0d36bbec7b13ddea1f2d63877dbdef8ade4179b50ca6",
+    "generated/luna_rtc_extension/PROTOCOL.md": "ff3512c989e9f5538cfb3169e4b3e960913aa0b80bd5dad1c127396366881be1",
+    "generated/luna_rtc_extension/generation_manifest.json": "8136cc914588cdf72c68eb2145536dfcf6675cb52798336359213cfabca13c30",
+    "generated/phase2/prompt_template.txt": "586f5df25ba8c33369d2d4e3605faa86851477e1b8f0bd47e0d2a194d2f0e67c",
+    "generated/phase2/response.schema.json": "8ebe4f68092ee33c6d7b00cd6b588447eac19935d4a923a8b1064605d9db353c",
+    "generated/phase2_luna/generation_manifest.json": "486c9dcbb5698c6b15d4bf871d39a264f7bc74f96a57fb1fd6223b02e00fd17c",
+    "harness/phase2/build_nominal.py": "b2136083c1cc861586537e87d1431a0237d8abbf9e09f344c25017d453774671",
+    "harness/phase2/generate.py": "0953a1c0a2db1ea7cafe7a69da7131efb682e207c7b647b200c48e886a0d4c74",
+    "results/iwdg_fidelity_configured/summary.json": "3b9cb26371a7a4a1405fa16e5835ac0c3000383f5d169b6c92f1d77c839ce6d3",
+    "results/luna_rtc_extension/gate_summary.json": "cd7c8245d13adbb1ed40791717766876e4799d39e662dae771e9b00004157957",
+    "results/luna_rtc_extension/summary.json": "9d9993007ddc06796fe884bc4964ade13477994de326fce3a2da14787af3f38f",
+    "results/rtc_alarm_pending/qualification.json": "23e581fba7a3dac77baddfbe5ed79f5bb0d1e30b594b943ec8a395d1a7c4cdf9",
+    "results/rtc_counting/qualification.json": "778bc57d9bce17c47f6bd244d895880ce58f18832de4116bf735839ade577da2",
+    "subjects/phase2_tasks.json": "4562d39e62cd6776b296422ab93748c30081a9b750d29d7c953e294745cd002a",
+    "subjects/phase2_tasks_v2.json": "a36a73b3175452c606a514f0356e29190f1198c0047151aec9fe091f38a14424",
+    "subjects/phase3_hsi_100mips/plan.json": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+    "subjects/phase3_rtc/plan.json": "9ca79765fc9fc73cbbb38979632cbc0433e70ed1543b81015bea05e0f72e6995",
+    "subjects/rtc_extension_tasks.json": "68ae0ac6d24afad4e8ba5c92db7b0bf37cb34f9b127eeaec29f6616b11c3b670"
+  },
+  "model_ids": [
+    "gpt-6-luna",
+    "gpt-6-sol",
+    "gpt-6-astra"
+  ],
+  "registered_date": "2026-09-29/30",
+  "schema_version": 2,
+  "task_count": 13
+}

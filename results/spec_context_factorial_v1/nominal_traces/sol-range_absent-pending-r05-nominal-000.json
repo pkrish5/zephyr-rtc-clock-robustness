@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "case": "timer_interrupt.test_blocked_worker_receives_expiry",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 185,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 185,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_interrupt.test_blocked_worker_receives_expiry"
+      ],
+      "uart_bytes": 719,
+      "virtual_ns": 750000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 0,
+  "run_id": "sol-range_absent-pending-r05-nominal-000"
+}

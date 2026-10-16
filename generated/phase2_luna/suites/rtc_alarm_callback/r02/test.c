@@ -1,0 +1,91 @@
+#include <zephyr/device.h>
+#include <zephyr/drivers/rtc.h>
+#include <zephyr/kernel.h>
+#include <zephyr/sys/atomic.h>
+#include <zephyr/ztest.h>
+
+#define ALARM_MASK (RTC_ALARM_TIME_MASK_SECOND | \
+                    RTC_ALARM_TIME_MASK_MINUTE | \
+                    RTC_ALARM_TIME_MASK_HOUR)
+#define ALARM_WAIT_MS 20000
+
+static const struct device *const rtc = DEVICE_DT_GET(DT_ALIAS(rtc));
+static atomic_t callbacks;
+static atomic_t callback_ids;
+static struct k_sem callback_sem;
+
+static void alarm_callback(const struct device *dev, uint16_t id,
+                           void *user_data)
+{
+    ARG_UNUSED(dev);
+    ARG_UNUSED(user_data);
+
+    atomic_or(&callback_ids, BIT(id));
+    atomic_inc(&callbacks);
+    k_sem_give(&callback_sem);
+}
+
+ZTEST(rtc_alarm, test_both_alarm_channels)
+{
+    struct rtc_time now = {
+        .tm_sec = 55,
+        .tm_min = 59,
+        .tm_hour = 23,
+        .tm_mday = 31,
+        .tm_mon = 11,
+        .tm_year = 124,
+        .tm_wday = 2,
+        .tm_yday = 365,
+    };
+    struct rtc_time alarm = {
+        .tm_sec = 5,
+        .tm_min = 0,
+        .tm_hour = 0,
+        .tm_mday = 1,
+        .tm_mon = 0,
+        .tm_year = 125,
+        .tm_wday = 3,
+        .tm_yday = 0,
+    };
+
+    zassert_true(device_is_ready(rtc), "RTC device is not ready");
+    atomic_set(&callbacks, 0);
+    atomic_set(&callback_ids, 0);
+    k_sem_init(&callback_sem, 0, 2);
+
+    zassert_ok(rtc_alarm_set_callback(rtc, 0, alarm_callback, NULL),
+               "register alarm 0 callback");
+    zassert_ok(rtc_alarm_set_callback(rtc, 1, alarm_callback, NULL),
+               "register alarm 1 callback");
+    zassert_ok(rtc_set_time(rtc, &now), "set RTC calendar time");
+    zassert_ok(rtc_alarm_set_time(rtc, 0, &alarm, ALARM_MASK),
+               "set alarm 0");
+    zassert_ok(rtc_alarm_set_time(rtc, 1, &alarm, ALARM_MASK),
+               "set alarm 1");
+
+    /* The target is ten seconds away. Allow one second for setup and check
+     * throughout the first five seconds, well before the target. */
+    for (int i = 0; i < 5; i++) {
+        k_msleep(1000);
+        zassert_equal(atomic_get(&callbacks), 0,
+                      "alarm callback occurred prematurely");
+        zassert_false(rtc_alarm_is_pending(rtc, 0),
+                      "alarm 0 pending prematurely");
+        zassert_false(rtc_alarm_is_pending(rtc, 1),
+                      "alarm 1 pending prematurely");
+    }
+
+    /* From this point, at most five seconds remain until both alarms. */
+    for (int i = 0; i < 2; i++) {
+        zassert_equal(k_sem_take(&callback_sem, K_SECONDS(15)), 0,
+                      "timed out waiting for alarm callback");
+    }
+    zassert_equal(atomic_get(&callbacks), 2,
+                  "expected exactly two alarm callbacks");
+    zassert_equal(atomic_get(&callback_ids), BIT(0) | BIT(1),
+                  "callbacks did not identify both alarm channels");
+    zassert_true(rtc_alarm_is_pending(rtc, 0), "alarm 0 did not become pending");
+    zassert_true(rtc_alarm_is_pending(rtc, 1), "alarm 1 did not become pending");
+}
+
+ZTEST_SUITE(rtc_alarm, NULL, NULL, NULL, NULL, NULL);

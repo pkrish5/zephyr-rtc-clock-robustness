@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "case": "reference_rtc.test_alarm_callback",
+      "status": "fail"
+    }
+  ],
+  "delay_measurements": [],
+  "error": null,
+  "observations": [
+    {
+      "latest_case": [
+        "FAIL",
+        "reference_rtc.test_alarm_callback"
+      ],
+      "uart_bytes": 1019,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "reference-rtc_alarm_callback__early__replay"
+}

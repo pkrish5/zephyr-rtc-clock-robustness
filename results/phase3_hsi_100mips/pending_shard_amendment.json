@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-02T21:51:44.560927+00:00",
+  "overlap_rule": "each original seed outcome has one record; original worker skips saved records",
+  "reason": "parallelize slow upstream pending selected case after nominal 5/5",
+  "runner_path": "harness/phase3_hsi_100mips/run.py",
+  "runner_sha256": "adb5abf5d250a1e555ed75cb3be81404001da47f52ef575e81885caf1e705cc1",
+  "same_registered_inputs": true,
+  "seed_ranges": {
+    "additional_worker_a": "40-69",
+    "additional_worker_b": "70-99",
+    "original_worker": "0-39, then skip saved 40-99"
+  },
+  "version_id": "upstream/pending"
+}

@@ -1,0 +1,60 @@
+{
+  "board": "stm32f4_disco/stm32f407xx",
+  "classification_counts_endpoints": {
+    "brittle test assumption": 1,
+    "genuine firmware race/bug": 0,
+    "simulator/peripheral-model artifact": 0,
+    "unknown": 0
+  },
+  "classification_counts_seeded": {
+    "brittle test assumption": 7,
+    "genuine firmware race/bug": 0,
+    "simulator/peripheral-model artifact": 0,
+    "unknown": 0
+  },
+  "eligible": true,
+  "endpoints": {
+    "max": {
+      "frequency_hz": 47000,
+      "outcome": "pass",
+      "replay_identical": null,
+      "run_id": "rtc_alarm_callback-max-000-mips16"
+    },
+    "min": {
+      "frequency_hz": 17000,
+      "outcome": "fail",
+      "replay_identical": true,
+      "run_id": "rtc_alarm_callback-min-000-mips16"
+    }
+  },
+  "evaluable_seeded_runs": 30,
+  "flipped_run_ids": [
+    "rtc_alarm_callback-perturbed-001-mips16",
+    "rtc_alarm_callback-perturbed-008-mips16",
+    "rtc_alarm_callback-perturbed-014-mips16",
+    "rtc_alarm_callback-perturbed-015-mips16",
+    "rtc_alarm_callback-perturbed-018-mips16",
+    "rtc_alarm_callback-perturbed-021-mips16",
+    "rtc_alarm_callback-perturbed-028-mips16"
+  ],
+  "nominal_cases": [
+    {
+      "case": "rtc_api.test_alarm_callback",
+      "status": "pass"
+    }
+  ],
+  "nominal_outcome": "pass",
+  "nominal_run_id": "rtc_alarm_callback-nominal-000-mips16",
+  "planned_seeded_runs": 30,
+  "protocol": "subjects/phase1_lsi_rtc/PROTOCOL.md",
+  "recorded_seeded_runs": 30,
+  "seeded_flip_count": 7,
+  "seeded_flip_rate_known_runs": 0.23333333333333334,
+  "subject": "upstream rtc_api.test_alarm_callback linked unchanged into a selected-case wrapper",
+  "unknown_or_missing_runs": [],
+  "upstream_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056",
+  "wilson_95_known_runs": [
+    0.11792388144489496,
+    0.40928326158122164
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "harness/phase0/session.py": "8e38968425983926be3dfcc26a5f0f022eb824700ad24169fbe8c4039ae654d7",
+  "harness/phase3_rtc/run.py": "17547e5564691193481c85acf99e55af50a64518ded904f8d0c5aa7bac4836c7",
+  "note": "Recorded during the registered batch after its first seeds; the runner files have not been edited since batch start. This hash file is an audit aid, not a replacement for the preregistered plan."
+}

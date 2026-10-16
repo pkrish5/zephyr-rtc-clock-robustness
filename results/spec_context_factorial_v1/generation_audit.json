@@ -1,0 +1,5885 @@
+{
+  "api_dollars": null,
+  "api_dollars_note": "Authenticated Codex CLI did not expose billed dollars",
+  "finalized": 390,
+  "input_lock_sha256": "cf9b6d8063923fb3263640a2348b748a0123c79b5e1faa6d17fa2206c25c9c8f",
+  "planned": 390,
+  "rows": [
+    {
+      "attempts": 2,
+      "call_index": 1,
+      "date_utc": "2026-10-03T19:02:39.931550+00:00",
+      "run_id": "sol-range_absent-rtc_time_counting-r01",
+      "source_sha256": "3f5e5b3201563b155413c0692d64db365d8087be0714d8a3c4bd97b7569ee75e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14062,
+        "output_tokens": 1776,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 2,
+      "date_utc": "2026-10-03T19:03:38.742911+00:00",
+      "run_id": "sol-range_present-rtc_time_counting-r01",
+      "source_sha256": "2281d36d38ad083ce9748c355241efd77be5902fa828623b6c491949dd267d38",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14137,
+        "output_tokens": 2253,
+        "reasoning_output_tokens": 1430
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 3,
+      "date_utc": "2026-10-03T19:04:36.853096+00:00",
+      "run_id": "astra-range_absent-rtc_time_counting-r01",
+      "source_sha256": "67c3485fd385d9a85fc186535242219c0a31b005dd56438b98fbce0058b86d25",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14511,
+        "output_tokens": 1686,
+        "reasoning_output_tokens": 659
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 4,
+      "date_utc": "2026-10-03T19:05:49.203822+00:00",
+      "run_id": "astra-range_present-rtc_time_counting-r01",
+      "source_sha256": "63f5e73760c528ea083bb4771f325cf399420fd289f05438cfbf07dd4a4be465",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14588,
+        "output_tokens": 1874,
+        "reasoning_output_tokens": 946
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 5,
+      "date_utc": "2026-10-03T19:07:08.134284+00:00",
+      "run_id": "luna-range_present-rtc_time_counting-r01",
+      "source_sha256": "b82ca2d47766fde8e9ff300b89c9f1ab36433074e50e54a63caea293ddfe1d7a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13958,
+        "output_tokens": 1623,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 6,
+      "date_utc": "2026-10-03T19:07:52.109370+00:00",
+      "run_id": "luna-range_absent-rtc_time_counting-r01",
+      "source_sha256": "c4ce1faabae8b4f762c411922dcb67d8b71ca139a4398ca9ecc159a5308d619c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13883,
+        "output_tokens": 801,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 7,
+      "date_utc": "2026-10-03T19:08:10.560640+00:00",
+      "run_id": "sol-range_present-semaphore-r01",
+      "source_sha256": "a1e87a03e92bcfe41f62642ce63ea49bcfb2368c27c3ee4823f3340b4fabffa0",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14118,
+        "output_tokens": 444,
+        "reasoning_output_tokens": 210
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 8,
+      "date_utc": "2026-10-03T19:08:25.272193+00:00",
+      "run_id": "sol-range_absent-semaphore-r01",
+      "source_sha256": "c0b820506c718ec12b78da7a4f2f454836952f57b125a7caac79f61cec5a841d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14059,
+        "output_tokens": 538,
+        "reasoning_output_tokens": 306
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 9,
+      "date_utc": "2026-10-03T19:08:43.735904+00:00",
+      "run_id": "luna-range_present-semaphore-r01",
+      "source_sha256": "7beb7d2f3395a6459174cbedd49a2df54b571660ea06760eb0fcf666bc81a88c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13939,
+        "output_tokens": 456,
+        "reasoning_output_tokens": 206
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 10,
+      "date_utc": "2026-10-03T19:08:59.845232+00:00",
+      "run_id": "luna-range_absent-semaphore-r01",
+      "source_sha256": "9333408e62d99bbb2b13cd642c9866b499b08d21aada0084ea99302ba2441d44",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13878,
+        "output_tokens": 263,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 11,
+      "date_utc": "2026-10-03T19:09:09.734761+00:00",
+      "run_id": "astra-range_absent-semaphore-r01",
+      "source_sha256": "ca02937aabe5e0d15912a0e01521935e59c6ad391409db8b65fd1ef10bb41002",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14506,
+        "output_tokens": 401,
+        "reasoning_output_tokens": 148
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 12,
+      "date_utc": "2026-10-03T19:09:31.549484+00:00",
+      "run_id": "astra-range_present-semaphore-r01",
+      "source_sha256": "f3bd86449513a2c7096d463d8070787a161bb38d40067d57d6f4a462880b12df",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14565,
+        "output_tokens": 438,
+        "reasoning_output_tokens": 144
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 13,
+      "date_utc": "2026-10-03T19:09:54.136441+00:00",
+      "run_id": "sol-range_absent-queue-r01",
+      "source_sha256": "0dbf0c8bc028ff344aa7a0c4bc0cacffab33991a0aaa465bf7d673b6e41c4891",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14008,
+        "output_tokens": 1111,
+        "reasoning_output_tokens": 680
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 14,
+      "date_utc": "2026-10-03T19:10:25.593017+00:00",
+      "run_id": "sol-range_present-queue-r01",
+      "source_sha256": "f2bbd0cd669d35ea90772d18299b5dbdb89e60858964bb8580991cee23a594cf",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14067,
+        "output_tokens": 1064,
+        "reasoning_output_tokens": 598
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 15,
+      "date_utc": "2026-10-03T19:10:54.521759+00:00",
+      "run_id": "astra-range_absent-queue-r01",
+      "source_sha256": "a6ecaeb8a9ad68260e1f8e33fc7775e8b884e737ee7605e795df351bf9cf1d30",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14457,
+        "output_tokens": 591,
+        "reasoning_output_tokens": 178
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 16,
+      "date_utc": "2026-10-03T19:11:22.579550+00:00",
+      "run_id": "astra-range_present-queue-r01",
+      "source_sha256": "37cfff7556403d083debf7bc2003b480005492fc9842234b6c60017db6dc4a3b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14516,
+        "output_tokens": 762,
+        "reasoning_output_tokens": 288
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 17,
+      "date_utc": "2026-10-03T19:11:58.970256+00:00",
+      "run_id": "luna-range_absent-queue-r01",
+      "source_sha256": "a7b0310cad58145ece39cc260613c609016f8d6af9aae2cec74cb9ab2a0c9dfa",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13829,
+        "output_tokens": 388,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 18,
+      "date_utc": "2026-10-03T19:12:11.502315+00:00",
+      "run_id": "luna-range_present-queue-r01",
+      "source_sha256": "7dd16f291e364415e014d0b229836535b68a40f6e62175ddcdb7c30c58cdbb1c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13886,
+        "output_tokens": 382,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 19,
+      "date_utc": "2026-10-03T19:12:24.540369+00:00",
+      "run_id": "astra-range_present-lifo_api-r01",
+      "source_sha256": "590bf05cff6faf15323759a2fee0ad8732cc353d874d50681cac7dfc586343af",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14517,
+        "output_tokens": 717,
+        "reasoning_output_tokens": 227
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 20,
+      "date_utc": "2026-10-03T19:12:57.481645+00:00",
+      "run_id": "astra-range_absent-lifo_api-r01",
+      "source_sha256": "6039647e7bab9197813ec3673098da8c147fdce339246b41f5db93e288dcb586",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14460,
+        "output_tokens": 666,
+        "reasoning_output_tokens": 171
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 21,
+      "date_utc": "2026-10-03T19:13:28.236402+00:00",
+      "run_id": "sol-range_present-lifo_api-r01",
+      "source_sha256": "314a650bfc7f53f5f37cc950c101e6a319c052c1968503f3e301a967ffc920dd",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14072,
+        "output_tokens": 964,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 22,
+      "date_utc": "2026-10-03T19:13:55.971578+00:00",
+      "run_id": "sol-range_absent-lifo_api-r01",
+      "source_sha256": "a5ff3ac499ebf3b6a72862bb20e4f3c872e03ad73bc4efe576709f29f0b78386",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14013,
+        "output_tokens": 832,
+        "reasoning_output_tokens": 404
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 23,
+      "date_utc": "2026-10-03T19:14:19.904192+00:00",
+      "run_id": "luna-range_absent-lifo_api-r01",
+      "source_sha256": "e33e067509e6e380f56b59b03fb349b5bdc42db7fb3ac6af6981ddb33d372db2",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13832,
+        "output_tokens": 359,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 24,
+      "date_utc": "2026-10-03T19:14:30.064960+00:00",
+      "run_id": "luna-range_present-lifo_api-r01",
+      "source_sha256": "c354038542515bf4100de0644decf7300492584955137b596445bc7bf122e3df",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13889,
+        "output_tokens": 406,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 25,
+      "date_utc": "2026-10-03T19:14:40.728940+00:00",
+      "run_id": "luna-range_present-rtc_alarm_callback-r01",
+      "source_sha256": "244e0d08c50bf2ff3499cbdac52702f650cbb23efd205a5dbb3c485fcd1768f1",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 14031,
+        "output_tokens": 1759,
+        "reasoning_output_tokens": 840
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 26,
+      "date_utc": "2026-10-03T19:15:40.649385+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_callback-r01",
+      "source_sha256": "b05575efe9352c8fc8b451f63fd776c1f501809a98427f911f5f2cf8b78e09bb",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13956,
+        "output_tokens": 1072,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 27,
+      "date_utc": "2026-10-03T19:16:03.275890+00:00",
+      "run_id": "astra-range_present-rtc_alarm_callback-r01",
+      "source_sha256": "9f2252a279883d13ca98a4885fbaf7b3aa1e2785148c19ac43554add0e9dc30a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14661,
+        "output_tokens": 2786,
+        "reasoning_output_tokens": 1314
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 28,
+      "date_utc": "2026-10-03T19:17:59.042962+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_callback-r01",
+      "source_sha256": "33bcd705e76fe2e4510c453e6c8d36220a6cea4f4ae7686994474d7e8701091a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14584,
+        "output_tokens": 2624,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 29,
+      "date_utc": "2026-10-03T19:19:47.747769+00:00",
+      "run_id": "sol-range_present-rtc_alarm_callback-r01",
+      "source_sha256": "cda37fe8903d862ef043f899114924cd804b85326611b3debd44e23556e89821",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14212,
+        "output_tokens": 4341,
+        "reasoning_output_tokens": 3076
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 30,
+      "date_utc": "2026-10-03T19:21:36.085690+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_callback-r01",
+      "source_sha256": "393c2359a50feea416794ba8871b907d583b060cf31b2d8529d8bac7858b397b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14133,
+        "output_tokens": 3197,
+        "reasoning_output_tokens": 1974
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 31,
+      "date_utc": "2026-10-03T19:22:57.586837+00:00",
+      "run_id": "luna-range_absent-msgq_api-r01",
+      "source_sha256": "cb29ca1b638b142445c4b70dffcb829c6c2fb9a30f1a93f69ebf38909e17696e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13833,
+        "output_tokens": 491,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 32,
+      "date_utc": "2026-10-03T19:23:15.263272+00:00",
+      "run_id": "luna-range_present-msgq_api-r01",
+      "source_sha256": "b0ece72ba64f20f31688ec180954da03c2ea209afe87258fea54415e579c1b3a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13896,
+        "output_tokens": 793,
+        "reasoning_output_tokens": 198
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 33,
+      "date_utc": "2026-10-03T19:23:34.094279+00:00",
+      "run_id": "sol-range_absent-msgq_api-r01",
+      "source_sha256": "899787a47f90347f2e2ab8019b941b097e89891b2ef15380038ce44e526a90c6",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14014,
+        "output_tokens": 1160,
+        "reasoning_output_tokens": 617
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 34,
+      "date_utc": "2026-10-03T19:24:07.892530+00:00",
+      "run_id": "sol-range_present-msgq_api-r01",
+      "source_sha256": "6ba2dac1d5db1ae52904bc84509fce7671efa79357a0c0e3383b749b619ab3d0",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14071,
+        "output_tokens": 1122,
+        "reasoning_output_tokens": 608
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 35,
+      "date_utc": "2026-10-03T19:24:40.135286+00:00",
+      "run_id": "astra-range_absent-msgq_api-r01",
+      "source_sha256": "798235a1e9283fdecfa02b8b8892806bc03630a5f1d09b016d93baabc9a80e92",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14463,
+        "output_tokens": 785,
+        "reasoning_output_tokens": 186
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 36,
+      "date_utc": "2026-10-03T19:25:15.648112+00:00",
+      "run_id": "astra-range_present-msgq_api-r01",
+      "source_sha256": "40f131f03b5ff1d052d16dbcdade8ba2b63bda3cc553125e82ff8cc4b5539c4e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14518,
+        "output_tokens": 1056,
+        "reasoning_output_tokens": 283
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 37,
+      "date_utc": "2026-10-03T19:26:02.365153+00:00",
+      "run_id": "sol-range_absent-context-r01",
+      "source_sha256": "071e15b932a10979a39e22d3dcffd1a693fef6a51fba720cd1b993208de54dfe",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14049,
+        "output_tokens": 1876,
+        "reasoning_output_tokens": 1305
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 38,
+      "date_utc": "2026-10-03T19:26:52.815080+00:00",
+      "run_id": "sol-range_present-context-r01",
+      "source_sha256": "cac842ac6257e16e698dbe8c77eff3d210144e063891a64e4cd48453435f1340",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14106,
+        "output_tokens": 1788,
+        "reasoning_output_tokens": 1292
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 39,
+      "date_utc": "2026-10-03T19:27:40.095099+00:00",
+      "run_id": "astra-range_absent-context-r01",
+      "source_sha256": "af309a9ac217adb5f3b99a9d43772619b76418dd3b1647834aced336642a4f72",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14500,
+        "output_tokens": 1017,
+        "reasoning_output_tokens": 329
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 40,
+      "date_utc": "2026-10-03T19:28:24.874353+00:00",
+      "run_id": "astra-range_present-context-r01",
+      "source_sha256": "8a532961f69f8a368719ce114ded67e68d7cc9198ca90f8b2a1bacc73d360c5a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14557,
+        "output_tokens": 1750,
+        "reasoning_output_tokens": 886
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 41,
+      "date_utc": "2026-10-03T19:29:40.646680+00:00",
+      "run_id": "luna-range_present-context-r01",
+      "source_sha256": "0389cf33e6868af76e36b96485f3121f538efd396cd50ad76617cbf736049f23",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13925,
+        "output_tokens": 915,
+        "reasoning_output_tokens": 381
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 42,
+      "date_utc": "2026-10-03T19:30:20.097557+00:00",
+      "run_id": "luna-range_absent-context-r01",
+      "source_sha256": "dafbfd0bdf828457e8af4c9bfeb65c60a0199368a8fba2a27505d1f7ba636a87",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13864,
+        "output_tokens": 517,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 43,
+      "date_utc": "2026-10-03T19:30:34.880115+00:00",
+      "run_id": "astra-range_absent-sleep-r01",
+      "source_sha256": "9a6c72712e38c479d95b7b78529a146670b1fe5b31642af242d43c5cd1d280de",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14493,
+        "output_tokens": 1836,
+        "reasoning_output_tokens": 827
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 44,
+      "date_utc": "2026-10-03T19:31:53.321166+00:00",
+      "run_id": "astra-range_present-sleep-r01",
+      "source_sha256": "4e50f6e85b43377661926be166e8458f7bf69f172f6aeaf09d4f427809fed289",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14550,
+        "output_tokens": 2182,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 45,
+      "date_utc": "2026-10-03T19:33:27.522293+00:00",
+      "run_id": "luna-range_present-sleep-r01",
+      "source_sha256": "27f411099d495601cf70e72b27d76433f3cd1731d8a3e3cdbaa1b00ab95b7f0a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13926,
+        "output_tokens": 1894,
+        "reasoning_output_tokens": 1090
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 46,
+      "date_utc": "2026-10-03T19:34:42.553255+00:00",
+      "run_id": "luna-range_absent-sleep-r01",
+      "source_sha256": "37c34ba35461573044662ce134701564a1d0573d1216ce314e7dd32db1bd50b7",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13865,
+        "output_tokens": 682,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 47,
+      "date_utc": "2026-10-03T19:35:06.469556+00:00",
+      "run_id": "sol-range_present-sleep-r01",
+      "source_sha256": "2e0a36906d30be26654e2cb4325e7f2ac72233a947d0f6122caf9846003f1ef9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14103,
+        "output_tokens": 2443,
+        "reasoning_output_tokens": 1831
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 48,
+      "date_utc": "2026-10-03T19:36:09.802068+00:00",
+      "run_id": "sol-range_absent-sleep-r01",
+      "source_sha256": "8a3ae8b7c46db1545e6afa96007b9407ee2f906b0832f0c127d76fe3f17ece52",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14046,
+        "output_tokens": 1996,
+        "reasoning_output_tokens": 1501
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 49,
+      "date_utc": "2026-10-03T19:37:00.985425+00:00",
+      "run_id": "sol-range_present-fifo_api-r01",
+      "source_sha256": "88bc5e8b747baf0d5c4e968d9fb86a38b1ea8f7c62ca2dcf819b89947946e74e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14060,
+        "output_tokens": 754,
+        "reasoning_output_tokens": 359
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 50,
+      "date_utc": "2026-10-03T19:37:22.844342+00:00",
+      "run_id": "sol-range_absent-fifo_api-r01",
+      "source_sha256": "a197830ac6cbdec478814a379919c132a623809c1dfd3b1a3889795d8b555289",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14001,
+        "output_tokens": 760,
+        "reasoning_output_tokens": 390
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 51,
+      "date_utc": "2026-10-03T19:37:44.720638+00:00",
+      "run_id": "astra-range_present-fifo_api-r01",
+      "source_sha256": "9f66e431ee3c6d1aa109245189195c0a8eae350e6e2d2c89999832ffac4a3569",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14509,
+        "output_tokens": 518,
+        "reasoning_output_tokens": 125
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 52,
+      "date_utc": "2026-10-03T19:38:10.773497+00:00",
+      "run_id": "astra-range_absent-fifo_api-r01",
+      "source_sha256": "36c707f0d4fabbfeaf01f8e3ddc74e937049be2bed0bf0ef3f561bd5edc574d0",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14450,
+        "output_tokens": 610,
+        "reasoning_output_tokens": 211
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 53,
+      "date_utc": "2026-10-03T19:38:39.104749+00:00",
+      "run_id": "luna-range_absent-fifo_api-r01",
+      "source_sha256": "11a81602dda42ff5725af3d38e6d35574285b6a188c689fb1ee27ff326ba04e7",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13824,
+        "output_tokens": 572,
+        "reasoning_output_tokens": 203
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 54,
+      "date_utc": "2026-10-03T19:38:56.394208+00:00",
+      "run_id": "luna-range_present-fifo_api-r01",
+      "source_sha256": "9561900366a2215e29ee6de0c449aa227f7d913d4c6b7c9775420d49712a557a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13881,
+        "output_tokens": 509,
+        "reasoning_output_tokens": 168
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 55,
+      "date_utc": "2026-10-03T19:39:21.958544+00:00",
+      "run_id": "astra-range_present-workq-r01",
+      "source_sha256": "ec6e54a8513787add1fe59b69826a60301e4e32534c658a4b0a9043cefda9961",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14600,
+        "output_tokens": 1413,
+        "reasoning_output_tokens": 630
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 56,
+      "date_utc": "2026-10-03T19:40:24.756466+00:00",
+      "run_id": "astra-range_absent-workq-r01",
+      "source_sha256": "59c938c16a31218fa2155ecb23513e6c310622a00b36c96dced22a033d28bb67",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14539,
+        "output_tokens": 1156,
+        "reasoning_output_tokens": 507
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 57,
+      "date_utc": "2026-10-03T19:41:16.772916+00:00",
+      "run_id": "sol-range_present-workq-r01",
+      "source_sha256": "6570ce8ef3600570a614d05c1e6161d1a11f8ce900f7b3242a496a26579df668",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14145,
+        "output_tokens": 1621,
+        "reasoning_output_tokens": 1256
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 58,
+      "date_utc": "2026-10-03T19:42:00.010918+00:00",
+      "run_id": "sol-range_absent-workq-r01",
+      "source_sha256": "866983ac391760cf08ca2cdb0085ff615fd397b39c084c0df553e503bebb6734",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14088,
+        "output_tokens": 1415,
+        "reasoning_output_tokens": 993
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 59,
+      "date_utc": "2026-10-03T19:42:37.630030+00:00",
+      "run_id": "luna-range_present-workq-r01",
+      "source_sha256": "cd022fcd2b6f3fbf56663ca024b0382b71c7dc7fdda8013ae4cb9ac0a2512ac2",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13970,
+        "output_tokens": 480,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 60,
+      "date_utc": "2026-10-03T19:42:50.757919+00:00",
+      "run_id": "luna-range_absent-workq-r01",
+      "source_sha256": "9367b03da50517ceb7bebe9b4b976fa1e76f81de26a6ef2e0306e9e5dadc4a9c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13917,
+        "output_tokens": 477,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 61,
+      "date_utc": "2026-10-03T19:43:11.769523+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01",
+      "source_sha256": "986318144e5ff3355d8a97fb506c70abfcd30e19fd7dd70e22de24f015c7575e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14122,
+        "output_tokens": 2999,
+        "reasoning_output_tokens": 2070
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 62,
+      "date_utc": "2026-10-03T19:44:28.405616+00:00",
+      "run_id": "sol-range_present-rtc_alarm_pending-r01",
+      "source_sha256": "625cbf5e259e89aba0b4f5a6fda6c96c23a86a126884de03cd6a01e31acf6325",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14197,
+        "output_tokens": 2522,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 63,
+      "date_utc": "2026-10-03T19:45:33.180256+00:00",
+      "run_id": "luna-range_present-rtc_alarm_pending-r01",
+      "source_sha256": "e78a44d99b620362303c328a2b8360cfebb788b827ec57b477dd557d39d01c75",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 14018,
+        "output_tokens": 1598,
+        "reasoning_output_tokens": 806
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 64,
+      "date_utc": "2026-10-03T19:46:18.058409+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_pending-r01",
+      "source_sha256": "02ff12359cb525428227ee4303cdddb862673ad389ccd1a34015a6f7ef278849",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13941,
+        "output_tokens": 749,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 65,
+      "date_utc": "2026-10-03T19:46:35.784071+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r01",
+      "source_sha256": "e357fe05361169f27b36194810a8adfe084c3a3a0fbf94aca83990b1b3938f04",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14571,
+        "output_tokens": 2075,
+        "reasoning_output_tokens": 772
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 66,
+      "date_utc": "2026-10-03T19:48:04.111784+00:00",
+      "run_id": "astra-range_present-rtc_alarm_pending-r01",
+      "source_sha256": "1f6610534a70487517e72ff1c8c16a31e7797e95dcc1445d2833d07286a50aa6",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14650,
+        "output_tokens": 2278,
+        "reasoning_output_tokens": 705
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 67,
+      "date_utc": "2026-10-03T19:49:39.173351+00:00",
+      "run_id": "astra-range_absent-pending-r01",
+      "source_sha256": "4275730aeab4c24ff889c1643de09211756519011bccd95c00b1c0b2ccab2f36",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14465,
+        "output_tokens": 1611,
+        "reasoning_output_tokens": 789
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 68,
+      "date_utc": "2026-10-03T19:50:51.465178+00:00",
+      "run_id": "astra-range_present-pending-r01",
+      "source_sha256": "4ea5155ce95327c9f74f4fa2baa3147672e15a4e13be12bf9f05333723c8270b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14526,
+        "output_tokens": 1787,
+        "reasoning_output_tokens": 834
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 69,
+      "date_utc": "2026-10-03T19:52:07.018251+00:00",
+      "run_id": "luna-range_absent-pending-r01",
+      "source_sha256": "c31edb8607f790ccdf7fca8edf275a7cd58ffe054e27eb016016e50f97d0249c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13837,
+        "output_tokens": 583,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 70,
+      "date_utc": "2026-10-03T19:52:22.777858+00:00",
+      "run_id": "luna-range_present-pending-r01",
+      "source_sha256": "86bbe62c6f170e5cf0c64e06a2df84cfaf7de6508a172e93b8fd2560903b3850",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13896,
+        "output_tokens": 1075,
+        "reasoning_output_tokens": 459
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 71,
+      "date_utc": "2026-10-03T19:53:06.040448+00:00",
+      "run_id": "sol-range_absent-pending-r01",
+      "source_sha256": "7f62466816bf90e5a302cec345e3e33fcba4007b0d78fff92261308b752db1ed",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14016,
+        "output_tokens": 2007,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 72,
+      "date_utc": "2026-10-03T19:53:58.858431+00:00",
+      "run_id": "sol-range_present-pending-r01",
+      "source_sha256": "379bc712135a6af81fbd2d065b2ebca57a47e8e25b6d71636a006e5f93aba006",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14075,
+        "output_tokens": 2464,
+        "reasoning_output_tokens": 2007
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 73,
+      "date_utc": "2026-10-03T19:55:01.410496+00:00",
+      "run_id": "sol-range_present-timer_api-r01",
+      "source_sha256": "aa3b613e7a212e6bc1cc532c637a27d9452df874e8e73470bbc25c60cd8f6f25",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14115,
+        "output_tokens": 1204,
+        "reasoning_output_tokens": 871
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 74,
+      "date_utc": "2026-10-03T19:55:33.738365+00:00",
+      "run_id": "sol-range_absent-timer_api-r01",
+      "source_sha256": "e67ef68a49d978b9d9212bb3edb6ce6b69eaea3b43c733f511ecffcb28c8a25b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14054,
+        "output_tokens": 782,
+        "reasoning_output_tokens": 449
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 75,
+      "date_utc": "2026-10-03T19:55:56.993279+00:00",
+      "run_id": "luna-range_present-timer_api-r01",
+      "source_sha256": "345b16760e1d4bda196f144e2da10cf89aabc047186f7fe67d4113f222c5462d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13936,
+        "output_tokens": 1362,
+        "reasoning_output_tokens": 736
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 76,
+      "date_utc": "2026-10-03T19:56:29.089364+00:00",
+      "run_id": "luna-range_absent-timer_api-r01",
+      "source_sha256": "f5d2f190c21e321e6bcd31244a69316233f5da6a90c33f4ff47d0fc3fe303dea",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13873,
+        "output_tokens": 298,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 77,
+      "date_utc": "2026-10-03T19:56:38.229201+00:00",
+      "run_id": "astra-range_absent-timer_api-r01",
+      "source_sha256": "1a60bdd285bb51a4562935fb6a9e467fce8c5b24e90c4675e8314a291c07df15",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14501,
+        "output_tokens": 684,
+        "reasoning_output_tokens": 201
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 78,
+      "date_utc": "2026-10-03T19:57:10.721063+00:00",
+      "run_id": "astra-range_present-timer_api-r01",
+      "source_sha256": "ed0a49ae8a77ca0e2d2a8156ca64555384879a9b6b79fa9b682819c95a9677cf",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14562,
+        "output_tokens": 707,
+        "reasoning_output_tokens": 270
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 79,
+      "date_utc": "2026-10-03T19:57:43.492663+00:00",
+      "run_id": "astra-range_present-fifo_api-r02",
+      "source_sha256": "0128bd7f713dfcb98a3bad47d7676fdd287fdff8bd9dda6dfd33401df4ab4b14",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14507,
+        "output_tokens": 601,
+        "reasoning_output_tokens": 182
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 80,
+      "date_utc": "2026-10-03T19:58:12.806058+00:00",
+      "run_id": "astra-range_absent-fifo_api-r02",
+      "source_sha256": "940fb8717cfe074e8ab8d32d12ffd65a2b5965cf92c2b02e813ccefa6c75f3b5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14454,
+        "output_tokens": 623,
+        "reasoning_output_tokens": 124
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 81,
+      "date_utc": "2026-10-03T19:58:41.509287+00:00",
+      "run_id": "sol-range_present-fifo_api-r02",
+      "source_sha256": "c90e75e42d9223d15957da6109e148fdc6216642c5db23fee5ab622dc2a61b78",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14062,
+        "output_tokens": 991,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 82,
+      "date_utc": "2026-10-03T19:59:09.478578+00:00",
+      "run_id": "sol-range_absent-fifo_api-r02",
+      "source_sha256": "a133806f926f952005c542786c1d08c0bdf4adeda1f5be75648cd33831645733",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 13999,
+        "output_tokens": 876,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 83,
+      "date_utc": "2026-10-03T19:59:34.518781+00:00",
+      "run_id": "luna-range_present-fifo_api-r02",
+      "source_sha256": "e63bc993523ed01d752e649fb05a73cece1b5a4705defd7160bb4ca6a671870a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13885,
+        "output_tokens": 586,
+        "reasoning_output_tokens": 221
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 84,
+      "date_utc": "2026-10-03T19:59:49.566195+00:00",
+      "run_id": "luna-range_absent-fifo_api-r02",
+      "source_sha256": "9c9be2d8bec8402e9e27fa5f47eea49d5edd4fed4f64d0f2bb0d3d75ec608b04",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13822,
+        "output_tokens": 364,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 85,
+      "date_utc": "2026-10-03T20:00:00.065168+00:00",
+      "run_id": "sol-range_absent-workq-r02",
+      "source_sha256": "bc5b410e55218dc9428066e0d26d136b981ff79b86ae17b82ae76ab080002741",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14090,
+        "output_tokens": 1375,
+        "reasoning_output_tokens": 988
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 86,
+      "date_utc": "2026-10-03T20:00:38.742864+00:00",
+      "run_id": "sol-range_present-workq-r02",
+      "source_sha256": "c6645919c83be40ef045cb1449a3f250e557319f985383a22b1013cf5218cf95",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14147,
+        "output_tokens": 1372,
+        "reasoning_output_tokens": 981
+      }
+    },
+    {
+      "attempts": 2,
+      "call_index": 87,
+      "date_utc": "2026-10-03T20:05:53.462248+00:00",
+      "run_id": "luna-range_absent-workq-r02",
+      "source_sha256": "24a4dd20fc93fc84ba278592fcf39a5f6e48b19624172ed356608355de7c5ff6",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13911,
+        "output_tokens": 483,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 88,
+      "date_utc": "2026-10-03T20:06:06.552143+00:00",
+      "run_id": "luna-range_present-workq-r02",
+      "source_sha256": "1cce47fe42a0e276fb2096cfb97bc56ccad5b259722c1e0460a9933ce54ee094",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13968,
+        "output_tokens": 452,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 89,
+      "date_utc": "2026-10-03T20:06:18.367115+00:00",
+      "run_id": "astra-range_present-workq-r02",
+      "source_sha256": "3e5808c88a6201f525c66743064180cb270bd3862fcb2edc742a392eb12c7155",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14600,
+        "output_tokens": 1525,
+        "reasoning_output_tokens": 803
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 90,
+      "date_utc": "2026-10-03T20:07:24.361333+00:00",
+      "run_id": "astra-range_absent-workq-r02",
+      "source_sha256": "629c63588e7ba66c3fba1f5db9505978f07990dc45b9530f68948304feeae5d9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 14336,
+        "input_tokens": 14537,
+        "output_tokens": 1155,
+        "reasoning_output_tokens": 451
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 91,
+      "date_utc": "2026-10-03T20:16:50.599399+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r02",
+      "source_sha256": "0070bf5efdce28943fbe839c150d9f7926a20ff87838365496456b3b934ddfed",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14118,
+        "output_tokens": 2492,
+        "reasoning_output_tokens": 1508
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 92,
+      "date_utc": "2026-10-03T20:17:55.056226+00:00",
+      "run_id": "sol-range_present-rtc_alarm_pending-r02",
+      "source_sha256": "403f81e72eecb5c2d42b11f755baa046d5d07f48117f5e245c5af810c3f01aba",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14195,
+        "output_tokens": 2458,
+        "reasoning_output_tokens": 1525
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 93,
+      "date_utc": "2026-10-03T20:18:57.820787+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r02",
+      "source_sha256": "d2fc45dd40643adb5597eb18e0ecb4919303251caa0081589073b45e25264beb",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14569,
+        "output_tokens": 1759,
+        "reasoning_output_tokens": 477
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 94,
+      "date_utc": "2026-10-03T20:20:13.360282+00:00",
+      "run_id": "astra-range_present-rtc_alarm_pending-r02",
+      "source_sha256": "0fb454719cdee32eaa03df24a68a75ccb10c36b49fcfe400870b46214731bd42",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14646,
+        "output_tokens": 2917,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 95,
+      "date_utc": "2026-10-03T20:22:14.500445+00:00",
+      "run_id": "luna-range_present-rtc_alarm_pending-r02",
+      "source_sha256": "d508f98b3cf97b36b4896a0797002475dfdd681f5270d99e400c5d03480abdb9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 14020,
+        "output_tokens": 1169,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 96,
+      "date_utc": "2026-10-03T20:22:39.764135+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_pending-r02",
+      "source_sha256": "91e591ef61efc1b278f9a8536c10594b3eb354faf69b273f15d55a948f567413",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13941,
+        "output_tokens": 677,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 97,
+      "date_utc": "2026-10-03T20:38:08.389853+00:00",
+      "run_id": "sol-range_absent-msgq_api-r02",
+      "source_sha256": "325019a871aff45206edf4d1cda83b9673ad010e1e51f1e5a413bfcbf68a05e5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14012,
+        "output_tokens": 1016,
+        "reasoning_output_tokens": 426
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 98,
+      "date_utc": "2026-10-03T20:38:40.324393+00:00",
+      "run_id": "sol-range_present-msgq_api-r02",
+      "source_sha256": "0ad51f19e63382e753c167d2d987acaee80bebf2c9ec0abfac86c22c35500007",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14069,
+        "output_tokens": 1004,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 99,
+      "date_utc": "2026-10-03T20:39:07.877914+00:00",
+      "run_id": "astra-range_absent-msgq_api-r02",
+      "source_sha256": "6247529a0f55da04295cc845a93d34238e834955374319d0a69d5fac16154b6e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14461,
+        "output_tokens": 858,
+        "reasoning_output_tokens": 216
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 100,
+      "date_utc": "2026-10-03T20:39:46.980780+00:00",
+      "run_id": "astra-range_present-msgq_api-r02",
+      "source_sha256": "5c980e85f0f9475d20af029822d7c6d8c6786299de7375ec3f312b972aee6544",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14520,
+        "output_tokens": 903,
+        "reasoning_output_tokens": 159
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 101,
+      "date_utc": "2026-10-03T20:40:29.607118+00:00",
+      "run_id": "luna-range_present-msgq_api-r02",
+      "source_sha256": "7298d429830fa085f09253bccd435c561262b58721f340755f5b0626ef95444f",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13894,
+        "output_tokens": 527,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 102,
+      "date_utc": "2026-10-03T20:40:43.303823+00:00",
+      "run_id": "luna-range_absent-msgq_api-r02",
+      "source_sha256": "f2d43fe2ca495b5e690ea7ee462ddd33e14315993bcbb82c1637c031773af02c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13833,
+        "output_tokens": 597,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 103,
+      "date_utc": "2026-10-03T20:40:57.401162+00:00",
+      "run_id": "astra-range_present-context-r02",
+      "source_sha256": "97f84ec365f6ac17cca1b862f3ef01732b033a885bba12e31132e5737f20303e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14553,
+        "output_tokens": 1534,
+        "reasoning_output_tokens": 717
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 104,
+      "date_utc": "2026-10-03T20:42:03.641380+00:00",
+      "run_id": "astra-range_absent-context-r02",
+      "source_sha256": "6f36837fe8ee3e94d27bb26cc0b938ed0c541ad4d3e64274f85c137e9fea923a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14494,
+        "output_tokens": 1021,
+        "reasoning_output_tokens": 434
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 105,
+      "date_utc": "2026-10-03T20:42:52.548812+00:00",
+      "run_id": "luna-range_absent-context-r02",
+      "source_sha256": "b0b75590485613e4a8d26ba28cce5b439c4d6745affb10f3cb91b045082c48f2",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13872,
+        "output_tokens": 676,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 106,
+      "date_utc": "2026-10-03T20:43:08.709369+00:00",
+      "run_id": "luna-range_present-context-r02",
+      "source_sha256": "cfed2f89e567799def1912339e881bc2152096f28352a276527a77feb597e135",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13927,
+        "output_tokens": 871,
+        "reasoning_output_tokens": 370
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 107,
+      "date_utc": "2026-10-03T20:43:28.116382+00:00",
+      "run_id": "sol-range_present-context-r02",
+      "source_sha256": "b23e49462dcd85180e04b67bbb899ab64ca4604b7f67fc3922f01941dc27d9a1",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14106,
+        "output_tokens": 1572,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 108,
+      "date_utc": "2026-10-03T20:44:10.321534+00:00",
+      "run_id": "sol-range_absent-context-r02",
+      "source_sha256": "8725ca6ca92e069b0dba9d42bf24735453915eefe96f72f888ec8d9174e03243",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14045,
+        "output_tokens": 1907,
+        "reasoning_output_tokens": 1407
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 109,
+      "date_utc": "2026-10-03T20:44:59.456559+00:00",
+      "run_id": "astra-range_present-pending-r02",
+      "source_sha256": "93c22a3e93dc7b5d64d4018f3fe6ca63422f93883120f26ea5cd98410690a92e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14522,
+        "output_tokens": 1954,
+        "reasoning_output_tokens": 934
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 110,
+      "date_utc": "2026-10-03T20:46:21.957450+00:00",
+      "run_id": "astra-range_absent-pending-r02",
+      "source_sha256": "c9af84c69fb372eae51d565350ca09949595adf2c5a5bcbfe3dbff26b7106f4e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14461,
+        "output_tokens": 1133,
+        "reasoning_output_tokens": 436
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 111,
+      "date_utc": "2026-10-03T20:47:11.776228+00:00",
+      "run_id": "luna-range_absent-pending-r02",
+      "source_sha256": "5d94ea9aa66910938eed38488b9c75693c37200677fc0a9ca146f4a8eb851dcd",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13837,
+        "output_tokens": 566,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 112,
+      "date_utc": "2026-10-03T20:47:25.601351+00:00",
+      "run_id": "luna-range_present-pending-r02",
+      "source_sha256": "54aff0030c1e3aa651a5a2b03ab4c7530ae74ab2e1b46c9ca8ec34b9433e1fe1",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13896,
+        "output_tokens": 532,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 113,
+      "date_utc": "2026-10-03T20:47:40.854919+00:00",
+      "run_id": "sol-range_present-pending-r02",
+      "source_sha256": "3d3e34477f0aafac9a535045dfb73661313f502cc84176b89aa4d24ea08cac46",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14073,
+        "output_tokens": 2977,
+        "reasoning_output_tokens": 2571
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 114,
+      "date_utc": "2026-10-03T20:48:56.470726+00:00",
+      "run_id": "sol-range_absent-pending-r02",
+      "source_sha256": "a4d35b83112cb1a1e73833f5d6894dc5e47d3789f5f3ad95ca13faffe91760b4",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14014,
+        "output_tokens": 2337,
+        "reasoning_output_tokens": 1850
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 115,
+      "date_utc": "2026-10-03T20:49:57.278165+00:00",
+      "run_id": "astra-range_present-semaphore-r02",
+      "source_sha256": "c93b305b4717a4263ee4d2c5773a90e8e39ed5cd7bb743bfe4a032f5210754ca",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14569,
+        "output_tokens": 399,
+        "reasoning_output_tokens": 117
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 116,
+      "date_utc": "2026-10-03T20:51:10.095046+00:00",
+      "run_id": "astra-range_absent-semaphore-r02",
+      "source_sha256": "f736642efdf05f49e85c52d0d54ac6fef5a3004435119a0906c7cbb612320407",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14510,
+        "output_tokens": 383,
+        "reasoning_output_tokens": 120
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 117,
+      "date_utc": "2026-10-03T20:51:30.161762+00:00",
+      "run_id": "sol-range_present-semaphore-r02",
+      "source_sha256": "774326d6c53647d14c034a2c90cb3c62b24534a28fb580c8314661bd4de9d84d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14118,
+        "output_tokens": 530,
+        "reasoning_output_tokens": 300
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 118,
+      "date_utc": "2026-10-03T20:51:46.815506+00:00",
+      "run_id": "sol-range_absent-semaphore-r02",
+      "source_sha256": "4fbd32c6bc003e9f7b0a71e8a074906f546475b45b45f40ee964952efc9d79b5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14057,
+        "output_tokens": 507,
+        "reasoning_output_tokens": 279
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 119,
+      "date_utc": "2026-10-03T20:52:03.009625+00:00",
+      "run_id": "luna-range_present-semaphore-r02",
+      "source_sha256": "0835f81e0dbe1b3150f5088391721254ae07a2a78818e91441503e4a2b7fea4a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13935,
+        "output_tokens": 250,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 120,
+      "date_utc": "2026-10-03T20:52:12.486664+00:00",
+      "run_id": "luna-range_absent-semaphore-r02",
+      "source_sha256": "183fba005cbeadae2b4f9482b36717870e3f294addc9290125ff83f8338be3eb",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13880,
+        "output_tokens": 227,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 121,
+      "date_utc": "2026-10-03T20:52:20.499244+00:00",
+      "run_id": "luna-range_present-queue-r02",
+      "source_sha256": "484b10c3e85c4cb4c8195f340c15fb0db1eb17d3778855f507c12b3e932a6a47",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13888,
+        "output_tokens": 396,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 122,
+      "date_utc": "2026-10-03T20:52:34.452871+00:00",
+      "run_id": "luna-range_absent-queue-r02",
+      "source_sha256": "8b7f18c37167a38e49d86b2a901389d24b8e8e7484e0fead80c57a37b55e9f8b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13829,
+        "output_tokens": 366,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 123,
+      "date_utc": "2026-10-03T20:52:46.466630+00:00",
+      "run_id": "sol-range_present-queue-r02",
+      "source_sha256": "82d3c291fa81ab03800776914d279dde9ce6938bb914b92a9e90ddc9f380e772",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14067,
+        "output_tokens": 834,
+        "reasoning_output_tokens": 462
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 124,
+      "date_utc": "2026-10-03T20:53:10.336605+00:00",
+      "run_id": "sol-range_absent-queue-r02",
+      "source_sha256": "0410afe40c80d5edb79abf3bc74ee24963c03e1dff4e4d77b84a9a88f389f181",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14006,
+        "output_tokens": 863,
+        "reasoning_output_tokens": 488
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 125,
+      "date_utc": "2026-10-03T20:53:35.188992+00:00",
+      "run_id": "astra-range_present-queue-r02",
+      "source_sha256": "654371ca1447506c7d78eeb32eaafa3914552d28f0f3565d0f416bb62b857f00",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14514,
+        "output_tokens": 693,
+        "reasoning_output_tokens": 209
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 126,
+      "date_utc": "2026-10-03T20:54:07.838184+00:00",
+      "run_id": "astra-range_absent-queue-r02",
+      "source_sha256": "f91e5acac77acdca9f58d7ecc126d3fb2e01918a197e55e5133649ca6c19d6a5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14455,
+        "output_tokens": 616,
+        "reasoning_output_tokens": 183
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 127,
+      "date_utc": "2026-10-03T20:54:36.745381+00:00",
+      "run_id": "astra-range_absent-rtc_time_counting-r02",
+      "source_sha256": "c1cb0dd214534c4dfc27b25be651c7c6d5a17d4fa690d34beaaa6f2676ab694f",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14511,
+        "output_tokens": 1763,
+        "reasoning_output_tokens": 737
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 128,
+      "date_utc": "2026-10-03T20:55:52.922754+00:00",
+      "run_id": "astra-range_present-rtc_time_counting-r02",
+      "source_sha256": "508b5eab755a7a9b0d77896bfc9915347f903e454f035edd23f6bc4659004ce2",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14588,
+        "output_tokens": 1725,
+        "reasoning_output_tokens": 721
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 129,
+      "date_utc": "2026-10-03T20:57:06.167059+00:00",
+      "run_id": "sol-range_present-rtc_time_counting-r02",
+      "source_sha256": "d1b1cf8549333502b3f0f455fa2e563f7fe22410363884f90298123d8ed419b7",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14137,
+        "output_tokens": 3323,
+        "reasoning_output_tokens": 2444
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 130,
+      "date_utc": "2026-10-03T20:58:30.552422+00:00",
+      "run_id": "sol-range_absent-rtc_time_counting-r02",
+      "source_sha256": "8e64862e0be6c6506eaeb09172e4462fa02c68fc05291db2223da9f1c48e69b9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14062,
+        "output_tokens": 1900,
+        "reasoning_output_tokens": 1182
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 131,
+      "date_utc": "2026-10-03T20:59:19.604972+00:00",
+      "run_id": "luna-range_absent-rtc_time_counting-r02",
+      "source_sha256": "62e32151c494a9a936228ed70b221d3c2ae710e467ad3fef0bec14df97596ce8",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13881,
+        "output_tokens": 1299,
+        "reasoning_output_tokens": 436
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 132,
+      "date_utc": "2026-10-03T20:59:50.370474+00:00",
+      "run_id": "luna-range_present-rtc_time_counting-r02",
+      "source_sha256": "bbdf624e799dd13e733b09323a5f21b23f5804cd117f7fbe26accc1e607ec3c4",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13960,
+        "output_tokens": 1429,
+        "reasoning_output_tokens": 364
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 133,
+      "date_utc": "2026-10-03T21:00:24.554190+00:00",
+      "run_id": "luna-range_present-sleep-r02",
+      "source_sha256": "912183d70df49add913aaf493fd3445b8c658956834e2c88ec95444aed03c624",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13924,
+        "output_tokens": 648,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 134,
+      "date_utc": "2026-10-03T21:00:41.982910+00:00",
+      "run_id": "luna-range_absent-sleep-r02",
+      "source_sha256": "702cdd0899fa66732a83df3ba0af95f83eb8fec887e8fde8138b175860bb30f9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13865,
+        "output_tokens": 804,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 135,
+      "date_utc": "2026-10-03T21:01:04.003041+00:00",
+      "run_id": "astra-range_absent-sleep-r02",
+      "source_sha256": "d9d23dd4f74213f16e9999ed42a914b6c927a98c06ffc71e124f40a34cf3e750",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14495,
+        "output_tokens": 1951,
+        "reasoning_output_tokens": 851
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 136,
+      "date_utc": "2026-10-03T21:02:28.986932+00:00",
+      "run_id": "astra-range_present-sleep-r02",
+      "source_sha256": "6e16e82d5d9eb274126b7b87cdd6ceac75b7414114893f04e1887fb42ffebd1e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14554,
+        "output_tokens": 2014,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 137,
+      "date_utc": "2026-10-03T21:03:59.460623+00:00",
+      "run_id": "sol-range_present-sleep-r02",
+      "source_sha256": "0d02951368a75a11071b202a752a160ddd736ae26bff3a6c65c1af5a2068ca31",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14105,
+        "output_tokens": 2242,
+        "reasoning_output_tokens": 1476
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 138,
+      "date_utc": "2026-10-03T21:04:58.226473+00:00",
+      "run_id": "sol-range_absent-sleep-r02",
+      "source_sha256": "f1478a05989c0fb7f8afb0785f850be309423ff6bdb3d85dfdd989b88ae7a1ce",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14046,
+        "output_tokens": 2092,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 139,
+      "date_utc": "2026-10-03T21:05:51.909912+00:00",
+      "run_id": "sol-range_absent-lifo_api-r02",
+      "source_sha256": "ef2cde19875919fb307213ad72bda7d97a666a40b21096feffbf801d49cbcc9d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14011,
+        "output_tokens": 885,
+        "reasoning_output_tokens": 480
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 140,
+      "date_utc": "2026-10-03T21:06:16.954432+00:00",
+      "run_id": "sol-range_present-lifo_api-r02",
+      "source_sha256": "5c0a41121cbabfc91b66e49f9927db3f75f8ff47dd05c197905a9c3e5011e8b3",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14070,
+        "output_tokens": 907,
+        "reasoning_output_tokens": 495
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 141,
+      "date_utc": "2026-10-03T21:06:42.908887+00:00",
+      "run_id": "luna-range_absent-lifo_api-r02",
+      "source_sha256": "3f4f06b53ba825089c6a29116b23786f1b83428d868a429fd0952f4d968240c3",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13832,
+        "output_tokens": 366,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 142,
+      "date_utc": "2026-10-03T21:06:56.224888+00:00",
+      "run_id": "luna-range_present-lifo_api-r02",
+      "source_sha256": "cb81b76f087d563c5ea5647d2692f97e3bddc0d478ff27cfdffd30dbf2d14019",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13893,
+        "output_tokens": 624,
+        "reasoning_output_tokens": 227
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 143,
+      "date_utc": "2026-10-03T21:07:14.381227+00:00",
+      "run_id": "astra-range_absent-lifo_api-r02",
+      "source_sha256": "6b9dcdc14425eb805e3f75c6761d07fc5cadbc9c5b757757f9fa300ddd86508f",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14462,
+        "output_tokens": 570,
+        "reasoning_output_tokens": 184
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 144,
+      "date_utc": "2026-10-03T21:07:41.730939+00:00",
+      "run_id": "astra-range_present-lifo_api-r02",
+      "source_sha256": "e22a728b773bf2790fce0ca15da5dd103cb2865137fd8cf988cb6102756d3fe7",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14521,
+        "output_tokens": 543,
+        "reasoning_output_tokens": 116
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 145,
+      "date_utc": "2026-10-03T21:08:09.327889+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_callback-r02",
+      "source_sha256": "fc257af684e7064945cdc1f916fe8c7d07201b86cdaef640a94541cdcb9277d9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13958,
+        "output_tokens": 1058,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 146,
+      "date_utc": "2026-10-03T21:08:32.945375+00:00",
+      "run_id": "luna-range_present-rtc_alarm_callback-r02",
+      "source_sha256": "a6de624d5e324da3e51c1ca67fdda39fe4fa9139678b64799a333e59c43dbe64",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 14033,
+        "output_tokens": 1952,
+        "reasoning_output_tokens": 757
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 147,
+      "date_utc": "2026-10-03T21:09:19.403182+00:00",
+      "run_id": "sol-range_present-rtc_alarm_callback-r02",
+      "source_sha256": "81d84a4ea82c109a68e1cdd9ec11b89d5a6928c4e66c4734897b346e6844e606",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14212,
+        "output_tokens": 4174,
+        "reasoning_output_tokens": 2907
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 148,
+      "date_utc": "2026-10-03T21:11:05.020093+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_callback-r02",
+      "source_sha256": "61aca6eb66abf90c20837d887dae8db7793c00b463a3d37f9e95503972815a46",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14133,
+        "output_tokens": 3727,
+        "reasoning_output_tokens": 2509
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 149,
+      "date_utc": "2026-10-03T21:12:42.318505+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_callback-r02",
+      "source_sha256": "f48d06171521041140c4417f7f0b567d0021caa66f749a97eb01c86e20af2dc1",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14582,
+        "output_tokens": 2779,
+        "reasoning_output_tokens": 1292
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 150,
+      "date_utc": "2026-10-03T21:14:37.514880+00:00",
+      "run_id": "astra-range_present-rtc_alarm_callback-r02",
+      "source_sha256": "938bcd9f2c0d6f83b96e29bb4e8be8b0a420b0bbb979ea4236d08ada8713b38e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14661,
+        "output_tokens": 2913,
+        "reasoning_output_tokens": 1241
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 151,
+      "date_utc": "2026-10-03T21:16:40.253740+00:00",
+      "run_id": "luna-range_present-timer_api-r02",
+      "source_sha256": "4323dde8aca86455720c8eaf6c686d73e233583659a70c6e3515ed53482fa2ba",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13936,
+        "output_tokens": 869,
+        "reasoning_output_tokens": 492
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 152,
+      "date_utc": "2026-10-03T21:17:06.724027+00:00",
+      "run_id": "luna-range_absent-timer_api-r02",
+      "source_sha256": "6b0480e75003a51c4beec227e1d5c6a8dc890dc8c0e7b30691b566373e9351ed",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13875,
+        "output_tokens": 271,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 153,
+      "date_utc": "2026-10-03T21:17:18.055751+00:00",
+      "run_id": "astra-range_absent-timer_api-r02",
+      "source_sha256": "586a0c46e7dc898265537b3fa2c9f3e1dfe798fda3f33baf2399af3d10f9a21d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14505,
+        "output_tokens": 619,
+        "reasoning_output_tokens": 249
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 154,
+      "date_utc": "2026-10-03T21:17:47.400997+00:00",
+      "run_id": "astra-range_present-timer_api-r02",
+      "source_sha256": "5c43e5f174ae82619defdf053d16d8565a7d3c5a1cec45d490a286f28b549746",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14560,
+        "output_tokens": 769,
+        "reasoning_output_tokens": 227
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 155,
+      "date_utc": "2026-10-03T21:18:25.137313+00:00",
+      "run_id": "sol-range_absent-timer_api-r02",
+      "source_sha256": "067e88f7046c22898c4ad954439e5410942a1c54315a214bb370d1067ae36b9a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14054,
+        "output_tokens": 720,
+        "reasoning_output_tokens": 385
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 156,
+      "date_utc": "2026-10-03T21:18:47.232112+00:00",
+      "run_id": "sol-range_present-timer_api-r02",
+      "source_sha256": "b6088c652eaa1e8e26af5334f33b508dfe59ee523bda1baa2e70d55eb5fbbe0a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14111,
+        "output_tokens": 819,
+        "reasoning_output_tokens": 504
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 157,
+      "date_utc": "2026-10-03T21:19:10.493403+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_callback-r03",
+      "source_sha256": "649a509a067874917641cebc6d811199936b83b2d338eca57d70074c947147b4",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14135,
+        "output_tokens": 3536,
+        "reasoning_output_tokens": 2569
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 158,
+      "date_utc": "2026-10-03T21:20:39.146234+00:00",
+      "run_id": "sol-range_present-rtc_alarm_callback-r03",
+      "source_sha256": "b8b89d2a858d2f80aa351ca6ebd5ca154b5d3c90cfb07170d5cb7d3c924e86da",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14212,
+        "output_tokens": 4427,
+        "reasoning_output_tokens": 3106
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 159,
+      "date_utc": "2026-10-03T21:22:33.370538+00:00",
+      "run_id": "luna-range_present-rtc_alarm_callback-r03",
+      "source_sha256": "2acc82a56fd5e90a7637a175fa7d670fd92ef3cdde86c6a822614bd45b380c0b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 14029,
+        "output_tokens": 1099,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 160,
+      "date_utc": "2026-10-03T21:22:57.297559+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_callback-r03",
+      "source_sha256": "38f4b53dd37a9ed9386c02074ef22fa96afbebfa10321be48bf354cebce7d71d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13956,
+        "output_tokens": 1533,
+        "reasoning_output_tokens": 614
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 161,
+      "date_utc": "2026-10-03T21:23:53.880362+00:00",
+      "run_id": "astra-range_present-rtc_alarm_callback-r03",
+      "source_sha256": "4579ee894e8f89a2ef5df1cc9892dbaae0a6a8ac72ed488e256c44311199c858",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14663,
+        "output_tokens": 2812,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 162,
+      "date_utc": "2026-10-03T21:25:52.237775+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_callback-r03",
+      "source_sha256": "b9bf2bb5180125421a178a0030f6e10ce46ea04c0532ddbbb7681a81e35b434a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14582,
+        "output_tokens": 2462,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 163,
+      "date_utc": "2026-10-03T21:27:36.588657+00:00",
+      "run_id": "sol-range_present-semaphore-r03",
+      "source_sha256": "84a8bd8201d770e64c907ec96455b380a3746ba072e60c696765a7a9901c702f",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14118,
+        "output_tokens": 488,
+        "reasoning_output_tokens": 250
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 164,
+      "date_utc": "2026-10-03T21:27:51.977416+00:00",
+      "run_id": "sol-range_absent-semaphore-r03",
+      "source_sha256": "8e9fb2513b7870afa580af791b68183051d7e0e64196da70919f0f55df45c29d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14059,
+        "output_tokens": 513,
+        "reasoning_output_tokens": 300
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 165,
+      "date_utc": "2026-10-03T21:28:10.305236+00:00",
+      "run_id": "luna-range_present-semaphore-r03",
+      "source_sha256": "673132feaa963cf9c96573457584dfc9e771f967e34274b451a67911fd98255c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13937,
+        "output_tokens": 320,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 166,
+      "date_utc": "2026-10-03T21:28:22.932828+00:00",
+      "run_id": "luna-range_absent-semaphore-r03",
+      "source_sha256": "835ab68655510a6cdc3c56daa757cf759826c0ac4cb7bdb8b732ddf09692c69b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13880,
+        "output_tokens": 261,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 167,
+      "date_utc": "2026-10-03T21:28:32.185589+00:00",
+      "run_id": "astra-range_present-semaphore-r03",
+      "source_sha256": "40e0b08144ae3aad7904e4585996607878adf7c892b6791e3500caf734c01cdc",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14567,
+        "output_tokens": 416,
+        "reasoning_output_tokens": 143
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 168,
+      "date_utc": "2026-10-03T21:28:53.440722+00:00",
+      "run_id": "astra-range_absent-semaphore-r03",
+      "source_sha256": "3c5250ba9ebbe8c3afad5cf21dbdf3c485728cf32346db890afa4180963eb242",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14508,
+        "output_tokens": 383,
+        "reasoning_output_tokens": 127
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 169,
+      "date_utc": "2026-10-03T21:29:16.010296+00:00",
+      "run_id": "astra-range_present-pending-r03",
+      "source_sha256": "e112f456caeb3d636896136ea175e82e2b954564bfdd59785e833b1c33711f89",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14522,
+        "output_tokens": 1752,
+        "reasoning_output_tokens": 738
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 170,
+      "date_utc": "2026-10-03T21:30:31.088307+00:00",
+      "run_id": "astra-range_absent-pending-r03",
+      "source_sha256": "2d2d1d72d6c6071415d1cec33215fd4ad2fc363f26bb8a8c1344d3df3a1fa698",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14465,
+        "output_tokens": 1633,
+        "reasoning_output_tokens": 657
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 171,
+      "date_utc": "2026-10-03T21:31:40.681497+00:00",
+      "run_id": "sol-range_absent-pending-r03",
+      "source_sha256": "ab5d791ce0dd495a7af09e55b676a0af927fa20d3d1aff62e81baf5cd47883af",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14014,
+        "output_tokens": 2091,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 172,
+      "date_utc": "2026-10-03T21:32:38.825249+00:00",
+      "run_id": "sol-range_present-pending-r03",
+      "source_sha256": "dfbccd21d1ecd8831aa0520bb58055be54b76740826695c0cacc17953566b1b2",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14075,
+        "output_tokens": 2337,
+        "reasoning_output_tokens": 1909
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 173,
+      "date_utc": "2026-10-03T21:33:38.727060+00:00",
+      "run_id": "luna-range_absent-pending-r03",
+      "source_sha256": "f4f631a5116cdf22887fdee81ad1083516644ff4260d5eb3825f5f3ee0ac594d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13835,
+        "output_tokens": 527,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 174,
+      "date_utc": "2026-10-03T21:33:53.124896+00:00",
+      "run_id": "luna-range_present-pending-r03",
+      "source_sha256": "8ae45a2740e8fcf121deb2c5e07ee58acb1fca7f6f1a090b675e7b11ebc15084",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13896,
+        "output_tokens": 1050,
+        "reasoning_output_tokens": 491
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 175,
+      "date_utc": "2026-10-03T21:34:24.677661+00:00",
+      "run_id": "sol-range_present-context-r03",
+      "source_sha256": "847db76535b662ce0908943a0e25f2ed5579358bd8b54d7f6b73dcdc042c2b7b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14104,
+        "output_tokens": 1889,
+        "reasoning_output_tokens": 1467
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 176,
+      "date_utc": "2026-10-03T21:35:15.898788+00:00",
+      "run_id": "sol-range_absent-context-r03",
+      "source_sha256": "83e483b791de8a60611a62c59ac3faf786de487beabef12f486689555dc02f98",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14047,
+        "output_tokens": 1439,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 177,
+      "date_utc": "2026-10-03T21:35:54.458401+00:00",
+      "run_id": "luna-range_present-context-r03",
+      "source_sha256": "b11a2f1e389813c979e60336334f9f8a83f8030bc122b2e2290242c3bfd5f049",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13927,
+        "output_tokens": 641,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 178,
+      "date_utc": "2026-10-03T21:36:12.966787+00:00",
+      "run_id": "luna-range_absent-context-r03",
+      "source_sha256": "ab21798a183b8b684f8fedbfd9b5f1c6bfc7fd6b1d2b51c3b095d9bcc623690f",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13870,
+        "output_tokens": 616,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 179,
+      "date_utc": "2026-10-03T21:36:28.115165+00:00",
+      "run_id": "astra-range_absent-context-r03",
+      "source_sha256": "9d63649244966b2951808c7fbfe9693303653b6950dbd40dd283e079ed702c83",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14500,
+        "output_tokens": 1407,
+        "reasoning_output_tokens": 709
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 180,
+      "date_utc": "2026-10-03T21:37:30.481796+00:00",
+      "run_id": "astra-range_present-context-r03",
+      "source_sha256": "33ac61573353df2c4bca63c797787c3e53125a46dcacc41b648ba664e85ea1c0",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14555,
+        "output_tokens": 1783,
+        "reasoning_output_tokens": 961
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 181,
+      "date_utc": "2026-10-03T21:38:45.846058+00:00",
+      "run_id": "astra-range_absent-timer_api-r03",
+      "source_sha256": "3b202a0f330b935076a2625cd275f2f1778a587f9d968a5d6f684b32a1861806",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14503,
+        "output_tokens": 773,
+        "reasoning_output_tokens": 260
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 182,
+      "date_utc": "2026-10-03T21:39:23.781392+00:00",
+      "run_id": "astra-range_present-timer_api-r03",
+      "source_sha256": "8103d94377860507e31769d6e916343e8225af3aeb99c94f344c490a4b9b771c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14560,
+        "output_tokens": 854,
+        "reasoning_output_tokens": 443
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 183,
+      "date_utc": "2026-10-03T21:40:02.251390+00:00",
+      "run_id": "luna-range_present-timer_api-r03",
+      "source_sha256": "13eb3c114007ed2266d7bbc55a624a621a498f8bbc998996ef8bd81d5ec99d9d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13932,
+        "output_tokens": 1017,
+        "reasoning_output_tokens": 598
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 184,
+      "date_utc": "2026-10-03T21:40:46.698949+00:00",
+      "run_id": "luna-range_absent-timer_api-r03",
+      "source_sha256": "fcbd3f4f756205d51bd49579d03cdd5affefc93280c7fdef609eabdeb7175dc4",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13875,
+        "output_tokens": 343,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 185,
+      "date_utc": "2026-10-03T21:40:58.530384+00:00",
+      "run_id": "sol-range_absent-timer_api-r03",
+      "source_sha256": "ed9885609c8d3edced7221db7e45b5d46c4262058e00c8e3ed62295ac8b6864c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14054,
+        "output_tokens": 1521,
+        "reasoning_output_tokens": 1108
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 186,
+      "date_utc": "2026-10-03T21:41:39.067957+00:00",
+      "run_id": "sol-range_present-timer_api-r03",
+      "source_sha256": "11269f162da02fb4f1dc4776226f89a32fe0c3088e59473f484d8600c7d03304",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14113,
+        "output_tokens": 1184,
+        "reasoning_output_tokens": 823
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 187,
+      "date_utc": "2026-10-03T21:42:10.876786+00:00",
+      "run_id": "astra-range_present-workq-r03",
+      "source_sha256": "a0ed025a1a3c611b5dad5bc0dbacaef18d61f3a42814f3797ddad3f2d10406f8",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14596,
+        "output_tokens": 1564,
+        "reasoning_output_tokens": 717
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 188,
+      "date_utc": "2026-10-03T21:43:18.422457+00:00",
+      "run_id": "astra-range_absent-workq-r03",
+      "source_sha256": "0ef1c5688681d2320fc6bf4da923ada813dd80b0f502f0726e1d2f19df0dbcfd",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14543,
+        "output_tokens": 1105,
+        "reasoning_output_tokens": 417
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 189,
+      "date_utc": "2026-10-03T21:44:10.354043+00:00",
+      "run_id": "sol-range_present-workq-r03",
+      "source_sha256": "1a2ceb74f3a36d5e5f3d1d08ca54e080fa2c7c90158a20d5ac818ea2df868496",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14147,
+        "output_tokens": 1505,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 190,
+      "date_utc": "2026-10-03T21:44:51.269109+00:00",
+      "run_id": "sol-range_absent-workq-r03",
+      "source_sha256": "669d6c1fa770f3171f6814e143ff86c21bd9e297297a5dd6bf1bc6aeaf87efd1",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14090,
+        "output_tokens": 1441,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 191,
+      "date_utc": "2026-10-03T21:45:30.293456+00:00",
+      "run_id": "luna-range_absent-workq-r03",
+      "source_sha256": "9654d0c1faf70f1e8a698393bf2e0716275f9b839cd574d5376a524f812dc199",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13909,
+        "output_tokens": 471,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 192,
+      "date_utc": "2026-10-03T21:45:42.676887+00:00",
+      "run_id": "luna-range_present-workq-r03",
+      "source_sha256": "9e55c9d05a33eeda0b23d8d58297ed8ebfa69eb8a93827ccff1b82ae364015d8",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13970,
+        "output_tokens": 501,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 193,
+      "date_utc": "2026-10-03T21:45:59.739957+00:00",
+      "run_id": "sol-range_absent-lifo_api-r03",
+      "source_sha256": "6e2db63effbd703ef910bb05ab9945991869a44f7448f8d48fa61dfd2624fdf6",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14015,
+        "output_tokens": 923,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 194,
+      "date_utc": "2026-10-03T21:46:25.586272+00:00",
+      "run_id": "sol-range_present-lifo_api-r03",
+      "source_sha256": "38b63392dca9fa43af1ce2b3b8b08f60d4e5196ddc1a85bbe3379972be7e2895",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14070,
+        "output_tokens": 1111,
+        "reasoning_output_tokens": 631
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 195,
+      "date_utc": "2026-10-03T21:46:56.248709+00:00",
+      "run_id": "luna-range_absent-lifo_api-r03",
+      "source_sha256": "8ea4645e8ad18c9b57db2e6c1cff5ac1a00387f5aec12feda4c7b7df10927ad0",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13834,
+        "output_tokens": 381,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 196,
+      "date_utc": "2026-10-03T21:47:08.039876+00:00",
+      "run_id": "luna-range_present-lifo_api-r03",
+      "source_sha256": "ea736f819e1a27e3f969231f25d287249de8a4c7ba5c35885259ea18623cb6c5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13893,
+        "output_tokens": 367,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 197,
+      "date_utc": "2026-10-03T21:47:18.021447+00:00",
+      "run_id": "astra-range_present-lifo_api-r03",
+      "source_sha256": "63b92002696174be3454a2d87d4c406e87145092e4dfcd70ad290576cc25d973",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14523,
+        "output_tokens": 543,
+        "reasoning_output_tokens": 117
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 198,
+      "date_utc": "2026-10-03T21:47:46.755418+00:00",
+      "run_id": "astra-range_absent-lifo_api-r03",
+      "source_sha256": "d0b044082262e9de052a51e85d0fdc0d224f1cf33dfe211848a6241492d05410",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14460,
+        "output_tokens": 612,
+        "reasoning_output_tokens": 122
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 199,
+      "date_utc": "2026-10-03T21:48:15.466281+00:00",
+      "run_id": "sol-range_absent-sleep-r03",
+      "source_sha256": "372dfb08e1aba3e561f1fa0e204320ada10288c4f84b36b2f11320715f42f12e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14048,
+        "output_tokens": 2514,
+        "reasoning_output_tokens": 1924
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 200,
+      "date_utc": "2026-10-03T21:49:26.275204+00:00",
+      "run_id": "sol-range_present-sleep-r03",
+      "source_sha256": "9a9783206a32bd2f44c603170412322728d5a11f58b83a9d867f4b42977c5c9a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14101,
+        "output_tokens": 2575,
+        "reasoning_output_tokens": 2070
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 201,
+      "date_utc": "2026-10-03T21:50:32.361104+00:00",
+      "run_id": "luna-range_absent-sleep-r03",
+      "source_sha256": "34af1357efd0a500a8bd07cd2b5d08e44065b2d7b129e78ad4a2d282cc835116",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13867,
+        "output_tokens": 1150,
+        "reasoning_output_tokens": 468
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 202,
+      "date_utc": "2026-10-03T21:50:56.818125+00:00",
+      "run_id": "luna-range_present-sleep-r03",
+      "source_sha256": "76d556b162f8d2db219aeb3acfd8422fe8e006ecf91ce729216b5f6314f35711",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13924,
+        "output_tokens": 583,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 203,
+      "date_utc": "2026-10-03T21:51:17.677728+00:00",
+      "run_id": "astra-range_present-sleep-r03",
+      "source_sha256": "ec98fd29b6c861344a18cb7b803eb6702d3f326a32420bb97c87883020292f92",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14552,
+        "output_tokens": 2211,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 204,
+      "date_utc": "2026-10-03T21:52:50.006600+00:00",
+      "run_id": "astra-range_absent-sleep-r03",
+      "source_sha256": "024222cd6d71f0f25ed84c81dcad48b31799edfa5c4cb98dc480470dd3eaa54c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14495,
+        "output_tokens": 1987,
+        "reasoning_output_tokens": 927
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 205,
+      "date_utc": "2026-10-03T21:54:13.028130+00:00",
+      "run_id": "luna-range_present-rtc_alarm_pending-r03",
+      "source_sha256": "60bcb17621bc29ba4cf6f4f3cc657068c318984c11060748fdd70991ea39e0e7",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 14020,
+        "output_tokens": 1517,
+        "reasoning_output_tokens": 750
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 206,
+      "date_utc": "2026-10-03T21:54:53.508021+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_pending-r03",
+      "source_sha256": "7f9967c8f28201c026416b9e3dc5eea39d21131aa355e6205e6be64515271fe6",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13941,
+        "output_tokens": 711,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 207,
+      "date_utc": "2026-10-03T21:55:10.119038+00:00",
+      "run_id": "sol-range_present-rtc_alarm_pending-r03",
+      "source_sha256": "843e085e8b4dc2833ae6d6ef28e47f90f5acebcc32fad2e4a5f781064f2419a0",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14197,
+        "output_tokens": 2792,
+        "reasoning_output_tokens": 1848
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 208,
+      "date_utc": "2026-10-03T21:56:21.285298+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03",
+      "source_sha256": "ba3fafc7fbac98b08be9e0fb6fbfcaad4f65420232024491d3f231d3b8a47eda",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14124,
+        "output_tokens": 2918,
+        "reasoning_output_tokens": 1893
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 209,
+      "date_utc": "2026-10-03T21:57:36.650014+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r03",
+      "source_sha256": "267148903ee49b073e12818cc1fabe2df0a1a40b4a71c3a1cbb35cd8fc6a30ed",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14571,
+        "output_tokens": 2043,
+        "reasoning_output_tokens": 610
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 210,
+      "date_utc": "2026-10-03T21:59:04.433101+00:00",
+      "run_id": "astra-range_present-rtc_alarm_pending-r03",
+      "source_sha256": "12611aea3deebfd4435b06f61e8fcf4155c133f0a5936d76c9509a7dda26372a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14644,
+        "output_tokens": 2988,
+        "reasoning_output_tokens": 1516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 211,
+      "date_utc": "2026-10-03T22:01:12.270280+00:00",
+      "run_id": "astra-range_present-rtc_time_counting-r03",
+      "source_sha256": "e155a5f3758448e27024f797bc528f5ea726bab407e2a12ea20f7d48c0c7abfa",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14588,
+        "output_tokens": 1908,
+        "reasoning_output_tokens": 772
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 212,
+      "date_utc": "2026-10-03T22:02:34.581833+00:00",
+      "run_id": "astra-range_absent-rtc_time_counting-r03",
+      "source_sha256": "9eb79b92d5ce7c080606b29ccd8f2e9c3738433693aee52f4ae26fcb6fe07e44",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14513,
+        "output_tokens": 1724,
+        "reasoning_output_tokens": 474
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 213,
+      "date_utc": "2026-10-03T22:03:48.327264+00:00",
+      "run_id": "sol-range_present-rtc_time_counting-r03",
+      "source_sha256": "537ff865f7b7fa5ec97e25d4b36c66f55a0ca324455d915d8a7936cd3a37e576",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14141,
+        "output_tokens": 2887,
+        "reasoning_output_tokens": 2133
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 214,
+      "date_utc": "2026-10-03T22:05:01.210956+00:00",
+      "run_id": "sol-range_absent-rtc_time_counting-r03",
+      "source_sha256": "e708436eb6c0c30c502b79d85c52517e433d8ff52437d411af440035c5b8ab69",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14064,
+        "output_tokens": 2543,
+        "reasoning_output_tokens": 1474
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 215,
+      "date_utc": "2026-10-03T22:06:05.817724+00:00",
+      "run_id": "luna-range_present-rtc_time_counting-r03",
+      "source_sha256": "40b4fa1547126c51ddacb7164880d8cc5add3b9d13d793a011c565067c7d037b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13958,
+        "output_tokens": 1514,
+        "reasoning_output_tokens": 414
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 216,
+      "date_utc": "2026-10-03T22:06:56.702227+00:00",
+      "run_id": "luna-range_absent-rtc_time_counting-r03",
+      "source_sha256": "8d9e66aba4657f2ba0c06e292fdf6e0e0879436db4985b19dc6ea6e31b2193d0",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13887,
+        "output_tokens": 571,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 217,
+      "date_utc": "2026-10-03T22:07:15.018698+00:00",
+      "run_id": "sol-range_present-fifo_api-r03",
+      "source_sha256": "7dac07a8d0a8e4d3595858082fb1f6e5697ed9cc26d1667fb32a5199a9108a3d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14062,
+        "output_tokens": 1041,
+        "reasoning_output_tokens": 641
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 218,
+      "date_utc": "2026-10-03T22:07:43.655845+00:00",
+      "run_id": "sol-range_absent-fifo_api-r03",
+      "source_sha256": "124b95fd60c0a1b22f0157f81dffdf18ea925f229685de0c7bafcc4106e22755",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14001,
+        "output_tokens": 1233,
+        "reasoning_output_tokens": 803
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 219,
+      "date_utc": "2026-10-03T22:08:17.898796+00:00",
+      "run_id": "astra-range_present-fifo_api-r03",
+      "source_sha256": "08f87d72f94d451144c0c979dd4d267c4fdd6207b43070ff0d26cfb129d0ef54",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14509,
+        "output_tokens": 751,
+        "reasoning_output_tokens": 219
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 220,
+      "date_utc": "2026-10-03T22:08:51.448830+00:00",
+      "run_id": "astra-range_absent-fifo_api-r03",
+      "source_sha256": "fb681ad668942ce4dad5315a6c8102e68dde7db143a532fa62fb745df6096647",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14452,
+        "output_tokens": 650,
+        "reasoning_output_tokens": 209
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 221,
+      "date_utc": "2026-10-03T22:09:22.502055+00:00",
+      "run_id": "luna-range_absent-fifo_api-r03",
+      "source_sha256": "9befd3711ab1bbc977d96ae3fda040895764fe1ee8f7912b0da64cf4a1f3408a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13824,
+        "output_tokens": 359,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 222,
+      "date_utc": "2026-10-03T22:09:32.405653+00:00",
+      "run_id": "luna-range_present-fifo_api-r03",
+      "source_sha256": "63487058c48aa6caac9bd5678a41f834f6c0246e76005ba32e41922403bc958f",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13883,
+        "output_tokens": 699,
+        "reasoning_output_tokens": 278
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 223,
+      "date_utc": "2026-10-03T22:09:51.546908+00:00",
+      "run_id": "luna-range_absent-queue-r03",
+      "source_sha256": "269e49d936a70412d13cfca524c1659d785315a23cd5479277b46724e5ce9493",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13825,
+        "output_tokens": 360,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 224,
+      "date_utc": "2026-10-03T22:10:02.657095+00:00",
+      "run_id": "luna-range_present-queue-r03",
+      "source_sha256": "fcd25eb16b1867a285737420e80b0544f1daf7050335af77da0a30e99fa4b5f9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13884,
+        "output_tokens": 382,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 225,
+      "date_utc": "2026-10-03T22:10:12.715258+00:00",
+      "run_id": "astra-range_absent-queue-r03",
+      "source_sha256": "2450faf025e50f5ce4c40280ee3ee62e963d1dad3c0f1fa3d03b1325c4656959",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14453,
+        "output_tokens": 642,
+        "reasoning_output_tokens": 246
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 226,
+      "date_utc": "2026-10-03T22:10:44.002478+00:00",
+      "run_id": "astra-range_present-queue-r03",
+      "source_sha256": "7bb0fc0c68709a66f17d0ecf5081fe1fbe1a5bb37bbff739ae24f368a9c20bf9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14516,
+        "output_tokens": 683,
+        "reasoning_output_tokens": 211
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 227,
+      "date_utc": "2026-10-03T22:11:17.234859+00:00",
+      "run_id": "sol-range_absent-queue-r03",
+      "source_sha256": "d94625703d6c42553d22e259fe90f3a3d7e356257a8a78570b3dd64bc35c0189",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14008,
+        "output_tokens": 1135,
+        "reasoning_output_tokens": 641
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 228,
+      "date_utc": "2026-10-03T22:11:57.861746+00:00",
+      "run_id": "sol-range_present-queue-r03",
+      "source_sha256": "6b2a9234acae64bc39f91d781afed6b0af2a22cf9709b30fb8994b27a409288e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14067,
+        "output_tokens": 977,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 229,
+      "date_utc": "2026-10-03T22:12:27.066667+00:00",
+      "run_id": "sol-range_absent-msgq_api-r03",
+      "source_sha256": "69d37aeb7171f8c5e95b68d073fd07e3dbe24ac4379904f181e932816cfde2fc",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14016,
+        "output_tokens": 1029,
+        "reasoning_output_tokens": 446
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 230,
+      "date_utc": "2026-10-03T22:12:57.533391+00:00",
+      "run_id": "sol-range_present-msgq_api-r03",
+      "source_sha256": "cb659ca60a3653c4ad4cd22b1e71c184762fee3dde054ebdfda1f79b131ffff3",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14071,
+        "output_tokens": 1591,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 231,
+      "date_utc": "2026-10-03T22:14:32.015114+00:00",
+      "run_id": "astra-range_absent-msgq_api-r03",
+      "source_sha256": "70eb265455fc2af970ae3f7110a7b13fe48d333480fbe123a63f64db9eb6e3db",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14459,
+        "output_tokens": 861,
+        "reasoning_output_tokens": 150
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 232,
+      "date_utc": "2026-10-03T22:15:11.792887+00:00",
+      "run_id": "astra-range_present-msgq_api-r03",
+      "source_sha256": "3cf3739499c335c82c0d7d689f90e37dcfc5270bdfbb0a805131f9cc84c5e444",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14518,
+        "output_tokens": 915,
+        "reasoning_output_tokens": 226
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 233,
+      "date_utc": "2026-10-03T22:15:54.048408+00:00",
+      "run_id": "luna-range_present-msgq_api-r03",
+      "source_sha256": "8a4d4a2b379aaa7c1281f2f2200be97da2409aade35fb45634a57d022c84f999",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13892,
+        "output_tokens": 587,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 234,
+      "date_utc": "2026-10-03T22:16:11.274588+00:00",
+      "run_id": "luna-range_absent-msgq_api-r03",
+      "source_sha256": "d42b7c9d62ed64aaf6fb2194ac8b8080baf93cf0b1cde5105217e161effdd2a2",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13833,
+        "output_tokens": 495,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 235,
+      "date_utc": "2026-10-03T22:16:23.240016+00:00",
+      "run_id": "luna-range_present-workq-r04",
+      "source_sha256": "788cc51eec1c0e23d7f2e8fd7e82d1b46b5faced7a99c3316afc39258d8c76c4",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13968,
+        "output_tokens": 1232,
+        "reasoning_output_tokens": 786
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 236,
+      "date_utc": "2026-10-03T22:17:11.760561+00:00",
+      "run_id": "luna-range_absent-workq-r04",
+      "source_sha256": "53b6a21d5966fad3efefa505b833cb67dc24d178088a12e183257a82b03a89f2",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13911,
+        "output_tokens": 626,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 237,
+      "date_utc": "2026-10-03T22:17:29.932440+00:00",
+      "run_id": "sol-range_present-workq-r04",
+      "source_sha256": "3ef79fb7a766bed45dc58f161a0bd25b024f28ba56bcaa726eee4f0b64065588",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14147,
+        "output_tokens": 2011,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 238,
+      "date_utc": "2026-10-03T22:18:21.617658+00:00",
+      "run_id": "sol-range_absent-workq-r04",
+      "source_sha256": "dc295a7955d6040cc4d28fafefa35fb15efd4c550a6b572285afaf903bed32f9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14092,
+        "output_tokens": 1484,
+        "reasoning_output_tokens": 1028
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 239,
+      "date_utc": "2026-10-03T22:19:03.662647+00:00",
+      "run_id": "astra-range_present-workq-r04",
+      "source_sha256": "676c07343c49f561be49b0d820778e4801d5f4f22e0cb341438e6f2134a80be9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14600,
+        "output_tokens": 1532,
+        "reasoning_output_tokens": 767
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 240,
+      "date_utc": "2026-10-03T22:20:08.810080+00:00",
+      "run_id": "astra-range_absent-workq-r04",
+      "source_sha256": "06f0475be882b0b962b86d3184ecf48c84de17eb28079945d630091a84ea5fc9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14537,
+        "output_tokens": 1239,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 241,
+      "date_utc": "2026-10-03T22:21:05.545992+00:00",
+      "run_id": "sol-range_present-rtc_time_counting-r04",
+      "source_sha256": "1534119ba39ecf710d7bd2ad3b3c0743d84b6068b142ab65d9beb8f1205a0d90",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14139,
+        "output_tokens": 2266,
+        "reasoning_output_tokens": 1547
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 242,
+      "date_utc": "2026-10-03T22:22:03.381996+00:00",
+      "run_id": "sol-range_absent-rtc_time_counting-r04",
+      "source_sha256": "7356219b9afce9840b1161e28f34641aeca1453fca36135de3ca00b2a31abd25",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14062,
+        "output_tokens": 2106,
+        "reasoning_output_tokens": 1268
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 243,
+      "date_utc": "2026-10-03T22:22:59.927186+00:00",
+      "run_id": "astra-range_present-rtc_time_counting-r04",
+      "source_sha256": "3893a3d9601c0a10edf76732ec21777e065c6eb3c3ce1a41d1d52bda21e1b562",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14588,
+        "output_tokens": 2195,
+        "reasoning_output_tokens": 869
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 244,
+      "date_utc": "2026-10-03T22:24:34.088768+00:00",
+      "run_id": "astra-range_absent-rtc_time_counting-r04",
+      "source_sha256": "09ef4b74590f2e3e8811297ee045d672c597bb21b2de6afc2a398649fe5b5785",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14509,
+        "output_tokens": 1579,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 245,
+      "date_utc": "2026-10-03T22:25:43.033057+00:00",
+      "run_id": "luna-range_present-rtc_time_counting-r04",
+      "source_sha256": "6521474f180462e05c1585e83630325d4c2ec6e318616846b1c1752f58fd61eb",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13958,
+        "output_tokens": 2012,
+        "reasoning_output_tokens": 630
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 246,
+      "date_utc": "2026-10-03T22:26:47.718305+00:00",
+      "run_id": "luna-range_absent-rtc_time_counting-r04",
+      "source_sha256": "633e6b847b70258ab06f60d89dd7e50bfaba174f3ef4a4208d068f5fa3ead7a3",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13879,
+        "output_tokens": 768,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 247,
+      "date_utc": "2026-10-03T22:27:05.398557+00:00",
+      "run_id": "sol-range_present-sleep-r04",
+      "source_sha256": "c5f99d41fba7c11d89a7075cbc063a87b88ddb67b64e610e253fcd5aa5ae6d08",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14109,
+        "output_tokens": 2024,
+        "reasoning_output_tokens": 1433
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 248,
+      "date_utc": "2026-10-03T22:27:58.188524+00:00",
+      "run_id": "sol-range_absent-sleep-r04",
+      "source_sha256": "115203d44211f23956f5c8f7a640976dba00dc7e814ccb67552e9ebe83396f0d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14048,
+        "output_tokens": 2229,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 249,
+      "date_utc": "2026-10-03T22:28:55.476997+00:00",
+      "run_id": "luna-range_present-sleep-r04",
+      "source_sha256": "0eab4b53ce9d8c414510850a75febebb60974bfdc2eea65c7c1bb71be92c562c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13926,
+        "output_tokens": 605,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 250,
+      "date_utc": "2026-10-03T22:29:17.039003+00:00",
+      "run_id": "luna-range_absent-sleep-r04",
+      "source_sha256": "8385d77ed336876574af1ae7b01a08c85613a6c443ee8b5a5efb55140487acf4",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13867,
+        "output_tokens": 714,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 251,
+      "date_utc": "2026-10-03T22:29:34.305011+00:00",
+      "run_id": "astra-range_absent-sleep-r04",
+      "source_sha256": "8a8aacc65a4b7ad0c57bee1f052d953fc18f671449119aa9d891bb6f2a755abb",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14495,
+        "output_tokens": 2119,
+        "reasoning_output_tokens": 1020
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 252,
+      "date_utc": "2026-10-03T22:31:04.000245+00:00",
+      "run_id": "astra-range_present-sleep-r04",
+      "source_sha256": "c75859692e0cd7c136c77a6b6f8acf4c8448e13d7fa2c6372a76a7b2d6e40276",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14554,
+        "output_tokens": 2202,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 3,
+      "call_index": 253,
+      "date_utc": "2026-10-03T23:58:15.454799+00:00",
+      "run_id": "sol-range_present-context-r04",
+      "source_sha256": "aa42571ae472353da5b386d69ba69a07996964631ec8489d0af2e7da04510adf",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13952,
+        "input_tokens": 15138,
+        "output_tokens": 996,
+        "reasoning_output_tokens": 448
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 254,
+      "date_utc": "2026-10-04T00:31:21.537359+00:00",
+      "run_id": "sol-range_absent-context-r04",
+      "source_sha256": "841d5cd92d070fe9815eeb8ac03ef22138e8ed09d7bb0d88c77c8f82602e8800",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14047,
+        "output_tokens": 1544,
+        "reasoning_output_tokens": 1050
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 255,
+      "date_utc": "2026-10-04T00:32:03.823321+00:00",
+      "run_id": "luna-range_absent-context-r04",
+      "source_sha256": "f7a0e78ae0883ada6e15ae340dabfd2fc97870023e3d39c0fc54fd2cd18eaeb5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13866,
+        "output_tokens": 539,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 256,
+      "date_utc": "2026-10-04T00:32:23.345031+00:00",
+      "run_id": "luna-range_present-context-r04",
+      "source_sha256": "b671fbc11c216dcb83bf033ba553aaf22a2b5b109b5f5783e6942fff640ba54b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13927,
+        "output_tokens": 842,
+        "reasoning_output_tokens": 366
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 257,
+      "date_utc": "2026-10-04T00:32:58.294405+00:00",
+      "run_id": "astra-range_present-context-r04",
+      "source_sha256": "5d420631359575cf791d18bd4b6dc0577b1b5c1b04b1d1ced5af149f24897d65",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14553,
+        "output_tokens": 1630,
+        "reasoning_output_tokens": 711
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 258,
+      "date_utc": "2026-10-04T00:34:08.700508+00:00",
+      "run_id": "astra-range_absent-context-r04",
+      "source_sha256": "9931c6649ff46d930ea23664b3be12d759e0f9dfbabce58d7f304896339390da",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14496,
+        "output_tokens": 1231,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 259,
+      "date_utc": "2026-10-04T00:35:05.028768+00:00",
+      "run_id": "luna-range_absent-lifo_api-r04",
+      "source_sha256": "3bcf049c50fb52e6a0711523f5f65974d8b5862220de7f3dc260fa19d9082366",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13836,
+        "output_tokens": 555,
+        "reasoning_output_tokens": 174
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 260,
+      "date_utc": "2026-10-04T00:35:20.735844+00:00",
+      "run_id": "luna-range_present-lifo_api-r04",
+      "source_sha256": "4e398a65e16d9e4679fbbbd85b644ec046d29e9dd30ec577a7f2148c4b305f07",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13889,
+        "output_tokens": 381,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 261,
+      "date_utc": "2026-10-04T00:35:33.863170+00:00",
+      "run_id": "astra-range_absent-lifo_api-r04",
+      "source_sha256": "dec9bd94f57a5a384d52298f53aa69b9ae6950f6e261c829e3458304e236274f",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14464,
+        "output_tokens": 683,
+        "reasoning_output_tokens": 236
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 262,
+      "date_utc": "2026-10-04T00:36:06.321471+00:00",
+      "run_id": "astra-range_present-lifo_api-r04",
+      "source_sha256": "c7d2df1ad2b04234f0f9bd855b22705d2acd79624049dbe6a0fdcb7a5042abeb",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14521,
+        "output_tokens": 673,
+        "reasoning_output_tokens": 261
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 263,
+      "date_utc": "2026-10-04T00:36:37.555070+00:00",
+      "run_id": "sol-range_absent-lifo_api-r04",
+      "source_sha256": "399b2f793a22453078833166b7ed26961b111cf6800c20e45e6d0491073b3c14",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14011,
+        "output_tokens": 1023,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 264,
+      "date_utc": "2026-10-04T00:37:06.344115+00:00",
+      "run_id": "sol-range_present-lifo_api-r04",
+      "source_sha256": "75695995f9b073680f2d1da2bfdb7f4aea19629cb29410c4afa75fe352b5ad16",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14072,
+        "output_tokens": 913,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 265,
+      "date_utc": "2026-10-04T00:37:33.116365+00:00",
+      "run_id": "sol-range_absent-msgq_api-r04",
+      "source_sha256": "34b0a90170813f040fd17447c57b80a4e52778cd5e2d75914491623e3f9007e1",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14010,
+        "output_tokens": 919,
+        "reasoning_output_tokens": 403
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 266,
+      "date_utc": "2026-10-04T00:37:59.844064+00:00",
+      "run_id": "sol-range_present-msgq_api-r04",
+      "source_sha256": "5ccbd73f00aa919bf6040df11744cf637a7c2b2213768254b6700c01084a7f99",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13952,
+        "input_tokens": 14071,
+        "output_tokens": 1097,
+        "reasoning_output_tokens": 576
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 267,
+      "date_utc": "2026-10-04T00:38:32.679534+00:00",
+      "run_id": "luna-range_present-msgq_api-r04",
+      "source_sha256": "9dcef0b43fd9397b03b06df4e94a0b611c992e37906e8caa3a0882c2eac2c8d3",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13890,
+        "output_tokens": 542,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 268,
+      "date_utc": "2026-10-04T00:38:49.771541+00:00",
+      "run_id": "luna-range_absent-msgq_api-r04",
+      "source_sha256": "54acf91844e98942f2532a02a7700de5e81d1d0816d976a11eb9e8a80860910d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13833,
+        "output_tokens": 716,
+        "reasoning_output_tokens": 190
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 269,
+      "date_utc": "2026-10-04T00:39:09.479707+00:00",
+      "run_id": "astra-range_present-msgq_api-r04",
+      "source_sha256": "cae38b07bca9f531ebe6837b412d37b9c9b049f27dadd4554d8c5999671a38ec",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14520,
+        "output_tokens": 985,
+        "reasoning_output_tokens": 189
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 270,
+      "date_utc": "2026-10-04T00:39:53.152598+00:00",
+      "run_id": "astra-range_absent-msgq_api-r04",
+      "source_sha256": "3b2595be0ca629ce9f29333dcd18af4ced53e06454b2e6382ba26837e4f3d8ab",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14461,
+        "output_tokens": 744,
+        "reasoning_output_tokens": 145
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 271,
+      "date_utc": "2026-10-04T00:40:28.045901+00:00",
+      "run_id": "luna-range_absent-pending-r04",
+      "source_sha256": "ec6055723afd35ca8807f4a5cd7b9495dac98ef7f26d0f78bd8c85111949fb91",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13835,
+        "output_tokens": 553,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 272,
+      "date_utc": "2026-10-04T00:40:42.460269+00:00",
+      "run_id": "luna-range_present-pending-r04",
+      "source_sha256": "bfbabee18182b64f82478153184175646826dc9b9e63ef659bb620928c1e5ba6",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13894,
+        "output_tokens": 499,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 273,
+      "date_utc": "2026-10-04T00:40:56.181825+00:00",
+      "run_id": "astra-range_absent-pending-r04",
+      "source_sha256": "48ff2474e1945eeabc5db10c923769d493d144f6017117dea9873abb457d9c37",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14463,
+        "output_tokens": 1276,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 274,
+      "date_utc": "2026-10-04T00:41:54.489382+00:00",
+      "run_id": "astra-range_present-pending-r04",
+      "source_sha256": "2ea1be3c1116a5bd19b4f301425e775be04f868aa1be75330e23f9d7ecf9cd3b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14524,
+        "output_tokens": 1737,
+        "reasoning_output_tokens": 801
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 275,
+      "date_utc": "2026-10-04T00:43:08.803254+00:00",
+      "run_id": "sol-range_present-pending-r04",
+      "source_sha256": "2d5a787a013555213215bfe60454f312060b5aff90561e035d3083476f71c762",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14073,
+        "output_tokens": 2366,
+        "reasoning_output_tokens": 1856
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 276,
+      "date_utc": "2026-10-04T00:44:09.879680+00:00",
+      "run_id": "sol-range_absent-pending-r04",
+      "source_sha256": "95118e0be161293fe124d813ba6cc44a3f24c110042d339a5d6006568bc00811",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14012,
+        "output_tokens": 1827,
+        "reasoning_output_tokens": 1352
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 277,
+      "date_utc": "2026-10-04T00:44:57.667996+00:00",
+      "run_id": "luna-range_absent-fifo_api-r04",
+      "source_sha256": "84d6c621401508d4e4aa6760b0058ce3929a18a11d4892d8655d84b591d5fa19",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13830,
+        "output_tokens": 359,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 278,
+      "date_utc": "2026-10-04T00:45:07.851836+00:00",
+      "run_id": "luna-range_present-fifo_api-r04",
+      "source_sha256": "1ddb339bfa55f40cdbd979b660589cbc4b084eee6b60ed4a3c28dc1e7f596478",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13883,
+        "output_tokens": 642,
+        "reasoning_output_tokens": 257
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 279,
+      "date_utc": "2026-10-04T00:45:23.777074+00:00",
+      "run_id": "sol-range_present-fifo_api-r04",
+      "source_sha256": "adc9e8d02ee93e618e0cb9fd853ba212cd513f875624cdbe59da317c6d6ae7a3",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14062,
+        "output_tokens": 958,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 280,
+      "date_utc": "2026-10-04T00:45:50.538798+00:00",
+      "run_id": "sol-range_absent-fifo_api-r04",
+      "source_sha256": "06abb484d845e976347588eb76591dfec5b4dc64f2b06d3bf4eb6dc96ecf8de6",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14001,
+        "output_tokens": 909,
+        "reasoning_output_tokens": 459
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 281,
+      "date_utc": "2026-10-04T00:46:17.632384+00:00",
+      "run_id": "astra-range_absent-fifo_api-r04",
+      "source_sha256": "2470f8d9fedee0c19dfeeed92308d18b5e8336dab469a88436d01f99d8b1aef9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14454,
+        "output_tokens": 521,
+        "reasoning_output_tokens": 76
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 282,
+      "date_utc": "2026-10-04T00:46:43.118603+00:00",
+      "run_id": "astra-range_present-fifo_api-r04",
+      "source_sha256": "e3ae51b84b4a1cfe02bbb60f96fad71efb574c3031ad27cd5cabd0e811112ecb",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14509,
+        "output_tokens": 780,
+        "reasoning_output_tokens": 296
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 283,
+      "date_utc": "2026-10-04T00:47:18.333770+00:00",
+      "run_id": "luna-range_present-rtc_alarm_pending-r04",
+      "source_sha256": "79d917e23fc6ad5c444d0bfa2cffb47c59b2b13407f9bb1a95593e0ead0f42c4",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14018,
+        "output_tokens": 748,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 284,
+      "date_utc": "2026-10-04T00:47:35.094726+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_pending-r04",
+      "source_sha256": "da904baa6004b9374d3c687475e5af567798411808f7c3de8381572885b9053c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13943,
+        "output_tokens": 855,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 285,
+      "date_utc": "2026-10-04T00:47:55.091688+00:00",
+      "run_id": "sol-range_present-rtc_alarm_pending-r04",
+      "source_sha256": "f81b00fabba970c802e178f647d671aca64469aedf1f428a2752ca1736cb1a5d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14199,
+        "output_tokens": 3007,
+        "reasoning_output_tokens": 2070
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 286,
+      "date_utc": "2026-10-04T00:49:10.916812+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r04",
+      "source_sha256": "9608c7ebf8b576085aee6c65e2feed1cc11adf107e4ce9f47e42f4912fcb7983",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14122,
+        "output_tokens": 2501,
+        "reasoning_output_tokens": 1650
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 287,
+      "date_utc": "2026-10-04T00:50:16.199595+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r04",
+      "source_sha256": "a29ac4aee6e43918aa2c80745e180f6039dc54c0728b7d12bf37e4bee58a7b36",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14569,
+        "output_tokens": 2163,
+        "reasoning_output_tokens": 687
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 288,
+      "date_utc": "2026-10-04T00:51:48.408661+00:00",
+      "run_id": "astra-range_present-rtc_alarm_pending-r04",
+      "source_sha256": "a2dce87e37a78053c42aa05e95631e94e3db10f6b6c7b6a1852fb60b45af82d5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14648,
+        "output_tokens": 3020,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 289,
+      "date_utc": "2026-10-04T00:53:57.690690+00:00",
+      "run_id": "sol-range_present-queue-r04",
+      "source_sha256": "cc73f220cfcd6491b26894d480dcbb0ca7e0bae1ced3a7163296f28c80249aa9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14065,
+        "output_tokens": 1357,
+        "reasoning_output_tokens": 932
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 290,
+      "date_utc": "2026-10-04T00:54:34.790241+00:00",
+      "run_id": "sol-range_absent-queue-r04",
+      "source_sha256": "fc0266ce9f9920a5e35beff7422e72362cff8913a30002bbf1fcac6454d129b0",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14006,
+        "output_tokens": 947,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 291,
+      "date_utc": "2026-10-04T00:55:02.741440+00:00",
+      "run_id": "luna-range_present-queue-r04",
+      "source_sha256": "42e7b9c8f8e6c7d32d5af846d7ed249954261801f6d40ea910706a76bb067f9d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13886,
+        "output_tokens": 364,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 292,
+      "date_utc": "2026-10-04T00:55:16.191778+00:00",
+      "run_id": "luna-range_absent-queue-r04",
+      "source_sha256": "6400f7d1a83732cda911de75f49119414b1e55e1c22fea5330647fabc38e93b7",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13829,
+        "output_tokens": 369,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 293,
+      "date_utc": "2026-10-04T00:55:25.965390+00:00",
+      "run_id": "astra-range_absent-queue-r04",
+      "source_sha256": "2a9986866032725a1cc69994c1743951093e90fec2da5fc7af44edb2e61e2715",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14455,
+        "output_tokens": 747,
+        "reasoning_output_tokens": 274
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 294,
+      "date_utc": "2026-10-04T00:56:02.101826+00:00",
+      "run_id": "astra-range_present-queue-r04",
+      "source_sha256": "333402e609484dee0c141846aad358cb536ef13a9cb7e2f0289e3416ef019522",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14516,
+        "output_tokens": 665,
+        "reasoning_output_tokens": 220
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 295,
+      "date_utc": "2026-10-04T00:56:33.407197+00:00",
+      "run_id": "luna-range_absent-semaphore-r04",
+      "source_sha256": "9c07d2aeec96e59129d05b3bf6bfd4bf5cb71dae79ddab031e9b5dc8a1207485",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13882,
+        "output_tokens": 258,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 296,
+      "date_utc": "2026-10-04T00:56:41.680417+00:00",
+      "run_id": "luna-range_present-semaphore-r04",
+      "source_sha256": "c3b8f60cd0a0945e363a1d89bc6a92edd70e426cbab7ee84ad8c41c63aa1f3ab",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13943,
+        "output_tokens": 257,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 297,
+      "date_utc": "2026-10-04T00:56:53.280008+00:00",
+      "run_id": "astra-range_absent-semaphore-r04",
+      "source_sha256": "e358ed42c20f39c3898442f9c8abf03cc5c2a3755f4ff1c3fd0e2c2ac9aa94ec",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14508,
+        "output_tokens": 379,
+        "reasoning_output_tokens": 126
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 298,
+      "date_utc": "2026-10-04T00:57:12.823290+00:00",
+      "run_id": "astra-range_present-semaphore-r04",
+      "source_sha256": "fee215b8c04a59991934155a9f7934756df79c7a150c6f054e562beae1466c36",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14569,
+        "output_tokens": 441,
+        "reasoning_output_tokens": 152
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 299,
+      "date_utc": "2026-10-04T00:57:38.150923+00:00",
+      "run_id": "sol-range_present-semaphore-r04",
+      "source_sha256": "935956ea5b539f21a42a38b29d7afc66f2596950f9912254f94706c777e9ab25",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14120,
+        "output_tokens": 696,
+        "reasoning_output_tokens": 454
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 300,
+      "date_utc": "2026-10-04T00:58:00.081763+00:00",
+      "run_id": "sol-range_absent-semaphore-r04",
+      "source_sha256": "086642137632f8c4f0805fdc7a75e9ee88a77725ed02f7f6e72206cbb3347e18",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14055,
+        "output_tokens": 788,
+        "reasoning_output_tokens": 553
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 301,
+      "date_utc": "2026-10-04T00:58:23.379513+00:00",
+      "run_id": "sol-range_absent-timer_api-r04",
+      "source_sha256": "e2f2979806c9d85934b9009ec2d78967d0e1492efc725dad8a6db6dfb0bf0cf4",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14054,
+        "output_tokens": 1217,
+        "reasoning_output_tokens": 881
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 302,
+      "date_utc": "2026-10-04T00:58:56.138202+00:00",
+      "run_id": "sol-range_present-timer_api-r04",
+      "source_sha256": "2b71aca9b7a037bb7746c94657d83253683713011ac8696924e3ca0768cabe50",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14109,
+        "output_tokens": 1533,
+        "reasoning_output_tokens": 1178
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 303,
+      "date_utc": "2026-10-04T00:59:36.390306+00:00",
+      "run_id": "luna-range_absent-timer_api-r04",
+      "source_sha256": "a93b22ebc83f55eb935256b6fea075a9b824e09a31330a18aeb8637a202abee2",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13875,
+        "output_tokens": 261,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 304,
+      "date_utc": "2026-10-04T00:59:46.306557+00:00",
+      "run_id": "luna-range_present-timer_api-r04",
+      "source_sha256": "75268fc254a6ac32bae5440dab73d432469fa6516c57a725c25f67b1ececee3e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13932,
+        "output_tokens": 396,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 305,
+      "date_utc": "2026-10-04T00:59:56.420585+00:00",
+      "run_id": "astra-range_absent-timer_api-r04",
+      "source_sha256": "f67e6cfddeea0457c6cb53502cdcc307bc9113c6cd66b4aff7cfd8129323ec78",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14501,
+        "output_tokens": 701,
+        "reasoning_output_tokens": 187
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 306,
+      "date_utc": "2026-10-04T01:00:30.673057+00:00",
+      "run_id": "astra-range_present-timer_api-r04",
+      "source_sha256": "bd21a683fb844f1ae0de1b5d47c078685f3e33c2f764c38b2932e823c4901050",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14560,
+        "output_tokens": 958,
+        "reasoning_output_tokens": 399
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 307,
+      "date_utc": "2026-10-04T01:01:14.312685+00:00",
+      "run_id": "luna-range_present-rtc_alarm_callback-r04",
+      "source_sha256": "faff867548e95407ac823891075334389597a2f004e36b5eccc7928d6824fb4a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14033,
+        "output_tokens": 1680,
+        "reasoning_output_tokens": 563
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 308,
+      "date_utc": "2026-10-04T01:01:48.145890+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_callback-r04",
+      "source_sha256": "e3b58165c1e5e2aac4c04fbad3b0ef3038158bddfb62af5db97f7d69d519ce47",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13956,
+        "output_tokens": 1071,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 309,
+      "date_utc": "2026-10-04T01:02:11.971855+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_callback-r04",
+      "source_sha256": "99fdb4dcd14ce987dc5cc97736c222a376b1bad5c858e2fb8131e4724328532e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14582,
+        "output_tokens": 2621,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 310,
+      "date_utc": "2026-10-04T01:04:02.470649+00:00",
+      "run_id": "astra-range_present-rtc_alarm_callback-r04",
+      "source_sha256": "0f321fbf22625e53477436abf89200d3e0313654ad23a93e73b070e6764a6018",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14663,
+        "output_tokens": 2788,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 311,
+      "date_utc": "2026-10-04T01:05:59.786748+00:00",
+      "run_id": "sol-range_present-rtc_alarm_callback-r04",
+      "source_sha256": "90abf322ea82a1a3bffee2b0c21ae847c660e8f3058a622d515521e6fb72afb3",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14212,
+        "output_tokens": 5785,
+        "reasoning_output_tokens": 4472
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 312,
+      "date_utc": "2026-10-04T01:08:22.977373+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_callback-r04",
+      "source_sha256": "02d1a043a96b6376a9632311a93beffe94d0bae37e04a38b96690a7bbff2670d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14137,
+        "output_tokens": 2708,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 313,
+      "date_utc": "2026-10-04T01:09:34.377557+00:00",
+      "run_id": "luna-range_present-msgq_api-r05",
+      "source_sha256": "c95e946347ae877210d6c0d8212da81c64c1469153156fba10bd78e0aa131162",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13888,
+        "output_tokens": 532,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 314,
+      "date_utc": "2026-10-04T01:09:47.985211+00:00",
+      "run_id": "luna-range_absent-msgq_api-r05",
+      "source_sha256": "6a2f938aa27df84ab2c5c5b7ea544e3b325057ada4c60af6237f247e99f70de9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13831,
+        "output_tokens": 460,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 315,
+      "date_utc": "2026-10-04T01:09:59.259691+00:00",
+      "run_id": "astra-range_absent-msgq_api-r05",
+      "source_sha256": "d01292241ea797e7c95616536f089f5c84107521c3535b0eb412b168fabe2c01",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14459,
+        "output_tokens": 967,
+        "reasoning_output_tokens": 238
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 316,
+      "date_utc": "2026-10-04T01:10:42.372259+00:00",
+      "run_id": "astra-range_present-msgq_api-r05",
+      "source_sha256": "549633013ce23d29bcbe33e868ed020a266f89eb973bacf81c5e030017a7fcf3",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14520,
+        "output_tokens": 860,
+        "reasoning_output_tokens": 124
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 317,
+      "date_utc": "2026-10-04T01:11:21.560527+00:00",
+      "run_id": "sol-range_absent-msgq_api-r05",
+      "source_sha256": "58abf2caa2f8afab525b0c2900728998ca6164a5f24fb2396149e7996bcafd7a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14010,
+        "output_tokens": 1187,
+        "reasoning_output_tokens": 590
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 318,
+      "date_utc": "2026-10-04T01:11:54.092014+00:00",
+      "run_id": "sol-range_present-msgq_api-r05",
+      "source_sha256": "c315e5f7c12af463e22948f6925fef4bbe7b8f28de7813e0044019ff6abb394e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14067,
+        "output_tokens": 968,
+        "reasoning_output_tokens": 510
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 319,
+      "date_utc": "2026-10-04T01:12:22.052889+00:00",
+      "run_id": "astra-range_absent-fifo_api-r05",
+      "source_sha256": "97a65a61fbe8fb7fd419c77c16f2d47021bcc0b4e84af46e8da36a6e16e92a8c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14452,
+        "output_tokens": 492,
+        "reasoning_output_tokens": 93
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 320,
+      "date_utc": "2026-10-04T01:12:47.028413+00:00",
+      "run_id": "astra-range_present-fifo_api-r05",
+      "source_sha256": "210d271ab52e77e8e0192ca7080fdadf1eef3fe39911101d22bbfdf508d33e88",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14513,
+        "output_tokens": 767,
+        "reasoning_output_tokens": 270
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 321,
+      "date_utc": "2026-10-04T01:13:23.308498+00:00",
+      "run_id": "luna-range_absent-fifo_api-r05",
+      "source_sha256": "0a3dfaffbe37f461bb528e5bc18a7f5f0da79f2e5390155512c15ef026685919",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13822,
+        "output_tokens": 363,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 322,
+      "date_utc": "2026-10-04T01:13:32.976808+00:00",
+      "run_id": "luna-range_present-fifo_api-r05",
+      "source_sha256": "038cbdc825f96e4e67dcf36612ac7435a1f48f0105bbabf2f39d1df1caf24087",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13885,
+        "output_tokens": 375,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 323,
+      "date_utc": "2026-10-04T01:13:43.619362+00:00",
+      "run_id": "sol-range_absent-fifo_api-r05",
+      "source_sha256": "4cad245ac63fcbebbab7fb92dedbe47cd701a27fded61d142e27c3a0a0f543e5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14003,
+        "output_tokens": 969,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 324,
+      "date_utc": "2026-10-04T01:14:10.570077+00:00",
+      "run_id": "sol-range_present-fifo_api-r05",
+      "source_sha256": "f23bfad6f2202a13a3c8160da06dfd9c5e60ef0404c4c0259e0377c83baf9b4d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14060,
+        "output_tokens": 980,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 325,
+      "date_utc": "2026-10-04T01:14:38.346189+00:00",
+      "run_id": "astra-range_present-rtc_alarm_callback-r05",
+      "source_sha256": "9649b5605328ea6739dbd33e0244e983051cdd884851c5cfa47cbb9fbe442dd4",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14657,
+        "output_tokens": 2883,
+        "reasoning_output_tokens": 1211
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 326,
+      "date_utc": "2026-10-04T01:16:38.020560+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_callback-r05",
+      "source_sha256": "682e78976975568d78ebdfb45942391dec99f84337edc9fd968b0dde14763cbb",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14582,
+        "output_tokens": 2485,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 327,
+      "date_utc": "2026-10-04T01:18:25.452350+00:00",
+      "run_id": "sol-range_present-rtc_alarm_callback-r05",
+      "source_sha256": "f657e3690fb0adbff84d4ac89986dbf5bd76ccd94bd234aac115a8eb2c9a06de",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14210,
+        "output_tokens": 3615,
+        "reasoning_output_tokens": 2416
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 328,
+      "date_utc": "2026-10-04T01:19:57.241464+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_callback-r05",
+      "source_sha256": "c551b62199b658f6e57e9fb33312d838f0d1c56a1016810bb34a360b0d8f231a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14135,
+        "output_tokens": 3459,
+        "reasoning_output_tokens": 2349
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 329,
+      "date_utc": "2026-10-04T01:21:24.883813+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_callback-r05",
+      "source_sha256": "916f9c5897ffee49ab1cf1a7fdfdf4d5341768ebdffa6550959cf5cb3814d660",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13958,
+        "output_tokens": 1309,
+        "reasoning_output_tokens": 514
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 330,
+      "date_utc": "2026-10-04T01:22:00.103966+00:00",
+      "run_id": "luna-range_present-rtc_alarm_callback-r05",
+      "source_sha256": "b5d7c74161e02117c8577e67b3407438d03737c97c3371b83409ed5095eee6cd",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 14031,
+        "output_tokens": 1971,
+        "reasoning_output_tokens": 618
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 331,
+      "date_utc": "2026-10-04T01:22:47.326466+00:00",
+      "run_id": "sol-range_present-pending-r05",
+      "source_sha256": "feb1df9992000ff3a241d97f2f0ad56b5b90aa91b3e10b5ef37cda291c3c73ae",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14071,
+        "output_tokens": 2253,
+        "reasoning_output_tokens": 1752
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 332,
+      "date_utc": "2026-10-04T01:23:45.940850+00:00",
+      "run_id": "sol-range_absent-pending-r05",
+      "source_sha256": "7c25eaafcc431d2079e39e9c547582e220f38f912288d37c2bf7ebe9768a3989",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14016,
+        "output_tokens": 1421,
+        "reasoning_output_tokens": 969
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 333,
+      "date_utc": "2026-10-04T01:24:25.040070+00:00",
+      "run_id": "astra-range_absent-pending-r05",
+      "source_sha256": "dc00e21dca50fbd0584989c0d311e6150baeb2d27324c8d677f552051f09902f",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14467,
+        "output_tokens": 1194,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 334,
+      "date_utc": "2026-10-04T01:25:17.223505+00:00",
+      "run_id": "astra-range_present-pending-r05",
+      "source_sha256": "059403130d6c0212ea683f2628f44d1947573f38be18b69ef94b22dc5c51769c",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14522,
+        "output_tokens": 1806,
+        "reasoning_output_tokens": 814
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 335,
+      "date_utc": "2026-10-04T01:26:33.222873+00:00",
+      "run_id": "luna-range_present-pending-r05",
+      "source_sha256": "565e0b207c124b433fd3d00ccc18c8386e648edffd76fbf8d187a0e593a76c76",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13892,
+        "output_tokens": 515,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 336,
+      "date_utc": "2026-10-04T01:26:49.104252+00:00",
+      "run_id": "luna-range_absent-pending-r05",
+      "source_sha256": "0a34d4283ca0aa23a9a87efd09b98c7de9ba9d125c8f054e70e5665cb4f52bda",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13833,
+        "output_tokens": 479,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 337,
+      "date_utc": "2026-10-04T01:27:05.231268+00:00",
+      "run_id": "luna-range_absent-workq-r05",
+      "source_sha256": "2cf80db27036da8ddff96f8562e3710eac637a9dc4b923d00ae505b9f94d88fa",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13911,
+        "output_tokens": 468,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 338,
+      "date_utc": "2026-10-04T01:27:17.587142+00:00",
+      "run_id": "luna-range_present-workq-r05",
+      "source_sha256": "eb2423e627b806ac7423c888c47e690147f9ef26eaf6a04ce72a5d634be9b895",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13970,
+        "output_tokens": 443,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 339,
+      "date_utc": "2026-10-04T01:27:34.815972+00:00",
+      "run_id": "sol-range_absent-workq-r05",
+      "source_sha256": "0d93a50c07792b25319d0f4c809d30a94ac9d42cb1408e9b980a78a10a033763",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14088,
+        "output_tokens": 1505,
+        "reasoning_output_tokens": 1127
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 340,
+      "date_utc": "2026-10-04T01:28:15.095240+00:00",
+      "run_id": "sol-range_present-workq-r05",
+      "source_sha256": "18af135c671962a21812270997f0738f02ddf7edfcc0a260c7cd95f64546dfbd",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14149,
+        "output_tokens": 1687,
+        "reasoning_output_tokens": 1330
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 341,
+      "date_utc": "2026-10-04T01:28:59.054663+00:00",
+      "run_id": "astra-range_absent-workq-r05",
+      "source_sha256": "eebec206a11d87f0a3b720d16571053c8934af6366477570f2249c98397f8285",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14537,
+        "output_tokens": 1132,
+        "reasoning_output_tokens": 430
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 342,
+      "date_utc": "2026-10-04T01:29:51.045672+00:00",
+      "run_id": "astra-range_present-workq-r05",
+      "source_sha256": "0f67b5fe6fb098b14f101f22272d4e46f817662dbc8ee2922541532235c9f466",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14602,
+        "output_tokens": 1236,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 343,
+      "date_utc": "2026-10-04T01:30:45.069060+00:00",
+      "run_id": "astra-range_absent-timer_api-r05",
+      "source_sha256": "41b20378e7924da4597478122e62e6fff5680fba446ac6ef913e3768dfae8b13",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14503,
+        "output_tokens": 912,
+        "reasoning_output_tokens": 366
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 344,
+      "date_utc": "2026-10-04T01:31:25.393927+00:00",
+      "run_id": "astra-range_present-timer_api-r05",
+      "source_sha256": "bbc4dd9a79a1e67be5106d61f7b72b1031ca8c5b40d6fe10568beb5444461d19",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14560,
+        "output_tokens": 869,
+        "reasoning_output_tokens": 296
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 345,
+      "date_utc": "2026-10-04T01:32:05.614347+00:00",
+      "run_id": "luna-range_absent-timer_api-r05",
+      "source_sha256": "8de0f449d5d7f3ba5609e3cdd7292a637df124934446050a26385dda42551a56",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13873,
+        "output_tokens": 343,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 346,
+      "date_utc": "2026-10-04T01:32:18.480483+00:00",
+      "run_id": "luna-range_present-timer_api-r05",
+      "source_sha256": "199cfd37ef0f1c0004269d8d93998e9d41a9d0e08e76b84eb75af563639c45ce",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13932,
+        "output_tokens": 386,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 347,
+      "date_utc": "2026-10-04T01:32:28.788033+00:00",
+      "run_id": "sol-range_absent-timer_api-r05",
+      "source_sha256": "446488a27d2bc3954ab7dad87daf9f6827180e4610c951c19de66c84dfae87d1",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14056,
+        "output_tokens": 846,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 348,
+      "date_utc": "2026-10-04T01:32:53.245707+00:00",
+      "run_id": "sol-range_present-timer_api-r05",
+      "source_sha256": "55c7052fe460f116ed214948d805c5b54d646046cbcd4b7d2cefbaa2cc78b6f5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14117,
+        "output_tokens": 1370,
+        "reasoning_output_tokens": 1034
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 349,
+      "date_utc": "2026-10-04T01:33:32.404800+00:00",
+      "run_id": "luna-range_absent-sleep-r05",
+      "source_sha256": "e8b83e1fc178a907e7c52ee9192504eb28eb12afe5bda18f7548e3553dc23f2a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13867,
+        "output_tokens": 712,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 350,
+      "date_utc": "2026-10-04T01:33:53.478063+00:00",
+      "run_id": "luna-range_present-sleep-r05",
+      "source_sha256": "a7895a72e38d5e70140b8008cb57de21133d59a81f8d33c76790a13c550a0023",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13924,
+        "output_tokens": 653,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 351,
+      "date_utc": "2026-10-04T01:34:09.935413+00:00",
+      "run_id": "astra-range_absent-sleep-r05",
+      "source_sha256": "b6f3d64432ccf8d59563d54590ff59b7ebc0ecbff1f77b1f2aab2ba1722e4fac",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14497,
+        "output_tokens": 1874,
+        "reasoning_output_tokens": 817
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 352,
+      "date_utc": "2026-10-04T01:35:28.552209+00:00",
+      "run_id": "astra-range_present-sleep-r05",
+      "source_sha256": "213514ea54ebde85df11f6ae2b60906b4211b8ac242a761956f19a3f8bf658e0",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14554,
+        "output_tokens": 2271,
+        "reasoning_output_tokens": 969
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 353,
+      "date_utc": "2026-10-04T01:37:03.177722+00:00",
+      "run_id": "sol-range_present-sleep-r05",
+      "source_sha256": "31f5dfba7214415ba1991e0fed638d7f2b12c6c0999478550c47a7b97ed2761e",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14103,
+        "output_tokens": 2159,
+        "reasoning_output_tokens": 1552
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 354,
+      "date_utc": "2026-10-04T01:37:58.884905+00:00",
+      "run_id": "sol-range_absent-sleep-r05",
+      "source_sha256": "1d432e517e6b59a3f578645a4951f9a33163097e3c93c071e54ff6606cbb1f69",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14050,
+        "output_tokens": 2420,
+        "reasoning_output_tokens": 1823
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 355,
+      "date_utc": "2026-10-04T01:39:00.952326+00:00",
+      "run_id": "astra-range_present-rtc_alarm_pending-r05",
+      "source_sha256": "d2b27c690ea5680877c7d8d891bce02512cb7df7f78a519947c7dbd6b3bcdc12",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14652,
+        "output_tokens": 3076,
+        "reasoning_output_tokens": 1327
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 356,
+      "date_utc": "2026-10-04T01:41:09.347871+00:00",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05",
+      "source_sha256": "91d05288a05af0314aef5d675191da491cfdbeaf2208054fdbba140f725309d7",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14573,
+        "output_tokens": 1969,
+        "reasoning_output_tokens": 630
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 357,
+      "date_utc": "2026-10-04T01:42:33.790880+00:00",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r05",
+      "source_sha256": "f1b1e4e3d21dd64c598146503240648dd1635272669ae30dba4320af93d3e513",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14122,
+        "output_tokens": 3054,
+        "reasoning_output_tokens": 2217
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 358,
+      "date_utc": "2026-10-04T01:43:54.313865+00:00",
+      "run_id": "sol-range_present-rtc_alarm_pending-r05",
+      "source_sha256": "a8248ef9cbc601fd1ef07b6de9d1969095b0e1a24e7f5c236ed4d2b55f4b1e72",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14199,
+        "output_tokens": 3560,
+        "reasoning_output_tokens": 2588
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 359,
+      "date_utc": "2026-10-04T01:45:28.012799+00:00",
+      "run_id": "luna-range_present-rtc_alarm_pending-r05",
+      "source_sha256": "b269b9fcb18c3a6c8426baaa64807393516bcd022d70d9674b619557fee6ff97",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 14020,
+        "output_tokens": 649,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 360,
+      "date_utc": "2026-10-04T01:45:48.504427+00:00",
+      "run_id": "luna-range_absent-rtc_alarm_pending-r05",
+      "source_sha256": "ad48e00e709f48441a652b6da6720c99ae9c5290c8beb5fba939cd20259a73bc",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13939,
+        "output_tokens": 684,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 361,
+      "date_utc": "2026-10-04T01:46:09.159214+00:00",
+      "run_id": "luna-range_present-semaphore-r05",
+      "source_sha256": "669960f266a0db93aa053800f534cb74c4d5cb92645003df9baf108b585b6ace",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 13935,
+        "output_tokens": 265,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 362,
+      "date_utc": "2026-10-04T01:46:20.400873+00:00",
+      "run_id": "luna-range_absent-semaphore-r05",
+      "source_sha256": "6bfb6a1a92ad37e88ffbadd73a0d9624d673d39ea622292eae273b0dce476090",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13880,
+        "output_tokens": 277,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 363,
+      "date_utc": "2026-10-04T01:46:29.919067+00:00",
+      "run_id": "sol-range_present-semaphore-r05",
+      "source_sha256": "7711168877d097fd33b1990e032aa806622f1e505b2d79970d1c934a82f167a5",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14118,
+        "output_tokens": 538,
+        "reasoning_output_tokens": 315
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 364,
+      "date_utc": "2026-10-04T01:46:46.039454+00:00",
+      "run_id": "sol-range_absent-semaphore-r05",
+      "source_sha256": "4e7e9e6c321e2783656a5f191cafa30e6bc8cbeb8ba92af758fed513239041a3",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14057,
+        "output_tokens": 662,
+        "reasoning_output_tokens": 456
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 365,
+      "date_utc": "2026-10-04T01:47:05.568186+00:00",
+      "run_id": "astra-range_absent-semaphore-r05",
+      "source_sha256": "9cd33d9f937d1174098651fe76a39e00cf611f6ea4cf7ea4f1420874977bd310",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14510,
+        "output_tokens": 385,
+        "reasoning_output_tokens": 136
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 366,
+      "date_utc": "2026-10-04T01:47:29.664469+00:00",
+      "run_id": "astra-range_present-semaphore-r05",
+      "source_sha256": "93b82daa29219d45bcf0dbfb3e1f01ae4e6d8e419ceac2155e726132a8a49ef9",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14571,
+        "output_tokens": 451,
+        "reasoning_output_tokens": 168
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 367,
+      "date_utc": "2026-10-04T01:47:54.334723+00:00",
+      "run_id": "luna-range_present-rtc_time_counting-r05",
+      "source_sha256": "6b51ac8c6016cbc0b059993b20311cabc2804335877b9e5afc2eb7b47ff298c6",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13958,
+        "output_tokens": 1273,
+        "reasoning_output_tokens": 400
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 368,
+      "date_utc": "2026-10-04T01:48:41.433849+00:00",
+      "run_id": "luna-range_absent-rtc_time_counting-r05",
+      "source_sha256": "307ccc752c3db05ee8478b6d248e455661f74d0ec79074782e7502bb02aab136",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13881,
+        "output_tokens": 992,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 369,
+      "date_utc": "2026-10-04T01:49:17.026977+00:00",
+      "run_id": "astra-range_absent-rtc_time_counting-r05",
+      "source_sha256": "bff59e56598d76f741326876b83dd264a5a3425d2a5f7b9e65d9f7f68a0a99dd",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14511,
+        "output_tokens": 1476,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 370,
+      "date_utc": "2026-10-04T01:50:20.511889+00:00",
+      "run_id": "astra-range_present-rtc_time_counting-r05",
+      "source_sha256": "b7bd2b7c7434dbefd5e0d88a01a1e54fab66fc5e6a7412c383dad3b6d119ff7b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14588,
+        "output_tokens": 1875,
+        "reasoning_output_tokens": 733
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 371,
+      "date_utc": "2026-10-04T01:51:39.597305+00:00",
+      "run_id": "sol-range_absent-rtc_time_counting-r05",
+      "source_sha256": "46a1d39f2ea21c3546e8f37b1018a2c500fdd377ea53646ba24e3f7d52ff1835",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14064,
+        "output_tokens": 2805,
+        "reasoning_output_tokens": 2070
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 372,
+      "date_utc": "2026-10-04T01:52:52.115517+00:00",
+      "run_id": "sol-range_present-rtc_time_counting-r05",
+      "source_sha256": "0324173db5fd8ee4c8ba1ec7a41b12bb26fdfc0285d8118beab64835673745e1",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14137,
+        "output_tokens": 2557,
+        "reasoning_output_tokens": 1792
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 373,
+      "date_utc": "2026-10-04T01:53:57.475049+00:00",
+      "run_id": "astra-range_present-context-r05",
+      "source_sha256": "5bbc7a077c71dcefdd563bfdece672e07bc596fc94a079fb860a69ecdb4b7e83",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14555,
+        "output_tokens": 1728,
+        "reasoning_output_tokens": 823
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 374,
+      "date_utc": "2026-10-04T01:55:11.960839+00:00",
+      "run_id": "astra-range_absent-context-r05",
+      "source_sha256": "298f6daf84568ee8945bfb2d83c2f474fc3943b98bf47fc6c56fb7a193bf1589",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14498,
+        "output_tokens": 1224,
+        "reasoning_output_tokens": 516
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 375,
+      "date_utc": "2026-10-04T01:56:06.249870+00:00",
+      "run_id": "sol-range_present-context-r05",
+      "source_sha256": "77a1794f4c4bb752445e509fac9c10d2ead472faf598e0e7b1d6528533a217fc",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14104,
+        "output_tokens": 2587,
+        "reasoning_output_tokens": 2112
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 376,
+      "date_utc": "2026-10-04T01:57:12.603540+00:00",
+      "run_id": "sol-range_absent-context-r05",
+      "source_sha256": "b730dcb31150db141f5c55911034d00ebed16f2ac8dfa1881be0a318d2749d80",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14045,
+        "output_tokens": 1947,
+        "reasoning_output_tokens": 1499
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 377,
+      "date_utc": "2026-10-04T01:58:04.455496+00:00",
+      "run_id": "luna-range_absent-context-r05",
+      "source_sha256": "f92043e1dd043d7944e61fd804c8c4edf6f17ed30e5c1420a917bbb77bf7be76",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13866,
+        "output_tokens": 1190,
+        "reasoning_output_tokens": 561
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 378,
+      "date_utc": "2026-10-04T01:58:41.166512+00:00",
+      "run_id": "luna-range_present-context-r05",
+      "source_sha256": "e84af103c5670b6ceb8b7a9d732f86e998c1473b222714d24661b9898df18196",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13925,
+        "output_tokens": 477,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 379,
+      "date_utc": "2026-10-04T01:58:54.743033+00:00",
+      "run_id": "luna-range_absent-lifo_api-r05",
+      "source_sha256": "135d429c5c8b4d611e85a3a3e34232826dfee7076d3551e0675570c925aa3b33",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13834,
+        "output_tokens": 349,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 380,
+      "date_utc": "2026-10-04T01:59:10.754610+00:00",
+      "run_id": "luna-range_present-lifo_api-r05",
+      "source_sha256": "1d2031d4de81c5bda95692d32a17e6a54d1508bfb7bedc57afa13b9934ca9709",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13891,
+        "output_tokens": 383,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 381,
+      "date_utc": "2026-10-04T01:59:22.887720+00:00",
+      "run_id": "sol-range_present-lifo_api-r05",
+      "source_sha256": "240e385a8db1746bf60ab7b91e165e6fc2971391d15c53b100b9b76f91b743e6",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14074,
+        "output_tokens": 1209,
+        "reasoning_output_tokens": 713
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 382,
+      "date_utc": "2026-10-04T01:59:55.951202+00:00",
+      "run_id": "sol-range_absent-lifo_api-r05",
+      "source_sha256": "1c819f017b2c066db7a2593833eb89d25cafb17a8f2c876f9a1cebf0b6e7b858",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14011,
+        "output_tokens": 915,
+        "reasoning_output_tokens": 484
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 383,
+      "date_utc": "2026-10-04T02:00:21.509191+00:00",
+      "run_id": "astra-range_present-lifo_api-r05",
+      "source_sha256": "7eba093616a33b3981fe8a642a918bb92656d412b1e38f8fc5ad2a220b8da0f2",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 14519,
+        "output_tokens": 640,
+        "reasoning_output_tokens": 103
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 384,
+      "date_utc": "2026-10-04T02:00:51.875720+00:00",
+      "run_id": "astra-range_absent-lifo_api-r05",
+      "source_sha256": "5e3462d2c1b2309dee9d2670876b29fa147080ad44cb9fed141e2bf94632200d",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14466,
+        "output_tokens": 627,
+        "reasoning_output_tokens": 173
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 385,
+      "date_utc": "2026-10-04T02:01:22.675340+00:00",
+      "run_id": "luna-range_present-queue-r05",
+      "source_sha256": "26aeb7eb50c741425ac2ca3d17d34868f8f8027b6a8fef14be62e546c6c4dd6a",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13886,
+        "output_tokens": 602,
+        "reasoning_output_tokens": 195
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 386,
+      "date_utc": "2026-10-04T02:01:43.319803+00:00",
+      "run_id": "luna-range_absent-queue-r05",
+      "source_sha256": "21ce7dced4dd65ca883eb2caf43ab8598da0ac805b23f67e3a454fe5b36f5a4b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13056,
+        "input_tokens": 13829,
+        "output_tokens": 391,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 387,
+      "date_utc": "2026-10-04T02:01:55.602700+00:00",
+      "run_id": "sol-range_present-queue-r05",
+      "source_sha256": "ed8886f6961a67209fb7b734b933c6cf4419bd4f6ff6a3fcb4d0e87eb3ed8acd",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14069,
+        "output_tokens": 820,
+        "reasoning_output_tokens": 425
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 388,
+      "date_utc": "2026-10-04T02:02:19.263755+00:00",
+      "run_id": "sol-range_absent-queue-r05",
+      "source_sha256": "ef298d8f30a9971a24cceb9091412ac482088e4aa6783bb182c45aa3fc06992b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 11776,
+        "input_tokens": 14010,
+        "output_tokens": 1003,
+        "reasoning_output_tokens": 606
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 389,
+      "date_utc": "2026-10-04T02:02:47.766156+00:00",
+      "run_id": "astra-range_present-queue-r05",
+      "source_sha256": "a8928faf7025ab0365284f35853f9e76f9502daa0a35cc1d5496ceb8fe9d3d6b",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14520,
+        "output_tokens": 687,
+        "reasoning_output_tokens": 237
+      }
+    },
+    {
+      "attempts": 1,
+      "call_index": 390,
+      "date_utc": "2026-10-04T02:03:20.975156+00:00",
+      "run_id": "astra-range_absent-queue-r05",
+      "source_sha256": "8d1aab59651a70d0a88a0b23d4b0d52b798a76db7f643b496bf256af3b021578",
+      "status": "generated",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 14457,
+        "output_tokens": 737,
+        "reasoning_output_tokens": 258
+      }
+    }
+  ],
+  "status_counts": {
+    "generated": 390
+  },
+  "token_totals_by_model": {
+    "astra": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 874496,
+      "input_tokens": 1889111,
+      "output_tokens": 173424,
+      "reasoning_output_tokens": 68985
+    },
+    "luna": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 1462272,
+      "input_tokens": 1807409,
+      "output_tokens": 91003,
+      "reasoning_output_tokens": 17337
+    },
+    "sol": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 1393920,
+      "input_tokens": 1831733,
+      "output_tokens": 226680,
+      "reasoning_output_tokens": 153545
+    }
+  }
+}

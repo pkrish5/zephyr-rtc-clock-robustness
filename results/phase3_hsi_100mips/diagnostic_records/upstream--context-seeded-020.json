@@ -1,0 +1,12 @@
+{
+  "diagnostic_outcome": "pass",
+  "diagnostic_record_path": "results/phase3_hsi_100mips/diagnostics/records/upstream--context-seeded-020.json",
+  "diagnostic_record_sha256": "a1a6f3d026c9c6ec89ea7e3287a3ac5d4b04f92717f82218d0332b8cb78192c7",
+  "diagnostic_virtual_ns": 5500000000,
+  "disposition": "original remains non-evaluable regardless of diagnostic outcome",
+  "original_outcome": "harness_error",
+  "original_record_path": "results/phase3_hsi_100mips/qualified/records/upstream--context-seeded-020.json",
+  "original_record_sha256": "2cf51aefc4a9c2aeef44ad86e2e66a70f5f57b7a47ab9b24cceb5695f782d2a7",
+  "original_virtual_ns": 0,
+  "run_id": "upstream--context-seeded-020"
+}

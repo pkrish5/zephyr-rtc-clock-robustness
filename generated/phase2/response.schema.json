@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "test_c": {
+      "type": "string"
+    }
+  },
+  "required": ["test_c"],
+  "additionalProperties": false
+}

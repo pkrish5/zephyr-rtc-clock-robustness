@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "lifo_isr_to_thread.test_lifo_transfer_from_isr",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "error": null,
+  "hsi_frequency_hz": 16088811,
+  "index": 12,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "lifo_isr_to_thread.test_lifo_transfer_from_isr"
+      ],
+      "uart_bytes": 707,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--lifo_api-r03-seeded-012"
+}

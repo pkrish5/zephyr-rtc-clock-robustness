@@ -1,0 +1,50 @@
+[
+  {
+    "label": "brittle test assumption",
+    "reason": "At seeded 21,402 Hz, the nominal-32-kHz RTC prescaler makes ten RTC seconds require about 14.95 CPU seconds, beyond the test's fixed 13-second wait. The only assertion failure is the expected callback check at source line 140; exact replay agrees. The delayed-event mechanism is corroborated by 17,000 and 24,428 Hz diagnostics, with hardware validation still pending.",
+    "replay_identical": true,
+    "run_id": "rtc_alarm_callback-perturbed-001-mips16"
+  },
+  {
+    "label": "brittle test assumption",
+    "reason": "At seeded 24,428 Hz, ten RTC seconds require about 13.10 CPU seconds, just past the fixed 13-second check. The sole failure is source line 140 and exact replay agrees. A separate diagnostic finds the callback flag set by the 13.5-second virtual checkpoint after the failing check; hardware validation remains pending.",
+    "replay_identical": true,
+    "run_id": "rtc_alarm_callback-perturbed-008-mips16"
+  },
+  {
+    "label": "brittle test assumption",
+    "reason": "At seeded 20,500 Hz, the nominal-32-kHz RTC prescaler makes ten RTC seconds require about 15.61 CPU seconds, beyond the test's fixed 13-second wait. The sole failure is the expected callback check at source line 140 and exact replay agrees. Two other LSI-frequency diagnostics corroborate late callbacks in Renode; hardware validation remains pending.",
+    "replay_identical": true,
+    "run_id": "rtc_alarm_callback-perturbed-014-mips16"
+  },
+  {
+    "label": "brittle test assumption",
+    "reason": "At seeded 23,847 Hz, the nominal-32-kHz RTC prescaler makes ten RTC seconds require about 13.42 CPU seconds, beyond the test's fixed 13-second wait. The sole failure is the expected callback check at source line 140 and exact replay agrees. Two other LSI-frequency diagnostics corroborate late callbacks in Renode; hardware validation remains pending.",
+    "replay_identical": true,
+    "run_id": "rtc_alarm_callback-perturbed-015-mips16"
+  },
+  {
+    "label": "brittle test assumption",
+    "reason": "At seeded 22,939 Hz, the nominal-32-kHz RTC prescaler makes ten RTC seconds require about 13.95 CPU seconds, beyond the test's fixed 13-second wait. The sole failure is the expected callback check at source line 140 and exact replay agrees. Two other LSI-frequency diagnostics corroborate late callbacks in Renode; hardware validation remains pending.",
+    "replay_identical": true,
+    "run_id": "rtc_alarm_callback-perturbed-018-mips16"
+  },
+  {
+    "label": "brittle test assumption",
+    "reason": "At seeded 22,405 Hz, the nominal-32-kHz RTC prescaler makes ten RTC seconds require about 14.28 CPU seconds, beyond the test's fixed 13-second wait. The sole failure is the expected callback check at source line 140 and exact replay agrees. Two other LSI-frequency diagnostics corroborate late callbacks in Renode; hardware validation remains pending.",
+    "replay_identical": true,
+    "run_id": "rtc_alarm_callback-perturbed-021-mips16"
+  },
+  {
+    "label": "brittle test assumption",
+    "reason": "At seeded 20,701 Hz, the nominal-32-kHz RTC prescaler makes ten RTC seconds require about 15.46 CPU seconds, beyond the test's fixed 13-second wait. The sole failure is the expected callback check at source line 140 and exact replay agrees. Two other LSI-frequency diagnostics corroborate late callbacks in Renode; hardware validation remains pending.",
+    "replay_identical": true,
+    "run_id": "rtc_alarm_callback-perturbed-028-mips16"
+  },
+  {
+    "label": "brittle test assumption",
+    "reason": "17,000 Hz is inside the ST LSI bound. The frozen test fails only at its 13-second fixed callback wait; exact replay agrees. An independent diagnostic reads RTC 00:00:02 and callback=0 at 13.5 virtual seconds, then RTC 00:00:05 and callback=1 at 20 seconds. This is a Renode-specific attribution pending hardware validation.",
+    "replay_identical": true,
+    "run_id": "rtc_alarm_callback-min-000-mips16"
+  }
+]

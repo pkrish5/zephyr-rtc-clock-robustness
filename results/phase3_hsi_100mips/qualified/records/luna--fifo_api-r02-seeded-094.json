@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "case": "fifo_irq.test_isr_to_thread_fifo_order",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "elf_path": "generated/phase2_luna/build/fifo_api/r02/zephyr/zephyr.elf",
+  "elf_sha256": "dfd5686103ff5325f8bf761b10dee5cb6ca1732db8916de5cc70d9f66c5ec94f",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16126681,
+  "index": 94,
+  "kind": "agent",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/luna--fifo_api-r02-seeded-094.log",
+  "monitor_sha256": "db353049079bf38e2eca3b5fb7a7b1ee724a4e603267e97dbe03bb1c8b5bd682",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": true,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16126681.repl",
+  "platform_sha256": "621f27a86c264342af3c26b66cc359f122a9332d5d73729da713f1d66429c903",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "luna--fifo_api-r02-seeded-094",
+  "seed": 94,
+  "selected_case": "full_generated_suite",
+  "selected_case_sources": null,
+  "source_path": "generated/phase2_luna/suites/fifo_api/r02/test.c",
+  "source_sha256": "bb36fb568b9af15f840eff25a8a916b5f647dd9d36e224d1b696244c344413b7",
+  "systick_frequency_hz": 16126681,
+  "task_id": "fifo_api",
+  "timestamp_utc": "2026-10-01T22:07:07.173351+00:00",
+  "timing_bound": "no_issue_found",
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/luna--fifo_api-r02-seeded-094.json",
+  "trace_sha256": "96c583c4b791f286ce9ef50c9f827cfc525e3f69542be210a3f2dc60d5ce7ab9",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/luna--fifo_api-r02-seeded-094.log",
+  "uart_sha256": "c3713a9d4c0a70fa10a75a7a141def73c5e33bfd13caf9eca435fa566727c9ae",
+  "version_id": "luna/fifo_api-r02",
+  "virtual_ns": 250000000,
+  "wall_seconds": 6.309
+}

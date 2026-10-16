@@ -1,0 +1,63 @@
+#include <zephyr/device.h>
+#include <zephyr/drivers/rtc.h>
+#include <zephyr/kernel.h>
+#include <zephyr/ztest.h>
+
+#define RTC_DEVICE DEVICE_DT_GET(DT_ALIAS(rtc))
+#define ALARM_CHANNEL 0
+#define ALARM_MASK (RTC_ALARM_TIME_MASK_SECOND | \
+                    RTC_ALARM_TIME_MASK_MINUTE | \
+                    RTC_ALARM_TIME_MASK_HOUR)
+
+ZTEST(rtc_alarm_pending, test_alarm_pending)
+{
+	const struct rtc_time start = {
+		.tm_sec = 55,
+		.tm_min = 59,
+		.tm_hour = 23,
+		.tm_mday = 31,
+		.tm_mon = 11,
+		.tm_year = 124,
+	};
+	const struct rtc_time alarm = {
+		.tm_sec = 5,
+		.tm_min = 0,
+		.tm_hour = 0,
+		.tm_mday = 1,
+		.tm_mon = 0,
+		.tm_year = 125,
+	};
+	struct rtc_time readback;
+	int ret;
+
+	zassert_true(device_is_ready(RTC_DEVICE), "RTC device is not ready");
+	ret = rtc_set_time(RTC_DEVICE, &start);
+	zassert_equal(ret, 0, "rtc_set_time failed: %d", ret);
+
+	ret = rtc_alarm_set_time(RTC_DEVICE, ALARM_CHANNEL, &alarm, ALARM_MASK);
+	zassert_equal(ret, 0, "rtc_alarm_set_time failed: %d", ret);
+	ret = rtc_alarm_get_time(RTC_DEVICE, ALARM_CHANNEL, &readback);
+	zassert_equal(ret, 0, "rtc_alarm_get_time failed: %d", ret);
+	zassert_equal(readback.tm_sec, alarm.tm_sec, "alarm second mismatch");
+	zassert_equal(readback.tm_min, alarm.tm_min, "alarm minute mismatch");
+	zassert_equal(readback.tm_hour, alarm.tm_hour, "alarm hour mismatch");
+
+	k_sleep(K_SECONDS(2));
+	ret = rtc_alarm_is_pending(RTC_DEVICE, ALARM_CHANNEL);
+	zassert_equal(ret, 0, "alarm became pending before configured time");
+
+	/* The target is ten seconds after the set time; allow 15 seconds for
+	 * RTC tick phase, scheduling, and polling latency.
+	 */
+	for (int i = 0; i < 15; i++) {
+		ret = rtc_alarm_is_pending(RTC_DEVICE, ALARM_CHANNEL);
+		zassert_true(ret >= 0, "rtc_alarm_is_pending failed: %d", ret);
+		if (ret > 0) {
+			return;
+		}
+		k_sleep(K_SECONDS(1));
+	}
+	zassert_true(false, "alarm did not become pending within 15 seconds");
+}
+
+ZTEST_SUITE(rtc_alarm_pending, NULL, NULL, NULL, NULL, NULL);

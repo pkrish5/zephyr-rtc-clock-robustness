@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "timer_interrupt_path.test_one_shot_wakes_blocked_thread",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "timer_interrupt_path.test_one_shot_wakes_blocked_thread"
+      ],
+      "uart_bytes": 893,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "fail",
+  "repeat": 1,
+  "run_id": "sol-range_absent-pending-r04-nominal-001"
+}

@@ -1,0 +1,42 @@
+{
+  "activation": true,
+  "cases": [
+    {
+      "case": "reference_rtc.test_calendar_counting",
+      "status": "fail"
+    }
+  ],
+  "effective_rtc_hz": 10000,
+  "elf_sha256": "96e0133327488796d1ad82ee6f62be0c10e389e6f584d2fa6989a93da721127b",
+  "error": null,
+  "family": "rtc_time_counting",
+  "kind": "reference",
+  "manifest_sha256": "e9c93dfdb1bfd9049d04f18dfd9c60e990092e3d6551a71d63275ecf63af7799",
+  "model": "reference",
+  "monitor_path": "results/rtc_timing_mutants/activation_monitor/activation-rtc_time_counting-late.log",
+  "monitor_sha256": "3e9676002e1e12d7d62c8c457268fb004fffc829c820f4363bd42b521004530c",
+  "mutant": "late",
+  "nominal_host_rtc_hz": 32000,
+  "outcome": "fail",
+  "platform_path": "results/rtc_timing_mutants/platforms/rtc_late_10000.repl",
+  "platform_sha256": "7b852f131ae9e35aa62d9b03a2c4a4b968c415c441f721252b2b549e510496e9",
+  "prompt_condition": null,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "activation-rtc_time_counting-late",
+  "source_sha256": {
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay": "171a39bb9ae665981d0ad54fa8a5d25631d0a7f261f5ba959e83f87e91d93423",
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88",
+    "subjects/reference_rtc/counting/CMakeLists.txt": "4090e8806931beb767ea01fca78ef90ed117e9acfd3624861831ff99ca3c39e4",
+    "subjects/reference_rtc/counting/prj.conf": "64f22c1edf32cf2dad0b50bca7bc388eb9b69da9447d31f4610ddb92b98a0e44",
+    "subjects/reference_rtc/counting/test.c": "7f96bf1815c9fbfa2dd7311878fa7fabf6c7d0fa525f634d9c39c20af1b8dd86",
+    "subjects/reference_rtc/reference_common.h": "c39135bae91da1bc684b32a7a7e1a5176a1c8ce3c598db9f3ec777af241166d2"
+  },
+  "suite_id": "rtc_time_counting",
+  "timestamp_utc": "2026-10-06T16:20:03.530617+00:00",
+  "trace_path": "results/rtc_timing_mutants/activation_traces/activation-rtc_time_counting-late.json",
+  "trace_sha256": "13c1ee52f19b0586bd27648034d317879c59653b92a2e30a7e0eea474048da09",
+  "uart_path": "results/rtc_timing_mutants/activation_uart/activation-rtc_time_counting-late.log",
+  "uart_sha256": "030235f2491c4529b09790ea65981be377127a44fc31b866c9cef430eec82afe",
+  "virtual_ns": 26500000000,
+  "wall_seconds": 77.841
+}

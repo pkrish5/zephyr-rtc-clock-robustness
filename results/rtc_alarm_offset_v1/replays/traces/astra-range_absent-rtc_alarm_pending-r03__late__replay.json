@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm_pending.test_calendar_rollover",
+      "status": "fail"
+    }
+  ],
+  "delay_measurements": [],
+  "error": null,
+  "observations": [
+    {
+      "latest_case": [
+        "FAIL",
+        "rtc_alarm_pending.test_calendar_rollover"
+      ],
+      "uart_bytes": 1039,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "astra-range_absent-rtc_alarm_pending-r03__late__replay"
+}

@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "case": "queue_isr_transfer.test_isr_append_order_and_empty",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "generated/phase2_luna/build/queue/r03/zephyr/zephyr.elf",
+  "elf_sha256": "d3c06df07198fcda9f81827934c59d193a70f7be6bbf153c4153b14c26788c68",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 15941993,
+  "index": 97,
+  "kind": "agent",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/luna--queue-r03-seeded-097.log",
+  "monitor_sha256": "709ec062e05167cf54750a6b1d65a2932665a00a64e1440558bcd13ed085ffee",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": true,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_15941993.repl",
+  "platform_sha256": "27ae555018371ed9960667a38591f1b740e302197c893d29466ef82924a8a9f0",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "luna--queue-r03-seeded-097",
+  "seed": 97,
+  "selected_case": "full_generated_suite",
+  "selected_case_sources": null,
+  "source_path": "generated/phase2_luna/suites/queue/r03/test.c",
+  "source_sha256": "7897fe45a34c3ebe7cc84d3312129d49b0eba4b73bb558f65e491d72b2a5c8ed",
+  "systick_frequency_hz": 15941993,
+  "task_id": "queue",
+  "timestamp_utc": "2026-10-01T22:01:12.898122+00:00",
+  "timing_bound": "no_issue_found",
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/luna--queue-r03-seeded-097.json",
+  "trace_sha256": "e6b79d1f3125033435f1d2410817cadd14156221effd75406a086934191410fa",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/luna--queue-r03-seeded-097.log",
+  "uart_sha256": "949426217f82f717ca84a8cf8ff75b60c9f4dce6899bb1447518a44f1c9aad83",
+  "version_id": "luna/queue-r03",
+  "virtual_ns": 250000000,
+  "wall_seconds": 6.691
+}

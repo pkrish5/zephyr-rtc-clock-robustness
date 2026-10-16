@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "case": "lifo_contexts.test_lifo_isr2thread",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_contexts.test_lifo_thread2isr",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_contexts_1cpu.test_lifo_thread2thread",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_fail.test_lifo_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_loop.test_lifo_loop",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "subjects/phase1_zephyr/build/lifo_api/zephyr/zephyr.elf",
+  "elf_sha256": "824da445a4e05bdb6cf00126a73af20a38e90d292019b68f13667302925a376c",
+  "error": "TIMEOUT: <pexpect.pty_spawn.spawn object at 0x105e37890>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-eq34_58c/renode.cfg']\nbuffer (last 100 chars): 'emulation RunFor \"0.250000000\"\\r\\n\\r('\nbefore (last 100 chars): 'emulation RunFor \"0.250000000\"\\r\\n\\r('\nafter: <class 'pexpect.exceptions.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: False\npid: 25686\nchild_fd: 26\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/phase3_hsi_100mips/qualified/monitor/upstream--lifo_api-seeded-098.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')\n<pexpect.pty_spawn.spawn object at 0x105e37890>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-eq34_58c/renode.cfg']\nbuffer (last 100 chars): 'emulation RunFor \"0.250000000\"\\r\\n\\r('\nbefore (last 100 chars): 'emulation RunFor \"0.250000000\"\\r\\n\\r('\nafter: <class 'pexpect.exceptions.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: False\npid: 25686\nchild_fd: 26\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/phase3_hsi_100mips/qualified/monitor/upstream--lifo_api-seeded-098.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')",
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16026855,
+  "index": 98,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--lifo_api-seeded-098.log",
+  "monitor_sha256": "d72f41f56a8cf6b8c26d303bada242680198e601ed32c7dda664ac67092da21b",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "harness_error",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16026855.repl",
+  "platform_sha256": "8d09091f03428fcbf0282190f159d71c596424ad7bad87444694c3f1766fdad6",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--lifo_api-seeded-098",
+  "seed": 98,
+  "selected_case": "lifo_contexts.test_lifo_isr2thread",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_contexts.c": "eeac6acea7b58b046d556f264cd904f479ed7f136fdcc7363ab6f03804271168",
+    "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_loop.c": "5dac91f91baeb84996d4151c7474559b1f66a1c27f5683ea8394c50d7fcec4f6"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 16026855,
+  "task_id": "lifo_api",
+  "timestamp_utc": "2026-10-02T20:51:46.827323+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--lifo_api-seeded-098.json",
+  "trace_sha256": "a80cd17a5f222582d378c195f763b715139e4f86e228bf73056b8e6c1fafeb79",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--lifo_api-seeded-098.log",
+  "uart_sha256": "31f83b61e5605d7e5e117207c5708c7dced91898047b24a4f708a489de18fbdd",
+  "version_id": "upstream/lifo_api",
+  "virtual_ns": 0,
+  "wall_seconds": 5.475
+}

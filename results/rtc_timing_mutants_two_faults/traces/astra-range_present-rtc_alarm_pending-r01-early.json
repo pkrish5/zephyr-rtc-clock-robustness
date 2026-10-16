@@ -1,0 +1,72 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm_pending.test_year_rollover",
+      "status": "pass"
+    }
+  ],
+  "effective_rtc_hz": 64000,
+  "error": null,
+  "observations": [
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 1000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 1500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 2000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 2500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 3000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 3500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 4000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 4500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 5000000000
+    },
+    {
+      "latest_case": [
+        "PASS",
+        "rtc_alarm_pending.test_year_rollover"
+      ],
+      "uart_bytes": 676,
+      "virtual_ns": 5500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "astra-range_present-rtc_alarm_pending-r01-early"
+}

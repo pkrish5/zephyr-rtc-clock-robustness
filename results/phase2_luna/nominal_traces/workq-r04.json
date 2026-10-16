@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "case": "system_work_delayable.test_system_work_delayable_timing",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 189,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 189,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 189,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 189,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "system_work_delayable.test_system_work_delayable_timing"
+      ],
+      "uart_bytes": 917,
+      "virtual_ns": 2500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "workq-r04",
+  "seed": 0
+}

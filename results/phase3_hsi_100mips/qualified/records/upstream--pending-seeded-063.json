@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "case": "pending.test_pending_fifo",
+      "status": "pass"
+    },
+    {
+      "case": "pending.test_pending_lifo",
+      "status": "pass"
+    },
+    {
+      "case": "pending.test_pending_timer",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "subjects/phase1_zephyr/build/pending/zephyr/zephyr.elf",
+  "elf_sha256": "99009870f5c0c446ad1ad53febc5aa119a139813982b2e459929d8e630a34b55",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16073381,
+  "index": 63,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--pending-seeded-063.log",
+  "monitor_sha256": "8b94ea5b5b6bea512f7fa0c695c13f669c5402f8817a8a32a324257ea5f1bbc4",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16073381.repl",
+  "platform_sha256": "df5cae2977059419b0db9e34d9cd47b9bb460cfae1f94ea9b61050431068ca03",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--pending-seeded-063",
+  "seed": 63,
+  "selected_case": "pending.test_pending_timer",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/pending/src/main.c": "a8bffa54aa1c964fa8eb1d81f09448901bb9b356215b1e7a3535b9fbba6f4dd9"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 16073381,
+  "task_id": "pending",
+  "timestamp_utc": "2026-10-02T22:03:26.109583+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--pending-seeded-063.json",
+  "trace_sha256": "90fe72380aae0e0d5b5d7fc885b21d1ccf35bc21cf6ebe9a81be0c956c9f0361",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--pending-seeded-063.log",
+  "uart_sha256": "b24043d0a8d841bed96c4f99d8b349135984ec74e3649ea598a3fecea6dcbc83",
+  "version_id": "upstream/pending",
+  "virtual_ns": 6000000000,
+  "wall_seconds": 27.484
+}

@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "timer_sleep_wakeup.test_timer_driven_sleep_and_wakeup",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_sleep_wakeup.test_timer_driven_sleep_and_wakeup"
+      ],
+      "uart_bytes": 728,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "context-r04",
+  "seed": 0
+}

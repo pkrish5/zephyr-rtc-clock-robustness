@@ -1,0 +1,11 @@
+{
+  "cases": [],
+  "condition": "nominal",
+  "cpu_mips": 16,
+  "error": "EOF: End Of File (EOF). Empty string style platform.\n<pexpect.pty_spawn.spawn object at 0x109eefb10>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-2dpvcd33/renode.cfg']\nbuffer (last 100 chars): ''\nbefore (last 100 chars): 'eInterface.<>c__DisplayClass0_1.<Run>b__3(Object x)\\r\\n   at System.Threading.Thread.StartCallback()\\r\\n'\nafter: <class 'pexpect.exceptions.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: True\npid: 69383\nchild_fd: 12\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/stage_b_callback_v1/nominal_monitor/astra-range_present-rtc_alarm_callback-r01-nominal-003.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')",
+  "frequency_hz": 32000,
+  "observations": [],
+  "outcome": "harness_error",
+  "repeat": 3,
+  "run_id": "astra-range_present-rtc_alarm_callback-r01-nominal-003"
+}

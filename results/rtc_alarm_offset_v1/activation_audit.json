@@ -1,0 +1,89 @@
+{
+  "status": "validated",
+  "activation_namespace": "replays",
+  "original_reference_records": "sandbox-denied Renode history-file startup errors; preserved unchanged",
+  "manifest_sha256": "8cb29f03c2d2bf604846508fc2149ac96b88953b6ce6594ed0b1e98afaf4fdea",
+  "rows": [
+    {
+      "run_id": "reference-rtc_alarm_callback__nominal__replay",
+      "sign": 0,
+      "family": "rtc_alarm_callback",
+      "outcome": "pass",
+      "programming_logs": 0,
+      "valid": true,
+      "record_sha256": "0c6fc8a6f5ff838ba0f9a6d767d357859cb3c3a478afaf06fb675ee0e16b5701"
+    },
+    {
+      "run_id": "reference-rtc_alarm_callback__early__replay",
+      "sign": -1,
+      "family": "rtc_alarm_callback",
+      "outcome": "fail",
+      "programming_logs": 1,
+      "valid": true,
+      "record_sha256": "8500a889e10039bb00594a03d9a075435d2c1cac6ef1d2a4acbbdfe6499efa11"
+    },
+    {
+      "run_id": "reference-rtc_alarm_callback__late__replay",
+      "sign": 1,
+      "family": "rtc_alarm_callback",
+      "outcome": "fail",
+      "programming_logs": 1,
+      "valid": true,
+      "record_sha256": "da1512ab3cf36631da2da269973b7b145c3b039b88716d7602ebefec0b75e886"
+    },
+    {
+      "run_id": "reference-rtc_alarm_pending__nominal__replay",
+      "sign": 0,
+      "family": "rtc_alarm_pending",
+      "outcome": "pass",
+      "programming_logs": 0,
+      "valid": true,
+      "record_sha256": "94476d4a8faaa06aa857cbbfa689f1f5c6b5ced862b5724fca569df5d2885ddc"
+    },
+    {
+      "run_id": "reference-rtc_alarm_pending__early__replay",
+      "sign": -1,
+      "family": "rtc_alarm_pending",
+      "outcome": "fail",
+      "programming_logs": 1,
+      "valid": true,
+      "record_sha256": "3b701e2e7c03d64fd54d76a2131ee5870ebf9d9c28e9ee09de6c59991a2b8c96"
+    },
+    {
+      "run_id": "reference-rtc_alarm_pending__late__replay",
+      "sign": 1,
+      "family": "rtc_alarm_pending",
+      "outcome": "fail",
+      "programming_logs": 1,
+      "valid": true,
+      "record_sha256": "e42d7f26fa81b9d4f6368afdd91997658fae38246331d715ec7fda5e557e69ef"
+    },
+    {
+      "run_id": "reference-rtc_time_counting__nominal__replay",
+      "sign": 0,
+      "family": "rtc_time_counting",
+      "outcome": "pass",
+      "programming_logs": 0,
+      "valid": true,
+      "record_sha256": "d3b4c2bf5b5d09d44857218924c4be390d6a2524dfa1b95a5eff2292626a4f95"
+    },
+    {
+      "run_id": "reference-rtc_time_counting__early__replay",
+      "sign": -1,
+      "family": "rtc_time_counting",
+      "outcome": "pass",
+      "programming_logs": 0,
+      "valid": true,
+      "record_sha256": "3fb052689982fb62f8e938c5e11cecb0a6ba2e26af34b5c7624f75a58b87218d"
+    },
+    {
+      "run_id": "reference-rtc_time_counting__late__replay",
+      "sign": 1,
+      "family": "rtc_time_counting",
+      "outcome": "pass",
+      "programming_logs": 0,
+      "valid": true,
+      "record_sha256": "a9d683ff01767cd97ed59a0f4ef7da07bf1bdb54e0c3787e800d99182912278f"
+    }
+  ]
+}

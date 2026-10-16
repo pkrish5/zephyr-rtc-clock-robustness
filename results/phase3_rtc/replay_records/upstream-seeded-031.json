@@ -1,0 +1,17 @@
+{
+  "error": null,
+  "identical_trace_and_verdict": true,
+  "monitor_path": "results/phase3_rtc/replay_monitor/upstream-seeded-031.log",
+  "monitor_sha256": "828407085f0b9e5b5c58318d42d0a245ce2146c6a3d47d04299a315b169c8669",
+  "original_outcome": "fail",
+  "original_trace_path": "results/phase3_rtc/traces/upstream-seeded-031.json",
+  "original_trace_sha256": "08c9f073326d277f5964f76bf45a1e313c384b326dca12ff17249907c95a263c",
+  "outcome": "fail",
+  "run_id": "upstream-seeded-031",
+  "timestamp_utc": "2026-09-30T04:47:11.879045+00:00",
+  "trace_path": "results/phase3_rtc/replay_traces/upstream-seeded-031.json",
+  "trace_sha256": "08c9f073326d277f5964f76bf45a1e313c384b326dca12ff17249907c95a263c",
+  "uart_path": "results/phase3_rtc/replay_uart/upstream-seeded-031.log",
+  "uart_sha256": "a6d6a0327c054587933a76145803c7c25709544f3e878182ddf683e19df2016e",
+  "wall_seconds": 46.005
+}

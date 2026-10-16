@@ -1,0 +1,14 @@
+{
+  "board": "stm32f4_disco/stm32f407xx",
+  "build_log_sha256": "40adc664fb186202ae5acef8df6eec5cd4eb92066adec53aa0d98dac9d1748b8",
+  "config_sha256": {
+    "subjects/phase1_lsi_rtc/rtc_alarm.conf": "1158ea2cf38aea08e12a813b4a10eca46197dfa866a98ffba16aabc7d1a2c177",
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay": "171a39bb9ae665981d0ad54fa8a5d25631d0a7f261f5ba959e83f87e91d93423",
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88"
+  },
+  "elf_path": "subjects/phase1_lsi_rtc/build/rtc_api/zephyr/zephyr.elf",
+  "elf_sha256": "536067b142e28598c0872db4d82351a27594b5c270caf1b2b1f54ec0322673ad",
+  "test_source_path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api",
+  "test_source_sha256": "1257cd3d9523f22a05a85448b2a6ff04534ab9827473867954b900fcc5a0c6c6",
+  "upstream_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

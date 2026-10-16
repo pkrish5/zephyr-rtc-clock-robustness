@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "case": "delayed_work.test_system_queue_delay",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "delayed_work.test_system_queue_delay"
+      ],
+      "uart_bytes": 671,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 0,
+  "run_id": "sol-range_absent-workq-r04-nominal-000"
+}

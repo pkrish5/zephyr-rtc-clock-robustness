@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "semaphore_irq_offload.test_isr_gives_increment_count",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "semaphore_irq_offload.test_isr_gives_increment_count"
+      ],
+      "uart_bytes": 728,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "semaphore-r04",
+  "seed": 0
+}

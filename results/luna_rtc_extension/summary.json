@@ -1,0 +1,120 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "ChatGPT-authenticated CLI does not expose billed API dollars",
+  "build_statuses": {
+    "fail": 5,
+    "pass": 5
+  },
+  "codex_cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "cohort": "luna_rtc_extension",
+  "finalized_generations": 10,
+  "generation_statuses": {
+    "generated": 10
+  },
+  "model_requested": "gpt-6-luna",
+  "nominal_statuses": {
+    "fail": 1,
+    "not_run": 5,
+    "pass": 4
+  },
+  "oracle_statuses": {
+    "inadequate": 8,
+    "uncertain": 2
+  },
+  "planned_runs": 10,
+  "rows": [
+    {
+      "arm": "lsi_pilot",
+      "human_case": "rtc_api.test_time_counting",
+      "prompt_sha256": "6ef15951070dafb5a65d769d3d89520242cbac9549fe38ba8c08b5a850edd41e",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "uncertain",
+          "run_id": "rtc_time_counting-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "uncertain",
+          "run_id": "rtc_time_counting-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "inadequate",
+          "run_id": "rtc_time_counting-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "rtc_time_counting-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "inadequate",
+          "run_id": "rtc_time_counting-r05"
+        }
+      ],
+      "task_id": "rtc_time_counting"
+    },
+    {
+      "arm": "lsi_pilot",
+      "human_case": "rtc_api.test_alarm",
+      "prompt_sha256": "c6a87ddd87222b9a019d61d1e64ea0bb0f9c72488f4dea20b278a0d9e4beda3d",
+      "runs": [
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_pending-r01"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_pending-r02"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_pending-r03"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_pending-r04"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_pending-r05"
+        }
+      ],
+      "task_id": "rtc_alarm_pending"
+    }
+  ],
+  "scope_note": "Ten-run Luna adjacent RTC task extension",
+  "tool_events": 0,
+  "usage_totals": {
+    "cached_input_tokens": 65280,
+    "input_tokens": 139126,
+    "output_tokens": 8080
+  }
+}

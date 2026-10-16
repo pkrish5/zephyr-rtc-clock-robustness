@@ -1,0 +1,12 @@
+{
+  "colliding_run_id": "upstream--context-seeded-027",
+  "event": "serial dispatcher stopped at existing-artifact guard while tail shard was executing the same registered context seed",
+  "recorded_utc": "2026-10-03T02:36:17.794874+00:00",
+  "registered_schedule_changed": false,
+  "resolution": "do not restart serial dispatcher; disjoint tail shards completed all remaining versions; full raw audit found exact record coverage, no duplicate record, and no orphan monitor or trace artifacts",
+  "serial_log_path": "results/phase3_hsi_100mips/qualified_batch.log",
+  "serial_session_exit_code": 1,
+  "tail_outcome": "pass",
+  "tail_record_path": "results/phase3_hsi_100mips/qualified/records/upstream--context-seeded-027.json",
+  "tail_record_sha256": "92abc73f1260f2c6e8a37f86787b10ae6c9dff5cf9430afd5de2cb2437a6ec55"
+}

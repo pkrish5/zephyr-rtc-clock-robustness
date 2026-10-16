@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "case": "lifo_contexts.test_lifo_isr2thread",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_contexts.test_lifo_thread2isr",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_contexts_1cpu.test_lifo_thread2thread",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_fail.test_lifo_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_loop.test_lifo_loop",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "subjects/phase1_zephyr/build/lifo_api/zephyr/zephyr.elf",
+  "elf_sha256": "824da445a4e05bdb6cf00126a73af20a38e90d292019b68f13667302925a376c",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16001379,
+  "index": 60,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--lifo_api-seeded-060.log",
+  "monitor_sha256": "e8ca818c82e59dfa49110ff50cadbe466966dda692e90caa594366e79069675f",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16001379.repl",
+  "platform_sha256": "ee5e2e2b99b344333c4e8972eff2b96e207891397d1e9f75502f491ac9af82e2",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--lifo_api-seeded-060",
+  "seed": 60,
+  "selected_case": "lifo_contexts.test_lifo_isr2thread",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_contexts.c": "eeac6acea7b58b046d556f264cd904f479ed7f136fdcc7363ab6f03804271168",
+    "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_loop.c": "5dac91f91baeb84996d4151c7474559b1f66a1c27f5683ea8394c50d7fcec4f6"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 16001379,
+  "task_id": "lifo_api",
+  "timestamp_utc": "2026-10-02T14:31:34.297974+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--lifo_api-seeded-060.json",
+  "trace_sha256": "34f8c40af76d8353e7ccb193b79023720afe22363b5822ae9a1a1d9b784445fd",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--lifo_api-seeded-060.log",
+  "uart_sha256": "31f83b61e5605d7e5e117207c5708c7dced91898047b24a4f708a489de18fbdd",
+  "version_id": "upstream/lifo_api",
+  "virtual_ns": 250000000,
+  "wall_seconds": 6.0
+}

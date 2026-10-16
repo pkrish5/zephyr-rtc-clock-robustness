@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "thread_wakeup.test_isr_wakes_sleeping_thread_early",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 99,
+  "error": null,
+  "hsi_frequency_hz": 15878496,
+  "index": 72,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "thread_wakeup.test_isr_wakes_sleeping_thread_early"
+      ],
+      "uart_bytes": 714,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--sleep-r02-seeded-072"
+}

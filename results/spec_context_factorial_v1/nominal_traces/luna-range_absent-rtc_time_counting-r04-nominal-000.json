@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "rtc_calendar.test_calendar_counts_across_year_boundary",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 16,
+  "error": null,
+  "frequency_hz": 32000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "rtc_calendar.test_calendar_counts_across_year_boundary"
+      ],
+      "uart_bytes": 874,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "repeat": 0,
+  "run_id": "luna-range_absent-rtc_time_counting-r04-nominal-000"
+}

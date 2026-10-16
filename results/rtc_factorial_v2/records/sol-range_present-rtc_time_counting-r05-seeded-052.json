@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "case": "rtc_calendar.advances_across_year_boundary",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 16,
+  "elf_sha256": "cd1710ca95c31c22696245b4b22b8bab2e887aecbd0751a291f3cc8502953c85",
+  "error": null,
+  "family": "rtc_time_counting",
+  "kind": "ai",
+  "lsi_frequency_hz": 25792,
+  "manifest_sha256": "8df9aefcba0063f4a93183e8e7c0937af7b6787b52e65375ea2a607db2cbca2e",
+  "max_virtual_sec": 60,
+  "model": "sol",
+  "monitor_path": "results/rtc_factorial_v2/monitor/sol-range_present-rtc_time_counting-r05-seeded-052.log",
+  "monitor_sha256": "25835faeeee4168a468b501f586dc20806ebeb7db8bfad284a5eaea70b871102",
+  "outcome": "pass",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_25792.repl",
+  "platform_sha256": "a8876ad4d019985b82f0a6802c496d5fbc32640c51bbcc81b33a67a1bab60fa5",
+  "prompt_condition": "range_present",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "role": "sampled_predictable",
+  "run_id": "sol-range_present-rtc_time_counting-r05-seeded-052",
+  "schedule_sha256": "9ca79765fc9fc73cbbb38979632cbc0433e70ed1543b81015bea05e0f72e6995",
+  "seed": 52,
+  "source_sha256": "0324173db5fd8ee4c8ba1ec7a41b12bb26fdfc0285d8118beab64835673745e1",
+  "step_ns": 500000000,
+  "suite_id": "sol-range_present-rtc_time_counting-r05",
+  "systick_frequency_hz": 16000000,
+  "timestamp_utc": "2026-10-05T02:02:48.194287+00:00",
+  "trace_path": "results/rtc_factorial_v2/traces/sol-range_present-rtc_time_counting-r05-seeded-052.json",
+  "trace_sha256": "6190b122bf5fd21f5a64617ffeb9fd2b168adbfeb3c1228bf7122944334aaeb4",
+  "uart_path": "results/rtc_factorial_v2/uart/sol-range_present-rtc_time_counting-r05-seeded-052.log",
+  "uart_sha256": "b6b267cd0b303440a0e4b8cedc9ec5c3e5d8b37aed616cdd42d2d2abe5d02a19",
+  "virtual_ns": 13000000000,
+  "wall_seconds": 54.026
+}

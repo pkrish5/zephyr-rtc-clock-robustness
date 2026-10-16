@@ -1,0 +1,1612 @@
+{
+  "board": "stm32f4_disco/stm32f407xx",
+  "classification_counts": {
+    "brittle test assumption": 0,
+    "genuine firmware race/bug": 0,
+    "simulator/peripheral-model artifact": 0,
+    "unknown": 0
+  },
+  "excluded": [
+    {
+      "case_counts": {
+        "fail": 3,
+        "pass": 0,
+        "skip": 0
+      },
+      "reason": "nominal fail",
+      "run_id": "exti_stm32-nominal-000-mips16",
+      "subject_id": "exti_stm32"
+    }
+  ],
+  "pilot_note": "30 seeded schedules per nominally passing subject; one Zephyr repository and one board. Nominal 100-MIPS run excluded.",
+  "protocol": "subjects/phase1_zephyr/PROTOCOL.md",
+  "subjects": {
+    "context": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 6,
+            "skip": 3
+          },
+          "outcome": "pass",
+          "run_id": "context-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 6,
+            "skip": 3
+          },
+          "outcome": "pass",
+          "run_id": "context-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "context.test_ctx_thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "context_cpu_idle.test_cpu_idle": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "context_one_cpu.test_busy_wait": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "context_one_cpu.test_k_sleep": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "context_one_cpu.test_k_yield": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "context_one_cpu.test_thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "irq_offload and timer interrupts",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 6,
+        "skip": 3
+      },
+      "nominal_run_id": "context-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [],
+      "upstream_path": "tests/kernel/context",
+      "wilson_95_known_runs": [
+        0,
+        0.11351339317396876
+      ]
+    },
+    "fifo_api": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 8,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "fifo_api-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 8,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "fifo_api-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "fifo_api.test_fifo_get_fail": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "fifo_api.test_fifo_is_empty_isr": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "fifo_api.test_fifo_is_empty_thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "fifo_api.test_fifo_isr2thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "fifo_api.test_fifo_thread2isr": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "fifo_api_1cpu.test_fifo_cancel_wait": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "fifo_api_1cpu.test_fifo_loop": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "fifo_api_1cpu.test_fifo_thread2thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "irq_offload FIFO operations",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 8,
+        "skip": 0
+      },
+      "nominal_run_id": "fifo_api-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [],
+      "upstream_path": "tests/kernel/fifo/fifo_api",
+      "wilson_95_known_runs": [
+        0,
+        0.11351339317396876
+      ]
+    },
+    "lifo_api": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 5,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "lifo_api-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 5,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "lifo_api-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "lifo_contexts.test_lifo_isr2thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "lifo_contexts.test_lifo_thread2isr": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "lifo_contexts_1cpu.test_lifo_thread2thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "lifo_fail.test_lifo_get_fail": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "lifo_loop.test_lifo_loop": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "irq_offload LIFO operations",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 5,
+        "skip": 0
+      },
+      "nominal_run_id": "lifo_api-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [],
+      "upstream_path": "tests/kernel/lifo/lifo_api",
+      "wilson_95_known_runs": [
+        0,
+        0.11351339317396876
+      ]
+    },
+    "msgq_api": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 18,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "msgq_api-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 18,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "msgq_api-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "msgq_api.test_msgq_alloc": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api.test_msgq_attrs_get": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api.test_msgq_isr": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api.test_msgq_thread_overflow": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api.test_msgq_user_attrs_get": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api.test_msgq_user_get_fail": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api.test_msgq_user_purge_when_put": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api.test_msgq_user_put_fail": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api.test_msgq_user_thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api.test_msgq_user_thread_overflow": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api_1cpu.test_msgq_empty": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api_1cpu.test_msgq_full": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api_1cpu.test_msgq_get_fail": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api_1cpu.test_msgq_pend_thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api_1cpu.test_msgq_purge_when_put": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api_1cpu.test_msgq_put_fail": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api_1cpu.test_msgq_thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "msgq_api_1cpu.test_msgq_thread_pending": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "irq_offload message-queue operations",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 18,
+        "skip": 0
+      },
+      "nominal_run_id": "msgq_api-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [],
+      "upstream_path": "tests/kernel/msgq/msgq_api",
+      "wilson_95_known_runs": [
+        0,
+        0.11351339317396876
+      ]
+    },
+    "pending": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 3,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "pending-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 3,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "pending-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "pending.test_pending_fifo": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "pending.test_pending_lifo": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "pending.test_pending_timer": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "timer-driven pending work",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 3,
+        "skip": 0
+      },
+      "nominal_run_id": "pending-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [],
+      "upstream_path": "tests/kernel/pending",
+      "wilson_95_known_runs": [
+        0,
+        0.11351339317396876
+      ]
+    },
+    "queue": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 26,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "queue-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 26,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "queue-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "queue_api.test_access_kernel_obj_with_priv_data": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_auto_free": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_multiple_queues": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_alloc": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_alloc_append_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_alloc_append_user": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_alloc_prepend_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_alloc_prepend_user": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_append_list_error": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_cancel_wait_error": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_get_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_init_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_is_empty_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_isr2thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_merge_list_error": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_peek_head_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_peek_tail_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_thread2isr": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api.test_queue_unique_append": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api_1cpu.test_queue_get_2threads": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api_1cpu.test_queue_get_fail": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api_1cpu.test_queue_loop": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api_1cpu.test_queue_multithread_competition": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api_1cpu.test_queue_poll_race": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api_1cpu.test_queue_supv_to_user": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "queue_api_1cpu.test_queue_thread2thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "irq_offload queue operations",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 26,
+        "skip": 0
+      },
+      "nominal_run_id": "queue-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [],
+      "upstream_path": "tests/kernel/queue",
+      "wilson_95_known_runs": [
+        0,
+        0.11351339317396876
+      ]
+    },
+    "semaphore": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 29,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "semaphore-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 29,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "semaphore-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "semaphore.test_k_sem_correct_count_limit": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_k_sem_define": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_k_sem_init": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_count_get": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_give_from_isr": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_give_from_thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_give_take_from_isr": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_measure_timeout_from_thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_measure_timeouts": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_multi_take_timeout_diff_sem": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_multiple_threads_wait": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_reset": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_reset_waiting": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_take_multiple": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_take_no_wait": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_take_no_wait_fails": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_take_timeout": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_take_timeout_fails": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_take_timeout_forever": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_thread2isr": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore.test_sem_thread2thread": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore_1cpu.test_sem_multiple_take_and_timeouts": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore_1cpu.test_sem_queue_mutual_exclusion": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore_1cpu.test_sem_take_timeout_isr": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore_null_case.test_sem_count_get_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore_null_case.test_sem_give_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore_null_case.test_sem_init_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore_null_case.test_sem_reset_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "semaphore_null_case.test_sem_take_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "irq_offload semaphore operations",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 29,
+        "skip": 0
+      },
+      "nominal_run_id": "semaphore-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [],
+      "upstream_path": "tests/kernel/semaphore/semaphore",
+      "wilson_95_known_runs": [
+        0,
+        0.11351339317396876
+      ]
+    },
+    "sleep": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 3,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "sleep-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 3,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "sleep-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "sleep.test_sleep": {
+          "flips": 0,
+          "unknown_or_missing": 1,
+          "wilson_95_known_runs": [
+            0,
+            0.11696979849974075
+          ]
+        },
+        "sleep.test_sleep_forever": {
+          "flips": 0,
+          "unknown_or_missing": 1,
+          "wilson_95_known_runs": [
+            0,
+            0.11696979849974075
+          ]
+        },
+        "sleep.test_usleep": {
+          "flips": 0,
+          "unknown_or_missing": 1,
+          "wilson_95_known_runs": [
+            0,
+            0.11696979849974075
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "SysTick sleep wakeups",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 3,
+        "skip": 0
+      },
+      "nominal_run_id": "sleep-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [
+        {
+          "reason": "harness_error",
+          "run_id": "sleep-perturbed-019-mips16",
+          "seed": 19
+        }
+      ],
+      "upstream_path": "tests/kernel/sleep",
+      "wilson_95_known_runs": [
+        0,
+        0.11696979849974075
+      ]
+    },
+    "timer_api": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 15,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "timer_api-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 15,
+            "skip": 0
+          },
+          "outcome": "pass",
+          "run_id": "timer_api-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "timer_api.test_sleep_abs": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_time_conversions": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timeout_abs": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_duration_period": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_expirefn_null": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_k_define": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_period_0": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_period_k_forever": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_periodicity": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_remaining": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_restart": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_status_get": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_status_get_anytime": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_status_sync": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "timer_api.test_timer_user_data": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "SysTick timer callback",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 15,
+        "skip": 0
+      },
+      "nominal_run_id": "timer_api-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [],
+      "upstream_path": "tests/kernel/timer/timer_api",
+      "wilson_95_known_runs": [
+        0,
+        0.11351339317396876
+      ]
+    },
+    "workq": {
+      "boundary_challenges": {
+        "max": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 27,
+            "skip": 3
+          },
+          "outcome": "pass",
+          "run_id": "workq-max-000-mips16"
+        },
+        "min": {
+          "case_counts": {
+            "fail": 0,
+            "pass": 27,
+            "skip": 3
+          },
+          "outcome": "pass",
+          "run_id": "workq-min-000-mips16"
+        }
+      },
+      "case_rates": {
+        "work.test_drain_empty": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work.test_null_queue": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work.test_unstarted": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_basic_reschedule": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_basic_schedule": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_basic_schedule_running": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_delayed_cancel": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_delayed_cancel_sync": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_delayed_cancel_sync_wait": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_delayed_flush": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_drain_wait": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_immed_reschedule": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_immed_schedule": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_plugged_drain": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_queue_no_yield": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_queued_cancel": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_queued_cancel_sync": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_queued_flush": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_reentrant_queue": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_running_cancel": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_running_cancel_sync": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_running_flush": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_simple_queue": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_sync_queue": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_system_queue": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_system_reschedule": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        },
+        "work_1cpu.test_1cpu_system_schedule": {
+          "flips": 0,
+          "unknown_or_missing": 0,
+          "wilson_95_known_runs": [
+            0,
+            0.11351339317396876
+          ]
+        }
+      },
+      "flipped_run_ids": [],
+      "frequency_hz_observed_range": [
+        15862677,
+        16140846
+      ],
+      "interrupt_path": "scheduled work and timer interrupts",
+      "nominal_case_counts": {
+        "fail": 0,
+        "pass": 27,
+        "skip": 3
+      },
+      "nominal_run_id": "workq-nominal-000-mips16",
+      "planned_random_schedules": 30,
+      "recorded_random_schedules": 30,
+      "suite_flip_count": 0,
+      "suite_flip_rate_of_planned": 0.0,
+      "unknown_or_missing_runs": [],
+      "upstream_path": "tests/kernel/workq/work",
+      "wilson_95_known_runs": [
+        0,
+        0.11351339317396876
+      ]
+    }
+  },
+  "upstream_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

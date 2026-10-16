@@ -1,0 +1,20 @@
+{
+  "board": "stm32f4_disco/stm32f407xx",
+  "build_log_sha256": "1527976269cf6b4c0c308f2e45759b08a1674897f723e2b26b17ccebba4d356d",
+  "config_sha256": {
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay": "171a39bb9ae665981d0ad54fa8a5d25631d0a7f261f5ba959e83f87e91d93423",
+    "subjects/phase1_lsi_rtc/selected_alarm_callback/CMakeLists.txt": "e004f2f5b73aaa1571a75925bde71139cfacf7a8b29bb4374928bbc4da108849",
+    "subjects/phase1_lsi_rtc/selected_alarm_callback/prj.conf": "460e41afb0410d46111094f318b9bd45eccb98a3cc22d6c884223ae997b85088",
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88"
+  },
+  "elf_path": "subjects/phase1_lsi_rtc/build/rtc_alarm_callback/zephyr/zephyr.elf",
+  "elf_sha256": "d1ff902e1ebbb9e92fa03a7ecc14d208fb72f3b41ef2cb833bc275588d3f715d",
+  "linked_upstream_source_sha256": {
+    "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/main.c": "8748c071eb380c191ae2b12383358f2923602e5dfaf20846328b525f20e4a9e0",
+    "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792"
+  },
+  "test_source_path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api",
+  "test_source_sha256": "1257cd3d9523f22a05a85448b2a6ff04534ab9827473867954b900fcc5a0c6c6",
+  "upstream_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056",
+  "variant": "callback"
+}

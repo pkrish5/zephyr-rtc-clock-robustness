@@ -1,0 +1,12 @@
+{
+  "collision_control": "tail shards partition distinct version IDs; serial worker reaches tail after shards complete at measured launch speed",
+  "concurrent_renode_processes_max": 5,
+  "created_utc": "2026-10-01T21:44:52.833467+00:00",
+  "model_settings": "identical frozen plan and runner for every worker",
+  "shard_runner_path": "harness/phase3_hsi_100mips/shard.py",
+  "shard_runner_sha256": "3fe6feb1d2ccb75c36410d65fb4261d574178a89f55357a71b3f0a43f2903bb9",
+  "workers": {
+    "serial": "inventory indices 0-43; skips already recorded",
+    "tail_shards": "four disjoint workers partition inventory indices 15-43 by (index-15)%4"
+  }
+}

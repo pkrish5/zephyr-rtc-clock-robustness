@@ -1,0 +1,36 @@
+{
+  "call_order_sha256": "84db720fbab558e8b3e4a2a017695d4942f7caa8514f3c0b0d6512218dd24479",
+  "cli_version": "codex-cli 0.160.0",
+  "conditions": [
+    "range_absent",
+    "range_present",
+    "loose_spec",
+    "reminder_only"
+  ],
+  "generation_runner_sha256": "1be5a957d633139ddbf341eb29d7bbff1192b2f52cf90300a16932e4a30076eb",
+  "intended_calls": 60,
+  "model_ids": [
+    "gpt-6-luna",
+    "gpt-6-sol",
+    "gpt-6-astra"
+  ],
+  "prompt_sha256": {
+    "loose_spec": "3fe736ffb3c39fd9298ddf62f6f68955f83d577c6a35b62df25ed6da2aa9d0ff",
+    "range_absent": "9ac129b663566727684bf7fedc98a34f22d05eba8d6605dd9472a9c5d8c0424e",
+    "range_present": "dcded2c722355cffa201b31e1c64755eb595fa9c5ea5222f7dce0012ba8324e3",
+    "reminder_only": "98492752ee1079141a80c562b3fa870f624623d4b1c31810de2731db7d418cbd"
+  },
+  "prompt_source_sha256": {
+    "generated/spec_context_factorial_v1/prompts/rtc_alarm_callback/range_absent.txt": "9ac129b663566727684bf7fedc98a34f22d05eba8d6605dd9472a9c5d8c0424e",
+    "generated/spec_context_factorial_v1/prompts/rtc_alarm_callback/range_present.txt": "dcded2c722355cffa201b31e1c64755eb595fa9c5ea5222f7dce0012ba8324e3",
+    "notes/STAGE_B_PROPOSED_PROMPTS/loose_spec/rtc_alarm_callback.txt": "3fe736ffb3c39fd9298ddf62f6f68955f83d577c6a35b62df25ed6da2aa9d0ff",
+    "notes/STAGE_B_PROPOSED_PROMPTS/reminder_only/rtc_alarm_callback.txt": "98492752ee1079141a80c562b3fa870f624623d4b1c31810de2731db7d418cbd"
+  },
+  "protocol_sha256": "9e04f8575afd7be843eb8b6c8feaa276d3f613809f011effec9c56521f1ddcef",
+  "registered_date": "2026-10-08",
+  "response_schema_sha256": "8ebe4f68092ee33c6d7b00cd6b588447eac19935d4a923a8b1064605d9db353c",
+  "result_namespace": "results/stage_b_callback_v1",
+  "samples_per_cell": 5,
+  "schema_version": 1,
+  "task_id": "rtc_alarm_callback"
+}

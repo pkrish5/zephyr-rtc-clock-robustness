@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "sem_isr.test_each_isr_give_increments_count",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "sem_isr.test_each_isr_give_increments_count"
+      ],
+      "uart_bytes": 687,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 4,
+  "run_id": "astra-range_absent-semaphore-r02-nominal-004"
+}

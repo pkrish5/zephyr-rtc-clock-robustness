@@ -1,0 +1,14 @@
+{
+  "condition": "perturbed",
+  "final_irq_count": 0,
+  "frequency_hz": 15915875,
+  "observations": [
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 10050000
+    }
+  ],
+  "passed": false,
+  "seed": 82,
+  "test": "fragile"
+}

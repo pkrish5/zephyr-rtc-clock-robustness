@@ -1,0 +1,23 @@
+{
+  "all_nominal_attempt_outcomes": {
+    "pass": 5
+  },
+  "build_record_sha256": "0c63ed0856be932ce227538acdeb9ead608871f6769f9671c204aef34694baf7",
+  "case": "rtc_api.test_alarm",
+  "elf_sha256": "48d31b3fa0f994be8784b988c74209bcaccd08302795064a096956c9c7525184",
+  "initial_sandbox_harness_errors_retained": false,
+  "qualified_for_proposed_task_list": true,
+  "scope": "Adjacent LSI-driven RTC behavior, not an ISR callback test",
+  "selected_nominal_series": 1,
+  "selected_outcomes": {
+    "pass": 5
+  },
+  "selected_run_ids": [
+    "alarm_pending-nominal-000",
+    "alarm_pending-nominal-001",
+    "alarm_pending-nominal-002",
+    "alarm_pending-nominal-003",
+    "alarm_pending-nominal-004"
+  ],
+  "subject": "alarm_pending"
+}

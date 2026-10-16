@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "case": "lifo_contexts.test_lifo_isr2thread",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_contexts.test_lifo_thread2isr",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_contexts_1cpu.test_lifo_thread2thread",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_fail.test_lifo_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "lifo_loop.test_lifo_loop",
+      "status": "pass"
+    }
+  ],
+  "cpu_performance_mips": 16,
+  "error": null,
+  "frequency_hz": 15840000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "lifo_loop.test_lifo_loop"
+      ],
+      "uart_bytes": 6459,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "lifo_api-min-000-mips16"
+}

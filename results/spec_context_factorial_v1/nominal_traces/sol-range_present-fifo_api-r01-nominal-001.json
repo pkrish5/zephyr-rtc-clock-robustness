@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "fifo_isr_transfer.test_two_items_in_order",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "fifo_isr_transfer.test_two_items_in_order"
+      ],
+      "uart_bytes": 691,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 1,
+  "run_id": "sol-range_present-fifo_api-r01-nominal-001"
+}

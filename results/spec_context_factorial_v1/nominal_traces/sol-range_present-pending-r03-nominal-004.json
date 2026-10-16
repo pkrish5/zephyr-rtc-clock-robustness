@@ -1,0 +1,50 @@
+{
+  "cases": [
+    {
+      "case": "timer_wait.test_one_shot_expiry_wakes_worker",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 178,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 178,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 178,
+      "virtual_ns": 750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 178,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_wait.test_one_shot_expiry_wakes_worker"
+      ],
+      "uart_bytes": 693,
+      "virtual_ns": 1250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 4,
+  "run_id": "sol-range_present-pending-r03-nominal-004"
+}

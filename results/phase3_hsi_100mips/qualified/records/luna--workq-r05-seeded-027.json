@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "case": "delayable_work.test_system_workqueue_delay",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "elf_path": "generated/phase2_luna/build/workq/r05/zephyr/zephyr.elf",
+  "elf_sha256": "0c01dcb262ec0c549125c98e234623978fbe2a5d8228f0c64436f732e3c76868",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16091596,
+  "index": 27,
+  "kind": "agent",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/luna--workq-r05-seeded-027.log",
+  "monitor_sha256": "e9dfc46ca7c6e80c2c834cff237c732091a3bb5c23bf0b2f1e81ecf5fa2c03d1",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": true,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16091596.repl",
+  "platform_sha256": "143c1a8182ecada260834c7322b9f0e56333a2c56e2806e784eff41ef20f89a0",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "luna--workq-r05-seeded-027",
+  "seed": 27,
+  "selected_case": "full_generated_suite",
+  "selected_case_sources": null,
+  "source_path": "generated/phase2_luna/suites/workq/r05/test.c",
+  "source_sha256": "3db5a65e882ae69760a05b133dfeeebfa14ffe72a87adc1b98737b2caffa9b49",
+  "systick_frequency_hz": 16091596,
+  "task_id": "workq",
+  "timestamp_utc": "2026-10-01T22:45:01.038635+00:00",
+  "timing_bound": "unknown",
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/luna--workq-r05-seeded-027.json",
+  "trace_sha256": "4698a6da62a8a4c7161d44c2fe4ea6f01961436f7dbffd397894b448f4c0c9c7",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/luna--workq-r05-seeded-027.log",
+  "uart_sha256": "00a33c73bc4b65925b9ba506d1982f945c3e7611b57390689e4710d7a9840013",
+  "version_id": "luna/workq-r05",
+  "virtual_ns": 250000000,
+  "wall_seconds": 8.471
+}

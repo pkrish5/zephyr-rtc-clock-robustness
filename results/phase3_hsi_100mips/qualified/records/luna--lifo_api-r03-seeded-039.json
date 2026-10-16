@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "case": "lifo_isr_to_thread.test_lifo_transfer_from_isr",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "generated/phase2_luna/build/lifo_api/r03/zephyr/zephyr.elf",
+  "elf_sha256": "3acb85075261a8dad679b33154104fa545842b2ed55ae5746a0654e5b427aa2b",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 15950022,
+  "index": 39,
+  "kind": "agent",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/luna--lifo_api-r03-seeded-039.log",
+  "monitor_sha256": "cc672c663a5b7ce05c1244d07f058458732b613b144d11c048be83116e78e011",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": true,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_15950022.repl",
+  "platform_sha256": "3d5e9c7c3770ac94886ab2f5fa6679aee385e8687d6d558906946b8cc2223608",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "luna--lifo_api-r03-seeded-039",
+  "seed": 39,
+  "selected_case": "full_generated_suite",
+  "selected_case_sources": null,
+  "source_path": "generated/phase2_luna/suites/lifo_api/r03/test.c",
+  "source_sha256": "b17c94a1657a5f07acb3b296fe1af6be504ad2e5fa8f8679699ebf80ed9d45d2",
+  "systick_frequency_hz": 15950022,
+  "task_id": "lifo_api",
+  "timestamp_utc": "2026-10-01T22:12:32.628000+00:00",
+  "timing_bound": "no_issue_found",
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/luna--lifo_api-r03-seeded-039.json",
+  "trace_sha256": "08b514f65f74fea64eef2c76bca6a09899e4af16fe67da6f23eff52b0db2f252",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/luna--lifo_api-r03-seeded-039.log",
+  "uart_sha256": "74e750d3600201ee1cc055dde7770634259bbce8ce4ca3f47ccb4d5866d4c46f",
+  "version_id": "luna/lifo_api-r03",
+  "virtual_ns": 250000000,
+  "wall_seconds": 6.137
+}

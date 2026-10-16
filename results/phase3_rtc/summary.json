@@ -1,0 +1,123 @@
+{
+  "pairwise": {
+    "luna_primary_r04__rtc_bound_r05": {
+      "both_fail": 0,
+      "both_pass": 86,
+      "evaluable_paired_seeds": 99,
+      "left_only_fail": 13,
+      "right_only_fail": 0
+    },
+    "upstream__luna_primary_r04": {
+      "both_fail": 13,
+      "both_pass": 71,
+      "evaluable_paired_seeds": 97,
+      "left_only_fail": 13,
+      "right_only_fail": 0
+    },
+    "upstream__rtc_bound_r05": {
+      "both_fail": 0,
+      "both_pass": 72,
+      "evaluable_paired_seeds": 98,
+      "left_only_fail": 26,
+      "right_only_fail": 0
+    }
+  },
+  "plan_sha256": "9ca79765fc9fc73cbbb38979632cbc0433e70ed1543b81015bea05e0f72e6995",
+  "raw_record_count": 321,
+  "scope_note": "Selected RTC case. Original strict gate excludes both agent suites; amended functional gate includes the primary Luna r04 and separate context-supplement r05. Amended reanalysis is retrospective/unblinded; no robustness-success or model-improvement claim.",
+  "split_gate_decisions_sha256": "cfb9b617baed856974459a5936845df9dfb3dcba351d63dfbfb0541e2aeea5ef",
+  "split_gate_is_retrospective_unblinded": true,
+  "versions": {
+    "luna_primary_r04": {
+      "amended_functional_gate": true,
+      "amended_functional_gate_flips": 13,
+      "cohort": "luna_primary",
+      "distinct_seeded_frequencies": 100,
+      "endpoints": {
+        "max": "pass",
+        "min": "fail"
+      },
+      "evaluable": 99,
+      "flip_rate": 0.13131313131313133,
+      "nominal_5_of_5": true,
+      "nominal_repeats": {
+        "pass": 5
+      },
+      "original_strict_gate": false,
+      "original_strict_gate_flips": null,
+      "pass_to_fail": 13,
+      "phase2_oracle_adequate": false,
+      "registered_seed_count": 100,
+      "seeded_statuses": {
+        "fail": 13,
+        "harness_error": 1,
+        "pass": 86
+      },
+      "timing_bound_status": "inadequate",
+      "wilson_95": [
+        0.07837241241376694,
+        0.21179712779786344
+      ]
+    },
+    "rtc_bound_r05": {
+      "amended_functional_gate": true,
+      "amended_functional_gate_flips": 0,
+      "cohort": "rtc_bound_supplement",
+      "distinct_seeded_frequencies": 100,
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "flip_rate": 0.0,
+      "nominal_5_of_5": true,
+      "nominal_repeats": {
+        "pass": 5
+      },
+      "original_strict_gate": false,
+      "original_strict_gate_flips": null,
+      "pass_to_fail": 0,
+      "phase2_oracle_adequate": false,
+      "registered_seed_count": 100,
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "timing_bound_status": "inadequate",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "upstream": {
+      "amended_functional_gate": null,
+      "amended_functional_gate_flips": null,
+      "cohort": "upstream_selected",
+      "distinct_seeded_frequencies": 100,
+      "endpoints": {
+        "max": "pass",
+        "min": "fail"
+      },
+      "evaluable": 98,
+      "flip_rate": 0.2653061224489796,
+      "nominal_5_of_5": true,
+      "nominal_repeats": {
+        "pass": 5
+      },
+      "original_strict_gate": null,
+      "original_strict_gate_flips": null,
+      "pass_to_fail": 26,
+      "phase2_oracle_adequate": null,
+      "registered_seed_count": 100,
+      "seeded_statuses": {
+        "fail": 26,
+        "harness_error": 2,
+        "pass": 72
+      },
+      "timing_bound_status": null,
+      "wilson_95": [
+        0.18795724173122724,
+        0.3603603046524187
+      ]
+    }
+  }
+}

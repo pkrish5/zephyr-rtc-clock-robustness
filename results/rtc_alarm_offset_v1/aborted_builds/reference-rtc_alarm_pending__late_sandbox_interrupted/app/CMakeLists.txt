@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.20.0)
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+project(rtc_alarm_offset_challenge)
+target_sources(app PRIVATE /Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/reference_rtc_alarm_offset/pending/test.c)
+
+get_target_property(rtc_sources drivers__rtc SOURCES)
+list(FILTER rtc_sources EXCLUDE REGEX "rtc_ll_stm32\.c$")
+set_property(TARGET drivers__rtc PROPERTY SOURCES "${rtc_sources}")
+target_sources(drivers__rtc PRIVATE /Users/pranavkrishnan/Development/Flakey_Tests_Embeded/harness/rtc_driver_variants/rtc_ll_stm32_alarm_offset.c)
+target_include_directories(drivers__rtc PRIVATE /Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/upstream/zephyr/drivers/rtc)
+target_compile_definitions(drivers__rtc PRIVATE QUALITY_ALARM_OFFSET_SIGN=1)

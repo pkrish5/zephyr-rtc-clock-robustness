@@ -1,0 +1,170 @@
+{
+  "cases": [
+    {
+      "case": "work.test_drain_empty",
+      "status": "pass"
+    },
+    {
+      "case": "work.test_nop",
+      "status": "skip"
+    },
+    {
+      "case": "work.test_null_queue",
+      "status": "pass"
+    },
+    {
+      "case": "work.test_smp_running_cancel",
+      "status": "skip"
+    },
+    {
+      "case": "work.test_smp_simple_queue",
+      "status": "skip"
+    },
+    {
+      "case": "work.test_unstarted",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_basic_reschedule",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_basic_schedule",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_basic_schedule_running",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_delayed_cancel",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_delayed_cancel_sync",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_delayed_cancel_sync_wait",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_delayed_flush",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_drain_wait",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_immed_reschedule",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_immed_schedule",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_plugged_drain",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_queue_no_yield",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_queued_cancel",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_queued_cancel_sync",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_queued_flush",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_reentrant_queue",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_running_cancel",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_running_cancel_sync",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_running_flush",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_simple_queue",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_sync_queue",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_system_queue",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_system_reschedule",
+      "status": "pass"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_system_schedule",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "subjects/phase1_zephyr/build/workq/zephyr/zephyr.elf",
+  "elf_sha256": "427910c809d6512e43b79ad41964ffc6a14211189ea0eb0175af17eb349af7bf",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 15946300,
+  "index": 26,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--workq-seeded-026.log",
+  "monitor_sha256": "920b7cbbff6ea3f48aa890787d582927731279536bb666358c900c51f3da578d",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_15946300.repl",
+  "platform_sha256": "75864d8199bdc0ece9c1ebadeef8e3d1cf25ddf71ffb42989c93ac07f9cdaca2",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--workq-seeded-026",
+  "seed": 26,
+  "selected_case": "work_1cpu.test_1cpu_basic_schedule",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c": "4ec2e6f05084a892a7afa21fbf4e3fcd47d2181d514ce84d2cd7166aa472e6d9"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 15946300,
+  "task_id": "workq",
+  "timestamp_utc": "2026-10-02T21:27:16.799083+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--workq-seeded-026.json",
+  "trace_sha256": "da71c7d89abdaa292794d44b56e63a61d40f96609e0ae657c95061a9d0d20a1b",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--workq-seeded-026.log",
+  "uart_sha256": "abff9df7da16a044fac3c3e2bc4027259af4957495a368f032a1366868602f75",
+  "version_id": "upstream/workq",
+  "virtual_ns": 1750000000,
+  "wall_seconds": 16.935
+}

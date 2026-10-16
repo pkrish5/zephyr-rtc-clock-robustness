@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "msgq_isr.test_put_from_isr_and_get_in_thread",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "msgq_isr.test_put_from_isr_and_get_in_thread"
+      ],
+      "uart_bytes": 691,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 0,
+  "run_id": "luna-range_present-msgq_api-r04-nominal-000"
+}

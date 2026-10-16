@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "case": "sleep.test_sleep",
+      "status": "pass"
+    },
+    {
+      "case": "sleep.test_sleep_forever",
+      "status": "pass"
+    },
+    {
+      "case": "sleep.test_usleep",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "subjects/phase1_zephyr/build/sleep/zephyr/zephyr.elf",
+  "elf_sha256": "b334fb75eec299fd6d260a2c8339041fc3abc8104355a50c1c9c636b04c0141d",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 15972502,
+  "index": 77,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--sleep-seeded-077.log",
+  "monitor_sha256": "8a0012e45c49648563cac724a56a849b3a6a1e00b79ca28fc5c198ef6187aaa3",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_15972502.repl",
+  "platform_sha256": "42b4e52fab99e1c52ba2c8e2ca96c0ca19cd41a0c663d186e616a29193a6f484",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--sleep-seeded-077",
+  "seed": 77,
+  "selected_case": "sleep.test_sleep",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c": "e40ebc219763810cb638c3cad755fa44fee47ce60f8e62beac25042dc214299a"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 15972502,
+  "task_id": "sleep",
+  "timestamp_utc": "2026-10-02T21:45:38.567911+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--sleep-seeded-077.json",
+  "trace_sha256": "d29af2dfff12dec0cb53f2591943a576e676d0265f69da98535ce570a30e271e",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--sleep-seeded-077.log",
+  "uart_sha256": "c43293f6832f277e224e75d77d024bbd1ffa2e7bdcf7a1a6e4a475dc40d44401",
+  "version_id": "upstream/sleep",
+  "virtual_ns": 3250000000,
+  "wall_seconds": 26.765
+}

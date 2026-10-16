@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "fifo_irq.test_isr_to_thread_fifo_order",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_performance_mips": 100,
+  "error": null,
+  "hsi_frequency_hz": 16000000,
+  "index": 1,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "fifo_irq.test_isr_to_thread_fifo_order"
+      ],
+      "uart_bytes": 673,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--fifo_api-r02-nominal-001"
+}

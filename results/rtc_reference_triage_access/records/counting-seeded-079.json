@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "case": "reference_rtc.test_calendar_counting",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "elf_sha256": "96e0133327488796d1ad82ee6f62be0c10e389e6f584d2fa6989a93da721127b",
+  "error": null,
+  "family": "rtc_time_counting",
+  "lsi_frequency_hz": 21762,
+  "manifest_sha256": "6e9e3d56539baf23ccab51197a6996a602eab686c58b9103bf78f3a5fce77e48",
+  "monitor_path": "results/rtc_reference_triage_access/monitor/counting-seeded-079.log",
+  "monitor_sha256": "da5f32e45bbe557f079f082245442a30044529404785c49b61149eccff9411f8",
+  "outcome": "pass",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_21762.repl",
+  "platform_sha256": "c3320cadd7c8cd0522df2aaef24f92d39e3a8f1e700e5b830f2d9ad696d6076c",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "counting-seeded-079",
+  "seed": 79,
+  "source_sha256": {
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay": "171a39bb9ae665981d0ad54fa8a5d25631d0a7f261f5ba959e83f87e91d93423",
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88",
+    "subjects/reference_rtc/counting/CMakeLists.txt": "4090e8806931beb767ea01fca78ef90ed117e9acfd3624861831ff99ca3c39e4",
+    "subjects/reference_rtc/counting/prj.conf": "64f22c1edf32cf2dad0b50bca7bc388eb9b69da9447d31f4610ddb92b98a0e44",
+    "subjects/reference_rtc/counting/test.c": "7f96bf1815c9fbfa2dd7311878fa7fabf6c7d0fa525f634d9c39c20af1b8dd86",
+    "subjects/reference_rtc/reference_common.h": "c39135bae91da1bc684b32a7a7e1a5176a1c8ce3c598db9f3ec777af241166d2"
+  },
+  "timestamp_utc": "2026-10-06T16:26:04.020248+00:00",
+  "trace_path": "results/rtc_reference_triage_access/traces/counting-seeded-079.json",
+  "trace_sha256": "3840922021e9d40991b7ba196d608cbe967f40656324e6960cfcd726f27bf2b1",
+  "uart_path": "results/rtc_reference_triage_access/uart/counting-seeded-079.log",
+  "uart_sha256": "10fa29aecbade4477535b69b6ecf65edfda4ea5d507de940b8f6c008a69d2f5e",
+  "virtual_ns": 15000000000,
+  "wall_seconds": 43.03
+}

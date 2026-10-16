@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "timer_interrupt_path.test_blocked_thread_receives_timer_expiry",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "timer_interrupt_path.test_blocked_thread_receives_timer_expiry"
+      ],
+      "uart_bytes": 964,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "pending-r02",
+  "seed": 0
+}

@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "delayed_work_tests.test_timer_driven_system_work",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "delayed_work_tests.test_timer_driven_system_work"
+      ],
+      "uart_bytes": 713,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 4,
+  "run_id": "astra-range_absent-workq-r04-nominal-004"
+}

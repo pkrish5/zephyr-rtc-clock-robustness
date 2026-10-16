@@ -1,0 +1,12 @@
+{
+  "diagnostic_outcome": "pass",
+  "diagnostic_record_path": "results/phase3_hsi_100mips/diagnostics/records/upstream--lifo_api-seeded-070.json",
+  "diagnostic_record_sha256": "3419cefae036ffe4e9fc0fa0b8fb330f7d86c0c328a3870e561da4f2b0062296",
+  "diagnostic_virtual_ns": 250000000,
+  "disposition": "original remains non-evaluable regardless of diagnostic outcome",
+  "original_outcome": "harness_error",
+  "original_record_path": "results/phase3_hsi_100mips/qualified/records/upstream--lifo_api-seeded-070.json",
+  "original_record_sha256": "51d91d8c263a3df94dd86a1ce64cccd2207722a48238b52cfd444913b8cae189",
+  "original_virtual_ns": 0,
+  "run_id": "upstream--lifo_api-seeded-070"
+}

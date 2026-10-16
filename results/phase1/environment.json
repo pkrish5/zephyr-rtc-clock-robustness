@@ -1,0 +1,33 @@
+{
+  "arm_gcc": "arm-zephyr-eabi-gcc (Zephyr SDK 0.17.4) 12.2.0",
+  "cmake": "cmake version 3.31.10",
+  "components": {
+    "cmsis": {
+      "clean": true,
+      "commit": "512cc7e895e8491696b61f7ba8066b4a182569b8"
+    },
+    "cmsis_6": {
+      "clean": true,
+      "commit": "30a859f44ef8ab4dc8f84b03ed586fd16ccf9d74"
+    },
+    "hal_stm32": {
+      "clean": true,
+      "commit": "286dd285b5bb4fddafdfff27b5405264e5a61bfe"
+    },
+    "zephyr": {
+      "clean": true,
+      "commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+    }
+  },
+  "dtc": "Version: DTC 1.8.1",
+  "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "hsi_overlay_sha256": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88",
+  "ninja": "1.13.2",
+  "pexpect": "4.9.0",
+  "python": "3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "renode_stm32f4_base_sha256": "a78bb20f3e594fffa9aec25d2ee85a7b165e8a381c603303ee237e7ce67d1194",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "sdk_version": "0.17.4",
+  "timestamp_utc": "2026-09-28T17:36:19.928931+00:00",
+  "west": "West version: v1.5.0"
+}

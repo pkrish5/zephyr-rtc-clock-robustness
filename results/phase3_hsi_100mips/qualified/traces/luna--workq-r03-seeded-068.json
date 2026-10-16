@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "delayable_work.test_system_workqueue_delayed_execution",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "error": null,
+  "hsi_frequency_hz": 16084510,
+  "index": 68,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "delayable_work.test_system_workqueue_delayed_execution"
+      ],
+      "uart_bytes": 727,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--workq-r03-seeded-068"
+}

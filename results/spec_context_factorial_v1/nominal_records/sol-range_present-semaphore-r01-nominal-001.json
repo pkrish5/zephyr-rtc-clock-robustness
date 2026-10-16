@@ -1,0 +1,36 @@
+{
+  "call_index": 7,
+  "cases": [
+    {
+      "case": "sem_irq_offload.test_multiple_isr_gives",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_performance_mips": 100,
+  "elf_path": "generated/spec_context_factorial_v1/build/sol/range_present/semaphore/r01/zephyr/zephyr.elf",
+  "elf_sha256": "70317e3e97d3a32d068d1b8e05e559078e623d79805cceb91788235997683d57",
+  "error": null,
+  "frequency_hz": 16000000,
+  "max_virtual_sec": 90,
+  "monitor_path": "results/spec_context_factorial_v1/nominal_monitor/sol-range_present-semaphore-r01-nominal-001.log",
+  "monitor_sha256": "d1063bd2653131cd59c475d8ceb92aa1e59c593313e142a48d1503720c471d48",
+  "observation_step_ns": 250000000,
+  "outcome": "pass",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16000000.repl",
+  "platform_sha256": "39e0c8b08c22283cc47c0378045b99d29bf07f81c481b8fa7dc6e097e61e42d9",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "repeat": 1,
+  "run_id": "sol-range_present-semaphore-r01-nominal-001",
+  "source_path": "generated/spec_context_factorial_v1/suites/sol/range_present/semaphore/r01/test.c",
+  "source_sha256": "a1e87a03e92bcfe41f62642ce63ea49bcfb2368c27c3ee4823f3340b4fabffa0",
+  "suite_run_id": "sol-range_present-semaphore-r01",
+  "timestamp_utc": "2026-10-03T19:35:15.883149+00:00",
+  "trace_path": "results/spec_context_factorial_v1/nominal_traces/sol-range_present-semaphore-r01-nominal-001.json",
+  "trace_sha256": "e1204a30a3d08881c24cefd0b9dd7bdd37a7b78a20ea70c23a601573a3928e71",
+  "uart_path": "results/spec_context_factorial_v1/nominal_uart/sol-range_present-semaphore-r01-nominal-001.log",
+  "uart_sha256": "e5d3549ed1c4fc2f9bd7121e5428920a44e15c5f8057976d3313703bd8289579",
+  "virtual_ns": 250000000,
+  "wall_seconds": 5.331
+}

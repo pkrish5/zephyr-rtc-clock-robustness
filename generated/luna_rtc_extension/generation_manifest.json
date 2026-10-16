@@ -1,0 +1,11 @@
+{
+  "codex_cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "cohort": "luna_rtc_extension",
+  "k": 5,
+  "model_requested": "gpt-6-luna",
+  "prompt_template_sha256": "586f5df25ba8c33369d2d4e3605faa86851477e1b8f0bd47e0d2a194d2f0e67c",
+  "response_schema_sha256": "8ebe4f68092ee33c6d7b00cd6b588447eac19935d4a923a8b1064605d9db353c",
+  "schema_version": 1,
+  "task_manifest_sha256": "68ae0ac6d24afad4e8ba5c92db7b0bf37cb34f9b127eeaec29f6616b11c3b670",
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

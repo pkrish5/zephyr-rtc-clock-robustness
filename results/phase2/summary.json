@@ -1,0 +1,45 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "ChatGPT-authenticated CLI does not expose billed API dollars",
+  "build_statuses": {
+    "pass": 1
+  },
+  "codex_cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "cohort": "sol_pilot",
+  "finalized_generations": 1,
+  "generation_statuses": {
+    "generated": 1
+  },
+  "model_requested": "gpt-6-sol",
+  "nominal_statuses": {
+    "pass": 1
+  },
+  "oracle_statuses": {
+    "not_reviewed": 1
+  },
+  "planned_runs": 1,
+  "rows": [
+    {
+      "arm": "lsi_pilot",
+      "human_case": "rtc_api.test_alarm_callback",
+      "prompt_sha256": "9ac129b663566727684bf7fedc98a34f22d05eba8d6605dd9472a9c5d8c0424e",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "not_reviewed",
+          "run_id": "rtc_alarm_callback-r01"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    }
+  ],
+  "scope_note": "One retained Sol feasibility pilot after the registered resource amendment",
+  "tool_events": 0,
+  "usage_totals": {
+    "cached_input_tokens": 0,
+    "input_tokens": 14139,
+    "output_tokens": 3186
+  }
+}

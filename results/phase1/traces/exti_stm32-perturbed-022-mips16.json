@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "case": "intc_exti_stm32.test_sw_interrupt_both_triggers",
+      "status": "fail"
+    },
+    {
+      "case": "intc_exti_stm32.test_sw_interrupt_falling_trigger",
+      "status": "fail"
+    },
+    {
+      "case": "intc_exti_stm32.test_sw_interrupt_rising_trigger",
+      "status": "fail"
+    }
+  ],
+  "cpu_performance_mips": 16,
+  "error": null,
+  "frequency_hz": 15913593,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "intc_exti_stm32.test_sw_interrupt_rising_trigger"
+      ],
+      "uart_bytes": 1738,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "exti_stm32-perturbed-022-mips16"
+}

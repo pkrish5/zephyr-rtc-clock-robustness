@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "case": "fifo_api.test_fifo_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api.test_fifo_is_empty_isr",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api.test_fifo_is_empty_thread",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api.test_fifo_isr2thread",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api.test_fifo_thread2isr",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api_1cpu.test_fifo_cancel_wait",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api_1cpu.test_fifo_loop",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api_1cpu.test_fifo_thread2thread",
+      "status": "pass"
+    }
+  ],
+  "condition": "max",
+  "cpu_performance_mips": 101,
+  "elf_path": "subjects/phase1_zephyr/build/fifo_api/zephyr/zephyr.elf",
+  "elf_sha256": "0e2bca41bcb124b276755bd7c2c8118ae1c17e00797ce5a2f71d0dec247ec1db",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16160000,
+  "index": 0,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--fifo_api-max-000.log",
+  "monitor_sha256": "1b4994bf60e49a4b5a76d4084008c99c774c630a3cb40026052b4dd434fcfbab",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16160000.repl",
+  "platform_sha256": "8ac6a62399fbf21ea9a31ad2bab4b2ef1f9b2cfa52d1537cfa21045e993fd51c",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--fifo_api-max-000",
+  "seed": null,
+  "selected_case": "fifo_api.test_fifo_isr2thread",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_cancel.c": "cc870b9d2c68838b1d9cb8b475e1af24e2868cc6323297d37cceba0b6884f70f",
+    "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_contexts.c": "5b94703545aaf128d9088245be1846e1ef0442882a872e32c56767f842c1ffa1",
+    "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_loop.c": "1b52f27c9a5ee9b6f1d1704d0ed7043fac5f838287d25255e96adc188d6e38fd"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 16160000,
+  "task_id": "fifo_api",
+  "timestamp_utc": "2026-10-02T21:03:41.681636+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--fifo_api-max-000.json",
+  "trace_sha256": "0f7da6bea7728a27a575c1b33b0cf92a42e904ff73c228b91327ce19d941ae4a",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--fifo_api-max-000.log",
+  "uart_sha256": "d767184c7a2eaaf2e0b94e18ace2c6a2097cca498378368e10057a9b3360fcbe",
+  "version_id": "upstream/fifo_api",
+  "virtual_ns": 250000000,
+  "wall_seconds": 5.474
+}

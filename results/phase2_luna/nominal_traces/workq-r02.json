@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "case": "delayable_work.test_system_workqueue_delay_and_completion",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 191,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 191,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 191,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 191,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "delayable_work.test_system_workqueue_delay_and_completion"
+      ],
+      "uart_bytes": 931,
+      "virtual_ns": 2500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "workq-r02",
+  "seed": 0
+}

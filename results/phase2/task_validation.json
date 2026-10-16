@@ -1,0 +1,95 @@
+{
+  "matches": [
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/timer/timer_api",
+      "human_case": "timer_api.test_timer_status_sync",
+      "nominal_run_id": "timer_api-nominal-000-mips16",
+      "nominal_uart_sha256": "7b16c608db03afa42d232996c68b2905b3bd51d7175d95238efb267bdc4fb0d0",
+      "task_id": "timer_api"
+    },
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/semaphore/semaphore",
+      "human_case": "semaphore.test_sem_give_from_isr",
+      "nominal_run_id": "semaphore-nominal-000-mips16",
+      "nominal_uart_sha256": "6a0a085f123d5f6ee9447e325887232088d976269ccf941dd41702166f5bca6d",
+      "task_id": "semaphore"
+    },
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/fifo/fifo_api",
+      "human_case": "fifo_api.test_fifo_isr2thread",
+      "nominal_run_id": "fifo_api-nominal-000-mips16",
+      "nominal_uart_sha256": "03cfd690156f79fb1a737e557db66f83a322b65bddd4f82500f38d92fb17ca26",
+      "task_id": "fifo_api"
+    },
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/lifo/lifo_api",
+      "human_case": "lifo_contexts.test_lifo_isr2thread",
+      "nominal_run_id": "lifo_api-nominal-000-mips16",
+      "nominal_uart_sha256": "9e06a577df90abddc952b09396ea3f07d8947942449aa98d5cc2c5203ee2f613",
+      "task_id": "lifo_api"
+    },
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/msgq/msgq_api",
+      "human_case": "msgq_api.test_msgq_isr",
+      "nominal_run_id": "msgq_api-nominal-000-mips16",
+      "nominal_uart_sha256": "fd84eeb9e032c6edde0738f0a3ada32aeea82a728b034ec1edc65ca8b2585761",
+      "task_id": "msgq_api"
+    },
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/workq/work",
+      "human_case": "work_1cpu.test_1cpu_basic_schedule",
+      "nominal_run_id": "workq-nominal-000-mips16",
+      "nominal_uart_sha256": "abff9df7da16a044fac3c3e2bc4027259af4957495a368f032a1366868602f75",
+      "task_id": "workq"
+    },
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/queue",
+      "human_case": "queue_api.test_queue_isr2thread",
+      "nominal_run_id": "queue-nominal-000-mips16",
+      "nominal_uart_sha256": "50236fc5c92ce1fe07cd004eb15e3e98f758b6f9e97c5cd0176b842636b4b5ec",
+      "task_id": "queue"
+    },
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/sleep",
+      "human_case": "sleep.test_sleep",
+      "nominal_run_id": "sleep-nominal-000-mips16",
+      "nominal_uart_sha256": "aa57c16244d940095daa8af82194acc9615c602279b7c94aae4e1a4e33feb5ba",
+      "task_id": "sleep"
+    },
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/context",
+      "human_case": "context_one_cpu.test_k_sleep",
+      "nominal_run_id": "context-nominal-000-mips16",
+      "nominal_uart_sha256": "0a547b78354ddbb2b84423def6030efca4cc3e63ffa69f228b051a7a5b823dbc",
+      "task_id": "context"
+    },
+    {
+      "arm": "hsi",
+      "human_app": "tests/kernel/pending",
+      "human_case": "pending.test_pending_timer",
+      "nominal_run_id": "pending-nominal-000-mips16",
+      "nominal_uart_sha256": "9a0a55e79daec9bfd0ac53da42c30be57ad914a65a60357e9feb13da26dea717",
+      "task_id": "pending"
+    },
+    {
+      "arm": "lsi_pilot",
+      "human_app": "tests/drivers/rtc/rtc_api",
+      "human_case": "rtc_api.test_alarm_callback",
+      "nominal_run_id": "rtc_alarm_callback-nominal-000-mips16",
+      "nominal_uart_sha256": "75dbbc622f6271e7f7925d3d739bce3ae4b9bc68a97ba01695a54f991f3e9a3c",
+      "task_id": "rtc_alarm_callback"
+    }
+  ],
+  "task_manifest_sha256": "4562d39e62cd6776b296422ab93748c30081a9b750d29d7c953e294745cd002a",
+  "upstream_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056",
+  "validated_utc": "2026-09-29T01:44:12.269087+00:00"
+}

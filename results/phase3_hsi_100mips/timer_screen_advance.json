@@ -1,0 +1,17 @@
+{
+  "condition": "nominal",
+  "created_utc": "2026-10-02T21:55:56.649150+00:00",
+  "original_worker_action": "later sees five saved nominal records and skips without overwrite",
+  "reason": "start last registered timer nominal 5/5 while upstream pending schedules continue",
+  "repeats": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "runner_path": "harness/phase3_hsi_100mips/run.py",
+  "runner_sha256": "adb5abf5d250a1e555ed75cb3be81404001da47f52ef575e81885caf1e705cc1",
+  "same_registered_inputs": true,
+  "version_id": "upstream/timer_api"
+}

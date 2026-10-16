@@ -1,0 +1,223 @@
+{
+  "cases": [
+    {
+      "case": "rtc_calendar.test_year_boundary_counting",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "error": null,
+  "lsi_frequency_hz": 19657,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 3500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 4000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 4500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 5000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 5500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 6000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 6500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 7000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 7500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 8000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 8500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 9000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 9500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 10000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 10500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 11000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 11500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 12000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 12500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 13000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 13500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 14000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 14500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 15000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 15500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 16000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 174,
+      "virtual_ns": 16500000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "rtc_calendar.test_year_boundary_counting"
+      ],
+      "uart_bytes": 686,
+      "virtual_ns": 17000000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "sol-range_present-rtc_time_counting-r04-seeded-089",
+  "seed": 89
+}

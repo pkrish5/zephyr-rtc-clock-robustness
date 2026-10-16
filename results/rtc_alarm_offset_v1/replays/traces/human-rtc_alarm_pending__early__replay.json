@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "case": "rtc_api.test_alarm",
+      "status": "fail"
+    }
+  ],
+  "delay_measurements": [],
+  "error": null,
+  "observations": [
+    {
+      "latest_case": [
+        "FAIL",
+        "rtc_api.test_alarm"
+      ],
+      "uart_bytes": 973,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "human-rtc_alarm_pending__early__replay"
+}

@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "wakeup.test_wakeup_sleeping_thread_from_isr",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "wakeup.test_wakeup_sleeping_thread_from_isr"
+      ],
+      "uart_bytes": 686,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "sleep-r01",
+  "seed": 0
+}

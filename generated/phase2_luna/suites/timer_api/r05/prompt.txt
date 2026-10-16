@@ -1,0 +1,20 @@
+You are writing a new test of an embedded real-time system API, using Zephyr v4.3.0 ztest on the STM32F4 Discovery board (STM32F407VG, single CPU). Write a standalone C source file for one ztest application. Do not write CMake or Kconfig files.
+
+Behavior to test:
+Exercise a Zephyr periodic k_timer whose expiry is delivered through the kernel timer interrupt path. A thread should observe successive expirations with k_timer_status_sync(), verify that expiry notifications occur and are counted, then stop the timer and verify that status synchronization no longer reports an expiry.
+
+Required observable checks:
+- The timer expires at least twice and each synchronization returns a nonzero expiration count.
+- The test verifies an observable timer state or callback count after those expirations.
+- After stopping, synchronization reports no further expiry.
+
+Relevant public API/context:
+k_timer_init, k_timer_start, k_timer_status_sync, k_timer_stop, K_MSEC; include <zephyr/kernel.h> and <zephyr/ztest.h>. If using ZTEST_USER, grant access to kernel objects in suite setup.
+
+The application will be built with this fixed configuration:
+CONFIG_ZTEST=y
+CONFIG_TEST_USERSPACE=y
+CONFIG_MP_MAX_NUM_CPUS=1
+CONFIG_TEST_RANDOM_GENERATOR=y
+
+Return a JSON object with exactly one field, "test_c", containing the complete C source. Include necessary Zephyr headers, test functions, and exactly one ZTEST_SUITE declaration. Use only public Zephyr APIs and self-contained test data. Make the checks executable on this board without external equipment. Keep the test reasonably short. Do not call tools or inspect local files; all task context is above. Do not include explanations or Markdown fences.

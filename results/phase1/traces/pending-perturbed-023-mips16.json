@@ -1,0 +1,176 @@
+{
+  "cases": [
+    {
+      "case": "pending.test_pending_fifo",
+      "status": "pass"
+    },
+    {
+      "case": "pending.test_pending_lifo",
+      "status": "pass"
+    },
+    {
+      "case": "pending.test_pending_timer",
+      "status": "pass"
+    }
+  ],
+  "cpu_performance_mips": 16,
+  "error": null,
+  "frequency_hz": 15991999,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 206,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 206,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 206,
+      "virtual_ns": 750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 206,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 206,
+      "virtual_ns": 1250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 206,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 206,
+      "virtual_ns": 1750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 206,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 478,
+      "virtual_ns": 2250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 478,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 478,
+      "virtual_ns": 2750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 478,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 478,
+      "virtual_ns": 3250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 478,
+      "virtual_ns": 3500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 478,
+      "virtual_ns": 3750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 478,
+      "virtual_ns": 4000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 751,
+      "virtual_ns": 4250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 751,
+      "virtual_ns": 4500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 751,
+      "virtual_ns": 4750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 751,
+      "virtual_ns": 5000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 751,
+      "virtual_ns": 5250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 751,
+      "virtual_ns": 5500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 751,
+      "virtual_ns": 5750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 751,
+      "virtual_ns": 6000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "pending.test_pending_timer"
+      ],
+      "uart_bytes": 1353,
+      "virtual_ns": 6250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "pending-perturbed-023-mips16"
+}

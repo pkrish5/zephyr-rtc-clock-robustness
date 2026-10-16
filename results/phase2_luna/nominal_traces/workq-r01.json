@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "case": "timer_driven_delayed_work.test_schedule_delayable_on_system_queue",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 199,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 199,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "timer_driven_delayed_work.test_schedule_delayable_on_system_queue"
+      ],
+      "uart_bytes": 972,
+      "virtual_ns": 1500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "workq-r01",
+  "seed": 0
+}

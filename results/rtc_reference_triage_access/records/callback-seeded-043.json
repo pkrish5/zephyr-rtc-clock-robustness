@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "case": "reference_rtc.test_alarm_callback",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "elf_sha256": "e88d08e4c32f9a8eec8fb916a2326f41912b0022fdf29e923280ec6bf7417c7d",
+  "error": null,
+  "family": "rtc_alarm_callback",
+  "lsi_frequency_hz": 18263,
+  "manifest_sha256": "6e9e3d56539baf23ccab51197a6996a602eab686c58b9103bf78f3a5fce77e48",
+  "monitor_path": "results/rtc_reference_triage_access/monitor/callback-seeded-043.log",
+  "monitor_sha256": "a178f5660d05baefe68533b110373e3f0f1eb31c18b75f9458d1fb809fbbf6a3",
+  "outcome": "pass",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_18263.repl",
+  "platform_sha256": "9fd88e73d896558804a344dc22e270e849e4759ef3fe70cec3a7a2e323d2c600",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "callback-seeded-043",
+  "seed": 43,
+  "source_sha256": {
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay": "171a39bb9ae665981d0ad54fa8a5d25631d0a7f261f5ba959e83f87e91d93423",
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88",
+    "subjects/reference_rtc/callback/CMakeLists.txt": "f0d4e5aec159adc1a1055f41f97b10447b57e86a48fa78ee2ac38fc11a90fd6b",
+    "subjects/reference_rtc/callback/prj.conf": "460e41afb0410d46111094f318b9bd45eccb98a3cc22d6c884223ae997b85088",
+    "subjects/reference_rtc/callback/test.c": "58ac174a29ce51b77c2f650a16a8a7f42d5ed8aa668fd5d1126c3e69ec2f5b5b",
+    "subjects/reference_rtc/reference_common.h": "c39135bae91da1bc684b32a7a7e1a5176a1c8ce3c598db9f3ec777af241166d2"
+  },
+  "timestamp_utc": "2026-10-06T16:23:48.629884+00:00",
+  "trace_path": "results/rtc_reference_triage_access/traces/callback-seeded-043.json",
+  "trace_sha256": "d4bb6605fa9df7ee089bbe3bc9d827269f4ef6a5ebe77d5c7366a9fa0e660536",
+  "uart_path": "results/rtc_reference_triage_access/uart/callback-seeded-043.log",
+  "uart_sha256": "fbe971dce4df722b55b0a0110b4273be9e95496ca234de479628e2ab1f77e2a1",
+  "virtual_ns": 18000000000,
+  "wall_seconds": 51.247
+}

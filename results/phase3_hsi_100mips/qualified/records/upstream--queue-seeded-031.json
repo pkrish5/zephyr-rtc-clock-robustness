@@ -1,0 +1,157 @@
+{
+  "cases": [
+    {
+      "case": "queue_api.test_access_kernel_obj_with_priv_data",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_auto_free",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_multiple_queues",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc_append_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc_append_user",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc_prepend_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc_prepend_user",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_append_list_error",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_cancel_wait_error",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_get_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_init_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_is_empty_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_isr2thread",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_merge_list_error",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_peek_head_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_peek_tail_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_thread2isr",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_unique_append",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_get_2threads",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_loop",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_multithread_competition",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_poll_race",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_supv_to_user",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_thread2thread",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 99,
+  "elf_path": "subjects/phase1_zephyr/build/queue/zephyr/zephyr.elf",
+  "elf_sha256": "6c0ab7ccd45fca78a8032769c602ab3b6147bd3b3ff8c7a35056b550b534dc93",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 15846437,
+  "index": 31,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--queue-seeded-031.log",
+  "monitor_sha256": "0bc2144ae89ef831d6435731a0bdfa8de65b0c71cece7e0169c6e25e7a42528e",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_15846437.repl",
+  "platform_sha256": "689d55dafe2bf27fc256ab3e66d5f0953fb10ba8728b359e9423188007d79c62",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--queue-seeded-031",
+  "seed": 31,
+  "selected_case": "queue_api.test_queue_isr2thread",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_contexts.c": "221b7415fabee11ca866cad23958672aa5ab7bbb7cbe23b44693f4c200c6e891",
+    "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_fail.c": "63c304af41e2080aeaa44a59908cd0bfcba6ff6edce4d472efefe6f0c32f1d6a",
+    "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_loop.c": "545b96886ee39ea332d2bee81c2441e72055f0a7368e5f53a3a91ec32dafdc1b",
+    "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_user.c": "3e883832eb2e48a34e6647c8a2b4bbfc64dadd91bddaaa8c90f5502780eb4f9b"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 15846437,
+  "task_id": "queue",
+  "timestamp_utc": "2026-10-02T21:12:18.553865+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--queue-seeded-031.json",
+  "trace_sha256": "01935ad79070becca1dc4203e781e0f0ffd44374ad1e58f782f4da4fa2eb0951",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--queue-seeded-031.log",
+  "uart_sha256": "fab488afcb742f87a32297557f5f5249bf7ebb1ed902cc727b2d09e6a7eeea09",
+  "version_id": "upstream/queue",
+  "virtual_ns": 250000000,
+  "wall_seconds": 5.904
+}

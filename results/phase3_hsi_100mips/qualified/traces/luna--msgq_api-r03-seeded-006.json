@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "msgq_isr.test_put_from_isr_and_get_in_thread",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "error": null,
+  "hsi_frequency_hz": 16140846,
+  "index": 6,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "msgq_isr.test_put_from_isr_and_get_in_thread"
+      ],
+      "uart_bytes": 691,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--msgq_api-r03-seeded-006"
+}

@@ -1,0 +1,34 @@
+{
+  "decisions_sha256": "9991d6ed6379b682a82fb27599863db745a4edab454280b9444a4efaf5c76dad",
+  "groups": {
+    "agent": {
+      "registered_units": 55,
+      "status_counts": {
+        "none_found": 32,
+        "pending": 0,
+        "unjustified": 6,
+        "unknown": 17
+      },
+      "unjustified_fraction": 0.10909090909090909,
+      "unjustified_wilson_95": [
+        0.05096725000782336,
+        0.21825549086553508
+      ]
+    },
+    "upstream": {
+      "registered_units": 11,
+      "status_counts": {
+        "none_found": 5,
+        "pending": 0,
+        "unjustified": 4,
+        "unknown": 2
+      },
+      "unjustified_fraction": 0.36363636363636365,
+      "unjustified_wilson_95": [
+        0.15166471095367573,
+        0.6461988254921511
+      ]
+    }
+  },
+  "status": "exploratory_one_reviewer"
+}

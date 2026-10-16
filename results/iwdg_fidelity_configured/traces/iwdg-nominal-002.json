@@ -1,0 +1,968 @@
+{
+  "cases": [],
+  "error": null,
+  "observations": [
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 1000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 1250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 1500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 1750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 2000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 2250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 2500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 2750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 3000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 3250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 3500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 3750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 4000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 4250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 4500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 4750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 5000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 5250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 5500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 5750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 6000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 6250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 6500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 6750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 7000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 7250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 7500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 7750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 8000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 8250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 8500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 8750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 9000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 9250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 9500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 9750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 10000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 10250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 10500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 10750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 11000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 11250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 11500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 11750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 12000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 12250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 12500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 12750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 13000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 13250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 13500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 13750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 14000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 14250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 14500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 14750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 15000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 15250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 15500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 15750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 16000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 16250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 16500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 16750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 17000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 17250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 17500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 17750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 18000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 18250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 18500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 18750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 19000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 19250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 19500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 19750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 20000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 20250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 20500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 20750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 21000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 21250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 21500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 21750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 22000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 22250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 22500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 22750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 23000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 23250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 23500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 23750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 24000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 24250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 24500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 24750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 25000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 25250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 25500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 25750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 26000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 26250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 26500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 26750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 27000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 27250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 27500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 27750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 28000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 28250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 28500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 28750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 29000000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 29250000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 29500000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 29750000000,
+      "wait_for_reset_count": 1
+    },
+    {
+      "selected_case": null,
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 178,
+      "virtual_ns": 30000000000,
+      "wait_for_reset_count": 1
+    }
+  ],
+  "outcome": "timeout",
+  "run_id": "iwdg-nominal-002"
+}

@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "timer_sleep.test_worker_wakes_after_timer_timeout",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_sleep.test_worker_wakes_after_timer_timeout"
+      ],
+      "uart_bytes": 709,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 1,
+  "run_id": "sol-range_absent-context-r01-nominal-001"
+}

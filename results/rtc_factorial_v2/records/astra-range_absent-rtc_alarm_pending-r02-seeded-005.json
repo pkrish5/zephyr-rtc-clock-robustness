@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm_pending.test_year_rollover",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 16,
+  "elf_sha256": "32bda0ee970eab1b97211bdba93679de551264289487b9211bef59fce4df8d9e",
+  "error": null,
+  "family": "rtc_alarm_pending",
+  "kind": "ai",
+  "lsi_frequency_hz": 37411,
+  "manifest_sha256": "8df9aefcba0063f4a93183e8e7c0937af7b6787b52e65375ea2a607db2cbca2e",
+  "max_virtual_sec": 60,
+  "model": "astra",
+  "monitor_path": "results/rtc_factorial_v2/monitor/astra-range_absent-rtc_alarm_pending-r02-seeded-005.log",
+  "monitor_sha256": "9ec083afbea36df6a02ef0f0019ade5e7308b6b669398810e26da5e1b243674a",
+  "outcome": "pass",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_37411.repl",
+  "platform_sha256": "dfbe6c2589c3a0bac7eded520d52b28fa03019aeb8e93a070ac1dd8790654366",
+  "prompt_condition": "range_absent",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "role": "full_not_predictable",
+  "run_id": "astra-range_absent-rtc_alarm_pending-r02-seeded-005",
+  "schedule_sha256": "9ca79765fc9fc73cbbb38979632cbc0433e70ed1543b81015bea05e0f72e6995",
+  "seed": 5,
+  "source_sha256": "d2fc45dd40643adb5597eb18e0ecb4919303251caa0081589073b45e25264beb",
+  "step_ns": 500000000,
+  "suite_id": "astra-range_absent-rtc_alarm_pending-r02",
+  "systick_frequency_hz": 16000000,
+  "timestamp_utc": "2026-10-05T08:32:01.244653+00:00",
+  "trace_path": "results/rtc_factorial_v2/traces/astra-range_absent-rtc_alarm_pending-r02-seeded-005.json",
+  "trace_sha256": "66d59c35b73e1b782c1aaca4ee4dd11e14dc3cd17f7f369adac8ebf48cd7e1ef",
+  "uart_path": "results/rtc_factorial_v2/uart/astra-range_absent-rtc_alarm_pending-r02-seeded-005.log",
+  "uart_sha256": "ecd5f745bcd69029952004f5db2a7e4e197e594d975e8528605c7891672141d8",
+  "virtual_ns": 9000000000,
+  "wall_seconds": 41.455
+}

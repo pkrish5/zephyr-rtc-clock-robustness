@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm.test_both_alarm_channels",
+      "status": "pass"
+    }
+  ],
+  "cohort": "rtc_bound_supplement",
+  "condition": "seeded",
+  "cpu_performance_mips": 16,
+  "elf_path": "generated/phase2_rtc_bound/build/rtc_alarm_callback/r05/zephyr/zephyr.elf",
+  "elf_sha256": "50013ad81327cc3752f047fe98e506d2af42333dfe23e8556c4a74d4c11dee20",
+  "error": null,
+  "index": 22,
+  "lsi_bound_hz": [
+    17000,
+    47000
+  ],
+  "lsi_bound_source": "STM32F407 DS8626 Rev 12 Table 35; VDD 3 V; TA -40 to 105 C",
+  "lsi_frequency_hz": 46732,
+  "max_virtual_sec": 60,
+  "monitor_path": "results/phase3_rtc/monitor/rtc_bound_r05-seeded-022.log",
+  "monitor_sha256": "a1c751cce2c12dfc3d6aecd122da7249feaf3e99ac2aaa64992421441e9419c8",
+  "outcome": "pass",
+  "plan_sha256": "9ca79765fc9fc73cbbb38979632cbc0433e70ed1543b81015bea05e0f72e6995",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_46732.repl",
+  "platform_sha256": "c67b8888721b92cf2ab60b1b6c3a764176f8279121f48671413eb85b35cdbdbf",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "rtc_bound_r05-seeded-022",
+  "seed": 22,
+  "source_path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+  "source_sha256": "144f3c2362b561f34a4fbe4dfb847de1fa17badc1e3ad7837126d77cf12b5061",
+  "step_ns": 500000000,
+  "systick_frequency_hz": 16000000,
+  "timestamp_utc": "2026-09-29T20:38:28.663560+00:00",
+  "trace_path": "results/phase3_rtc/traces/rtc_bound_r05-seeded-022.json",
+  "trace_sha256": "b5aa7989c33435b950490c1816182759db9b69a78942fb95422c082445e21d82",
+  "uart_path": "results/phase3_rtc/uart/rtc_bound_r05-seeded-022.log",
+  "uart_sha256": "ed6316dd8b94ccc2a0cf170a7c50d5de7cd4e325a5481ff72eeaa593486c933d",
+  "version_id": "rtc_bound_r05",
+  "virtual_ns": 7000000000,
+  "wall_seconds": 29.779,
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

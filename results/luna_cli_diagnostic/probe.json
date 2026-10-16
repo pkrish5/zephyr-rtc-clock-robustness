@@ -1,0 +1,7 @@
+{
+  "returncode": 0,
+  "timeout": false,
+  "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"01a0f065-b1fe-7513-b04e-ac783e3938f4\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"agent_message\",\"text\":\"READY\"}}\n{\"type\":\"turn.completed\",\"usage\":{\"input_tokens\":13507,\"cached_input_tokens\":11008,\"cache_write_input_tokens\":0,\"output_tokens\":5,\"reasoning_output_tokens\":0}}\n",
+  "stderr": "Reading additional input from stdin...\n2026-09-30T03:39:51.708012Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n",
+  "time_utc": "2026-09-30T03:39:56.087532+00:00"
+}

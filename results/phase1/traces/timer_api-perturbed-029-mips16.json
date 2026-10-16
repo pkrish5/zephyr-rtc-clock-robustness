@@ -1,0 +1,158 @@
+{
+  "cases": [
+    {
+      "case": "timer_api.test_sleep_abs",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_time_conversions",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timeout_abs",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_duration_period",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_expirefn_null",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_k_define",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_period_0",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_period_k_forever",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_periodicity",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_remaining",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_restart",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_status_get",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_status_get_anytime",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_status_sync",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_user_data",
+      "status": "pass"
+    }
+  ],
+  "cpu_performance_mips": 16,
+  "error": null,
+  "frequency_hz": 16127372,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 581,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 734,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 734,
+      "virtual_ns": 750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 880,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 880,
+      "virtual_ns": 1250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 880,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1170,
+      "virtual_ns": 1750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1322,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1608,
+      "virtual_ns": 2250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1903,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1903,
+      "virtual_ns": 2750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2057,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2202,
+      "virtual_ns": 3250000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_api.test_timer_user_data"
+      ],
+      "uart_bytes": 3660,
+      "virtual_ns": 3500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "timer_api-perturbed-029-mips16"
+}

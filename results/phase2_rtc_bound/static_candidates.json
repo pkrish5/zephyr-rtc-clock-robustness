@@ -1,0 +1,672 @@
+{
+  "method": "syntactic candidate scan; manual adjudication pending",
+  "records": [
+    {
+      "case": "rtc_api.test_alarm_callback",
+      "kind": "upstream",
+      "regions_scanned": 5,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 120,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 120,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 123,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "callback_called_mask_status_odd = atomic_get(&callback_called_mask_odd);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 124,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "callback_called_mask_status_even = atomic_get(&callback_called_mask_even);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 126,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_odd, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 126,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_odd, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 128,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_even, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 128,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_even, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 132,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 132,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 137,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "(j % 2) ? atomic_test_bit(&callback_called_mask_odd, j)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 138,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": ": atomic_test_bit(&callback_called_mask_even, j);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 140,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_status, true,"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r01",
+      "source_sha256": "33b6ff9d5c12c763a53a10991385cdec5c4224b08b2abe5d967ee1db51bf3c53",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 15,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define ARRIVAL_BOUND K_SECONDS(24)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 16,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define DELIVERY_MARGIN K_SECONDS(5)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 94,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 94,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 101,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_false(atomic_get(&seen_1) || atomic_get(&seen_2),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 111,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "ret = k_sem_take(&alarm_sem, CALLBACK_BOUND);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 113,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "ret = k_sem_take(&alarm_sem, CALLBACK_BOUND);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 116,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_false(atomic_get(&bad_callback), \"unexpected callback device or ID\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 116,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_false(atomic_get(&bad_callback), \"unexpected callback device or ID\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 117,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(atomic_get(&seen_1), \"alarm 1 callback was not observed\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 118,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(atomic_get(&seen_2), \"alarm 2 callback was not observed\");"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r02",
+      "source_sha256": "1b1ea0a1df5aaca658d6d363e589376d92193a89dc7b854eda3e256c9603a4d6",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 16,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define ALARM_WAIT_BOUND K_SECONDS(24)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 17,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define PREALARM_OBSERVE K_MSEC(250)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 73,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(PREALARM_OBSERVE);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 74,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_count), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 74,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_count), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 76,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_ids), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 76,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_ids), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "possibly_unbounded_wait_candidate",
+          "line": 83,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (atomic_get(&callback_ids) != (BIT(0) | BIT(1)) &&"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 83,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (atomic_get(&callback_ids) != (BIT(0) | BIT(1)) &&"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 85,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(20));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 85,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(20));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 88,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_ids), BIT(0) | BIT(1),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 88,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_ids), BIT(0) | BIT(1),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 90,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_count), 2,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 90,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_count), 2,"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r03",
+      "source_sha256": "616db82a27ba92113fc265a0a655b503601270273099d1bf966f71ca26980cad",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 18,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define ALARM_WAIT_TIMEOUT K_SECONDS(24)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 19,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define PREALARM_OBSERVE_TIME K_SECONDS(1)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 81,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(PREALARM_OBSERVE_TIME);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 82,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_mask), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 82,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_mask), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 84,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_id_error), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 84,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_id_error), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 90,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_msleep(250);"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r04",
+      "source_sha256": "c6177076595859a920c3fe20f00d5415d2e7cb2e7cbf556517bfbb1ffd81815e",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 16,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define CALLBACK_DEADLINE K_SECONDS(30)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 93,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(3));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 93,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(3));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 100,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 100,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 102,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_id_error), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 102,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_id_error), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "possibly_unbounded_wait_candidate",
+          "line": 114,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (observed != 2U) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 119,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&callback_sem,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 119,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&callback_sem,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 120,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "K_TICKS(remaining)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 126,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_id_error), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 126,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_id_error), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 128,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), BIT(0) | BIT(1),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 128,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), BIT(0) | BIT(1),"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r05",
+      "source_sha256": "144f3c2362b561f34a4fbe4dfb847de1fa17badc1e3ad7837126d77cf12b5061",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 16,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define CALLBACK_DEADLINE K_SECONDS(24)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 75,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 75,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 76,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 76,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 78,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&unexpected_callback), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 78,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&unexpected_callback), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 88,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&callbacks_done, CALLBACK_DEADLINE), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 88,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&callbacks_done, CALLBACK_DEADLINE), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 90,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&callbacks_done, K_NO_WAIT), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 90,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&callbacks_done, K_NO_WAIT), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 92,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&unexpected_callback), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 92,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&unexpected_callback), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 94,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), BIT(ALARM_ID_0) | BIT(ALARM_ID_1),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 94,
+          "path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), BIT(ALARM_ID_0) | BIT(ALARM_ID_1),"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    }
+  ]
+}

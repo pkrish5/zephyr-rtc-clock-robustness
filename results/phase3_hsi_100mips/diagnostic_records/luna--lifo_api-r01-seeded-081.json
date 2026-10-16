@@ -1,0 +1,12 @@
+{
+  "diagnostic_outcome": "pass",
+  "diagnostic_record_path": "results/phase3_hsi_100mips/diagnostics/records/luna--lifo_api-r01-seeded-081.json",
+  "diagnostic_record_sha256": "8bb323b5073527e24e1ec36f0d206fdfec5034e3b047ae3325cf213099c60b1a",
+  "diagnostic_virtual_ns": 250000000,
+  "disposition": "original remains non-evaluable regardless of diagnostic outcome",
+  "original_outcome": "harness_error",
+  "original_record_path": "results/phase3_hsi_100mips/qualified/records/luna--lifo_api-r01-seeded-081.json",
+  "original_record_sha256": "4961f6230cd169a0e6ceab71a5b45265aaf3ae6794c324e8c380b4f60ee42001",
+  "original_virtual_ns": 0,
+  "run_id": "luna--lifo_api-r01-seeded-081"
+}

@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "case": "timer_delivery.test_one_shot_wakes_pending_worker",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 183,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_delivery.test_one_shot_wakes_pending_worker"
+      ],
+      "uart_bytes": 712,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 1,
+  "run_id": "astra-range_present-pending-r04-nominal-001"
+}

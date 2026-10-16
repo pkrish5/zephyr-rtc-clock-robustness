@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm.test_both_alarm_channels",
+      "status": "pass"
+    }
+  ],
+  "cohort": "luna_primary",
+  "condition": "seeded",
+  "cpu_performance_mips": 16,
+  "elf_path": "generated/phase2_luna/build/rtc_alarm_callback/r04/zephyr/zephyr.elf",
+  "elf_sha256": "5fb7951d17fe00ee95d038fccf0a02f73c58b0d75a2ce2357ca3b18536a40018",
+  "error": null,
+  "index": 19,
+  "lsi_bound_hz": [
+    17000,
+    47000
+  ],
+  "lsi_bound_source": "STM32F407 DS8626 Rev 12 Table 35; VDD 3 V; TA -40 to 105 C",
+  "lsi_frequency_hz": 39188,
+  "max_virtual_sec": 60,
+  "monitor_path": "results/phase3_rtc/monitor/luna_primary_r04-seeded-019.log",
+  "monitor_sha256": "a168c2c9c30c45e7cd580a66175a3e4a58f2511b613cb3375336b5acc28ebb39",
+  "outcome": "pass",
+  "plan_sha256": "9ca79765fc9fc73cbbb38979632cbc0433e70ed1543b81015bea05e0f72e6995",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_39188.repl",
+  "platform_sha256": "e25862df19b428aa7152188d08152b60f64e6bdffbd5f1b8228b40c6d2e9611e",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "luna_primary_r04-seeded-019",
+  "seed": 19,
+  "source_path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+  "source_sha256": "ec355bdce5f0ce933e31032a91d7ddb434f673b3ef06c5af1af9b314b783a5f6",
+  "step_ns": 500000000,
+  "systick_frequency_hz": 16000000,
+  "timestamp_utc": "2026-09-29T20:36:51.899460+00:00",
+  "trace_path": "results/phase3_rtc/traces/luna_primary_r04-seeded-019.json",
+  "trace_sha256": "5cfe9082e183616f372ce940b8f6112c795a5306a6d4032d7c034e1311d98248",
+  "uart_path": "results/phase3_rtc/uart/luna_primary_r04-seeded-019.log",
+  "uart_sha256": "0eac406eb31d33b7eac56f64c0ca9fb7d99b5f7dd5c429bac091fc15765b273a",
+  "version_id": "luna_primary_r04",
+  "virtual_ns": 8500000000,
+  "wall_seconds": 39.744,
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

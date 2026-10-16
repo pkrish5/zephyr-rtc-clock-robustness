@@ -1,0 +1,54 @@
+{
+  "condition": "perturbed",
+  "final_irq_count": 1,
+  "frequency_hz": 16139579,
+  "observations": [
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 0
+    },
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 1000000
+    },
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 2000000
+    },
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 3000000
+    },
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 4000000
+    },
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 5000000
+    },
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 6000000
+    },
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 7000000
+    },
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 8000000
+    },
+    {
+      "gpio_odr": 0,
+      "virtual_ns": 9000000
+    },
+    {
+      "gpio_odr": 4096,
+      "virtual_ns": 10000000
+    }
+  ],
+  "passed": true,
+  "seed": 10,
+  "test": "robust"
+}

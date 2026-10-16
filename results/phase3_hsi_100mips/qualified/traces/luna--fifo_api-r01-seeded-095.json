@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "fifo_irq.test_isr_to_thread_fifo",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "error": null,
+  "hsi_frequency_hz": 16118847,
+  "index": 95,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "fifo_irq.test_isr_to_thread_fifo"
+      ],
+      "uart_bytes": 655,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--fifo_api-r01-seeded-095"
+}

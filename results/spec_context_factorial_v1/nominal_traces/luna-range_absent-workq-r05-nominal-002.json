@@ -1,0 +1,74 @@
+{
+  "cases": [
+    {
+      "case": "system_work_delayable.test_delayed_work_runs_once_after_delay",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 195,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 195,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 195,
+      "virtual_ns": 750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 195,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 195,
+      "virtual_ns": 1250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 195,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 195,
+      "virtual_ns": 1750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 195,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "system_work_delayable.test_delayed_work_runs_once_after_delay"
+      ],
+      "uart_bytes": 954,
+      "virtual_ns": 2250000000
+    }
+  ],
+  "outcome": "fail",
+  "repeat": 2,
+  "run_id": "luna-range_absent-workq-r05-nominal-002"
+}

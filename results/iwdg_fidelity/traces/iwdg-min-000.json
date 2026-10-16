@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "case": "wdt_basic_test_suite.test_wdt",
+      "status": "fail"
+    }
+  ],
+  "error": null,
+  "observations": [
+    {
+      "selected_case": "fail",
+      "suite_start_count": 1,
+      "testcase_passed_count": 0,
+      "uart_bytes": 843,
+      "virtual_ns": 250000000,
+      "wait_for_reset_count": 0
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "iwdg-min-000"
+}

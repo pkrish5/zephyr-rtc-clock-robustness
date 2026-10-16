@@ -1,0 +1,217 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm_pending.test_new_year_alarm",
+      "status": "fail"
+    }
+  ],
+  "condition": "seeded",
+  "error": null,
+  "lsi_frequency_hz": 19536,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 3500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 4000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 4500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 5000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 5500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 6000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 6500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 7000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 7500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 8000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 8500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 9000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 9500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 10000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 10500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 11000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 11500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 12000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 12500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 13000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 13500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 14000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 14500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 15000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 15500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 171,
+      "virtual_ns": 16000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "rtc_alarm_pending.test_new_year_alarm"
+      ],
+      "uart_bytes": 827,
+      "virtual_ns": 16500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-032",
+  "seed": 32
+}

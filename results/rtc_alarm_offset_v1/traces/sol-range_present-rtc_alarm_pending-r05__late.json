@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm_pending.test_new_year_alarm",
+      "status": "fail"
+    }
+  ],
+  "delay_measurements": [],
+  "error": null,
+  "observations": [
+    {
+      "latest_case": [
+        "FAIL",
+        "rtc_alarm_pending.test_new_year_alarm"
+      ],
+      "uart_bytes": 997,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "sol-range_present-rtc_alarm_pending-r05__late"
+}

@@ -1,0 +1,52 @@
+#include <zephyr/kernel.h>
+#include <zephyr/ztest.h>
+
+#define WORKER_SLEEP K_MSEC(100)
+#define WAIT_TIMEOUT K_SECONDS(2)
+
+K_THREAD_STACK_DEFINE(worker_stack, 1024);
+static struct k_thread worker_thread;
+static struct k_sem done_sem;
+static struct k_sem immediate_sem;
+static int64_t worker_start_ms;
+static int64_t worker_finish_ms;
+
+static void sleeper(void *arg1, void *arg2, void *arg3)
+{
+	ARG_UNUSED(arg1);
+	ARG_UNUSED(arg2);
+	ARG_UNUSED(arg3);
+
+	worker_start_ms = k_uptime_get();
+	k_sleep(WORKER_SLEEP);
+	worker_finish_ms = k_uptime_get();
+	k_sem_give(&done_sem);
+}
+
+ZTEST(timer_sleep, test_timed_sleep_wakeup)
+{
+	k_sem_init(&done_sem, 0, 1);
+	k_sem_init(&immediate_sem, 0, 1);
+	worker_start_ms = -1;
+	worker_finish_ms = -1;
+
+	k_thread_create(&worker_thread, worker_stack,
+			K_THREAD_STACK_SIZEOF(worker_stack), sleeper,
+			NULL, NULL, NULL, K_PRIO_PREEMPT(1), 0, K_NO_WAIT);
+	k_thread_name_set(&worker_thread, "timer_sleeper");
+
+	/* An independent event is immediately available and must not count as done. */
+	k_sem_give(&immediate_sem);
+	zassert_equal(k_sem_take(&immediate_sem, K_NO_WAIT), 0,
+		      "immediate control event was not available");
+	zassert_equal(k_sem_take(&done_sem, K_NO_WAIT), -EBUSY,
+		      "worker completed immediately instead of entering timed sleep");
+
+	zassert_ok(k_sem_take(&done_sem, WAIT_TIMEOUT),
+		   "worker did not complete after its sleep timeout");
+	zassert_true(worker_start_ms >= 0, "worker did not record its start time");
+	zassert_true(worker_finish_ms - worker_start_ms >= 80,
+		     "worker resumed before the timed sleep elapsed");
+}
+
+ZTEST_SUITE(timer_sleep, NULL, NULL, NULL, NULL, NULL);

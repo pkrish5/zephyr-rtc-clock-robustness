@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "timer_periodic.test_periodic_expiry_and_stop",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_periodic.test_periodic_expiry_and_stop"
+      ],
+      "uart_bytes": 697,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 0,
+  "run_id": "luna-range_absent-timer_api-r04-nominal-000"
+}

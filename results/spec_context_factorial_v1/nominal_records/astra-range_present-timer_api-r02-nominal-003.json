@@ -1,0 +1,36 @@
+{
+  "call_index": 154,
+  "cases": [
+    {
+      "case": "periodic_timer.test_interrupt_expirations",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_performance_mips": 100,
+  "elf_path": "generated/spec_context_factorial_v1/build/astra/range_present/timer_api/r02/zephyr/zephyr.elf",
+  "elf_sha256": "b452f5ad0734e7ce9cea21ee021fe6c98f5f14cfc646d16a4059c6e8a3a4062c",
+  "error": null,
+  "frequency_hz": 16000000,
+  "max_virtual_sec": 90,
+  "monitor_path": "results/spec_context_factorial_v1/nominal_monitor/astra-range_present-timer_api-r02-nominal-003.log",
+  "monitor_sha256": "34ad94055c36ac438c8ad10903e750333a77b95d9047f3db68b197afb8356fae",
+  "observation_step_ns": 250000000,
+  "outcome": "pass",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16000000.repl",
+  "platform_sha256": "39e0c8b08c22283cc47c0378045b99d29bf07f81c481b8fa7dc6e097e61e42d9",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "repeat": 3,
+  "run_id": "astra-range_present-timer_api-r02-nominal-003",
+  "source_path": "generated/spec_context_factorial_v1/suites/astra/range_present/timer_api/r02/test.c",
+  "source_sha256": "5c43e5f174ae82619defdf053d16d8565a7d3c5a1cec45d490a286f28b549746",
+  "suite_run_id": "astra-range_present-timer_api-r02",
+  "timestamp_utc": "2026-10-03T22:32:35.759849+00:00",
+  "trace_path": "results/spec_context_factorial_v1/nominal_traces/astra-range_present-timer_api-r02-nominal-003.json",
+  "trace_sha256": "4432134f7f4c42680013bce0aa05f1b2ae5d78fce8eb3b2c1963ee036c036fd5",
+  "uart_path": "results/spec_context_factorial_v1/nominal_uart/astra-range_present-timer_api-r02-nominal-003.log",
+  "uart_sha256": "1ec8e55349b86b5a3522d9b5336748a67a3e3543086db53e941a156873eb0cc0",
+  "virtual_ns": 250000000,
+  "wall_seconds": 5.436
+}

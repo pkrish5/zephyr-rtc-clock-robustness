@@ -1,0 +1,27 @@
+{
+  "exclude_rtc_bound_context_supplement_from_model_comparison": true,
+  "exclude_sol_feasibility_pilot": true,
+  "generations_per_task": 5,
+  "input_sha256": {
+    "analysis/PHASE2_SPLIT_GATE_PROTOCOL.md": "c98b52f94b188c4db3b4de091c87ec12415dc59f56a0dc170f82e13f6ea4b1cb",
+    "analysis/phase2_split_gate_decisions.json": "cfb9b617baed856974459a5936845df9dfb3dcba351d63dfbfb0541e2aeea5ef",
+    "analysis/phase2_summary.py": "1ecfa9b0ed8f44037e45b5d157a4a25f3d952bdb5333b050fe9384219782d3d4",
+    "generated/cross_model/PROTOCOL.md": "52528f51e5f5a388f77ccb7176effaecff917f6ef3a1ff7b84730c147d59d03b",
+    "generated/phase2/PROTOCOL.md": "13860afcdd4ef989faed8084fd536c39f454cc5c973bd782d77ffb4ef37fc775",
+    "generated/phase2/prompt_template.txt": "586f5df25ba8c33369d2d4e3605faa86851477e1b8f0bd47e0d2a194d2f0e67c",
+    "generated/phase2/response.schema.json": "8ebe4f68092ee33c6d7b00cd6b588447eac19935d4a923a8b1064605d9db353c",
+    "harness/phase2/build_nominal.py": "2e6965447c19a34be31afe18848744ee8a87401a9e13607a6e87d8b929edc9a5",
+    "harness/phase2/generate.py": "a307dc104f2cecbcbd45029f2e1fd914aa5673fc268643c47069784454170331",
+    "subjects/phase2_tasks.json": "4562d39e62cd6776b296422ab93748c30081a9b750d29d7c953e294745cd002a",
+    "subjects/phase3_hsi_100mips/plan.json": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+    "subjects/phase3_rtc/plan.json": "9ca79765fc9fc73cbbb38979632cbc0433e70ed1543b81015bea05e0f72e6995"
+  },
+  "model_ids": [
+    "gpt-6-luna",
+    "gpt-6-sol",
+    "gpt-6-astra"
+  ],
+  "registered_date": "2026-09-29",
+  "schema_version": 1,
+  "task_count": 11
+}

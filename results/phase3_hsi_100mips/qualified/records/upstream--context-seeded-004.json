@@ -1,0 +1,86 @@
+{
+  "cases": [
+    {
+      "case": "context.test_ctx_thread",
+      "status": "pass"
+    },
+    {
+      "case": "context.test_interrupts",
+      "status": "skip"
+    },
+    {
+      "case": "context_cpu_idle.test_cpu_idle",
+      "status": "pass"
+    },
+    {
+      "case": "context_cpu_idle.test_cpu_idle_atomic",
+      "status": "skip"
+    },
+    {
+      "case": "context_one_cpu.test_busy_wait",
+      "status": "pass"
+    },
+    {
+      "case": "context_one_cpu.test_k_sleep",
+      "status": "pass"
+    },
+    {
+      "case": "context_one_cpu.test_k_yield",
+      "status": "pass"
+    },
+    {
+      "case": "context_one_cpu.test_thread",
+      "status": "pass"
+    },
+    {
+      "case": "context_one_cpu.test_timer_interrupts",
+      "status": "skip"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "subjects/phase1_zephyr/build/context/zephyr/zephyr.elf",
+  "elf_sha256": "0c951102556b68fb70ec760d15d9cc6904131f88c661c6ab9d698543b98de737",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 15963757,
+  "index": 4,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--context-seeded-004.log",
+  "monitor_sha256": "54c0fa0a2bb1153b1186bff2cdc265e45459c83e51f2001c12d789b2ce21d811",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_15963757.repl",
+  "platform_sha256": "045aa8b9134cbc9c88129b4cc21f4e01f86f4e4dbe721c10c830b3e312536889",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--context-seeded-004",
+  "seed": 4,
+  "selected_case": "context_one_cpu.test_k_sleep",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/context/src/main.c": "6bfad2a3f3c0507d4c3b3376cff0c57700d79aecfa1f3f5f4c5c35b41b85fe1a"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 15963757,
+  "task_id": "context",
+  "timestamp_utc": "2026-10-01T22:48:20.320155+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--context-seeded-004.json",
+  "trace_sha256": "e7cb1ab6213bbc736556d9b1994016f7e2adfd6a5eefc9f212bbfbc47155d44a",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--context-seeded-004.log",
+  "uart_sha256": "f4e6a5aec142b5cabcb343cbbda4a5635c7cd48b622186369b75da6579015632",
+  "version_id": "upstream/context",
+  "virtual_ns": 5500000000,
+  "wall_seconds": 44.802
+}

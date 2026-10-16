@@ -1,0 +1,106 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm.test_both_alarm_channels",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "error": null,
+  "index": 86,
+  "lsi_frequency_hz": 42936,
+  "observations": [
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 3500000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 4000000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 4500000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 5000000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 5500000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 6000000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 6500000000
+    },
+    {
+      "completed": false,
+      "selected_case": null,
+      "uart_bytes": 168,
+      "virtual_ns": 7000000000
+    },
+    {
+      "completed": true,
+      "selected_case": "pass",
+      "uart_bytes": 662,
+      "virtual_ns": 7500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna_primary_r04-seeded-086"
+}

@@ -1,0 +1,8 @@
+{
+  "cases": [],
+  "effective_rtc_hz": 1,
+  "error": "EOF: End Of File (EOF). Empty string style platform.\n<pexpect.pty_spawn.spawn object at 0x107bc9550>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-vdg0m0tc/renode.cfg']\nbuffer (last 100 chars): ''\nbefore (last 100 chars): 'icro.Renode.Peripherals.CPU.BaseCPU.CpuThreadBody()\\r\\n   at System.Threading.Thread.StartCallback()\\r\\n'\nafter: <class 'pexpect.exceptions.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: True\npid: 97022\nchild_fd: 6\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/rtc_timing_mutants/activation_monitor/activation-rtc_time_counting-never.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')",
+  "observations": [],
+  "outcome": "harness_error",
+  "run_id": "activation-rtc_time_counting-never"
+}

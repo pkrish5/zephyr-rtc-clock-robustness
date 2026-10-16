@@ -1,0 +1,185 @@
+{
+  "cases": [],
+  "condition": "seeded",
+  "error": "TIMEOUT: <pexpect.pty_spawn.spawn object at 0x106689e50>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-t7x9mzxr/renode.cfg']\nbuffer (last 100 chars): 'emulation RunFor \"0.500000000\"\\r\\n\\r('\nbefore (last 100 chars): 'emulation RunFor \"0.500000000\"\\r\\n\\r('\nafter: <class 'pexpect.exceptions.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: False\npid: 77225\nchild_fd: 6\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/rtc_factorial_v2/monitor/sol-range_absent-rtc_alarm_callback-r04-seeded-091.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')\n<pexpect.pty_spawn.spawn object at 0x106689e50>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-t7x9mzxr/renode.cfg']\nbuffer (last 100 chars): 'emulation RunFor \"0.500000000\"\\r\\n\\r('\nbefore (last 100 chars): 'emulation RunFor \"0.500000000\"\\r\\n\\r('\nafter: <class 'pexpect.exceptions.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: False\npid: 77225\nchild_fd: 6\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/rtc_factorial_v2/monitor/sol-range_absent-rtc_alarm_callback-r04-seeded-091.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')",
+  "lsi_frequency_hz": 19736,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 3500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 4000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 4500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 5000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 5500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 6000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 6500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 7000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 7500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 8000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 8500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 9000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 9500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 10000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 10500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 11000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 11500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 12000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 12500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 13000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 13500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 14000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 14500000000
+    }
+  ],
+  "outcome": "harness_error",
+  "run_id": "sol-range_absent-rtc_alarm_callback-r04-seeded-091",
+  "seed": 91
+}

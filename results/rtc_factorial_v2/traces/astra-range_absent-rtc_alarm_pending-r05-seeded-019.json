@@ -1,0 +1,121 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm_pending.test_year_rollover",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "error": null,
+  "lsi_frequency_hz": 39188,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 3500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 4000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 4500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 5000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 5500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 6000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 6500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 7000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 7500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 8000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "rtc_alarm_pending.test_year_rollover"
+      ],
+      "uart_bytes": 676,
+      "virtual_ns": 8500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-019",
+  "seed": 19
+}

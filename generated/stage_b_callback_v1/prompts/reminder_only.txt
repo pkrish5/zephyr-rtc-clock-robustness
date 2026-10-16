@@ -1,0 +1,21 @@
+You are writing a new test of an embedded real-time system API, using Zephyr v4.3.0 ztest on the STM32F4 Discovery board (STM32F407VG, single CPU). Write a standalone C source file for one ztest application. Do not write CMake or Kconfig files.
+
+Behavior to test:
+Exercise the STM32F407 RTC alarm callbacks using the board's RTC alias. The RTC uses the independent LSI oscillator. Set calendar time to 2024-12-31 23:59:55 and alarm time to 2025-01-01 00:00:05 for both alarm channels. Use supported second, minute, and hour alarm fields (mask 7). Verify neither callback is reported prematurely, then that both are reported when the RTC reaches the alarm time. Each callback must identify its configured alarm channel.
+
+Required observable checks:
+- Neither callback is observed before the alarm time.
+- Both callbacks fire at the configured RTC time and report the expected alarm IDs.
+- The test checks callbacks through observable events or protected state and applies a finite, justified bound.
+
+Relevant public API/context:
+DEVICE_DT_GET(DT_ALIAS(rtc)), rtc_set_time, rtc_get_time, rtc_alarm_set_time, rtc_alarm_set_callback, rtc_alarm_is_pending, RTC_ALARM_TIME_MASK_SECOND, RTC_ALARM_TIME_MASK_MINUTE, RTC_ALARM_TIME_MASK_HOUR, atomic_t or k_sem. Include <zephyr/drivers/rtc.h> and <zephyr/ztest.h>. This board exposes two RTC alarm channels.
+
+The application will be built with this fixed configuration:
+CONFIG_RTC=y
+CONFIG_RTC_ALARM=y
+CONFIG_ZTEST=y
+
+Documented hardware timing reminder: The RTC and processor timing can vary across operating conditions. A test should remain valid when clock speed, scheduling, and callback service differ from nominal timing. Choose observation bounds from the behavior and API guarantees. A clock-rate argument alone does not establish when a callback reaches a thread.
+
+Return a JSON object with exactly one field, "test_c", containing the complete C source. Include necessary Zephyr headers, test functions, and exactly one ZTEST_SUITE declaration. Use only public Zephyr APIs and self-contained test data. Make the checks executable on this board without external equipment. Keep the test reasonably short. Do not call tools or inspect local files; all task context is above. Do not include explanations or Markdown fences.

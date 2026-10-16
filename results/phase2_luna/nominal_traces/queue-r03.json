@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "queue_isr_transfer.test_isr_append_order_and_empty",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "queue_isr_transfer.test_isr_append_order_and_empty"
+      ],
+      "uart_bytes": 719,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "queue-r03",
+  "seed": 0
+}

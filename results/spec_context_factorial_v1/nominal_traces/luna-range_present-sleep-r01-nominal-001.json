@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "k_wakeup_from_isr.test_wakeup_sleeping_thread",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "k_wakeup_from_isr.test_wakeup_sleeping_thread"
+      ],
+      "uart_bytes": 703,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 1,
+  "run_id": "luna-range_present-sleep-r01-nominal-001"
+}

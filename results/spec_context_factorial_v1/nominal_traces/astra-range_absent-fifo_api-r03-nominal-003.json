@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "fifo_isr.test_isr_to_thread_transfer",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "fifo_isr.test_isr_to_thread_transfer"
+      ],
+      "uart_bytes": 667,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 3,
+  "run_id": "astra-range_absent-fifo_api-r03-nominal-003"
+}

@@ -1,0 +1,11 @@
+{
+  "date_utc": "2026-10-01T21:38:49.404569+00:00",
+  "first_launch_disposition": "infrastructure error before virtual time advanced; preserved outside five-run qualification",
+  "first_sandboxed_launch_record": "results/phase3_hsi_100mips/records/upstream--fifo_api-nominal-000.json",
+  "first_sandboxed_launch_sha256": "c9a7ee8999fa5823e7c4271671311e9bf76922add58adb90419f5d71aa178698",
+  "plan_path": "subjects/phase3_hsi_100mips/plan.json",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "qualified_access": "filesystem access for Renode monitor history",
+  "qualified_runner_path": "harness/phase3_hsi_100mips/run.py",
+  "qualified_runner_sha256": "adb5abf5d250a1e555ed75cb3be81404001da47f52ef575e81885caf1e705cc1"
+}

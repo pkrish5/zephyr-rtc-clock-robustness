@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "thread_wakeup.test_isr_wakes_sleeping_thread",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "thread_wakeup.test_isr_wakes_sleeping_thread"
+      ],
+      "uart_bytes": 696,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 3,
+  "run_id": "sol-range_absent-sleep-r04-nominal-003"
+}

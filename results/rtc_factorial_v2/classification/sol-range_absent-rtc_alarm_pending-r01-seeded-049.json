@@ -1,0 +1,8 @@
+{
+  "classification": "unknown",
+  "original_outcome": "fail",
+  "reason": "Fresh-process replay completed; source and firmware-cause adjudication pending. Preserve unknown until ruled in by evidence.",
+  "replay_identical": false,
+  "replay_outcome": "fail",
+  "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-049"
+}

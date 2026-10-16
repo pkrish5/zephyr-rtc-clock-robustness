@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "semaphore_irq_offload.test_isr_gives_increment_count",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_performance_mips": 100,
+  "error": null,
+  "hsi_frequency_hz": 16000000,
+  "index": 4,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "semaphore_irq_offload.test_isr_gives_increment_count"
+      ],
+      "uart_bytes": 728,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--semaphore-r01-nominal-004"
+}

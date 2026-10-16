@@ -1,0 +1,34 @@
+{
+  "board": "stm32f4_disco/stm32f407xx",
+  "build_log_path": "results/rtc_counting/build.log",
+  "build_log_sha256": "fc1cd8b42ac7dc7b7173c7f6974418651c343f50a7e4a7d4cd0aacffec1f3c2b",
+  "case": "rtc_api.test_time_counting",
+  "command": [
+    "/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/.venv/bin/west",
+    "build",
+    "-p",
+    "always",
+    "-b",
+    "stm32f4_disco",
+    "/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/rtc_counting/selected_case",
+    "-d",
+    "/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/rtc_counting/build/selected_case",
+    "--",
+    "-DDTC_OVERLAY_FILE=/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/phase1_zephyr/config/stm32f4_hsi.overlay;/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/phase1_lsi_rtc/rtc_alias.overlay"
+  ],
+  "elf_path": "subjects/rtc_counting/build/selected_case/zephyr/zephyr.elf",
+  "elf_sha256": "87dab61c7fce6233dee27f24ab231538f98d2abf43c7b621bdf0c31ed297514c",
+  "exit_code": 0,
+  "input_sha256": {
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay": "171a39bb9ae665981d0ad54fa8a5d25631d0a7f261f5ba959e83f87e91d93423",
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88",
+    "subjects/rtc_counting/PROTOCOL.md": "fa1f330959b8207051abcdc135dc34bbd0dbf3e40819058d687877192a617f12",
+    "subjects/rtc_counting/selected_case/CMakeLists.txt": "79dbedb185e96c17ec31e2877575132e9d390355296edf08da78fb255a391d32",
+    "subjects/rtc_counting/selected_case/prj.conf": "64f22c1edf32cf2dad0b50bca7bc388eb9b69da9447d31f4610ddb92b98a0e44",
+    "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/main.c": "8748c071eb380c191ae2b12383358f2923602e5dfaf20846328b525f20e4a9e0",
+    "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_time_incrementing.c": "80d893f8ea9ff9a1bcb21e86b0a23bf1652037c37b4aaa9aa34fa4850316d55e"
+  },
+  "subject": "counting",
+  "timestamp_utc": "2026-09-29T21:40:54.333163+00:00",
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

@@ -1,0 +1,538 @@
+{
+  "method": "syntactic candidate scan; manual adjudication pending",
+  "records": [
+    {
+      "case": "timer_api.test_timer_status_sync",
+      "kind": "upstream",
+      "regions_scanned": 2,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c": "6d2d4422ef649b5837c606e8a5aa1454c573efa13be7085851f4c03442c7fada"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 504,
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_timer_start(&status_sync_timer, K_MSEC(DURATION), K_MSEC(PERIOD));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 517,
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_timer_start(&status_sync_timer, K_MSEC(DURATION), K_MSEC(PERIOD));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 154,
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_busy_wait(ms*1000);"
+        }
+      ],
+      "task_id": "timer_api"
+    },
+    {
+      "case": "semaphore.test_sem_give_from_isr",
+      "kind": "upstream",
+      "regions_scanned": 1,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/semaphore/semaphore/src/main.c": "d4bd094f30d7354f13fcf4d49a93985246455982b8b8a9d1323ae0312b36f498"
+      },
+      "tags": [],
+      "task_id": "semaphore"
+    },
+    {
+      "case": "fifo_api.test_fifo_isr2thread",
+      "kind": "upstream",
+      "regions_scanned": 3,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_contexts.c": "5b94703545aaf128d9088245be1846e1ef0442882a872e32c56767f842c1ffa1"
+      },
+      "tags": [],
+      "task_id": "fifo_api"
+    },
+    {
+      "case": "lifo_contexts.test_lifo_isr2thread",
+      "kind": "upstream",
+      "regions_scanned": 3,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_contexts.c": "eeac6acea7b58b046d556f264cd904f479ed7f136fdcc7363ab6f03804271168",
+        "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_loop.c": "5dac91f91baeb84996d4151c7474559b1f66a1c27f5683ea8394c50d7fcec4f6"
+      },
+      "tags": [],
+      "task_id": "lifo_api"
+    },
+    {
+      "case": "msgq_api.test_msgq_isr",
+      "kind": "upstream",
+      "regions_scanned": 4,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/msgq/msgq_api/src/test_msgq_contexts.c": "69d708599a650db8df74a08f0a0ef1b5557be3dc304a9a44fa37289a0b6e9a83"
+      },
+      "tags": [],
+      "task_id": "msgq_api"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_basic_schedule",
+      "kind": "upstream",
+      "regions_scanned": 3,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c": "4ec2e6f05084a892a7afa21fbf4e3fcd47d2181d514ce84d2cd7166aa472e6d9"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 1006,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(wp->flags & K_WORK_DELAYABLE, K_WORK_DELAYABLE,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 1010,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_TICKS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1010,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_TICKS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1012,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "rc = k_work_schedule_for_queue(&coophi_queue, &dwork, K_MSEC(DELAY_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 1024,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "rc = k_sem_take(&sync_sem, K_FOREVER);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 1028,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(coophi_counter(), 1);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 128,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "zassert_equal(k_sem_take(&sync_sem, K_NO_WAIT), -EBUSY);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 89,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "return atomic_get(&coophi_ctr);"
+        }
+      ],
+      "task_id": "workq"
+    },
+    {
+      "case": "queue_api.test_queue_isr2thread",
+      "kind": "upstream",
+      "regions_scanned": 3,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_contexts.c": "221b7415fabee11ca866cad23958672aa5ab7bbb7cbe23b44693f4c200c6e891"
+      },
+      "tags": [],
+      "task_id": "queue"
+    },
+    {
+      "case": "sleep.test_sleep",
+      "kind": "upstream",
+      "regions_scanned": 4,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c": "e40ebc219763810cb638c3cad755fa44fee47ce60f8e62beac25042dc214299a"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 223,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sem_take(&task_sem, K_FOREVER);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 232,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 232,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 235,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "selected_case",
+          "snippet": "\"k_sleep() slept for %d ticks, not %d\\n\","
+        }
+      ],
+      "task_id": "sleep"
+    },
+    {
+      "case": "context_one_cpu.test_k_sleep",
+      "kind": "upstream",
+      "regions_scanned": 1,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/context/src/main.c": "6bfad2a3f3c0507d4c3b3376cff0c57700d79aecfa1f3f5f4c5c35b41b85fe1a"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 952,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "rv = k_sem_take(&reply_timeout, K_MSEC(timeout * 2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 952,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "rv = k_sem_take(&reply_timeout, K_MSEC(timeout * 2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 954,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "\"k_sleep().\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 965,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "K_MSEC(timeouts[i].timeout));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 968,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "data = k_fifo_get(&timeout_order_fifo, K_MSEC(750));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 972,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(data->timeout_order, i,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 981,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "data = k_fifo_get(&timeout_order_fifo, K_MSEC(750));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1001,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "K_MSEC(timeouts[i].timeout));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1027,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "data = k_fifo_get(&timeout_order_fifo, K_MSEC(2750));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 1032,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(data->timeout_order, i,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1046,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "data = k_fifo_get(&timeout_order_fifo, K_MSEC(750));"
+        }
+      ],
+      "task_id": "context"
+    },
+    {
+      "case": "pending.test_pending_timer",
+      "kind": "upstream",
+      "regions_scanned": 1,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/pending/src/main.c": "a8bffa54aa1c964fa8eb1d81f09448901bb9b356215b1e7a3535b9fbba6f4dd9"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 458,
+          "path": "subjects/upstream/zephyr/tests/kernel/pending/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 458,
+          "path": "subjects/upstream/zephyr/tests/kernel/pending/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        }
+      ],
+      "task_id": "pending"
+    },
+    {
+      "case": "rtc_api.test_alarm_callback",
+      "kind": "upstream",
+      "regions_scanned": 1,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 111,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_ok(ret, \"Failed to set alarm %d callback\", i);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 120,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 120,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 123,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "callback_called_mask_status_odd = atomic_get(&callback_called_mask_odd);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 124,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "callback_called_mask_status_even = atomic_get(&callback_called_mask_even);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 126,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_odd, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 128,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_even, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 132,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 132,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 137,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "(j % 2) ? atomic_test_bit(&callback_called_mask_odd, j)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 138,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": ": atomic_test_bit(&callback_called_mask_even, j);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 140,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_status, true,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 152,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_ok(ret, \"Failed to disable alarm %d callback\", i);"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r01",
+      "source_sha256": "6186580b79ab9bd336876dc6f5a6f52f6cb61d7144b20ac3168868ea224c58d3",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 23,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "if (atomic_get(&event->count) == 0) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 55,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, id, mask, &alarm));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 56,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_callback(rtc, id, alarm_callback,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 61,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 61,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 67,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&events[id].count), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 67,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&events[id].count), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 73,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&events[id].fired, K_SECONDS(15)),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 73,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&events[id].fired, K_SECONDS(15)),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 73,
+          "path": "generated/phase2/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&events[id].fired, K_SECONDS(15)),"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-001-fragile",
+    "seed": 1
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-002-fragile",
+    "seed": 2
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-014-fragile",
+    "seed": 14
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-019-fragile",
+    "seed": 19
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-020-fragile",
+    "seed": 20
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-022-fragile",
+    "seed": 22
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-028-fragile",
+    "seed": 28
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-031-fragile",
+    "seed": 31
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-032-fragile",
+    "seed": 32
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-042-fragile",
+    "seed": 42
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-043-fragile",
+    "seed": 43
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-046-fragile",
+    "seed": 46
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-049-fragile",
+    "seed": 49
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-054-fragile",
+    "seed": 54
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-055-fragile",
+    "seed": 55
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-057-fragile",
+    "seed": 57
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-066-fragile",
+    "seed": 66
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-067-fragile",
+    "seed": 67
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-069-fragile",
+    "seed": 69
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-070-fragile",
+    "seed": 70
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-072-fragile",
+    "seed": 72
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-079-fragile",
+    "seed": 79
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-082-fragile",
+    "seed": 82
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-086-fragile",
+    "seed": 86
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-087-fragile",
+    "seed": 87
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-089-fragile",
+    "seed": 89
+  },
+  {
+    "category": "brittle test assumption",
+    "reason": "same frozen firmware emits the GPIO event within the event-wait deadline; fixed sleep observes before the SysTick ISR; fresh replay matches",
+    "run_id": "perturbed-091-fragile",
+    "seed": 91
+  }
+]

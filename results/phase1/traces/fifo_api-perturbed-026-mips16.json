@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "case": "fifo_api.test_fifo_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api.test_fifo_is_empty_isr",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api.test_fifo_is_empty_thread",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api.test_fifo_isr2thread",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api.test_fifo_thread2isr",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api_1cpu.test_fifo_cancel_wait",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api_1cpu.test_fifo_loop",
+      "status": "pass"
+    },
+    {
+      "case": "fifo_api_1cpu.test_fifo_thread2thread",
+      "status": "pass"
+    }
+  ],
+  "cpu_performance_mips": 16,
+  "error": null,
+  "frequency_hz": 15946300,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "fifo_api_1cpu.test_fifo_thread2thread"
+      ],
+      "uart_bytes": 6624,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "fifo_api-perturbed-026-mips16"
+}

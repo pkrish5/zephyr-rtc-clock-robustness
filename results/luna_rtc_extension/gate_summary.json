@@ -1,0 +1,176 @@
+{
+  "amended_functional_eligible": 3,
+  "build": {
+    "fail": 5,
+    "pass": 5
+  },
+  "functional": {
+    "met": 3,
+    "not_evaluable": 6,
+    "not_met": 1
+  },
+  "functional_ledger_sha256": "56b0bd755333202fc36a385ee8cb76013eb4a97ff8cf5688f2742cfa003b3f8f",
+  "generation": {
+    "generated": 10
+  },
+  "nominal": {
+    "fail": 1,
+    "not_run": 5,
+    "pass": 4
+  },
+  "original_oracle": {
+    "inadequate": 8,
+    "uncertain": 2
+  },
+  "original_review_sha256": "30c1669ce5087cf3de614ad98b834b90d0cdb45c93ea5c3912bc1d811fa82bd4",
+  "original_strict_eligible": 0,
+  "planned": 10,
+  "rows": [
+    {
+      "amended_functional_eligible": true,
+      "build": "pass",
+      "functional": "met",
+      "functional_evidence": "The compiled source asserts successful set/read, consecutive calendar monotonicity, and arrival at the +10-second target across the year boundary. The observation deadline is judged separately as a timing-bound outcome.",
+      "generation": "generated",
+      "nominal": "pass",
+      "oracle": "uncertain",
+      "original_strict_eligible": false,
+      "run_id": "rtc_time_counting-r01",
+      "task_id": "rtc_time_counting",
+      "timing_bound": "unknown",
+      "timing_evidence": "The source polls RTC calendar state until ten observed seconds pass, checks monotonicity, and uses a 30 s host deadline. The legal slow-end calendar calculation is about 18.824 s, leaving about 11 s for polling/scheduling. The available contract does not establish a complete worst-case scheduling bound, so the margin is left uncertain rather than deemed unsupported or guaranteed."
+    },
+    {
+      "amended_functional_eligible": true,
+      "build": "pass",
+      "functional": "met",
+      "functional_evidence": "The compiled source asserts successful set/read, consecutive calendar monotonicity, and arrival at the +10-second target across the year boundary. The observation deadline is judged separately as a timing-bound outcome.",
+      "generation": "generated",
+      "nominal": "pass",
+      "oracle": "uncertain",
+      "original_strict_eligible": false,
+      "run_id": "rtc_time_counting-r02",
+      "task_id": "rtc_time_counting",
+      "timing_bound": "unknown",
+      "timing_evidence": "The 22 s polling deadline exceeds the approximately 18.824 s slow-end calendar arrival by about 3.2 s, but the available task and kernel contracts do not bound all thread scheduling delay."
+    },
+    {
+      "amended_functional_eligible": true,
+      "build": "pass",
+      "functional": "met",
+      "functional_evidence": "The compiled source asserts successful set/read, consecutive calendar monotonicity, and arrival at the +10-second target across the year boundary. The observation deadline is judged separately as a timing-bound outcome.",
+      "generation": "generated",
+      "nominal": "pass",
+      "oracle": "inadequate",
+      "original_strict_eligible": false,
+      "run_id": "rtc_time_counting-r03",
+      "task_id": "rtc_time_counting",
+      "timing_bound": "inadequate",
+      "timing_evidence": "Its 18 s observation cap is shorter than the approximately 18.824 s ten-calendar-second arrival permitted at 17 kHz LSI, even before poll phase and scheduling delay."
+    },
+    {
+      "amended_functional_eligible": false,
+      "build": "pass",
+      "functional": "not_evaluable",
+      "functional_evidence": "Frozen nominal UART fails rtc_set_time at test.c:34. Source sets tm_wday=-1; pinned rtc_ll_stm32.c returns -EINVAL for that value. Calendar counting is not reached.",
+      "generation": "generated",
+      "nominal": "fail",
+      "oracle": "inadequate",
+      "original_strict_eligible": false,
+      "run_id": "rtc_time_counting-r04",
+      "task_id": "rtc_time_counting",
+      "timing_bound": "unknown",
+      "timing_evidence": "The 30 s calendar deadline leaves about 11 s beyond the legal slow-end arithmetic, but the full scheduling margin is not documented."
+    },
+    {
+      "amended_functional_eligible": false,
+      "build": "pass",
+      "functional": "not_met",
+      "functional_evidence": "The test compares every poll only to the initial RTC time; the assigned previous value is never asserted, so a later calendar regression can pass the monotonicity oracle.",
+      "generation": "generated",
+      "nominal": "pass",
+      "oracle": "inadequate",
+      "original_strict_eligible": false,
+      "run_id": "rtc_time_counting-r05",
+      "task_id": "rtc_time_counting",
+      "timing_bound": "unknown",
+      "timing_evidence": "The 30 s calendar polling window exceeds the legal slow-end arithmetic; a full scheduling bound is unavailable. Its missing successive-monotonicity check is a separate functional-oracle issue."
+    },
+    {
+      "amended_functional_eligible": false,
+      "build": "fail",
+      "functional": "not_evaluable",
+      "functional_evidence": "Frozen suite fails compilation at the pinned RTC API signatures; no intended alarm assertion is executable.",
+      "generation": "generated",
+      "nominal": "not_run",
+      "oracle": "inadequate",
+      "original_strict_eligible": false,
+      "run_id": "rtc_alarm_pending-r01",
+      "task_id": "rtc_alarm_pending",
+      "timing_bound": "inadequate",
+      "timing_evidence": "test.c: initial K_SECONDS(2) sleep, then 15 one-second polls and terminal failure. Ten RTC seconds with 128 x 250 prescaler at 17 kHz require about 18.824 host seconds, before phase or scheduling margin."
+    },
+    {
+      "amended_functional_eligible": false,
+      "build": "fail",
+      "functional": "not_evaluable",
+      "functional_evidence": "Frozen suite fails compilation at the pinned RTC API signatures; no intended alarm assertion is executable.",
+      "generation": "generated",
+      "nominal": "not_run",
+      "oracle": "inadequate",
+      "original_strict_eligible": false,
+      "run_id": "rtc_alarm_pending-r02",
+      "task_id": "rtc_alarm_pending",
+      "timing_bound": "unknown",
+      "timing_evidence": "The 20 one-second polling iterations narrowly exceed the approximately 18.824 s legal slow-end alarm arrival, but a complete scheduling/polling bound is unavailable. Build failure is a separate API-signature issue."
+    },
+    {
+      "amended_functional_eligible": false,
+      "build": "fail",
+      "functional": "not_evaluable",
+      "functional_evidence": "Frozen suite fails compilation at the pinned RTC API signatures; no intended alarm assertion is executable.",
+      "generation": "generated",
+      "nominal": "not_run",
+      "oracle": "inadequate",
+      "original_strict_eligible": false,
+      "run_id": "rtc_alarm_pending-r03",
+      "task_id": "rtc_alarm_pending",
+      "timing_bound": "inadequate",
+      "timing_evidence": "After a 1 s wait it polls for at most 15 additional seconds, below the approximately 18.824 s needed for the legal 17 kHz RTC to reach an alarm ten calendar seconds ahead."
+    },
+    {
+      "amended_functional_eligible": false,
+      "build": "fail",
+      "functional": "not_evaluable",
+      "functional_evidence": "Frozen suite fails compilation at the pinned RTC API signatures; no intended alarm assertion is executable.",
+      "generation": "generated",
+      "nominal": "not_run",
+      "oracle": "inadequate",
+      "original_strict_eligible": false,
+      "run_id": "rtc_alarm_pending-r04",
+      "task_id": "rtc_alarm_pending",
+      "timing_bound": "inadequate",
+      "timing_evidence": "The positive alarm check is forced after about 2 + 10 host seconds, shorter than the legal slow-end RTC arrival. The pre-alarm calendar predicate is separately wrong even at nominal timing."
+    },
+    {
+      "amended_functional_eligible": false,
+      "build": "fail",
+      "functional": "not_evaluable",
+      "functional_evidence": "Frozen suite fails compilation at the pinned RTC API signatures; no intended alarm assertion is executable.",
+      "generation": "generated",
+      "nominal": "not_run",
+      "oracle": "inadequate",
+      "original_strict_eligible": false,
+      "run_id": "rtc_alarm_pending-r05",
+      "task_id": "rtc_alarm_pending",
+      "timing_bound": "unknown",
+      "timing_evidence": "The 2 + 20 s wait exceeds the legal slow-end arithmetic but has no complete documented polling/scheduling bound. Build failure is a separate API-signature issue."
+    }
+  ],
+  "rq1_source_review_sha256": "bbe66366ef09e82a90f205572ece70fdfa300e1bf48c888372382b33637ac643",
+  "source_summary_sha256": "9d9993007ddc06796fe884bc4964ade13477994de326fce3a2da14787af3f38f",
+  "timing_bound": {
+    "inadequate": 4,
+    "unknown": 6
+  }
+}

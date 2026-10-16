@@ -1,0 +1,509 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "ChatGPT-authenticated CLI does not expose billed API dollars",
+  "build_statuses": {
+    "fail": 5,
+    "pass": 50
+  },
+  "codex_cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "cohort": "luna_primary",
+  "finalized_generations": 55,
+  "generation_statuses": {
+    "generated": 55
+  },
+  "model_requested": "gpt-6-luna",
+  "nominal_statuses": {
+    "fail": 9,
+    "not_run": 5,
+    "pass": 38,
+    "timeout": 3
+  },
+  "oracle_statuses": {
+    "adequate": 34,
+    "inadequate": 19,
+    "uncertain": 2
+  },
+  "planned_runs": 55,
+  "rows": [
+    {
+      "arm": "hsi",
+      "human_case": "timer_api.test_timer_status_sync",
+      "prompt_sha256": "b1cce28751e66ab1abf66d7ddb5467f0a395ccfe083ad1d8ff048a87d1a5062b",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "timer_api-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "timeout",
+          "oracle": "inadequate",
+          "run_id": "timer_api-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "timer_api-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "timer_api-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "timer_api-r05"
+        }
+      ],
+      "task_id": "timer_api"
+    },
+    {
+      "arm": "hsi",
+      "human_case": "semaphore.test_sem_give_from_isr",
+      "prompt_sha256": "3e375faab4e3663a355a6d301fbb4de7222d78c761821b954fb3e19d8b2874b3",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "semaphore-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "semaphore-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "semaphore-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "semaphore-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "semaphore-r05"
+        }
+      ],
+      "task_id": "semaphore"
+    },
+    {
+      "arm": "hsi",
+      "human_case": "fifo_api.test_fifo_isr2thread",
+      "prompt_sha256": "eb3951efaa0fe0b7f55669605e55dd5dda1656a1126b70eecea4f74f4301d3b4",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "fifo_api-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "fifo_api-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "fifo_api-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "fifo_api-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "fifo_api-r05"
+        }
+      ],
+      "task_id": "fifo_api"
+    },
+    {
+      "arm": "hsi",
+      "human_case": "lifo_contexts.test_lifo_isr2thread",
+      "prompt_sha256": "1bd829b75a89010c41dd7fe1836204cdb9982ca0195a484751651e81a13e7865",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "lifo_api-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "lifo_api-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "lifo_api-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "lifo_api-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "lifo_api-r05"
+        }
+      ],
+      "task_id": "lifo_api"
+    },
+    {
+      "arm": "hsi",
+      "human_case": "msgq_api.test_msgq_isr",
+      "prompt_sha256": "819f30cd0f8cc2bcbd5420e9eb030f0f372b62332edf6ebb00ed3b0c4d606883",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "msgq_api-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "msgq_api-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "msgq_api-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "msgq_api-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "msgq_api-r05"
+        }
+      ],
+      "task_id": "msgq_api"
+    },
+    {
+      "arm": "hsi",
+      "human_case": "work_1cpu.test_1cpu_basic_schedule",
+      "prompt_sha256": "aac7dd3f0563c7eb74b70429d7b7350b34d1d789235218133091def2f283c76a",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "workq-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "workq-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "workq-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "workq-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "workq-r05"
+        }
+      ],
+      "task_id": "workq"
+    },
+    {
+      "arm": "hsi",
+      "human_case": "queue_api.test_queue_isr2thread",
+      "prompt_sha256": "1ef96f216210a37c99a44e087182287a793f108e514d10d6203d107b6607d6a9",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "queue-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "queue-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "queue-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "queue-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "queue-r05"
+        }
+      ],
+      "task_id": "queue"
+    },
+    {
+      "arm": "hsi",
+      "human_case": "sleep.test_sleep",
+      "prompt_sha256": "88aec876f9055f5219eddc5d1e9d9146484f0eb0b3ef628b426a45f1c19fc9b5",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "sleep-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "sleep-r02"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "sleep-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "timeout",
+          "oracle": "inadequate",
+          "run_id": "sleep-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "adequate",
+          "run_id": "sleep-r05"
+        }
+      ],
+      "task_id": "sleep"
+    },
+    {
+      "arm": "hsi",
+      "human_case": "context_one_cpu.test_k_sleep",
+      "prompt_sha256": "1711792fc1173638a37247438a58f41b7d49138613b3c093a92e34e0b7f0912e",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "context-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "uncertain",
+          "run_id": "context-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "context-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "uncertain",
+          "run_id": "context-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "inadequate",
+          "run_id": "context-r05"
+        }
+      ],
+      "task_id": "context"
+    },
+    {
+      "arm": "hsi",
+      "human_case": "pending.test_pending_timer",
+      "prompt_sha256": "c1560782729951b08533df66b39d8dc7f584ff48a717a68867d988e747fb0795",
+      "runs": [
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "pending-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "pending-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "timeout",
+          "oracle": "inadequate",
+          "run_id": "pending-r03"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "pending-r04"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "pending-r05"
+        }
+      ],
+      "task_id": "pending"
+    },
+    {
+      "arm": "lsi_pilot",
+      "human_case": "rtc_api.test_alarm_callback",
+      "prompt_sha256": "9ac129b663566727684bf7fedc98a34f22d05eba8d6605dd9472a9c5d8c0424e",
+      "runs": [
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r01"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r02"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r04"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r05"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    }
+  ],
+  "scope_note": "55-run primary cohort",
+  "tool_events": 0,
+  "usage_totals": {
+    "cached_input_tokens": 574464,
+    "input_tokens": 762788,
+    "output_tokens": 31035
+  }
+}

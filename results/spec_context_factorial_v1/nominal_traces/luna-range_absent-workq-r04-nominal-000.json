@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "delayable_work_system_queue.test_delayable_work_on_system_queue",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "delayable_work_system_queue.test_delayable_work_on_system_queue"
+      ],
+      "uart_bytes": 939,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "fail",
+  "repeat": 0,
+  "run_id": "luna-range_absent-workq-r04-nominal-000"
+}

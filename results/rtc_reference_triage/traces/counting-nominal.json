@@ -1,0 +1,8 @@
+{
+  "cases": [],
+  "error": "EOF: End Of File (EOF). Empty string style platform.\n<pexpect.pty_spawn.spawn object at 0x1069e9400>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-kvq34lis/renode.cfg']\nbuffer (last 100 chars): ''\nbefore (last 100 chars): 'eInterface.<>c__DisplayClass0_1.<Run>b__3(Object x)\\r\\n   at System.Threading.Thread.StartCallback()\\r\\n'\nafter: <class 'pexpect.exceptions.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: True\npid: 96507\nchild_fd: 6\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/rtc_reference_triage/monitor/counting-nominal.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')",
+  "lsi_frequency_hz": 32000,
+  "observations": [],
+  "outcome": "harness_error",
+  "run_id": "counting-nominal"
+}

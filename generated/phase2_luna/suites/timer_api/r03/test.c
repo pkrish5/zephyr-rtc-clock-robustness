@@ -1,0 +1,33 @@
+#include <zephyr/kernel.h>
+#include <zephyr/ztest.h>
+
+#define TIMER_PERIOD K_MSEC(20)
+
+static struct k_timer periodic_timer;
+static atomic_t expiry_count;
+
+static void timer_expiry_fn(struct k_timer *timer)
+{
+    ARG_UNUSED(timer);
+    atomic_inc(&expiry_count);
+}
+
+ZTEST(timer_interrupt, test_periodic_timer_expirations_and_stop)
+{
+    atomic_set(&expiry_count, 0);
+    k_timer_init(&periodic_timer, timer_expiry_fn, NULL);
+    k_timer_start(&periodic_timer, TIMER_PERIOD, TIMER_PERIOD);
+
+    uint32_t first = k_timer_status_sync(&periodic_timer);
+    zassert_true(first > 0U, "first timer synchronization should report expiry");
+
+    uint32_t second = k_timer_status_sync(&periodic_timer);
+    zassert_true(second > 0U, "second timer synchronization should report expiry");
+    zassert_true(atomic_get(&expiry_count) >= 2, "expiry callback should run at least twice");
+
+    k_timer_stop(&periodic_timer);
+    zassert_equal(k_timer_status_sync(&periodic_timer), 0U,
+                  "stopped timer should not report another expiry");
+}
+
+ZTEST_SUITE(timer_interrupt, NULL, NULL, NULL, NULL, NULL);

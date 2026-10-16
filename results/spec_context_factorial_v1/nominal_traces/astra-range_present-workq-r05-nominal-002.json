@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "delayed_work_test.test_timer_driven_execution",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "delayed_work_test.test_timer_driven_execution"
+      ],
+      "uart_bytes": 703,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 2,
+  "run_id": "astra-range_present-workq-r05-nominal-002"
+}

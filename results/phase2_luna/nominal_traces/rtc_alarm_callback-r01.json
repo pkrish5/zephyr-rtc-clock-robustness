@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm.test_both_alarm_callbacks",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "rtc_alarm.test_both_alarm_callbacks"
+      ],
+      "uart_bytes": 850,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "rtc_alarm_callback-r01",
+  "seed": 0
+}

@@ -1,17 +1,18 @@
 # Clock Robustness and Alarm Precision in Zephyr RTC Tests
 
-This repository accompanies the paper [Clock Robustness and Alarm Precision in LLM-Generated and Upstream Zephyr RTC Tests](paper/draft/main.pdf). It contains the manuscript source, frozen protocols and prompts, generated C test sources, experiment and analysis scripts, and compact analysis ledgers.
+This repository accompanies the paper [Clock Robustness and Alarm Precision in LLM-Generated and Upstream Zephyr RTC Tests](paper/draft/main.pdf). It contains the manuscript source, frozen protocols and prompts, all saved generated C test sources, experiment and analysis scripts, and non-binary run records.
 
 ## Contents
 
 - [Paper source](paper/draft/main.tex) and [PDF](paper/draft/main.pdf).
 - [Dated protocol amendments](paper/DESIGN.md).
-- [Frozen factorial materials](generated/spec_context_factorial_v1/): locked prompt order, prompts, metadata, and generated test sources. Build outputs and per-call temporary logs are omitted.
+- [Generated tests](generated/): the frozen factorial and earlier test cohorts, including prompts and saved C sources. Build outputs and per-call temporary logs are omitted.
 - [Harness](harness/) and [analysis](analysis/): simulator runners, replay and fault tools, and analysis code and ledgers.
-- [Subjects](subjects/): task definitions, wrappers, and reference-test source. The full upstream Zephyr checkout and compiled binaries are omitted; the paper identifies the pinned upstream revision.
+- [Subjects](subjects/): task definitions, wrappers, reference tests, and a [snapshot of the selected upstream RTC test application](subjects/upstream_rtc_snapshot/). The full upstream Zephyr checkout and compiled binaries are omitted.
+- [Results](results/): saved machine-readable verdicts, traces, manifests, and audits from the study's experiment runs.
 - [Notes](notes/): dated reports and audit notes.
 
-The large raw Renode traces and build directories are excluded from this code repository. The evaluation dataset and results are intended for a separate data link in the paper. Until that link is supplied, the paper retains its [DATA_URL] placeholder.
+Compiled simulator and firmware build directories, ELF files, and temporary logs are excluded. The run records and traces used for analysis are in [results](results/); generated source is in [generated](generated/).
 
 ## Reproduction entry points
 

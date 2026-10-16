@@ -1,0 +1,50 @@
+{
+  "cases": [
+    {
+      "case": "timer_wait.test_one_shot_wakes_blocked_worker",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 179,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 179,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 179,
+      "virtual_ns": 750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 179,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_wait.test_one_shot_wakes_blocked_worker"
+      ],
+      "uart_bytes": 696,
+      "virtual_ns": 1250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 1,
+  "run_id": "astra-range_absent-pending-r05-nominal-001"
+}

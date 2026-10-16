@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "sem_irq_offload.test_multiple_isr_gives",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "sem_irq_offload.test_multiple_isr_gives"
+      ],
+      "uart_bytes": 683,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 4,
+  "run_id": "sol-range_absent-semaphore-r03-nominal-004"
+}

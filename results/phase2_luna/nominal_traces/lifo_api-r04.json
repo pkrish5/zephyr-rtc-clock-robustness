@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "lifo_isr_transfer.test_isr_lifo_order_and_empty",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "lifo_isr_transfer.test_isr_lifo_order_and_empty"
+      ],
+      "uart_bytes": 709,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "lifo_api-r04",
+  "seed": 0
+}

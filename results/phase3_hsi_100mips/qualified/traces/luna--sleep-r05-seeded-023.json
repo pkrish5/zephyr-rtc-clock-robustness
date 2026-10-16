@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "wakeup_from_isr.test_wakeup_shortens_sleep",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "error": null,
+  "hsi_frequency_hz": 15991999,
+  "index": 23,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "wakeup_from_isr.test_wakeup_shortens_sleep"
+      ],
+      "uart_bytes": 692,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--sleep-r05-seeded-023"
+}

@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "semaphore_irq_offload.test_isr_gives_increment_count",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "error": null,
+  "hsi_frequency_hz": 16141603,
+  "index": 62,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "semaphore_irq_offload.test_isr_gives_increment_count"
+      ],
+      "uart_bytes": 728,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--semaphore-r05-seeded-062"
+}

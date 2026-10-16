@@ -1,0 +1,166 @@
+{
+  "cases": [
+    {
+      "case": "semaphore.test_k_sem_correct_count_limit",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_k_sem_define",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_k_sem_init",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_count_get",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_give_from_isr",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_give_from_thread",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_give_take_from_isr",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_measure_timeout_from_thread",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_measure_timeouts",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_multi_take_timeout_diff_sem",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_multiple_threads_wait",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_reset",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_reset_waiting",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_multiple",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_no_wait",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_no_wait_fails",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_timeout",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_timeout_fails",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_timeout_forever",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_thread2isr",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_thread2thread",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_1cpu.test_sem_multiple_take_and_timeouts",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_1cpu.test_sem_queue_mutual_exclusion",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_1cpu.test_sem_take_timeout_isr",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_count_get_null",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_give_null",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_init_null",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_reset_null",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_take_null",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 99,
+  "elf_path": "subjects/phase1_zephyr/build/semaphore/zephyr/zephyr.elf",
+  "elf_sha256": "a9601b053b4b783ff0b39abcb9bef5249c411ed827c301f585f211ca568b255c",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 15877124,
+  "index": 66,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--semaphore-seeded-066.log",
+  "monitor_sha256": "293c8eb155e56a3552f4f934eca653ad1a00dd0fb9fd7e849de333d01cc654ea",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_15877124.repl",
+  "platform_sha256": "85389ce491267a95df3cef18b8659a218fee0658afdd712fd97729a1dd2e45db",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--semaphore-seeded-066",
+  "seed": 66,
+  "selected_case": "semaphore.test_sem_give_from_isr",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/semaphore/semaphore/src/main.c": "d4bd094f30d7354f13fcf4d49a93985246455982b8b8a9d1323ae0312b36f498"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 15877124,
+  "task_id": "semaphore",
+  "timestamp_utc": "2026-10-02T21:46:31.006202+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--semaphore-seeded-066.json",
+  "trace_sha256": "ec91e5de196283a7030331fe6985a340abaad5d78db4f747f096caf02b5a0903",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--semaphore-seeded-066.log",
+  "uart_sha256": "19838d62570529366cabea83afde1849ee4aaf475c08f92828c75701dc0e0912",
+  "version_id": "upstream/semaphore",
+  "virtual_ns": 11250000000,
+  "wall_seconds": 77.239
+}

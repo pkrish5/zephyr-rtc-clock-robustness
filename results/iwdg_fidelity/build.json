@@ -1,0 +1,32 @@
+{
+  "board": "stm32f4_disco/stm32f407xx",
+  "build_log_path": "results/iwdg_fidelity/build.log",
+  "build_log_sha256": "71ac661b30cccb15bf3329f724509a6d19969835685871ff4ad75e27c682a30e",
+  "command": [
+    "/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/.venv/bin/west",
+    "build",
+    "-p",
+    "always",
+    "-b",
+    "stm32f4_disco",
+    "/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/upstream/zephyr/tests/drivers/watchdog/wdt_basic_api",
+    "-d",
+    "/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/iwdg_fidelity/build",
+    "--",
+    "-DDTC_OVERLAY_FILE=/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/phase1_zephyr/config/stm32f4_hsi.overlay;/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/subjects/upstream/zephyr/tests/drivers/watchdog/wdt_basic_api/boards/stm32_iwdg.overlay"
+  ],
+  "elf_path": "subjects/iwdg_fidelity/build/zephyr/zephyr.elf",
+  "elf_sha256": "6a43b35e692b938c7c5a3ad096764ae88e4878465fbca0410ce2706b86e12bfa",
+  "exit_code": 0,
+  "input_sha256": {
+    "notes/IWDG_FIDELITY_PROTOCOL.md": "b552c783daa4a6bc9917708c6f62af32b467e7a59224a92266bcf0102b090b2b",
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88",
+    "subjects/upstream/zephyr/tests/drivers/watchdog/wdt_basic_api/CMakeLists.txt": "540ef29a9f4c30418ba93d0dfd45756272bbdb13ac8cceb2c285ef84dd6a29f4",
+    "subjects/upstream/zephyr/tests/drivers/watchdog/wdt_basic_api/boards/stm32_iwdg.overlay": "432056ba11d8bd53ae3fc7aa9a688a68301df4fff0cba7e0db753eba716f6cbb",
+    "subjects/upstream/zephyr/tests/drivers/watchdog/wdt_basic_api/prj.conf": "a7314f54008396301f613e8edf7bc05cd4793799ca38d37534919e40d81b053d",
+    "subjects/upstream/zephyr/tests/drivers/watchdog/wdt_basic_api/src/main.c": "b48fa1a3150be5a265078d5e7f5baa36e72e34f1f0a5fafcd1b400a560d2741d",
+    "subjects/upstream/zephyr/tests/drivers/watchdog/wdt_basic_api/src/test_wdt.c": "1c6a72805dd35d0772680c41b9a344014695b3f33bb405642afd6fed9e1edbc8"
+  },
+  "timestamp_utc": "2026-09-29T21:44:31.992677+00:00",
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

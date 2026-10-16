@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "timer_sleep.test_timed_sleep_wakeup",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_sleep.test_timed_sleep_wakeup"
+      ],
+      "uart_bytes": 667,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 3,
+  "run_id": "astra-range_absent-context-r01-nominal-003"
+}

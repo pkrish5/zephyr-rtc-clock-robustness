@@ -1,0 +1,36 @@
+{
+  "call_index": 365,
+  "cases": [
+    {
+      "case": "sem_isr.test_count_after_each_isr_give",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_performance_mips": 100,
+  "elf_path": "generated/spec_context_factorial_v1/build/astra/range_absent/semaphore/r05/zephyr/zephyr.elf",
+  "elf_sha256": "d42bc93ee1f24126cf8875f56d99c7ee98137a122e3d76c2aaa601b664cea26d",
+  "error": null,
+  "frequency_hz": 16000000,
+  "max_virtual_sec": 90,
+  "monitor_path": "results/spec_context_factorial_v1/nominal_monitor/astra-range_absent-semaphore-r05-nominal-003.log",
+  "monitor_sha256": "89afc3a0fee9aa67f584a624b1bd58e106ad0b58e87003f21672cee2eca9a08e",
+  "observation_step_ns": 250000000,
+  "outcome": "pass",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16000000.repl",
+  "platform_sha256": "39e0c8b08c22283cc47c0378045b99d29bf07f81c481b8fa7dc6e097e61e42d9",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "repeat": 3,
+  "run_id": "astra-range_absent-semaphore-r05-nominal-003",
+  "source_path": "generated/spec_context_factorial_v1/suites/astra/range_absent/semaphore/r05/test.c",
+  "source_sha256": "9cd33d9f937d1174098651fe76a39e00cf611f6ea4cf7ea4f1420874977bd310",
+  "suite_run_id": "astra-range_absent-semaphore-r05",
+  "timestamp_utc": "2026-10-04T03:24:51.533851+00:00",
+  "trace_path": "results/spec_context_factorial_v1/nominal_traces/astra-range_absent-semaphore-r05-nominal-003.json",
+  "trace_sha256": "4083ca2a4b6e86e6c8928f8c2d8da249b67f00e85b8079d8b14cdef42dd165c6",
+  "uart_path": "results/spec_context_factorial_v1/nominal_uart/astra-range_absent-semaphore-r05-nominal-003.log",
+  "uart_sha256": "4e789b3af0120ec15bf281ffa7588f948b46668ad3980bf6ec0b7fbe8d32ddf9",
+  "virtual_ns": 250000000,
+  "wall_seconds": 4.985
+}

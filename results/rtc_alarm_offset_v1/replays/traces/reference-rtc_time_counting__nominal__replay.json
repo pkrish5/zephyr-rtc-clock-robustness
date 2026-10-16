@@ -1,0 +1,122 @@
+{
+  "cases": [
+    {
+      "case": "reference_rtc.test_calendar_counting",
+      "status": "pass"
+    }
+  ],
+  "delay_measurements": [],
+  "error": null,
+  "observations": [
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 1000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 1500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 2000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 2500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 3000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 3500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 4000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 4500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 5000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 5500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 6000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 6500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 7000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 7500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 8000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 8500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 9000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 9500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 170,
+      "virtual_ns": 10000000000
+    },
+    {
+      "latest_case": [
+        "PASS",
+        "reference_rtc.test_calendar_counting"
+      ],
+      "uart_bytes": 675,
+      "virtual_ns": 10500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "reference-rtc_time_counting__nominal__replay"
+}

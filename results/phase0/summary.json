@@ -1,0 +1,48 @@
+{
+  "classification_counts": {
+    "brittle test assumption": 27,
+    "genuine firmware race/bug": 0,
+    "simulator/peripheral-model artifact": 0,
+    "unknown": 0
+  },
+  "design": "100 prespecified seeds, each mapped to a uniform integer HSI frequency in [15.84, 16.16] MHz; nominal schedule fixed at 16 MHz",
+  "firmware_sha256": "e0d0fa9c976461defabdb53fb3112d1be883c795d5b343e1be73ef391b718cc6",
+  "legal_bound": {
+    "clock": "STM32F407 HSI at 25 C",
+    "datasheet": "https://www.st.com/resource/en/datasheet/stm32f407ig.pdf",
+    "datasheet_location": "DS8626 Rev 12, Section 3.12 and Table 34",
+    "frequency_hz_max": 16160000,
+    "frequency_hz_min": 15840000,
+    "frequency_hz_nominal": 16000000,
+    "systick_manual": "https://www.st.com/resource/en/programming_manual/pm0214-stm32-cortexm4-mcus-and-mpus-programming-manual-stmicroelectronics.pdf",
+    "systick_manual_location": "PM0214 Rev 10, STK_CTRL.CLKSOURCE=1 selects processor/AHB clock"
+  },
+  "rates": {
+    "fragile": {
+      "flip_rate": 0.27,
+      "flips_of_100": 27,
+      "nominal_passes_of_100": 100,
+      "perturbed_passes_of_100": 73,
+      "wilson_95_interval": [
+        0.1926958414957634,
+        0.36432116767944994
+      ]
+    },
+    "robust": {
+      "flip_rate": 0.0,
+      "flips_of_100": 0,
+      "nominal_passes_of_100": 100,
+      "perturbed_passes_of_100": 100,
+      "wilson_95_interval": [
+        0.0,
+        0.03699349820698568
+      ]
+    }
+  },
+  "replayed_failures": 27,
+  "simulator_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "test_sha256": {
+    "fragile": "19c62af2a2bcb8fce1b8bce386bcfb6c62e83c5950a7d23f51b6d96136663d25",
+    "robust": "53843098babe8c1108ac5d1060ec6af4934f6638ec387cde6aa899dc7325a6f3"
+  }
+}

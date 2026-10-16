@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "queue_isr_transfer.test_isr_items_retrieved_in_order",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "queue_isr_transfer.test_isr_items_retrieved_in_order"
+      ],
+      "uart_bytes": 725,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 1,
+  "run_id": "luna-range_absent-queue-r03-nominal-001"
+}

@@ -1,0 +1,36 @@
+{
+  "call_index": 279,
+  "cases": [
+    {
+      "case": "fifo_irq.test_isr_to_thread_order",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_performance_mips": 100,
+  "elf_path": "generated/spec_context_factorial_v1/build/sol/range_present/fifo_api/r04/zephyr/zephyr.elf",
+  "elf_sha256": "fba89347df56fac64d21afca092dfc334753cdebc193f7d23f6ecc1c78ff1a08",
+  "error": null,
+  "frequency_hz": 16000000,
+  "max_virtual_sec": 90,
+  "monitor_path": "results/spec_context_factorial_v1/nominal_monitor/sol-range_present-fifo_api-r04-nominal-003.log",
+  "monitor_sha256": "4d8df0529c5c416e265d9b3c8fcc3750f177ca711f01da1231f36ddb7d14a9c9",
+  "observation_step_ns": 250000000,
+  "outcome": "pass",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16000000.repl",
+  "platform_sha256": "39e0c8b08c22283cc47c0378045b99d29bf07f81c481b8fa7dc6e097e61e42d9",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "repeat": 3,
+  "run_id": "sol-range_present-fifo_api-r04-nominal-003",
+  "source_path": "generated/spec_context_factorial_v1/suites/sol/range_present/fifo_api/r04/test.c",
+  "source_sha256": "adc9e8d02ee93e618e0cb9fd853ba212cd513f875624cdbe59da317c6d6ae7a3",
+  "suite_run_id": "sol-range_present-fifo_api-r04",
+  "timestamp_utc": "2026-10-04T02:03:02.664423+00:00",
+  "trace_path": "results/spec_context_factorial_v1/nominal_traces/sol-range_present-fifo_api-r04-nominal-003.json",
+  "trace_sha256": "77deb613c420828e06b0dc817baf66140aa811afd89cfba73a55b3a5f37740d0",
+  "uart_path": "results/spec_context_factorial_v1/nominal_uart/sol-range_present-fifo_api-r04-nominal-003.log",
+  "uart_sha256": "956713e9b938d647f475bb22df1efd2e406270fb37c85c8d7e31840a67ed7195",
+  "virtual_ns": 250000000,
+  "wall_seconds": 8.965
+}

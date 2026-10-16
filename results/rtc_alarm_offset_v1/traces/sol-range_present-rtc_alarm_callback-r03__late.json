@@ -1,0 +1,132 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm.both_channels_at_new_year",
+      "status": "fail"
+    }
+  ],
+  "delay_measurements": [],
+  "error": null,
+  "observations": [
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 1000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 1500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 2000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 2500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 3000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 3500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 4000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 4500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 5000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 5500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 6000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 6500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 7000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 7500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 8000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 8500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 9000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 9500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 10000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 10500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 327,
+      "virtual_ns": 11000000000
+    },
+    {
+      "latest_case": [
+        "FAIL",
+        "rtc_alarm.both_channels_at_new_year"
+      ],
+      "uart_bytes": 1133,
+      "virtual_ns": 11500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "sol-range_present-rtc_alarm_callback-r03__late"
+}

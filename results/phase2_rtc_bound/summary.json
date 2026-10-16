@@ -1,0 +1,76 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "ChatGPT-authenticated CLI does not expose billed API dollars",
+  "build_statuses": {
+    "fail": 3,
+    "pass": 2
+  },
+  "codex_cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "cohort": "rtc_bound_supplement",
+  "finalized_generations": 5,
+  "generation_statuses": {
+    "generated": 5
+  },
+  "model_requested": "gpt-6-luna",
+  "nominal_statuses": {
+    "fail": 1,
+    "not_run": 3,
+    "pass": 1
+  },
+  "oracle_statuses": {
+    "inadequate": 5
+  },
+  "planned_runs": 5,
+  "rows": [
+    {
+      "arm": "lsi_pilot",
+      "human_case": "rtc_api.test_alarm_callback",
+      "prompt_sha256": "096acd11a6d425d39b855958d3095e4e7d4fab737c6dd9fd465b235a0730969f",
+      "runs": [
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r01"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r02"
+        },
+        {
+          "build": "fail",
+          "generation": "generated",
+          "nominal": "not_run",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r03"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "fail",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r04"
+        },
+        {
+          "build": "pass",
+          "generation": "generated",
+          "nominal": "pass",
+          "oracle": "inadequate",
+          "run_id": "rtc_alarm_callback-r05"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    }
+  ],
+  "scope_note": "Five-run RTC context supplement",
+  "tool_events": 0,
+  "usage_totals": {
+    "cached_input_tokens": 27136,
+    "input_tokens": 71058,
+    "output_tokens": 6579
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "cases": [
+    {
+      "case": "msgq_api.test_msgq_alloc",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_attrs_get",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_isr",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_thread_overflow",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_attrs_get",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_purge_when_put",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_put_fail",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_thread",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_thread_overflow",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_empty",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_full",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_pend_thread",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_purge_when_put",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_put_fail",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_thread",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_thread_pending",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "error": null,
+  "hsi_frequency_hz": 16084510,
+  "index": 68,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1183,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2028,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "msgq_api_1cpu.test_msgq_thread_pending"
+      ],
+      "uart_bytes": 4532,
+      "virtual_ns": 750000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "upstream--msgq_api-seeded-068"
+}

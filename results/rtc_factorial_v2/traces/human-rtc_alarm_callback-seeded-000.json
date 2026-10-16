@@ -1,0 +1,337 @@
+{
+  "cases": [
+    {
+      "case": "rtc_api.test_alarm_callback",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "error": null,
+  "lsi_frequency_hz": 44670,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 3500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 4000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 4500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 5000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 5500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 6000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 6500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 7000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 7500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 8000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 8500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 9000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 9500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 10000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 10500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 11000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 11500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 12000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 12500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 13000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 13500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 14000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 14500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 15000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 15500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 16000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 16500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 17000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 17500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 18000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 18500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 19000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 19500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 20000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 20500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 21000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 21500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 22000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 22500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 23000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 23500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 24000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 24500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 25000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 25500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 161,
+      "virtual_ns": 26000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "rtc_api.test_alarm_callback"
+      ],
+      "uart_bytes": 642,
+      "virtual_ns": 26500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "human-rtc_alarm_callback-seeded-000",
+  "seed": 0
+}

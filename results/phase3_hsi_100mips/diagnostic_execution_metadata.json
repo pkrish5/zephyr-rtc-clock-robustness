@@ -1,0 +1,7 @@
+{
+  "original_outcomes_immutable": true,
+  "result_path": "results/phase3_hsi_100mips/diagnostic_summary.json",
+  "script_path": "harness/phase3_hsi_100mips/diagnose_errors.py",
+  "script_sha256": "026dcc66dfdbabede04eab0faa3c32a7576971d44b4d8d4c445eccb2990f82f0",
+  "started_utc": "2026-10-02T22:27:34.593812+00:00"
+}

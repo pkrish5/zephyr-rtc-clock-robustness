@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm_pending.test_alarm_pending_at_new_year",
+      "status": "fail"
+    }
+  ],
+  "delay_measurements": [],
+  "error": null,
+  "observations": [
+    {
+      "latest_case": [
+        "FAIL",
+        "rtc_alarm_pending.test_alarm_pending_at_new_year"
+      ],
+      "uart_bytes": 1051,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "sol-range_absent-rtc_alarm_pending-r03__late__replay"
+}

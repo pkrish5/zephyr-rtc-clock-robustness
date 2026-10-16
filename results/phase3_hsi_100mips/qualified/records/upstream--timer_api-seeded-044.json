@@ -1,0 +1,110 @@
+{
+  "cases": [
+    {
+      "case": "timer_api.test_sleep_abs",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_time_conversions",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timeout_abs",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_duration_period",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_expirefn_null",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_k_define",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_period_0",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_period_k_forever",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_periodicity",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_remaining",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_restart",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_status_get",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_status_get_anytime",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_status_sync",
+      "status": "pass"
+    },
+    {
+      "case": "timer_api.test_timer_user_data",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "subjects/phase1_zephyr/build/timer_api/zephyr/zephyr.elf",
+  "elf_sha256": "9b2ee33db3e9167c984103918e2aa55e58dfc9bde949bc528c14bed7565e54c5",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16054190,
+  "index": 44,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--timer_api-seeded-044.log",
+  "monitor_sha256": "d2c1116ee81f06f3f75aa1d99ae174d2cd6cd4eb7cef8ae83d7b8bd493941ea5",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16054190.repl",
+  "platform_sha256": "b16413348a04c8845749eb49a5c599231d584069b449561e5e909a025185767a",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--timer_api-seeded-044",
+  "seed": 44,
+  "selected_case": "timer_api.test_timer_status_sync",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c": "6d2d4422ef649b5837c606e8a5aa1454c573efa13be7085851f4c03442c7fada"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 16054190,
+  "task_id": "timer_api",
+  "timestamp_utc": "2026-10-02T22:05:06.303573+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--timer_api-seeded-044.json",
+  "trace_sha256": "ec7322f134cbd7b0c54a4ff5ca263fc4b7317b9358113a43762722cb4cbbf44c",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--timer_api-seeded-044.log",
+  "uart_sha256": "7fd8e43fb815ebf759eec8847f6bc0b3d6c3e762991d6f40b00ec802ad120b84",
+  "version_id": "upstream/timer_api",
+  "virtual_ns": 3500000000,
+  "wall_seconds": 46.603
+}

@@ -1,0 +1,24 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "ChatGPT-authenticated Codex CLI run; billed API dollars not exposed",
+  "attempts": 1,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "cohort": "luna_primary",
+  "generation_date_utc": "2026-09-29T02:07:24.573757+00:00",
+  "model_reported_by_events": [],
+  "model_requested": "gpt-6-luna",
+  "output_error": null,
+  "prompt_sha256": "1ef96f216210a37c99a44e087182287a793f108e514d10d6203d107b6607d6a9",
+  "response_sha256": "ef321331d93bd8284c22b8087fa225360b7f4b8e332fde7237580b20a6be8210",
+  "run_id": "queue-r01",
+  "sample_index": 1,
+  "source_sha256": "6ba17494ce3b5cb9a11b486069ee5e555cb6b96d99a6ef49a40c9d891ca5c6b9",
+  "status": "generated",
+  "task_id": "queue",
+  "tool_event_count": 0,
+  "usage": {
+    "cached_input_tokens": 13056,
+    "input_tokens": 13833,
+    "output_tokens": 385
+  }
+}

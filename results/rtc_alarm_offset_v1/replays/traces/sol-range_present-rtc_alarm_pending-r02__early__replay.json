@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm.test_midnight_pending",
+      "status": "fail"
+    }
+  ],
+  "delay_measurements": [],
+  "error": null,
+  "observations": [
+    {
+      "latest_case": [
+        "FAIL",
+        "rtc_alarm.test_midnight_pending"
+      ],
+      "uart_bytes": 977,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "sol-range_present-rtc_alarm_pending-r02__early__replay"
+}

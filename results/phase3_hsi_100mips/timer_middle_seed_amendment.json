@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-02T22:07:24.818551+00:00",
+  "overlap_rule": "original worker reaches seed 20 after this disjoint range is saved",
+  "reason": "shorten timer early-range wall time after nominal 5/5",
+  "runner_path": "harness/phase3_hsi_100mips/run.py",
+  "runner_sha256": "adb5abf5d250a1e555ed75cb3be81404001da47f52ef575e81885caf1e705cc1",
+  "same_registered_inputs": true,
+  "seed_ranges": {
+    "additional_worker": "20-39",
+    "existing_later_workers": "40-69 and 70-99",
+    "original_worker": "0-19, then skip saved 20-99"
+  },
+  "version_id": "upstream/timer_api"
+}

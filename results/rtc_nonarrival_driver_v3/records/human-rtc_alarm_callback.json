@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "case": "rtc_api.test_alarm_callback",
+      "status": "fail"
+    }
+  ],
+  "cpu_performance_mips": 16,
+  "delay_measurements": [],
+  "delay_us": null,
+  "elf_sha256": "1b3086a8c30335fad87ee292f53cc1b59398aafcc80a36ad30943b0e3a64232f",
+  "error": null,
+  "family": "rtc_alarm_callback",
+  "kind": "human",
+  "manifest_sha256": "3536879ff770e0651f0591b3bf965792a6e3a64aee4a76ccc73f61c8f2e756f1",
+  "monitor_path": "results/rtc_nonarrival_driver_v3/monitor/human-rtc_alarm_callback.log",
+  "monitor_sha256": "bf7d572b713d28ec7f7d847757c7f0ada9c4e32bac5c429744271efd70a1039a",
+  "outcome": "fail",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_32000.repl",
+  "platform_sha256": "4db691d8792bfc615551ffb9a8f88186bca4b256e2d53b0b968e794d211d203d",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "human-rtc_alarm_callback",
+  "selected_case": "rtc_api.test_alarm_callback",
+  "source_sha256": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792",
+  "suite_id": "human-rtc_alarm_callback",
+  "timestamp_utc": "2026-10-07T01:07:25.737895+00:00",
+  "trace_path": "results/rtc_nonarrival_driver_v3/traces/human-rtc_alarm_callback.json",
+  "trace_sha256": "ee5f22ae7be10e6d770ebd937d289eacdfaf53747213a6a826c4c27c269474eb",
+  "uart_path": "results/rtc_nonarrival_driver_v3/uart/human-rtc_alarm_callback.log",
+  "uart_sha256": "a6d6a0327c054587933a76145803c7c25709544f3e878182ddf683e19df2016e",
+  "virtual_ns": 13500000000,
+  "wall_seconds": 70.048
+}

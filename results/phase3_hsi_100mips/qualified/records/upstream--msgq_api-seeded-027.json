@@ -1,0 +1,123 @@
+{
+  "cases": [
+    {
+      "case": "msgq_api.test_msgq_alloc",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_attrs_get",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_isr",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_thread_overflow",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_attrs_get",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_purge_when_put",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_put_fail",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_thread",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api.test_msgq_user_thread_overflow",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_empty",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_full",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_pend_thread",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_purge_when_put",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_put_fail",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_thread",
+      "status": "pass"
+    },
+    {
+      "case": "msgq_api_1cpu.test_msgq_thread_pending",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "elf_path": "subjects/phase1_zephyr/build/msgq_api/zephyr/zephyr.elf",
+  "elf_sha256": "167a408e488ec6511e41c8723ed69e04d117cf5fbc5294c1401a029ce85e6b00",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16091596,
+  "index": 27,
+  "kind": "upstream",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/upstream--msgq_api-seeded-027.log",
+  "monitor_sha256": "27ddc6bc67d1a1e5c4189fb4fb869e57333b2f394b68d77861949eac94ca6c9c",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": null,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16091596.repl",
+  "platform_sha256": "143c1a8182ecada260834c7322b9f0e56333a2c56e2806e784eff41ef20f89a0",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream--msgq_api-seeded-027",
+  "seed": 27,
+  "selected_case": "msgq_api.test_msgq_isr",
+  "selected_case_sources": {
+    "subjects/upstream/zephyr/tests/kernel/msgq/msgq_api/src/test_msgq.h": "b50c948e86fb69dacfdb76fb7deb405d8ac11d27fc075611ce92d746571454e9",
+    "subjects/upstream/zephyr/tests/kernel/msgq/msgq_api/src/test_msgq_contexts.c": "69d708599a650db8df74a08f0a0ef1b5557be3dc304a9a44fa37289a0b6e9a83"
+  },
+  "source_path": null,
+  "source_sha256": null,
+  "systick_frequency_hz": 16091596,
+  "task_id": "msgq_api",
+  "timestamp_utc": "2026-10-02T09:34:47.083424+00:00",
+  "timing_bound": null,
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/upstream--msgq_api-seeded-027.json",
+  "trace_sha256": "75c4c1147375851b297fca9185f495c9eb4b4530541cc68db56c213c0debc622",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/upstream--msgq_api-seeded-027.log",
+  "uart_sha256": "6bb76253f6658930611e2ddf8917dc5a3f2c676fa4d81736c2444e2530bcbad4",
+  "version_id": "upstream/msgq_api",
+  "virtual_ns": 750000000,
+  "wall_seconds": 10.744
+}

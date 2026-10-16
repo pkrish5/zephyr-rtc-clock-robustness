@@ -1,0 +1,152 @@
+{
+  "cases": [
+    {
+      "case": "rtc_api.test_alarm",
+      "status": "fail"
+    }
+  ],
+  "delay_measurements": [],
+  "error": null,
+  "observations": [
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 1000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 1500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 2000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 2500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 3000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 3500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 4000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 4500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 5000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 5500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 6000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 6500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 7000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 7500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 8000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 8500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 9000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 9500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 10000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 10500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 11000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 11500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 12000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 12500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 152,
+      "virtual_ns": 13000000000
+    },
+    {
+      "latest_case": [
+        "FAIL",
+        "rtc_api.test_alarm"
+      ],
+      "uart_bytes": 768,
+      "virtual_ns": 13500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "human-rtc_alarm_pending"
+}

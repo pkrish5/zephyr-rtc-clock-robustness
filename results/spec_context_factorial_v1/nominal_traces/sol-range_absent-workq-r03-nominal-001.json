@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "delayed_work.runs_once_after_delay",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "delayed_work.runs_once_after_delay"
+      ],
+      "uart_bytes": 665,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 1,
+  "run_id": "sol-range_absent-workq-r03-nominal-001"
+}

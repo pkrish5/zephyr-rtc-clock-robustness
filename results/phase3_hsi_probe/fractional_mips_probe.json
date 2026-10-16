@@ -1,0 +1,12 @@
+{
+  "command_set": "cpu PerformanceInMips 15.84; cpu PerformanceInMips",
+  "elf_path": "subjects/phase1_zephyr/build/fifo_api/zephyr/zephyr.elf",
+  "elf_sha256": "0e2bca41bcb124b276755bd7c2c8118ae1c17e00797ce5a2f71d0dec247ec1db",
+  "monitor_path": "results/phase3_hsi_probe/fractional_mips_monitor.log",
+  "monitor_sha256": "bc1e4c409aa04e077870bf1b11cd8b9528e53e69e33fd6d69b1cfb4a6025ca5f",
+  "observed_readback": "0x0000000F (15 MIPS)",
+  "platform_path": "results/phase1/platforms/stm32f4_hsi_16000000.repl",
+  "platform_sha256": "39e0c8b08c22283cc47c0378045b99d29bf07f81c481b8fa7dc6e097e61e42d9",
+  "purpose": "Renode 1.17.0 fractional CPU MIPS property feasibility probe; not a Phase 3 timing schedule",
+  "renode_version": "1.17.0+20260906gitf1dd1b4af"
+}

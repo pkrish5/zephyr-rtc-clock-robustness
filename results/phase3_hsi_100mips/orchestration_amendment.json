@@ -1,0 +1,9 @@
+{
+  "additional_shards": "inventory indices 7-14, partitioned by (index-7)%2; no overlap with tail shards 15-43",
+  "created_utc": "2026-10-01T22:07:20.232058+00:00",
+  "maximum_concurrent_renode_processes": 7,
+  "raw_record_policy": "retain all original outcomes including harness errors; no overwrite",
+  "reason": "shorten wall time without changing any registered virtual schedule",
+  "script_path": "harness/phase3_hsi_100mips/head_shard.py",
+  "script_sha256": "1689b38a8ba45d61e8e91a5a9330343cb9e17d0c1f0b8e17b8586a1b2af85434"
+}

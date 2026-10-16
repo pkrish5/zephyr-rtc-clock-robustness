@@ -1,0 +1,402 @@
+{
+  "cases": [
+    {
+      "case": "semaphore.test_k_sem_correct_count_limit",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_k_sem_define",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_k_sem_init",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_count_get",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_give_from_isr",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_give_from_thread",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_give_take_from_isr",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_measure_timeout_from_thread",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_measure_timeouts",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_multi_take_timeout_diff_sem",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_multiple_threads_wait",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_reset",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_reset_waiting",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_multiple",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_no_wait",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_no_wait_fails",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_timeout",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_timeout_fails",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_take_timeout_forever",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_thread2isr",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore.test_sem_thread2thread",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_1cpu.test_sem_multiple_take_and_timeouts",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_1cpu.test_sem_queue_mutual_exclusion",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_1cpu.test_sem_take_timeout_isr",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_count_get_null",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_give_null",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_init_null",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_reset_null",
+      "status": "pass"
+    },
+    {
+      "case": "semaphore_null_case.test_sem_take_null",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 99,
+  "error": null,
+  "hsi_frequency_hz": 15860212,
+  "index": 43,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1373,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1373,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1373,
+      "virtual_ns": 750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1373,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 1250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 1750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 2250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 2750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 3250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 3500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 3750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 4000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 4250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 4500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 4750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 5000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 5250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 5500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 5750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1537,
+      "virtual_ns": 6000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1706,
+      "virtual_ns": 6250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1706,
+      "virtual_ns": 6500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1706,
+      "virtual_ns": 6750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1706,
+      "virtual_ns": 7000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1706,
+      "virtual_ns": 7250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1706,
+      "virtual_ns": 7500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1706,
+      "virtual_ns": 7750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1706,
+      "virtual_ns": 8000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2139,
+      "virtual_ns": 8250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2139,
+      "virtual_ns": 8500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2139,
+      "virtual_ns": 8750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2139,
+      "virtual_ns": 9000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2738,
+      "virtual_ns": 9250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2738,
+      "virtual_ns": 9500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 3483,
+      "virtual_ns": 9750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 3483,
+      "virtual_ns": 10000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 3483,
+      "virtual_ns": 10250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 3483,
+      "virtual_ns": 10500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 3483,
+      "virtual_ns": 10750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 3652,
+      "virtual_ns": 11000000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "semaphore_null_case.test_sem_take_null"
+      ],
+      "uart_bytes": 9909,
+      "virtual_ns": 11250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "upstream--semaphore-seeded-043"
+}

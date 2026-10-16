@@ -1,0 +1,55 @@
+{
+  "admission_requires_user_review": true,
+  "build_record_sha256": "5ed67bdcbf1b3fa45d3491df53fb217ac4da02a36278b85bcf9613b2ad7d4be0",
+  "endpoint_delay_ordered_by_frequency": false,
+  "expected_run_count": 5,
+  "observed_run_count": 5,
+  "passes_prespecified_fidelity_probe": false,
+  "protocol_path": "notes/IWDG_FIDELITY_PROTOCOL.md",
+  "protocol_sha256": "b552c783daa4a6bc9917708c6f62af32b467e7a59224a92266bcf0102b090b2b",
+  "runs": {
+    "iwdg-max-000": {
+      "frequency_hz": 47000,
+      "outcome": "fail",
+      "record_sha256": "57a974c7c2f40f8a9d9e064f108e342350269ab892c0719be128048e90c0b066",
+      "suite_starts": 1,
+      "testcase_passed_count": 0,
+      "wait_to_pass_virtual_ns": null
+    },
+    "iwdg-min-000": {
+      "frequency_hz": 17000,
+      "outcome": "fail",
+      "record_sha256": "248785b64392007c1629830e1962ed92fd729770840b838d1187f82487f8086e",
+      "suite_starts": 1,
+      "testcase_passed_count": 0,
+      "wait_to_pass_virtual_ns": null
+    },
+    "iwdg-nominal-000": {
+      "frequency_hz": 32000,
+      "outcome": "fail",
+      "record_sha256": "ddeb1656bcb937722c1f34df5b2693baff58df18e6120001d55521715437873d",
+      "suite_starts": 1,
+      "testcase_passed_count": 0,
+      "wait_to_pass_virtual_ns": null
+    },
+    "iwdg-nominal-001": {
+      "frequency_hz": 32000,
+      "outcome": "harness_error",
+      "record_sha256": "8409689f0402229480765f98d632efe11dcfe87d97f9b2eb9af3ad1ab3f4aa2d",
+      "suite_starts": 0,
+      "testcase_passed_count": 0,
+      "wait_to_pass_virtual_ns": null
+    },
+    "iwdg-nominal-002": {
+      "frequency_hz": 32000,
+      "outcome": "fail",
+      "record_sha256": "a23e5305c9c410f0ad80d7fe789e29432983a1116c5f238de7e14ff5a8a25960",
+      "suite_starts": 1,
+      "testcase_passed_count": 0,
+      "wait_to_pass_virtual_ns": null
+    }
+  },
+  "three_nominal_reboots_and_retained_state": false,
+  "two_endpoint_reboots_and_retained_state": false,
+  "variant": "original"
+}

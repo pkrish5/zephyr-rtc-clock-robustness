@@ -1,0 +1,24 @@
+{
+  "all_nominal_attempt_outcomes": {
+    "harness_error": 5,
+    "pass": 5
+  },
+  "build_record_sha256": "fdcc7a118d18be4b58f08a5fd62dd064a3245c0d5096986aebaf2d0cbc13c5d4",
+  "case": "rtc_api.test_time_counting",
+  "elf_sha256": "87dab61c7fce6233dee27f24ab231538f98d2abf43c7b621bdf0c31ed297514c",
+  "initial_sandbox_harness_errors_retained": true,
+  "qualified_for_proposed_task_list": true,
+  "scope": "Adjacent LSI-driven RTC behavior, not an ISR callback test",
+  "selected_nominal_series": 2,
+  "selected_outcomes": {
+    "pass": 5
+  },
+  "selected_run_ids": [
+    "counting-nominal-s2-000",
+    "counting-nominal-s2-001",
+    "counting-nominal-s2-002",
+    "counting-nominal-s2-003",
+    "counting-nominal-s2-004"
+  ],
+  "subject": "counting"
+}

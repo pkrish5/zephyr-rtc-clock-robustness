@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "timer_interrupt.test_blocked_thread_receives_timer_expiration",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "timer_interrupt.test_blocked_thread_receives_timer_expiration"
+      ],
+      "uart_bytes": 955,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "fail",
+  "repeat": 0,
+  "run_id": "luna-range_absent-pending-r05-nominal-000"
+}

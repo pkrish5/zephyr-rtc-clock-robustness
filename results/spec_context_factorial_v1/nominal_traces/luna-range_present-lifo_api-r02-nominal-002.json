@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "lifo_isr_transfer.test_isr_items_are_received_in_reverse_order",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "lifo_isr_transfer.test_isr_items_are_received_in_reverse_order"
+      ],
+      "uart_bytes": 754,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 2,
+  "run_id": "luna-range_present-lifo_api-r02-nominal-002"
+}

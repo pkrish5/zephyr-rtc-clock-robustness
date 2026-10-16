@@ -1,0 +1,40 @@
+{
+  "call_index": 67,
+  "diagnostic_outcomes": [
+    "pass",
+    "pass",
+    "pass",
+    "pass",
+    "pass"
+  ],
+  "diagnostic_record_dir": "results/spec_context_factorial_v1/diagnostic_call67/nominal_records",
+  "original_records": [
+    {
+      "elf_sha256": "93572bf38bb7f62ada60971045094a6263900ba9ac974080b58c764abbfeb35e",
+      "outcome": "pass",
+      "path": "results/spec_context_factorial_v1/nominal_records/astra-range_absent-pending-r01-nominal-000.json"
+    },
+    {
+      "elf_sha256": "93572bf38bb7f62ada60971045094a6263900ba9ac974080b58c764abbfeb35e",
+      "outcome": "harness_error",
+      "path": "results/spec_context_factorial_v1/nominal_records/astra-range_absent-pending-r01-nominal-001.json"
+    },
+    {
+      "elf_sha256": "93572bf38bb7f62ada60971045094a6263900ba9ac974080b58c764abbfeb35e",
+      "outcome": "harness_error",
+      "path": "results/spec_context_factorial_v1/nominal_records/astra-range_absent-pending-r01-nominal-002.json"
+    },
+    {
+      "elf_sha256": "93572bf38bb7f62ada60971045094a6263900ba9ac974080b58c764abbfeb35e",
+      "outcome": "harness_error",
+      "path": "results/spec_context_factorial_v1/nominal_records/astra-range_absent-pending-r01-nominal-003.json"
+    },
+    {
+      "elf_sha256": "93572bf38bb7f62ada60971045094a6263900ba9ac974080b58c764abbfeb35e",
+      "outcome": "harness_error",
+      "path": "results/spec_context_factorial_v1/nominal_records/astra-range_absent-pending-r01-nominal-004.json"
+    }
+  ],
+  "purpose": "infrastructure diagnostic only; originals remain gate verdicts",
+  "run_id": "astra-range_absent-pending-r01"
+}

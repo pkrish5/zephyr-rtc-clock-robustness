@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "timer_sleep_wakeup.test_worker_wakes_after_timeout",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "error": null,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "timer_sleep_wakeup.test_worker_wakes_after_timeout"
+      ],
+      "uart_bytes": 909,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "run_id": "context-r01",
+  "seed": 0
+}

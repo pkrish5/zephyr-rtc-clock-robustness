@@ -1,0 +1,36 @@
+{
+  "call_index": 329,
+  "cases": [
+    {
+      "case": "rtc_alarm.test_both_alarm_channels",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_performance_mips": 16,
+  "elf_path": "generated/spec_context_factorial_v1/build/luna/range_absent/rtc_alarm_callback/r05/zephyr/zephyr.elf",
+  "elf_sha256": "45c3aed9a1efa1ac753effefdd87ac8c63571c3b6d4d7e05afdcce4d66f74c08",
+  "error": null,
+  "frequency_hz": 32000,
+  "max_virtual_sec": 60,
+  "monitor_path": "results/spec_context_factorial_v1/nominal_monitor/luna-range_absent-rtc_alarm_callback-r05-nominal-000.log",
+  "monitor_sha256": "f4b5ebe028bd9e3cd011ecf40ee86f85feaaed6408b1ffbf6714f488089c4e46",
+  "observation_step_ns": 500000000,
+  "outcome": "pass",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_32000.repl",
+  "platform_sha256": "4db691d8792bfc615551ffb9a8f88186bca4b256e2d53b0b968e794d211d203d",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "repeat": 0,
+  "run_id": "luna-range_absent-rtc_alarm_callback-r05-nominal-000",
+  "source_path": "generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_alarm_callback/r05/test.c",
+  "source_sha256": "916f9c5897ffee49ab1cf1a7fdfdf4d5341768ebdffa6550959cf5cb3814d660",
+  "suite_run_id": "luna-range_absent-rtc_alarm_callback-r05",
+  "timestamp_utc": "2026-10-04T02:59:12.899821+00:00",
+  "trace_path": "results/spec_context_factorial_v1/nominal_traces/luna-range_absent-rtc_alarm_callback-r05-nominal-000.json",
+  "trace_sha256": "f68bff58763376cb9583536ecbc8eebec1c8b5acd95f0a4828caab43796a0f26",
+  "uart_path": "results/spec_context_factorial_v1/nominal_uart/luna-range_absent-rtc_alarm_callback-r05-nominal-000.log",
+  "uart_sha256": "1e6dc72eb8b5a38a948ac2c4a2ba1231d00bbe46e7957cce61df1bc212021dad",
+  "virtual_ns": 10500000000,
+  "wall_seconds": 36.346
+}

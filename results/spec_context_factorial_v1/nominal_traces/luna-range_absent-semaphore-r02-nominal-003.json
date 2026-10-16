@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "semaphore_irq_suite.test_semaphore_give_from_irq",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "semaphore_irq_suite.test_semaphore_give_from_irq"
+      ],
+      "uart_bytes": 714,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 3,
+  "run_id": "luna-range_absent-semaphore-r02-nominal-003"
+}

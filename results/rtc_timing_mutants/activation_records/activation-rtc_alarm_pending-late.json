@@ -1,0 +1,42 @@
+{
+  "activation": true,
+  "cases": [
+    {
+      "case": "reference_rtc.test_alarm_pending",
+      "status": "fail"
+    }
+  ],
+  "effective_rtc_hz": 10000,
+  "elf_sha256": "7adb107c2050e053cb7554da2b65b3b2a6b580b8050cb746a0f3f08f3450c72d",
+  "error": null,
+  "family": "rtc_alarm_pending",
+  "kind": "reference",
+  "manifest_sha256": "e9c93dfdb1bfd9049d04f18dfd9c60e990092e3d6551a71d63275ecf63af7799",
+  "model": "reference",
+  "monitor_path": "results/rtc_timing_mutants/activation_monitor/activation-rtc_alarm_pending-late.log",
+  "monitor_sha256": "e18817ac904599eba9b1fffa4a57ad69e32a2a745e48c3010e50aba24a5cd69b",
+  "mutant": "late",
+  "nominal_host_rtc_hz": 32000,
+  "outcome": "fail",
+  "platform_path": "results/rtc_timing_mutants/platforms/rtc_late_10000.repl",
+  "platform_sha256": "7b852f131ae9e35aa62d9b03a2c4a4b968c415c441f721252b2b549e510496e9",
+  "prompt_condition": null,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "activation-rtc_alarm_pending-late",
+  "source_sha256": {
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay": "171a39bb9ae665981d0ad54fa8a5d25631d0a7f261f5ba959e83f87e91d93423",
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88",
+    "subjects/reference_rtc/pending/CMakeLists.txt": "9e729dfdb0a0d2e01043e75b2a878c800a4eab443f5cbd42accf5ca16c71ae3b",
+    "subjects/reference_rtc/pending/prj.conf": "460e41afb0410d46111094f318b9bd45eccb98a3cc22d6c884223ae997b85088",
+    "subjects/reference_rtc/pending/test.c": "4117eaad56a60acab0c49fcac426c08c3206a755fd6379cbe4a553a25f03e845",
+    "subjects/reference_rtc/reference_common.h": "c39135bae91da1bc684b32a7a7e1a5176a1c8ce3c598db9f3ec777af241166d2"
+  },
+  "suite_id": "rtc_alarm_pending",
+  "timestamp_utc": "2026-10-06T16:26:23.775787+00:00",
+  "trace_path": "results/rtc_timing_mutants/activation_traces/activation-rtc_alarm_pending-late.json",
+  "trace_sha256": "39e8bf9ff151e1f3a7e36d44ee522fb294126ca31df687fecac3976fa8838aba",
+  "uart_path": "results/rtc_timing_mutants/activation_uart/activation-rtc_alarm_pending-late.log",
+  "uart_sha256": "3e69f2aa2a952be65bdd0005de92b6bbd4b4778736132e0da4925c0fc8b035ce",
+  "virtual_ns": 26500000000,
+  "wall_seconds": 74.344
+}

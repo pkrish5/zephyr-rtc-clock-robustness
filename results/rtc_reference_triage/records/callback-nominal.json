@@ -1,0 +1,32 @@
+{
+  "cases": [],
+  "condition": "nominal",
+  "elf_sha256": "e88d08e4c32f9a8eec8fb916a2326f41912b0022fdf29e923280ec6bf7417c7d",
+  "error": "EOF: End Of File (EOF). Empty string style platform.\n<pexpect.pty_spawn.spawn object at 0x109f25400>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-gicn3xpf/renode.cfg']\nbuffer (last 100 chars): ''\nbefore (last 100 chars): 'eInterface.<>c__DisplayClass0_1.<Run>b__3(Object x)\\r\\n   at System.Threading.Thread.StartCallback()\\r\\n'\nafter: <class 'pexpect.exceptions.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: True\npid: 96508\nchild_fd: 6\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/rtc_reference_triage/monitor/callback-nominal.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')",
+  "family": "rtc_alarm_callback",
+  "lsi_frequency_hz": 32000,
+  "manifest_sha256": "c86722c3db6ff70617f925e4b1b38b89990da10f97f360e4aa26dadbf1b9a06a",
+  "monitor_path": "results/rtc_reference_triage/monitor/callback-nominal.log",
+  "monitor_sha256": "e18af886e230235b755f148dd854931af6fefe571bffb4c38911e859d20b43cc",
+  "outcome": "harness_error",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_32000.repl",
+  "platform_sha256": "4db691d8792bfc615551ffb9a8f88186bca4b256e2d53b0b968e794d211d203d",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "callback-nominal",
+  "seed": null,
+  "source_sha256": {
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay": "171a39bb9ae665981d0ad54fa8a5d25631d0a7f261f5ba959e83f87e91d93423",
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay": "8f666517357ed24c60f954a12fd7463a06a91831be2afcf76b08f47eed977b88",
+    "subjects/reference_rtc/callback/CMakeLists.txt": "f0d4e5aec159adc1a1055f41f97b10447b57e86a48fa78ee2ac38fc11a90fd6b",
+    "subjects/reference_rtc/callback/prj.conf": "460e41afb0410d46111094f318b9bd45eccb98a3cc22d6c884223ae997b85088",
+    "subjects/reference_rtc/callback/test.c": "58ac174a29ce51b77c2f650a16a8a7f42d5ed8aa668fd5d1126c3e69ec2f5b5b",
+    "subjects/reference_rtc/reference_common.h": "c39135bae91da1bc684b32a7a7e1a5176a1c8ce3c598db9f3ec777af241166d2"
+  },
+  "timestamp_utc": "2026-10-06T16:11:50.386089+00:00",
+  "trace_path": "results/rtc_reference_triage/traces/callback-nominal.json",
+  "trace_sha256": "59822b18230e71f88dffaa604ff934c3ce025a0e34f05a7c1aa61152cb659d2d",
+  "uart_path": "results/rtc_reference_triage/uart/callback-nominal.log",
+  "uart_sha256": null,
+  "virtual_ns": 0,
+  "wall_seconds": 1.141
+}

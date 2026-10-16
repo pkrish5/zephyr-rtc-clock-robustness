@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "queue_isr_transfer.test_isr_append_order_and_empty",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "error": null,
+  "hsi_frequency_hz": 15938387,
+  "index": 78,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "queue_isr_transfer.test_isr_append_order_and_empty"
+      ],
+      "uart_bytes": 719,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--queue-r04-seeded-078"
+}

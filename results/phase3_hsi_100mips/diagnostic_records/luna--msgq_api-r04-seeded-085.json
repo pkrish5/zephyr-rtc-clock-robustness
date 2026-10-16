@@ -1,0 +1,12 @@
+{
+  "diagnostic_outcome": "pass",
+  "diagnostic_record_path": "results/phase3_hsi_100mips/diagnostics/records/luna--msgq_api-r04-seeded-085.json",
+  "diagnostic_record_sha256": "750f33f86e2d06c27714c5992e4ea7d0dc7ba4dc2239efea8e02569dfab5c8a3",
+  "diagnostic_virtual_ns": 250000000,
+  "disposition": "original remains non-evaluable regardless of diagnostic outcome",
+  "original_outcome": "harness_error",
+  "original_record_path": "results/phase3_hsi_100mips/qualified/records/luna--msgq_api-r04-seeded-085.json",
+  "original_record_sha256": "15efb0c4165f930bb05c0b3d2e6d5db15991bd3254ce85dc9ee0ff4429630b7f",
+  "original_virtual_ns": 0,
+  "run_id": "luna--msgq_api-r04-seeded-085"
+}

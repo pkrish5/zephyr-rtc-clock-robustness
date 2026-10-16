@@ -1,0 +1,149 @@
+{
+  "cohorts": {
+    "luna_primary": {
+      "amended_functional_eligible": 35,
+      "amended_functional_eligible_ids": [
+        "fifo_api-r01",
+        "fifo_api-r02",
+        "fifo_api-r03",
+        "fifo_api-r04",
+        "fifo_api-r05",
+        "lifo_api-r01",
+        "lifo_api-r02",
+        "lifo_api-r03",
+        "lifo_api-r04",
+        "lifo_api-r05",
+        "msgq_api-r01",
+        "msgq_api-r02",
+        "msgq_api-r03",
+        "msgq_api-r04",
+        "msgq_api-r05",
+        "queue-r01",
+        "queue-r02",
+        "queue-r03",
+        "queue-r04",
+        "queue-r05",
+        "rtc_alarm_callback-r04",
+        "semaphore-r01",
+        "semaphore-r02",
+        "semaphore-r03",
+        "semaphore-r04",
+        "semaphore-r05",
+        "sleep-r01",
+        "sleep-r02",
+        "sleep-r05",
+        "timer_api-r01",
+        "timer_api-r03",
+        "timer_api-r04",
+        "timer_api-r05",
+        "workq-r03",
+        "workq-r05"
+      ],
+      "build": {
+        "fail": 5,
+        "pass": 50
+      },
+      "functional": {
+        "met": 35,
+        "not_evaluable": 17,
+        "not_met": 1,
+        "unknown": 2
+      },
+      "nominal": {
+        "fail": 9,
+        "not_run": 5,
+        "pass": 38,
+        "timeout": 3
+      },
+      "original_oracle": {
+        "adequate": 34,
+        "inadequate": 19,
+        "uncertain": 2
+      },
+      "original_strict_eligible": 34,
+      "original_strict_eligible_ids": [
+        "fifo_api-r01",
+        "fifo_api-r02",
+        "fifo_api-r03",
+        "fifo_api-r04",
+        "fifo_api-r05",
+        "lifo_api-r01",
+        "lifo_api-r02",
+        "lifo_api-r03",
+        "lifo_api-r04",
+        "lifo_api-r05",
+        "msgq_api-r01",
+        "msgq_api-r02",
+        "msgq_api-r03",
+        "msgq_api-r04",
+        "msgq_api-r05",
+        "queue-r01",
+        "queue-r02",
+        "queue-r03",
+        "queue-r04",
+        "queue-r05",
+        "semaphore-r01",
+        "semaphore-r02",
+        "semaphore-r03",
+        "semaphore-r04",
+        "semaphore-r05",
+        "sleep-r01",
+        "sleep-r02",
+        "sleep-r05",
+        "timer_api-r01",
+        "timer_api-r03",
+        "timer_api-r04",
+        "timer_api-r05",
+        "workq-r03",
+        "workq-r05"
+      ],
+      "planned": 55,
+      "timing_among_amended_eligible": {
+        "inadequate": 1,
+        "no_issue_found": 28,
+        "unknown": 6
+      },
+      "timing_bound": {
+        "inadequate": 6,
+        "no_issue_found": 32,
+        "unknown": 17
+      }
+    },
+    "rtc_bound_supplement": {
+      "amended_functional_eligible": 1,
+      "amended_functional_eligible_ids": [
+        "rtc_alarm_callback-r05"
+      ],
+      "build": {
+        "fail": 3,
+        "pass": 2
+      },
+      "functional": {
+        "met": 1,
+        "not_evaluable": 4
+      },
+      "nominal": {
+        "fail": 1,
+        "not_run": 3,
+        "pass": 1
+      },
+      "original_oracle": {
+        "inadequate": 5
+      },
+      "original_strict_eligible": 0,
+      "original_strict_eligible_ids": [],
+      "planned": 5,
+      "timing_among_amended_eligible": {
+        "inadequate": 1
+      },
+      "timing_bound": {
+        "inadequate": 1,
+        "unknown": 4
+      }
+    }
+  },
+  "decision_ledger_sha256": "cfb9b617baed856974459a5936845df9dfb3dcba351d63dfbfb0541e2aeea5ef",
+  "protocol_sha256": "c98b52f94b188c4db3b4de091c87ec12415dc59f56a0dc170f82e13f6ea4b1cb",
+  "retrospective_unblinded": true,
+  "sol_feasibility_pilot_excluded": true
+}

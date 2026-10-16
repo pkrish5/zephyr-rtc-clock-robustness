@@ -1,0 +1,19 @@
+You are writing a new test of an embedded real-time system API, using Zephyr v4.3.0 ztest on the STM32F4 Discovery board (STM32F407VG, single CPU). Write a standalone C source file for one ztest application. Do not write CMake or Kconfig files.
+
+Behavior to test:
+Exercise a Zephyr k_msgq across interrupt and thread contexts. Put one or more distinct fixed-size messages from an ISR using the nonblocking operation, retrieve them from the test thread, and check their values and queue state.
+
+Required observable checks:
+- The ISR put succeeds without blocking.
+- Retrieved message bytes equal the values sent from the ISR.
+- The queue is empty after retrieval.
+
+Relevant public API/context:
+K_MSGQ_DEFINE or k_msgq_init, k_msgq_put, k_msgq_get, k_msgq_num_used_get, irq_offload, K_NO_WAIT; an ISR must not request a blocking timeout.
+
+The application will be built with this fixed configuration:
+CONFIG_ZTEST=y
+CONFIG_IRQ_OFFLOAD=y
+CONFIG_TEST_USERSPACE=y
+
+Return a JSON object with exactly one field, "test_c", containing the complete C source. Include necessary Zephyr headers, test functions, and exactly one ZTEST_SUITE declaration. Use only public Zephyr APIs and self-contained test data. Make the checks executable on this board without external equipment. Keep the test reasonably short. Do not call tools or inspect local files; all task context is above. Do not include explanations or Markdown fences.

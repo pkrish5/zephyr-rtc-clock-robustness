@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "wakeup_from_isr.test_wakeup_interrupts_sleep",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "wakeup_from_isr.test_wakeup_interrupts_sleep"
+      ],
+      "uart_bytes": 698,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 2,
+  "run_id": "sol-range_present-sleep-r05-nominal-002"
+}

@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "timer_sleep_wakeup.test_timed_sleep_wakeup",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "timer_sleep_wakeup.test_timed_sleep_wakeup"
+      ],
+      "uart_bytes": 887,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "fail",
+  "repeat": 0,
+  "run_id": "luna-range_present-context-r01-nominal-000"
+}

@@ -1,0 +1,63 @@
+{
+  "manifest_sha256": "e9c93dfdb1bfd9049d04f18dfd9c60e990092e3d6551a71d63275ecf63af7799",
+  "rows": [
+    {
+      "activated": true,
+      "expected_assertion": "alarm fired early",
+      "family": "rtc_alarm_callback",
+      "operator": "early",
+      "outcome": "fail",
+      "record_sha256": "8e338cd94ecffce31b81d96ccc97bc446445bbc3bae75c49d0e45bc7421742f3"
+    },
+    {
+      "activated": true,
+      "expected_assertion": "callbacks absent past legal-clock ceiling",
+      "family": "rtc_alarm_callback",
+      "operator": "late",
+      "outcome": "fail",
+      "record_sha256": "c9a4ad5eaf92986d6b9a7ecd9627e6043a7b0ef154fd408d91d32f0e64dd2c68"
+    },
+    {
+      "activated": true,
+      "expected_assertion": "pending before fastest legal transition",
+      "family": "rtc_alarm_pending",
+      "operator": "early",
+      "outcome": "fail",
+      "record_sha256": "e64cdda62214d88f58000bc600ccf7d6259a65b5e02a4cd1b6805bdd6b37923a"
+    },
+    {
+      "activated": true,
+      "expected_assertion": "pending absent past legal-clock ceiling",
+      "family": "rtc_alarm_pending",
+      "operator": "late",
+      "outcome": "fail",
+      "record_sha256": "eb71c4230c8bb1d0105b7f85e45e5aa18c6aa30ae1323599c2d8075fe4a97863"
+    },
+    {
+      "activated": true,
+      "expected_assertion": "calendar reached target too early",
+      "family": "rtc_time_counting",
+      "operator": "early",
+      "outcome": "fail",
+      "record_sha256": "0296346acae5abf59e81e69fa5137aa40f85c634a811317f2c806f57c1ef3a39"
+    },
+    {
+      "activated": true,
+      "expected_assertion": "calendar did not reach target by ceiling",
+      "family": "rtc_time_counting",
+      "operator": "late",
+      "outcome": "fail",
+      "record_sha256": "f402a0f323d4b5c625ded3d6a7a0a26110bc3a8f4e9d4951233c6df7032bd404"
+    },
+    {
+      "activated": false,
+      "family": "rtc_time_counting",
+      "model_crash_confirmed": true,
+      "operator": "never",
+      "outcome": "harness_error",
+      "record_sha256": "86d6c008e51d191fc7f66462281f1704bc6a59fafd177a064238cc4b8b5613b4"
+    }
+  ],
+  "status": "invalid_operator",
+  "suite_scoring_authorized": false
+}

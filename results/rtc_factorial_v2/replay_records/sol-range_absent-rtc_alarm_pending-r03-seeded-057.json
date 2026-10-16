@@ -1,0 +1,43 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm_pending.test_alarm_pending_at_new_year",
+      "status": "fail"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 16,
+  "elf_sha256": "f0bfeddaa68ac5e8e1aa1f42cefd85e6b7875788ad82a05545e0a56cc7ba43e2",
+  "error": null,
+  "family": "rtc_alarm_pending",
+  "identical_trace_and_verdict": false,
+  "kind": "ai",
+  "lsi_frequency_hz": 18394,
+  "manifest_sha256": "8df9aefcba0063f4a93183e8e7c0937af7b6787b52e65375ea2a607db2cbca2e",
+  "max_virtual_sec": 60,
+  "model": "sol",
+  "monitor_path": "results/rtc_factorial_v2/replay_monitor/sol-range_absent-rtc_alarm_pending-r03-seeded-057.log",
+  "monitor_sha256": "b86dad44d658efcdc641a8cd57ef03920a994ecf879d7dbd7ca1feb11ffd97ce",
+  "original_trace_sha256": "9728e24f06715ecb6505662bd0d615b4d237237e4480f24c66d1d7e78630223e",
+  "outcome": "fail",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_18394.repl",
+  "platform_sha256": "5139027d063d31f967ebf95f8597f1fc37681ba16e1b48ef929c4dfbe1cf0d6d",
+  "prompt_condition": "range_absent",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "role": "sampled_predictable",
+  "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-057",
+  "schedule_sha256": "9ca79765fc9fc73cbbb38979632cbc0433e70ed1543b81015bea05e0f72e6995",
+  "seed": 57,
+  "source_sha256": "ba3fafc7fbac98b08be9e0fb6fbfcaad4f65420232024491d3f231d3b8a47eda",
+  "step_ns": 500000000,
+  "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+  "systick_frequency_hz": 16000000,
+  "timestamp_utc": "2026-10-04T20:35:40.006503+00:00",
+  "trace_path": "results/rtc_factorial_v2/replay_traces/sol-range_absent-rtc_alarm_pending-r03-seeded-057.json",
+  "trace_sha256": "9728e24f06715ecb6505662bd0d615b4d237237e4480f24c66d1d7e78630223e",
+  "uart_path": "results/rtc_factorial_v2/replay_uart/sol-range_absent-rtc_alarm_pending-r03-seeded-057.log",
+  "uart_sha256": "62ce393c7899f19f8c04d57719ac89bd2bfb53f50093b8c6b48f66389b6283f5",
+  "virtual_ns": 15500000000,
+  "wall_seconds": 62.461
+}

@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "periodic_timer_test.test_expiry_and_stop",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "periodic_timer_test.test_expiry_and_stop"
+      ],
+      "uart_bytes": 690,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 2,
+  "run_id": "sol-range_present-timer_api-r03-nominal-002"
+}

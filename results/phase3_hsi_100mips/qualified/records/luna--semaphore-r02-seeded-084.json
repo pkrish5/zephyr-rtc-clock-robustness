@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "case": "irq_offload_semaphore.test_isr_give_increments_count",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 100,
+  "elf_path": "generated/phase2_luna/build/semaphore/r02/zephyr/zephyr.elf",
+  "elf_sha256": "f17e2317945abf903cc484cd262fc425990c845d305cb636a5af36a364938e23",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 15988681,
+  "index": 84,
+  "kind": "agent",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/luna--semaphore-r02-seeded-084.log",
+  "monitor_sha256": "245bdded66a33e0f5ad20cb11f7e8e9cf9bd6db1629b09cd943346e939344918",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": true,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_15988681.repl",
+  "platform_sha256": "c67c3a59351b62c63e3a4872a60906b9b7879cc64e2aea74aa197e50355c6597",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "luna--semaphore-r02-seeded-084",
+  "seed": 84,
+  "selected_case": "full_generated_suite",
+  "selected_case_sources": null,
+  "source_path": "generated/phase2_luna/suites/semaphore/r02/test.c",
+  "source_sha256": "323990e2a15339a3408f56f28d010cf6bcf0b6c9caf9601c27aff08bf59ae4e5",
+  "systick_frequency_hz": 15988681,
+  "task_id": "semaphore",
+  "timestamp_utc": "2026-10-01T22:11:38.123443+00:00",
+  "timing_bound": "no_issue_found",
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/luna--semaphore-r02-seeded-084.json",
+  "trace_sha256": "0b014195293da9d8b69d20dfd67a9d80c5232f7e317b99bf325b94d6c4a7a92d",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/luna--semaphore-r02-seeded-084.log",
+  "uart_sha256": "ede88b97a9a6413a8153b108af1f18b9a28dd82616137ce2dd855b3e95b0ba95",
+  "version_id": "luna/semaphore-r02",
+  "virtual_ns": 250000000,
+  "wall_seconds": 6.818
+}

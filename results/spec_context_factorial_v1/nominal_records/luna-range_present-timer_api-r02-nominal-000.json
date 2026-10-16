@@ -1,0 +1,36 @@
+{
+  "call_index": 151,
+  "cases": [
+    {
+      "case": "timer_interrupt.test_periodic_expirations_and_stop",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_performance_mips": 100,
+  "elf_path": "generated/spec_context_factorial_v1/build/luna/range_present/timer_api/r02/zephyr/zephyr.elf",
+  "elf_sha256": "800bcd52815feb3ad695da84ad236645a1b182df34738760c172469717035fce",
+  "error": null,
+  "frequency_hz": 16000000,
+  "max_virtual_sec": 90,
+  "monitor_path": "results/spec_context_factorial_v1/nominal_monitor/luna-range_present-timer_api-r02-nominal-000.log",
+  "monitor_sha256": "8e39faef3df828c9e24f1dd5a14d33debcd4aff6d034764ada6aca2b2dc755cf",
+  "observation_step_ns": 250000000,
+  "outcome": "pass",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16000000.repl",
+  "platform_sha256": "39e0c8b08c22283cc47c0378045b99d29bf07f81c481b8fa7dc6e097e61e42d9",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "repeat": 0,
+  "run_id": "luna-range_present-timer_api-r02-nominal-000",
+  "source_path": "generated/spec_context_factorial_v1/suites/luna/range_present/timer_api/r02/test.c",
+  "source_sha256": "4323dde8aca86455720c8eaf6c686d73e233583659a70c6e3515ed53482fa2ba",
+  "suite_run_id": "luna-range_present-timer_api-r02",
+  "timestamp_utc": "2026-10-03T22:30:13.159174+00:00",
+  "trace_path": "results/spec_context_factorial_v1/nominal_traces/luna-range_present-timer_api-r02-nominal-000.json",
+  "trace_sha256": "bb7581057bee99f73b95527a230fb1d1fbf42c1ba60baadd63d2d59f2c407dfe",
+  "uart_path": "results/spec_context_factorial_v1/nominal_uart/luna-range_present-timer_api-r02-nominal-000.log",
+  "uart_sha256": "f4ba0b950ddc9af5be077e429724ad17256842b4015ed26fb4f7f5f2e398b733",
+  "virtual_ns": 250000000,
+  "wall_seconds": 5.519
+}

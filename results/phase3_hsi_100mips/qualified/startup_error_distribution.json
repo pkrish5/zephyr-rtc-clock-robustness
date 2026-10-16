@@ -1,0 +1,310 @@
+{
+  "by_cpu_mips": {
+    "100": {
+      "error": 30,
+      "other": 1948
+    },
+    "101": {
+      "error": 29,
+      "other": 1132
+    },
+    "99": {
+      "error": 28,
+      "other": 1133
+    }
+  },
+  "by_frequency_quartile": {
+    "1": {
+      "error": 27,
+      "other": 1048
+    },
+    "2": {
+      "error": 14,
+      "other": 1061
+    },
+    "3": {
+      "error": 18,
+      "other": 1057
+    },
+    "4": {
+      "error": 28,
+      "other": 1047
+    }
+  },
+  "by_seed_decile": {
+    "0": {
+      "error": 3,
+      "other": 427
+    },
+    "1": {
+      "error": 6,
+      "other": 424
+    },
+    "2": {
+      "error": 11,
+      "other": 419
+    },
+    "3": {
+      "error": 8,
+      "other": 422
+    },
+    "4": {
+      "error": 12,
+      "other": 418
+    },
+    "5": {
+      "error": 8,
+      "other": 422
+    },
+    "6": {
+      "error": 14,
+      "other": 416
+    },
+    "7": {
+      "error": 11,
+      "other": 419
+    },
+    "8": {
+      "error": 7,
+      "other": 423
+    },
+    "9": {
+      "error": 7,
+      "other": 423
+    }
+  },
+  "by_suite": {
+    "luna/fifo_api-r01": {
+      "other": 100
+    },
+    "luna/fifo_api-r02": {
+      "other": 100
+    },
+    "luna/fifo_api-r03": {
+      "other": 100
+    },
+    "luna/fifo_api-r04": {
+      "other": 100
+    },
+    "luna/fifo_api-r05": {
+      "other": 100
+    },
+    "luna/lifo_api-r01": {
+      "error": 8,
+      "other": 92
+    },
+    "luna/lifo_api-r03": {
+      "other": 100
+    },
+    "luna/lifo_api-r04": {
+      "other": 100
+    },
+    "luna/lifo_api-r05": {
+      "other": 100
+    },
+    "luna/msgq_api-r01": {
+      "other": 100
+    },
+    "luna/msgq_api-r02": {
+      "other": 100
+    },
+    "luna/msgq_api-r03": {
+      "other": 100
+    },
+    "luna/msgq_api-r04": {
+      "error": 11,
+      "other": 89
+    },
+    "luna/msgq_api-r05": {
+      "error": 10,
+      "other": 90
+    },
+    "luna/queue-r01": {
+      "other": 100
+    },
+    "luna/queue-r02": {
+      "other": 100
+    },
+    "luna/queue-r03": {
+      "other": 100
+    },
+    "luna/queue-r04": {
+      "error": 1,
+      "other": 99
+    },
+    "luna/queue-r05": {
+      "other": 100
+    },
+    "luna/semaphore-r01": {
+      "other": 100
+    },
+    "luna/semaphore-r02": {
+      "other": 100
+    },
+    "luna/semaphore-r03": {
+      "other": 100
+    },
+    "luna/semaphore-r04": {
+      "other": 100
+    },
+    "luna/semaphore-r05": {
+      "other": 100
+    },
+    "luna/sleep-r01": {
+      "other": 100
+    },
+    "luna/sleep-r02": {
+      "other": 100
+    },
+    "luna/sleep-r05": {
+      "other": 100
+    },
+    "luna/timer_api-r01": {
+      "other": 100
+    },
+    "luna/timer_api-r03": {
+      "other": 100
+    },
+    "luna/timer_api-r04": {
+      "other": 100
+    },
+    "luna/timer_api-r05": {
+      "other": 100
+    },
+    "luna/workq-r03": {
+      "other": 100
+    },
+    "luna/workq-r05": {
+      "other": 100
+    },
+    "upstream/context": {
+      "error": 4,
+      "other": 96
+    },
+    "upstream/fifo_api": {
+      "error": 17,
+      "other": 83
+    },
+    "upstream/lifo_api": {
+      "error": 19,
+      "other": 81
+    },
+    "upstream/msgq_api": {
+      "error": 17,
+      "other": 83
+    },
+    "upstream/pending": {
+      "other": 100
+    },
+    "upstream/queue": {
+      "other": 100
+    },
+    "upstream/semaphore": {
+      "other": 100
+    },
+    "upstream/sleep": {
+      "other": 100
+    },
+    "upstream/timer_api": {
+      "other": 100
+    },
+    "upstream/workq": {
+      "other": 100
+    }
+  },
+  "by_task": {
+    "context": {
+      "error": 4,
+      "other": 96
+    },
+    "fifo_api": {
+      "error": 17,
+      "other": 583
+    },
+    "lifo_api": {
+      "error": 27,
+      "other": 473
+    },
+    "msgq_api": {
+      "error": 38,
+      "other": 562
+    },
+    "pending": {
+      "other": 100
+    },
+    "queue": {
+      "error": 1,
+      "other": 599
+    },
+    "semaphore": {
+      "other": 600
+    },
+    "sleep": {
+      "other": 400
+    },
+    "timer_api": {
+      "other": 500
+    },
+    "workq": {
+      "other": 300
+    }
+  },
+  "chi_square_cpu": {
+    "chi2": 4.7635073374162085,
+    "degrees_of_freedom": 2,
+    "p": 0.09238841668838446
+  },
+  "chi_square_frequency_quartile": {
+    "chi2": 6.604898357846949,
+    "degrees_of_freedom": 3,
+    "p": 0.08561611388109626
+  },
+  "chi_square_suite": {
+    "chi2": 537.2375051496324,
+    "degrees_of_freedom": 42,
+    "p": 3.718973751143324e-87
+  },
+  "chi_square_task": {
+    "chi2": 138.6137052527617,
+    "degrees_of_freedom": 9,
+    "p": 1.9936715574820284e-25
+  },
+  "frequency_quartile_hz": {
+    "1": [
+      15846437,
+      15916198
+    ],
+    "2": [
+      15916522,
+      15988681
+    ],
+    "3": [
+      15991999,
+      16082749
+    ],
+    "4": [
+      16084510,
+      16158639
+    ]
+  },
+  "interpretation": "Descriptive post hoc tests; shared seeds and execution ordering violate simple independent-trial inference. No detectable monotone frequency trend; strong suite concentration.",
+  "nominal_startup_errors": 1,
+  "seeded_records": 4300,
+  "seeded_startup_errors": 87,
+  "spearman_frequency": {
+    "p": 0.6702823713827006,
+    "rho": -0.006494606524491752
+  },
+  "spearman_seed_index": {
+    "p": 0.27251486672342645,
+    "rho": 0.016737201836245264
+  },
+  "startup_errors": 88,
+  "total_records": 4606,
+  "within_suite_frequency_quartile_permutation": {
+    "permutations": 5000,
+    "random_seed": 20261003,
+    "statistic": 3.5,
+    "two_sided_p": 0.7544491101779645
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "case": "thread_wakeup.test_isr_wakes_sleeping_thread_early",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "elf_path": "generated/phase2_luna/build/sleep/r02/zephyr/zephyr.elf",
+  "elf_sha256": "2abc4d6c93dd1e13cf8401d1138f38a081ea7862982b7006a3f878bd3edf126c",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16126681,
+  "index": 94,
+  "kind": "agent",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/luna--sleep-r02-seeded-094.log",
+  "monitor_sha256": "5c809af1cd9f4f3153f8530a7369fdffb39375831d05de9a7405bafe86ba95d3",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": true,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16126681.repl",
+  "platform_sha256": "621f27a86c264342af3c26b66cc359f122a9332d5d73729da713f1d66429c903",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "luna--sleep-r02-seeded-094",
+  "seed": 94,
+  "selected_case": "full_generated_suite",
+  "selected_case_sources": null,
+  "source_path": "generated/phase2_luna/suites/sleep/r02/test.c",
+  "source_sha256": "641243d0118c341f62cb89ec3b023a393af2bfe51057876ed563dee37d2ae2d1",
+  "systick_frequency_hz": 16126681,
+  "task_id": "sleep",
+  "timestamp_utc": "2026-10-01T22:27:01.198281+00:00",
+  "timing_bound": "unknown",
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/luna--sleep-r02-seeded-094.json",
+  "trace_sha256": "8198f7682c722e56d6f5742910cba40c2d850e6ebaf0af219098336f8e27fe29",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/luna--sleep-r02-seeded-094.log",
+  "uart_sha256": "0bcbcb01ff6da082cbe9bffafeb54162d6e2663e53036b52f8fe1117f7107bc0",
+  "version_id": "luna/sleep-r02",
+  "virtual_ns": 250000000,
+  "wall_seconds": 7.967
+}

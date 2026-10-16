@@ -1,0 +1,43 @@
+{
+  "cases": [
+    {
+      "case": "rtc_api.test_alarm_callback",
+      "status": "fail"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 16,
+  "elf_sha256": "d1ff902e1ebbb9e92fa03a7ecc14d208fb72f3b41ef2cb833bc275588d3f715d",
+  "error": null,
+  "family": "rtc_alarm_callback",
+  "identical_trace_and_verdict": false,
+  "kind": "human",
+  "lsi_frequency_hz": 22939,
+  "manifest_sha256": "8df9aefcba0063f4a93183e8e7c0937af7b6787b52e65375ea2a607db2cbca2e",
+  "max_virtual_sec": 60,
+  "model": "human",
+  "monitor_path": "results/rtc_factorial_v2/replay_monitor/human-rtc_alarm_callback-seeded-018.log",
+  "monitor_sha256": "83b6a014a163d43dc7e43ae3e735bf8b7f995409fd222cefc81792bac313ccfd",
+  "original_trace_sha256": "56da110e65cf880ab36664696e2023b69f63dcb368bd42479004fb9d549376f0",
+  "outcome": "fail",
+  "platform_path": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_22939.repl",
+  "platform_sha256": "65e316268474aee60cb9c427bd1febdfb8cdcd5bc09485736cd984ff8e1ef345",
+  "prompt_condition": null,
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "role": "human_full",
+  "run_id": "human-rtc_alarm_callback-seeded-018",
+  "schedule_sha256": "9ca79765fc9fc73cbbb38979632cbc0433e70ed1543b81015bea05e0f72e6995",
+  "seed": 18,
+  "source_sha256": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792",
+  "step_ns": 500000000,
+  "suite_id": "human-rtc_alarm_callback",
+  "systick_frequency_hz": 16000000,
+  "timestamp_utc": "2026-10-05T01:53:47.361690+00:00",
+  "trace_path": "results/rtc_factorial_v2/replay_traces/human-rtc_alarm_callback-seeded-018.json",
+  "trace_sha256": "56da110e65cf880ab36664696e2023b69f63dcb368bd42479004fb9d549376f0",
+  "uart_path": "results/rtc_factorial_v2/replay_uart/human-rtc_alarm_callback-seeded-018.log",
+  "uart_sha256": "a6d6a0327c054587933a76145803c7c25709544f3e878182ddf683e19df2016e",
+  "virtual_ns": 13500000000,
+  "wall_seconds": 55.197
+}

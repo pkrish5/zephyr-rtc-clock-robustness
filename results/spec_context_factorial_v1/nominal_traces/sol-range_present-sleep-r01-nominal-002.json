@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "thread_wakeup.test_wakeup_from_isr",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "thread_wakeup.test_wakeup_from_isr"
+      ],
+      "uart_bytes": 666,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 2,
+  "run_id": "sol-range_present-sleep-r01-nominal-002"
+}

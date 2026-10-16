@@ -1,0 +1,24 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "ChatGPT-authenticated Codex CLI run; billed API dollars not exposed",
+  "attempts": 1,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "cohort": "rtc_bound_supplement",
+  "generation_date_utc": "2026-09-29T19:22:01.340257+00:00",
+  "model_reported_by_events": [],
+  "model_requested": "gpt-6-luna",
+  "output_error": null,
+  "prompt_sha256": "096acd11a6d425d39b855958d3095e4e7d4fab737c6dd9fd465b235a0730969f",
+  "response_sha256": "3e565c3b271363ca5b3cd1aefc10a3b5dac1b737639c13abd888c412e5f749ae",
+  "run_id": "rtc_alarm_callback-r01",
+  "sample_index": 1,
+  "source_sha256": "33b6ff9d5c12c763a53a10991385cdec5c4224b08b2abe5d967ee1db51bf3c53",
+  "status": "generated",
+  "task_id": "rtc_alarm_callback",
+  "tool_event_count": 0,
+  "usage": {
+    "cached_input_tokens": 0,
+    "input_tokens": 14212,
+    "output_tokens": 1460
+  }
+}

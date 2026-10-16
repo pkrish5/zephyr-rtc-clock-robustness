@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "irq_fifo.test_isr_to_thread_fifo_order",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "irq_fifo.test_isr_to_thread_fifo_order"
+      ],
+      "uart_bytes": 673,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 1,
+  "run_id": "luna-range_present-fifo_api-r01-nominal-001"
+}

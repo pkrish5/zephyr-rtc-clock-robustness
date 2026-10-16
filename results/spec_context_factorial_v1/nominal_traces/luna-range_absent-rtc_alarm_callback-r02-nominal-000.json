@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "rtc_alarm_api.test_both_alarm_callbacks",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 16,
+  "error": null,
+  "frequency_hz": 32000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "rtc_alarm_api.test_both_alarm_callbacks"
+      ],
+      "uart_bytes": 895,
+      "virtual_ns": 500000000
+    }
+  ],
+  "outcome": "fail",
+  "repeat": 0,
+  "run_id": "luna-range_absent-rtc_alarm_callback-r02-nominal-000"
+}

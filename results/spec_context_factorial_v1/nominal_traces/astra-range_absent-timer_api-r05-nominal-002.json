@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "periodic_timer.test_expiry_and_stop",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "periodic_timer.test_expiry_and_stop"
+      ],
+      "uart_bytes": 670,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 2,
+  "run_id": "astra-range_absent-timer_api-r05-nominal-002"
+}

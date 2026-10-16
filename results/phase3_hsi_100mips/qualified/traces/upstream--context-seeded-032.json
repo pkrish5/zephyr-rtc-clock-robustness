@@ -1,0 +1,184 @@
+{
+  "cases": [
+    {
+      "case": "context.test_ctx_thread",
+      "status": "pass"
+    },
+    {
+      "case": "context.test_interrupts",
+      "status": "skip"
+    },
+    {
+      "case": "context_cpu_idle.test_cpu_idle",
+      "status": "pass"
+    },
+    {
+      "case": "context_cpu_idle.test_cpu_idle_atomic",
+      "status": "skip"
+    },
+    {
+      "case": "context_one_cpu.test_busy_wait",
+      "status": "pass"
+    },
+    {
+      "case": "context_one_cpu.test_k_sleep",
+      "status": "pass"
+    },
+    {
+      "case": "context_one_cpu.test_k_yield",
+      "status": "pass"
+    },
+    {
+      "case": "context_one_cpu.test_thread",
+      "status": "pass"
+    },
+    {
+      "case": "context_one_cpu.test_timer_interrupts",
+      "status": "skip"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 99,
+  "error": null,
+  "hsi_frequency_hz": 15880591,
+  "index": 32,
+  "observations": [
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1269,
+      "virtual_ns": 250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1269,
+      "virtual_ns": 500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1358,
+      "virtual_ns": 750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1447,
+      "virtual_ns": 1000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1538,
+      "virtual_ns": 1250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1629,
+      "virtual_ns": 1500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1720,
+      "virtual_ns": 1750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1811,
+      "virtual_ns": 2000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1902,
+      "virtual_ns": 2250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1902,
+      "virtual_ns": 2500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1902,
+      "virtual_ns": 2750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1997,
+      "virtual_ns": 3000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1997,
+      "virtual_ns": 3250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 1997,
+      "virtual_ns": 3500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2092,
+      "virtual_ns": 3750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2288,
+      "virtual_ns": 4000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2288,
+      "virtual_ns": 4250000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2288,
+      "virtual_ns": 4500000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2435,
+      "virtual_ns": 4750000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2435,
+      "virtual_ns": 5000000000
+    },
+    {
+      "completed": false,
+      "latest_case": null,
+      "uart_bytes": 2435,
+      "virtual_ns": 5250000000
+    },
+    {
+      "completed": true,
+      "latest_case": [
+        "SKIP",
+        "context_one_cpu.test_timer_interrupts"
+      ],
+      "uart_bytes": 4064,
+      "virtual_ns": 5500000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "upstream--context-seeded-032"
+}

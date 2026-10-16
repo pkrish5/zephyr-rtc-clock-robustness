@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "timer_interrupt.test_one_shot_expiration_wakes_blocked_worker",
+      "status": "fail"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "FAIL",
+        "timer_interrupt.test_one_shot_expiration_wakes_blocked_worker"
+      ],
+      "uart_bytes": 954,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "fail",
+  "repeat": 0,
+  "run_id": "luna-range_present-pending-r02-nominal-000"
+}

@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "timer_expiry.test_periodic_expirations_and_stop",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 99,
+  "error": null,
+  "hsi_frequency_hz": 15856270,
+  "index": 86,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "timer_expiry.test_periodic_expirations_and_stop"
+      ],
+      "uart_bytes": 704,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "luna--timer_api-r04-seeded-086"
+}

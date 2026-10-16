@@ -1,0 +1,3496 @@
+{
+  "method": "syntactic candidate scan; manual adjudication pending",
+  "records": [
+    {
+      "case": "timer_api.test_timer_status_sync",
+      "kind": "upstream",
+      "regions_scanned": 6,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c": "6d2d4422ef649b5837c606e8a5aa1454c573efa13be7085851f4c03442c7fada"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 504,
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_timer_start(&status_sync_timer, K_MSEC(DURATION), K_MSEC(PERIOD));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 508,
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "scope": "selected_case",
+          "snippet": "TIMER_ASSERT(tdata.expire_cnt == i, &status_sync_timer);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 513,
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "scope": "selected_case",
+          "snippet": "TIMER_ASSERT(tdata.expire_cnt == (i + 1), &status_sync_timer);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 517,
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_timer_start(&status_sync_timer, K_MSEC(DURATION), K_MSEC(PERIOD));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 154,
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_busy_wait(ms*1000);"
+        }
+      ],
+      "task_id": "timer_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "timer_api-r01",
+      "source_sha256": "4ab477caeb411dd6c4a3637d286ab116dcfdc98bb6ec710d91357222778c150c",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/timer_api/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_PERIOD K_MSEC(20)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/timer_api/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define EXPIRY_CHECK_TIMEOUT K_MSEC(1000)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/timer_api/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(callback_count >= 2U,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/timer_api/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(callback_count >= 2U,"
+        }
+      ],
+      "task_id": "timer_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "timer_api-r02",
+      "source_sha256": "399d9e4fab700da666309ec0c1291beafbbbf73cca1e5ffd76f43977a9eab2fc",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/timer_api/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_PERIOD K_MSEC(20)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/timer_api/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WAIT_TIMEOUT K_SECONDS(2)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 25,
+          "path": "generated/phase2_luna/suites/timer_api/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(first_count > 0U, \"first timer synchronization must report an expiry\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 25,
+          "path": "generated/phase2_luna/suites/timer_api/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(first_count > 0U, \"first timer synchronization must report an expiry\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 28,
+          "path": "generated/phase2_luna/suites/timer_api/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(second_count > 0U, \"second timer synchronization must report an expiry\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 28,
+          "path": "generated/phase2_luna/suites/timer_api/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(second_count > 0U, \"second timer synchronization must report an expiry\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 29,
+          "path": "generated/phase2_luna/suites/timer_api/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(callback_count >= 2U, \"expiry callback count: %u\", callback_count);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 29,
+          "path": "generated/phase2_luna/suites/timer_api/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(callback_count >= 2U, \"expiry callback count: %u\", callback_count);"
+        }
+      ],
+      "task_id": "timer_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "timer_api-r03",
+      "source_sha256": "d7fc4962ccee43e2c1fa62bc7b755f7314392ef68b2c8df4e916650c53f41a65",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/timer_api/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_PERIOD K_MSEC(20)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/timer_api/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(atomic_get(&expiry_count) >= 2, \"expiry callback should run at least twice\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/timer_api/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(atomic_get(&expiry_count) >= 2, \"expiry callback should run at least twice\");"
+        }
+      ],
+      "task_id": "timer_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "timer_api-r04",
+      "source_sha256": "8489914a53ee7615bcbb27756d485684abcff05c293cfd0938e1d6be337eb60e",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/timer_api/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_PERIOD K_MSEC(20)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/timer_api/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(atomic_get(&callback_count) >= 2,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/timer_api/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(atomic_get(&callback_count) >= 2,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 27,
+          "path": "generated/phase2_luna/suites/timer_api/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "\"expiry callback count was %d\", atomic_get(&callback_count));"
+        }
+      ],
+      "task_id": "timer_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "timer_api-r05",
+      "source_sha256": "d037f8cce33f26386fe8d01fe91c6cfaacece350e6454c248ee8b50d1d07e328",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/timer_api/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_PERIOD K_MSEC(20)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/timer_api/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(callback_count >= 2U,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/timer_api/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(callback_count >= 2U,"
+        }
+      ],
+      "task_id": "timer_api"
+    },
+    {
+      "case": "semaphore.test_sem_give_from_isr",
+      "kind": "upstream",
+      "regions_scanned": 3,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/semaphore/semaphore/src/main.c": "d4bd094f30d7354f13fcf4d49a93985246455982b8b8a9d1323ae0312b36f498"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 402,
+          "path": "subjects/upstream/zephyr/tests/kernel/semaphore/semaphore/src/main.c",
+          "scope": "selected_case",
+          "snippet": "expect_k_sem_count_get_nomsg(&simple_sem, 0);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 407,
+          "path": "subjects/upstream/zephyr/tests/kernel/semaphore/semaphore/src/main.c",
+          "scope": "selected_case",
+          "snippet": "expect_k_sem_count_get_nomsg(&simple_sem, i + 1);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 57,
+          "path": "subjects/upstream/zephyr/tests/kernel/semaphore/semaphore/src/main.c",
+          "scope": "referenced_macro",
+          "snippet": "#define expect_k_sem_count_get_nomsg(sem, exp) \\"
+        }
+      ],
+      "task_id": "semaphore"
+    },
+    {
+      "kind": "agent",
+      "run_id": "semaphore-r01",
+      "source_sha256": "839d1077623e75d93390703bd98618b0093edf876ed35943b6d3b1c9c6a13ef8",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 17,
+          "path": "generated/phase2_luna/suites/semaphore/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&sem), 0U, \"initial semaphore count\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 17,
+          "path": "generated/phase2_luna/suites/semaphore/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&sem), 0U, \"initial semaphore count\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 20,
+          "path": "generated/phase2_luna/suites/semaphore/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&sem), 1U, \"count after first ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 20,
+          "path": "generated/phase2_luna/suites/semaphore/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&sem), 1U, \"count after first ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 23,
+          "path": "generated/phase2_luna/suites/semaphore/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&sem), 2U, \"count after second ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 23,
+          "path": "generated/phase2_luna/suites/semaphore/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&sem), 2U, \"count after second ISR give\");"
+        }
+      ],
+      "task_id": "semaphore"
+    },
+    {
+      "kind": "agent",
+      "run_id": "semaphore-r02",
+      "source_sha256": "323990e2a15339a3408f56f28d010cf6bcf0b6c9caf9601c27aff08bf59ae4e5",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 16,
+          "path": "generated/phase2_luna/suites/semaphore/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 0U, \"initial count must be zero\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 16,
+          "path": "generated/phase2_luna/suites/semaphore/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 0U, \"initial count must be zero\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 19,
+          "path": "generated/phase2_luna/suites/semaphore/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 1U, \"count after first ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 19,
+          "path": "generated/phase2_luna/suites/semaphore/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 1U, \"count after first ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 22,
+          "path": "generated/phase2_luna/suites/semaphore/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 2U, \"count after second ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 22,
+          "path": "generated/phase2_luna/suites/semaphore/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 2U, \"count after second ISR give\");"
+        }
+      ],
+      "task_id": "semaphore"
+    },
+    {
+      "kind": "agent",
+      "run_id": "semaphore-r03",
+      "source_sha256": "acc6ee95a735b10a92ba63ac325f34deaf43c196a22d3e7d85637e22a71338d7",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 18,
+          "path": "generated/phase2_luna/suites/semaphore/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 0U,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 18,
+          "path": "generated/phase2_luna/suites/semaphore/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 0U,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 22,
+          "path": "generated/phase2_luna/suites/semaphore/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 1U,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 22,
+          "path": "generated/phase2_luna/suites/semaphore/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 1U,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/semaphore/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 2U,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 26,
+          "path": "generated/phase2_luna/suites/semaphore/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 2U,"
+        }
+      ],
+      "task_id": "semaphore"
+    },
+    {
+      "kind": "agent",
+      "run_id": "semaphore-r04",
+      "source_sha256": "4a403c4ba1e0d7f83b407557396c7f55f4cbc0b307e4338e1e32a71e09e54d21",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 16,
+          "path": "generated/phase2_luna/suites/semaphore/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 0U, \"initial count must be zero\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 16,
+          "path": "generated/phase2_luna/suites/semaphore/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 0U, \"initial count must be zero\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 19,
+          "path": "generated/phase2_luna/suites/semaphore/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 1U, \"count after first ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 19,
+          "path": "generated/phase2_luna/suites/semaphore/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 1U, \"count after first ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 22,
+          "path": "generated/phase2_luna/suites/semaphore/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 2U, \"count after second ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 22,
+          "path": "generated/phase2_luna/suites/semaphore/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 2U, \"count after second ISR give\");"
+        }
+      ],
+      "task_id": "semaphore"
+    },
+    {
+      "kind": "agent",
+      "run_id": "semaphore-r05",
+      "source_sha256": "bb56f546c98428ca0033c3ef0b3b60456d9d35ef04f1f866c963f394dda1e89a",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 16,
+          "path": "generated/phase2_luna/suites/semaphore/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 0, \"initial count must be zero\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 16,
+          "path": "generated/phase2_luna/suites/semaphore/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 0, \"initial count must be zero\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 19,
+          "path": "generated/phase2_luna/suites/semaphore/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 1, \"count after first ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 19,
+          "path": "generated/phase2_luna/suites/semaphore/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 1, \"count after first ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 22,
+          "path": "generated/phase2_luna/suites/semaphore/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 2, \"count after second ISR give\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 22,
+          "path": "generated/phase2_luna/suites/semaphore/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&test_sem), 2, \"count after second ISR give\");"
+        }
+      ],
+      "task_id": "semaphore"
+    },
+    {
+      "case": "fifo_api.test_fifo_isr2thread",
+      "kind": "upstream",
+      "regions_scanned": 8,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_cancel.c": "cc870b9d2c68838b1d9cb8b475e1af24e2868cc6323297d37cceba0b6884f70f",
+        "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_contexts.c": "5b94703545aaf128d9088245be1846e1ef0442882a872e32c56767f842c1ffa1",
+        "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_loop.c": "1b52f27c9a5ee9b6f1d1704d0ed7043fac5f838287d25255e96adc188d6e38fd"
+      },
+      "tags": [],
+      "task_id": "fifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "fifo_api-r01",
+      "source_sha256": "6fcbbd54295fdd5b270b66096b0fdc3a923136d2854a7b1e4a214d09ded314da",
+      "tags": [],
+      "task_id": "fifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "fifo_api-r02",
+      "source_sha256": "bb36fb568b9af15f840eff25a8a916b5f647dd9d36e224d1b696244c344413b7",
+      "tags": [],
+      "task_id": "fifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "fifo_api-r03",
+      "source_sha256": "45545d4e5cb24ecb59f86181141c66bf7e16374478322c6eb7145d26c38cc6e1",
+      "tags": [],
+      "task_id": "fifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "fifo_api-r04",
+      "source_sha256": "36a151f5cd46cf6cd7a7d08059e941130417646ddeaa80b061e8f20aebda2f42",
+      "tags": [],
+      "task_id": "fifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "fifo_api-r05",
+      "source_sha256": "9480e14ebf64ccf3ff74757b1fd2e6aaa4d3c604a76e3e39a765e0121b0d2bc0",
+      "tags": [],
+      "task_id": "fifo_api"
+    },
+    {
+      "case": "lifo_contexts.test_lifo_isr2thread",
+      "kind": "upstream",
+      "regions_scanned": 7,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_contexts.c": "eeac6acea7b58b046d556f264cd904f479ed7f136fdcc7363ab6f03804271168",
+        "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_loop.c": "5dac91f91baeb84996d4151c7474559b1f66a1c27f5683ea8394c50d7fcec4f6"
+      },
+      "tags": [],
+      "task_id": "lifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "lifo_api-r01",
+      "source_sha256": "3a20dac34b926d699d7b56cd58fb6855b0a1dd2055f5e5d86c4b658dac16eb28",
+      "tags": [],
+      "task_id": "lifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "lifo_api-r02",
+      "source_sha256": "e7c6860fb7d98bb0a2d625bee6ab7fb1ff0b1a20b4aa69de1e64816b73ad1b38",
+      "tags": [],
+      "task_id": "lifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "lifo_api-r03",
+      "source_sha256": "b17c94a1657a5f07acb3b296fe1af6be504ad2e5fa8f8679699ebf80ed9d45d2",
+      "tags": [],
+      "task_id": "lifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "lifo_api-r04",
+      "source_sha256": "9ab10d4e2397f350096bd5bed31fe8b2dc11c5ee6f5f818cce595f8b6124cbe1",
+      "tags": [],
+      "task_id": "lifo_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "lifo_api-r05",
+      "source_sha256": "a864fc042dc1dddfabb7abfe62b0b61a2f5ea3f27e02128cb840b33813215730",
+      "tags": [],
+      "task_id": "lifo_api"
+    },
+    {
+      "case": "msgq_api.test_msgq_isr",
+      "kind": "upstream",
+      "regions_scanned": 8,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/msgq/msgq_api/src/test_msgq.h": "b50c948e86fb69dacfdb76fb7deb405d8ac11d27fc075611ce92d746571454e9",
+        "subjects/upstream/zephyr/tests/kernel/msgq/msgq_api/src/test_msgq_contexts.c": "69d708599a650db8df74a08f0a0ef1b5557be3dc304a9a44fa37289a0b6e9a83"
+      },
+      "tags": [],
+      "task_id": "msgq_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "msgq_api-r01",
+      "source_sha256": "4bda1bcf1a5b3c395408f12c8d450c1ff38189cfc3c021480999a0324ae323e3",
+      "tags": [],
+      "task_id": "msgq_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "msgq_api-r02",
+      "source_sha256": "323d33d2cc5e1f79af5303abc89bec6dd6adfd884178511bc95cdd47254b0843",
+      "tags": [],
+      "task_id": "msgq_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "msgq_api-r03",
+      "source_sha256": "7aa0188d8def3de6719b1dcb49bb7a482887130bd1ba6a5ee511ea06ef239e47",
+      "tags": [],
+      "task_id": "msgq_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "msgq_api-r04",
+      "source_sha256": "cfde656acfd4423fa412ceb8ad7f5af4b99a0b1958404419a05c5a7dcbc06a4d",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 40,
+          "path": "generated/phase2_luna/suites/msgq_api/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_msgq_num_used_get(&test_msgq), MSG_COUNT,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 40,
+          "path": "generated/phase2_luna/suites/msgq_api/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_msgq_num_used_get(&test_msgq), MSG_COUNT,"
+        }
+      ],
+      "task_id": "msgq_api"
+    },
+    {
+      "kind": "agent",
+      "run_id": "msgq_api-r05",
+      "source_sha256": "4d18d8c88835b321ccc6a2da5232b8d933dd0efcc8b8f9638947897ce4057813",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 35,
+          "path": "generated/phase2_luna/suites/msgq_api/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(puts_done, MSG_COUNT, \"ISR did not attempt all puts\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 35,
+          "path": "generated/phase2_luna/suites/msgq_api/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(puts_done, MSG_COUNT, \"ISR did not attempt all puts\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/msgq_api/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_msgq_num_used_get(&test_msgq), MSG_COUNT,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/msgq_api/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_msgq_num_used_get(&test_msgq), MSG_COUNT,"
+        }
+      ],
+      "task_id": "msgq_api"
+    },
+    {
+      "case": "work_1cpu.test_1cpu_basic_schedule",
+      "kind": "upstream",
+      "regions_scanned": 5,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c": "4ec2e6f05084a892a7afa21fbf4e3fcd47d2181d514ce84d2cd7166aa472e6d9"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 1006,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(wp->flags & K_WORK_DELAYABLE, K_WORK_DELAYABLE,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 1006,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(wp->flags & K_WORK_DELAYABLE, K_WORK_DELAYABLE,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 1010,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_TICKS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1010,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_TICKS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1012,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "rc = k_work_schedule_for_queue(&coophi_queue, &dwork, K_MSEC(DELAY_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 1024,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "rc = k_sem_take(&sync_sem, K_FOREVER);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 1028,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(coophi_counter(), 1);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 1028,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(coophi_counter(), 1);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 128,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "zassert_equal(k_sem_take(&sync_sem, K_NO_WAIT), -EBUSY);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 89,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "return atomic_get(&coophi_ctr);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 20,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "scope": "referenced_macro",
+          "snippet": "#define DELAY_MS 100"
+        }
+      ],
+      "task_id": "workq"
+    },
+    {
+      "kind": "agent",
+      "run_id": "workq-r01",
+      "source_sha256": "52314674bcadaa46c61d08f770ffbd848a100f50a0850a1adb14b6aa05e966c6",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/workq/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WORK_DELAY K_MSEC(20)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/workq/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WORK_DELAY_MS 20"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 34,
+          "path": "generated/phase2_luna/suites/workq/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&work_done, K_SECONDS(1)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 34,
+          "path": "generated/phase2_luna/suites/workq/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&work_done, K_SECONDS(1)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 37,
+          "path": "generated/phase2_luna/suites/workq/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 37,
+          "path": "generated/phase2_luna/suites/workq/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        }
+      ],
+      "task_id": "workq"
+    },
+    {
+      "kind": "agent",
+      "run_id": "workq-r02",
+      "source_sha256": "90530a62dec9b383318e44db5cd3abecca03b126e3755b8252396b6c36382376",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/workq/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WORK_DELAY K_MSEC(20)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 34,
+          "path": "generated/phase2_luna/suites/workq/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&work_done, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 34,
+          "path": "generated/phase2_luna/suites/workq/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&work_done, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 36,
+          "path": "generated/phase2_luna/suites/workq/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 36,
+          "path": "generated/phase2_luna/suites/workq/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/workq/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "(int64_t)K_MSEC(20).ticks * 0 + 20 - TICK_TOLERANCE_MS,"
+        }
+      ],
+      "task_id": "workq"
+    },
+    {
+      "kind": "agent",
+      "run_id": "workq-r03",
+      "source_sha256": "e60980a2fd1ff1e20b19d733877e38dfb6b92549c1a135972ba908b7f70c3ded",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/workq/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TEST_DELAY K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 38,
+          "path": "generated/phase2_luna/suites/workq/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&work_done, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 38,
+          "path": "generated/phase2_luna/suites/workq/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&work_done, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 41,
+          "path": "generated/phase2_luna/suites/workq/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_calls), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 42,
+          "path": "generated/phase2_luna/suites/workq/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "\"Handler ran %d times\", atomic_get(&handler_calls));"
+        }
+      ],
+      "task_id": "workq"
+    },
+    {
+      "kind": "agent",
+      "run_id": "workq-r04",
+      "source_sha256": "ce4b712e25bebda55b431e6978d98c0f87d0283f29f7c6eaaef75769411083dc",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/workq/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WORK_DELAY K_MSEC(20)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/workq/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define DELAY_TOLERANCE_TICKS 1"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 35,
+          "path": "generated/phase2_luna/suites/workq/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 35,
+          "path": "generated/phase2_luna/suites/workq/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 38,
+          "path": "generated/phase2_luna/suites/workq/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&work_done, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 38,
+          "path": "generated/phase2_luna/suites/workq/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&work_done, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 41,
+          "path": "generated/phase2_luna/suites/workq/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 41,
+          "path": "generated/phase2_luna/suites/workq/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        }
+      ],
+      "task_id": "workq"
+    },
+    {
+      "kind": "agent",
+      "run_id": "workq-r05",
+      "source_sha256": "3db5a65e882ae69760a05b133dfeeebfa14ffe72a87adc1b98737b2caffa9b49",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define DELAY_MS 100"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 6,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define COMPLETION_TIMEOUT_MS 1000"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 7,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define SETTLE_MS 20"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 32,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_work_schedule(&delayed_work, K_MSEC(DELAY_MS)), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 37,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&work_done, K_MSEC(COMPLETION_TIMEOUT_MS)),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 37,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&work_done, K_MSEC(COMPLETION_TIMEOUT_MS)),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 43,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 43,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 49,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_msleep(SETTLE_MS);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 50,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 50,
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&handler_count), 1,"
+        }
+      ],
+      "task_id": "workq"
+    },
+    {
+      "case": "queue_api.test_queue_isr2thread",
+      "kind": "upstream",
+      "regions_scanned": 9,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_contexts.c": "221b7415fabee11ca866cad23958672aa5ab7bbb7cbe23b44693f4c200c6e891",
+        "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_fail.c": "63c304af41e2080aeaa44a59908cd0bfcba6ff6edce4d472efefe6f0c32f1d6a",
+        "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_loop.c": "545b96886ee39ea332d2bee81c2441e72055f0a7368e5f53a3a91ec32dafdc1b",
+        "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_user.c": "3e883832eb2e48a34e6647c8a2b4bbfc64dadd91bddaaa8c90f5502780eb4f9b"
+      },
+      "tags": [],
+      "task_id": "queue"
+    },
+    {
+      "kind": "agent",
+      "run_id": "queue-r01",
+      "source_sha256": "6ba17494ce3b5cb9a11b486069ee5e555cb6b96d99a6ef49a40c9d891ca5c6b9",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 31,
+          "path": "generated/phase2_luna/suites/queue/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(atomic_get(&isr_append_ran) != 0, \"ISR append path did not execute\");"
+        }
+      ],
+      "task_id": "queue"
+    },
+    {
+      "kind": "agent",
+      "run_id": "queue-r02",
+      "source_sha256": "cee0a6b10ef36f43f6f6c38f94bc946ecb4e3a04dd9688cac8d42e779ed2d589",
+      "tags": [],
+      "task_id": "queue"
+    },
+    {
+      "kind": "agent",
+      "run_id": "queue-r03",
+      "source_sha256": "7897fe45a34c3ebe7cc84d3312129d49b0eba4b73bb558f65e491d72b2a5c8ed",
+      "tags": [],
+      "task_id": "queue"
+    },
+    {
+      "kind": "agent",
+      "run_id": "queue-r04",
+      "source_sha256": "9280f24259caa92b0c4c7093e450101d8455ae273dc12aedae96b8f7ee2ed4e5",
+      "tags": [],
+      "task_id": "queue"
+    },
+    {
+      "kind": "agent",
+      "run_id": "queue-r05",
+      "source_sha256": "1e28832d6c85b3ae89b63e14e98bb6550e738ec2f94af8bcab31037d0eb5e015",
+      "tags": [],
+      "task_id": "queue"
+    },
+    {
+      "case": "sleep.test_sleep",
+      "kind": "upstream",
+      "regions_scanned": 14,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c": "e40ebc219763810cb638c3cad755fa44fee47ce60f8e62beac25042dc214299a"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 223,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sem_take(&task_sem, K_FOREVER);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 232,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 232,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "possibly_unbounded_wait_candidate",
+          "line": 82,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "while (k_uptime_get_32() == tick) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 178,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sem_take(&helper_thread_sem, K_FOREVER);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 181,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sem_take(&helper_thread_sem, K_FOREVER);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 110,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sem_take(&test_thread_sem, K_FOREVER);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 115,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 115,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 129,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 129,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 142,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 142,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sleep(K_SECONDS(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 155,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sleep(K_SECONDS(1));\t/* Task will execute */"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 155,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_sleep(K_SECONDS(1));\t/* Task will execute */"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 33,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "referenced_macro",
+          "snippet": "#define TICK_MARGIN\t\t5"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 35,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "scope": "referenced_macro",
+          "snippet": "#define TICK_MARGIN\t\t1"
+        }
+      ],
+      "task_id": "sleep"
+    },
+    {
+      "kind": "agent",
+      "run_id": "sleep-r01",
+      "source_sha256": "708ed2f07ee48af870a32af473db236fe4a1b15f5435cba8ef413b59da8cc421",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define SLEEP_DURATION K_SECONDS(5)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 6,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WAKE_DELAY_MS 100"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 7,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define MIN_EARLY_MARGIN_MS 1000"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 33,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "(void)k_sleep(SLEEP_DURATION);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 52,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&ready_sem, K_SECONDS(1)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 52,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&ready_sem, K_SECONDS(1)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(WAKE_DELAY_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(WAKE_DELAY_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 57,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&done_sem, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 57,
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&done_sem, K_SECONDS(2)), 0,"
+        }
+      ],
+      "task_id": "sleep"
+    },
+    {
+      "kind": "agent",
+      "run_id": "sleep-r02",
+      "source_sha256": "641243d0118c341f62cb89ec3b023a393af2bfe51057876ed563dee37d2ae2d1",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/sleep/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define REQUESTED_SLEEP K_SECONDS(5)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 6,
+          "path": "generated/phase2_luna/suites/sleep/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WAKE_DELAY K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 7,
+          "path": "generated/phase2_luna/suites/sleep/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define SEM_TIMEOUT K_SECONDS(2)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 8,
+          "path": "generated/phase2_luna/suites/sleep/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define MIN_EARLY_MARGIN_MS 100"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 27,
+          "path": "generated/phase2_luna/suites/sleep/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(REQUESTED_SLEEP);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 51,
+          "path": "generated/phase2_luna/suites/sleep/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&sleeping_sem, SEM_TIMEOUT), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 55,
+          "path": "generated/phase2_luna/suites/sleep/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(WAKE_DELAY);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 58,
+          "path": "generated/phase2_luna/suites/sleep/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completed_sem, SEM_TIMEOUT), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 66,
+          "path": "generated/phase2_luna/suites/sleep/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_thread_join(sleeper_tid, K_SECONDS(1));"
+        }
+      ],
+      "task_id": "sleep"
+    },
+    {
+      "kind": "agent",
+      "run_id": "sleep-r03",
+      "source_sha256": "94dc62ee105d7cd0e2cfd70f5a0d3e7eebc7cbb9112351ecee7f04a7d20c320d",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define SLEEP_DURATION K_SECONDS(5)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 6,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WAKE_DELAY_MS 100"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 7,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define MAX_SLEEP_MS 1000"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 24,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "(void)k_sleep(SLEEP_DURATION);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 50,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 50,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(1));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(WAKE_DELAY_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(WAKE_DELAY_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 58,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&resumed_sem, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 58,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&resumed_sem, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 65,
+          "path": "generated/phase2_luna/suites/sleep/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_thread_join(sleeper_id, K_SECONDS(1));"
+        }
+      ],
+      "task_id": "sleep"
+    },
+    {
+      "kind": "agent",
+      "run_id": "sleep-r04",
+      "source_sha256": "43401153ed675b704767f54522360003b718ddea8425c4bc2d45887e0a584f5b",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define SLEEP_DURATION K_SECONDS(5)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 6,
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WAKE_DELAY_MS 100"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 7,
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WAKE_MARGIN_MS 500"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 33,
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "(void)k_sleep(SLEEP_DURATION);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "possibly_unbounded_wait_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (sleep_started_ms == 0) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 57,
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_msleep(WAKE_DELAY_MS);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 60,
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "ret = k_sem_take(&resumed_sem, K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 60,
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "ret = k_sem_take(&resumed_sem, K_SECONDS(2));"
+        }
+      ],
+      "task_id": "sleep"
+    },
+    {
+      "kind": "agent",
+      "run_id": "sleep-r05",
+      "source_sha256": "8ddd8b94855ff15691d39bdc5f08d3c2584e755538687eb164140e548f7535f6",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define SLEEP_DURATION K_SECONDS(5)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 6,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WAKE_DELAY_MS  100"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 7,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define MAX_WAIT_MS    2000"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 32,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "(void)k_sleep(SLEEP_DURATION);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 50,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&sleeper_started, K_MSEC(MAX_WAIT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 50,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&sleeper_started, K_MSEC(MAX_WAIT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_msleep(WAKE_DELAY_MS);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 57,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&sleeper_done, K_MSEC(MAX_WAIT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 57,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&sleeper_done, K_MSEC(MAX_WAIT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 62,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(elapsed_ms >= 0, \"invalid measured sleep duration: %lld ms\","
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 64,
+          "path": "generated/phase2_luna/suites/sleep/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(elapsed_ms < 3000,"
+        }
+      ],
+      "task_id": "sleep"
+    },
+    {
+      "case": "context_one_cpu.test_k_sleep",
+      "kind": "upstream",
+      "regions_scanned": 6,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/context/src/main.c": "6bfad2a3f3c0507d4c3b3376cff0c57700d79aecfa1f3f5f4c5c35b41b85fe1a"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 952,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "rv = k_sem_take(&reply_timeout, K_MSEC(timeout * 2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 952,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "rv = k_sem_take(&reply_timeout, K_MSEC(timeout * 2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 965,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "K_MSEC(timeouts[i].timeout));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 968,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "data = k_fifo_get(&timeout_order_fifo, K_MSEC(750));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 972,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(data->timeout_order, i,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 981,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "data = k_fifo_get(&timeout_order_fifo, K_MSEC(750));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1001,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "K_MSEC(timeouts[i].timeout));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1027,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "data = k_fifo_get(&timeout_order_fifo, K_MSEC(2750));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 1032,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(data->timeout_order, i,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 1046,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "selected_case",
+          "snippet": "data = k_fifo_get(&timeout_order_fifo, K_MSEC(750));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 879,
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "scope": "reachable_helper",
+          "snippet": "k_msleep(timeout);"
+        }
+      ],
+      "task_id": "context"
+    },
+    {
+      "kind": "agent",
+      "run_id": "context-r01",
+      "source_sha256": "e3e2853f44a4fc08cfae123df8e0de1a11fb774a3844825845a3ff5b6beb9fee",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/context/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WORKER_SLEEP K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/context/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TEST_WAIT K_MSEC(1000)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 23,
+          "path": "generated/phase2_luna/suites/context/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(WORKER_SLEEP);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 43,
+          "path": "generated/phase2_luna/suites/context/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&started_sem, TEST_WAIT), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 47,
+          "path": "generated/phase2_luna/suites/context/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_NO_WAIT), -EAGAIN,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 49,
+          "path": "generated/phase2_luna/suites/context/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(k_sem_take(&unrelated_sem, K_NO_WAIT) == 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 51,
+          "path": "generated/phase2_luna/suites/context/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, TEST_WAIT), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/context/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(worker_finished_ms - sleep_started_ms >= 100,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 56,
+          "path": "generated/phase2_luna/suites/context/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_NO_WAIT), -EAGAIN,"
+        }
+      ],
+      "task_id": "context"
+    },
+    {
+      "kind": "agent",
+      "run_id": "context-r02",
+      "source_sha256": "a1ff584174920f56a971b0b7a9fa744ac88e2384d287af4e7d70ced1106b9e35",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/context/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WORKER_SLEEP K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/context/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WAIT_TIMEOUT K_SECONDS(2)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 21,
+          "path": "generated/phase2_luna/suites/context/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(WORKER_SLEEP);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 40,
+          "path": "generated/phase2_luna/suites/context/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&immediate_sem, K_NO_WAIT), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 42,
+          "path": "generated/phase2_luna/suites/context/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&done_sem, K_NO_WAIT), -EBUSY,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 45,
+          "path": "generated/phase2_luna/suites/context/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&done_sem, WAIT_TIMEOUT),"
+        }
+      ],
+      "task_id": "context"
+    },
+    {
+      "kind": "agent",
+      "run_id": "context-r03",
+      "source_sha256": "57d15794596cf52b29889a953386a2987d1b5d57904315cae80ea5a7bd400492",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/context/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WORKER_SLEEP K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/context/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TEST_TIMEOUT K_SECONDS(2)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 20,
+          "path": "generated/phase2_luna/suites/context/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(WORKER_SLEEP);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 37,
+          "path": "generated/phase2_luna/suites/context/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&started_sem, TEST_TIMEOUT),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 41,
+          "path": "generated/phase2_luna/suites/context/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_MSEC(20)), -EAGAIN,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 41,
+          "path": "generated/phase2_luna/suites/context/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_MSEC(20)), -EAGAIN,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 45,
+          "path": "generated/phase2_luna/suites/context/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&completion_sem, TEST_TIMEOUT),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 48,
+          "path": "generated/phase2_luna/suites/context/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(elapsed_ms >= 40,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 51,
+          "path": "generated/phase2_luna/suites/context/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_NO_WAIT), -EAGAIN,"
+        }
+      ],
+      "task_id": "context"
+    },
+    {
+      "kind": "agent",
+      "run_id": "context-r04",
+      "source_sha256": "8db9f6b238f79f63536e9534c953e1c7afccd8b120ac72e99db9f139d2cd0c9e",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WORKER_SLEEP_MS 50"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TEST_TIMEOUT_MS 1000"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 20,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(WORKER_SLEEP_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 20,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(WORKER_SLEEP_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 34,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&started_sem, K_MSEC(TEST_TIMEOUT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 34,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&started_sem, K_MSEC(TEST_TIMEOUT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 36,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_NO_WAIT), -EBUSY,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 40,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_MSEC(TEST_TIMEOUT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 40,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_MSEC(TEST_TIMEOUT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 46,
+          "path": "generated/phase2_luna/suites/context/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_NO_WAIT), -EBUSY,"
+        }
+      ],
+      "task_id": "context"
+    },
+    {
+      "kind": "agent",
+      "run_id": "context-r05",
+      "source_sha256": "594ce77f2c763b5b0118dee041ffa0d15361fd1afb1688d30abbbaf7f07246c6",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define WORKER_SLEEP_MS 50"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TEST_TIMEOUT_MS 1000"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 20,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(WORKER_SLEEP_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 20,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(WORKER_SLEEP_MS));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 35,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&worker_done, K_NO_WAIT), -EBUSY,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 37,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&unrelated_signal, K_NO_WAIT), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&worker_done, K_NO_WAIT), -EBUSY,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 47,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&worker_started, K_MSEC(TEST_TIMEOUT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 47,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&worker_started, K_MSEC(TEST_TIMEOUT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 49,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&worker_done, K_NO_WAIT), -EBUSY,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 52,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&worker_done, K_MSEC(TEST_TIMEOUT_MS)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 52,
+          "path": "generated/phase2_luna/suites/context/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&worker_done, K_MSEC(TEST_TIMEOUT_MS)), 0,"
+        }
+      ],
+      "task_id": "context"
+    },
+    {
+      "case": "pending.test_pending_timer",
+      "kind": "upstream",
+      "regions_scanned": 4,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/pending/src/main.c": "a8bffa54aa1c964fa8eb1d81f09448901bb9b356215b1e7a3535b9fbba6f4dd9"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 458,
+          "path": "subjects/upstream/zephyr/tests/kernel/pending/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 458,
+          "path": "subjects/upstream/zephyr/tests/kernel/pending/src/main.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        }
+      ],
+      "task_id": "pending"
+    },
+    {
+      "kind": "agent",
+      "run_id": "pending-r01",
+      "source_sha256": "9ec3b0d92670467e71e020f76a20dcb5a1b496afd87aa02d7dfc756c90e537a1",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/pending/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_DELAY K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 33,
+          "path": "generated/phase2_luna/suites/pending/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 33,
+          "path": "generated/phase2_luna/suites/pending/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 34,
+          "path": "generated/phase2_luna/suites/pending/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_thread_state_str(&worker_thread)[0], 'p',"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 36,
+          "path": "generated/phase2_luna/suites/pending/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion, K_NO_WAIT), -EAGAIN,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/pending/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/pending/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 46,
+          "path": "generated/phase2_luna/suites/pending/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_thread_join(&worker_thread, K_SECONDS(1));"
+        }
+      ],
+      "task_id": "pending"
+    },
+    {
+      "kind": "agent",
+      "run_id": "pending-r02",
+      "source_sha256": "213bab404ec1476938d8a527f1af19079e1548c9a60938ad3f5218f94f705651",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/pending/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_DELAY K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 5,
+          "path": "generated/phase2_luna/suites/pending/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TEST_TIMEOUT K_MSEC(1000)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 40,
+          "path": "generated/phase2_luna/suites/pending/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&worker_started, TEST_TIMEOUT),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 43,
+          "path": "generated/phase2_luna/suites/pending/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 43,
+          "path": "generated/phase2_luna/suites/pending/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 44,
+          "path": "generated/phase2_luna/suites/pending/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&worker_done, K_NO_WAIT), -EAGAIN,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 48,
+          "path": "generated/phase2_luna/suites/pending/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&worker_done, TEST_TIMEOUT),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 50,
+          "path": "generated/phase2_luna/suites/pending/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&received_status), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 52,
+          "path": "generated/phase2_luna/suites/pending/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&worker_error), 0, \"worker reported an error\");"
+        }
+      ],
+      "task_id": "pending"
+    },
+    {
+      "kind": "agent",
+      "run_id": "pending-r03",
+      "source_sha256": "a974c281fa0c1b7330de96da1347606e738f180e00b0c4518ca830d392cf3d21",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 6,
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_DELAY K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "possibly_unbounded_wait_candidate",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (atomic_get(&worker_pending) == 0) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (atomic_get(&worker_pending) == 0) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 44,
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_NO_WAIT), -EBUSY,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 48,
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 48,
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_SECONDS(2)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 50,
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&worker_status), 1,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 56,
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_thread_join(worker, K_SECONDS(1));"
+        }
+      ],
+      "task_id": "pending"
+    },
+    {
+      "kind": "agent",
+      "run_id": "pending-r04",
+      "source_sha256": "29f2f7a925002fedd7a6815bb7585e91830ac415cc11e0c7ae6737b7f49df675",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/pending/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_DELAY K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 44,
+          "path": "generated/phase2_luna/suites/pending/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 44,
+          "path": "generated/phase2_luna/suites/pending/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 49,
+          "path": "generated/phase2_luna/suites/pending/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&completion_sem, K_NO_WAIT), -EBUSY,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 53,
+          "path": "generated/phase2_luna/suites/pending/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&completion_sem, K_SECONDS(1)),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 53,
+          "path": "generated/phase2_luna/suites/pending/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&completion_sem, K_SECONDS(1)),"
+        }
+      ],
+      "task_id": "pending"
+    },
+    {
+      "kind": "agent",
+      "run_id": "pending-r05",
+      "source_sha256": "da4aee69b9eccc5ef32f78f98500be2c9d515d7714ff337fc10137d6f0c976a7",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 4,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define TIMER_DELAY K_MSEC(100)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&worker_done, K_NO_WAIT),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "possibly_unbounded_wait_candidate",
+          "line": 41,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (atomic_get(&worker_pending) == 0) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 41,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (atomic_get(&worker_pending) == 0) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 44,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 44,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 45,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_thread_state_str(&worker_thread)[0], 'p',"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 49,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&worker_done, K_SECONDS(1)),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 49,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&worker_done, K_SECONDS(1)),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 56,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_thread_join(&worker_thread, K_SECONDS(1));"
+        }
+      ],
+      "task_id": "pending"
+    },
+    {
+      "case": "rtc_api.test_alarm_callback",
+      "kind": "upstream",
+      "regions_scanned": 5,
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792"
+      },
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 120,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 120,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 123,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "callback_called_mask_status_odd = atomic_get(&callback_called_mask_odd);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 124,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "callback_called_mask_status_even = atomic_get(&callback_called_mask_even);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 126,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_odd, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 126,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_odd, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 128,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_even, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 128,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_mask_status_even, 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 132,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 132,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 137,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "(j % 2) ? atomic_test_bit(&callback_called_mask_odd, j)"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 138,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": ": atomic_test_bit(&callback_called_mask_even, j);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 140,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "scope": "selected_case",
+          "snippet": "zassert_equal(callback_called_status, true,"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r01",
+      "source_sha256": "ae8c0d630db725faeaeb7f73d63108eaa9bcc19867d230295ea09e27f82c9b79",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 10,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define ALARM_WAIT_MS 15000"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 42,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_callback(rtc, 0, alarm_callback, NULL));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 43,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_callback(rtc, 1, alarm_callback, NULL));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 45,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 0, &alarm, ALARM_MASK));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 45,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 0, &alarm, ALARM_MASK));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 46,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 1, &alarm, ALARM_MASK));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 46,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 1, &alarm, ALARM_MASK));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 48,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(3));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 48,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(3));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 49,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&alarm_events), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 57,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "if (atomic_get(&alarm_events) >= 2) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 60,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 60,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 62,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&alarm_events), 2,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 64,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&alarm_ids), BIT(0) | BIT(1),"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r02",
+      "source_sha256": "46098b3b9cb6633c5dad5d588496480163f9c83a8d40e91e0a5aabf60b1835f1",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 10,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "#define ALARM_WAIT_MS 20000"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 56,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_callback(rtc, 0, alarm_callback, NULL),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 58,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_callback(rtc, 1, alarm_callback, NULL),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 61,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 0, &alarm, ALARM_MASK),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 61,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 0, &alarm, ALARM_MASK),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 63,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 1, &alarm, ALARM_MASK),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 63,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 1, &alarm, ALARM_MASK),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 69,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_msleep(1000);"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 70,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callbacks), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 70,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callbacks), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 80,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&callback_sem, K_SECONDS(15)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 80,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&callback_sem, K_SECONDS(15)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 80,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_take(&callback_sem, K_SECONDS(15)), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 83,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callbacks), 2,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 83,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callbacks), 2,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 85,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_ids), BIT(0) | BIT(1),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 85,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_ids), BIT(0) | BIT(1),"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r03",
+      "source_sha256": "79d6c4222777ac44f37230ca8b47ed38c856ed961213ce71d2780480a709f5bc",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 52,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_callback(rtc, 0, alarm_callback, NULL),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_callback(rtc, 1, alarm_callback, NULL),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 56,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 0, ALARM_MASK, &alarm),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 56,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 0, ALARM_MASK, &alarm),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 58,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 1, ALARM_MASK, &alarm),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 58,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, 1, ALARM_MASK, &alarm),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 62,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 62,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_SECONDS(2));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 63,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&alarm_ids_seen), 0, \"Callback fired prematurely\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 64,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&alarm_events), 0, \"Alarm event arrived prematurely\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 64,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(k_sem_count_get(&alarm_events), 0, \"Alarm event arrived prematurely\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 69,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&alarm_events, K_SECONDS(12)),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 69,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(k_sem_take(&alarm_events, K_SECONDS(12)),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 73,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&alarm_ids_seen), ALARM_IDS,"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r04",
+      "source_sha256": "ec355bdce5f0ce933e31032a91d7ddb434f673b3ef06c5af1af9b314b783a5f6",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 68,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (elapsed_ms <= 15000) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "possibly_unbounded_wait_candidate",
+          "line": 68,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "while (elapsed_ms <= 15000) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 87,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_count), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 87,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_count), 0,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 89,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(20));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 89,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(20));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 92,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_true(elapsed_ms <= 15000, \"RTC did not reach the alarm time within 15 seconds\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "numeric_time_bound_candidate",
+          "line": 97,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "for (int elapsed = 0; elapsed < 3000 &&"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 98,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "atomic_get(&callback_count) < 2; elapsed += 10) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 99,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 99,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(10));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 102,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_count), 2,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 102,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_count), 2,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 104,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "atomic_get(&callback_count));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 105,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_ids), ALARM_BITS,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 105,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_ids), ALARM_BITS,"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    },
+    {
+      "kind": "agent",
+      "run_id": "rtc_alarm_callback-r05",
+      "source_sha256": "cd944847615f9d8965d74048df686b8740d8b15f2d2819e5f870d381339cb16e",
+      "tags": [
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 50,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_callback(rtc, ALARM_A, alarm_callback, NULL),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 52,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_callback(rtc, ALARM_B, alarm_callback, NULL),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, ALARM_A, ALARM_MASK, &alarm),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, ALARM_A, ALARM_MASK, &alarm),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 56,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, ALARM_B, ALARM_MASK, &alarm),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "unprotected_shared_read_candidate",
+          "line": 56,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_ok(rtc_alarm_set_time(rtc, ALARM_B, ALARM_MASK, &alarm),"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 67,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), 0, \"Alarm callback fired prematurely\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 67,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), 0, \"Alarm callback fired prematurely\");"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 72,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "for (int i = 0; i < 300 && atomic_get(&callback_bits) != ALARM_BITS; i++) {"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "fixed_wait_candidate",
+          "line": 73,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(100));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "explicit_time_value_candidate",
+          "line": 73,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "k_sleep(K_MSEC(100));"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "ordering_or_shared_state_assertion_candidate",
+          "line": 76,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), ALARM_BITS,"
+        },
+        {
+          "adjudication": "pending_review",
+          "category": "synchronization_observation",
+          "line": 76,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+          "scope": "generated_suite",
+          "snippet": "zassert_equal(atomic_get(&callback_bits), ALARM_BITS,"
+        }
+      ],
+      "task_id": "rtc_alarm_callback"
+    }
+  ]
+}

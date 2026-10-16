@@ -1,0 +1,1559 @@
+{
+  "candidate_versions": 44,
+  "complete": true,
+  "max_quantization_error_mips": 0.49724374999999554,
+  "paired": [
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/fifo_api-r01",
+      "both_fail": 0,
+      "both_pass": 83,
+      "evaluable_paired_seeds": 83,
+      "task_id": "fifo_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/fifo_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/fifo_api-r02",
+      "both_fail": 0,
+      "both_pass": 83,
+      "evaluable_paired_seeds": 83,
+      "task_id": "fifo_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/fifo_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/fifo_api-r03",
+      "both_fail": 0,
+      "both_pass": 83,
+      "evaluable_paired_seeds": 83,
+      "task_id": "fifo_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/fifo_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/fifo_api-r04",
+      "both_fail": 0,
+      "both_pass": 83,
+      "evaluable_paired_seeds": 83,
+      "task_id": "fifo_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/fifo_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/fifo_api-r05",
+      "both_fail": 0,
+      "both_pass": 83,
+      "evaluable_paired_seeds": 83,
+      "task_id": "fifo_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/fifo_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/lifo_api-r01",
+      "both_fail": 0,
+      "both_pass": 73,
+      "evaluable_paired_seeds": 73,
+      "task_id": "lifo_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/lifo_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/lifo_api-r03",
+      "both_fail": 0,
+      "both_pass": 81,
+      "evaluable_paired_seeds": 81,
+      "task_id": "lifo_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/lifo_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/lifo_api-r04",
+      "both_fail": 0,
+      "both_pass": 81,
+      "evaluable_paired_seeds": 81,
+      "task_id": "lifo_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/lifo_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/lifo_api-r05",
+      "both_fail": 0,
+      "both_pass": 81,
+      "evaluable_paired_seeds": 81,
+      "task_id": "lifo_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/lifo_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/msgq_api-r01",
+      "both_fail": 0,
+      "both_pass": 83,
+      "evaluable_paired_seeds": 83,
+      "task_id": "msgq_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/msgq_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/msgq_api-r02",
+      "both_fail": 0,
+      "both_pass": 83,
+      "evaluable_paired_seeds": 83,
+      "task_id": "msgq_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/msgq_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/msgq_api-r03",
+      "both_fail": 0,
+      "both_pass": 83,
+      "evaluable_paired_seeds": 83,
+      "task_id": "msgq_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/msgq_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/msgq_api-r04",
+      "both_fail": 0,
+      "both_pass": 74,
+      "evaluable_paired_seeds": 74,
+      "task_id": "msgq_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/msgq_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/msgq_api-r05",
+      "both_fail": 0,
+      "both_pass": 74,
+      "evaluable_paired_seeds": 74,
+      "task_id": "msgq_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/msgq_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/queue-r01",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "queue",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/queue"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/queue-r02",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "queue",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/queue"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/queue-r03",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "queue",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/queue"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/queue-r04",
+      "both_fail": 0,
+      "both_pass": 99,
+      "evaluable_paired_seeds": 99,
+      "task_id": "queue",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/queue"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/queue-r05",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "queue",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/queue"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/semaphore-r01",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "semaphore",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/semaphore"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/semaphore-r02",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "semaphore",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/semaphore"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/semaphore-r03",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "semaphore",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/semaphore"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/semaphore-r04",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "semaphore",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/semaphore"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/semaphore-r05",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "semaphore",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/semaphore"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/sleep-r01",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "sleep",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/sleep"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/sleep-r02",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "sleep",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/sleep"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/sleep-r05",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "sleep",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/sleep"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/timer_api-r01",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "timer_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/timer_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/timer_api-r03",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "timer_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/timer_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/timer_api-r04",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "timer_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/timer_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/timer_api-r05",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "timer_api",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/timer_api"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/workq-r03",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "workq",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/workq"
+    },
+    {
+      "agent_only_fail": 0,
+      "agent_version": "luna/workq-r05",
+      "both_fail": 0,
+      "both_pass": 100,
+      "evaluable_paired_seeds": 100,
+      "task_id": "workq",
+      "upstream_only_fail": 0,
+      "upstream_version": "upstream/workq"
+    }
+  ],
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "raw_record_count": 4606,
+  "schedule_mips_counts": {
+    "99": 27,
+    "100": 46,
+    "101": 27
+  },
+  "task_summary": {
+    "context": {
+      "agent_evaluable": 0,
+      "agent_failures": 0,
+      "agent_versions": [],
+      "eligible_agent_versions": [],
+      "upstream": {
+        "evaluable": 96,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "harness_error": 4,
+          "pass": 96
+        },
+        "version": "upstream/context"
+      }
+    },
+    "fifo_api": {
+      "agent_evaluable": 500,
+      "agent_failures": 0,
+      "agent_versions": [
+        "luna/fifo_api-r01",
+        "luna/fifo_api-r02",
+        "luna/fifo_api-r03",
+        "luna/fifo_api-r04",
+        "luna/fifo_api-r05"
+      ],
+      "eligible_agent_versions": [
+        "luna/fifo_api-r01",
+        "luna/fifo_api-r02",
+        "luna/fifo_api-r03",
+        "luna/fifo_api-r04",
+        "luna/fifo_api-r05"
+      ],
+      "upstream": {
+        "evaluable": 83,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "harness_error": 17,
+          "pass": 83
+        },
+        "version": "upstream/fifo_api"
+      }
+    },
+    "lifo_api": {
+      "agent_evaluable": 392,
+      "agent_failures": 0,
+      "agent_versions": [
+        "luna/lifo_api-r01",
+        "luna/lifo_api-r02",
+        "luna/lifo_api-r03",
+        "luna/lifo_api-r04",
+        "luna/lifo_api-r05"
+      ],
+      "eligible_agent_versions": [
+        "luna/lifo_api-r01",
+        "luna/lifo_api-r03",
+        "luna/lifo_api-r04",
+        "luna/lifo_api-r05"
+      ],
+      "upstream": {
+        "evaluable": 81,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "harness_error": 19,
+          "pass": 81
+        },
+        "version": "upstream/lifo_api"
+      }
+    },
+    "msgq_api": {
+      "agent_evaluable": 479,
+      "agent_failures": 0,
+      "agent_versions": [
+        "luna/msgq_api-r01",
+        "luna/msgq_api-r02",
+        "luna/msgq_api-r03",
+        "luna/msgq_api-r04",
+        "luna/msgq_api-r05"
+      ],
+      "eligible_agent_versions": [
+        "luna/msgq_api-r01",
+        "luna/msgq_api-r02",
+        "luna/msgq_api-r03",
+        "luna/msgq_api-r04",
+        "luna/msgq_api-r05"
+      ],
+      "upstream": {
+        "evaluable": 83,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "harness_error": 17,
+          "pass": 83
+        },
+        "version": "upstream/msgq_api"
+      }
+    },
+    "pending": {
+      "agent_evaluable": 0,
+      "agent_failures": 0,
+      "agent_versions": [],
+      "eligible_agent_versions": [],
+      "upstream": {
+        "evaluable": 100,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "pass": 100
+        },
+        "version": "upstream/pending"
+      }
+    },
+    "queue": {
+      "agent_evaluable": 499,
+      "agent_failures": 0,
+      "agent_versions": [
+        "luna/queue-r01",
+        "luna/queue-r02",
+        "luna/queue-r03",
+        "luna/queue-r04",
+        "luna/queue-r05"
+      ],
+      "eligible_agent_versions": [
+        "luna/queue-r01",
+        "luna/queue-r02",
+        "luna/queue-r03",
+        "luna/queue-r04",
+        "luna/queue-r05"
+      ],
+      "upstream": {
+        "evaluable": 100,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "pass": 100
+        },
+        "version": "upstream/queue"
+      }
+    },
+    "semaphore": {
+      "agent_evaluable": 500,
+      "agent_failures": 0,
+      "agent_versions": [
+        "luna/semaphore-r01",
+        "luna/semaphore-r02",
+        "luna/semaphore-r03",
+        "luna/semaphore-r04",
+        "luna/semaphore-r05"
+      ],
+      "eligible_agent_versions": [
+        "luna/semaphore-r01",
+        "luna/semaphore-r02",
+        "luna/semaphore-r03",
+        "luna/semaphore-r04",
+        "luna/semaphore-r05"
+      ],
+      "upstream": {
+        "evaluable": 100,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "pass": 100
+        },
+        "version": "upstream/semaphore"
+      }
+    },
+    "sleep": {
+      "agent_evaluable": 300,
+      "agent_failures": 0,
+      "agent_versions": [
+        "luna/sleep-r01",
+        "luna/sleep-r02",
+        "luna/sleep-r05"
+      ],
+      "eligible_agent_versions": [
+        "luna/sleep-r01",
+        "luna/sleep-r02",
+        "luna/sleep-r05"
+      ],
+      "upstream": {
+        "evaluable": 100,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "pass": 100
+        },
+        "version": "upstream/sleep"
+      }
+    },
+    "timer_api": {
+      "agent_evaluable": 400,
+      "agent_failures": 0,
+      "agent_versions": [
+        "luna/timer_api-r01",
+        "luna/timer_api-r03",
+        "luna/timer_api-r04",
+        "luna/timer_api-r05"
+      ],
+      "eligible_agent_versions": [
+        "luna/timer_api-r01",
+        "luna/timer_api-r03",
+        "luna/timer_api-r04",
+        "luna/timer_api-r05"
+      ],
+      "upstream": {
+        "evaluable": 100,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "pass": 100
+        },
+        "version": "upstream/timer_api"
+      }
+    },
+    "workq": {
+      "agent_evaluable": 200,
+      "agent_failures": 0,
+      "agent_versions": [
+        "luna/workq-r03",
+        "luna/workq-r05"
+      ],
+      "eligible_agent_versions": [
+        "luna/workq-r03",
+        "luna/workq-r05"
+      ],
+      "upstream": {
+        "evaluable": 100,
+        "failures": 0,
+        "nominal_5_of_5": true,
+        "seeded_statuses": {
+          "pass": 100
+        },
+        "version": "upstream/workq"
+      }
+    }
+  },
+  "versions": {
+    "luna/fifo_api-r01": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "fifo_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/fifo_api-r02": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "fifo_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/fifo_api-r03": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "fifo_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/fifo_api-r04": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "fifo_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/fifo_api-r05": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "fifo_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/lifo_api-r01": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 92,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "harness_error": 8,
+        "pass": 92
+      },
+      "task_id": "lifo_api",
+      "wilson_95": [
+        0.0,
+        0.04008138928562172
+      ]
+    },
+    "luna/lifo_api-r02": {
+      "endpoints": {
+        "max": "missing",
+        "min": "missing"
+      },
+      "evaluable": 0,
+      "failures": 0,
+      "flip_rate": null,
+      "kind": "agent",
+      "nominal_5_of_5": false,
+      "nominal_statuses": {
+        "harness_error": 1,
+        "pass": 4
+      },
+      "seeded_statuses": {
+        "missing": 100
+      },
+      "task_id": "lifo_api",
+      "wilson_95": null
+    },
+    "luna/lifo_api-r03": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "lifo_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/lifo_api-r04": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "lifo_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/lifo_api-r05": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "lifo_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/msgq_api-r01": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "msgq_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/msgq_api-r02": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "msgq_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/msgq_api-r03": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "msgq_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/msgq_api-r04": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 89,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "harness_error": 11,
+        "pass": 89
+      },
+      "task_id": "msgq_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.04137654523625252
+      ]
+    },
+    "luna/msgq_api-r05": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 90,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "harness_error": 10,
+        "pass": 90
+      },
+      "task_id": "msgq_api",
+      "wilson_95": [
+        0.0,
+        0.04093562556432678
+      ]
+    },
+    "luna/queue-r01": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "queue",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/queue-r02": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "queue",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/queue-r03": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "queue",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/queue-r04": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 99,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "harness_error": 1,
+        "pass": 99
+      },
+      "task_id": "queue",
+      "wilson_95": [
+        0.0,
+        0.03735321206782739
+      ]
+    },
+    "luna/queue-r05": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "queue",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/semaphore-r01": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "semaphore",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/semaphore-r02": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "semaphore",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/semaphore-r03": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "semaphore",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/semaphore-r04": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "semaphore",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/semaphore-r05": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "semaphore",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/sleep-r01": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "sleep",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/sleep-r02": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "sleep",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/sleep-r05": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "sleep",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/timer_api-r01": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "timer_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/timer_api-r03": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "timer_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/timer_api-r04": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "timer_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/timer_api-r05": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "timer_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/workq-r03": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "workq",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "luna/workq-r05": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "agent",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "workq",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "upstream/context": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 96,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "harness_error": 4,
+        "pass": 96
+      },
+      "task_id": "context",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.038475587857675686
+      ]
+    },
+    "upstream/fifo_api": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 83,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "harness_error": 17,
+        "pass": 83
+      },
+      "task_id": "fifo_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.04423530964197385
+      ]
+    },
+    "upstream/lifo_api": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 81,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "harness_error": 19,
+        "pass": 81
+      },
+      "task_id": "lifo_api",
+      "wilson_95": [
+        0.0,
+        0.045278085432415204
+      ]
+    },
+    "upstream/msgq_api": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 83,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "harness_error": 17,
+        "pass": 83
+      },
+      "task_id": "msgq_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.04423530964197385
+      ]
+    },
+    "upstream/pending": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "pending",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "upstream/queue": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "queue",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "upstream/semaphore": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "semaphore",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "upstream/sleep": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "sleep",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "upstream/timer_api": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "timer_api",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    },
+    "upstream/workq": {
+      "endpoints": {
+        "max": "pass",
+        "min": "pass"
+      },
+      "evaluable": 100,
+      "failures": 0,
+      "flip_rate": 0.0,
+      "kind": "upstream",
+      "nominal_5_of_5": true,
+      "nominal_statuses": {
+        "pass": 5
+      },
+      "seeded_statuses": {
+        "pass": 100
+      },
+      "task_id": "workq",
+      "wilson_95": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ]
+    }
+  }
+}

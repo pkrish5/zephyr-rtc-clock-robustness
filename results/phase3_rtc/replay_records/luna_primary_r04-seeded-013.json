@@ -1,0 +1,17 @@
+{
+  "error": null,
+  "identical_trace_and_verdict": false,
+  "monitor_path": "results/phase3_rtc/replay_monitor/luna_primary_r04-seeded-013.log",
+  "monitor_sha256": "eab2e62cf0b74e8ec83bf08b572a5598a04036d826494711fe6351c18a4a142f",
+  "original_outcome": "harness_error",
+  "original_trace_path": "results/phase3_rtc/traces/luna_primary_r04-seeded-013.json",
+  "original_trace_sha256": "3a618d38a6b3c6add70febf8d01d3da4245e99acaf1696c07133fbd810510c79",
+  "outcome": "pass",
+  "run_id": "luna_primary_r04-seeded-013",
+  "timestamp_utc": "2026-09-29T20:37:01.203966+00:00",
+  "trace_path": "results/phase3_rtc/replay_traces/luna_primary_r04-seeded-013.json",
+  "trace_sha256": "50f4c2ddbc0cc3f514c8bff300efaacc6aa10770bcaf538f0438b616e2e8eb0a",
+  "uart_path": "results/phase3_rtc/replay_uart/luna_primary_r04-seeded-013.log",
+  "uart_sha256": "292a147d4753e7a96f2b42b47696c36eb7e1eba66b02d1fc0157fef9123ae010",
+  "wall_seconds": 59.445
+}

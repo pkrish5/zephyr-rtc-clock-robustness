@@ -1,0 +1,24 @@
+{
+  "cases": [],
+  "delay_measurements": [],
+  "error": "TIMEOUT: <pexpect.pty_spawn.spawn object at 0x1062e11d0>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-zjnzc9kw/renode.cfg']\nbuffer (last 100 chars): 'emulation RunFor \"0.500000000\"\\r\\n\\r(m'\nbefore (last 100 chars): 'emulation RunFor \"0.500000000\"\\r\\n\\r(m'\nafter: <class 'pexpect.exceptions.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: False\npid: 18588\nchild_fd: 10\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/rtc_alarm_offset_v1/monitor/sol-range_absent-rtc_alarm_callback-r03__late.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')\n<pexpect.pty_spawn.spawn object at 0x1062e11d0>\ncommand: /private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode\nargs: [b'/private/tmp/renode-mounted/Renode.app/Contents/MacOS/renode', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/phase0-renode-zjnzc9kw/renode.cfg']\nbuffer (last 100 chars): 'emulation RunFor \"0.500000000\"\\r\\n\\r(m'\nbefore (last 100 chars): 'emulation RunFor \"0.500000000\"\\r\\n\\r(m'\nafter: <class 'pexpect.exceptions.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: False\npid: 18588\nchild_fd: 10\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/results/rtc_alarm_offset_v1/monitor/sol-range_absent-rtc_alarm_callback-r03__late.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')",
+  "observations": [
+    {
+      "latest_case": null,
+      "uart_bytes": 332,
+      "virtual_ns": 500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 332,
+      "virtual_ns": 1000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 332,
+      "virtual_ns": 1500000000
+    }
+  ],
+  "outcome": "harness_error",
+  "run_id": "sol-range_absent-rtc_alarm_callback-r03__late"
+}

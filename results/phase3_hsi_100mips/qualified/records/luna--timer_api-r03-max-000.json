@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "case": "timer_interrupt.test_periodic_timer_expirations_and_stop",
+      "status": "pass"
+    }
+  ],
+  "condition": "max",
+  "cpu_performance_mips": 101,
+  "elf_path": "generated/phase2_luna/build/timer_api/r03/zephyr/zephyr.elf",
+  "elf_sha256": "fe842c29dc2cc39e76ea83f05583c24e64b85d9a373025b8b6178aa4f8174f95",
+  "error": null,
+  "functional": "met",
+  "hsi_bound_hz": [
+    15840000,
+    16160000
+  ],
+  "hsi_bound_source": "STM32F407 DS8626 Rev 12 HSI accuracy at 25 C: +/-1%",
+  "hsi_frequency_hz": 16160000,
+  "index": 0,
+  "kind": "agent",
+  "max_virtual_sec": 90,
+  "monitor_path": "results/phase3_hsi_100mips/qualified/monitor/luna--timer_api-r03-max-000.log",
+  "monitor_sha256": "8c8f6984ec1d7f9cf941acb13be3cba2a7c8583e18d96c472ae3303b802c611e",
+  "nominal_cpu_mips": 100,
+  "observation_step_ns": 250000000,
+  "original_oracle_adequate": true,
+  "outcome": "pass",
+  "plan_sha256": "51a48ae7f865da898a01ef8935a3b490e4e9952dd346acd416daf561c6370207",
+  "platform_path": "results/phase3_hsi_100mips/qualified/platforms/stm32f4_hsi_16160000.repl",
+  "platform_sha256": "8ac6a62399fbf21ea9a31ad2bab4b2ef1f9b2cfa52d1537cfa21045e993fd51c",
+  "project_marker": "PROJECT EXECUTION SUCCESSFUL",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "luna--timer_api-r03-max-000",
+  "seed": null,
+  "selected_case": "full_generated_suite",
+  "selected_case_sources": null,
+  "source_path": "generated/phase2_luna/suites/timer_api/r03/test.c",
+  "source_sha256": "d7fc4962ccee43e2c1fa62bc7b755f7314392ef68b2c8df4e916650c53f41a65",
+  "systick_frequency_hz": 16160000,
+  "task_id": "timer_api",
+  "timestamp_utc": "2026-10-01T22:40:48.072977+00:00",
+  "timing_bound": "no_issue_found",
+  "trace_path": "results/phase3_hsi_100mips/qualified/traces/luna--timer_api-r03-max-000.json",
+  "trace_sha256": "38cc637efb0ee09471c885a6ab79e53715a3aabe47065a876bd8a1ca66175bca",
+  "uart_path": "results/phase3_hsi_100mips/qualified/uart/luna--timer_api-r03-max-000.log",
+  "uart_sha256": "a0efa5a485c34e4d1a931e3738b98a9e85632db4d346c13bee7e6f165662b476",
+  "version_id": "luna/timer_api-r03",
+  "virtual_ns": 250000000,
+  "wall_seconds": 7.009
+}

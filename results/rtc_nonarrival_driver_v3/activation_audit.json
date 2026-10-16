@@ -1,0 +1,31 @@
+{
+  "manifest_sha256": "3536879ff770e0651f0591b3bf965792a6e3a64aee4a76ccc73f61c8f2e756f1",
+  "rows": [
+    {
+      "activated": true,
+      "expected_assertion": "callbacks absent past legal-clock ceiling plus service margin",
+      "family": "rtc_alarm_callback",
+      "outcome": "fail",
+      "record_sha256": "645ccb6c2e5ec61a489b5baa19b86e84088ab9e234a9bfaafc6652f533dc91e0",
+      "run_id": "reference-rtc_alarm_callback"
+    },
+    {
+      "activated": true,
+      "expected_assertion": "pending absent past legal-clock ceiling plus service margin",
+      "family": "rtc_alarm_pending",
+      "outcome": "fail",
+      "record_sha256": "219392e909209057c477779df6c32fb9add1270c295223c0eae384ec794fd1ba",
+      "run_id": "reference-rtc_alarm_pending"
+    },
+    {
+      "activated": true,
+      "expected_assertion": "calendar did not reach target by ceiling",
+      "family": "rtc_time_counting",
+      "outcome": "fail",
+      "record_sha256": "1695070dce707a672149bf6f815893fe87e807e7361a4bbb78e8743289d3a834",
+      "run_id": "reference-rtc_time_counting"
+    }
+  ],
+  "status": "validated",
+  "timestamp_utc": "2026-10-06T21:46:59.156218+00:00"
+}

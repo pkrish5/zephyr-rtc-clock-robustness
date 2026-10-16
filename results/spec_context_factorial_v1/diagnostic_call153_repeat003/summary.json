@@ -1,0 +1,11 @@
+{
+  "call_index": 153,
+  "diagnostic_outcome": "pass",
+  "diagnostic_record": "results/spec_context_factorial_v1/diagnostic_call153_repeat003/nominal_records/astra-range_absent-timer_api-r02-nominal-003.json",
+  "elf_sha256": "ad8320739fa76c5c28a94d50b0d870554474f5da636dc7c2fe9440eb26cc429f",
+  "original_outcome": "harness_error",
+  "original_record": "results/spec_context_factorial_v1/nominal_records/astra-range_absent-timer_api-r02-nominal-003.json",
+  "purpose": "infrastructure diagnostic; original gate record is unchanged",
+  "repeat": 3,
+  "run_id": "astra-range_absent-timer_api-r02"
+}

@@ -1,0 +1,31 @@
+{
+  "callback_mask_even_address": 536871744,
+  "elf_sha256": "d1ff902e1ebbb9e92fa03a7ecc14d208fb72f3b41ef2cb833bc275588d3f715d",
+  "lsi_frequency_hz": 24428,
+  "monitor_path": "results/phase1_lsi_alarm/late_alarm_probe_24428hz.monitor.log",
+  "platform_sha256": "2eab401f76d065f98f137586823cfeec417c8f5adf341a847f3addfb1006d6f8",
+  "purpose": "Post-failure RTC/callback-state diagnostic; outside the primary rate",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "samples": [
+    {
+      "callback_mask_even": 0,
+      "rtc_time_register": 2316631,
+      "uart_sha256": "44516af373fcc475598158da2cfac517164ab1b75718d9ae6a150c8342cfbe3c",
+      "virtual_ns": 3500000000
+    },
+    {
+      "callback_mask_even": 1,
+      "rtc_time_register": 5,
+      "uart_sha256": "a6d6a0327c054587933a76145803c7c25709544f3e878182ddf683e19df2016e",
+      "virtual_ns": 13500000000
+    },
+    {
+      "callback_mask_even": 1,
+      "rtc_time_register": 16,
+      "uart_sha256": "a6d6a0327c054587933a76145803c7c25709544f3e878182ddf683e19df2016e",
+      "virtual_ns": 20000000000
+    }
+  ],
+  "timestamp_utc": "2026-09-28T22:31:29.339932+00:00",
+  "uart_path": "results/phase1_lsi_alarm/late_alarm_probe_24428hz.uart.log"
+}

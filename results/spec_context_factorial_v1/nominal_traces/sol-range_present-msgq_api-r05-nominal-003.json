@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "msgq_isr.test_put_from_isr_and_get_from_thread",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "msgq_isr.test_put_from_isr_and_get_from_thread"
+      ],
+      "uart_bytes": 697,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 3,
+  "run_id": "sol-range_present-msgq_api-r05-nominal-003"
+}

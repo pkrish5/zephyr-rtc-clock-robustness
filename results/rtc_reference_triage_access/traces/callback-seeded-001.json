@@ -1,0 +1,167 @@
+{
+  "cases": [
+    {
+      "case": "reference_rtc.test_alarm_callback",
+      "status": "pass"
+    }
+  ],
+  "error": null,
+  "lsi_frequency_hz": 21402,
+  "observations": [
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 1000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 1500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 2000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 2500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 3000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 3500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 4000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 4500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 5000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 5500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 6000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 6500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 7000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 7500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 8000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 8500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 9000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 9500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 10000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 10500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 11000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 11500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 12000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 12500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 13000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 13500000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 14000000000
+    },
+    {
+      "latest_case": null,
+      "uart_bytes": 167,
+      "virtual_ns": 14500000000
+    },
+    {
+      "latest_case": [
+        "PASS",
+        "reference_rtc.test_alarm_callback"
+      ],
+      "uart_bytes": 666,
+      "virtual_ns": 15000000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "callback-seeded-001"
+}

@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "case": "system_workqueue_delayable.test_delayed_work_runs_once_after_delay",
+      "status": "pass"
+    }
+  ],
+  "condition": "nominal",
+  "cpu_mips": 100,
+  "error": null,
+  "frequency_hz": 16000000,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "system_workqueue_delayable.test_delayed_work_runs_once_after_delay"
+      ],
+      "uart_bytes": 775,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "repeat": 3,
+  "run_id": "luna-range_absent-workq-r03-nominal-003"
+}

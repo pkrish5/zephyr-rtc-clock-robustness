@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "case": "queue_api.test_access_kernel_obj_with_priv_data",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_auto_free",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_multiple_queues",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc_append_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc_append_user",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc_prepend_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_alloc_prepend_user",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_append_list_error",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_cancel_wait_error",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_get_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_init_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_is_empty_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_isr2thread",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_merge_list_error",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_peek_head_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_peek_tail_null",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_thread2isr",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api.test_queue_unique_append",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_get_2threads",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_get_fail",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_loop",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_multithread_competition",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_poll_race",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_supv_to_user",
+      "status": "pass"
+    },
+    {
+      "case": "queue_api_1cpu.test_queue_thread2thread",
+      "status": "pass"
+    }
+  ],
+  "condition": "seeded",
+  "cpu_performance_mips": 101,
+  "error": null,
+  "hsi_frequency_hz": 16100852,
+  "index": 50,
+  "observations": [
+    {
+      "completed": true,
+      "latest_case": [
+        "PASS",
+        "queue_api_1cpu.test_queue_thread2thread"
+      ],
+      "uart_bytes": 12202,
+      "virtual_ns": 250000000
+    }
+  ],
+  "outcome": "pass",
+  "run_id": "upstream--queue-seeded-050"
+}
