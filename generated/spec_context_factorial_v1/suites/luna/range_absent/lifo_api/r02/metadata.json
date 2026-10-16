@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 141,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_absent",
+  "generation_date_utc": "2026-10-03T21:06:42.908887+00:00",
+  "model": "gpt-6-luna",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/lifo_api/range_absent.txt",
+  "prompt_sha256": "1bd829b75a89010c41dd7fe1836204cdb9982ca0195a484751651e81a13e7865",
+  "prompt_transport": "argument",
+  "response_sha256": "6268efa5372e684bb252714d3e05724fe8c66a00ff842c64ec48a7bee65289c8",
+  "run_id": "luna-range_absent-lifo_api-r02",
+  "sample_index": 2,
+  "source_sha256": "3f4f06b53ba825089c6a29116b23786f1b83428d868a429fd0952f4d968240c3",
+  "status": "generated",
+  "task_id": "lifo_api",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 13056,
+    "input_tokens": 13832,
+    "output_tokens": 366,
+    "reasoning_output_tokens": 0
+  }
+}

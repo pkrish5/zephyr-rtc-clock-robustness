@@ -1,0 +1,25 @@
+model,prompt_condition,task_family,generated,built,first_nominal_pass,nominal_5of5_pass,source_functional_met,functional_gate_eligible,strict_gate_eligible,timing_no_issue_found_all_source,timing_inadequate_all_source,timing_unknown_all_source,timing_no_issue_found_eligible,timing_inadequate_eligible,timing_unknown_eligible
+luna,range_absent,HSI (10 tasks),50,44,35,34,35,34,24,25,23,2,24,10,0
+luna,range_absent,RTC callback,5,2,1,0,0,0,0,0,5,0,0,0,0
+luna,range_absent,RTC counting,5,5,4,4,4,4,1,1,3,1,1,2,1
+luna,range_absent,RTC pending,5,1,1,0,0,0,0,0,3,2,0,0,0
+luna,range_present,HSI (10 tasks),50,43,37,34,35,34,26,26,21,3,26,8,0
+luna,range_present,RTC callback,5,3,1,0,0,0,0,0,1,4,0,0,0
+luna,range_present,RTC counting,5,4,3,3,3,3,1,1,4,0,1,2,0
+luna,range_present,RTC pending,5,0,0,0,0,0,0,0,0,5,0,0,0
+sol,range_absent,HSI (10 tasks),50,50,49,44,46,44,26,26,19,5,26,14,4
+sol,range_absent,RTC callback,5,5,5,5,5,5,0,0,5,0,0,5,0
+sol,range_absent,RTC counting,5,5,5,5,5,5,2,2,3,0,2,3,0
+sol,range_absent,RTC pending,5,5,5,5,5,5,0,0,3,2,0,3,2
+sol,range_present,HSI (10 tasks),50,50,48,47,49,47,28,28,18,4,28,16,3
+sol,range_present,RTC callback,5,5,5,5,5,5,0,0,3,2,0,3,2
+sol,range_present,RTC counting,5,5,5,5,5,5,3,3,0,2,3,0,2
+sol,range_present,RTC pending,5,5,5,5,5,5,0,0,0,5,0,0,5
+astra,range_absent,HSI (10 tasks),50,50,50,48,50,48,29,30,15,5,29,14,5
+astra,range_absent,RTC callback,5,5,5,5,5,5,0,0,5,0,0,5,0
+astra,range_absent,RTC counting,5,5,5,5,5,5,1,1,3,1,1,3,1
+astra,range_absent,RTC pending,5,5,5,5,5,5,0,0,2,3,0,2,3
+astra,range_present,HSI (10 tasks),50,48,48,48,48,48,31,31,12,7,31,10,7
+astra,range_present,RTC callback,5,5,4,4,5,4,0,0,5,0,0,4,0
+astra,range_present,RTC counting,5,5,5,5,5,5,3,3,1,1,3,1,1
+astra,range_present,RTC pending,5,5,5,5,5,5,0,0,0,5,0,0,5

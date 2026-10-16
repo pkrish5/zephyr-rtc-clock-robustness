@@ -1,0 +1,28 @@
+/* Keep the upstream test source unchanged while selecting the STM32F407's
+ * documented 16 MHz HSI clock as the system clock. The default board DTS
+ * selects the external 8 MHz HSE and 168 MHz PLL, whose tolerance would need
+ * a different source and bound.
+ */
+&clk_hsi {
+	status = "okay";
+};
+
+&clk_hse {
+	status = "disabled";
+};
+
+&pll {
+	status = "disabled";
+};
+
+&plli2s {
+	status = "disabled";
+};
+
+&rcc {
+	clocks = <&clk_hsi>;
+	clock-frequency = <16000000>;
+	ahb-prescaler = <1>;
+	apb1-prescaler = <1>;
+	apb2-prescaler = <1>;
+};

@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-09-29",
+  "sampling": "Purposive task-stratified source sample; original 12 fixed, 14 existing-task units prespecified in expand_blind_rq1_packet.py, and four RTC extensions if final; no prevalence inference",
+  "source_review_sha256": "9991d6ed6379b682a82fb27599863db745a4edab454280b9444a4efaf5c76dad",
+  "items": [
+    {
+      "item_id": "R01",
+      "decision_id": "timer_api.test_timer_status_sync",
+      "task_id": "timer_api",
+      "kind": "upstream",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "sha256": "6d2d4422ef649b5837c606e8a5aa1454c573efa13be7085851f4c03442c7fada"
+        }
+      ],
+      "packet_sha256": "6da207d5e0ce92b3d61abaf3101fd4a4da17d6d6a8b60cf953707589bce207a9"
+    },
+    {
+      "item_id": "R02",
+      "decision_id": "rtc_alarm_callback-r04",
+      "task_id": "rtc_alarm_callback",
+      "kind": "agent",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "sha256": "ec355bdce5f0ce933e31032a91d7ddb434f673b3ef06c5af1af9b314b783a5f6"
+        }
+      ],
+      "packet_sha256": "e396763244f9b7a88c94ddb5c71007401b53110b1cbf8f7f695351533f3f3c87"
+    },
+    {
+      "item_id": "R03",
+      "decision_id": "pending.test_pending_timer",
+      "task_id": "pending",
+      "kind": "upstream",
+      "first_reviewer_label": "unknown",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/pending/src/main.c",
+          "sha256": "a8bffa54aa1c964fa8eb1d81f09448901bb9b356215b1e7a3535b9fbba6f4dd9"
+        }
+      ],
+      "packet_sha256": "2e480508790531a14dcfccbda9f96680aeff5c31b0620abd543bee5b2b367b1b"
+    },
+    {
+      "item_id": "R04",
+      "decision_id": "timer_api-r03",
+      "task_id": "timer_api",
+      "kind": "agent",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/timer_api/r03/test.c",
+          "sha256": "d7fc4962ccee43e2c1fa62bc7b755f7314392ef68b2c8df4e916650c53f41a65"
+        }
+      ],
+      "packet_sha256": "0edca3a1023651e200b5f154a8a69348b86ef1796809605458a63c70e3af0dd3"
+    },
+    {
+      "item_id": "R05",
+      "decision_id": "fifo_api.test_fifo_isr2thread",
+      "task_id": "fifo_api",
+      "kind": "upstream",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_cancel.c",
+          "sha256": "cc870b9d2c68838b1d9cb8b475e1af24e2868cc6323297d37cceba0b6884f70f"
+        },
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_contexts.c",
+          "sha256": "5b94703545aaf128d9088245be1846e1ef0442882a872e32c56767f842c1ffa1"
+        },
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_loop.c",
+          "sha256": "1b52f27c9a5ee9b6f1d1704d0ed7043fac5f838287d25255e96adc188d6e38fd"
+        }
+      ],
+      "packet_sha256": "f25723e1492cf77abd16c5c48703ae88a061300cebcc30c5e20228fcd096c9d6"
+    },
+    {
+      "item_id": "R06",
+      "decision_id": "rtc_api.test_alarm_callback",
+      "task_id": "rtc_alarm_callback",
+      "kind": "upstream",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "sha256": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792"
+        }
+      ],
+      "packet_sha256": "069aead63835712cf6d4bf0b21fbcdb5a839bc23a4d1c552c633956083b4c4bb"
+    },
+    {
+      "item_id": "R07",
+      "decision_id": "sleep.test_sleep",
+      "task_id": "sleep",
+      "kind": "upstream",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "sha256": "e40ebc219763810cb638c3cad755fa44fee47ce60f8e62beac25042dc214299a"
+        }
+      ],
+      "packet_sha256": "5b92f6b54fa738e565fb00bd73afb6dde9db9af30fb08d4bb47cf9b9d2a96140"
+    },
+    {
+      "item_id": "R08",
+      "decision_id": "sleep-r04",
+      "task_id": "sleep",
+      "kind": "agent",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "sha256": "43401153ed675b704767f54522360003b718ddea8425c4bc2d45887e0a584f5b"
+        }
+      ],
+      "packet_sha256": "fa340ce5ca36d562d3dc94dc091e0ead51aa8e70707bf8db84966b83c7ce20a3"
+    },
+    {
+      "item_id": "R09",
+      "decision_id": "context_one_cpu.test_k_sleep",
+      "task_id": "context",
+      "kind": "upstream",
+      "first_reviewer_label": "unknown",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/context/src/main.c",
+          "sha256": "6bfad2a3f3c0507d4c3b3376cff0c57700d79aecfa1f3f5f4c5c35b41b85fe1a"
+        }
+      ],
+      "packet_sha256": "7f4805f0352a5e1093ed6de319ac10f551d3e9ed8c30b4a0fc93e44b337a65ed"
+    },
+    {
+      "item_id": "R10",
+      "decision_id": "pending-r03",
+      "task_id": "pending",
+      "kind": "agent",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "sha256": "a974c281fa0c1b7330de96da1347606e738f180e00b0c4518ca830d392cf3d21"
+        }
+      ],
+      "packet_sha256": "8ead7fb376918ea51383d1d2bd49f0859d70f3d8260bb90177fa0c85a96aaebd"
+    },
+    {
+      "item_id": "R11",
+      "decision_id": "fifo_api-r01",
+      "task_id": "fifo_api",
+      "kind": "agent",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/fifo_api/r01/test.c",
+          "sha256": "6fcbbd54295fdd5b270b66096b0fdc3a923136d2854a7b1e4a214d09ded314da"
+        }
+      ],
+      "packet_sha256": "af1ed342be3cb1e73a9faa4fad67c877d4647a33c9aff55be97a24c65b805cdd"
+    },
+    {
+      "item_id": "R12",
+      "decision_id": "context-r02",
+      "task_id": "context",
+      "kind": "agent",
+      "first_reviewer_label": "unknown",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/context/r02/test.c",
+          "sha256": "a1ff584174920f56a971b0b7a9fa744ac88e2384d287af4e7d70ced1106b9e35"
+        }
+      ],
+      "packet_sha256": "1e697dcbdd617794af1d166229a735e7bee37001060e9d66a097caeed14a7f46"
+    },
+    {
+      "item_id": "R13",
+      "decision_id": "msgq_api.test_msgq_isr",
+      "task_id": "msgq_api",
+      "kind": "upstream",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/msgq/msgq_api/src/test_msgq.h",
+          "sha256": "b50c948e86fb69dacfdb76fb7deb405d8ac11d27fc075611ce92d746571454e9"
+        },
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/msgq/msgq_api/src/test_msgq_contexts.c",
+          "sha256": "69d708599a650db8df74a08f0a0ef1b5557be3dc304a9a44fa37289a0b6e9a83"
+        }
+      ],
+      "packet_sha256": "735b651aa9f6be92cd3d75b9d37ba9161e5f4c3de3f30aa587af5b67f7cf9cf4"
+    },
+    {
+      "item_id": "R14",
+      "decision_id": "semaphore-r01",
+      "task_id": "semaphore",
+      "kind": "agent",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/semaphore/r01/test.c",
+          "sha256": "839d1077623e75d93390703bd98618b0093edf876ed35943b6d3b1c9c6a13ef8"
+        }
+      ],
+      "packet_sha256": "11cb63e45b7f48808a90155a1815208b5ff41a885e4abf74df692474b1a923e7"
+    },
+    {
+      "item_id": "R15",
+      "decision_id": "queue_api.test_queue_isr2thread",
+      "task_id": "queue",
+      "kind": "upstream",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_contexts.c",
+          "sha256": "221b7415fabee11ca866cad23958672aa5ab7bbb7cbe23b44693f4c200c6e891"
+        },
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_fail.c",
+          "sha256": "63c304af41e2080aeaa44a59908cd0bfcba6ff6edce4d472efefe6f0c32f1d6a"
+        },
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_loop.c",
+          "sha256": "545b96886ee39ea332d2bee81c2441e72055f0a7368e5f53a3a91ec32dafdc1b"
+        },
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_user.c",
+          "sha256": "3e883832eb2e48a34e6647c8a2b4bbfc64dadd91bddaaa8c90f5502780eb4f9b"
+        }
+      ],
+      "packet_sha256": "4b5754140a5586a68381d12e5c8d7d19ce9e8f6c7d482baad2435a13378123eb"
+    },
+    {
+      "item_id": "R16",
+      "decision_id": "pending-r01",
+      "task_id": "pending",
+      "kind": "agent",
+      "first_reviewer_label": "unknown",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/pending/r01/test.c",
+          "sha256": "9ec3b0d92670467e71e020f76a20dcb5a1b496afd87aa02d7dfc756c90e537a1"
+        }
+      ],
+      "packet_sha256": "c30a46ffdaf29969b3264d5690b37bcabbcecb7937be4835c5f1e003295a6965"
+    },
+    {
+      "item_id": "R17",
+      "decision_id": "timer_api-r01",
+      "task_id": "timer_api",
+      "kind": "agent",
+      "first_reviewer_label": "unknown",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/timer_api/r01/test.c",
+          "sha256": "4ab477caeb411dd6c4a3637d286ab116dcfdc98bb6ec710d91357222778c150c"
+        }
+      ],
+      "packet_sha256": "f016c2bc22932fc9d9b7311573fd4fbe0bd25815fb1d37014289e26701c21c52"
+    },
+    {
+      "item_id": "R18",
+      "decision_id": "workq-r05",
+      "task_id": "workq",
+      "kind": "agent",
+      "first_reviewer_label": "unknown",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/workq/r05/test.c",
+          "sha256": "3db5a65e882ae69760a05b133dfeeebfa14ffe72a87adc1b98737b2caffa9b49"
+        }
+      ],
+      "packet_sha256": "1523a6acb778ba0585d27f3b307780e74ce98a61396944dc1fb8c395e1ce85af"
+    },
+    {
+      "item_id": "R19",
+      "decision_id": "semaphore.test_sem_give_from_isr",
+      "task_id": "semaphore",
+      "kind": "upstream",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/semaphore/semaphore/src/main.c",
+          "sha256": "d4bd094f30d7354f13fcf4d49a93985246455982b8b8a9d1323ae0312b36f498"
+        }
+      ],
+      "packet_sha256": "df4e70ee4ae9245a2227faef99bca1ca2932e91f39a2db60483f925063eb57fe"
+    },
+    {
+      "item_id": "R20",
+      "decision_id": "lifo_api-r01",
+      "task_id": "lifo_api",
+      "kind": "agent",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/lifo_api/r01/test.c",
+          "sha256": "3a20dac34b926d699d7b56cd58fb6855b0a1dd2055f5e5d86c4b658dac16eb28"
+        }
+      ],
+      "packet_sha256": "348ed332a0b9c4d30f513a4cba0c8bc3a53d9d9da53a152c8ebb9e91dcf86376"
+    },
+    {
+      "item_id": "R21",
+      "decision_id": "work_1cpu.test_1cpu_basic_schedule",
+      "task_id": "workq",
+      "kind": "upstream",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "sha256": "4ec2e6f05084a892a7afa21fbf4e3fcd47d2181d514ce84d2cd7166aa472e6d9"
+        }
+      ],
+      "packet_sha256": "078bd78e4161f23a3b2b8b6e88c155e18e3c0ff127e5d31d7f21d6ca16c4968b"
+    },
+    {
+      "item_id": "R22",
+      "decision_id": "lifo_contexts.test_lifo_isr2thread",
+      "task_id": "lifo_api",
+      "kind": "upstream",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_contexts.c",
+          "sha256": "eeac6acea7b58b046d556f264cd904f479ed7f136fdcc7363ab6f03804271168"
+        },
+        {
+          "path": "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_loop.c",
+          "sha256": "5dac91f91baeb84996d4151c7474559b1f66a1c27f5683ea8394c50d7fcec4f6"
+        }
+      ],
+      "packet_sha256": "2882fb58a7ee845b6a17b69e50a9523fdb0e80268d7301e881505f445d0cbd4e"
+    },
+    {
+      "item_id": "R23",
+      "decision_id": "msgq_api-r01",
+      "task_id": "msgq_api",
+      "kind": "agent",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/msgq_api/r01/test.c",
+          "sha256": "4bda1bcf1a5b3c395408f12c8d450c1ff38189cfc3c021480999a0324ae323e3"
+        }
+      ],
+      "packet_sha256": "7773d3930d9e25c4c4241532b73cee6704821d5e7b713fa32d6923e065fd0c6d"
+    },
+    {
+      "item_id": "R24",
+      "decision_id": "queue-r01",
+      "task_id": "queue",
+      "kind": "agent",
+      "first_reviewer_label": "none_found",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/queue/r01/test.c",
+          "sha256": "6ba17494ce3b5cb9a11b486069ee5e555cb6b96d99a6ef49a40c9d891ca5c6b9"
+        }
+      ],
+      "packet_sha256": "ec64803fb445c21a8bd9e1335756cbadd5d7d1b3b7f6c157107ae90a56b1de98"
+    },
+    {
+      "item_id": "R25",
+      "decision_id": "rtc_alarm_callback-r02",
+      "task_id": "rtc_alarm_callback",
+      "kind": "agent",
+      "first_reviewer_label": "unknown",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+          "sha256": "46098b3b9cb6633c5dad5d588496480163f9c83a8d40e91e0a5aabf60b1835f1"
+        }
+      ],
+      "packet_sha256": "69e91884f5885fdc434d1e600a7fb948203bf6c3474abb32e65f277cc405cc33"
+    },
+    {
+      "item_id": "R26",
+      "decision_id": "sleep-r01",
+      "task_id": "sleep",
+      "kind": "agent",
+      "first_reviewer_label": "unknown",
+      "source_files": [
+        {
+          "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+          "sha256": "708ed2f07ee48af870a32af473db236fe4a1b15f5435cba8ef413b59da8cc421"
+        }
+      ],
+      "packet_sha256": "8f5e7a782dba42cb65347bb6f5054476d2a70b6ec44c995d835e43533ec3b073"
+    },
+    {
+      "item_id": "R27",
+      "decision_id": "rtc_alarm_pending-r01",
+      "task_id": "rtc_alarm_pending",
+      "kind": "agent",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "generated/luna_rtc_extension/suites/rtc_alarm_pending/r01/test.c",
+          "sha256": "070f35331c84f84dcb7d3a0d9345281fb8933bde39e1f8eab0ac6dc486482a82"
+        }
+      ],
+      "packet_sha256": "d048b4291ef0c6e3a3db0b42e98f84cdd6042f21fd0892f5a9b950eecda353e6"
+    },
+    {
+      "item_id": "R28",
+      "decision_id": "rtc_time_counting-r01",
+      "task_id": "rtc_time_counting",
+      "kind": "agent",
+      "first_reviewer_label": "unknown",
+      "source_files": [
+        {
+          "path": "generated/luna_rtc_extension/suites/rtc_time_counting/r01/test.c",
+          "sha256": "de543d3779224abd69f45df456565c0e9e2d019e8977e2d0b551e3abe6baa4bc"
+        }
+      ],
+      "packet_sha256": "588ff585c3c44ff22da6b12880465a7f9ba890a7c84d90eb27861f3f96255ef5"
+    },
+    {
+      "item_id": "R29",
+      "decision_id": "rtc_api.test_time_counting",
+      "task_id": "rtc_time_counting",
+      "kind": "upstream",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_time_incrementing.c",
+          "sha256": "80d893f8ea9ff9a1bcb21e86b0a23bf1652037c37b4aaa9aa34fa4850316d55e"
+        },
+        {
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/main.c",
+          "sha256": "8748c071eb380c191ae2b12383358f2923602e5dfaf20846328b525f20e4a9e0"
+        }
+      ],
+      "packet_sha256": "45a7c1e5df8de190c648d4bf101ad9660330a237e059f02684fa8853999a348a"
+    },
+    {
+      "item_id": "R30",
+      "decision_id": "rtc_api.test_alarm",
+      "task_id": "rtc_alarm_pending",
+      "kind": "upstream",
+      "first_reviewer_label": "unjustified",
+      "source_files": [
+        {
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm.c",
+          "sha256": "6eaee3162c2ffb14736e241c9d80454db6a22bed9a697d24228ad4919810ed29"
+        },
+        {
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/main.c",
+          "sha256": "8748c071eb380c191ae2b12383358f2923602e5dfaf20846328b525f20e4a9e0"
+        }
+      ],
+      "packet_sha256": "59e0f40d844215c4100ea06215eceb424ebbc7d969c6ce091e7fea8b6fd8fdbc"
+    }
+  ],
+  "packet_sha256": "90e5354365d63f0912e369b43bbdf3319b137cf4ff0b1535504256ab419cef59",
+  "rtc_extension_source_review_sha256": "bbe66366ef09e82a90f205572ece70fdfa300e1bf48c888372382b33637ac643"
+}

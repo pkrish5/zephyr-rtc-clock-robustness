@@ -1,0 +1,267 @@
+{
+  "cohort": "luna_rtc_extension",
+  "decisions": {
+    "rtc_alarm_pending-r01": {
+      "feature_path_evidence": "The frozen source does not compile against pinned Zephyr RTC alarm API; the saved build log reports an incorrect rtc_alarm_get_time signature (and some versions have additional signature errors). No executable assertion reaches the path.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm",
+      "oracles": [
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The test configures and reads back a supported RTC alarm time successfully."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is not observed pending before its configured RTC time."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is observed pending after the RTC reaches its configured time, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_alarm_pending/r01/test.c",
+      "source_sha256": "070f35331c84f84dcb7d3a0d9345281fb8933bde39e1f8eab0ac6dc486482a82"
+    },
+    "rtc_alarm_pending-r02": {
+      "feature_path_evidence": "The frozen source does not compile against pinned Zephyr RTC alarm API; the saved build log reports an incorrect rtc_alarm_get_time signature (and some versions have additional signature errors). No executable assertion reaches the path.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm",
+      "oracles": [
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The test configures and reads back a supported RTC alarm time successfully."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is not observed pending before its configured RTC time."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is observed pending after the RTC reaches its configured time, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_alarm_pending/r02/test.c",
+      "source_sha256": "5368cf045a0b89c708d867a62f39d1e114653fc1539b8b722398a958c17115df"
+    },
+    "rtc_alarm_pending-r03": {
+      "feature_path_evidence": "The frozen source does not compile against pinned Zephyr RTC alarm API; the saved build log reports an incorrect rtc_alarm_get_time signature (and some versions have additional signature errors). No executable assertion reaches the path.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm",
+      "oracles": [
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The test configures and reads back a supported RTC alarm time successfully."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is not observed pending before its configured RTC time."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is observed pending after the RTC reaches its configured time, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_alarm_pending/r03/test.c",
+      "source_sha256": "690627ec7d15b94a37cb8aa9bdf5f0525853316469ed88c99c751895760dd3de"
+    },
+    "rtc_alarm_pending-r04": {
+      "feature_path_evidence": "The frozen source does not compile against pinned Zephyr RTC alarm API; the saved build log reports an incorrect rtc_alarm_get_time signature (and some versions have additional signature errors). No executable assertion reaches the path.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm",
+      "oracles": [
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The test configures and reads back a supported RTC alarm time successfully."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is not observed pending before its configured RTC time."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is observed pending after the RTC reaches its configured time, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_alarm_pending/r04/test.c",
+      "source_sha256": "5daf8572e0f9fc5656bf50ba80bc4e669727b8c0c0e2cf5cb6435b619a6a3d66"
+    },
+    "rtc_alarm_pending-r05": {
+      "feature_path_evidence": "The frozen source does not compile against pinned Zephyr RTC alarm API; the saved build log reports an incorrect rtc_alarm_get_time signature (and some versions have additional signature errors). No executable assertion reaches the path.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm",
+      "oracles": [
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The test configures and reads back a supported RTC alarm time successfully."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is not observed pending before its configured RTC time."
+        },
+        {
+          "evidence": "The alarm suite failed compilation, so this intended source-level check has no executable assertion in the frozen test.",
+          "judgment": "not_met",
+          "requirement": "The alarm is observed pending after the RTC reaches its configured time, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_alarm_pending/r05/test.c",
+      "source_sha256": "b0b39828714079fe11e6da2c62360b93e3c800058a299b46cb281b124b063633"
+    },
+    "rtc_time_counting-r01": {
+      "feature_path_evidence": "Build passed; source sets and reads the STM32 RTC calendar, polls RTC values, and asserts year-boundary progression to a +10-second target.",
+      "feature_path_exercised": "met",
+      "human_case": "rtc_api.test_time_counting",
+      "oracles": [
+        {
+          "evidence": "rtc_set_time and initial rtc_get_time results are asserted successful, with readback checks.",
+          "judgment": "met",
+          "requirement": "Setting and subsequently reading the initial RTC calendar succeeds."
+        },
+        {
+          "evidence": "Each polled RTC value is compared against the preceding observation before updating that observation.",
+          "judgment": "met",
+          "requirement": "Successive observed RTC calendar values do not move backward."
+        },
+        {
+          "evidence": "Calendar polling reaches +10 and crosses the year, but the 30 s host bound has no documented full scheduling margin beyond the ~18.824 s legal slow-clock calendar arrival.",
+          "judgment": "uncertain",
+          "requirement": "The RTC calendar reaches a time at least ten RTC seconds after the initial value, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_time_counting/r01/test.c",
+      "source_sha256": "de543d3779224abd69f45df456565c0e9e2d019e8977e2d0b551e3abe6baa4bc"
+    },
+    "rtc_time_counting-r02": {
+      "feature_path_evidence": "Build passed; source sets and reads the STM32 RTC calendar, polls RTC values, and asserts year-boundary progression to a +10-second target.",
+      "feature_path_exercised": "met",
+      "human_case": "rtc_api.test_time_counting",
+      "oracles": [
+        {
+          "evidence": "rtc_set_time and initial rtc_get_time results are asserted successful, with readback checks.",
+          "judgment": "met",
+          "requirement": "Setting and subsequently reading the initial RTC calendar succeeds."
+        },
+        {
+          "evidence": "Each polled RTC value is compared against the preceding observation before updating that observation.",
+          "judgment": "met",
+          "requirement": "Successive observed RTC calendar values do not move backward."
+        },
+        {
+          "evidence": "Calendar polling reaches +10 within a 22 s host bound; the legal slow-clock calendar arrival is ~18.824 s, leaving an unproven scheduling margin.",
+          "judgment": "uncertain",
+          "requirement": "The RTC calendar reaches a time at least ten RTC seconds after the initial value, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_time_counting/r02/test.c",
+      "source_sha256": "6e3701b6046a897186e23205b105c7148109afca46771c5d3f4f41128f490944"
+    },
+    "rtc_time_counting-r03": {
+      "feature_path_evidence": "Build passed; source sets and reads the STM32 RTC calendar, polls RTC values, and asserts year-boundary progression to a +10-second target.",
+      "feature_path_exercised": "met",
+      "human_case": "rtc_api.test_time_counting",
+      "oracles": [
+        {
+          "evidence": "rtc_set_time and initial rtc_get_time results are asserted successful, with readback checks.",
+          "judgment": "met",
+          "requirement": "Setting and subsequently reading the initial RTC calendar succeeds."
+        },
+        {
+          "evidence": "Each polled RTC value is compared against the preceding observation before updating that observation.",
+          "judgment": "met",
+          "requirement": "Successive observed RTC calendar values do not move backward."
+        },
+        {
+          "evidence": "The 18 s loop cap is shorter than the ~18.824 s calendar arrival allowed at 17 kHz LSI, before polling or scheduling margin.",
+          "judgment": "not_met",
+          "requirement": "The RTC calendar reaches a time at least ten RTC seconds after the initial value, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_time_counting/r03/test.c",
+      "source_sha256": "0cbd86a1c63d223774f58b48f1bbe8f82bd2088e2a85e17158ad067e2fe185ff"
+    },
+    "rtc_time_counting-r04": {
+      "feature_path_evidence": "Frozen nominal UART fails rtc_set_time at test.c:34. Source sets tm_wday=-1; pinned rtc_ll_stm32.c returns -EINVAL for that value. Calendar counting is not reached.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_time_counting",
+      "oracles": [
+        {
+          "evidence": "Frozen nominal UART fails rtc_set_time at test.c:34. Source sets tm_wday=-1; pinned rtc_ll_stm32.c returns -EINVAL for that value. Calendar counting is not reached. This intended check has no executable passing path.",
+          "judgment": "not_met",
+          "requirement": "Setting and subsequently reading the initial RTC calendar succeeds."
+        },
+        {
+          "evidence": "Frozen nominal UART fails rtc_set_time at test.c:34. Source sets tm_wday=-1; pinned rtc_ll_stm32.c returns -EINVAL for that value. Calendar counting is not reached. This intended check has no executable passing path.",
+          "judgment": "not_met",
+          "requirement": "Successive observed RTC calendar values do not move backward."
+        },
+        {
+          "evidence": "Frozen nominal UART fails rtc_set_time at test.c:34. Source sets tm_wday=-1; pinned rtc_ll_stm32.c returns -EINVAL for that value. Calendar counting is not reached. This intended check has no executable passing path.",
+          "judgment": "not_met",
+          "requirement": "The RTC calendar reaches a time at least ten RTC seconds after the initial value, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric; nominal-path adjudication in notes/RTC_LUNA_NOMINAL_ADJUDICATION.md",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_time_counting/r04/test.c",
+      "source_sha256": "b2315acabeedc9bc6a0706e55943d8c3b691fd6c010582a92cf620eacf48cd87"
+    },
+    "rtc_time_counting-r05": {
+      "feature_path_evidence": "Build passed; source sets and reads the STM32 RTC calendar, polls RTC values, and asserts year-boundary progression to a +10-second target.",
+      "feature_path_exercised": "met",
+      "human_case": "rtc_api.test_time_counting",
+      "oracles": [
+        {
+          "evidence": "rtc_set_time and initial rtc_get_time results are asserted successful, with readback checks.",
+          "judgment": "met",
+          "requirement": "Setting and subsequently reading the initial RTC calendar succeeds."
+        },
+        {
+          "evidence": "Only comparisons against the initial RTC time are asserted; `previous` is assigned but never used to check each successive observation.",
+          "judgment": "not_met",
+          "requirement": "Successive observed RTC calendar values do not move backward."
+        },
+        {
+          "evidence": "The 30 s calendar polling bound exceeds the slow-clock arithmetic but its full scheduling margin is not established.",
+          "judgment": "uncertain",
+          "requirement": "The RTC calendar reaches a time at least ten RTC seconds after the initial value, under a finite, justified observation bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-30T03:47:15.981675+00:00",
+      "reviewer": "Codex source review before RTC-extension perturbation; original strict oracle rubric",
+      "source_path": "generated/luna_rtc_extension/suites/rtc_time_counting/r05/test.c",
+      "source_sha256": "85e4e6eb4bb7eab0c7d47e869abb376933b4846ed9170e3d13c1287d39f75de5"
+    }
+  },
+  "schema_version": 1,
+  "status_note": "Manual source review before Phase 3 timing outcomes; pending is not adequate."
+}

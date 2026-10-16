@@ -1,0 +1,97 @@
+{
+  "records": [
+    {
+      "evidence": "Fixed post-setup sleep assumes ten RTC seconds fit within ten wall seconds; registered legal 17 kHz LSI delays the callback, and Phase 1 replay confirmed the flip in Renode.",
+      "judgment": "unjustified",
+      "kind": "upstream",
+      "line": 132,
+      "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+      "snippet": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));",
+      "source_sha256": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792",
+      "subject": "rtc_alarm_callback"
+    },
+    {
+      "evidence": "The 15 s calendar-arrival bound is below approximately 18.8 s for ten RTC seconds at registered legal 17 kHz LSI with a nominal 32 kHz prescaler.",
+      "judgment": "unjustified",
+      "kind": "agent",
+      "line": 92,
+      "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+      "snippet": "zassert_true(elapsed_ms <= 15000, \"RTC did not reach the alarm time within 15 seconds\");",
+      "source_sha256": "ec355bdce5f0ce933e31032a91d7ddb434f673b3ef06c5af1af9b314b783a5f6",
+      "subject": "rtc_alarm_callback-r04"
+    },
+    {
+      "evidence": "Unbounded polling of sleep_started_ms has no synchronization and never yields to a lower-priority worker under this configuration; nominal run times out.",
+      "judgment": "unjustified",
+      "kind": "agent",
+      "line": 54,
+      "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+      "snippet": "while (sleep_started_ms == 0) {",
+      "source_sha256": "43401153ed675b704767f54522360003b718ddea8425c4bc2d45887e0a584f5b",
+      "subject": "sleep-r04"
+    },
+    {
+      "evidence": "A 100 ms fixed delay stands in for observing that the worker entered sleep; nominal early completion is indirect evidence, but the delay itself has no registered scheduling bound.",
+      "judgment": "unknown",
+      "kind": "agent",
+      "line": 54,
+      "path": "generated/phase2_luna/suites/sleep/r01/test.c",
+      "snippet": "k_sleep(K_MSEC(WAKE_DELAY_MS));",
+      "source_sha256": "708ed2f07ee48af870a32af473db236fe4a1b15f5435cba8ef413b59da8cc421",
+      "subject": "sleep-r01"
+    },
+    {
+      "evidence": "A fixed 20 ms settle period is used to claim no later duplicate handler invocation; the intended observation horizon is not specified.",
+      "judgment": "unknown",
+      "kind": "agent",
+      "line": 49,
+      "path": "generated/phase2_luna/suites/workq/r05/test.c",
+      "snippet": "k_msleep(SETTLE_MS);",
+      "source_sha256": "3db5a65e882ae69760a05b133dfeeebfa14ffe72a87adc1b98737b2caffa9b49",
+      "subject": "workq-r05"
+    },
+    {
+      "evidence": "callback_count is modified by a timer expiry callback and read as plain shared state after status_sync; ordering and compiler visibility need deeper review.",
+      "judgment": "unknown",
+      "kind": "agent",
+      "line": 26,
+      "path": "generated/phase2_luna/suites/timer_api/r01/test.c",
+      "snippet": "zassert_true(callback_count >= 2U,",
+      "source_sha256": "4ab477caeb411dd6c4a3637d286ab116dcfdc98bb6ec710d91357222778c150c",
+      "subject": "timer_api-r01"
+    },
+    {
+      "evidence": "k_sem_count_get follows synchronous irq_offload completion, so the assertion does not assume asynchronous ISR arrival.",
+      "judgment": "justified",
+      "kind": "agent",
+      "line": 20,
+      "path": "generated/phase2_luna/suites/semaphore/r01/test.c",
+      "snippet": "zassert_equal(k_sem_count_get(&sem), 1U, \"count after first ISR give\");",
+      "source_sha256": "839d1077623e75d93390703bd98618b0093edf876ed35943b6d3b1c9c6a13ef8",
+      "subject": "semaphore-r01"
+    },
+    {
+      "evidence": "The immediate K_NO_WAIT get follows synchronous irq_offload completion, after the handler has inserted both items.",
+      "judgment": "justified",
+      "kind": "agent",
+      "line": 34,
+      "path": "generated/phase2_luna/suites/fifo_api/r01/test.c",
+      "snippet": "zassert_equal(k_fifo_get(&test_fifo, K_NO_WAIT), &item_a,",
+      "source_sha256": "6fcbbd54295fdd5b270b66096b0fdc3a923136d2854a7b1e4a214d09ded314da",
+      "subject": "fifo_api-r01"
+    },
+    {
+      "evidence": "The 10 ms sleep is used to assume the worker entered status_sync; the suite also fails nominally because it expects -EAGAIN instead of -EBUSY from K_NO_WAIT.",
+      "judgment": "unknown",
+      "kind": "agent",
+      "line": 43,
+      "path": "generated/phase2_luna/suites/pending/r02/test.c",
+      "snippet": "k_sleep(K_MSEC(10));",
+      "source_sha256": "213bab404ec1476938d8a527f1af19079e1548c9a60938ad3f5218f94f705651",
+      "subject": "pending-r02"
+    }
+  ],
+  "reviewer": "Codex source and nominal-trace review",
+  "schema_version": 1,
+  "scope": "selected manual adjudications of static candidates; not an exhaustive RQ1 numerator"
+}

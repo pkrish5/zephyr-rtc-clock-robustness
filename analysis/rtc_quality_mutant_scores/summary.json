@@ -1,0 +1,809 @@
+{
+  "cells": [
+    {
+      "count": 15,
+      "kill": "no",
+      "model": "astra",
+      "operator": "early",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 6,
+      "kill": "no",
+      "model": "astra",
+      "operator": "late",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 9,
+      "kill": "yes",
+      "model": "astra",
+      "operator": "late",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 15,
+      "kill": "yes",
+      "model": "astra",
+      "operator": "nonarrival",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 14,
+      "kill": "no",
+      "model": "astra",
+      "operator": "early",
+      "prompt_condition": "range_present"
+    },
+    {
+      "count": 14,
+      "kill": "yes",
+      "model": "astra",
+      "operator": "late",
+      "prompt_condition": "range_present"
+    },
+    {
+      "count": 14,
+      "kill": "yes",
+      "model": "astra",
+      "operator": "nonarrival",
+      "prompt_condition": "range_present"
+    },
+    {
+      "count": 3,
+      "kill": "no",
+      "model": "human",
+      "operator": "early",
+      "prompt_condition": null
+    },
+    {
+      "count": 3,
+      "kill": "yes",
+      "model": "human",
+      "operator": "late",
+      "prompt_condition": null
+    },
+    {
+      "count": 3,
+      "kill": "yes",
+      "model": "human",
+      "operator": "nonarrival",
+      "prompt_condition": null
+    },
+    {
+      "count": 4,
+      "kill": "no",
+      "model": "luna",
+      "operator": "early",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 4,
+      "kill": "yes",
+      "model": "luna",
+      "operator": "late",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 1,
+      "kill": "missing",
+      "model": "luna",
+      "operator": "nonarrival",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 3,
+      "kill": "yes",
+      "model": "luna",
+      "operator": "nonarrival",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 3,
+      "kill": "no",
+      "model": "luna",
+      "operator": "early",
+      "prompt_condition": "range_present"
+    },
+    {
+      "count": 3,
+      "kill": "no",
+      "model": "luna",
+      "operator": "late",
+      "prompt_condition": "range_present"
+    },
+    {
+      "count": 3,
+      "kill": "yes",
+      "model": "luna",
+      "operator": "nonarrival",
+      "prompt_condition": "range_present"
+    },
+    {
+      "count": 15,
+      "kill": "no",
+      "model": "sol",
+      "operator": "early",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 2,
+      "kill": "no",
+      "model": "sol",
+      "operator": "late",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 13,
+      "kill": "yes",
+      "model": "sol",
+      "operator": "late",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 15,
+      "kill": "yes",
+      "model": "sol",
+      "operator": "nonarrival",
+      "prompt_condition": "range_absent"
+    },
+    {
+      "count": 15,
+      "kill": "no",
+      "model": "sol",
+      "operator": "early",
+      "prompt_condition": "range_present"
+    },
+    {
+      "count": 6,
+      "kill": "no",
+      "model": "sol",
+      "operator": "late",
+      "prompt_condition": "range_present"
+    },
+    {
+      "count": 9,
+      "kill": "yes",
+      "model": "sol",
+      "operator": "late",
+      "prompt_condition": "range_present"
+    },
+    {
+      "count": 15,
+      "kill": "yes",
+      "model": "sol",
+      "operator": "nonarrival",
+      "prompt_condition": "range_present"
+    }
+  ],
+  "expected_third_fault_records": 69,
+  "expected_two_fault_records": 138,
+  "observed_third_fault_records": 69,
+  "observed_two_fault_records": 138,
+  "original_third_fault_records": 32,
+  "recovery_third_fault_records": 37,
+  "status": "three_faults_complete",
+  "suite_scores": [
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 1,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r01"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r02"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r03"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r04"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r05"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_time_counting-r01"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_time_counting-r02"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_time_counting-r04"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "astra-range_absent-rtc_time_counting-r05"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_alarm_callback-r05"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r01"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r02"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r03"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r04"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r05"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_time_counting-r01"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_time_counting-r02"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_time_counting-r03"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_time_counting-r04"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "astra",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "astra-range_present-rtc_time_counting-r05"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "human",
+      "planned": 3,
+      "prompt_condition": null,
+      "suite_id": "human-rtc_alarm_callback"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "human",
+      "planned": 3,
+      "prompt_condition": null,
+      "suite_id": "human-rtc_alarm_pending"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "human",
+      "planned": 3,
+      "prompt_condition": null,
+      "suite_id": "human-rtc_time_counting"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "luna",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "luna-range_absent-rtc_time_counting-r01"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "luna",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "luna-range_absent-rtc_time_counting-r02"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "luna",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "luna-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 2,
+      "model": "luna",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "luna-range_absent-rtc_time_counting-r05"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "luna",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "luna-range_present-rtc_time_counting-r01"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "luna",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "luna-range_present-rtc_time_counting-r02"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "luna",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "luna-range_present-rtc_time_counting-r03"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r01"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r02"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r03"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r04"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_time_counting-r01"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_time_counting-r02"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_time_counting-r04"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_absent",
+      "suite_id": "sol-range_absent-rtc_time_counting-r05"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r01"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 1,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "killed": 1,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r05"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r01"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 1,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r02"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r03"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 1,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r04"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r05"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_time_counting-r01"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_time_counting-r02"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_time_counting-r03"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 1,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_time_counting-r04"
+    },
+    {
+      "family": "rtc_time_counting",
+      "killed": 2,
+      "known": 3,
+      "model": "sol",
+      "planned": 3,
+      "prompt_condition": "range_present",
+      "suite_id": "sol-range_present-rtc_time_counting-r05"
+    }
+  ]
+}

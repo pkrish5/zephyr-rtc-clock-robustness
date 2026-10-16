@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 153,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_absent",
+  "generation_date_utc": "2026-10-03T21:17:18.055751+00:00",
+  "model": "gpt-6-astra",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/timer_api/range_absent.txt",
+  "prompt_sha256": "b1cce28751e66ab1abf66d7ddb5467f0a395ccfe083ad1d8ff048a87d1a5062b",
+  "prompt_transport": "argument",
+  "response_sha256": "6538181a7501e41238cc805f2b48d116657d70b2b0bae6d95dea9cedbbcd6055",
+  "run_id": "astra-range_absent-timer_api-r02",
+  "sample_index": 2,
+  "source_sha256": "586a0c46e7dc898265537b3fa2c9f3e1dfe798fda3f33baf2399af3d10f9a21d",
+  "status": "generated",
+  "task_id": "timer_api",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 12288,
+    "input_tokens": 14505,
+    "output_tokens": 619,
+    "reasoning_output_tokens": 249
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056",
+  "zephyr_tag": "v4.3.0",
+  "board": "stm32f4_disco/stm32f407xx",
+  "soc": "STM32F407VG",
+  "test_framework": "ztest",
+  "subjects": [
+    {"id": "timer_api", "path": "tests/kernel/timer/timer_api", "interrupt_path": "SysTick timer callback"},
+    {"id": "semaphore", "path": "tests/kernel/semaphore/semaphore", "interrupt_path": "irq_offload semaphore operations"},
+    {"id": "fifo_api", "path": "tests/kernel/fifo/fifo_api", "interrupt_path": "irq_offload FIFO operations"},
+    {"id": "lifo_api", "path": "tests/kernel/lifo/lifo_api", "interrupt_path": "irq_offload LIFO operations"},
+    {"id": "msgq_api", "path": "tests/kernel/msgq/msgq_api", "interrupt_path": "irq_offload message-queue operations"},
+    {"id": "workq", "path": "tests/kernel/workq/work", "interrupt_path": "scheduled work and timer interrupts"},
+    {"id": "queue", "path": "tests/kernel/queue", "interrupt_path": "irq_offload queue operations"},
+    {"id": "sleep", "path": "tests/kernel/sleep", "interrupt_path": "SysTick sleep wakeups"},
+    {"id": "context", "path": "tests/kernel/context", "interrupt_path": "irq_offload and timer interrupts", "cmake_args": ["-DCONFIG_TEST_EXTRA_STACK_SIZE=1024"]},
+    {"id": "pending", "path": "tests/kernel/pending", "interrupt_path": "timer-driven pending work"},
+    {"id": "exti_stm32", "path": "tests/drivers/interrupt_controller/intc_exti_stm32", "interrupt_path": "STM32 EXTI software-triggered IRQ", "overlays": ["tests/drivers/interrupt_controller/intc_exti_stm32/boards/exti_default_resources.overlay"]}
+  ]
+}

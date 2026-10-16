@@ -1,0 +1,1251 @@
+{
+  "cells": [
+    {
+      "denominator": 500,
+      "measured_fail": 0,
+      "measured_suites": 5,
+      "missing": 0,
+      "model": "astra",
+      "predicted_fail": 0,
+      "predicted_suites": 0,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 5,
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 13,
+      "measured_suites": 5,
+      "missing": 0,
+      "model": "astra",
+      "predicted_fail": 0,
+      "predicted_suites": 0,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.026,
+        0.026
+      ],
+      "suites": 5,
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 0,
+      "measured_suites": 1,
+      "missing": 0,
+      "model": "astra",
+      "predicted_fail": 0,
+      "predicted_suites": 4,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 5,
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "denominator": 400,
+      "measured_fail": 0,
+      "measured_suites": 4,
+      "missing": 0,
+      "model": "astra",
+      "predicted_fail": 0,
+      "predicted_suites": 0,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 4,
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 0,
+      "measured_suites": 5,
+      "missing": 0,
+      "model": "astra",
+      "predicted_fail": 0,
+      "predicted_suites": 0,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 5,
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 0,
+      "measured_suites": 2,
+      "missing": 0,
+      "model": "astra",
+      "predicted_fail": 0,
+      "predicted_suites": 3,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 5,
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "denominator": 400,
+      "measured_fail": 0,
+      "measured_suites": 2,
+      "missing": 0,
+      "model": "luna",
+      "predicted_fail": 0,
+      "predicted_suites": 2,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 4,
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "denominator": 300,
+      "measured_fail": 0,
+      "measured_suites": 2,
+      "missing": 0,
+      "model": "luna",
+      "predicted_fail": 0,
+      "predicted_suites": 1,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 3,
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 0,
+      "measured_suites": 5,
+      "missing": 1,
+      "model": "sol",
+      "predicted_fail": 0,
+      "predicted_suites": 0,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.0,
+        0.002
+      ],
+      "suites": 5,
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 24,
+      "measured_suites": 5,
+      "missing": 3,
+      "model": "sol",
+      "predicted_fail": 0,
+      "predicted_suites": 0,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.048,
+        0.054
+      ],
+      "suites": 5,
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 0,
+      "measured_suites": 1,
+      "missing": 0,
+      "model": "sol",
+      "predicted_fail": 0,
+      "predicted_suites": 4,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 5,
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 0,
+      "measured_suites": 5,
+      "missing": 6,
+      "model": "sol",
+      "predicted_fail": 0,
+      "predicted_suites": 0,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.012
+      ],
+      "suites": 5,
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 0,
+      "measured_suites": 5,
+      "missing": 2,
+      "model": "sol",
+      "predicted_fail": 0,
+      "predicted_suites": 0,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.004
+      ],
+      "suites": 5,
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "denominator": 500,
+      "measured_fail": 0,
+      "measured_suites": 3,
+      "missing": 0,
+      "model": "sol",
+      "predicted_fail": 0,
+      "predicted_suites": 2,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 5,
+      "task_family": "rtc_time_counting"
+    }
+  ],
+  "classification": {
+    "brittle_test_assumption": 112
+  },
+  "contrasts": {
+    "astra": {
+      "by_family": {
+        "rtc_alarm_callback": [
+          0.0,
+          0.0
+        ],
+        "rtc_alarm_pending": [
+          -0.026,
+          -0.026
+        ],
+        "rtc_time_counting": [
+          0.0,
+          0.0
+        ]
+      },
+      "equal_family_bound": [
+        -0.008666666666666666,
+        -0.008666666666666666
+      ]
+    },
+    "luna": {
+      "by_family": {
+        "rtc_time_counting": [
+          0.0,
+          0.0
+        ]
+      },
+      "equal_family_bound": [
+        0.0,
+        0.0
+      ]
+    },
+    "sol": {
+      "by_family": {
+        "rtc_alarm_callback": [
+          -0.002,
+          0.012
+        ],
+        "rtc_alarm_pending": [
+          -0.054,
+          -0.044
+        ],
+        "rtc_time_counting": [
+          0.0,
+          0.0
+        ]
+      },
+      "equal_family_bound": [
+        -0.018666666666666668,
+        -0.010666666666666666
+      ]
+    }
+  },
+  "endpoint_original_records": 106,
+  "endpoint_outcomes": {
+    "fail": 6,
+    "pass": 100
+  },
+  "equal_model_pooled_contrast_bound": [
+    -0.009111111111111111,
+    -0.0064444444444444445
+  ],
+  "harness_errors": [
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 19736,
+      "seed": 91,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04",
+      "virtual_ns": 14500000000
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 19657,
+      "seed": 89,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r04",
+      "virtual_ns": 0
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 29143,
+      "seed": 96,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r04",
+      "virtual_ns": 9500000000
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 23374,
+      "seed": 97,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05",
+      "virtual_ns": 13500000000
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 21402,
+      "seed": 1,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02",
+      "virtual_ns": 0
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 32171,
+      "seed": 9,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02",
+      "virtual_ns": 0
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 31823,
+      "seed": 11,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02",
+      "virtual_ns": 3500000000
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 25487,
+      "seed": 13,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02",
+      "virtual_ns": 0
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 34917,
+      "seed": 94,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03",
+      "virtual_ns": 0
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 33578,
+      "seed": 81,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04",
+      "virtual_ns": 0
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 22939,
+      "seed": 18,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r01",
+      "virtual_ns": 4500000000
+    },
+    {
+      "error_type": "Renode monitor timeout",
+      "lsi_frequency_hz": 24734,
+      "seed": 4,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r05",
+      "virtual_ns": 0
+    }
+  ],
+  "human": {
+    "rtc_alarm_callback": {
+      "denominator": 100,
+      "fail": 26,
+      "missing": 0
+    },
+    "rtc_alarm_pending": {
+      "denominator": 100,
+      "fail": 26,
+      "missing": 0
+    },
+    "rtc_time_counting": {
+      "denominator": 100,
+      "fail": 17,
+      "missing": 0
+    }
+  },
+  "model_prompt": [
+    {
+      "denominator": 1500,
+      "measured_fail": 13,
+      "measured_suites": 11,
+      "missing": 0,
+      "model": "astra",
+      "predicted_fail": 0,
+      "predicted_suites": 4,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.008666666666666666,
+        0.008666666666666666
+      ],
+      "suites": 15
+    },
+    {
+      "denominator": 1400,
+      "measured_fail": 0,
+      "measured_suites": 11,
+      "missing": 0,
+      "model": "astra",
+      "predicted_fail": 0,
+      "predicted_suites": 3,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 14
+    },
+    {
+      "denominator": 400,
+      "measured_fail": 0,
+      "measured_suites": 2,
+      "missing": 0,
+      "model": "luna",
+      "predicted_fail": 0,
+      "predicted_suites": 2,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 4
+    },
+    {
+      "denominator": 300,
+      "measured_fail": 0,
+      "measured_suites": 2,
+      "missing": 0,
+      "model": "luna",
+      "predicted_fail": 0,
+      "predicted_suites": 1,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.0
+      ],
+      "suites": 3
+    },
+    {
+      "denominator": 1500,
+      "measured_fail": 24,
+      "measured_suites": 11,
+      "missing": 4,
+      "model": "sol",
+      "predicted_fail": 0,
+      "predicted_suites": 4,
+      "prompt_condition": "range_absent",
+      "rate_bound": [
+        0.016,
+        0.018666666666666668
+      ],
+      "suites": 15
+    },
+    {
+      "denominator": 1500,
+      "measured_fail": 0,
+      "measured_suites": 13,
+      "missing": 8,
+      "model": "sol",
+      "predicted_fail": 0,
+      "predicted_suites": 2,
+      "prompt_condition": "range_present",
+      "rate_bound": [
+        0.0,
+        0.005333333333333333
+      ],
+      "suites": 15
+    }
+  ],
+  "original_records": 5406,
+  "outcomes": {
+    "fail": 112,
+    "harness_error": 12,
+    "pass": 5282
+  },
+  "paired_measured_cells": [
+    {
+      "AI missing": 0,
+      "human fail, AI pass": 130,
+      "human pass, AI pass": 370,
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "AI missing": 0,
+      "human fail, AI fail": 13,
+      "human fail, AI pass": 117,
+      "human pass, AI pass": 370,
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "AI missing": 0,
+      "human fail, AI pass": 17,
+      "human pass, AI pass": 83,
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "AI missing": 0,
+      "human fail, AI pass": 104,
+      "human pass, AI pass": 296,
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "AI missing": 0,
+      "human fail, AI pass": 130,
+      "human pass, AI pass": 370,
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "AI missing": 0,
+      "human fail, AI pass": 34,
+      "human pass, AI pass": 166,
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "AI missing": 0,
+      "human fail, AI pass": 34,
+      "human pass, AI pass": 166,
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "AI missing": 0,
+      "human fail, AI pass": 34,
+      "human pass, AI pass": 166,
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "AI missing": 1,
+      "human fail, AI pass": 129,
+      "human pass, AI pass": 370,
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "AI missing": 3,
+      "human fail, AI fail": 24,
+      "human fail, AI pass": 104,
+      "human pass, AI pass": 369,
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "AI missing": 0,
+      "human fail, AI pass": 17,
+      "human pass, AI pass": 83,
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "AI missing": 6,
+      "human fail, AI pass": 129,
+      "human pass, AI pass": 365,
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "AI missing": 2,
+      "human fail, AI pass": 129,
+      "human pass, AI pass": 369,
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "AI missing": 0,
+      "human fail, AI pass": 51,
+      "human pass, AI pass": 249,
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "task_family": "rtc_time_counting"
+    }
+  ],
+  "persisted_identical_replays": 112,
+  "prediction_only_suites": 16,
+  "sampled_exact": 14,
+  "seeded_original_records": 5300,
+  "seeded_outcomes": {
+    "fail": 106,
+    "harness_error": 12,
+    "pass": 5182
+  },
+  "status": "completed_audited",
+  "suite_distribution": [
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r01",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r02",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r03",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r04",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r05",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r01",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r02",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r03",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r04",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 13,
+      "missing": 0,
+      "model": "astra",
+      "pass": 87,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r05",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "model": "astra",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "astra-range_absent-rtc_time_counting-r01",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "astra-range_absent-rtc_time_counting-r02",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "astra",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "astra-range_absent-rtc_time_counting-r03",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "astra",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "astra-range_absent-rtc_time_counting-r04",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "astra",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "astra-range_absent-rtc_time_counting-r05",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_alarm_callback-r02",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_alarm_callback-r03",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_alarm_callback-r04",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_alarm_callback-r05",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r01",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r02",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r03",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r04",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_alarm_pending-r05",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_time_counting-r01",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "astra",
+      "predicted_fail": 0,
+      "prompt_condition": "range_present",
+      "status": "prediction_only",
+      "suite_id": "astra-range_present-rtc_time_counting-r02",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "astra",
+      "predicted_fail": 0,
+      "prompt_condition": "range_present",
+      "status": "prediction_only",
+      "suite_id": "astra-range_present-rtc_time_counting-r03",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "astra",
+      "predicted_fail": 0,
+      "prompt_condition": "range_present",
+      "status": "prediction_only",
+      "suite_id": "astra-range_present-rtc_time_counting-r04",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "astra",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "astra-range_present-rtc_time_counting-r05",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "luna",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "luna-range_absent-rtc_time_counting-r01",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "luna",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "luna-range_absent-rtc_time_counting-r02",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "luna",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "luna-range_absent-rtc_time_counting-r03",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "luna",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "luna-range_absent-rtc_time_counting-r05",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "luna",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "luna-range_present-rtc_time_counting-r01",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "luna",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "luna-range_present-rtc_time_counting-r02",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "luna",
+      "predicted_fail": 0,
+      "prompt_condition": "range_present",
+      "status": "prediction_only",
+      "suite_id": "luna-range_present-rtc_time_counting-r03",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r01",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r02",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r03",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 1,
+      "model": "sol",
+      "pass": 99,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r05",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 11,
+      "missing": 0,
+      "model": "sol",
+      "pass": 89,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r01",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r02",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 13,
+      "missing": 0,
+      "model": "sol",
+      "pass": 87,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 2,
+      "model": "sol",
+      "pass": 98,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r04",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 1,
+      "model": "sol",
+      "pass": 99,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "model": "sol",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "sol-range_absent-rtc_time_counting-r01",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "sol",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "sol-range_absent-rtc_time_counting-r02",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_absent",
+      "status": "measured",
+      "suite_id": "sol-range_absent-rtc_time_counting-r03",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "sol",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "sol-range_absent-rtc_time_counting-r04",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "sol",
+      "predicted_fail": 0,
+      "prompt_condition": "range_absent",
+      "status": "prediction_only",
+      "suite_id": "sol-range_absent-rtc_time_counting-r05",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r01",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 4,
+      "model": "sol",
+      "pass": 96,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 1,
+      "model": "sol",
+      "pass": 99,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 1,
+      "model": "sol",
+      "pass": 99,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_callback-r05",
+      "task_family": "rtc_alarm_callback"
+    },
+    {
+      "fail": 0,
+      "missing": 1,
+      "model": "sol",
+      "pass": 99,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r01",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r02",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r03",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r04",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 1,
+      "model": "sol",
+      "pass": 99,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_alarm_pending-r05",
+      "task_family": "rtc_alarm_pending"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_time_counting-r01",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "sol",
+      "predicted_fail": 0,
+      "prompt_condition": "range_present",
+      "status": "prediction_only",
+      "suite_id": "sol-range_present-rtc_time_counting-r02",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "model": "sol",
+      "predicted_fail": 0,
+      "prompt_condition": "range_present",
+      "status": "prediction_only",
+      "suite_id": "sol-range_present-rtc_time_counting-r03",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_time_counting-r04",
+      "task_family": "rtc_time_counting"
+    },
+    {
+      "fail": 0,
+      "missing": 0,
+      "model": "sol",
+      "pass": 100,
+      "prompt_condition": "range_present",
+      "status": "measured",
+      "suite_id": "sol-range_present-rtc_time_counting-r05",
+      "task_family": "rtc_time_counting"
+    }
+  ]
+}

@@ -1,0 +1,1600 @@
+{
+  "after": {
+    "brittle_test_assumption": 112
+  },
+  "before": {
+    "brittle_test_assumption": 112
+  },
+  "challenge_serial_wall_seconds": 3051.7,
+  "control_outcomes": {
+    "('rtc_alarm_callback', 'max', None)": "pass",
+    "('rtc_alarm_callback', 'min', None)": "pass",
+    "('rtc_alarm_callback', 'nominal', None)": "pass",
+    "('rtc_alarm_pending', 'max', None)": "pass",
+    "('rtc_alarm_pending', 'min', None)": "pass",
+    "('rtc_alarm_pending', 'nominal', None)": "pass",
+    "('rtc_time_counting', 'max', None)": "pass",
+    "('rtc_time_counting', 'min', None)": "pass",
+    "('rtc_time_counting', 'nominal', None)": "pass"
+  },
+  "decisions": [
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "min",
+        null
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "06f5a2b32e724cc410cc22adb6ffb4963c941af1258b4392317ac3644d37a730",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-min"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        14
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "732c45afc7ed2bd0f3f8ac9f60579decf9442da765d777f87d4cdd7382312bc2",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-014"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        28
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "c964ed09d2648f1492fd89e4a072fa700c6a10218ec28195146b57f2f9b385c5",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-028"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        31
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "286052cb7c3c63c036d0c1671496c9d74d6f96228720adcf633e176a16761114",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-031"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        32
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "3963db1922051b14a473bd0a7d83fa4fd616c611690ec5eb150819eadc521743",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-032"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        43
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "82446efd33f3b674b39e4e8a7d0351f1b084c088d6e367f3d0ec17084b019714",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-043"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        49
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "64de2f8504fce5b4e8627b39534f0c9ffe4a33f8c9e6086d58c59ea98fdc4727",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-049"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        55
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "40a5b5d24f4575dc3abf83a5961c666c6eb96acadcf5da8a2c67e7af480de3fb",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-055"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        57
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "8d4dbea1cd7926bf5eb19e48688396d41558f4cb0fa9abc24ec7effe59f23883",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-057"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        66
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "524e7fdf2bb9d6377e18a5bd8d83dd25d5d977fc684494a3748e123b3eac9127",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-066"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        67
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "b99c587d2835407bd51f30f4b166873875769e895238b6a2140f1351c4a0c0a8",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-067"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        72
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "6c792c314085cbc8e4b3d3367da29ec108de65f319b2ee7f09c6e063e4dbc91c",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-072"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        89
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "a8a6f1122b2977795eea37953c20af6b91095a88be0e3226114b13003c988fd2",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-089"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        91
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "5463fbdd652b3388eec1f3bf480a7107b9d4f50973ef61214a99ae35b4e808d5",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "astra-range_absent-rtc_alarm_pending-r05-seeded-091"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "min",
+        null
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "5bc87bc440443e6d792a7c31aea248d1d5511fb33ea6048453acee58bdbcbd62",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-min"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        1
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "6571fb4d318cdded74f5bbf6056f587ffa48e70478c20e14be4b442c089c6d34",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-001"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        8
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "2c6ba81a20ecb7b60119a89c2f2504426206e879bc17be280eb84dd5be2f53a1",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-008"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        14
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "9f9c1a54f06b0b0861e5aff2f7f409ca8c64832892e2bbc3d91e62c709d6a3f0",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-014"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        15
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "e809e5f12561a6c9eb6e988a9c62edccb13af69a9d6b0f0a3309d221ae1b56f7",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-015"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        18
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "f6833ff7161e5a6efa5fa794a19d4dbf6c6eb561b9c6cf9715753f9a51b5f047",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-018"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        21
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "1958ee1518742c591f4d9cd26d690aaf28828c508ca4dbfda3e36276d80084cf",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-021"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        28
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "0f02fce35197019db7c9bf9df7886badb8c176359af7e521a394d44426f1ec2a",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-028"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        31
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "9cfad2ceb27fe7a44f97733416ba394fc124e1cabe3fd1bddb1558502b6ea9a4",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-031"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        32
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "dc12ad5bdb417c19c4610a1a338ace038b7c40927ba9eb15672135db55d3cd36",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-032"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        39
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "526f9e5f74835ea3b33057b73216d1bde994f3f87a7917fce5d2c9e58e8eac8a",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-039"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        43
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "97134e460d1cd0937a32aac8825cd71c91b4cd704693080ff0a30c7df95d0cc5",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-043"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        49
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "c24c8766c0303f2822780322955624f1be7d234673ff0a3dc8cd974bfe7e7722",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-049"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        55
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "76eb972378b2296ba5c1eb5c85fd398c9deeb728350e0b8c7298ca4cdd808219",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-055"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        57
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "ea8b6fb9616534de2e67ee7f6385d7831a59526d24778c0a0b66a3f32338b0cb",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-057"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        59
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "d4f3348f35a7bb419dac128faaa2a355716d618fed37114d4e1535355e9823e8",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-059"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        66
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "04cf2ace840674ebefedb0b089a8349864de4956c09ac2308548b9b2d057d6e1",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-066"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        67
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "5f6747990a878376259517bba76bf7eb7d69d012f1fff16f8d47d8602bc61497",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-067"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        72
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "12ba9b266988797a152e7e39a138cf8481154fe5e7076b6fba229b1ee26d2c94",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-072"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        79
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "f244e368c33e79bd4ef7cb029c3b34c7e3f7f342467d1fbecd1b3c1d291892f4",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-079"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        82
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "45e2c4785e56eeec9053edc238d03967bea6eac20a6d9148977dc2b4ffbdf128",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-082"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        85
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "7ef49a39b57354849d2d97b69f0f8456862c848c046415c49f33ac0640c8587e",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-085"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        87
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "db4228f64144d5eba173479da7141afdc9954c992555ddb373fc687611cfdb8a",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-087"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        89
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "d08b1ba6497d937b02c0590f9705dffee3a966ace4b163c3e2f2374d8f20905c",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-089"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        90
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "7b191a9136f945b7f8a60b04b22701dcf09e7871f8645d037742b15467165723",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-090"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        91
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "2baba2e03f29b79e20f766544cf04d1fb0661f8dcede6c1f3ed8147fa443e13b",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-091"
+    },
+    {
+      "family": "rtc_alarm_callback",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_callback",
+        "seeded",
+        97
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "186929ee092dab8cd823d6378f5bd6f5b67ee53093f3cefe6948da5bdbce0b0a",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_callback-seeded-097"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "min",
+        null
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "06f5a2b32e724cc410cc22adb6ffb4963c941af1258b4392317ac3644d37a730",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-min"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        1
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "5084e9b64045c2c1cd04cd9d4d892d7d811bd5d74ce7390fe4d8d087969caa82",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-001"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        8
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "08eb9a9ae8b442e225a1900f63d3d9254c8af52edbb0e2146d4d59ae05be3977",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-008"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        14
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "732c45afc7ed2bd0f3f8ac9f60579decf9442da765d777f87d4cdd7382312bc2",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-014"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        15
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "c3a0f76a4e05d5064030d7ec29a3aa44d22aba24a470d1f1b90ac605a02c789b",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-015"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        18
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "16bf5687baef8f9aad33e34e7545a9276209455d63d886a04ba0341467d25bac",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-018"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        21
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "8a19541876260b3873065a37469202504238bf5c04d05266ea55c99fc65737b5",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-021"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        28
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "c964ed09d2648f1492fd89e4a072fa700c6a10218ec28195146b57f2f9b385c5",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-028"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        31
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "286052cb7c3c63c036d0c1671496c9d74d6f96228720adcf633e176a16761114",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-031"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        32
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "3963db1922051b14a473bd0a7d83fa4fd616c611690ec5eb150819eadc521743",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-032"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        39
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "c882c6d830839b1be4be62d340a45acab82dba9d99e277f019d90ad063b1079c",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-039"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        43
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "82446efd33f3b674b39e4e8a7d0351f1b084c088d6e367f3d0ec17084b019714",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-043"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        49
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "64de2f8504fce5b4e8627b39534f0c9ffe4a33f8c9e6086d58c59ea98fdc4727",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-049"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        55
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "40a5b5d24f4575dc3abf83a5961c666c6eb96acadcf5da8a2c67e7af480de3fb",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-055"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        57
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "8d4dbea1cd7926bf5eb19e48688396d41558f4cb0fa9abc24ec7effe59f23883",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-057"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        59
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "6a30fe40cbbf3053d61d7e02aa4a2c02b686c7768770e490e4d1472a932b87d0",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-059"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        66
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "524e7fdf2bb9d6377e18a5bd8d83dd25d5d977fc684494a3748e123b3eac9127",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-066"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        67
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "b99c587d2835407bd51f30f4b166873875769e895238b6a2140f1351c4a0c0a8",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-067"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        72
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "6c792c314085cbc8e4b3d3367da29ec108de65f319b2ee7f09c6e063e4dbc91c",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-072"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        79
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "15f02181b31ad3864b085df2b64d5b792cfe1db2f5677f895d13043e390ddf24",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-079"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        82
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "d3076e3efed869995deef4f7defcfff3baabd4cbef41846abb6900b91eb83edf",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-082"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        85
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "786aad1ba9738c97488b4c0bd5d7709f13d23f9ea5d996cd97bae56eda17dbda",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-085"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        87
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "b4b1fa8f2f021a0b817da0452dc7515bb69232c11deeefd985185d809c3abe00",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-087"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        89
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "a8a6f1122b2977795eea37953c20af6b91095a88be0e3226114b13003c988fd2",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-089"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        90
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "b77dcb546508eaaf007b03394431040ff25530eaabe7a61b9a7f2ec9785e72a6",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-090"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        91
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "5463fbdd652b3388eec1f3bf480a7107b9d4f50973ef61214a99ae35b4e808d5",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-091"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        97
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "d978172758b424ff99e0ed8a2a85d768459440a862efd40020e9521301d31ad6",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_alarm_pending-seeded-097"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "min",
+        null
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "d669e0180b7bfa5f6037adced8bcc5644c33d921424e1e20df2ea28a864e9071",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-min"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        1
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "99a1a6fc6f03aa755fbf1ae11f44deaf81e575790f933ccce4bd45cd4d710736",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-001"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        14
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "29d6ebe84eafbeb7a650e33af7f863a0ee5e9ee82873a797e0d8af82e759a70e",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-014"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        28
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "2ac826551876f5a5d31ef159945ba835e3cbda9df6fbbbbbc6c3442ef28aad30",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-028"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        31
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "eed007afaa99c554f2da83d41e2ec8595f5d06195837566566ed7e224834f2cd",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-031"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        32
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "a81ac228f0fdcf6430f4f6268e95043ed2585809e3589ae837e20625d860f45b",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-032"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        43
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "bc010ad069a4c64cc7b239093d1c5e7e9d579a3158a3dc253114fb5159190b7d",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-043"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        49
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "8a10baf36b736627bcc49ea696f27a4bab1a0f9e130119b4d289ed3665ca638c",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-049"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        55
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "9475c2ae8800a05a823c5992ba2cd139cd21fdf4fb6a9da6ad709431bb71cc39",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-055"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        57
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "5940d8e92b992e3226c15b129392729ccbd71341b3f778b492cd86ccf5aafbd7",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-057"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        66
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "11eeb01df191c2bfd8a11fecb385733ce8cbbecff15ee1a97ce2d4746420e4a7",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-066"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        67
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "c3ff813a9bf1680ff2f73d5b661ed73f2bff396be18f70625b22490661bf1863",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-067"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        72
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "8753ba3e305166038a130fb477a62ec02108944f4d273094d57723af92b565fa",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-072"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        79
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "0934cc9093ebcfa1d500c762a419ee73a7a0cd9df5ff0329e892f39919e9b96d",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-079"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        82
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "fd0439e71a6e07796a30ebcde33dec8f1d248e6abd34a6cc331b17ca61c2bb48",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-082"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        87
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "2c9958ed600b86d045e668635b32b6d2b54259f0966bf93075ead027747da9ed",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-087"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        89
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "ef6b95568e4b173057a73691c2e81dff4822849f38a22c1ec73ac86101dedc85",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-089"
+    },
+    {
+      "family": "rtc_time_counting",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_time_counting",
+        "seeded",
+        91
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "024555faba8e0817b947f643258293cb5600db98575a934c925c2f830a9bcc8d",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "human-rtc_time_counting-seeded-091"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "min",
+        null
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "06f5a2b32e724cc410cc22adb6ffb4963c941af1258b4392317ac3644d37a730",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-min"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        31
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "286052cb7c3c63c036d0c1671496c9d74d6f96228720adcf633e176a16761114",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-031"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        32
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "3963db1922051b14a473bd0a7d83fa4fd616c611690ec5eb150819eadc521743",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-032"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        43
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "82446efd33f3b674b39e4e8a7d0351f1b084c088d6e367f3d0ec17084b019714",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-043"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        49
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "64de2f8504fce5b4e8627b39534f0c9ffe4a33f8c9e6086d58c59ea98fdc4727",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-049"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        55
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "40a5b5d24f4575dc3abf83a5961c666c6eb96acadcf5da8a2c67e7af480de3fb",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-055"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        57
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "8d4dbea1cd7926bf5eb19e48688396d41558f4cb0fa9abc24ec7effe59f23883",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-057"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        66
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "524e7fdf2bb9d6377e18a5bd8d83dd25d5d977fc684494a3748e123b3eac9127",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-066"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        67
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "b99c587d2835407bd51f30f4b166873875769e895238b6a2140f1351c4a0c0a8",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-067"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        72
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "6c792c314085cbc8e4b3d3367da29ec108de65f319b2ee7f09c6e063e4dbc91c",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-072"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        89
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "a8a6f1122b2977795eea37953c20af6b91095a88be0e3226114b13003c988fd2",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-089"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        91
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "5463fbdd652b3388eec1f3bf480a7107b9d4f50973ef61214a99ae35b4e808d5",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r01-seeded-091"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "min",
+        null
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "06f5a2b32e724cc410cc22adb6ffb4963c941af1258b4392317ac3644d37a730",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-min"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        14
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "732c45afc7ed2bd0f3f8ac9f60579decf9442da765d777f87d4cdd7382312bc2",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-014"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        28
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "c964ed09d2648f1492fd89e4a072fa700c6a10218ec28195146b57f2f9b385c5",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-028"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        31
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "286052cb7c3c63c036d0c1671496c9d74d6f96228720adcf633e176a16761114",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-031"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        32
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "3963db1922051b14a473bd0a7d83fa4fd616c611690ec5eb150819eadc521743",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-032"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        43
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "82446efd33f3b674b39e4e8a7d0351f1b084c088d6e367f3d0ec17084b019714",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-043"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        49
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "64de2f8504fce5b4e8627b39534f0c9ffe4a33f8c9e6086d58c59ea98fdc4727",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-049"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        55
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "40a5b5d24f4575dc3abf83a5961c666c6eb96acadcf5da8a2c67e7af480de3fb",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-055"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        57
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "8d4dbea1cd7926bf5eb19e48688396d41558f4cb0fa9abc24ec7effe59f23883",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-057"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        66
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "524e7fdf2bb9d6377e18a5bd8d83dd25d5d977fc684494a3748e123b3eac9127",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-066"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        67
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "b99c587d2835407bd51f30f4b166873875769e895238b6a2140f1351c4a0c0a8",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-067"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        72
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "6c792c314085cbc8e4b3d3367da29ec108de65f319b2ee7f09c6e063e4dbc91c",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-072"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        89
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "a8a6f1122b2977795eea37953c20af6b91095a88be0e3226114b13003c988fd2",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-089"
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "original_classification": "brittle_test_assumption",
+      "reason": "Matching reference passes; source-backed legal-clock shortfall and identical original replay retained",
+      "reference_key": [
+        "rtc_alarm_pending",
+        "seeded",
+        91
+      ],
+      "reference_outcome": "pass",
+      "reference_record_sha256": "5463fbdd652b3388eec1f3bf480a7107b9d4f50973ef61214a99ae35b4e808d5",
+      "revised_classification": "brittle_test_assumption",
+      "run_id": "sol-range_absent-rtc_alarm_pending-r03-seeded-091"
+    }
+  ],
+  "first_to_last_challenge_completion_seconds": 1076.1,
+  "manifest_sha256": "6e9e3d56539baf23ccab51197a6996a602eab686c58b9103bf78f3a5fce77e48",
+  "missing_reference_keys": [],
+  "nominal_controls": 3,
+  "observed_records": 78,
+  "reference_outcomes": {
+    "pass": 78
+  },
+  "registered_challenges": 75,
+  "status": "complete"
+}

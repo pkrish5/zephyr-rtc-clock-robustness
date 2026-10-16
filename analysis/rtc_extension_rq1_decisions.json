@@ -1,0 +1,153 @@
+{
+  "decisions": {
+    "rtc_alarm_pending-r01": {
+      "evidence": "test.c: initial K_SECONDS(2) sleep, then 15 one-second polls and terminal failure. Ten RTC seconds with 128 x 250 prescaler at 17 kHz require about 18.824 host seconds, before phase or scheduling margin.",
+      "issues": [
+        "The test requires the alarm pending within at most about 17 host seconds from setting RTC time (2 s fixed wait plus up to 15 one-second polls), shorter than ten RTC seconds at the legal 17 kHz input. This source-level issue remains even if the suite fails to compile for a separate API-signature error."
+      ],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_alarm_pending/r01/test.c": "070f35331c84f84dcb7d3a0d9345281fb8933bde39e1f8eab0ac6dc486482a82"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_alarm_pending"
+    },
+    "rtc_alarm_pending-r02": {
+      "evidence": "The 20 one-second polling iterations narrowly exceed the approximately 18.824 s legal slow-end alarm arrival, but a complete scheduling/polling bound is unavailable. Build failure is a separate API-signature issue.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_alarm_pending/r02/test.c": "5368cf045a0b89c708d867a62f39d1e114653fc1539b8b722398a958c17115df"
+      },
+      "status": "unknown",
+      "task_id": "rtc_alarm_pending"
+    },
+    "rtc_alarm_pending-r03": {
+      "evidence": "After a 1 s wait it polls for at most 15 additional seconds, below the approximately 18.824 s needed for the legal 17 kHz RTC to reach an alarm ten calendar seconds ahead.",
+      "issues": [
+        "After a 1 s wait it polls for at most 15 additional seconds, below the approximately 18.824 s needed for the legal 17 kHz RTC to reach an alarm ten calendar seconds ahead."
+      ],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_alarm_pending/r03/test.c": "690627ec7d15b94a37cb8aa9bdf5f0525853316469ed88c99c751895760dd3de"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_alarm_pending"
+    },
+    "rtc_alarm_pending-r04": {
+      "evidence": "The positive alarm check is forced after about 2 + 10 host seconds, shorter than the legal slow-end RTC arrival. The pre-alarm calendar predicate is separately wrong even at nominal timing.",
+      "issues": [
+        "The positive alarm check is forced after about 2 + 10 host seconds, shorter than the legal slow-end RTC arrival. The pre-alarm calendar predicate is separately wrong even at nominal timing."
+      ],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_alarm_pending/r04/test.c": "5daf8572e0f9fc5656bf50ba80bc4e669727b8c0c0e2cf5cb6435b619a6a3d66"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_alarm_pending"
+    },
+    "rtc_alarm_pending-r05": {
+      "evidence": "The 2 + 20 s wait exceeds the legal slow-end arithmetic but has no complete documented polling/scheduling bound. Build failure is a separate API-signature issue.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_alarm_pending/r05/test.c": "b0b39828714079fe11e6da2c62360b93e3c800058a299b46cb281b124b063633"
+      },
+      "status": "unknown",
+      "task_id": "rtc_alarm_pending"
+    },
+    "rtc_api.test_alarm": {
+      "evidence": "test_alarm.c: RTC_TEST_ALARM_TEST_NOT_PENDING_DELAY=3, RTC_TEST_ALARM_TEST_PENDING_DELAY=10; k_sleep for both then zassert_equal(ret,1) on pending. Ten RTC seconds require approximately 18.824 wall seconds at 17 kHz with the pinned 128 x 250 prescaler.",
+      "issues": [
+        "The test requires a pending alarm after 3 + 10 wall seconds, although at the legal 17 kHz LSI input the configured RTC advances only about 6.9 calendar seconds by then, before any scheduling margin; the alarm is set ten RTC seconds ahead."
+      ],
+      "kind": "upstream",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/main.c": "8748c071eb380c191ae2b12383358f2923602e5dfaf20846328b525f20e4a9e0",
+        "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm.c": "6eaee3162c2ffb14736e241c9d80454db6a22bed9a697d24228ad4919810ed29"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_alarm_pending"
+    },
+    "rtc_api.test_time_counting": {
+      "evidence": "test_time_incrementing.c: RTC_TEST_TIME_COUNTING_POLL_LIMIT=30; k_msleep(500); terminal zassert_true(i < 30). Legal slow-end calendar tick calculation is 10*32000/17000=18.824 wall seconds before scheduling margin.",
+      "issues": [
+        "The 30 iterations with 500 ms sleeps sample less than 15 wall seconds. At the legal 17 kHz LSI input, the RTC's fixed 128 x 250 prescaler yields fewer than ten RTC seconds in that window, so the exact-equality completion assertion may fail on allowed behavior."
+      ],
+      "kind": "upstream",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/main.c": "8748c071eb380c191ae2b12383358f2923602e5dfaf20846328b525f20e4a9e0",
+        "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_time_incrementing.c": "80d893f8ea9ff9a1bcb21e86b0a23bf1652037c37b4aaa9aa34fa4850316d55e"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_time_counting"
+    },
+    "rtc_time_counting-r01": {
+      "evidence": "The source polls RTC calendar state until ten observed seconds pass, checks monotonicity, and uses a 30 s host deadline. The legal slow-end calendar calculation is about 18.824 s, leaving about 11 s for polling/scheduling. The available contract does not establish a complete worst-case scheduling bound, so the margin is left uncertain rather than deemed unsupported or guaranteed.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_time_counting/r01/test.c": "de543d3779224abd69f45df456565c0e9e2d019e8977e2d0b551e3abe6baa4bc"
+      },
+      "status": "unknown",
+      "task_id": "rtc_time_counting"
+    },
+    "rtc_time_counting-r02": {
+      "evidence": "The 22 s polling deadline exceeds the approximately 18.824 s slow-end calendar arrival by about 3.2 s, but the available task and kernel contracts do not bound all thread scheduling delay.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_time_counting/r02/test.c": "6e3701b6046a897186e23205b105c7148109afca46771c5d3f4f41128f490944"
+      },
+      "status": "unknown",
+      "task_id": "rtc_time_counting"
+    },
+    "rtc_time_counting-r03": {
+      "evidence": "Its 18 s observation cap is shorter than the approximately 18.824 s ten-calendar-second arrival permitted at 17 kHz LSI, even before poll phase and scheduling delay.",
+      "issues": [
+        "Its 18 s observation cap is shorter than the approximately 18.824 s ten-calendar-second arrival permitted at 17 kHz LSI, even before poll phase and scheduling delay."
+      ],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_time_counting/r03/test.c": "0cbd86a1c63d223774f58b48f1bbe8f82bd2088e2a85e17158ad067e2fe185ff"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_time_counting"
+    },
+    "rtc_time_counting-r04": {
+      "evidence": "The 30 s calendar deadline leaves about 11 s beyond the legal slow-end arithmetic, but the full scheduling margin is not documented.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_time_counting/r04/test.c": "b2315acabeedc9bc6a0706e55943d8c3b691fd6c010582a92cf620eacf48cd87"
+      },
+      "status": "unknown",
+      "task_id": "rtc_time_counting"
+    },
+    "rtc_time_counting-r05": {
+      "evidence": "The 30 s calendar polling window exceeds the legal slow-end arithmetic; a full scheduling bound is unavailable. Its missing successive-monotonicity check is a separate functional-oracle issue.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex first-reviewer source coding under PHASE3_RQ1_CODING.md, before RTC-extension perturbation",
+      "source_files_sha256": {
+        "generated/luna_rtc_extension/suites/rtc_time_counting/r05/test.c": "85e4e6eb4bb7eab0c7d47e869abb376933b4846ed9170e3d13c1287d39f75de5"
+      },
+      "status": "unknown",
+      "task_id": "rtc_time_counting"
+    }
+  },
+  "reviewed_date": "2026-09-29",
+  "schema_version": 1,
+  "status_note": "First-reviewer source-only timing judgments for two upstream selected cases and ten frozen Luna sources. Keep separate from the blinded packet until independent labels are submitted. The five alarm Luna sources failed compilation, but remain in the RQ1 source denominator."
+}

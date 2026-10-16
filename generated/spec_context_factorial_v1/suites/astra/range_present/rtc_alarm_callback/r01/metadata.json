@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 27,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_present",
+  "generation_date_utc": "2026-10-03T19:16:03.275890+00:00",
+  "model": "gpt-6-astra",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/rtc_alarm_callback/range_present.txt",
+  "prompt_sha256": "dcded2c722355cffa201b31e1c64755eb595fa9c5ea5222f7dce0012ba8324e3",
+  "prompt_transport": "argument",
+  "response_sha256": "ef359a416642cf327e7f5b1d4190f6ca3dd99a525f7e8edda819d5205caf434d",
+  "run_id": "astra-range_present-rtc_alarm_callback-r01",
+  "sample_index": 1,
+  "source_sha256": "9f2252a279883d13ca98a4885fbaf7b3aa1e2785148c19ac43554add0e9dc30a",
+  "status": "generated",
+  "task_id": "rtc_alarm_callback",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 0,
+    "input_tokens": 14661,
+    "output_tokens": 2786,
+    "reasoning_output_tokens": 1314
+  }
+}

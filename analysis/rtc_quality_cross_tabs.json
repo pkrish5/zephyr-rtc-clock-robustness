@@ -1,0 +1,1587 @@
+{
+  "definition": "Wilson 95% intervals describe suite shares within the selected cohort; suites cluster by task and mutants are purposive, not random fault samples.",
+  "mutant_all_ai": {
+    "both_early_late": {
+      "evaluable": 66,
+      "kills": 0,
+      "planned": 66,
+      "rate": 0.0,
+      "wilson95": [
+        0,
+        0.055003
+      ]
+    },
+    "group": [
+      "all_ai",
+      "all_conditions"
+    ],
+    "mutants": {
+      "early": {
+        "evaluable": 66,
+        "kills": 0,
+        "missing": 0,
+        "planned": 66,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.055003
+        ]
+      },
+      "late": {
+        "evaluable": 66,
+        "kills": 49,
+        "missing": 0,
+        "planned": 66,
+        "rate": 0.742424,
+        "wilson95": [
+          0.625669,
+          0.832512
+        ]
+      },
+      "nonarrival": {
+        "evaluable": 65,
+        "kills": 65,
+        "missing": 1,
+        "planned": 66,
+        "rate": 1.0,
+        "wilson95": [
+          0.944198,
+          1
+        ]
+      }
+    },
+    "suites": 66
+  },
+  "mutant_by_model_prompt": [
+    {
+      "both_early_late": {
+        "evaluable": 15,
+        "kills": 0,
+        "planned": 15,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.203883
+        ]
+      },
+      "group": [
+        "astra",
+        "range_absent"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 15,
+          "kills": 0,
+          "missing": 0,
+          "planned": 15,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.203883
+          ]
+        },
+        "late": {
+          "evaluable": 15,
+          "kills": 9,
+          "missing": 0,
+          "planned": 15,
+          "rate": 0.6,
+          "wilson95": [
+            0.357468,
+            0.801755
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 15,
+          "kills": 15,
+          "missing": 0,
+          "planned": 15,
+          "rate": 1.0,
+          "wilson95": [
+            0.796117,
+            1
+          ]
+        }
+      },
+      "suites": 15
+    },
+    {
+      "both_early_late": {
+        "evaluable": 14,
+        "kills": 0,
+        "planned": 14,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.215311
+        ]
+      },
+      "group": [
+        "astra",
+        "range_present"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 14,
+          "kills": 0,
+          "missing": 0,
+          "planned": 14,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.215311
+          ]
+        },
+        "late": {
+          "evaluable": 14,
+          "kills": 14,
+          "missing": 0,
+          "planned": 14,
+          "rate": 1.0,
+          "wilson95": [
+            0.784689,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 14,
+          "kills": 14,
+          "missing": 0,
+          "planned": 14,
+          "rate": 1.0,
+          "wilson95": [
+            0.784689,
+            1
+          ]
+        }
+      },
+      "suites": 14
+    },
+    {
+      "both_early_late": {
+        "evaluable": 3,
+        "kills": 0,
+        "planned": 3,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.561497
+        ]
+      },
+      "group": [
+        "human",
+        "none"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "late": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 3
+    },
+    {
+      "both_early_late": {
+        "evaluable": 4,
+        "kills": 0,
+        "planned": 4,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.489891
+        ]
+      },
+      "group": [
+        "luna",
+        "range_absent"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 4,
+          "kills": 0,
+          "missing": 0,
+          "planned": 4,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.489891
+          ]
+        },
+        "late": {
+          "evaluable": 4,
+          "kills": 4,
+          "missing": 0,
+          "planned": 4,
+          "rate": 1.0,
+          "wilson95": [
+            0.510109,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 1,
+          "planned": 4,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 4
+    },
+    {
+      "both_early_late": {
+        "evaluable": 3,
+        "kills": 0,
+        "planned": 3,
+        "rate": 0.0,
+        "wilson95": [
+          0.0,
+          0.561497
+        ]
+      },
+      "group": [
+        "luna",
+        "range_present"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "late": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 3
+    },
+    {
+      "both_early_late": {
+        "evaluable": 15,
+        "kills": 0,
+        "planned": 15,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.203883
+        ]
+      },
+      "group": [
+        "sol",
+        "range_absent"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 15,
+          "kills": 0,
+          "missing": 0,
+          "planned": 15,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.203883
+          ]
+        },
+        "late": {
+          "evaluable": 15,
+          "kills": 13,
+          "missing": 0,
+          "planned": 15,
+          "rate": 0.866667,
+          "wilson95": [
+            0.62118,
+            0.962639
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 15,
+          "kills": 15,
+          "missing": 0,
+          "planned": 15,
+          "rate": 1.0,
+          "wilson95": [
+            0.796117,
+            1
+          ]
+        }
+      },
+      "suites": 15
+    },
+    {
+      "both_early_late": {
+        "evaluable": 15,
+        "kills": 0,
+        "planned": 15,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.203883
+        ]
+      },
+      "group": [
+        "sol",
+        "range_present"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 15,
+          "kills": 0,
+          "missing": 0,
+          "planned": 15,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.203883
+          ]
+        },
+        "late": {
+          "evaluable": 15,
+          "kills": 9,
+          "missing": 0,
+          "planned": 15,
+          "rate": 0.6,
+          "wilson95": [
+            0.357468,
+            0.801755
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 15,
+          "kills": 15,
+          "missing": 0,
+          "planned": 15,
+          "rate": 1.0,
+          "wilson95": [
+            0.796117,
+            1
+          ]
+        }
+      },
+      "suites": 15
+    }
+  ],
+  "mutant_by_model_prompt_padding": [
+    {
+      "group": [
+        "astra",
+        "range_absent",
+        "no"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 1,
+          "kills": 0,
+          "missing": 0,
+          "planned": 1,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.793451
+          ]
+        },
+        "late": {
+          "evaluable": 1,
+          "kills": 1,
+          "missing": 0,
+          "planned": 1,
+          "rate": 1.0,
+          "wilson95": [
+            0.206549,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 1,
+          "kills": 1,
+          "missing": 0,
+          "planned": 1,
+          "rate": 1.0,
+          "wilson95": [
+            0.206549,
+            1
+          ]
+        }
+      },
+      "suites": 1
+    },
+    {
+      "group": [
+        "astra",
+        "range_absent",
+        "unknown"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 9,
+          "kills": 0,
+          "missing": 0,
+          "planned": 9,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.299145
+          ]
+        },
+        "late": {
+          "evaluable": 9,
+          "kills": 8,
+          "missing": 0,
+          "planned": 9,
+          "rate": 0.888889,
+          "wilson95": [
+            0.565,
+            0.980109
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 9,
+          "kills": 9,
+          "missing": 0,
+          "planned": 9,
+          "rate": 1.0,
+          "wilson95": [
+            0.700855,
+            1
+          ]
+        }
+      },
+      "suites": 9
+    },
+    {
+      "group": [
+        "astra",
+        "range_absent",
+        "yes"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 5,
+          "kills": 0,
+          "missing": 0,
+          "planned": 5,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.434482
+          ]
+        },
+        "late": {
+          "evaluable": 5,
+          "kills": 0,
+          "missing": 0,
+          "planned": 5,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.434482
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 5,
+          "kills": 5,
+          "missing": 0,
+          "planned": 5,
+          "rate": 1.0,
+          "wilson95": [
+            0.565518,
+            1
+          ]
+        }
+      },
+      "suites": 5
+    },
+    {
+      "group": [
+        "astra",
+        "range_present",
+        "no"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 5,
+          "kills": 0,
+          "missing": 0,
+          "planned": 5,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.434482
+          ]
+        },
+        "late": {
+          "evaluable": 5,
+          "kills": 5,
+          "missing": 0,
+          "planned": 5,
+          "rate": 1.0,
+          "wilson95": [
+            0.565518,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 5,
+          "kills": 5,
+          "missing": 0,
+          "planned": 5,
+          "rate": 1.0,
+          "wilson95": [
+            0.565518,
+            1
+          ]
+        }
+      },
+      "suites": 5
+    },
+    {
+      "group": [
+        "astra",
+        "range_present",
+        "unknown"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 9,
+          "kills": 0,
+          "missing": 0,
+          "planned": 9,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.299145
+          ]
+        },
+        "late": {
+          "evaluable": 9,
+          "kills": 9,
+          "missing": 0,
+          "planned": 9,
+          "rate": 1.0,
+          "wilson95": [
+            0.700855,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 9,
+          "kills": 9,
+          "missing": 0,
+          "planned": 9,
+          "rate": 1.0,
+          "wilson95": [
+            0.700855,
+            1
+          ]
+        }
+      },
+      "suites": 9
+    },
+    {
+      "group": [
+        "human",
+        "none",
+        "not_coded"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "late": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 3
+    },
+    {
+      "group": [
+        "luna",
+        "range_absent",
+        "no"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 4,
+          "kills": 0,
+          "missing": 0,
+          "planned": 4,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.489891
+          ]
+        },
+        "late": {
+          "evaluable": 4,
+          "kills": 4,
+          "missing": 0,
+          "planned": 4,
+          "rate": 1.0,
+          "wilson95": [
+            0.510109,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 1,
+          "planned": 4,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 4
+    },
+    {
+      "group": [
+        "luna",
+        "range_present",
+        "yes"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "late": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 3
+    },
+    {
+      "group": [
+        "sol",
+        "range_absent",
+        "no"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 5,
+          "kills": 0,
+          "missing": 0,
+          "planned": 5,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.434482
+          ]
+        },
+        "late": {
+          "evaluable": 5,
+          "kills": 5,
+          "missing": 0,
+          "planned": 5,
+          "rate": 1.0,
+          "wilson95": [
+            0.565518,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 5,
+          "kills": 5,
+          "missing": 0,
+          "planned": 5,
+          "rate": 1.0,
+          "wilson95": [
+            0.565518,
+            1
+          ]
+        }
+      },
+      "suites": 5
+    },
+    {
+      "group": [
+        "sol",
+        "range_absent",
+        "unknown"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 8,
+          "kills": 0,
+          "missing": 0,
+          "planned": 8,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.324408
+          ]
+        },
+        "late": {
+          "evaluable": 8,
+          "kills": 8,
+          "missing": 0,
+          "planned": 8,
+          "rate": 1.0,
+          "wilson95": [
+            0.675592,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 8,
+          "kills": 8,
+          "missing": 0,
+          "planned": 8,
+          "rate": 1.0,
+          "wilson95": [
+            0.675592,
+            1
+          ]
+        }
+      },
+      "suites": 8
+    },
+    {
+      "group": [
+        "sol",
+        "range_absent",
+        "yes"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 2,
+          "kills": 0,
+          "missing": 0,
+          "planned": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.65762
+          ]
+        },
+        "late": {
+          "evaluable": 2,
+          "kills": 0,
+          "missing": 0,
+          "planned": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.65762
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 2,
+          "kills": 2,
+          "missing": 0,
+          "planned": 2,
+          "rate": 1.0,
+          "wilson95": [
+            0.34238,
+            1
+          ]
+        }
+      },
+      "suites": 2
+    },
+    {
+      "group": [
+        "sol",
+        "range_present",
+        "no"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "late": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 3
+    },
+    {
+      "group": [
+        "sol",
+        "range_present",
+        "unknown"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 10,
+          "kills": 0,
+          "missing": 0,
+          "planned": 10,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.277533
+          ]
+        },
+        "late": {
+          "evaluable": 10,
+          "kills": 6,
+          "missing": 0,
+          "planned": 10,
+          "rate": 0.6,
+          "wilson95": [
+            0.312674,
+            0.83182
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 10,
+          "kills": 10,
+          "missing": 0,
+          "planned": 10,
+          "rate": 1.0,
+          "wilson95": [
+            0.722467,
+            1.0
+          ]
+        }
+      },
+      "suites": 10
+    },
+    {
+      "group": [
+        "sol",
+        "range_present",
+        "yes"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 2,
+          "kills": 0,
+          "missing": 0,
+          "planned": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.65762
+          ]
+        },
+        "late": {
+          "evaluable": 2,
+          "kills": 0,
+          "missing": 0,
+          "planned": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.65762
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 2,
+          "kills": 2,
+          "missing": 0,
+          "planned": 2,
+          "rate": 1.0,
+          "wilson95": [
+            0.34238,
+            1
+          ]
+        }
+      },
+      "suites": 2
+    }
+  ],
+  "mutant_by_model_prompt_wait_style": [
+    {
+      "group": [
+        "astra",
+        "range_absent",
+        "event_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 5,
+          "kills": 0,
+          "missing": 0,
+          "planned": 5,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.434482
+          ]
+        },
+        "late": {
+          "evaluable": 5,
+          "kills": 4,
+          "missing": 0,
+          "planned": 5,
+          "rate": 0.8,
+          "wilson95": [
+            0.375535,
+            0.963776
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 5,
+          "kills": 5,
+          "missing": 0,
+          "planned": 5,
+          "rate": 1.0,
+          "wilson95": [
+            0.565518,
+            1
+          ]
+        }
+      },
+      "suites": 5
+    },
+    {
+      "group": [
+        "astra",
+        "range_absent",
+        "fixed_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 10,
+          "kills": 0,
+          "missing": 0,
+          "planned": 10,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.277533
+          ]
+        },
+        "late": {
+          "evaluable": 10,
+          "kills": 5,
+          "missing": 0,
+          "planned": 10,
+          "rate": 0.5,
+          "wilson95": [
+            0.236593,
+            0.763407
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 10,
+          "kills": 10,
+          "missing": 0,
+          "planned": 10,
+          "rate": 1.0,
+          "wilson95": [
+            0.722467,
+            1.0
+          ]
+        }
+      },
+      "suites": 10
+    },
+    {
+      "group": [
+        "astra",
+        "range_present",
+        "event_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 2,
+          "kills": 0,
+          "missing": 0,
+          "planned": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.65762
+          ]
+        },
+        "late": {
+          "evaluable": 2,
+          "kills": 2,
+          "missing": 0,
+          "planned": 2,
+          "rate": 1.0,
+          "wilson95": [
+            0.34238,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 2,
+          "kills": 2,
+          "missing": 0,
+          "planned": 2,
+          "rate": 1.0,
+          "wilson95": [
+            0.34238,
+            1
+          ]
+        }
+      },
+      "suites": 2
+    },
+    {
+      "group": [
+        "astra",
+        "range_present",
+        "fixed_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 12,
+          "kills": 0,
+          "missing": 0,
+          "planned": 12,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.242494
+          ]
+        },
+        "late": {
+          "evaluable": 12,
+          "kills": 12,
+          "missing": 0,
+          "planned": 12,
+          "rate": 1.0,
+          "wilson95": [
+            0.757506,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 12,
+          "kills": 12,
+          "missing": 0,
+          "planned": 12,
+          "rate": 1.0,
+          "wilson95": [
+            0.757506,
+            1
+          ]
+        }
+      },
+      "suites": 12
+    },
+    {
+      "group": [
+        "human",
+        "none",
+        "fixed_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "late": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 3
+    },
+    {
+      "group": [
+        "luna",
+        "range_absent",
+        "fixed_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 4,
+          "kills": 0,
+          "missing": 0,
+          "planned": 4,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.489891
+          ]
+        },
+        "late": {
+          "evaluable": 4,
+          "kills": 4,
+          "missing": 0,
+          "planned": 4,
+          "rate": 1.0,
+          "wilson95": [
+            0.510109,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 1,
+          "planned": 4,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 4
+    },
+    {
+      "group": [
+        "luna",
+        "range_present",
+        "fixed_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "late": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 3
+    },
+    {
+      "group": [
+        "sol",
+        "range_absent",
+        "fixed+event"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 1,
+          "kills": 0,
+          "missing": 0,
+          "planned": 1,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.793451
+          ]
+        },
+        "late": {
+          "evaluable": 1,
+          "kills": 1,
+          "missing": 0,
+          "planned": 1,
+          "rate": 1.0,
+          "wilson95": [
+            0.206549,
+            1
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 1,
+          "kills": 1,
+          "missing": 0,
+          "planned": 1,
+          "rate": 1.0,
+          "wilson95": [
+            0.206549,
+            1
+          ]
+        }
+      },
+      "suites": 1
+    },
+    {
+      "group": [
+        "sol",
+        "range_absent",
+        "fixed_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 14,
+          "kills": 0,
+          "missing": 0,
+          "planned": 14,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.215311
+          ]
+        },
+        "late": {
+          "evaluable": 14,
+          "kills": 12,
+          "missing": 0,
+          "planned": 14,
+          "rate": 0.857143,
+          "wilson95": [
+            0.600586,
+            0.959906
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 14,
+          "kills": 14,
+          "missing": 0,
+          "planned": 14,
+          "rate": 1.0,
+          "wilson95": [
+            0.784689,
+            1
+          ]
+        }
+      },
+      "suites": 14
+    },
+    {
+      "group": [
+        "sol",
+        "range_present",
+        "event_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 2,
+          "kills": 0,
+          "missing": 0,
+          "planned": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.65762
+          ]
+        },
+        "late": {
+          "evaluable": 2,
+          "kills": 1,
+          "missing": 0,
+          "planned": 2,
+          "rate": 0.5,
+          "wilson95": [
+            0.094531,
+            0.905469
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 2,
+          "kills": 2,
+          "missing": 0,
+          "planned": 2,
+          "rate": 1.0,
+          "wilson95": [
+            0.34238,
+            1
+          ]
+        }
+      },
+      "suites": 2
+    },
+    {
+      "group": [
+        "sol",
+        "range_present",
+        "fixed+event"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 3,
+          "kills": 0,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.0,
+          "wilson95": [
+            0.0,
+            0.561497
+          ]
+        },
+        "late": {
+          "evaluable": 3,
+          "kills": 2,
+          "missing": 0,
+          "planned": 3,
+          "rate": 0.666667,
+          "wilson95": [
+            0.20766,
+            0.938508
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 3,
+          "kills": 3,
+          "missing": 0,
+          "planned": 3,
+          "rate": 1.0,
+          "wilson95": [
+            0.438503,
+            1
+          ]
+        }
+      },
+      "suites": 3
+    },
+    {
+      "group": [
+        "sol",
+        "range_present",
+        "fixed_only"
+      ],
+      "mutants": {
+        "early": {
+          "evaluable": 10,
+          "kills": 0,
+          "missing": 0,
+          "planned": 10,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.277533
+          ]
+        },
+        "late": {
+          "evaluable": 10,
+          "kills": 6,
+          "missing": 0,
+          "planned": 10,
+          "rate": 0.6,
+          "wilson95": [
+            0.312674,
+            0.83182
+          ]
+        },
+        "nonarrival": {
+          "evaluable": 10,
+          "kills": 10,
+          "missing": 0,
+          "planned": 10,
+          "rate": 1.0,
+          "wilson95": [
+            0.722467,
+            1.0
+          ]
+        }
+      },
+      "suites": 10
+    }
+  ],
+  "zero_clock_fail_latency_by_model_prompt": [
+    {
+      "definite": 5,
+      "model": "astra",
+      "not_found": 0,
+      "prompt_condition": "range_absent",
+      "unknown": 5
+    },
+    {
+      "definite": 5,
+      "model": "astra",
+      "not_found": 1,
+      "prompt_condition": "range_present",
+      "unknown": 5
+    },
+    {
+      "definite": 1,
+      "model": "luna",
+      "not_found": 0,
+      "prompt_condition": "range_absent",
+      "unknown": 1
+    },
+    {
+      "definite": 1,
+      "model": "luna",
+      "not_found": 1,
+      "prompt_condition": "range_present",
+      "unknown": 0
+    },
+    {
+      "definite": 6,
+      "model": "sol",
+      "not_found": 0,
+      "prompt_condition": "range_absent",
+      "unknown": 3
+    },
+    {
+      "definite": 3,
+      "model": "sol",
+      "not_found": 1,
+      "prompt_condition": "range_present",
+      "unknown": 9
+    }
+  ]
+}

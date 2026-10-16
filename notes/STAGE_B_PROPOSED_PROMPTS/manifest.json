@@ -1,0 +1,49 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "date": "2026-10-08",
+  "reminder_words": 52,
+  "prompts": [
+    {
+      "condition": "loose_spec",
+      "task": "rtc_alarm_callback",
+      "path": "notes/STAGE_B_PROPOSED_PROMPTS/loose_spec/rtc_alarm_callback.txt",
+      "sha256": "3fe736ffb3c39fd9298ddf62f6f68955f83d577c6a35b62df25ed6da2aa9d0ff",
+      "words": 253
+    },
+    {
+      "condition": "reminder_only",
+      "task": "rtc_alarm_callback",
+      "path": "notes/STAGE_B_PROPOSED_PROMPTS/reminder_only/rtc_alarm_callback.txt",
+      "sha256": "98492752ee1079141a80c562b3fa870f624623d4b1c31810de2731db7d418cbd",
+      "words": 317
+    },
+    {
+      "condition": "loose_spec",
+      "task": "rtc_alarm_pending",
+      "path": "notes/STAGE_B_PROPOSED_PROMPTS/loose_spec/rtc_alarm_pending.txt",
+      "sha256": "83d85330f78c1aefbee29b610f2de5f724fbd9145c58b90269fd5297d80e3cfd",
+      "words": 228
+    },
+    {
+      "condition": "reminder_only",
+      "task": "rtc_alarm_pending",
+      "path": "notes/STAGE_B_PROPOSED_PROMPTS/reminder_only/rtc_alarm_pending.txt",
+      "sha256": "ce0f8ea8954a4d116bcc9796c291da78db2a4b29172f6a25e87c428952e1eb06",
+      "words": 305
+    },
+    {
+      "condition": "loose_spec",
+      "task": "rtc_time_counting",
+      "path": "notes/STAGE_B_PROPOSED_PROMPTS/loose_spec/rtc_time_counting.txt",
+      "sha256": "03b0fc84ed752940f0063d4c4f120005b9b5a6844b68c51c81b2a1e532cb9fcb",
+      "words": 234
+    },
+    {
+      "condition": "reminder_only",
+      "task": "rtc_time_counting",
+      "path": "notes/STAGE_B_PROPOSED_PROMPTS/reminder_only/rtc_time_counting.txt",
+      "sha256": "5eef661d33c3cb8720a763637713151f122f85535cdba9b61b7475904360be53",
+      "words": 296
+    }
+  ]
+}

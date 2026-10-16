@@ -1,0 +1,179 @@
+{
+  "scope": "13 generated tasks for all_tasks; three RTC tasks for rtc_tasks and outcomes",
+  "cells": [
+    {
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "all_tasks": {
+        "generated": 65,
+        "build_fail": 13,
+        "functional_fail_after_build": 13,
+        "nominal_fail_after_functional": 1,
+        "eligible": 38
+      },
+      "rtc_tasks": {
+        "generated": 15,
+        "build_fail": 7,
+        "functional_fail_after_build": 4,
+        "nominal_fail_after_functional": 0,
+        "eligible": 4
+      },
+      "clock_fail_suites": 0,
+      "clock_complete_pass_suites": 2,
+      "clock_prediction_only_suites": 2,
+      "clock_incomplete_zero_fail_suites": 0,
+      "robust_confirmed_share_all_rtc_attempts": 0.13333333333333333,
+      "robust_possible_upper_share_all_rtc_attempts": 0.26666666666666666,
+      "slow_oscillator_kill": 4,
+      "slow_oscillator_evaluable": 4,
+      "late_alarm_offset_kill": 0,
+      "late_alarm_offset_evaluable": 0,
+      "late_alarm_offset_missing": 0
+    },
+    {
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "all_tasks": {
+        "generated": 65,
+        "build_fail": 15,
+        "functional_fail_after_build": 12,
+        "nominal_fail_after_functional": 1,
+        "eligible": 37
+      },
+      "rtc_tasks": {
+        "generated": 15,
+        "build_fail": 8,
+        "functional_fail_after_build": 4,
+        "nominal_fail_after_functional": 0,
+        "eligible": 3
+      },
+      "clock_fail_suites": 0,
+      "clock_complete_pass_suites": 2,
+      "clock_prediction_only_suites": 1,
+      "clock_incomplete_zero_fail_suites": 0,
+      "robust_confirmed_share_all_rtc_attempts": 0.13333333333333333,
+      "robust_possible_upper_share_all_rtc_attempts": 0.2,
+      "slow_oscillator_kill": 0,
+      "slow_oscillator_evaluable": 3,
+      "late_alarm_offset_kill": 0,
+      "late_alarm_offset_evaluable": 0,
+      "late_alarm_offset_missing": 0
+    },
+    {
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "all_tasks": {
+        "generated": 65,
+        "build_fail": 0,
+        "functional_fail_after_build": 4,
+        "nominal_fail_after_functional": 2,
+        "eligible": 59
+      },
+      "rtc_tasks": {
+        "generated": 15,
+        "build_fail": 0,
+        "functional_fail_after_build": 0,
+        "nominal_fail_after_functional": 0,
+        "eligible": 15
+      },
+      "clock_fail_suites": 2,
+      "clock_complete_pass_suites": 6,
+      "clock_prediction_only_suites": 4,
+      "clock_incomplete_zero_fail_suites": 3,
+      "robust_confirmed_share_all_rtc_attempts": 0.4,
+      "robust_possible_upper_share_all_rtc_attempts": 0.8666666666666667,
+      "slow_oscillator_kill": 13,
+      "slow_oscillator_evaluable": 15,
+      "late_alarm_offset_kill": 7,
+      "late_alarm_offset_evaluable": 9,
+      "late_alarm_offset_missing": 1
+    },
+    {
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "all_tasks": {
+        "generated": 65,
+        "build_fail": 0,
+        "functional_fail_after_build": 1,
+        "nominal_fail_after_functional": 2,
+        "eligible": 62
+      },
+      "rtc_tasks": {
+        "generated": 15,
+        "build_fail": 0,
+        "functional_fail_after_build": 0,
+        "nominal_fail_after_functional": 0,
+        "eligible": 15
+      },
+      "clock_fail_suites": 0,
+      "clock_complete_pass_suites": 8,
+      "clock_prediction_only_suites": 2,
+      "clock_incomplete_zero_fail_suites": 5,
+      "robust_confirmed_share_all_rtc_attempts": 0.5333333333333333,
+      "robust_possible_upper_share_all_rtc_attempts": 1.0,
+      "slow_oscillator_kill": 9,
+      "slow_oscillator_evaluable": 15,
+      "late_alarm_offset_kill": 8,
+      "late_alarm_offset_evaluable": 10,
+      "late_alarm_offset_missing": 0
+    },
+    {
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "all_tasks": {
+        "generated": 65,
+        "build_fail": 0,
+        "functional_fail_after_build": 0,
+        "nominal_fail_after_functional": 2,
+        "eligible": 63
+      },
+      "rtc_tasks": {
+        "generated": 15,
+        "build_fail": 0,
+        "functional_fail_after_build": 0,
+        "nominal_fail_after_functional": 0,
+        "eligible": 15
+      },
+      "clock_fail_suites": 1,
+      "clock_complete_pass_suites": 10,
+      "clock_prediction_only_suites": 4,
+      "clock_incomplete_zero_fail_suites": 0,
+      "robust_confirmed_share_all_rtc_attempts": 0.6666666666666666,
+      "robust_possible_upper_share_all_rtc_attempts": 0.9333333333333333,
+      "slow_oscillator_kill": 9,
+      "slow_oscillator_evaluable": 15,
+      "late_alarm_offset_kill": 10,
+      "late_alarm_offset_evaluable": 10,
+      "late_alarm_offset_missing": 0
+    },
+    {
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "all_tasks": {
+        "generated": 65,
+        "build_fail": 2,
+        "functional_fail_after_build": 0,
+        "nominal_fail_after_functional": 1,
+        "eligible": 62
+      },
+      "rtc_tasks": {
+        "generated": 15,
+        "build_fail": 0,
+        "functional_fail_after_build": 0,
+        "nominal_fail_after_functional": 1,
+        "eligible": 14
+      },
+      "clock_fail_suites": 0,
+      "clock_complete_pass_suites": 11,
+      "clock_prediction_only_suites": 3,
+      "clock_incomplete_zero_fail_suites": 0,
+      "robust_confirmed_share_all_rtc_attempts": 0.7333333333333333,
+      "robust_possible_upper_share_all_rtc_attempts": 0.9333333333333333,
+      "slow_oscillator_kill": 14,
+      "slow_oscillator_evaluable": 14,
+      "late_alarm_offset_kill": 9,
+      "late_alarm_offset_evaluable": 9,
+      "late_alarm_offset_missing": 0
+    }
+  ]
+}

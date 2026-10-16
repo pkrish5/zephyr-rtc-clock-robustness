@@ -1,0 +1,8 @@
+{
+  "forecast_sha256": "ad0b6c97414478c68bc3296401638c1a2766a2ca47aae17ee0921d96da3e925a",
+  "generator_sha256": "b763fa1ed074256a915337c9c46be7439019a126f482a0fef1bceb308e5f22ce",
+  "registered_utc": "2026-10-04T19:34:28+00:00",
+  "sample_sha256": "4d3a59312296d9ecfdefd1e1640e4dcd9423f81d05274a868be8c5386a784767",
+  "schema_version": 2,
+  "superseded_sample_sha256": "9af3d38874adf2c24ceb93c0063a09c400e57ca1390d1c3a992fc7e44b06a014"
+}

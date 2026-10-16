@@ -1,0 +1,13 @@
+{
+  "categories": {
+    "alarm_register_readback_second": 41,
+    "callback_before_requested_RTC_time": 18,
+    "callback_calendar_second_mismatch": 13,
+    "combined_ID_read_or_callback_RTC_time": 1
+  },
+  "combined_or_ambiguous": 1,
+  "confirmed_calendar_relative": 72,
+  "method": "single-reviewer source and persisted-UART coding; combined causes retained separately",
+  "registered_manifest_sha256": "8cb29f03c2d2bf604846508fc2149ac96b88953b6ce6594ed0b1e98afaf4fdea",
+  "unit": "first failing assertion in each scored offset kill"
+}

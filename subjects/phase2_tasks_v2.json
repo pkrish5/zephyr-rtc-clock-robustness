@@ -1,0 +1,190 @@
+{
+  "board": "stm32f4_disco/stm32f407xx",
+  "schema_version": 2,
+  "tasks": [
+    {
+      "api_hints": "k_timer_init, k_timer_start, k_timer_status_sync, k_timer_stop, K_MSEC; include <zephyr/kernel.h> and <zephyr/ztest.h>. If using ZTEST_USER, grant access to kernel objects in suite setup.",
+      "arm": "hsi",
+      "build_conf": "CONFIG_ZTEST=y\nCONFIG_TEST_USERSPACE=y\nCONFIG_MP_MAX_NUM_CPUS=1\nCONFIG_TEST_RANDOM_GENERATOR=y\n",
+      "feature_spec": "Exercise a Zephyr periodic k_timer whose expiry is delivered through the kernel timer interrupt path. A thread should observe successive expirations with k_timer_status_sync(), verify that expiry notifications occur and are counted, then stop the timer and verify that status synchronization no longer reports an expiry.",
+      "human_app": "tests/kernel/timer/timer_api",
+      "human_case": "timer_api.test_timer_status_sync",
+      "id": "timer_api",
+      "required_oracles": [
+        "The timer expires at least twice and each synchronization returns a nonzero expiration count.",
+        "The test verifies an observable timer state or callback count after those expirations.",
+        "After stopping, synchronization reports no further expiry."
+      ]
+    },
+    {
+      "api_hints": "k_sem_init or K_SEM_DEFINE, k_sem_reset, k_sem_give, k_sem_count_get, irq_offload; include <zephyr/kernel.h>, <zephyr/irq_offload.h>, and <zephyr/ztest.h>. irq_offload callback signature is void (*)(const void *).",
+      "arm": "hsi",
+      "build_conf": "CONFIG_ZTEST=y\nCONFIG_IRQ_OFFLOAD=y\nCONFIG_TEST_USERSPACE=y\nCONFIG_ZTEST_FATAL_HOOK=y\nCONFIG_MAX_THREAD_BYTES=3\nCONFIG_TIMESLICE_SIZE=0\n",
+      "feature_spec": "Exercise a Zephyr semaphore given from an interrupt context. Start with count zero, invoke irq_offload() to run a handler that calls k_sem_give(), and verify the observable semaphore count grows as expected across multiple gives.",
+      "human_app": "tests/kernel/semaphore/semaphore",
+      "human_case": "semaphore.test_sem_give_from_isr",
+      "id": "semaphore",
+      "required_oracles": [
+        "The initial count is zero.",
+        "Each ISR give changes the count by one and no give is lost.",
+        "At least two ISR gives are exercised."
+      ]
+    },
+    {
+      "api_hints": "k_fifo_init or K_FIFO_DEFINE, k_fifo_put, k_fifo_get, irq_offload, K_NO_WAIT; FIFO items must reserve a pointer-sized first word for kernel linkage.",
+      "arm": "hsi",
+      "build_conf": "CONFIG_ZTEST=y\nCONFIG_IRQ_OFFLOAD=y\n",
+      "feature_spec": "Exercise data transfer from interrupt context to a thread through a Zephyr k_fifo. An ISR handler should put at least two distinct items into the FIFO; the test thread should retrieve them and verify FIFO order and empty state afterward.",
+      "human_app": "tests/kernel/fifo/fifo_api",
+      "human_case": "fifo_api.test_fifo_isr2thread",
+      "id": "fifo_api",
+      "required_oracles": [
+        "Both retrieved pointers identify the items sent by the ISR in insertion order.",
+        "The queue is empty after both gets.",
+        "The ISR path is actually used."
+      ]
+    },
+    {
+      "api_hints": "k_lifo_init or K_LIFO_DEFINE, k_lifo_put, k_lifo_get, irq_offload, K_NO_WAIT; LIFO items must reserve a pointer-sized first word for kernel linkage.",
+      "arm": "hsi",
+      "build_conf": "CONFIG_ZTEST=y\nCONFIG_IRQ_OFFLOAD=y\n",
+      "feature_spec": "Exercise data transfer from interrupt context to a thread through a Zephyr k_lifo. An ISR handler should put at least two distinct items into the LIFO; the test thread should retrieve them and verify reverse insertion order and empty state afterward.",
+      "human_app": "tests/kernel/lifo/lifo_api",
+      "human_case": "lifo_contexts.test_lifo_isr2thread",
+      "id": "lifo_api",
+      "required_oracles": [
+        "Both retrieved pointers identify the items sent by the ISR in reverse insertion order.",
+        "The LIFO is empty after both gets.",
+        "The ISR path is actually used."
+      ]
+    },
+    {
+      "api_hints": "K_MSGQ_DEFINE or k_msgq_init, k_msgq_put, k_msgq_get, k_msgq_num_used_get, irq_offload, K_NO_WAIT; an ISR must not request a blocking timeout.",
+      "arm": "hsi",
+      "build_conf": "CONFIG_ZTEST=y\nCONFIG_IRQ_OFFLOAD=y\nCONFIG_TEST_USERSPACE=y\n",
+      "feature_spec": "Exercise a Zephyr k_msgq across interrupt and thread contexts. Put one or more distinct fixed-size messages from an ISR using the nonblocking operation, retrieve them from the test thread, and check their values and queue state.",
+      "human_app": "tests/kernel/msgq/msgq_api",
+      "human_case": "msgq_api.test_msgq_isr",
+      "id": "msgq_api",
+      "required_oracles": [
+        "The ISR put succeeds without blocking.",
+        "Retrieved message bytes equal the values sent from the ISR.",
+        "The queue is empty after retrieval."
+      ]
+    },
+    {
+      "api_hints": "K_WORK_DELAYABLE_DEFINE or k_work_init_delayable, k_work_schedule, k_work_delayable_is_pending, k_sem_take or another observable completion event, k_uptime_get, K_MSEC. The system work queue avoids custom queue setup.",
+      "arm": "hsi",
+      "build_conf": "CONFIG_ZTEST=y\nCONFIG_IRQ_OFFLOAD=y\nCONFIG_HEAP_MEM_POOL_SIZE=1024\nCONFIG_THREAD_NAME=y\nCONFIG_NUM_COOP_PRIORITIES=4\nCONFIG_NUM_PREEMPT_PRIORITIES=4\nCONFIG_SYSTEM_WORKQUEUE_PRIORITY=-3\nCONFIG_ZTEST_THREAD_PRIORITY=-2\n",
+      "feature_spec": "Exercise timer-driven delayed work on Zephyr's system work queue. Schedule a k_work_delayable item for a short nonzero delay; verify it is pending before execution, its handler runs exactly once after the delay, and it is no longer pending afterward.",
+      "human_app": "tests/kernel/workq/work",
+      "human_case": "work_1cpu.test_1cpu_basic_schedule",
+      "id": "workq",
+      "required_oracles": [
+        "Scheduling succeeds and the work is pending before the delay elapses.",
+        "The handler executes exactly once.",
+        "The handler is not observed before the requested delay, allowing documented tick granularity.",
+        "The item is no longer pending after completion."
+      ]
+    },
+    {
+      "api_hints": "k_queue_init or K_QUEUE_DEFINE, k_queue_append, k_queue_get, irq_offload, K_NO_WAIT; queue items must reserve a pointer-sized first word for kernel linkage.",
+      "arm": "hsi",
+      "build_conf": "CONFIG_ZTEST=y\nCONFIG_IRQ_OFFLOAD=y\nCONFIG_TEST_USERSPACE=y\nCONFIG_ZTEST_FATAL_HOOK=y\nCONFIG_MAX_THREAD_BYTES=8\n",
+      "feature_spec": "Exercise a Zephyr k_queue with ISR-to-thread transfer. The ISR should append at least two distinct linked items, and the test thread should get them in insertion order and verify that no item remains.",
+      "human_app": "tests/kernel/queue",
+      "human_case": "queue_api.test_queue_isr2thread",
+      "id": "queue",
+      "required_oracles": [
+        "The ISR append path executes.",
+        "Retrieved pointers preserve insertion order.",
+        "The queue is empty afterward."
+      ]
+    },
+    {
+      "api_hints": "k_thread_create, K_THREAD_STACK_DEFINE, k_sleep, k_wakeup, k_sem_give, k_sem_take, irq_offload, k_uptime_get; irq_offload callback signature is void (*)(const void *).",
+      "arm": "hsi",
+      "build_conf": "CONFIG_IRQ_OFFLOAD=y\nCONFIG_ZTEST=y\nCONFIG_TEST_USERSPACE=y\nCONFIG_MP_MAX_NUM_CPUS=1\n",
+      "feature_spec": "Exercise waking a Zephyr thread that is sleeping with k_sleep(). Arrange an ISR to call k_wakeup() on that thread; verify the sleeping thread resumes before its requested sleep duration and signals completion. Use an observable synchronization event to know that the thread resumed.",
+      "human_app": "tests/kernel/sleep",
+      "human_case": "sleep.test_sleep",
+      "id": "sleep",
+      "required_oracles": [
+        "The wakeup is issued from an interrupt context while the target is asleep.",
+        "The thread reports completion after the ISR wakeup.",
+        "The observed sleep duration is shorter than the requested duration with a justified margin."
+      ]
+    },
+    {
+      "api_hints": "k_thread_create, K_THREAD_STACK_DEFINE, k_sleep, k_sem_init, k_sem_give, k_sem_take, k_uptime_get; include <zephyr/kernel.h> and <zephyr/ztest.h>.",
+      "arm": "hsi",
+      "build_conf": "CONFIG_IRQ_OFFLOAD=y\nCONFIG_ZTEST=y\nCONFIG_MP_MAX_NUM_CPUS=1\nCONFIG_MAX32_ON_ENTER_CPU_IDLE_HOOK=n\n",
+      "feature_spec": "Exercise timer-interrupt-driven thread sleep and wakeup. Create a worker thread that sleeps for a short bounded interval with k_sleep(), then signals a semaphore or other event. The test thread should verify the worker did not complete immediately, then that it resumes and delivers the event after the timeout.",
+      "human_app": "tests/kernel/context",
+      "human_case": "context_one_cpu.test_k_sleep",
+      "id": "context",
+      "required_oracles": [
+        "The worker enters timed sleep and cannot report completion immediately.",
+        "A completion event arrives after the sleep timeout.",
+        "The test distinguishes the event from an unrelated immediate signal."
+      ]
+    },
+    {
+      "api_hints": "k_timer_init, k_timer_start, k_timer_status_sync, k_thread_create, k_sem_take or k_sem_give, K_MSEC. A semaphore or atomic state can expose completion.",
+      "arm": "hsi",
+      "build_conf": "CONFIG_ZTEST=y\nCONFIG_MP_MAX_NUM_CPUS=1\n",
+      "feature_spec": "Exercise a thread blocked on a Zephyr k_timer until a one-shot timer expiry delivered by the kernel interrupt path. The test should verify it was pending before expiry, then receives a timer expiration and an associated completion signal without losing the event.",
+      "human_app": "tests/kernel/pending",
+      "human_case": "pending.test_pending_timer",
+      "id": "pending",
+      "required_oracles": [
+        "The worker is blocked before the timer expires.",
+        "The timer expiration wakes it and completion is observed.",
+        "The received timer status or event data is checked, not merely a delay."
+      ]
+    },
+    {
+      "api_hints": "DEVICE_DT_GET(DT_ALIAS(rtc)), rtc_set_time, rtc_get_time, rtc_alarm_set_time, rtc_alarm_set_callback, rtc_alarm_is_pending, RTC_ALARM_TIME_MASK_SECOND, RTC_ALARM_TIME_MASK_MINUTE, RTC_ALARM_TIME_MASK_HOUR, atomic_t or k_sem. Include <zephyr/drivers/rtc.h> and <zephyr/ztest.h>. This board exposes two RTC alarm channels.",
+      "arm": "lsi_pilot",
+      "build_conf": "CONFIG_RTC=y\nCONFIG_RTC_ALARM=y\nCONFIG_ZTEST=y\n",
+      "feature_spec": "Exercise the STM32F407 RTC alarm callbacks using the board's RTC alias. The RTC uses the independent LSI oscillator. Set calendar time to 2024-12-31 23:59:55 and alarm time to 2025-01-01 00:00:05 for both alarm channels. Use supported second, minute, and hour alarm fields (mask 7). Verify neither callback is reported prematurely, then that both are reported when the RTC reaches the alarm time. Each callback must identify its configured alarm channel.",
+      "human_app": "tests/drivers/rtc/rtc_api",
+      "human_case": "rtc_api.test_alarm_callback",
+      "id": "rtc_alarm_callback",
+      "required_oracles": [
+        "Neither callback is observed before the alarm time.",
+        "Both callbacks fire at the configured RTC time and report the expected alarm IDs.",
+        "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+      ]
+    },
+    {
+      "api_hints": "DEVICE_DT_GET(DT_ALIAS(rtc)), rtc_set_time, rtc_get_time, struct rtc_time, k_sleep, K_MSEC, timeutil_timegm or explicit calendar-field checks. Include <zephyr/drivers/rtc.h> and <zephyr/ztest.h>. The RTC is clocked independently of the CPU.",
+      "arm": "lsi_pilot",
+      "build_conf": "CONFIG_RTC=y\nCONFIG_ZTEST=y\n",
+      "feature_spec": "Exercise STM32F407 RTC calendar counting through the board's RTC alias. The RTC uses an independent LSI oscillator. Set a calendar time near a year boundary, then observe it advance monotonically through at least ten RTC seconds and cross the boundary. Compare RTC calendar values, not just host uptime.",
+      "human_app": "tests/drivers/rtc/rtc_api",
+      "human_case": "rtc_api.test_time_counting",
+      "id": "rtc_time_counting",
+      "required_oracles": [
+        "Setting and subsequently reading the initial RTC calendar succeeds.",
+        "Successive observed RTC calendar values do not move backward.",
+        "The RTC calendar reaches a time at least ten RTC seconds after the initial value, under a finite, justified observation bound."
+      ]
+    },
+    {
+      "api_hints": "DEVICE_DT_GET(DT_ALIAS(rtc)), rtc_set_time, rtc_get_time, rtc_alarm_set_time, rtc_alarm_get_time, rtc_alarm_is_pending, RTC_ALARM_TIME_MASK_SECOND, RTC_ALARM_TIME_MASK_MINUTE, RTC_ALARM_TIME_MASK_HOUR. Include <zephyr/drivers/rtc.h> and <zephyr/ztest.h>. This board exposes two RTC alarm channels.",
+      "arm": "lsi_pilot",
+      "build_conf": "CONFIG_RTC=y\nCONFIG_RTC_ALARM=y\nCONFIG_ZTEST=y\n",
+      "feature_spec": "Exercise the STM32F407 RTC alarm-pending state through the board's RTC alias. Set the calendar to 2024-12-31 23:59:55 and an alarm to 2025-01-01 00:00:05. Use supported second, minute, and hour alarm fields (mask 7). Check the alarm does not become pending before the configured calendar time, then becomes pending after the RTC reaches it. No alarm callback is required.",
+      "human_app": "tests/drivers/rtc/rtc_api",
+      "human_case": "rtc_api.test_alarm",
+      "id": "rtc_alarm_pending",
+      "required_oracles": [
+        "The test configures and reads back a supported RTC alarm time successfully.",
+        "The alarm is not observed pending before its configured RTC time.",
+        "The alarm is observed pending after the RTC reaches its configured time, under a finite, justified observation bound."
+      ]
+    }
+  ],
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

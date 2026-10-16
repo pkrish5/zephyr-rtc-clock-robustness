@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 101,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_present",
+  "generation_date_utc": "2026-10-03T20:40:29.607118+00:00",
+  "model": "gpt-6-luna",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/msgq_api/range_present.txt",
+  "prompt_sha256": "29a728fd31b25c9d50623ca5bd823fd8afa5157b523b410b853a629fd1924b3f",
+  "prompt_transport": "argument",
+  "response_sha256": "4ac9f860bab934f18cf2a106068304b9f312fd342d2e1c323a9bd027327f7f0c",
+  "run_id": "luna-range_present-msgq_api-r02",
+  "sample_index": 2,
+  "source_sha256": "7298d429830fa085f09253bccd435c561262b58721f340755f5b0626ef95444f",
+  "status": "generated",
+  "task_id": "msgq_api",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 13056,
+    "input_tokens": 13894,
+    "output_tokens": 527,
+    "reasoning_output_tokens": 0
+  }
+}

@@ -1,0 +1,1095 @@
+{
+  "all_pass": true,
+  "expected": 136,
+  "observed": 136,
+  "rows": [
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_pending-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_pending-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_pending-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_pending-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_pending-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_pending-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_pending-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_alarm_pending-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_time_counting-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_time_counting-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_time_counting-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "astra-range_present-rtc_time_counting-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_alarm_callback"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_alarm_callback"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_alarm_callback"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_alarm_callback"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_alarm_pending"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_alarm_pending"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_alarm_pending"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_alarm_pending"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_time_counting"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_time_counting"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_time_counting"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "human-rtc_time_counting"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_absent-rtc_time_counting-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_absent-rtc_time_counting-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_absent-rtc_time_counting-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_absent-rtc_time_counting-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_present-rtc_time_counting-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_present-rtc_time_counting-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_present-rtc_time_counting-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "luna-range_present-rtc_time_counting-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_absent-rtc_time_counting-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_time_counting-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_time_counting-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_time_counting-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_time_counting-r01"
+    },
+    {
+      "added_config": [],
+      "delay_us": 0,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_time_counting-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_time_counting-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 10000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_time_counting-r05"
+    },
+    {
+      "added_config": [],
+      "delay_us": 1000000,
+      "original_driver_compiled": false,
+      "quality_driver_compiled": true,
+      "removed_config": [],
+      "suite_id": "sol-range_present-rtc_time_counting-r05"
+    }
+  ]
+}

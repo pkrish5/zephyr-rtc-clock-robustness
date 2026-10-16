@@ -1,0 +1,11 @@
+{
+  "author_pseudonym": "H001",
+  "assigned_task": "rtc_alarm_callback",
+  "assigned_condition": "range_absent",
+  "prompt_sha256": "FILL_FROM_SPEC_MANIFEST",
+  "started_at_utc": "FILL_AT_ASSIGNMENT",
+  "submitted_at_utc": "FILL_AT_SUBMISSION",
+  "tools_or_assistance_used": "none",
+  "raw_response_sha256": "FILL_AFTER_SUBMISSION",
+  "notes": ""
+}

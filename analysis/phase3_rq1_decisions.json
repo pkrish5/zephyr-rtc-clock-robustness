@@ -1,0 +1,814 @@
+{
+  "decisions": {
+    "context-r01": {
+      "evidence": "The source checks worker readiness or completion around a requested timed sleep, but the immediate no-event check and timestamp placement need a separate scheduling-order review before calling the premise justified or unjustified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/context/r01/test.c": "e3e2853f44a4fc08cfae123df8e0de1a11fb774a3844825845a3ff5b6beb9fee"
+      },
+      "status": "unknown",
+      "task_id": "context"
+    },
+    "context-r02": {
+      "evidence": "The source checks worker readiness or completion around a requested timed sleep, but the immediate no-event check and timestamp placement need a separate scheduling-order review before calling the premise justified or unjustified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/context/r02/test.c": "a1ff584174920f56a971b0b7a9fa744ac88e2384d287af4e7d70ced1106b9e35"
+      },
+      "status": "unknown",
+      "task_id": "context"
+    },
+    "context-r03": {
+      "evidence": "The source checks worker readiness or completion around a requested timed sleep, but the immediate no-event check and timestamp placement need a separate scheduling-order review before calling the premise justified or unjustified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/context/r03/test.c": "57d15794596cf52b29889a953386a2987d1b5d57904315cae80ea5a7bd400492"
+      },
+      "status": "unknown",
+      "task_id": "context"
+    },
+    "context-r04": {
+      "evidence": "The source checks worker readiness or completion around a requested timed sleep, but the immediate no-event check and timestamp placement need a separate scheduling-order review before calling the premise justified or unjustified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/context/r04/test.c": "8db9f6b238f79f63536e9534c953e1c7afccd8b120ac72e99db9f139d2cd0c9e"
+      },
+      "status": "unknown",
+      "task_id": "context"
+    },
+    "context-r05": {
+      "evidence": "The source checks worker readiness or completion around a requested timed sleep, but the immediate no-event check and timestamp placement need a separate scheduling-order review before calling the premise justified or unjustified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/context/r05/test.c": "594ce77f2c763b5b0118dee041ffa0d15361fd1afb1688d30abbbaf7f07246c6"
+      },
+      "status": "unknown",
+      "task_id": "context"
+    },
+    "context_one_cpu.test_k_sleep": {
+      "evidence": "The selected case applies finite 2x and 750 ms waits and asserts delayed-thread order. Their scheduling/timeout margin requires deeper contract review before coding a defect.",
+      "issues": [],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/context/src/main.c": "6bfad2a3f3c0507d4c3b3376cff0c57700d79aecfa1f3f5f4c5c35b41b85fe1a"
+      },
+      "status": "unknown",
+      "task_id": "context"
+    },
+    "fifo_api-r01": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/fifo_api/r01/test.c": "6fcbbd54295fdd5b270b66096b0fdc3a923136d2854a7b1e4a214d09ded314da"
+      },
+      "status": "none_found",
+      "task_id": "fifo_api"
+    },
+    "fifo_api-r02": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/fifo_api/r02/test.c": "bb36fb568b9af15f840eff25a8a916b5f647dd9d36e224d1b696244c344413b7"
+      },
+      "status": "none_found",
+      "task_id": "fifo_api"
+    },
+    "fifo_api-r03": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/fifo_api/r03/test.c": "45545d4e5cb24ecb59f86181141c66bf7e16374478322c6eb7145d26c38cc6e1"
+      },
+      "status": "none_found",
+      "task_id": "fifo_api"
+    },
+    "fifo_api-r04": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/fifo_api/r04/test.c": "36a151f5cd46cf6cd7a7d08059e941130417646ddeaa80b061e8f20aebda2f42"
+      },
+      "status": "none_found",
+      "task_id": "fifo_api"
+    },
+    "fifo_api-r05": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/fifo_api/r05/test.c": "9480e14ebf64ccf3ff74757b1fd2e6aaa4d3c604a76e3e39a765e0121b0d2bc0"
+      },
+      "status": "none_found",
+      "task_id": "fifo_api"
+    },
+    "fifo_api.test_fifo_isr2thread": {
+      "evidence": "Reviewed selected upstream case and reachable helpers: ISR offload completion or queue/semaphore synchronization precedes the checked state; no unsupported fixed arrival deadline found.",
+      "issues": [],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_cancel.c": "cc870b9d2c68838b1d9cb8b475e1af24e2868cc6323297d37cceba0b6884f70f",
+        "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_contexts.c": "5b94703545aaf128d9088245be1846e1ef0442882a872e32c56767f842c1ffa1",
+        "subjects/upstream/zephyr/tests/kernel/fifo/fifo_api/src/test_fifo_loop.c": "1b52f27c9a5ee9b6f1d1704d0ed7043fac5f838287d25255e96adc188d6e38fd"
+      },
+      "status": "none_found",
+      "task_id": "fifo_api"
+    },
+    "lifo_api-r01": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/lifo_api/r01/test.c": "3a20dac34b926d699d7b56cd58fb6855b0a1dd2055f5e5d86c4b658dac16eb28"
+      },
+      "status": "none_found",
+      "task_id": "lifo_api"
+    },
+    "lifo_api-r02": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/lifo_api/r02/test.c": "e7c6860fb7d98bb0a2d625bee6ab7fb1ff0b1a20b4aa69de1e64816b73ad1b38"
+      },
+      "status": "none_found",
+      "task_id": "lifo_api"
+    },
+    "lifo_api-r03": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/lifo_api/r03/test.c": "b17c94a1657a5f07acb3b296fe1af6be504ad2e5fa8f8679699ebf80ed9d45d2"
+      },
+      "status": "none_found",
+      "task_id": "lifo_api"
+    },
+    "lifo_api-r04": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/lifo_api/r04/test.c": "9ab10d4e2397f350096bd5bed31fe8b2dc11c5ee6f5f818cce595f8b6124cbe1"
+      },
+      "status": "none_found",
+      "task_id": "lifo_api"
+    },
+    "lifo_api-r05": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/lifo_api/r05/test.c": "a864fc042dc1dddfabb7abfe62b0b61a2f5ea3f27e02128cb840b33813215730"
+      },
+      "status": "none_found",
+      "task_id": "lifo_api"
+    },
+    "lifo_contexts.test_lifo_isr2thread": {
+      "evidence": "Reviewed selected upstream case and reachable helpers: ISR offload completion or queue/semaphore synchronization precedes the checked state; no unsupported fixed arrival deadline found.",
+      "issues": [],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_contexts.c": "eeac6acea7b58b046d556f264cd904f479ed7f136fdcc7363ab6f03804271168",
+        "subjects/upstream/zephyr/tests/kernel/lifo/lifo_api/src/test_lifo_loop.c": "5dac91f91baeb84996d4151c7474559b1f66a1c27f5683ea8394c50d7fcec4f6"
+      },
+      "status": "none_found",
+      "task_id": "lifo_api"
+    },
+    "msgq_api-r01": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/msgq_api/r01/test.c": "4bda1bcf1a5b3c395408f12c8d450c1ff38189cfc3c021480999a0324ae323e3"
+      },
+      "status": "none_found",
+      "task_id": "msgq_api"
+    },
+    "msgq_api-r02": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/msgq_api/r02/test.c": "323d33d2cc5e1f79af5303abc89bec6dd6adfd884178511bc95cdd47254b0843"
+      },
+      "status": "none_found",
+      "task_id": "msgq_api"
+    },
+    "msgq_api-r03": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/msgq_api/r03/test.c": "7aa0188d8def3de6719b1dcb49bb7a482887130bd1ba6a5ee511ea06ef239e47"
+      },
+      "status": "none_found",
+      "task_id": "msgq_api"
+    },
+    "msgq_api-r04": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/msgq_api/r04/test.c": "cfde656acfd4423fa412ceb8ad7f5af4b99a0b1958404419a05c5a7dcbc06a4d"
+      },
+      "status": "none_found",
+      "task_id": "msgq_api"
+    },
+    "msgq_api-r05": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/msgq_api/r05/test.c": "4d18d8c88835b321ccc6a2da5232b8d933dd0efcc8b8f9638947897ce4057813"
+      },
+      "status": "none_found",
+      "task_id": "msgq_api"
+    },
+    "msgq_api.test_msgq_isr": {
+      "evidence": "Reviewed selected upstream case and reachable helpers: ISR offload completion or queue/semaphore synchronization precedes the checked state; no unsupported fixed arrival deadline found.",
+      "issues": [],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/msgq/msgq_api/src/test_msgq.h": "b50c948e86fb69dacfdb76fb7deb405d8ac11d27fc075611ce92d746571454e9",
+        "subjects/upstream/zephyr/tests/kernel/msgq/msgq_api/src/test_msgq_contexts.c": "69d708599a650db8df74a08f0a0ef1b5557be3dc304a9a44fa37289a0b6e9a83"
+      },
+      "status": "none_found",
+      "task_id": "msgq_api"
+    },
+    "pending-r01": {
+      "evidence": "A fixed 10 ms sleep substitutes for observing that the worker actually blocked in k_timer_status_sync. Priority and scheduling evidence are insufficient to decide this source premise conclusively.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/pending/r01/test.c": "9ec3b0d92670467e71e020f76a20dcb5a1b496afd87aa02d7dfc756c90e537a1"
+      },
+      "status": "unknown",
+      "task_id": "pending"
+    },
+    "pending-r02": {
+      "evidence": "A fixed 10 ms sleep substitutes for observing that the worker actually blocked in k_timer_status_sync. Priority and scheduling evidence are insufficient to decide this source premise conclusively.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/pending/r02/test.c": "213bab404ec1476938d8a527f1af19079e1548c9a60938ad3f5218f94f705651"
+      },
+      "status": "unknown",
+      "task_id": "pending"
+    },
+    "pending-r03": {
+      "evidence": "A polling loop yields while waiting for a lower-priority worker to mark readiness; yielding need not run that worker. The run can hang instead of reaching the timer assertion.",
+      "issues": [
+        {
+          "category": "unbounded_readiness_wait",
+          "line": 39,
+          "path": "generated/phase2_luna/suites/pending/r03/test.c",
+          "reason": "while (atomic_get(&worker_pending) == 0) uses k_yield without a deadline or a priority-safe synchronization event."
+        }
+      ],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/pending/r03/test.c": "a974c281fa0c1b7330de96da1347606e738f180e00b0c4518ca830d392cf3d21"
+      },
+      "status": "unjustified",
+      "task_id": "pending"
+    },
+    "pending-r04": {
+      "evidence": "A fixed 10 ms sleep substitutes for observing that the worker actually blocked in k_timer_status_sync. Priority and scheduling evidence are insufficient to decide this source premise conclusively.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/pending/r04/test.c": "29f2f7a925002fedd7a6815bb7585e91830ac415cc11e0c7ae6737b7f49df675"
+      },
+      "status": "unknown",
+      "task_id": "pending"
+    },
+    "pending-r05": {
+      "evidence": "A polling loop yields while waiting for a lower-priority worker to mark readiness; yielding need not run that worker. The run can hang instead of reaching the timer assertion.",
+      "issues": [
+        {
+          "category": "unbounded_readiness_wait",
+          "line": 41,
+          "path": "generated/phase2_luna/suites/pending/r05/test.c",
+          "reason": "while (atomic_get(&worker_pending) == 0) uses k_yield without a deadline or a priority-safe synchronization event."
+        }
+      ],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/pending/r05/test.c": "da4aee69b9eccc5ef32f78f98500be2c9d515d7714ff337fc10137d6f0c976a7"
+      },
+      "status": "unjustified",
+      "task_id": "pending"
+    },
+    "pending.test_pending_timer": {
+      "evidence": "A fixed 2 s wait is used to let a nominal one-second timer expire; the one-second scheduling margin is not a documented worst-case bound, but no legal violating schedule is yet established.",
+      "issues": [],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/pending/src/main.c": "a8bffa54aa1c964fa8eb1d81f09448901bb9b356215b1e7a3535b9fbba6f4dd9"
+      },
+      "status": "unknown",
+      "task_id": "pending"
+    },
+    "queue-r01": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/queue/r01/test.c": "6ba17494ce3b5cb9a11b486069ee5e555cb6b96d99a6ef49a40c9d891ca5c6b9"
+      },
+      "status": "none_found",
+      "task_id": "queue"
+    },
+    "queue-r02": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/queue/r02/test.c": "cee0a6b10ef36f43f6f6c38f94bc946ecb4e3a04dd9688cac8d42e779ed2d589"
+      },
+      "status": "none_found",
+      "task_id": "queue"
+    },
+    "queue-r03": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/queue/r03/test.c": "7897fe45a34c3ebe7cc84d3312129d49b0eba4b73bb558f65e491d72b2a5c8ed"
+      },
+      "status": "none_found",
+      "task_id": "queue"
+    },
+    "queue-r04": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/queue/r04/test.c": "9280f24259caa92b0c4c7093e450101d8455ae273dc12aedae96b8f7ee2ed4e5"
+      },
+      "status": "none_found",
+      "task_id": "queue"
+    },
+    "queue-r05": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/queue/r05/test.c": "1e28832d6c85b3ae89b63e14e98bb6550e738ec2f94af8bcab31037d0eb5e015"
+      },
+      "status": "none_found",
+      "task_id": "queue"
+    },
+    "queue_api.test_queue_isr2thread": {
+      "evidence": "Reviewed selected upstream case and reachable helpers: ISR offload completion or queue/semaphore synchronization precedes the checked state; no unsupported fixed arrival deadline found.",
+      "issues": [],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_contexts.c": "221b7415fabee11ca866cad23958672aa5ab7bbb7cbe23b44693f4c200c6e891",
+        "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_fail.c": "63c304af41e2080aeaa44a59908cd0bfcba6ff6edce4d472efefe6f0c32f1d6a",
+        "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_loop.c": "545b96886ee39ea332d2bee81c2441e72055f0a7368e5f53a3a91ec32dafdc1b",
+        "subjects/upstream/zephyr/tests/kernel/queue/src/test_queue_user.c": "3e883832eb2e48a34e6647c8a2b4bbfc64dadd91bddaaa8c90f5502780eb4f9b"
+      },
+      "status": "none_found",
+      "task_id": "queue"
+    },
+    "rtc_alarm_callback-r01": {
+      "evidence": "The 3 s precheck plus 15 s wait ends by about 18 s, below ten RTC seconds at legal 17 kHz LSI (18.824 s). Build or nominal gate remains a separate outcome.",
+      "issues": [
+        {
+          "category": "premature_deadline",
+          "line": 10,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+          "reason": "The 3 s precheck plus 15 s wait ends by about 18 s, below ten RTC seconds at legal 17 kHz LSI (18.824 s)."
+        }
+      ],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c": "ae8c0d630db725faeaeb7f73d63108eaa9bcc19867d230295ea09e27f82c9b79"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_alarm_callback"
+    },
+    "rtc_alarm_callback-r02": {
+      "evidence": "The source gives roughly 20 s before its first callback wait expires, covering the 18.824 s slow-clock calendar interval, but the scheduling margin and swapped API arguments prevent a confident timing judgment.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c": "46098b3b9cb6633c5dad5d588496480163f9c83a8d40e91e0a5aabf60b1835f1"
+      },
+      "status": "unknown",
+      "task_id": "rtc_alarm_callback"
+    },
+    "rtc_alarm_callback-r03": {
+      "evidence": "The 2 s precheck plus first 12 s callback wait can end by about 14 s, below legal slow-clock arrival. Build or nominal gate remains a separate outcome.",
+      "issues": [
+        {
+          "category": "premature_deadline",
+          "line": 69,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+          "reason": "The 2 s precheck plus first 12 s callback wait can end by about 14 s, below legal slow-clock arrival."
+        }
+      ],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c": "79d6c4222777ac44f37230ca8b47ed38c856ed961213ce71d2780480a709f5bc"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_alarm_callback"
+    },
+    "rtc_alarm_callback-r04": {
+      "evidence": "The asserted 15 s calendar-arrival cap is below the 18.824 s legal slow-clock arrival interval. Build or nominal gate remains a separate outcome.",
+      "issues": [
+        {
+          "category": "premature_deadline",
+          "line": 92,
+          "path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+          "reason": "The asserted 15 s calendar-arrival cap is below the 18.824 s legal slow-clock arrival interval."
+        }
+      ],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c": "ec355bdce5f0ce933e31032a91d7ddb434f673b3ef06c5af1af9b314b783a5f6"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_alarm_callback"
+    },
+    "rtc_alarm_callback-r05": {
+      "evidence": "The 30 s polling bound covers the documented 18.824 s slow-clock calendar interval with a policy margin; callback bits are atomic. The separate compile failure is not coded as a timing assumption.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c": "cd944847615f9d8965d74048df686b8740d8b15f2d2819e5f870d381339cb16e"
+      },
+      "status": "none_found",
+      "task_id": "rtc_alarm_callback"
+    },
+    "rtc_api.test_alarm_callback": {
+      "evidence": "The fixed post-setup wait assumes ten RTC seconds fit the nominal wall-time window; legal 17 kHz LSI delays the alarm and the Phase 1 replay showed a flip.",
+      "issues": [
+        {
+          "category": "fixed_wait_for_alarm",
+          "line": 132,
+          "path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+          "reason": "The fixed post-setup wait assumes ten RTC seconds fit the nominal wall-time window; legal 17 kHz LSI delays the alarm and the Phase 1 replay showed a flip."
+        }
+      ],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792"
+      },
+      "status": "unjustified",
+      "task_id": "rtc_alarm_callback"
+    },
+    "semaphore-r01": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/semaphore/r01/test.c": "839d1077623e75d93390703bd98618b0093edf876ed35943b6d3b1c9c6a13ef8"
+      },
+      "status": "none_found",
+      "task_id": "semaphore"
+    },
+    "semaphore-r02": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/semaphore/r02/test.c": "323990e2a15339a3408f56f28d010cf6bcf0b6c9caf9601c27aff08bf59ae4e5"
+      },
+      "status": "none_found",
+      "task_id": "semaphore"
+    },
+    "semaphore-r03": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/semaphore/r03/test.c": "acc6ee95a735b10a92ba63ac325f34deaf43c196a22d3e7d85637e22a71338d7"
+      },
+      "status": "none_found",
+      "task_id": "semaphore"
+    },
+    "semaphore-r04": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/semaphore/r04/test.c": "4a403c4ba1e0d7f83b407557396c7f55f4cbc0b307e4338e1e32a71e09e54d21"
+      },
+      "status": "none_found",
+      "task_id": "semaphore"
+    },
+    "semaphore-r05": {
+      "evidence": "Reviewed complete short suite: irq_offload returns after its ISR handler, so the immediate semaphore/queue observations and K_NO_WAIT checks have a synchronization point; no fixed asynchronous-arrival deadline appears.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/semaphore/r05/test.c": "bb56f546c98428ca0033c3ef0b3b60456d9d35ef04f1f866c963f394dda1e89a"
+      },
+      "status": "none_found",
+      "task_id": "semaphore"
+    },
+    "semaphore.test_sem_give_from_isr": {
+      "evidence": "Reviewed selected upstream case and reachable helpers: ISR offload completion or queue/semaphore synchronization precedes the checked state; no unsupported fixed arrival deadline found.",
+      "issues": [],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/semaphore/semaphore/src/main.c": "d4bd094f30d7354f13fcf4d49a93985246455982b8b8a9d1323ae0312b36f498"
+      },
+      "status": "none_found",
+      "task_id": "semaphore"
+    },
+    "sleep-r01": {
+      "evidence": "The source relies on a 100 ms delay or related readiness check to infer that the worker is inside k_sleep before an ISR wakeup. The worker-entry guarantee is not established by the signal alone; scheduler timing needs a separate review.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/sleep/r01/test.c": "708ed2f07ee48af870a32af473db236fe4a1b15f5435cba8ef413b59da8cc421"
+      },
+      "status": "unknown",
+      "task_id": "sleep"
+    },
+    "sleep-r02": {
+      "evidence": "The source relies on a 100 ms delay or related readiness check to infer that the worker is inside k_sleep before an ISR wakeup. The worker-entry guarantee is not established by the signal alone; scheduler timing needs a separate review.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/sleep/r02/test.c": "641243d0118c341f62cb89ec3b023a393af2bfe51057876ed563dee37d2ae2d1"
+      },
+      "status": "unknown",
+      "task_id": "sleep"
+    },
+    "sleep-r03": {
+      "evidence": "The source relies on a 100 ms delay or related readiness check to infer that the worker is inside k_sleep before an ISR wakeup. The worker-entry guarantee is not established by the signal alone; scheduler timing needs a separate review.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/sleep/r03/test.c": "94dc62ee105d7cd0e2cfd70f5a0d3e7eebc7cbb9112351ecee7f04a7d20c320d"
+      },
+      "status": "unknown",
+      "task_id": "sleep"
+    },
+    "sleep-r04": {
+      "evidence": "Nominal execution timed out in a yield loop waiting on unprotected worker state; the lower-priority worker need not run when the current thread merely yields.",
+      "issues": [
+        {
+          "category": "unbounded_readiness_wait",
+          "line": 54,
+          "path": "generated/phase2_luna/suites/sleep/r04/test.c",
+          "reason": "while (sleep_started_ms == 0) has no deadline or synchronization, and k_yield need not schedule a lower-priority worker."
+        }
+      ],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/sleep/r04/test.c": "43401153ed675b704767f54522360003b718ddea8425c4bc2d45887e0a584f5b"
+      },
+      "status": "unjustified",
+      "task_id": "sleep"
+    },
+    "sleep-r05": {
+      "evidence": "The source relies on a 100 ms delay or related readiness check to infer that the worker is inside k_sleep before an ISR wakeup. The worker-entry guarantee is not established by the signal alone; scheduler timing needs a separate review.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/sleep/r05/test.c": "8ddd8b94855ff15691d39bdc5f08d3c2584e755538687eb164140e548f7535f6"
+      },
+      "status": "unknown",
+      "task_id": "sleep"
+    },
+    "sleep.test_sleep": {
+      "evidence": "The test caps a one-second sleep at requested duration plus TICK_MARGIN; scheduling after timer expiry is not bounded by that small margin.",
+      "issues": [
+        {
+          "category": "tight_wakeup_margin",
+          "line": 234,
+          "path": "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c",
+          "reason": "The test caps a one-second sleep at requested duration plus TICK_MARGIN; scheduling after timer expiry is not bounded by that small margin."
+        }
+      ],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/sleep/src/main.c": "e40ebc219763810cb638c3cad755fa44fee47ce60f8e62beac25042dc214299a"
+      },
+      "status": "unjustified",
+      "task_id": "sleep"
+    },
+    "timer_api-r01": {
+      "evidence": "The timer ISR updates a plain callback_count and the test reads it after k_timer_status_sync. Source alone does not settle compiler visibility and callback-before-status ordering for this access.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/timer_api/r01/test.c": "4ab477caeb411dd6c4a3637d286ab116dcfdc98bb6ec710d91357222778c150c"
+      },
+      "status": "unknown",
+      "task_id": "timer_api"
+    },
+    "timer_api-r02": {
+      "evidence": "The timer ISR updates a plain callback_count and the test reads it after k_timer_status_sync. Source alone does not settle compiler visibility and callback-before-status ordering for this access.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/timer_api/r02/test.c": "399d9e4fab700da666309ec0c1291beafbbbf73cca1e5ffd76f43977a9eab2fc"
+      },
+      "status": "unknown",
+      "task_id": "timer_api"
+    },
+    "timer_api-r03": {
+      "evidence": "Periodic expiry is observed through k_timer_status_sync and atomic callback count; no fixed wall-time wait or unsupported callback order was found.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/timer_api/r03/test.c": "d7fc4962ccee43e2c1fa62bc7b755f7314392ef68b2c8df4e916650c53f41a65"
+      },
+      "status": "none_found",
+      "task_id": "timer_api"
+    },
+    "timer_api-r04": {
+      "evidence": "Periodic expiry is observed through k_timer_status_sync and atomic callback count; no fixed wall-time wait or unsupported callback order was found.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/timer_api/r04/test.c": "8489914a53ee7615bcbb27756d485684abcff05c293cfd0938e1d6be337eb60e"
+      },
+      "status": "none_found",
+      "task_id": "timer_api"
+    },
+    "timer_api-r05": {
+      "evidence": "The timer ISR updates a plain callback_count and the test reads it after k_timer_status_sync. Source alone does not settle compiler visibility and callback-before-status ordering for this access.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/timer_api/r05/test.c": "d037f8cce33f26386fe8d01fe91c6cfaacece350e6454c248ee8b50d1d07e328"
+      },
+      "status": "unknown",
+      "task_id": "timer_api"
+    },
+    "timer_api.test_timer_status_sync": {
+      "evidence": "The test requires exactly one periodic expiry per status_sync call; a legal thread delay can allow two expiries before the next call.",
+      "issues": [
+        {
+          "category": "periodic_status_order",
+          "line": 510,
+          "path": "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c",
+          "reason": "The test requires exactly one periodic expiry per status_sync call; a legal thread delay can allow two expiries before the next call."
+        }
+      ],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/timer/timer_api/src/main.c": "6d2d4422ef649b5837c606e8a5aa1454c573efa13be7085851f4c03442c7fada"
+      },
+      "status": "unjustified",
+      "task_id": "timer_api"
+    },
+    "work_1cpu.test_1cpu_basic_schedule": {
+      "evidence": "The test requires delayed work to finish within one tick above its scheduled delay, without an upper scheduling-latency contract.",
+      "issues": [
+        {
+          "category": "exact_work_completion_time",
+          "line": 1035,
+          "path": "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c",
+          "reason": "The test requires delayed work to finish within one tick above its scheduled delay, without an upper scheduling-latency contract."
+        }
+      ],
+      "kind": "upstream",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "subjects/upstream/zephyr/tests/kernel/workq/work/src/main.c": "4ec2e6f05084a892a7afa21fbf4e3fcd47d2181d514ce84d2cd7166aa472e6d9"
+      },
+      "status": "unjustified",
+      "task_id": "workq"
+    },
+    "workq-r01": {
+      "evidence": "The work handler signals a semaphore, and the test waits for that event with a timeout far above its 20\u2013100 ms requested delay. The delay is the feature under test; no unsupported arrival boundary was identified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/workq/r01/test.c": "52314674bcadaa46c61d08f770ffbd848a100f50a0850a1adb14b6aa05e966c6"
+      },
+      "status": "none_found",
+      "task_id": "workq"
+    },
+    "workq-r02": {
+      "evidence": "The work handler signals a semaphore, and the test waits for that event with a timeout far above its 20\u2013100 ms requested delay. The delay is the feature under test; no unsupported arrival boundary was identified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/workq/r02/test.c": "90530a62dec9b383318e44db5cd3abecca03b126e3755b8252396b6c36382376"
+      },
+      "status": "none_found",
+      "task_id": "workq"
+    },
+    "workq-r03": {
+      "evidence": "The work handler signals a semaphore, and the test waits for that event with a timeout far above its 20\u2013100 ms requested delay. The delay is the feature under test; no unsupported arrival boundary was identified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/workq/r03/test.c": "e60980a2fd1ff1e20b19d733877e38dfb6b92549c1a135972ba908b7f70c3ded"
+      },
+      "status": "none_found",
+      "task_id": "workq"
+    },
+    "workq-r04": {
+      "evidence": "The work handler signals a semaphore, and the test waits for that event with a timeout far above its 20\u2013100 ms requested delay. The delay is the feature under test; no unsupported arrival boundary was identified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/workq/r04/test.c": "ce4b712e25bebda55b431e6978d98c0f87d0283f29f7c6eaaef75769411083dc"
+      },
+      "status": "none_found",
+      "task_id": "workq"
+    },
+    "workq-r05": {
+      "evidence": "A fixed 20 ms settle period is used to claim that the handler never runs a second time; the required observation horizon for duplicate work is unspecified.",
+      "issues": [],
+      "kind": "agent",
+      "reviewer": "Codex single-reviewer source coding under PHASE3_RQ1_CODING.md",
+      "source_files_sha256": {
+        "generated/phase2_luna/suites/workq/r05/test.c": "3db5a65e882ae69760a05b133dfeeebfa14ffe72a87adc1b98737b2caffa9b49"
+      },
+      "status": "unknown",
+      "task_id": "workq"
+    }
+  },
+  "reviewer_note": "One reviewer; paper claims require independent adjudication.",
+  "rubric": "analysis/PHASE3_RQ1_CODING.md",
+  "rubric_amendment": "2026-09-29 factual correction: early RTC seed outcomes were visible before exhaustive coding. Coding criteria unchanged; this review is unblinded and requires independent replication.",
+  "rubric_prior_sha256": "6b1d9a80a5d21b944b7784eb7b502c0015d2da08100f008d694cecbda3295b5c",
+  "rubric_sha256": "85cecf18e6f28295fe16757ca7975a609a7f127fbe0e2923c03f9f35dee827d7",
+  "schema_version": 1,
+  "source_candidate_sha256": "4c71c2ae1a6eb1e59373483d5ede5d4a94d96b40357642fd89a329521111e095"
+}

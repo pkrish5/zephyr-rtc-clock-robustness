@@ -1,0 +1,15 @@
+date_utc,phase,model,requests,input_tokens,output_tokens,estimated_usd,notes
+2026-09-28,0,none,0,0,0,0.00,No agent test generation performed in Phase 0
+2026-09-28,1,none,0,0,0,0.00,No agent test generation performed in Phase 1
+2026-09-28,1-extension,none,0,0,0,0.00,No agent test generation performed in RTC-clock extension
+2026-09-29,2-cli-pilot,gpt-6-sol,1,13672,25,,Structured-output CLI connectivity pilot; ChatGPT-authenticated billing unavailable
+2026-09-29,2-cli-pilot,gpt-6-luna,1,13493,25,,Structured-output CLI connectivity pilot; ChatGPT-authenticated billing unavailable
+2026-09-29,2-sol-feasibility-pilot,gpt-6-sol,1,14139,3186,,Frozen RTC suite retained outside Luna primary cohort after resource amendment
+2026-09-29,2-primary,gpt-6-luna,55,762788,31035,,Primary frozen cohort completed; 574464 input tokens reported as cached; ChatGPT-authenticated billing unavailable
+2026-09-29,2-rtc-bound-supplement,gpt-6-luna,5,71058,6579,,Separate five-sample RTC context cohort; 27136 input tokens reported as cached; ChatGPT-authenticated billing unavailable
+2026-09-30,2-rtc-extension-infra,gpt-6-luna,2,,,,Two stdin CLI attempts emitted no completion or usage and were archived as infrastructure failures; billed usage unknown
+2026-09-30,2-rtc-extension-cli-diagnostic,gpt-6-luna,1,13507,5,,Read-only READY connectivity probe outside all generation denominators; 11008 cached input tokens; billed dollars unavailable
+2026-09-30,2-rtc-extension,gpt-6-luna,10,139126,8080,,Two new RTC tasks times five frozen outputs each; 65280 cached input tokens; direct-argument CLI transport; billed dollars unavailable
+2026-10-04,2-spec-context-factorial,gpt-6-luna,130,1807409,91003,,390-suite factorial Luna cohort; 1462272 cached input tokens; 17337 reasoning output tokens; ChatGPT-authenticated billed dollars unavailable
+2026-10-04,2-spec-context-factorial,gpt-6-sol,130,1831733,226680,,390-suite factorial Sol cohort; 1393920 cached input tokens; 153545 reasoning output tokens; two interrupted call-253 attempts had unknown usage and are excluded from these completed-call totals
+2026-10-04,2-spec-context-factorial,gpt-6-astra,130,1889111,173424,,390-suite factorial Astra cohort; 874496 cached input tokens; 68985 reasoning output tokens; ChatGPT-authenticated billed dollars unavailable

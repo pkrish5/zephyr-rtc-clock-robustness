@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 304,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_present",
+  "generation_date_utc": "2026-10-04T00:59:46.306557+00:00",
+  "model": "gpt-6-luna",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/timer_api/range_present.txt",
+  "prompt_sha256": "ae0399ba48611282bc5f09565007c3e91ed8b2d7e38d9871c538b79c77a034f9",
+  "prompt_transport": "argument",
+  "response_sha256": "dba53250c1c1cc5b1600c736acd956c21c12e20ab1b5933be1d6eb1fc1fd8f08",
+  "run_id": "luna-range_present-timer_api-r04",
+  "sample_index": 4,
+  "source_sha256": "75268fc254a6ac32bae5440dab73d432469fa6516c57a725c25f67b1ececee3e",
+  "status": "generated",
+  "task_id": "timer_api",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 13056,
+    "input_tokens": 13932,
+    "output_tokens": 396,
+    "reasoning_output_tokens": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 124,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_absent",
+  "generation_date_utc": "2026-10-03T20:53:10.336605+00:00",
+  "model": "gpt-6-sol",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/queue/range_absent.txt",
+  "prompt_sha256": "1ef96f216210a37c99a44e087182287a793f108e514d10d6203d107b6607d6a9",
+  "prompt_transport": "argument",
+  "response_sha256": "7964078225c2c1fd7e8eaf48f11f0db3adb8c80d5f06db42d02d7251b48f1c3b",
+  "run_id": "sol-range_absent-queue-r02",
+  "sample_index": 2,
+  "source_sha256": "0410afe40c80d5edb79abf3bc74ee24963c03e1dff4e4d77b84a9a88f389f181",
+  "status": "generated",
+  "task_id": "queue",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11776,
+    "input_tokens": 14006,
+    "output_tokens": 863,
+    "reasoning_output_tokens": 488
+  }
+}

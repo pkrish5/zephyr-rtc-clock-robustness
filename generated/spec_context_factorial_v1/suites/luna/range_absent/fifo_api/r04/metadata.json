@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 277,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_absent",
+  "generation_date_utc": "2026-10-04T00:44:57.667996+00:00",
+  "model": "gpt-6-luna",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/fifo_api/range_absent.txt",
+  "prompt_sha256": "eb3951efaa0fe0b7f55669605e55dd5dda1656a1126b70eecea4f74f4301d3b4",
+  "prompt_transport": "argument",
+  "response_sha256": "f4cce87f111921ee6b2844481ffa07d924b19c0f2ae2d99bccdfec2395b972c3",
+  "run_id": "luna-range_absent-fifo_api-r04",
+  "sample_index": 4,
+  "source_sha256": "84d6c621401508d4e4aa6760b0058ce3929a18a11d4892d8655d84b591d5fa19",
+  "status": "generated",
+  "task_id": "fifo_api",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 13056,
+    "input_tokens": 13830,
+    "output_tokens": 359,
+    "reasoning_output_tokens": 0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056",
+  "board": "stm32f4_disco/stm32f407xx",
+  "qualification_records": {
+    "rtc_time_counting": "results/rtc_counting/qualification.json",
+    "rtc_alarm_pending": "results/rtc_alarm_pending/qualification.json"
+  },
+  "tasks": [
+    {
+      "id": "rtc_time_counting",
+      "arm": "lsi_pilot",
+      "human_case": "rtc_api.test_time_counting",
+      "human_app": "tests/drivers/rtc/rtc_api",
+      "build_conf": "CONFIG_RTC=y\nCONFIG_ZTEST=y\n",
+      "feature_spec": "Exercise STM32F407 RTC calendar counting through the board's RTC alias. The RTC uses an independent LSI oscillator. Set a calendar time near a year boundary, then observe it advance monotonically through at least ten RTC seconds and cross the boundary. Compare RTC calendar values, not just host uptime.",
+      "required_oracles": [
+        "Setting and subsequently reading the initial RTC calendar succeeds.",
+        "Successive observed RTC calendar values do not move backward.",
+        "The RTC calendar reaches a time at least ten RTC seconds after the initial value, under a finite, justified observation bound."
+      ],
+      "api_hints": "DEVICE_DT_GET(DT_ALIAS(rtc)), rtc_set_time, rtc_get_time, struct rtc_time, k_sleep, K_MSEC, timeutil_timegm or explicit calendar-field checks. Include <zephyr/drivers/rtc.h> and <zephyr/ztest.h>. The RTC is clocked independently of the CPU."
+    },
+    {
+      "id": "rtc_alarm_pending",
+      "arm": "lsi_pilot",
+      "human_case": "rtc_api.test_alarm",
+      "human_app": "tests/drivers/rtc/rtc_api",
+      "build_conf": "CONFIG_RTC=y\nCONFIG_RTC_ALARM=y\nCONFIG_ZTEST=y\n",
+      "feature_spec": "Exercise the STM32F407 RTC alarm-pending state through the board's RTC alias. Set the calendar to 2024-12-31 23:59:55 and an alarm to 2025-01-01 00:00:05. Use supported second, minute, and hour alarm fields (mask 7). Check the alarm does not become pending before the configured calendar time, then becomes pending after the RTC reaches it. No alarm callback is required.",
+      "required_oracles": [
+        "The test configures and reads back a supported RTC alarm time successfully.",
+        "The alarm is not observed pending before its configured RTC time.",
+        "The alarm is observed pending after the RTC reaches its configured time, under a finite, justified observation bound."
+      ],
+      "api_hints": "DEVICE_DT_GET(DT_ALIAS(rtc)), rtc_set_time, rtc_get_time, rtc_alarm_set_time, rtc_alarm_get_time, rtc_alarm_is_pending, RTC_ALARM_TIME_MASK_SECOND, RTC_ALARM_TIME_MASK_MINUTE, RTC_ALARM_TIME_MASK_HOUR. Include <zephyr/drivers/rtc.h> and <zephyr/ztest.h>. This board exposes two RTC alarm channels."
+    }
+  ]
+}

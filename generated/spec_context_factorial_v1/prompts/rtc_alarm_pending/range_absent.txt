@@ -1,0 +1,19 @@
+You are writing a new test of an embedded real-time system API, using Zephyr v4.3.0 ztest on the STM32F4 Discovery board (STM32F407VG, single CPU). Write a standalone C source file for one ztest application. Do not write CMake or Kconfig files.
+
+Behavior to test:
+Exercise the STM32F407 RTC alarm-pending state through the board's RTC alias. Set the calendar to 2024-12-31 23:59:55 and an alarm to 2025-01-01 00:00:05. Use supported second, minute, and hour alarm fields (mask 7). Check the alarm does not become pending before the configured calendar time, then becomes pending after the RTC reaches it. No alarm callback is required.
+
+Required observable checks:
+- The test configures and reads back a supported RTC alarm time successfully.
+- The alarm is not observed pending before its configured RTC time.
+- The alarm is observed pending after the RTC reaches its configured time, under a finite, justified observation bound.
+
+Relevant public API/context:
+DEVICE_DT_GET(DT_ALIAS(rtc)), rtc_set_time, rtc_get_time, rtc_alarm_set_time, rtc_alarm_get_time, rtc_alarm_is_pending, RTC_ALARM_TIME_MASK_SECOND, RTC_ALARM_TIME_MASK_MINUTE, RTC_ALARM_TIME_MASK_HOUR. Include <zephyr/drivers/rtc.h> and <zephyr/ztest.h>. This board exposes two RTC alarm channels.
+
+The application will be built with this fixed configuration:
+CONFIG_RTC=y
+CONFIG_RTC_ALARM=y
+CONFIG_ZTEST=y
+
+Return a JSON object with exactly one field, "test_c", containing the complete C source. Include necessary Zephyr headers, test functions, and exactly one ZTEST_SUITE declaration. Use only public Zephyr APIs and self-contained test data. Make the checks executable on this board without external equipment. Keep the test reasonably short. Do not call tools or inspect local files; all task context is above. Do not include explanations or Markdown fences.

@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 117,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_present",
+  "generation_date_utc": "2026-10-03T20:51:30.161762+00:00",
+  "model": "gpt-6-sol",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/semaphore/range_present.txt",
+  "prompt_sha256": "3303d559f393baedf100afb19056fe57da29ca347934dbcfc779d7b08d5c7825",
+  "prompt_transport": "argument",
+  "response_sha256": "1888cd6444017d4eaf0a384bd8490e6fa89a321a1f2d17698ecf6d57237dd23f",
+  "run_id": "sol-range_present-semaphore-r02",
+  "sample_index": 2,
+  "source_sha256": "774326d6c53647d14c034a2c90cb3c62b24534a28fb580c8314661bd4de9d84d",
+  "status": "generated",
+  "task_id": "semaphore",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11776,
+    "input_tokens": 14118,
+    "output_tokens": 530,
+    "reasoning_output_tokens": 300
+  }
+}

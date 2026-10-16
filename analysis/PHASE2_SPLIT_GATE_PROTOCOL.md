@@ -1,0 +1,16 @@
+# Phase 2 oracle-gate split — dated amendment, 2026-09-29
+
+This implements the dated amendment in `paper/DESIGN.md`. It was made after the original Luna oracle review and after early Phase 3 RTC outcomes. The recoding is **unblinded and retrospective** for the existing frozen sources. Keep the original decision files and original strict-gate counts unchanged. Do not revise prompts, generated C, build outputs, nominal runs, or RTC run records.
+
+## Two source judgments
+
+- **Functional adequacy:** `met` means the test exercises the intended feature and its executable assertions can distinguish the requested behavior from a plausible violation. `not_met` means its assertions are wrong, vacuous, or omit a required check. `unknown` means the source does not settle whether a check is meaningful. `not_evaluable` means build or nominal failure prevents an executable functional judgment; build and nominal outcomes are always reported separately. A bad timing bound alone does not make this dimension `not_met`.
+- **Timing-bound adequacy:** `inadequate` means a specific asserted wait/deadline/order premise conflicts with a documented legal timing range or lacks a required synchronization guarantee. `no_issue_found` means source review found no such unsupported premise, without proving all possible schedules safe. `unknown` preserves unresolved API, scheduling, or hardware-bound questions. `not_evaluable` is reserved for source with no executable timing predicate to assess. Timing status is an outcome, not an eligibility filter.
+
+Map the existing one-reviewer RQ1 source judgment to timing-bound status for the 55 primary Luna sources: `unjustified` to `inadequate`, `none_found` to `no_issue_found`, and `unknown` to `unknown`. Preserve the RQ1 evidence and source hash in the split ledger. This is a single-reviewer classification; the blinded second-reader packet is a separate validation step. The five-sample RTC context supplement is reviewed separately and never pooled into the primary model cohort. For its `r05`, `K_NO_WAIT` on callback two is `inadequate` timing-bound evidence; its checks of two callback IDs, pre-alarm absence, and calendar state make it functionally `met` despite that timing error.
+
+## Denominators and reports
+
+For each cohort, show all generated attempts, build outcomes, nominal outcomes, original strict source-oracle status, amended functional status, and timing-bound status. The original strict eligibility count is `build pass ∧ nominal pass ∧ original oracle adequate`. Amended primary eligibility is `build pass ∧ nominal pass ∧ functional met`, irrespective of timing status. Preserve `unknown` and `not_evaluable` rather than folding them into pass or fail. RTC selected-case and HSI task strata remain separate. Report the original and amended attrition side by side, plus timing status among amended eligible suites.
+
+Any Phase 3 schedule result must retain the eligibility rule used for its reported rate. The already registered exploratory RTC runs were launched under the old protocol; reanalysis under the amended gate must be explicitly labeled post hoc and must not modify the locked RTC plan or raw observations. No Sol or Astra comparative generation starts until this protocol, the 100 MIPS HSI schedule, and cross-model comparisons are frozen and reviewed by the user.

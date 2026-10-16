@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 139,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_absent",
+  "generation_date_utc": "2026-10-03T21:05:51.909912+00:00",
+  "model": "gpt-6-sol",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/lifo_api/range_absent.txt",
+  "prompt_sha256": "1bd829b75a89010c41dd7fe1836204cdb9982ca0195a484751651e81a13e7865",
+  "prompt_transport": "argument",
+  "response_sha256": "ad9610298a3bd9a88802efae1297de6b98b63c86e31271184c2c7859b54d5270",
+  "run_id": "sol-range_absent-lifo_api-r02",
+  "sample_index": 2,
+  "source_sha256": "ef2cde19875919fb307213ad72bda7d97a666a40b21096feffbf801d49cbcc9d",
+  "status": "generated",
+  "task_id": "lifo_api",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11776,
+    "input_tokens": 14011,
+    "output_tokens": 885,
+    "reasoning_output_tokens": 480
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 5,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_present",
+  "generation_date_utc": "2026-10-03T19:07:08.134284+00:00",
+  "model": "gpt-6-luna",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/rtc_time_counting/range_present.txt",
+  "prompt_sha256": "684b2b1bd5f23f49d6b96edf83d31989a9441f113ed1ca6dee364b4b1416df94",
+  "prompt_transport": "argument",
+  "response_sha256": "b7e2ce6d612c4d93e829438deca42e84d43b07d6c80f1d9af0fcd586341f83fe",
+  "run_id": "luna-range_present-rtc_time_counting-r01",
+  "sample_index": 1,
+  "source_sha256": "b82ca2d47766fde8e9ff300b89c9f1ab36433074e50e54a63caea293ddfe1d7a",
+  "status": "generated",
+  "task_id": "rtc_time_counting",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 0,
+    "input_tokens": 13958,
+    "output_tokens": 1623,
+    "reasoning_output_tokens": 516
+  }
+}

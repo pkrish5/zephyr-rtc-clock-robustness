@@ -1,0 +1,23 @@
+{
+  "board": "stm32f4_disco/stm32f407xx",
+  "parent_task_manifest": "subjects/phase2_tasks.json",
+  "schema_version": 1,
+  "supplement_change": "Only rtc_alarm_callback.api_hints adds public API signatures and documented RTC clock/prescaler context.",
+  "tasks": [
+    {
+      "api_hints": "Public Zephyr v4.3.0 API: rtc_alarm_set_time(const struct device *dev, uint16_t id, uint16_t mask, const struct rtc_time *timeptr); rtc_alarm_set_callback(const struct device *dev, uint16_t id, rtc_alarm_callback callback, void *user_data), where the callback type is void (*)(const struct device *dev, uint16_t id, void *user_data); rtc_alarm_is_pending(const struct device *dev, uint16_t id) returns 1 if pending, 0 if not, or a negative error. Use DEVICE_DT_GET(DT_ALIAS(rtc)), rtc_set_time, rtc_get_time, RTC_ALARM_TIME_MASK_SECOND, RTC_ALARM_TIME_MASK_MINUTE, RTC_ALARM_TIME_MASK_HOUR, atomic_t or k_sem; include <zephyr/drivers/rtc.h> and <zephyr/ztest.h>. This board exposes two RTC alarm channels. Documented hardware timing context: STM32F407 LSI is 17,000\u201347,000 Hz (typical 32,000 Hz) at VDD 3 V over -40 to 105 C. The pinned Zephyr STM32 RTC LSI prescalers divide by 128 * 250 = 32,000, so ten RTC calendar seconds require 320,000 input cycles: about 18.824 wall seconds at 17,000 Hz and 6.809 wall seconds at 47,000 Hz. These bounds concern calendar progression; they do not specify a maximum ISR-to-thread delivery latency. Any finite callback deadline must cover the slowest legal calendar arrival and state its additional scheduling margin as a test policy.",
+      "arm": "lsi_pilot",
+      "build_conf": "CONFIG_RTC=y\nCONFIG_RTC_ALARM=y\nCONFIG_ZTEST=y\n",
+      "feature_spec": "Exercise the STM32F407 RTC alarm callbacks using the board's RTC alias. The RTC uses the independent LSI oscillator. Set calendar time to 2024-12-31 23:59:55 and alarm time to 2025-01-01 00:00:05 for both alarm channels. Use supported second, minute, and hour alarm fields (mask 7). Verify neither callback is reported prematurely, then that both are reported when the RTC reaches the alarm time. Each callback must identify its configured alarm channel.",
+      "human_app": "tests/drivers/rtc/rtc_api",
+      "human_case": "rtc_api.test_alarm_callback",
+      "id": "rtc_alarm_callback",
+      "required_oracles": [
+        "Neither callback is observed before the alarm time.",
+        "Both callbacks fire at the configured RTC time and report the expected alarm IDs.",
+        "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+      ]
+    }
+  ],
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

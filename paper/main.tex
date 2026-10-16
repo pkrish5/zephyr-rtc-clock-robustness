@@ -1,0 +1,32 @@
+\documentclass[sigconf,review,anonymous]{acmart}
+
+\setcopyright{none}
+\settopmatter{printacmref=false}
+
+\begin{document}
+
+\title{Timing Robustness of Agent-Generated Embedded Tests}
+
+\begin{abstract}
+This manuscript is a design skeleton. The planned study compares timing assumptions in agent-written and human-written tests for interrupt-driven firmware. Frozen firmware and test artifacts will be evaluated under documented, legal timing variation in simulation. Empirical claims and citations will be added only after verification and the staged experiments.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+The intended contribution is an empirical measurement of timing-assumption brittleness in tests for interrupt-driven firmware. Prior-work boundaries and the current verification ledger are maintained in \texttt{RELATED\_WORK.md}.
+
+\section{Research Questions}
+\begin{description}
+  \item[RQ1] How often do agent-written tests contain timing assumptions compared with human-written tests for the same firmware?
+  \item[RQ2] Can documented legal timing variation flip frozen tests while the firmware binary is unchanged?
+  \item[RQ3] Can targeted repairs remove brittleness without weakening assertions?
+\end{description}
+
+\section{Study Design}
+The phase gates, perturbation bounds, replay requirements, and four-way flip classification procedure are recorded in \texttt{DESIGN.md}. Phase 0 is a feasibility check and does not answer the research questions.
+
+\section{Results}
+Results will be added after the corresponding phase has been reviewed.
+
+\end{document}

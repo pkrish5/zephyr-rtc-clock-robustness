@@ -1,0 +1,48 @@
+{
+  "status": "PREPARED_NOT_RECRUITED",
+  "date": "2026-10-08",
+  "specs": [
+    {
+      "task": "rtc_alarm_callback",
+      "condition": "range_absent",
+      "source": "generated/spec_context_factorial_v1/prompts/rtc_alarm_callback/range_absent.txt",
+      "packet": "materials/same_spec_human/specs/rtc_alarm_callback__range_absent.txt",
+      "sha256": "9ac129b663566727684bf7fedc98a34f22d05eba8d6605dd9472a9c5d8c0424e"
+    },
+    {
+      "task": "rtc_alarm_callback",
+      "condition": "range_present",
+      "source": "generated/spec_context_factorial_v1/prompts/rtc_alarm_callback/range_present.txt",
+      "packet": "materials/same_spec_human/specs/rtc_alarm_callback__range_present.txt",
+      "sha256": "dcded2c722355cffa201b31e1c64755eb595fa9c5ea5222f7dce0012ba8324e3"
+    },
+    {
+      "task": "rtc_alarm_pending",
+      "condition": "range_absent",
+      "source": "generated/spec_context_factorial_v1/prompts/rtc_alarm_pending/range_absent.txt",
+      "packet": "materials/same_spec_human/specs/rtc_alarm_pending__range_absent.txt",
+      "sha256": "c6a87ddd87222b9a019d61d1e64ea0bb0f9c72488f4dea20b278a0d9e4beda3d"
+    },
+    {
+      "task": "rtc_alarm_pending",
+      "condition": "range_present",
+      "source": "generated/spec_context_factorial_v1/prompts/rtc_alarm_pending/range_present.txt",
+      "packet": "materials/same_spec_human/specs/rtc_alarm_pending__range_present.txt",
+      "sha256": "568e298e806623f292a22a15110e746ce281f461f850819bda94ccc474746f4e"
+    },
+    {
+      "task": "rtc_time_counting",
+      "condition": "range_absent",
+      "source": "generated/spec_context_factorial_v1/prompts/rtc_time_counting/range_absent.txt",
+      "packet": "materials/same_spec_human/specs/rtc_time_counting__range_absent.txt",
+      "sha256": "6ef15951070dafb5a65d769d3d89520242cbac9549fe38ba8c08b5a850edd41e"
+    },
+    {
+      "task": "rtc_time_counting",
+      "condition": "range_present",
+      "source": "generated/spec_context_factorial_v1/prompts/rtc_time_counting/range_present.txt",
+      "packet": "materials/same_spec_human/specs/rtc_time_counting__range_present.txt",
+      "sha256": "684b2b1bd5f23f49d6b96edf83d31989a9441f113ed1ca6dee364b4b1416df94"
+    }
+  ]
+}

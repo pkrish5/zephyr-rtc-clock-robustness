@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 85,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_absent",
+  "generation_date_utc": "2026-10-03T20:00:00.065168+00:00",
+  "model": "gpt-6-sol",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/workq/range_absent.txt",
+  "prompt_sha256": "aac7dd3f0563c7eb74b70429d7b7350b34d1d789235218133091def2f283c76a",
+  "prompt_transport": "argument",
+  "response_sha256": "47c304f506fe1465b4c6c9306a44293e6cd7cca83b52e4e2fcebb973a8f86193",
+  "run_id": "sol-range_absent-workq-r02",
+  "sample_index": 2,
+  "source_sha256": "bc5b410e55218dc9428066e0d26d136b981ff79b86ae17b82ae76ab080002741",
+  "status": "generated",
+  "task_id": "workq",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11776,
+    "input_tokens": 14090,
+    "output_tokens": 1375,
+    "reasoning_output_tokens": 988
+  }
+}

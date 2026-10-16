@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 266,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_present",
+  "generation_date_utc": "2026-10-04T00:37:59.844064+00:00",
+  "model": "gpt-6-sol",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/msgq_api/range_present.txt",
+  "prompt_sha256": "29a728fd31b25c9d50623ca5bd823fd8afa5157b523b410b853a629fd1924b3f",
+  "prompt_transport": "argument",
+  "response_sha256": "ce77b2c7bc9ec605db91cebbb24a554debc6fe8d26a78b1af7f8720e39270d1a",
+  "run_id": "sol-range_present-msgq_api-r04",
+  "sample_index": 4,
+  "source_sha256": "5ccbd73f00aa919bf6040df11744cf637a7c2b2213768254b6700c01084a7f99",
+  "status": "generated",
+  "task_id": "msgq_api",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 13952,
+    "input_tokens": 14071,
+    "output_tokens": 1097,
+    "reasoning_output_tokens": 576
+  }
+}

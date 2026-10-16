@@ -1,0 +1,41 @@
+{
+  "decisions": {
+    "astra-loose_spec-rtc_alarm_callback-r01": {
+      "alarm_readback": "no",
+      "call_index": 2,
+      "condition": "loose_spec",
+      "contract": "loose_callback",
+      "exact_calendar_oracle": "no",
+      "functional": "met",
+      "functional_evidence": "Programs both alarms; checks each callback semaphore and corresponding alarm ID within finite shared 30 s window. Exact target time is optional under loose contract.",
+      "model": "gpt-6-astra",
+      "reviewed_utc": "2026-10-08T22:49:08.096428+00:00",
+      "run_id": "astra-loose_spec-rtc_alarm_callback-r01",
+      "source_path": "generated/stage_b_callback_v1/suites/astra/loose_spec/r01/test.c",
+      "source_sha256": "fb6c448e8f8c323c47c0ac22ad28f866baad2ca2ed6fdb86c07945c938277cc6",
+      "task_id": "rtc_alarm_callback",
+      "timing_bound": "unknown",
+      "timing_evidence": "30 s bound exceeds 18.824 s ideal slow arrival, but delivery-latency ceiling is not established by source."
+    },
+    "astra-range_present-rtc_alarm_callback-r01": {
+      "alarm_readback": "no",
+      "call_index": 1,
+      "condition": "range_present",
+      "contract": "original_precise_callback",
+      "exact_calendar_oracle": "yes",
+      "functional": "met",
+      "functional_evidence": "Arms both alarm IDs with supported mask; waits for two semaphore events; asserts one call per ID, reported ID, callback RTC read success, and callback calendar exactly equal to target (plus not-before guard).",
+      "model": "gpt-6-astra",
+      "reviewed_utc": "2026-10-08T22:49:08.096482+00:00",
+      "run_id": "astra-range_present-rtc_alarm_callback-r01",
+      "source_path": "generated/stage_b_callback_v1/suites/astra/range_present/r01/test.c",
+      "source_sha256": "7ba634ca0697a9ee6ede576a0661ab49df9a6587a2d757faca50bf7ac643c0de",
+      "task_id": "rtc_alarm_callback",
+      "timing_bound": "unknown",
+      "timing_evidence": "25 s bound exceeds 18.824 s ideal slow arrival by 6.176 s, but no API-level maximum callback delivery latency is established."
+    }
+  },
+  "review_timing": "Before Stage B legal-clock and fault outcomes",
+  "reviewer": "Single unblinded automated source reviewer",
+  "schema_version": 1
+}

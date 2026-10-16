@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 43,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_absent",
+  "generation_date_utc": "2026-10-03T19:30:34.880115+00:00",
+  "model": "gpt-6-astra",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/sleep/range_absent.txt",
+  "prompt_sha256": "88aec876f9055f5219eddc5d1e9d9146484f0eb0b3ef628b426a45f1c19fc9b5",
+  "prompt_transport": "argument",
+  "response_sha256": "fc450ff97d75ad73214192e141e5bdbc54aefe7f98f763f111b3a3758367eb7c",
+  "run_id": "astra-range_absent-sleep-r01",
+  "sample_index": 1,
+  "source_sha256": "9a6c72712e38c479d95b7b78529a146670b1fe5b31642af242d43c5cd1d280de",
+  "status": "generated",
+  "task_id": "sleep",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 0,
+    "input_tokens": 14493,
+    "output_tokens": 1836,
+    "reasoning_output_tokens": 827
+  }
+}

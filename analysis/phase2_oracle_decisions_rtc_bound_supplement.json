@@ -1,0 +1,137 @@
+{
+  "cohort": "rtc_bound_supplement",
+  "decisions": {
+    "rtc_alarm_callback-r01": {
+      "feature_path_evidence": "Build fails: K_SECONDS(24) + K_SECONDS(5) adds two k_timeout_t values, which is invalid C; see results/phase2_rtc_bound/build_logs/rtc_alarm_callback-r01.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "The source checks atomic callback flags and alarm pending state in a pre-alarm sample.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "The source asserts both callback IDs, two semaphore events, and RTC calendar time after the events.",
+          "judgment": "met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "The attempted 29 s bound cannot be applied: CALLBACK_BOUND adds two k_timeout_t values and fails compilation. The pre-alarm now.tm_sec < 5 check also excludes valid 55\u201359 seconds.",
+          "judgment": "not_met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T19:44:26.572072+00:00",
+      "reviewer": "Codex source and nominal-trace review against registered RTC supplement rubric",
+      "source_path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r01/test.c",
+      "source_sha256": "33b6ff9d5c12c763a53a10991385cdec5c4224b08b2abe5d967ee1db51bf3c53"
+    },
+    "rtc_alarm_callback-r02": {
+      "feature_path_evidence": "Build fails: unresolved k_poll_signal_wait placeholder and k_timeout_t arithmetic; see results/phase2_rtc_bound/build_logs/rtc_alarm_callback-r02.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "The source checks atomic callback count and ID bits during its pre-alarm sample.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "The source asserts callback IDs, exact callback count, and an RTC time at or after the alarm.",
+          "judgment": "met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "The placeholder k_poll_signal_wait and int64_t + K_SECONDS(24) expression do not compile; the intended finite poll deadline is not executable.",
+          "judgment": "not_met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T19:44:26.572182+00:00",
+      "reviewer": "Codex source and nominal-trace review against registered RTC supplement rubric",
+      "source_path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r02/test.c",
+      "source_sha256": "1b1ea0a1df5aaca658d6d363e589376d92193a89dc7b854eda3e256c9603a4d6"
+    },
+    "rtc_alarm_callback-r03": {
+      "feature_path_evidence": "Build fails on ret = zassert_unreachable; source ends before waiting for or asserting either callback; see results/phase2_rtc_bound/build_logs/rtc_alarm_callback-r03.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "The source checks atomic callback mask and unexpected-ID flag after a pre-alarm sleep.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "The source never waits for or asserts both callbacks. It ends at an invalid zassert_unreachable assignment.",
+          "judgment": "not_met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "Although a 24 s timeout macro is declared, it is never used; the source has no executable event wait.",
+          "judgment": "not_met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T19:44:26.572186+00:00",
+      "reviewer": "Codex source and nominal-trace review against registered RTC supplement rubric",
+      "source_path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r03/test.c",
+      "source_sha256": "616db82a27ba92113fc265a0a655b503601270273099d1bf966f71ca26980cad"
+    },
+    "rtc_alarm_callback-r04": {
+      "feature_path_evidence": "Nominal Renode run fails at the pre-alarm calendar assertion after 3.002 s; now.tm_sec is 55\u201359 before midnight, so now.tm_sec < 5 is false. See results/phase2_rtc_bound/nominal_uart/rtc_alarm_callback-r04.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "The source checks callback bits, unexpected-ID state, and both pending flags before the alarm.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "The source waits for two semaphore events, checks both ID bits, and checks RTC calendar at or after alarm.",
+          "judgment": "met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "The source uses atomic callback bits and a semaphore with a 30 s total bound beginning after the 3 s precheck; its own calendar estimate is 18.824 s at 17 kHz plus policy margin. The faulty precheck causes nominal failure, recorded separately.",
+          "judgment": "met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T19:44:26.572189+00:00",
+      "reviewer": "Codex source and nominal-trace review against registered RTC supplement rubric",
+      "source_path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r04/test.c",
+      "source_sha256": "c6177076595859a920c3fe20f00d5415d2e7cb2e7cbf556517bfbb1ffd81815e"
+    },
+    "rtc_alarm_callback-r05": {
+      "feature_path_evidence": "Nominal Renode test passes in 10.000 virtual seconds; see results/phase2_rtc_bound/nominal_uart/rtc_alarm_callback-r05.log.",
+      "feature_path_exercised": "met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "The source checks protected callback bits and both pending flags after a 2 s pre-alarm sample.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "The source checks two semaphore events, both callback ID bits, no unexpected callback, and RTC calendar time after the events.",
+          "judgment": "met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "The first callback has a justified 24 s wait, but the second uses K_NO_WAIT immediately afterward. No hardware or API bound justifies zero interval between the two callback deliveries; this can reject a legal separate delivery.",
+          "judgment": "not_met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T19:44:26.572192+00:00",
+      "reviewer": "Codex source and nominal-trace review against registered RTC supplement rubric",
+      "source_path": "generated/phase2_rtc_bound/suites/rtc_alarm_callback/r05/test.c",
+      "source_sha256": "144f3c2362b561f34a4fbe4dfb847de1fa17badc1e3ad7837126d77cf12b5061"
+    }
+  },
+  "schema_version": 1,
+  "status_note": "Manual source review before Phase 3 timing outcomes; pending is not adequate."
+}

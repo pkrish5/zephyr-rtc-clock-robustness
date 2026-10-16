@@ -1,0 +1,5171 @@
+[
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_callback-r01",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 2,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 20,
+    "oracle_counts": {
+      "other": 6,
+      "count_id": 6,
+      "eventual": 10,
+      "exact_calendar": 3,
+      "not_before": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.29411764705882354,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_reset",
+      "k_sem_take",
+      "k_uptime_get",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.1063504208110176
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_callback-r02",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 5,
+      "count_id": 4,
+      "eventual": 8,
+      "upper_bound": 1,
+      "not_before": 1,
+      "exact_calendar": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.375,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "k_uptime_get",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.10271646859083192
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_callback-r03",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 20,
+    "oracle_counts": {
+      "eventual": 12,
+      "count_id": 4,
+      "exact_calendar": 3,
+      "not_before": 1,
+      "upper_bound": 2,
+      "other": 4
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.29411764705882354,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_inc",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_reset",
+      "k_sem_take",
+      "k_uptime_get",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.10573770491803279
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_callback-r04",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 17,
+    "oracle_counts": {
+      "other": 5,
+      "eventual": 10,
+      "count_id": 4,
+      "upper_bound": 3,
+      "not_before": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.375,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_reset",
+      "k_sem_take",
+      "k_uptime_get",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08814589665653495
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_callback-r05",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 20,
+    "oracle_counts": {
+      "eventual": 11,
+      "exact_calendar": 4,
+      "not_before": 1,
+      "other": 5,
+      "count_id": 4,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.3125,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.10565723793677205
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_callback-r01",
+    "eligible": false,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 4,
+      "eventual": 10,
+      "upper_bound": 1,
+      "exact_calendar": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.375,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_reset",
+      "k_sem_take",
+      "k_uptime_get",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.09335576114381834
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_callback-r02",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 18,
+    "oracle_counts": {
+      "other": 5,
+      "count_id": 4,
+      "eventual": 9,
+      "not_before": 4,
+      "upper_bound": 2,
+      "exact_calendar": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.46153846153846156,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.0963130173062453
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_callback-r03",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 20,
+    "oracle_counts": {
+      "other": 4,
+      "eventual": 12,
+      "count_id": 7,
+      "not_before": 2,
+      "exact_calendar": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.35294117647058826,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_set",
+      "device_is_ready",
+      "k_msgq_get",
+      "k_msgq_num_used_get",
+      "k_msgq_purge",
+      "k_msgq_put",
+      "k_uptime_get",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08327501749475158
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_callback-r04",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 18,
+    "oracle_counts": {
+      "other": 6,
+      "count_id": 5,
+      "eventual": 8,
+      "not_before": 2,
+      "upper_bound": 2
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.2631578947368421,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_inc",
+      "atomic_or",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_reset",
+      "k_sem_take",
+      "k_uptime_get",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.09613983976693372
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_callback-r05",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 19,
+    "oracle_counts": {
+      "other": 5,
+      "count_id": 4,
+      "eventual": 10,
+      "upper_bound": 3,
+      "not_before": 2
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08890577507598785
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_callback-r01",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 3,
+      "eventual": 9,
+      "count_id": 4,
+      "not_before": 1,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "atomic_get",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "k_yield",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.12265917602996254
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_callback-r02",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 15,
+    "oracle_counts": {
+      "other": 2,
+      "eventual": 6,
+      "count_id": 6,
+      "not_before": 2,
+      "register_readback": 4,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "atomic_get",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sleep",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.10244360902255639
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_callback-r03",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 4,
+      "eventual": 8,
+      "count_id": 4,
+      "not_before": 3,
+      "exact_calendar": 2
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.29411764705882354,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_or",
+      "device_is_ready",
+      "k_sem_count_get",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "k_sleep",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.10636182902584493
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_callback-r04",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 17,
+    "oracle_counts": {
+      "other": 6,
+      "eventual": 7,
+      "count_id": 2,
+      "not_before": 2,
+      "upper_bound": 1,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.42857142857142855,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_inc",
+      "atomic_or",
+      "device_is_ready",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.1265004616805171
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_callback-r05",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 2,
+      "eventual": 5,
+      "count_id": 2,
+      "not_before": 2
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.35714285714285715,
+    "api_ai": [
+      "atomic_get",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.1305732484076433
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_callback-r01",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 2,
+      "eventual": 5,
+      "count_id": 3,
+      "not_before": 3,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.4375,
+    "api_ai": [
+      "atomic_get",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "k_sleep",
+      "k_ticks_to_ms_floor64",
+      "k_uptime_get",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.10478128179043744
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_callback-r02",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 11,
+    "oracle_counts": {
+      "other": 3,
+      "eventual": 5,
+      "count_id": 5,
+      "not_before": 4,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "atomic_get",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time",
+      "rtc_time_at_or_after_alarm"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.09793351302785265
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_callback-r03",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 18,
+    "oracle_counts": {
+      "other": 6,
+      "eventual": 8,
+      "count_id": 3,
+      "not_before": 3,
+      "upper_bound": 1,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.4375,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08878923766816144
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_callback-r04",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 10,
+    "oracle_counts": {
+      "other": 3,
+      "eventual": 5,
+      "count_id": 4,
+      "not_before": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "k_sleep",
+      "k_ticks_to_ms_ceil32",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08669001751313485
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_callback-r05",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 6,
+      "eventual": 8,
+      "count_id": 5,
+      "not_before": 3,
+      "exact_calendar": 2
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.35294117647058826,
+    "api_ai": [
+      "atomic_get",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "k_sleep",
+      "k_ticks_to_ms_floor64",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.05935696619950536
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_callback-r01",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 4,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "survive"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 17,
+    "oracle_counts": {
+      "other": 6,
+      "count_id": 7,
+      "eventual": 8,
+      "not_before": 2,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.35714285714285715,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_inc",
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07611336032388664
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_callback-r02",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 4,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "survive"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 5,
+      "eventual": 8,
+      "not_before": 2,
+      "exact_calendar": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.3125,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_inc",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_take",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08484349258649095
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_callback-r03",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "missing_verdict"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 11,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 3,
+      "eventual": 5,
+      "not_before": 1,
+      "upper_bound": 1,
+      "exact_calendar": 1
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.46153846153846156,
+    "api_ai": [
+      "atomic_get",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07520891364902507
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_callback-r04",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 17,
+    "oracle_counts": {
+      "other": 7,
+      "count_id": 4,
+      "eventual": 6,
+      "not_before": 2,
+      "upper_bound": 1,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.46153846153846156,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07960199004975124
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_callback-r05",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 13,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 3,
+      "eventual": 6,
+      "not_before": 3
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.42857142857142855,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_or",
+      "atomic_set",
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.09461805555555555
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_callback-r01",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 4,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "survive"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 11,
+    "oracle_counts": {
+      "other": 3,
+      "count_id": 6,
+      "eventual": 7,
+      "not_before": 2
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.3125,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_reset",
+      "k_sem_take",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.09009009009009009
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_callback-r02",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 2,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 20,
+    "oracle_counts": {
+      "other": 9,
+      "count_id": 4,
+      "eventual": 4,
+      "not_before": 3,
+      "upper_bound": 2,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.4,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_take",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07635467980295567
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_callback-r03",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 12,
+    "oracle_counts": {
+      "other": 3,
+      "count_id": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "upper_bound": 2
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.375,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08573655494933749
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_callback-r04",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 20,
+    "oracle_counts": {
+      "other": 7,
+      "count_id": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "upper_bound": 1,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.4,
+    "api_ai": [
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_take",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08239095315024232
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_callback-r05",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_callback",
+    "profile_agree": 3,
+    "profile_comparable": 5,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "survive"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "survive",
+      "offset_late": "survive"
+    },
+    "assertions": 13,
+    "oracle_counts": {
+      "other": 5,
+      "count_id": 3,
+      "eventual": 6,
+      "not_before": 2
+    },
+    "upstream_assertions": 12,
+    "upstream_oracle_counts": {
+      "other": 5,
+      "eventual": 7,
+      "not_before": 2,
+      "count_id": 2
+    },
+    "api_jaccard": 0.29411764705882354,
+    "api_ai": [
+      "atomic_clear",
+      "atomic_get",
+      "atomic_inc",
+      "atomic_set",
+      "device_is_ready",
+      "k_sem_give",
+      "k_sem_init",
+      "k_sem_take",
+      "k_uptime_get",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "atomic_get",
+      "atomic_set",
+      "atomic_set_bit",
+      "atomic_test_bit",
+      "k_sleep",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08547008547008547
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_pending-r01",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 22,
+    "oracle_counts": {
+      "other": 6,
+      "count_id": 5,
+      "eventual": 5,
+      "register_readback": 5,
+      "not_before": 5,
+      "exact_calendar": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.45454545454545453,
+    "api_ai": [
+      "device_is_ready",
+      "k_msleep",
+      "k_uptime_get",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06556245686680469
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_pending-r02",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 17,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 5,
+      "eventual": 4,
+      "register_readback": 5,
+      "not_before": 3,
+      "exact_calendar": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06998654104979811
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_pending-r03",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 19,
+    "oracle_counts": {
+      "other": 7,
+      "count_id": 3,
+      "eventual": 4,
+      "register_readback": 5,
+      "not_before": 2,
+      "exact_calendar": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.6,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07133507853403141
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_pending-r04",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 22,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 7,
+      "eventual": 5,
+      "register_readback": 4,
+      "not_before": 4,
+      "exact_calendar": 2,
+      "upper_bound": 2
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.45454545454545453,
+    "api_ai": [
+      "device_is_ready",
+      "k_msleep",
+      "k_uptime_get",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06679389312977099
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_alarm_pending-r05",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 17,
+    "oracle_counts": {
+      "other": 5,
+      "count_id": 4,
+      "eventual": 4,
+      "register_readback": 5,
+      "not_before": 2,
+      "exact_calendar": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.36363636363636365,
+    "api_ai": [
+      "device_is_ready",
+      "k_msleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06981519507186858
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_pending-r01",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 19,
+    "oracle_counts": {
+      "other": 3,
+      "eventual": 7,
+      "count_id": 4,
+      "register_readback": 4,
+      "not_before": 4,
+      "upper_bound": 2
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07091267235718976
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_pending-r02",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 19,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 4,
+      "eventual": 5,
+      "register_readback": 5,
+      "upper_bound": 3,
+      "not_before": 3
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.36363636363636365,
+    "api_ai": [
+      "device_is_ready",
+      "k_msleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07062146892655367
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_pending-r03",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 18,
+    "oracle_counts": {
+      "other": 5,
+      "count_id": 6,
+      "eventual": 2,
+      "register_readback": 4,
+      "not_before": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.38461538461538464,
+    "api_ai": [
+      "device_is_ready",
+      "k_busy_wait",
+      "k_sched_lock",
+      "k_sched_unlock",
+      "k_uptime_get",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07412398921832884
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_pending-r04",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 17,
+    "oracle_counts": {
+      "other": 5,
+      "eventual": 4,
+      "count_id": 3,
+      "register_readback": 4,
+      "not_before": 3,
+      "exact_calendar": 1,
+      "upper_bound": 2
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3076923076923077,
+    "api_ai": [
+      "device_is_ready",
+      "k_busy_wait",
+      "k_sched_lock",
+      "k_sched_unlock",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07167470709855273
+  },
+  {
+    "suite_id": "astra-range_present-rtc_alarm_pending-r05",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 25,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 7,
+      "eventual": 6,
+      "register_readback": 4,
+      "not_before": 4,
+      "exact_calendar": 3,
+      "upper_bound": 3
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.6,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06552162849872774
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_pending-r01",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 6,
+      "exact_calendar": 6,
+      "count_id": 4,
+      "register_readback": 1,
+      "eventual": 2,
+      "not_before": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5555555555555556,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08185053380782918
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_pending-r02",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 11,
+    "oracle_counts": {
+      "other": 2,
+      "count_id": 4,
+      "register_readback": 4,
+      "eventual": 4,
+      "not_before": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.625,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07064220183486239
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_pending-r03",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 10,
+    "oracle_counts": {
+      "other": 4,
+      "register_readback": 1,
+      "exact_calendar": 3,
+      "eventual": 2,
+      "not_before": 1,
+      "count_id": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5555555555555556,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08667883211678833
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_pending-r04",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 13,
+    "oracle_counts": {
+      "other": 3,
+      "count_id": 4,
+      "register_readback": 4,
+      "eventual": 4,
+      "not_before": 1,
+      "upper_bound": 1,
+      "exact_calendar": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5555555555555556,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.07046979865771812
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_alarm_pending-r05",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 10,
+    "oracle_counts": {
+      "other": 2,
+      "count_id": 5,
+      "register_readback": 1,
+      "exact_calendar": 3,
+      "eventual": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5555555555555556,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08356039963669391
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_pending-r01",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 13,
+    "oracle_counts": {
+      "other": 3,
+      "count_id": 4,
+      "register_readback": 4,
+      "not_before": 2,
+      "exact_calendar": 1,
+      "eventual": 4,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06625980819529206
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_pending-r02",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 12,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 4,
+      "register_readback": 4,
+      "eventual": 2,
+      "not_before": 1,
+      "exact_calendar": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5555555555555556,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06315789473684211
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_pending-r03",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 10,
+    "oracle_counts": {
+      "other": 2,
+      "count_id": 4,
+      "register_readback": 4,
+      "eventual": 3,
+      "not_before": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5555555555555556,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06838365896980461
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_pending-r04",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 11,
+    "oracle_counts": {
+      "other": 2,
+      "count_id": 3,
+      "register_readback": 6,
+      "eventual": 4,
+      "not_before": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5555555555555556,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.08527827648114901
+  },
+  {
+    "suite_id": "luna-range_present-rtc_alarm_pending-r05",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null,
+      "offset_early": null,
+      "offset_late": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 9,
+    "oracle_counts": {
+      "other": 2,
+      "count_id": 4,
+      "register_readback": 4,
+      "eventual": 2,
+      "not_before": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.625,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.09569377990430622
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_pending-r01",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 7,
+      "count_id": 3,
+      "register_readback": 4,
+      "eventual": 2,
+      "not_before": 3,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06550907655880031
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_pending-r02",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 5,
+      "eventual": 4,
+      "register_readback": 7,
+      "count_id": 3,
+      "not_before": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.36363636363636365,
+    "api_ai": [
+      "device_is_ready",
+      "k_msleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.05970149253731343
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 3,
+      "register_readback": 4,
+      "eventual": 5,
+      "not_before": 2
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.05309734513274336
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_pending-r04",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 4,
+      "count_id": 3,
+      "register_readback": 4,
+      "eventual": 3,
+      "not_before": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.05741626794258373
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_alarm_pending-r05",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 3,
+      "eventual": 4,
+      "count_id": 3,
+      "register_readback": 4,
+      "not_before": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.05506072874493927
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_pending-r01",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 15,
+    "oracle_counts": {
+      "other": 3,
+      "eventual": 4,
+      "count_id": 4,
+      "register_readback": 4,
+      "not_before": 3,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.06771653543307087
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_pending-r02",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 3,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 5,
+      "count_id": 3,
+      "register_readback": 7,
+      "eventual": 5,
+      "not_before": 2,
+      "exact_calendar": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.05422647527910686
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_pending-r03",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 3,
+      "eventual": 4,
+      "count_id": 3,
+      "register_readback": 5,
+      "not_before": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.36363636363636365,
+    "api_ai": [
+      "device_is_ready",
+      "k_msleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.05629397967161845
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_pending-r04",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 3,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 3,
+      "count_id": 3,
+      "register_readback": 5,
+      "not_before": 3,
+      "eventual": 3,
+      "exact_calendar": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.054245283018867926
+  },
+  {
+    "suite_id": "sol-range_present-rtc_alarm_pending-r05",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_alarm_pending",
+    "profile_agree": 4,
+    "profile_comparable": 4,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "kill",
+      "offset_late": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill",
+      "offset_early": "missing_verdict",
+      "offset_late": "kill"
+    },
+    "assertions": 18,
+    "oracle_counts": {
+      "other": 5,
+      "eventual": 4,
+      "count_id": 4,
+      "register_readback": 5,
+      "not_before": 3
+    },
+    "upstream_assertions": 24,
+    "upstream_oracle_counts": {
+      "other": 9,
+      "eventual": 5,
+      "register_readback": 10,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_time",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_sleep",
+      "rtc_alarm_get_supported_fields",
+      "rtc_alarm_get_time",
+      "rtc_alarm_is_pending",
+      "rtc_alarm_set_callback",
+      "rtc_alarm_set_time",
+      "rtc_set_time"
+    ],
+    "surface_5gram_jaccard": 0.05972558514931396
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_time_counting-r01",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 9,
+      "exact_calendar": 3,
+      "not_before": 1,
+      "eventual": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.05191256830601093
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_time_counting-r02",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 12,
+    "oracle_counts": {
+      "other": 7,
+      "exact_calendar": 3,
+      "not_before": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.2857142857142857,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.058333333333333334
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_time_counting-r03",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 12,
+      "exact_calendar": 3,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.05063291139240506
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_time_counting-r04",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 15,
+    "oracle_counts": {
+      "other": 11,
+      "exact_calendar": 3,
+      "eventual": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.2857142857142857,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.05012853470437018
+  },
+  {
+    "suite_id": "astra-range_absent-rtc_time_counting-r05",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 12,
+    "oracle_counts": {
+      "other": 7,
+      "exact_calendar": 3,
+      "not_before": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.2857142857142857,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.05848787446504993
+  },
+  {
+    "suite_id": "astra-range_present-rtc_time_counting-r01",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 7,
+      "eventual": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.06987577639751552
+  },
+  {
+    "suite_id": "astra-range_present-rtc_time_counting-r02",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 12,
+    "oracle_counts": {
+      "not_before": 1,
+      "exact_calendar": 3,
+      "other": 8
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.2857142857142857,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.060650887573964495
+  },
+  {
+    "suite_id": "astra-range_present-rtc_time_counting-r03",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "exact_calendar": 3,
+      "other": 10,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.06763925729442971
+  },
+  {
+    "suite_id": "astra-range_present-rtc_time_counting-r04",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 11,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.04692737430167598
+  },
+  {
+    "suite_id": "astra-range_present-rtc_time_counting-r05",
+    "eligible": true,
+    "model": "astra",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 13,
+    "oracle_counts": {
+      "other": 10,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.07114624505928854
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_time_counting-r01",
+    "eligible": true,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 7,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.375,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_epoch_seconds",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.05
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_time_counting-r02",
+    "eligible": true,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 9,
+    "oracle_counts": {
+      "other": 8,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.044897959183673466
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_time_counting-r03",
+    "eligible": true,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 7,
+    "oracle_counts": {
+      "other": 6,
+      "eventual": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.08571428571428572
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_time_counting-r04",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 9,
+      "exact_calendar": 3,
+      "not_before": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.06998444790046657
+  },
+  {
+    "suite_id": "luna-range_absent-rtc_time_counting-r05",
+    "eligible": true,
+    "model": "luna",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 2,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "missing"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 13,
+    "oracle_counts": {
+      "other": 9,
+      "exact_calendar": 3,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.0535475234270415
+  },
+  {
+    "suite_id": "luna-range_present-rtc_time_counting-r01",
+    "eligible": true,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 14,
+    "oracle_counts": {
+      "other": 10,
+      "exact_calendar": 3,
+      "eventual": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.2857142857142857,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "rtc_time_seconds"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.05385556915544676
+  },
+  {
+    "suite_id": "luna-range_present-rtc_time_counting-r02",
+    "eligible": true,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 7,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.047683923705722074
+  },
+  {
+    "suite_id": "luna-range_present-rtc_time_counting-r03",
+    "eligible": true,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 11,
+    "oracle_counts": {
+      "other": 8,
+      "register_readback": 1,
+      "exact_calendar": 2,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.375,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_get_time",
+      "rtc_set_time",
+      "rtc_time_to_epoch",
+      "timeutil_timegm"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.0623342175066313
+  },
+  {
+    "suite_id": "luna-range_present-rtc_time_counting-r04",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 15,
+    "oracle_counts": {
+      "other": 11,
+      "exact_calendar": 4,
+      "eventual": 1,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.2857142857142857,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_calendar_seconds",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.03723404255319149
+  },
+  {
+    "suite_id": "luna-range_present-rtc_time_counting-r05",
+    "eligible": false,
+    "model": "luna",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 0,
+    "profile_comparable": 0,
+    "profile_ai": {
+      "fast": null,
+      "slow": null,
+      "nonarrival": null
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 13,
+    "oracle_counts": {
+      "other": 8,
+      "exact_calendar": 4,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.42857142857142855,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_ticks_to_ms_floor64",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.05953991880920163
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_time_counting-r01",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 8
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.07389162561576355
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_time_counting-r02",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 7,
+    "oracle_counts": {
+      "other": 6,
+      "eventual": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.059602649006622516
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_time_counting-r03",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 16,
+    "oracle_counts": {
+      "other": 11,
+      "exact_calendar": 4,
+      "eventual": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.047841306884480746
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_time_counting-r04",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 8
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.05812220566318927
+  },
+  {
+    "suite_id": "sol-range_absent-rtc_time_counting-r05",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_absent",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 5,
+      "eventual": 3,
+      "upper_bound": 2
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.061708860759493674
+  },
+  {
+    "suite_id": "sol-range_present-rtc_time_counting-r01",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 13,
+    "oracle_counts": {
+      "other": 9,
+      "exact_calendar": 3,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.2857142857142857,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.05597579425113464
+  },
+  {
+    "suite_id": "sol-range_present-rtc_time_counting-r02",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 13,
+    "oracle_counts": {
+      "other": 10,
+      "exact_calendar": 3
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.06349206349206349
+  },
+  {
+    "suite_id": "sol-range_present-rtc_time_counting-r03",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 8
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.5,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.07269789983844911
+  },
+  {
+    "suite_id": "sol-range_present-rtc_time_counting-r04",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 2,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "survive",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 7,
+    "oracle_counts": {
+      "other": 6,
+      "eventual": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.3333333333333333,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.06430868167202572
+  },
+  {
+    "suite_id": "sol-range_present-rtc_time_counting-r05",
+    "eligible": true,
+    "model": "sol",
+    "prompt": "range_present",
+    "family": "rtc_time_counting",
+    "profile_agree": 3,
+    "profile_comparable": 3,
+    "profile_ai": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "profile_upstream": {
+      "fast": "survive",
+      "slow": "kill",
+      "nonarrival": "kill"
+    },
+    "assertions": 8,
+    "oracle_counts": {
+      "other": 7,
+      "upper_bound": 1
+    },
+    "upstream_assertions": 4,
+    "upstream_oracle_counts": {
+      "other": 3,
+      "eventual": 1,
+      "upper_bound": 1,
+      "count_id": 1
+    },
+    "api_jaccard": 0.2857142857142857,
+    "api_ai": [
+      "device_is_ready",
+      "k_sleep",
+      "k_uptime_get",
+      "rtc_get_time",
+      "rtc_set_time"
+    ],
+    "api_upstream": [
+      "k_msleep",
+      "rtc_get_time",
+      "rtc_set_time",
+      "timeutil_timegm"
+    ],
+    "surface_5gram_jaccard": 0.057692307692307696
+  }
+]

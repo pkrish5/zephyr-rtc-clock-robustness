@@ -1,0 +1,1462 @@
+{
+  "cohort": "luna_primary",
+  "decisions": {
+    "context-r01": {
+      "feature_path_evidence": "Nominal Renode outcome was fail; see results/phase2_luna/nominal_uart/context-r01.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "context_one_cpu.test_k_sleep",
+      "oracles": [
+        {
+          "evidence": "K_NO_WAIT on an empty semaphore returns -EBUSY in pinned Zephyr sem.c, but the source asserts -EAGAIN.",
+          "judgment": "not_met",
+          "requirement": "The worker enters timed sleep and cannot report completion immediately."
+        },
+        {
+          "evidence": "The completion semaphore is taken after the worker timeout and elapsed time is checked.",
+          "judgment": "met",
+          "requirement": "A completion event arrives after the sleep timeout."
+        },
+        {
+          "evidence": "Completion uses a dedicated semaphore, separate from any immediate control signal.",
+          "judgment": "met",
+          "requirement": "The test distinguishes the event from an unrelated immediate signal."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/context/r01/test.c",
+      "source_sha256": "e3e2853f44a4fc08cfae123df8e0de1a11fb774a3844825845a3ff5b6beb9fee"
+    },
+    "context-r02": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/context-r02.log.",
+      "feature_path_exercised": "met",
+      "human_case": "context_one_cpu.test_k_sleep",
+      "oracles": [
+        {
+          "evidence": "The no-wait check can execute before the worker starts, so it does not establish that the worker entered sleep.",
+          "judgment": "uncertain",
+          "requirement": "The worker enters timed sleep and cannot report completion immediately."
+        },
+        {
+          "evidence": "The worker requests 100 ms but the measured assertion accepts 80 ms without a documented 20 ms tolerance.",
+          "judgment": "uncertain",
+          "requirement": "A completion event arrives after the sleep timeout."
+        },
+        {
+          "evidence": "Completion uses a dedicated semaphore, separate from any immediate control signal.",
+          "judgment": "met",
+          "requirement": "The test distinguishes the event from an unrelated immediate signal."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/context/r02/test.c",
+      "source_sha256": "a1ff584174920f56a971b0b7a9fa744ac88e2384d287af4e7d70ced1106b9e35"
+    },
+    "context-r03": {
+      "feature_path_evidence": "Nominal Renode outcome was fail; see results/phase2_luna/nominal_uart/context-r03.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "context_one_cpu.test_k_sleep",
+      "oracles": [
+        {
+          "evidence": "K_NO_WAIT on an empty semaphore returns -EBUSY in pinned Zephyr sem.c, but the source asserts -EAGAIN.",
+          "judgment": "not_met",
+          "requirement": "The worker enters timed sleep and cannot report completion immediately."
+        },
+        {
+          "evidence": "After a 20 ms early check, the test accepts just 40 ms additional delay for a 100 ms sleep.",
+          "judgment": "uncertain",
+          "requirement": "A completion event arrives after the sleep timeout."
+        },
+        {
+          "evidence": "Completion uses a dedicated semaphore, separate from any immediate control signal.",
+          "judgment": "met",
+          "requirement": "The test distinguishes the event from an unrelated immediate signal."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/context/r03/test.c",
+      "source_sha256": "57d15794596cf52b29889a953386a2987d1b5d57904315cae80ea5a7bd400492"
+    },
+    "context-r04": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/context-r04.log.",
+      "feature_path_exercised": "met",
+      "human_case": "context_one_cpu.test_k_sleep",
+      "oracles": [
+        {
+          "evidence": "The started semaphore is signaled immediately before k_sleep; the no-wait check may precede actual sleep.",
+          "judgment": "uncertain",
+          "requirement": "The worker enters timed sleep and cannot report completion immediately."
+        },
+        {
+          "evidence": "Elapsed time starts after the worker announced imminent sleep, so a 50 ms lower bound may reject a correct run.",
+          "judgment": "uncertain",
+          "requirement": "A completion event arrives after the sleep timeout."
+        },
+        {
+          "evidence": "Completion uses a dedicated semaphore, separate from any immediate control signal.",
+          "judgment": "met",
+          "requirement": "The test distinguishes the event from an unrelated immediate signal."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/context/r04/test.c",
+      "source_sha256": "8db9f6b238f79f63536e9534c953e1c7afccd8b120ac72e99db9f139d2cd0c9e"
+    },
+    "context-r05": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/context-r05.log.",
+      "feature_path_exercised": "met",
+      "human_case": "context_one_cpu.test_k_sleep",
+      "oracles": [
+        {
+          "evidence": "The started semaphore is signaled immediately before k_sleep, so the no-wait check may precede actual sleep.",
+          "judgment": "uncertain",
+          "requirement": "The worker enters timed sleep and cannot report completion immediately."
+        },
+        {
+          "evidence": "Elapsed time starts before thread creation; scheduler delay could satisfy the 50 ms check even if worker sleep were shorter.",
+          "judgment": "not_met",
+          "requirement": "A completion event arrives after the sleep timeout."
+        },
+        {
+          "evidence": "Completion uses a dedicated semaphore, separate from any immediate control signal.",
+          "judgment": "met",
+          "requirement": "The test distinguishes the event from an unrelated immediate signal."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/context/r05/test.c",
+      "source_sha256": "594ce77f2c763b5b0118dee041ffa0d15361fd1afb1688d30abbbaf7f07246c6"
+    },
+    "fifo_api-r01": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/fifo_api-r01.log.",
+      "feature_path_exercised": "met",
+      "human_case": "fifo_api.test_fifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_fifo_get calls assert pointer order against the two inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_fifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/fifo_api/r01/test.c",
+      "source_sha256": "6fcbbd54295fdd5b270b66096b0fdc3a923136d2854a7b1e4a214d09ded314da"
+    },
+    "fifo_api-r02": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/fifo_api-r02.log.",
+      "feature_path_exercised": "met",
+      "human_case": "fifo_api.test_fifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_fifo_get calls assert pointer order against the two inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_fifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/fifo_api/r02/test.c",
+      "source_sha256": "bb36fb568b9af15f840eff25a8a916b5f647dd9d36e224d1b696244c344413b7"
+    },
+    "fifo_api-r03": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/fifo_api-r03.log.",
+      "feature_path_exercised": "met",
+      "human_case": "fifo_api.test_fifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_fifo_get calls assert pointer order against the two inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_fifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/fifo_api/r03/test.c",
+      "source_sha256": "45545d4e5cb24ecb59f86181141c66bf7e16374478322c6eb7145d26c38cc6e1"
+    },
+    "fifo_api-r04": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/fifo_api-r04.log.",
+      "feature_path_exercised": "met",
+      "human_case": "fifo_api.test_fifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_fifo_get calls assert pointer order against the two inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_fifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/fifo_api/r04/test.c",
+      "source_sha256": "36a151f5cd46cf6cd7a7d08059e941130417646ddeaa80b061e8f20aebda2f42"
+    },
+    "fifo_api-r05": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/fifo_api-r05.log.",
+      "feature_path_exercised": "met",
+      "human_case": "fifo_api.test_fifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_fifo_get calls assert pointer order against the two inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_fifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/fifo_api/r05/test.c",
+      "source_sha256": "9480e14ebf64ccf3ff74757b1fd2e6aaa4d3c604a76e3e39a765e0121b0d2bc0"
+    },
+    "lifo_api-r01": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/lifo_api-r01.log.",
+      "feature_path_exercised": "met",
+      "human_case": "lifo_contexts.test_lifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_lifo_get calls assert reverse pointer order against inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in reverse insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The LIFO is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_lifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/lifo_api/r01/test.c",
+      "source_sha256": "3a20dac34b926d699d7b56cd58fb6855b0a1dd2055f5e5d86c4b658dac16eb28"
+    },
+    "lifo_api-r02": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/lifo_api-r02.log.",
+      "feature_path_exercised": "met",
+      "human_case": "lifo_contexts.test_lifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_lifo_get calls assert reverse pointer order against inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in reverse insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The LIFO is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_lifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/lifo_api/r02/test.c",
+      "source_sha256": "e7c6860fb7d98bb0a2d625bee6ab7fb1ff0b1a20b4aa69de1e64816b73ad1b38"
+    },
+    "lifo_api-r03": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/lifo_api-r03.log.",
+      "feature_path_exercised": "met",
+      "human_case": "lifo_contexts.test_lifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_lifo_get calls assert reverse pointer order against inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in reverse insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The LIFO is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_lifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/lifo_api/r03/test.c",
+      "source_sha256": "b17c94a1657a5f07acb3b296fe1af6be504ad2e5fa8f8679699ebf80ed9d45d2"
+    },
+    "lifo_api-r04": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/lifo_api-r04.log.",
+      "feature_path_exercised": "met",
+      "human_case": "lifo_contexts.test_lifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_lifo_get calls assert reverse pointer order against inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in reverse insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The LIFO is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_lifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/lifo_api/r04/test.c",
+      "source_sha256": "9ab10d4e2397f350096bd5bed31fe8b2dc11c5ee6f5f818cce595f8b6124cbe1"
+    },
+    "lifo_api-r05": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/lifo_api-r05.log.",
+      "feature_path_exercised": "met",
+      "human_case": "lifo_contexts.test_lifo_isr2thread",
+      "oracles": [
+        {
+          "evidence": "Two k_lifo_get calls assert reverse pointer order against inserted objects.",
+          "judgment": "met",
+          "requirement": "Both retrieved pointers identify the items sent by the ISR in reverse insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The LIFO is empty after both gets."
+        },
+        {
+          "evidence": "irq_offload invokes the handler that performs both k_lifo_put calls.",
+          "judgment": "met",
+          "requirement": "The ISR path is actually used."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/lifo_api/r05/test.c",
+      "source_sha256": "a864fc042dc1dddfabb7abfe62b0b61a2f5ea3f27e02128cb840b33813215730"
+    },
+    "msgq_api-r01": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/msgq_api-r01.log.",
+      "feature_path_exercised": "met",
+      "human_case": "msgq_api.test_msgq_isr",
+      "oracles": [
+        {
+          "evidence": "ISR k_msgq_put uses K_NO_WAIT and its saved return values are asserted zero.",
+          "judgment": "met",
+          "requirement": "The ISR put succeeds without blocking."
+        },
+        {
+          "evidence": "Retrieved message buffers are compared with the sent byte values.",
+          "judgment": "met",
+          "requirement": "Retrieved message bytes equal the values sent from the ISR."
+        },
+        {
+          "evidence": "k_msgq_num_used_get is asserted zero after retrieval.",
+          "judgment": "met",
+          "requirement": "The queue is empty after retrieval."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/msgq_api/r01/test.c",
+      "source_sha256": "4bda1bcf1a5b3c395408f12c8d450c1ff38189cfc3c021480999a0324ae323e3"
+    },
+    "msgq_api-r02": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/msgq_api-r02.log.",
+      "feature_path_exercised": "met",
+      "human_case": "msgq_api.test_msgq_isr",
+      "oracles": [
+        {
+          "evidence": "ISR k_msgq_put uses K_NO_WAIT and its saved return values are asserted zero.",
+          "judgment": "met",
+          "requirement": "The ISR put succeeds without blocking."
+        },
+        {
+          "evidence": "Retrieved message buffers are compared with the sent byte values.",
+          "judgment": "met",
+          "requirement": "Retrieved message bytes equal the values sent from the ISR."
+        },
+        {
+          "evidence": "k_msgq_num_used_get is asserted zero after retrieval.",
+          "judgment": "met",
+          "requirement": "The queue is empty after retrieval."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/msgq_api/r02/test.c",
+      "source_sha256": "323d33d2cc5e1f79af5303abc89bec6dd6adfd884178511bc95cdd47254b0843"
+    },
+    "msgq_api-r03": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/msgq_api-r03.log.",
+      "feature_path_exercised": "met",
+      "human_case": "msgq_api.test_msgq_isr",
+      "oracles": [
+        {
+          "evidence": "ISR k_msgq_put uses K_NO_WAIT and its saved return values are asserted zero.",
+          "judgment": "met",
+          "requirement": "The ISR put succeeds without blocking."
+        },
+        {
+          "evidence": "Retrieved message buffers are compared with the sent byte values.",
+          "judgment": "met",
+          "requirement": "Retrieved message bytes equal the values sent from the ISR."
+        },
+        {
+          "evidence": "k_msgq_num_used_get is asserted zero after retrieval.",
+          "judgment": "met",
+          "requirement": "The queue is empty after retrieval."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/msgq_api/r03/test.c",
+      "source_sha256": "7aa0188d8def3de6719b1dcb49bb7a482887130bd1ba6a5ee511ea06ef239e47"
+    },
+    "msgq_api-r04": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/msgq_api-r04.log.",
+      "feature_path_exercised": "met",
+      "human_case": "msgq_api.test_msgq_isr",
+      "oracles": [
+        {
+          "evidence": "ISR k_msgq_put uses K_NO_WAIT and its saved return values are asserted zero.",
+          "judgment": "met",
+          "requirement": "The ISR put succeeds without blocking."
+        },
+        {
+          "evidence": "Retrieved message buffers are compared with the sent byte values.",
+          "judgment": "met",
+          "requirement": "Retrieved message bytes equal the values sent from the ISR."
+        },
+        {
+          "evidence": "k_msgq_num_used_get is asserted zero after retrieval.",
+          "judgment": "met",
+          "requirement": "The queue is empty after retrieval."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/msgq_api/r04/test.c",
+      "source_sha256": "cfde656acfd4423fa412ceb8ad7f5af4b99a0b1958404419a05c5a7dcbc06a4d"
+    },
+    "msgq_api-r05": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/msgq_api-r05.log.",
+      "feature_path_exercised": "met",
+      "human_case": "msgq_api.test_msgq_isr",
+      "oracles": [
+        {
+          "evidence": "ISR k_msgq_put uses K_NO_WAIT and its saved return values are asserted zero.",
+          "judgment": "met",
+          "requirement": "The ISR put succeeds without blocking."
+        },
+        {
+          "evidence": "Retrieved message buffers are compared with the sent byte values.",
+          "judgment": "met",
+          "requirement": "Retrieved message bytes equal the values sent from the ISR."
+        },
+        {
+          "evidence": "k_msgq_num_used_get is asserted zero after retrieval.",
+          "judgment": "met",
+          "requirement": "The queue is empty after retrieval."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/msgq_api/r05/test.c",
+      "source_sha256": "4d18d8c88835b321ccc6a2da5232b8d933dd0efcc8b8f9638947897ce4057813"
+    },
+    "pending-r01": {
+      "feature_path_evidence": "Build fail; the frozen source cannot execute. See results/phase2_luna/build_logs/pending-r01.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "pending.test_pending_timer",
+      "oracles": [
+        {
+          "evidence": "The 10 ms fixed sleep assumes the worker has blocked before the state check.",
+          "judgment": "uncertain",
+          "requirement": "The worker is blocked before the timer expires."
+        },
+        {
+          "evidence": "Worker completion is awaited after one-shot timer start.",
+          "judgment": "met",
+          "requirement": "The timer expiration wakes it and completion is observed."
+        },
+        {
+          "evidence": "The worker timer status or consumed timer event is asserted.",
+          "judgment": "met",
+          "requirement": "The received timer status or event data is checked, not merely a delay."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/pending/r01/test.c",
+      "source_sha256": "9ec3b0d92670467e71e020f76a20dcb5a1b496afd87aa02d7dfc756c90e537a1"
+    },
+    "pending-r02": {
+      "feature_path_evidence": "Nominal Renode outcome was fail; see results/phase2_luna/nominal_uart/pending-r02.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "pending.test_pending_timer",
+      "oracles": [
+        {
+          "evidence": "The empty completion semaphore is asserted -EAGAIN for K_NO_WAIT, but pinned Zephyr returns -EBUSY.",
+          "judgment": "not_met",
+          "requirement": "The worker is blocked before the timer expires."
+        },
+        {
+          "evidence": "Worker completion is awaited after one-shot timer start.",
+          "judgment": "met",
+          "requirement": "The timer expiration wakes it and completion is observed."
+        },
+        {
+          "evidence": "The worker timer status or consumed timer event is asserted.",
+          "judgment": "met",
+          "requirement": "The received timer status or event data is checked, not merely a delay."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/pending/r02/test.c",
+      "source_sha256": "213bab404ec1476938d8a527f1af19079e1548c9a60938ad3f5218f94f705651"
+    },
+    "pending-r03": {
+      "feature_path_evidence": "Nominal Renode outcome was timeout; see results/phase2_luna/nominal_uart/pending-r03.log and the recorded trace.",
+      "feature_path_exercised": "not_met",
+      "human_case": "pending.test_pending_timer",
+      "oracles": [
+        {
+          "evidence": "worker_pending is set immediately before status_sync, so the flag alone does not prove the worker is blocked.",
+          "judgment": "uncertain",
+          "requirement": "The worker is blocked before the timer expires."
+        },
+        {
+          "evidence": "Worker completion is awaited after one-shot timer start.",
+          "judgment": "met",
+          "requirement": "The timer expiration wakes it and completion is observed."
+        },
+        {
+          "evidence": "The worker timer status or consumed timer event is asserted.",
+          "judgment": "met",
+          "requirement": "The received timer status or event data is checked, not merely a delay."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:36:34.673443+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/pending/r03/test.c",
+      "source_sha256": "a974c281fa0c1b7330de96da1347606e738f180e00b0c4518ca830d392cf3d21"
+    },
+    "pending-r04": {
+      "feature_path_evidence": "Build fail; the frozen source cannot execute. See results/phase2_luna/build_logs/pending-r04.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "pending.test_pending_timer",
+      "oracles": [
+        {
+          "evidence": "worker_blocked is set before status_sync; a 10 ms wait does not directly prove the blocked state.",
+          "judgment": "uncertain",
+          "requirement": "The worker is blocked before the timer expires."
+        },
+        {
+          "evidence": "Worker completion is awaited after one-shot timer start.",
+          "judgment": "met",
+          "requirement": "The timer expiration wakes it and completion is observed."
+        },
+        {
+          "evidence": "The worker timer status or consumed timer event is asserted.",
+          "judgment": "met",
+          "requirement": "The received timer status or event data is checked, not merely a delay."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/pending/r04/test.c",
+      "source_sha256": "29f2f7a925002fedd7a6815bb7585e91830ac415cc11e0c7ae6737b7f49df675"
+    },
+    "pending-r05": {
+      "feature_path_evidence": "Build fail; the frozen source cannot execute. See results/phase2_luna/build_logs/pending-r05.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "pending.test_pending_timer",
+      "oracles": [
+        {
+          "evidence": "worker_pending is set before status_sync and the fixed 10 ms wait does not directly prove blocking.",
+          "judgment": "uncertain",
+          "requirement": "The worker is blocked before the timer expires."
+        },
+        {
+          "evidence": "Worker completion is awaited after one-shot timer start.",
+          "judgment": "met",
+          "requirement": "The timer expiration wakes it and completion is observed."
+        },
+        {
+          "evidence": "The worker timer status or consumed timer event is asserted.",
+          "judgment": "met",
+          "requirement": "The received timer status or event data is checked, not merely a delay."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/pending/r05/test.c",
+      "source_sha256": "da4aee69b9eccc5ef32f78f98500be2c9d515d7714ff337fc10137d6f0c976a7"
+    },
+    "queue-r01": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/queue-r01.log.",
+      "feature_path_exercised": "met",
+      "human_case": "queue_api.test_queue_isr2thread",
+      "oracles": [
+        {
+          "evidence": "irq_offload invokes the handler that appends both items.",
+          "judgment": "met",
+          "requirement": "The ISR append path executes."
+        },
+        {
+          "evidence": "Two k_queue_get results are asserted in pointer insertion order.",
+          "judgment": "met",
+          "requirement": "Retrieved pointers preserve insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty afterward."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/queue/r01/test.c",
+      "source_sha256": "6ba17494ce3b5cb9a11b486069ee5e555cb6b96d99a6ef49a40c9d891ca5c6b9"
+    },
+    "queue-r02": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/queue-r02.log.",
+      "feature_path_exercised": "met",
+      "human_case": "queue_api.test_queue_isr2thread",
+      "oracles": [
+        {
+          "evidence": "irq_offload invokes the handler that appends both items.",
+          "judgment": "met",
+          "requirement": "The ISR append path executes."
+        },
+        {
+          "evidence": "Two k_queue_get results are asserted in pointer insertion order.",
+          "judgment": "met",
+          "requirement": "Retrieved pointers preserve insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty afterward."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/queue/r02/test.c",
+      "source_sha256": "cee0a6b10ef36f43f6f6c38f94bc946ecb4e3a04dd9688cac8d42e779ed2d589"
+    },
+    "queue-r03": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/queue-r03.log.",
+      "feature_path_exercised": "met",
+      "human_case": "queue_api.test_queue_isr2thread",
+      "oracles": [
+        {
+          "evidence": "irq_offload invokes the handler that appends both items.",
+          "judgment": "met",
+          "requirement": "The ISR append path executes."
+        },
+        {
+          "evidence": "Two k_queue_get results are asserted in pointer insertion order.",
+          "judgment": "met",
+          "requirement": "Retrieved pointers preserve insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty afterward."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/queue/r03/test.c",
+      "source_sha256": "7897fe45a34c3ebe7cc84d3312129d49b0eba4b73bb558f65e491d72b2a5c8ed"
+    },
+    "queue-r04": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/queue-r04.log.",
+      "feature_path_exercised": "met",
+      "human_case": "queue_api.test_queue_isr2thread",
+      "oracles": [
+        {
+          "evidence": "irq_offload invokes the handler that appends both items.",
+          "judgment": "met",
+          "requirement": "The ISR append path executes."
+        },
+        {
+          "evidence": "Two k_queue_get results are asserted in pointer insertion order.",
+          "judgment": "met",
+          "requirement": "Retrieved pointers preserve insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty afterward."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/queue/r04/test.c",
+      "source_sha256": "9280f24259caa92b0c4c7093e450101d8455ae273dc12aedae96b8f7ee2ed4e5"
+    },
+    "queue-r05": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/queue-r05.log.",
+      "feature_path_exercised": "met",
+      "human_case": "queue_api.test_queue_isr2thread",
+      "oracles": [
+        {
+          "evidence": "irq_offload invokes the handler that appends both items.",
+          "judgment": "met",
+          "requirement": "The ISR append path executes."
+        },
+        {
+          "evidence": "Two k_queue_get results are asserted in pointer insertion order.",
+          "judgment": "met",
+          "requirement": "Retrieved pointers preserve insertion order."
+        },
+        {
+          "evidence": "A final K_NO_WAIT get is asserted null.",
+          "judgment": "met",
+          "requirement": "The queue is empty afterward."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/queue/r05/test.c",
+      "source_sha256": "1e28832d6c85b3ae89b63e14e98bb6550e738ec2f94af8bcab31037d0eb5e015"
+    },
+    "rtc_alarm_callback-r01": {
+      "feature_path_evidence": "Nominal Renode outcome was fail; see results/phase2_luna/nominal_uart/rtc_alarm_callback-r01.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "Callback state is checked before the configured RTC alarm time.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "Both callbacks and their alarm IDs are asserted, with an RTC calendar check.",
+          "judgment": "met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "The 3 s precheck plus 15 s event wait ends by 18 s, below the approximately 18.8 s alarm arrival at legal 17 kHz LSI.",
+          "judgment": "not_met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/rtc_alarm_callback/r01/test.c",
+      "source_sha256": "ae8c0d630db725faeaeb7f73d63108eaa9bcc19867d230295ea09e27f82c9b79"
+    },
+    "rtc_alarm_callback-r02": {
+      "feature_path_evidence": "Nominal Renode outcome was fail; see results/phase2_luna/nominal_uart/rtc_alarm_callback-r02.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "Callback state is checked before the configured RTC alarm time.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "Both callbacks and their alarm IDs are asserted, with an RTC calendar check.",
+          "judgment": "met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "The source uses protected callback state and a finite wait bound.",
+          "judgment": "met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/rtc_alarm_callback/r02/test.c",
+      "source_sha256": "46098b3b9cb6633c5dad5d588496480163f9c83a8d40e91e0a5aabf60b1835f1"
+    },
+    "rtc_alarm_callback-r03": {
+      "feature_path_evidence": "Nominal Renode outcome was fail; see results/phase2_luna/nominal_uart/rtc_alarm_callback-r03.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "Callback state is checked before the configured RTC alarm time.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "RTC time is read before the callback wait and the stale value is compared with the alarm afterward; the nominal assertion fails.",
+          "judgment": "not_met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "The source uses protected callback state and a finite wait bound.",
+          "judgment": "met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/rtc_alarm_callback/r03/test.c",
+      "source_sha256": "79d6c4222777ac44f37230ca8b47ed38c856ed961213ce71d2780480a709f5bc"
+    },
+    "rtc_alarm_callback-r04": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/rtc_alarm_callback-r04.log.",
+      "feature_path_exercised": "met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "Callback state is checked before the configured RTC alarm time.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "Both callbacks and their alarm IDs are asserted, with an RTC calendar check.",
+          "judgment": "met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "The source caps RTC arrival at 15 s; at legal 17 kHz LSI the nominal-32-kHz prescaler makes ten RTC seconds take about 18.8 s.",
+          "judgment": "not_met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/rtc_alarm_callback/r04/test.c",
+      "source_sha256": "ec355bdce5f0ce933e31032a91d7ddb434f673b3ef06c5af1af9b314b783a5f6"
+    },
+    "rtc_alarm_callback-r05": {
+      "feature_path_evidence": "Build fail; the frozen source cannot execute. See results/phase2_luna/build_logs/rtc_alarm_callback-r05.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "rtc_api.test_alarm_callback",
+      "oracles": [
+        {
+          "evidence": "Callback state is checked before the configured RTC alarm time.",
+          "judgment": "met",
+          "requirement": "Neither callback is observed before the alarm time."
+        },
+        {
+          "evidence": "Both callbacks and their alarm IDs are asserted, with an RTC calendar check.",
+          "judgment": "met",
+          "requirement": "Both callbacks fire at the configured RTC time and report the expected alarm IDs."
+        },
+        {
+          "evidence": "The source uses protected callback state and a finite wait bound.",
+          "judgment": "met",
+          "requirement": "The test checks callbacks through observable events or protected state and applies a finite, justified bound."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/rtc_alarm_callback/r05/test.c",
+      "source_sha256": "cd944847615f9d8965d74048df686b8740d8b15f2d2819e5f870d381339cb16e"
+    },
+    "semaphore-r01": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/semaphore-r01.log.",
+      "feature_path_exercised": "met",
+      "human_case": "semaphore.test_sem_give_from_isr",
+      "oracles": [
+        {
+          "evidence": "Semaphore is initialized at zero and count_get is asserted zero.",
+          "judgment": "met",
+          "requirement": "The initial count is zero."
+        },
+        {
+          "evidence": "Count_get is asserted one then two after ISR gives.",
+          "judgment": "met",
+          "requirement": "Each ISR give changes the count by one and no give is lost."
+        },
+        {
+          "evidence": "The offload handler is invoked twice.",
+          "judgment": "met",
+          "requirement": "At least two ISR gives are exercised."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/semaphore/r01/test.c",
+      "source_sha256": "839d1077623e75d93390703bd98618b0093edf876ed35943b6d3b1c9c6a13ef8"
+    },
+    "semaphore-r02": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/semaphore-r02.log.",
+      "feature_path_exercised": "met",
+      "human_case": "semaphore.test_sem_give_from_isr",
+      "oracles": [
+        {
+          "evidence": "Semaphore is initialized at zero and count_get is asserted zero.",
+          "judgment": "met",
+          "requirement": "The initial count is zero."
+        },
+        {
+          "evidence": "Count_get is asserted one then two after ISR gives.",
+          "judgment": "met",
+          "requirement": "Each ISR give changes the count by one and no give is lost."
+        },
+        {
+          "evidence": "The offload handler is invoked twice.",
+          "judgment": "met",
+          "requirement": "At least two ISR gives are exercised."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/semaphore/r02/test.c",
+      "source_sha256": "323990e2a15339a3408f56f28d010cf6bcf0b6c9caf9601c27aff08bf59ae4e5"
+    },
+    "semaphore-r03": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/semaphore-r03.log.",
+      "feature_path_exercised": "met",
+      "human_case": "semaphore.test_sem_give_from_isr",
+      "oracles": [
+        {
+          "evidence": "Semaphore is initialized at zero and count_get is asserted zero.",
+          "judgment": "met",
+          "requirement": "The initial count is zero."
+        },
+        {
+          "evidence": "Count_get is asserted one then two after ISR gives.",
+          "judgment": "met",
+          "requirement": "Each ISR give changes the count by one and no give is lost."
+        },
+        {
+          "evidence": "The offload handler is invoked twice.",
+          "judgment": "met",
+          "requirement": "At least two ISR gives are exercised."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/semaphore/r03/test.c",
+      "source_sha256": "acc6ee95a735b10a92ba63ac325f34deaf43c196a22d3e7d85637e22a71338d7"
+    },
+    "semaphore-r04": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/semaphore-r04.log.",
+      "feature_path_exercised": "met",
+      "human_case": "semaphore.test_sem_give_from_isr",
+      "oracles": [
+        {
+          "evidence": "Semaphore is initialized at zero and count_get is asserted zero.",
+          "judgment": "met",
+          "requirement": "The initial count is zero."
+        },
+        {
+          "evidence": "Count_get is asserted one then two after ISR gives.",
+          "judgment": "met",
+          "requirement": "Each ISR give changes the count by one and no give is lost."
+        },
+        {
+          "evidence": "The offload handler is invoked twice.",
+          "judgment": "met",
+          "requirement": "At least two ISR gives are exercised."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/semaphore/r04/test.c",
+      "source_sha256": "4a403c4ba1e0d7f83b407557396c7f55f4cbc0b307e4338e1e32a71e09e54d21"
+    },
+    "semaphore-r05": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/semaphore-r05.log.",
+      "feature_path_exercised": "met",
+      "human_case": "semaphore.test_sem_give_from_isr",
+      "oracles": [
+        {
+          "evidence": "Semaphore is initialized at zero and count_get is asserted zero.",
+          "judgment": "met",
+          "requirement": "The initial count is zero."
+        },
+        {
+          "evidence": "Count_get is asserted one then two after ISR gives.",
+          "judgment": "met",
+          "requirement": "Each ISR give changes the count by one and no give is lost."
+        },
+        {
+          "evidence": "The offload handler is invoked twice.",
+          "judgment": "met",
+          "requirement": "At least two ISR gives are exercised."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/semaphore/r05/test.c",
+      "source_sha256": "bb56f546c98428ca0033c3ef0b3b60456d9d35ef04f1f866c963f394dda1e89a"
+    },
+    "sleep-r01": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/sleep-r01.log.",
+      "feature_path_exercised": "met",
+      "human_case": "sleep.test_sleep",
+      "oracles": [
+        {
+          "evidence": "The ISR offload invokes k_wakeup after a setup wait; early completion is checked against a five-second requested sleep.",
+          "judgment": "met",
+          "requirement": "The wakeup is issued from an interrupt context while the target is asleep."
+        },
+        {
+          "evidence": "A completion semaphore is taken after the ISR wakeup.",
+          "judgment": "met",
+          "requirement": "The thread reports completion after the ISR wakeup."
+        },
+        {
+          "evidence": "Recorded sleep duration is asserted below the five-second request with an explicit margin.",
+          "judgment": "met",
+          "requirement": "The observed sleep duration is shorter than the requested duration with a justified margin."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/sleep/r01/test.c",
+      "source_sha256": "708ed2f07ee48af870a32af473db236fe4a1b15f5435cba8ef413b59da8cc421"
+    },
+    "sleep-r02": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/sleep-r02.log.",
+      "feature_path_exercised": "met",
+      "human_case": "sleep.test_sleep",
+      "oracles": [
+        {
+          "evidence": "The ISR offload invokes k_wakeup after a setup wait; early completion is checked against a five-second requested sleep.",
+          "judgment": "met",
+          "requirement": "The wakeup is issued from an interrupt context while the target is asleep."
+        },
+        {
+          "evidence": "A completion semaphore is taken after the ISR wakeup.",
+          "judgment": "met",
+          "requirement": "The thread reports completion after the ISR wakeup."
+        },
+        {
+          "evidence": "Recorded sleep duration is asserted below the five-second request with an explicit margin.",
+          "judgment": "met",
+          "requirement": "The observed sleep duration is shorter than the requested duration with a justified margin."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/sleep/r02/test.c",
+      "source_sha256": "641243d0118c341f62cb89ec3b023a393af2bfe51057876ed563dee37d2ae2d1"
+    },
+    "sleep-r03": {
+      "feature_path_evidence": "Build fail; the frozen source cannot execute. See results/phase2_luna/build_logs/sleep-r03.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "sleep.test_sleep",
+      "oracles": [
+        {
+          "evidence": "The ISR offload invokes k_wakeup after a setup wait; early completion is checked against a five-second requested sleep.",
+          "judgment": "met",
+          "requirement": "The wakeup is issued from an interrupt context while the target is asleep."
+        },
+        {
+          "evidence": "A completion semaphore is taken after the ISR wakeup.",
+          "judgment": "met",
+          "requirement": "The thread reports completion after the ISR wakeup."
+        },
+        {
+          "evidence": "The source uses a 1000 ms maximum after a five-second request, but k_thread_is_sleeping is unavailable and this suite does not link.",
+          "judgment": "uncertain",
+          "requirement": "The observed sleep duration is shorter than the requested duration with a justified margin."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/sleep/r03/test.c",
+      "source_sha256": "94dc62ee105d7cd0e2cfd70f5a0d3e7eebc7cbb9112351ecee7f04a7d20c320d"
+    },
+    "sleep-r04": {
+      "feature_path_evidence": "Nominal Renode outcome was timeout; see results/phase2_luna/nominal_uart/sleep-r04.log and the recorded trace.",
+      "feature_path_exercised": "not_met",
+      "human_case": "sleep.test_sleep",
+      "oracles": [
+        {
+          "evidence": "The unbounded yield loop uses an unsynchronized sleep_started_ms flag set immediately before k_sleep; the worker may never run.",
+          "judgment": "uncertain",
+          "requirement": "The wakeup is issued from an interrupt context while the target is asleep."
+        },
+        {
+          "evidence": "A completion semaphore is taken after the ISR wakeup.",
+          "judgment": "met",
+          "requirement": "The thread reports completion after the ISR wakeup."
+        },
+        {
+          "evidence": "Recorded sleep duration is asserted below the five-second request with an explicit margin.",
+          "judgment": "met",
+          "requirement": "The observed sleep duration is shorter than the requested duration with a justified margin."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:36:34.673333+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/sleep/r04/test.c",
+      "source_sha256": "43401153ed675b704767f54522360003b718ddea8425c4bc2d45887e0a584f5b"
+    },
+    "sleep-r05": {
+      "feature_path_evidence": "Nominal Renode outcome was pass; see results/phase2_luna/nominal_uart/sleep-r05.log and the recorded trace.",
+      "feature_path_exercised": "met",
+      "human_case": "sleep.test_sleep",
+      "oracles": [
+        {
+          "evidence": "The ISR offload invokes k_wakeup after a setup wait; early completion is checked against a five-second requested sleep.",
+          "judgment": "met",
+          "requirement": "The wakeup is issued from an interrupt context while the target is asleep."
+        },
+        {
+          "evidence": "A completion semaphore is taken after the ISR wakeup.",
+          "judgment": "met",
+          "requirement": "The thread reports completion after the ISR wakeup."
+        },
+        {
+          "evidence": "Recorded sleep duration is asserted below the five-second request with an explicit margin.",
+          "judgment": "met",
+          "requirement": "The observed sleep duration is shorter than the requested duration with a justified margin."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:36:34.673439+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/sleep/r05/test.c",
+      "source_sha256": "8ddd8b94855ff15691d39bdc5f08d3c2584e755538687eb164140e548f7535f6"
+    },
+    "timer_api-r01": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/timer_api-r01.log.",
+      "feature_path_exercised": "met",
+      "human_case": "timer_api.test_timer_status_sync",
+      "oracles": [
+        {
+          "evidence": "Two status_sync return values are asserted nonzero.",
+          "judgment": "met",
+          "requirement": "The timer expires at least twice and each synchronization returns a nonzero expiration count."
+        },
+        {
+          "evidence": "Callback count or timer remaining state is asserted after the two expirations.",
+          "judgment": "met",
+          "requirement": "The test verifies an observable timer state or callback count after those expirations."
+        },
+        {
+          "evidence": "k_timer_stop is followed by status_sync asserted zero.",
+          "judgment": "met",
+          "requirement": "After stopping, synchronization reports no further expiry."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/timer_api/r01/test.c",
+      "source_sha256": "4ab477caeb411dd6c4a3637d286ab116dcfdc98bb6ec710d91357222778c150c"
+    },
+    "timer_api-r02": {
+      "feature_path_evidence": "Nominal Renode outcome was timeout; see results/phase2_luna/nominal_uart/timer_api-r02.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "timer_api.test_timer_status_sync",
+      "oracles": [
+        {
+          "evidence": "Two status_sync return values are asserted nonzero.",
+          "judgment": "met",
+          "requirement": "The timer expires at least twice and each synchronization returns a nonzero expiration count."
+        },
+        {
+          "evidence": "Callback count or timer remaining state is asserted after the two expirations.",
+          "judgment": "met",
+          "requirement": "The test verifies an observable timer state or callback count after those expirations."
+        },
+        {
+          "evidence": "k_timer_stop is followed by status_sync asserted zero.",
+          "judgment": "met",
+          "requirement": "After stopping, synchronization reports no further expiry."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/timer_api/r02/test.c",
+      "source_sha256": "399d9e4fab700da666309ec0c1291beafbbbf73cca1e5ffd76f43977a9eab2fc"
+    },
+    "timer_api-r03": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/timer_api-r03.log.",
+      "feature_path_exercised": "met",
+      "human_case": "timer_api.test_timer_status_sync",
+      "oracles": [
+        {
+          "evidence": "Two status_sync return values are asserted nonzero.",
+          "judgment": "met",
+          "requirement": "The timer expires at least twice and each synchronization returns a nonzero expiration count."
+        },
+        {
+          "evidence": "Callback count or timer remaining state is asserted after the two expirations.",
+          "judgment": "met",
+          "requirement": "The test verifies an observable timer state or callback count after those expirations."
+        },
+        {
+          "evidence": "k_timer_stop is followed by status_sync asserted zero.",
+          "judgment": "met",
+          "requirement": "After stopping, synchronization reports no further expiry."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/timer_api/r03/test.c",
+      "source_sha256": "d7fc4962ccee43e2c1fa62bc7b755f7314392ef68b2c8df4e916650c53f41a65"
+    },
+    "timer_api-r04": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/timer_api-r04.log.",
+      "feature_path_exercised": "met",
+      "human_case": "timer_api.test_timer_status_sync",
+      "oracles": [
+        {
+          "evidence": "Two status_sync return values are asserted nonzero.",
+          "judgment": "met",
+          "requirement": "The timer expires at least twice and each synchronization returns a nonzero expiration count."
+        },
+        {
+          "evidence": "Callback count or timer remaining state is asserted after the two expirations.",
+          "judgment": "met",
+          "requirement": "The test verifies an observable timer state or callback count after those expirations."
+        },
+        {
+          "evidence": "k_timer_stop is followed by status_sync asserted zero.",
+          "judgment": "met",
+          "requirement": "After stopping, synchronization reports no further expiry."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/timer_api/r04/test.c",
+      "source_sha256": "8489914a53ee7615bcbb27756d485684abcff05c293cfd0938e1d6be337eb60e"
+    },
+    "timer_api-r05": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/timer_api-r05.log.",
+      "feature_path_exercised": "met",
+      "human_case": "timer_api.test_timer_status_sync",
+      "oracles": [
+        {
+          "evidence": "Two status_sync return values are asserted nonzero.",
+          "judgment": "met",
+          "requirement": "The timer expires at least twice and each synchronization returns a nonzero expiration count."
+        },
+        {
+          "evidence": "Callback count or timer remaining state is asserted after the two expirations.",
+          "judgment": "met",
+          "requirement": "The test verifies an observable timer state or callback count after those expirations."
+        },
+        {
+          "evidence": "k_timer_stop is followed by status_sync asserted zero.",
+          "judgment": "met",
+          "requirement": "After stopping, synchronization reports no further expiry."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/timer_api/r05/test.c",
+      "source_sha256": "d037f8cce33f26386fe8d01fe91c6cfaacece350e6454c248ee8b50d1d07e328"
+    },
+    "workq-r01": {
+      "feature_path_evidence": "Nominal Renode outcome was fail; see results/phase2_luna/nominal_uart/workq-r01.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "work_1cpu.test_1cpu_basic_schedule",
+      "oracles": [
+        {
+          "evidence": "k_work_schedule result and pending state are asserted.",
+          "judgment": "met",
+          "requirement": "Scheduling succeeds and the work is pending before the delay elapses."
+        },
+        {
+          "evidence": "Handler count is asserted exactly one after the completion event.",
+          "judgment": "met",
+          "requirement": "The handler executes exactly once."
+        },
+        {
+          "evidence": "Handler timestamp is compared to scheduled timestamp with an explicit tick margin.",
+          "judgment": "met",
+          "requirement": "The handler is not observed before the requested delay, allowing documented tick granularity."
+        },
+        {
+          "evidence": "Pending state is asserted false after completion.",
+          "judgment": "met",
+          "requirement": "The item is no longer pending after completion."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/workq/r01/test.c",
+      "source_sha256": "52314674bcadaa46c61d08f770ffbd848a100f50a0850a1adb14b6aa05e966c6"
+    },
+    "workq-r02": {
+      "feature_path_evidence": "Nominal Renode outcome was fail; see results/phase2_luna/nominal_uart/workq-r02.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "work_1cpu.test_1cpu_basic_schedule",
+      "oracles": [
+        {
+          "evidence": "k_work_schedule result and pending state are asserted.",
+          "judgment": "met",
+          "requirement": "Scheduling succeeds and the work is pending before the delay elapses."
+        },
+        {
+          "evidence": "Handler count is asserted exactly one after the completion event.",
+          "judgment": "met",
+          "requirement": "The handler executes exactly once."
+        },
+        {
+          "evidence": "Handler timestamp is compared to scheduled timestamp with an explicit tick margin.",
+          "judgment": "met",
+          "requirement": "The handler is not observed before the requested delay, allowing documented tick granularity."
+        },
+        {
+          "evidence": "Pending state is asserted false after completion.",
+          "judgment": "met",
+          "requirement": "The item is no longer pending after completion."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/workq/r02/test.c",
+      "source_sha256": "90530a62dec9b383318e44db5cd3abecca03b126e3755b8252396b6c36382376"
+    },
+    "workq-r03": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/workq-r03.log.",
+      "feature_path_exercised": "met",
+      "human_case": "work_1cpu.test_1cpu_basic_schedule",
+      "oracles": [
+        {
+          "evidence": "k_work_schedule result and pending state are asserted.",
+          "judgment": "met",
+          "requirement": "Scheduling succeeds and the work is pending before the delay elapses."
+        },
+        {
+          "evidence": "Handler count is asserted exactly one after the completion event.",
+          "judgment": "met",
+          "requirement": "The handler executes exactly once."
+        },
+        {
+          "evidence": "Handler timestamp is compared to scheduled timestamp with an explicit tick margin.",
+          "judgment": "met",
+          "requirement": "The handler is not observed before the requested delay, allowing documented tick granularity."
+        },
+        {
+          "evidence": "Pending state is asserted false after completion.",
+          "judgment": "met",
+          "requirement": "The item is no longer pending after completion."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/workq/r03/test.c",
+      "source_sha256": "e60980a2fd1ff1e20b19d733877e38dfb6b92549c1a135972ba908b7f70c3ded"
+    },
+    "workq-r04": {
+      "feature_path_evidence": "Nominal Renode outcome was fail; see results/phase2_luna/nominal_uart/workq-r04.log.",
+      "feature_path_exercised": "not_met",
+      "human_case": "work_1cpu.test_1cpu_basic_schedule",
+      "oracles": [
+        {
+          "evidence": "k_work_schedule result and pending state are asserted.",
+          "judgment": "met",
+          "requirement": "Scheduling succeeds and the work is pending before the delay elapses."
+        },
+        {
+          "evidence": "Handler count is asserted exactly one after the completion event.",
+          "judgment": "met",
+          "requirement": "The handler executes exactly once."
+        },
+        {
+          "evidence": "Handler timestamp is compared to scheduled timestamp with an explicit tick margin.",
+          "judgment": "met",
+          "requirement": "The handler is not observed before the requested delay, allowing documented tick granularity."
+        },
+        {
+          "evidence": "Pending state is asserted false after completion.",
+          "judgment": "met",
+          "requirement": "The item is no longer pending after completion."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/workq/r04/test.c",
+      "source_sha256": "ce4b712e25bebda55b431e6978d98c0f87d0283f29f7c6eaaef75769411083dc"
+    },
+    "workq-r05": {
+      "feature_path_evidence": "Nominal Renode run passed its ztest case; see results/phase2_luna/nominal_uart/workq-r05.log.",
+      "feature_path_exercised": "met",
+      "human_case": "work_1cpu.test_1cpu_basic_schedule",
+      "oracles": [
+        {
+          "evidence": "k_work_schedule result and pending state are asserted.",
+          "judgment": "met",
+          "requirement": "Scheduling succeeds and the work is pending before the delay elapses."
+        },
+        {
+          "evidence": "Handler count is asserted exactly one after the completion event.",
+          "judgment": "met",
+          "requirement": "The handler executes exactly once."
+        },
+        {
+          "evidence": "Handler timestamp is compared to scheduled timestamp with an explicit tick margin.",
+          "judgment": "met",
+          "requirement": "The handler is not observed before the requested delay, allowing documented tick granularity."
+        },
+        {
+          "evidence": "Pending state is asserted false after completion.",
+          "judgment": "met",
+          "requirement": "The item is no longer pending after completion."
+        }
+      ],
+      "reviewed_utc": "2026-09-29T02:27:40.499665+00:00",
+      "reviewer": "Codex source review against registered task requirements",
+      "source_path": "generated/phase2_luna/suites/workq/r05/test.c",
+      "source_sha256": "3db5a65e882ae69760a05b133dfeeebfa14ffe72a87adc1b98737b2caffa9b49"
+    }
+  },
+  "schema_version": 1,
+  "status_note": "Manual source review before Phase 3 timing outcomes; pending is not adequate."
+}

@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 320,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_present",
+  "generation_date_utc": "2026-10-04T01:12:47.028413+00:00",
+  "model": "gpt-6-astra",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/fifo_api/range_present.txt",
+  "prompt_sha256": "87321b0d8b4f1324345f00ec684ddb4d3dfbd63f93f531c7d3ce3deb7e829081",
+  "prompt_transport": "argument",
+  "response_sha256": "ecd1bf98c640916730b285b02f526b4fcaba154d52d0e3c1a758645ed1859514",
+  "run_id": "astra-range_present-fifo_api-r05",
+  "sample_index": 5,
+  "source_sha256": "210d271ab52e77e8e0192ca7080fdadf1eef3fe39911101d22bbfdf508d33e88",
+  "status": "generated",
+  "task_id": "fifo_api",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 0,
+    "input_tokens": 14513,
+    "output_tokens": 767,
+    "reasoning_output_tokens": 270
+  }
+}

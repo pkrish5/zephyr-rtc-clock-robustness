@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 111,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_absent",
+  "generation_date_utc": "2026-10-03T20:47:11.776228+00:00",
+  "model": "gpt-6-luna",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/pending/range_absent.txt",
+  "prompt_sha256": "c1560782729951b08533df66b39d8dc7f584ff48a717a68867d988e747fb0795",
+  "prompt_transport": "argument",
+  "response_sha256": "7137ae027108667813457714ea1a16542c3980d68d6eed2fc407b9e3e73f462b",
+  "run_id": "luna-range_absent-pending-r02",
+  "sample_index": 2,
+  "source_sha256": "5d94ea9aa66910938eed38488b9c75693c37200677fc0a9ca146f4a8eb851dcd",
+  "status": "generated",
+  "task_id": "pending",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 13056,
+    "input_tokens": 13837,
+    "output_tokens": 566,
+    "reasoning_output_tokens": 0
+  }
+}

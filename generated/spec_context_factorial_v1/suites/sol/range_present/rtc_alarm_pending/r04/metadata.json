@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 285,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_present",
+  "generation_date_utc": "2026-10-04T00:47:55.091688+00:00",
+  "model": "gpt-6-sol",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/rtc_alarm_pending/range_present.txt",
+  "prompt_sha256": "568e298e806623f292a22a15110e746ce281f461f850819bda94ccc474746f4e",
+  "prompt_transport": "argument",
+  "response_sha256": "a555b5f7e47d1d84afd5d43d23c20e478fe2a6300270a229e2c4e6801fa733e3",
+  "run_id": "sol-range_present-rtc_alarm_pending-r04",
+  "sample_index": 4,
+  "source_sha256": "f81b00fabba970c802e178f647d671aca64469aedf1f428a2752ca1736cb1a5d",
+  "status": "generated",
+  "task_id": "rtc_alarm_pending",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11776,
+    "input_tokens": 14199,
+    "output_tokens": 3007,
+    "reasoning_output_tokens": 2070
+  }
+}

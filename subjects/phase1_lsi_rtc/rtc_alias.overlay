@@ -1,0 +1,6 @@
+/* Expose the STM32F407 RTC to the unchanged upstream rtc_api test. */
+/ {
+	aliases {
+		rtc = &rtc;
+	};
+};

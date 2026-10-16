@@ -1,0 +1,34 @@
+# Optional RTC latency pilot — proposed 2026-10-05 UTC
+
+**Outcome, 2026-10-06 UTC:** the expanded approved pilot stopped at its one-tick reference feasibility gate before any suite verdict run. The saved [result note](RTC_LATENCY_PILOT_RESULT.md) has the measured delay, failed callback reference, 136 successful builds, and unknown cause. The historical proposals below remain for provenance.
+
+**Superseded scope, approved 2026-10-06 UTC:** the user replaced the six-suite proposal below with a registered 34-suite pilot: all 21 measured AI suites coded with a definite latency/ordering assumption, 10 of the 23 measured source-unknown suites selected by fixed seed 20261006 with model/prompt cell quotas, and all three matched upstream controls. A zero-delay rebuilt control and 1 ms, 10 ms, and one RTC-calendar-tick (1,000 ms) delay are planned for each suite, totaling 136 runs. The [locked manifest](../results/rtc_latency_pilot/manifest.json) lists every ID, quota, hash, and worker partition. A 1 ms isolated-driver reference smoke passed with two measured 1,012.6 µs callback delays. A one-tick reference smoke remains required before suite runs. Estimated cost after the smoke is about 1–2 hours of simulator time across three workers plus about 20 minutes of builds; the earlier six-suite table below is retained only as proposal history. These are plausible probes, **not datasheet-legal** delays.
+
+**Historical status before the 2026-10-06 approval:** the approved RTC v2 clock-rate arm had completed. The proposal below had not been executed. The newly registered pilot above remains separate from the legal LSI schedules and does not alter original source, ELFs, forecasts, runner, seeds, or raw records.
+
+The [post-start source recoding](FACTORIAL_LATENCY_ASSUMPTIONS.md) marks 142/390 factorial sources with a specific unsupported latency/ordering premise, including 28/66 functionally eligible RTC suites. These counts are descriptive, not a new eligibility filter. A 0/100 clock-induced failure count does not clear the category; `astra-range_absent-rtc_alarm_callback-r01` is a completed 0/100 example with an exact-second callback read. The historical bound-context `r05` `K_NO_WAIT` second-callback check is a separate, nonfactorial positive-control candidate.
+
+## Minimal sample and mechanism
+
+Select one functionally eligible flagged RTC suite per model × prompt cell, fixed here before pilot execution:
+
+| Model | Prompt | Suite | Premise challenged |
+|---|---|---|---|
+| Luna | absent | `luna-range_absent-rtc_time_counting-r03` | first calendar read must equal the set second |
+| Luna | present | `luna-range_present-rtc_time_counting-r02` | first calendar read must equal the set second |
+| Sol | absent | `sol-range_absent-rtc_alarm_callback-r01` | callback observation must occur by RTC second 06 |
+| Sol | present | `sol-range_present-rtc_alarm_callback-r02` | callback-side calendar must equal target second 05 |
+| Astra | absent | `astra-range_absent-rtc_alarm_callback-r01` | callback-side calendar must equal target second 05 |
+| Astra | present | `astra-range_present-rtc_alarm_callback-r02` | first callback calendar must equal target second 05 |
+
+Add the historical, excluded `phase2_rtc_bound/rtc_alarm_callback/r05` only as a positive control for its immediate second `K_NO_WAIT` check. Never include it in factorial model/prompt rates. The sample is purposive for mechanism feasibility and cannot estimate prevalence or a model effect.
+
+Use an **isolated copy of the pinned Zephyr STM32 RTC driver** for test-only firmware variants, leaving the upstream source and all running v2 ELFs untouched. For callback suites, insert a measured delay in `rtc_stm32_isr` immediately before each registered user callback; for counting suites, delay only the first `rtc_stm32_get_time` following `rtc_set_time`. This tests delivery/observation latency while holding the LSI at **nominal 32 kHz**. Prefer `k_busy_wait` after system timer initialization, with saved before/after cycle or uptime observations to verify the achieved delay. Because the pinned driver warns that `k_busy_wait` is unusable **during early RTC initialization** before SysTick exists, inject only in the later alarm ISR or first application read. If the wait stalls or changes callback context/ordering unexpectedly, stop at the feasibility check and report the pilot infeasible under this cheap mechanism. Do not quietly switch to another injection method.
+
+Pilot levels are **one RTC calendar tick (1,000 ms at nominal LSI), 1 ms, and 10 ms**. “One tick” here means an RTC calendar second, not the Zephyr scheduler tick (the selected build has 8,000 scheduler ticks/s). These are exploratory *plausible delay magnitudes*, **not datasheet-established legal ISR latencies**; no physical latency distribution was measured. The 1-ms and 10-ms levels probe small service delays; one RTC tick challenges exact-second or immediate second-callback premises. One-tick injection may reveal a fault but cannot be called representative of silicon without measurement. Keep the levels and order fixed before the first run.
+
+First build and run only one callback variant at 1 ms at nominal 32 kHz, verify that the measured delay is close to the requested value, and verify no startup, context, or unrelated peripheral failure. If this one-variant feasibility check is not resolved within **two engineering hours** or fails, stop and report the pilot not cheap; seek review rather than redesigning midstream. If it succeeds, build each of the six selected suites for three levels, plus the positive control if its build remains usable: **18 factorial and 3 positive-control nominal runs**, with separate ELF/source/config hashes and trace files. Run no other suites or seeds. Report original nominal verdict alongside each injected verdict; count a latency-triggered failure only when the source assertion and saved trace support that attribution. Preserve no-flip and harness-error outcomes.
+
+## Cost estimate before approval
+
+The six selected suites' existing nominal medians sum to **251.17 wall seconds**; three levels imply **753.5 seconds (12.6 minutes)** of comparable simulation. The supplement's saved nominal median is **43.71 seconds**, so its three runs add about **2.2 minutes**. Twenty-one recent RTC builds at the observed 12.3-second median add roughly **4.3 serial minutes**. One-tick added virtual time, process overhead, and trace checks bring the expected execution to roughly **20–30 serial machine-minutes**, or **15–30 minutes wall time** allowing three-way concurrency. The isolated driver patch and one-variant feasibility check could take **up to two engineering hours**; that cost dominates if the hook is difficult. These estimates exclude any redesign, which requires fresh user review. No pilot run has started.

@@ -1,0 +1,44 @@
+# Local environments and generated compiler output
+.venv/
+.DS_Store
+**/__pycache__/
+*.pyc
+*.o
+*.a
+*.elf
+*.bin
+*.map
+*.log
+**/build/
+**/build_*/
+**/build-probe/
+**/build_probe/
+**/attempt-*/
+
+# Large run artifacts and the external Zephyr checkout
+/results/
+/subjects/upstream/
+/harness/rtc_driver_variants/smoke_app/
+
+# Keep the frozen factorial sources and prompts; omit older build-heavy cohorts
+/generated/*
+!/generated/README.md
+!/generated/spec_context_factorial_v1/
+/generated/spec_context_factorial_v1/build/
+/generated/spec_context_factorial_v1/build_probe/
+
+# Editor and TeX intermediates
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+*credentials*

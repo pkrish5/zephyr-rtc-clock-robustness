@@ -1,0 +1,5 @@
+# RTC counting Luna r04 nominal-path adjudication — 2026-09-29/30
+
+This records a source-gate correction **before any RTC-extension varied schedule**. The frozen `rtc_time_counting-r04` suite built, but its saved nominal UART fails at `test.c:34`, where `rtc_set_time(rtc, &initial)` returns an error. The generated source sets `initial.tm_wday = -1`. The pinned STM32 RTC driver, `drivers/rtc/rtc_ll_stm32.c` at `rtc_stm32_set_time`, explicitly returns `-EINVAL` when `tm_wday == -1` because a weekday is required. The test does not reach the calendar-counting path.
+
+The pre-nominal source checklist tentatively marked the path reached and its set/read oracle met. Correct those source judgments to `not_met` with this driver/UART evidence, and mark the amended functional dimension `not_evaluable`. The test remains **built but nominal-failing** in attrition; no C source, ELF, raw log, or verdict is changed. The original strict and amended RQ2 filters would both exclude it because nominal pass is required regardless of source review. Keep its static timing-premise label separate from this setup failure.

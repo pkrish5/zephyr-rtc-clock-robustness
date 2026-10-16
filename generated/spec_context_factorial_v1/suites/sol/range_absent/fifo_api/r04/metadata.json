@@ -1,0 +1,29 @@
+{
+  "api_dollar_cost": null,
+  "api_dollar_cost_note": "Authenticated CLI does not expose billed dollars",
+  "attempts": 1,
+  "call_index": 280,
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "condition": "range_absent",
+  "generation_date_utc": "2026-10-04T00:45:50.538798+00:00",
+  "model": "gpt-6-sol",
+  "model_reported_by_events": [],
+  "output_error": null,
+  "prompt_path": "generated/spec_context_factorial_v1/prompts/fifo_api/range_absent.txt",
+  "prompt_sha256": "eb3951efaa0fe0b7f55669605e55dd5dda1656a1126b70eecea4f74f4301d3b4",
+  "prompt_transport": "argument",
+  "response_sha256": "ae4ce2cf4c4d8d496d2be10905d698863d45a9f6c5972f88e7ae1501fdc1c30a",
+  "run_id": "sol-range_absent-fifo_api-r04",
+  "sample_index": 4,
+  "source_sha256": "06abb484d845e976347588eb76591dfec5b4dc64f2b06d3bf4eb6dc96ecf8de6",
+  "status": "generated",
+  "task_id": "fifo_api",
+  "tool_event_count": 0,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 11776,
+    "input_tokens": 14001,
+    "output_tokens": 909,
+    "reasoning_output_tokens": 459
+  }
+}

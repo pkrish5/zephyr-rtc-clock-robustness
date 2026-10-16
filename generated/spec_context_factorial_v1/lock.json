@@ -1,0 +1,59 @@
+{
+  "call_order_sha256": "76c7e7367a0b77a22df2e52a64d28248a9b1f1c0e0708caa6cff8a71b546b39a",
+  "cli_version": "codex-cli 0.158.0-alpha.2.1",
+  "conditions": [
+    "range_absent",
+    "range_present"
+  ],
+  "context_text": {
+    "hsi": "Documented hardware timing context: STM32F407 HSI nominal frequency is 16 MHz, with a specified accuracy of \u00b11% at 25 \u00b0C (15.84\u201316.16 MHz). This clock bound alone does not specify an ISR-to-thread delivery-latency bound.\n\n",
+    "lsi_pilot": "Documented hardware timing context: STM32F407 LSI frequency is characterized from 17 to 47 kHz at 3 V over \u221240 to 105 \u00b0C. The selected RTC prescaler is fixed at 128 \u00d7 250, so the RTC calendar rate follows that oscillator range. This clock bound alone does not specify an ISR-to-thread delivery-latency bound.\n\n"
+  },
+  "input_sha256": {
+    "analysis/PHASE2_SPLIT_GATE_PROTOCOL.md": "c98b52f94b188c4db3b4de091c87ec12415dc59f56a0dc170f82e13f6ea4b1cb",
+    "generated/phase2/prompt_template.txt": "586f5df25ba8c33369d2d4e3605faa86851477e1b8f0bd47e0d2a194d2f0e67c",
+    "generated/phase2/response.schema.json": "8ebe4f68092ee33c6d7b00cd6b588447eac19935d4a923a8b1064605d9db353c",
+    "generated/spec_context_factorial_v1/PROTOCOL.md": "d33d5a19dbe68e534c101ded1d2093dd1a706223721ac380e948928be61e8088",
+    "harness/phase2/generate_factorial.py": "611ca1f438eec99697980d18ec534ed6cdad1ad48479fb9182c9759019595317",
+    "paper/PROPOSED_SPEC_IN_CONTEXT_AMENDMENT.md": "1bd8c85c0d1918bd5f39cd7ebe6520aa4b4bcba689a7cb28b80808a62028e7f6",
+    "subjects/phase2_tasks_v2.json": "a36a73b3175452c606a514f0356e29190f1198c0047151aec9fe091f38a14424"
+  },
+  "intended_calls": 390,
+  "model_ids": [
+    "gpt-6-luna",
+    "gpt-6-sol",
+    "gpt-6-astra"
+  ],
+  "prompt_sha256": {
+    "context/range_absent": "1711792fc1173638a37247438a58f41b7d49138613b3c093a92e34e0b7f0912e",
+    "context/range_present": "1c75c1ce68df3be834c602fd497976df4290e3c7e3a582bd5b7826f19a6211a6",
+    "fifo_api/range_absent": "eb3951efaa0fe0b7f55669605e55dd5dda1656a1126b70eecea4f74f4301d3b4",
+    "fifo_api/range_present": "87321b0d8b4f1324345f00ec684ddb4d3dfbd63f93f531c7d3ce3deb7e829081",
+    "lifo_api/range_absent": "1bd829b75a89010c41dd7fe1836204cdb9982ca0195a484751651e81a13e7865",
+    "lifo_api/range_present": "fde74c97df4d6c038de7ddc5f987a38ca77f9b8b316fa6bd78659deee3cf1a59",
+    "msgq_api/range_absent": "819f30cd0f8cc2bcbd5420e9eb030f0f372b62332edf6ebb00ed3b0c4d606883",
+    "msgq_api/range_present": "29a728fd31b25c9d50623ca5bd823fd8afa5157b523b410b853a629fd1924b3f",
+    "pending/range_absent": "c1560782729951b08533df66b39d8dc7f584ff48a717a68867d988e747fb0795",
+    "pending/range_present": "6a4fc11bcf7579eaaff30ae6446eb0c85329d0d505ff99692aff1723c4602a68",
+    "queue/range_absent": "1ef96f216210a37c99a44e087182287a793f108e514d10d6203d107b6607d6a9",
+    "queue/range_present": "70fea2c72c1f1df8d4ff9793c86d289b927d9032bb65c23476867ed2504ce914",
+    "rtc_alarm_callback/range_absent": "9ac129b663566727684bf7fedc98a34f22d05eba8d6605dd9472a9c5d8c0424e",
+    "rtc_alarm_callback/range_present": "dcded2c722355cffa201b31e1c64755eb595fa9c5ea5222f7dce0012ba8324e3",
+    "rtc_alarm_pending/range_absent": "c6a87ddd87222b9a019d61d1e64ea0bb0f9c72488f4dea20b278a0d9e4beda3d",
+    "rtc_alarm_pending/range_present": "568e298e806623f292a22a15110e746ce281f461f850819bda94ccc474746f4e",
+    "rtc_time_counting/range_absent": "6ef15951070dafb5a65d769d3d89520242cbac9549fe38ba8c08b5a850edd41e",
+    "rtc_time_counting/range_present": "684b2b1bd5f23f49d6b96edf83d31989a9441f113ed1ca6dee364b4b1416df94",
+    "semaphore/range_absent": "3e375faab4e3663a355a6d301fbb4de7222d78c761821b954fb3e19d8b2874b3",
+    "semaphore/range_present": "3303d559f393baedf100afb19056fe57da29ca347934dbcfc779d7b08d5c7825",
+    "sleep/range_absent": "88aec876f9055f5219eddc5d1e9d9146484f0eb0b3ef628b426a45f1c19fc9b5",
+    "sleep/range_present": "d7827ded17a042025325b0e03e104017820d9abaaa87894c340a745d19276b2a",
+    "timer_api/range_absent": "b1cce28751e66ab1abf66d7ddb5467f0a395ccfe083ad1d8ff048a87d1a5062b",
+    "timer_api/range_present": "ae0399ba48611282bc5f09565007c3e91ed8b2d7e38d9871c538b79c77a034f9",
+    "workq/range_absent": "aac7dd3f0563c7eb74b70429d7b7350b34d1d789235218133091def2f283c76a",
+    "workq/range_present": "8ae3d33943c63b956ddb5b111ce908a8265592200b411f90c6c8e887251667f3"
+  },
+  "registered_date": "2026-10-03",
+  "samples_per_cell": 5,
+  "schema_version": 1,
+  "task_count": 13
+}
