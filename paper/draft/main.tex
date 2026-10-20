@@ -37,7 +37,7 @@
 \affiliation{\institution{The University of Texas at Austin}\city{Austin}\state{Texas}\country{USA}}
 
 \begin{abstract}
-Deterministic reruns can miss a firmware test's unjustified timing bound. We compared selected human-written upstream Zephyr real-time clock (RTC) tests and functionally eligible LLM-generated suites under datasheet-legal oscillator settings and separate alarm faults. The three upstream cases failed at 17--26 of 100 sampled legal settings; all 37 measured LLM failures came from three range-absent pending suites. The suite-level prompt contrast, 3/24 absent versus 0/26 present, was not significant. In a task-specific alarm-offset probe, evaluable generated callback suites detected 18/18 early and 14/18 late faults, while one upstream callback case detected neither; the LLM specification explicitly requested configured-time firing. Clock robustness, generation yield, and oracle precision require separate assessment.
+Firmware tests often wait a fixed time for a hardware event. If a chip's clock runs slower than expected but remains within its datasheet limits, a correct program can fail its test. We compared selected human-written upstream Zephyr real-time clock (RTC) tests and functionally eligible LLM-generated suites under legal oscillator settings and separate alarm faults. The three upstream cases failed at 17--26 of 100 sampled legal settings; all 37 measured LLM failures came from three pending suites generated with the base prompt. The suite-level contrast, 3/24 with the base prompt versus 0/26 with clock ranges, was not significant. In a task-specific alarm-offset probe, evaluable generated callback suites detected 18/18 early and 14/18 late faults, while one upstream callback case detected neither; the LLM specification explicitly requested configured-time firing. Clock robustness, generation yield, and oracle precision require separate assessment.
 \end{abstract}
 \keywords{embedded testing, flaky tests, interrupt-driven firmware, RTC, large language models}
 \maketitle
@@ -56,7 +56,7 @@ We call the selected human-written Zephyr cases \emph{upstream tests}. We compar
 
 \section{Experimental Setup}
 
-\textbf{Models, prompts, and gates.} The model IDs \texttt{gpt-6-luna}, \texttt{gpt-6-sol}, and \texttt{gpt-6-astra} (Luna, Sol, and Astra below) each returned five independent, source-only C tests using ztest (Zephyr's test framework) for 13 tasks under two prompt conditions: 390 generations. A \emph{range-absent} prompt omits numeric oscillator limits; a \emph{range-present} prompt adds low-speed and high-speed internal oscillator (HSI) ranges plus a callback-delivery reminder. The other ten tasks address narrower HSI timing effects; this analysis focuses on the three RTC tasks because the legal LSI range and alarm fault probes apply to them. The models could not build, run, or revise tests from feedback. Functional review, build, and five nominal passes defined eligibility; timing-bound adequacy was measured separately. Across all 13 tasks, 330/390 passed functional review and 321/390 passed nominal screening. The RTC analysis covers 90 attempts and 66 eligible suites.
+\textbf{Models, prompts, and gates.} The model IDs \texttt{gpt-6-luna}, \texttt{gpt-6-sol}, and \texttt{gpt-6-astra} (Luna, Sol, and Astra below) each returned five independent, source-only C tests using ztest (Zephyr's test framework) for 13 tasks under two prompt conditions: 390 generations. The \emph{base prompt} omits numeric oscillator limits; the \emph{prompt with clock ranges} adds low-speed and high-speed internal oscillator (HSI) ranges plus a callback-delivery reminder. The other ten tasks address narrower HSI timing effects; this analysis focuses on the three RTC tasks because the legal LSI range and alarm fault probes apply to them. The models could not build, run, or revise tests from feedback. Functional review, build, and five nominal passes defined eligibility; timing-bound adequacy was measured separately. Across all 13 tasks, 330/390 passed functional review and 321/390 passed nominal screening. The RTC analysis covers 90 attempts and 66 eligible suites.
 
 % Source: generated/spec_context_factorial_v1/prompts/rtc_alarm_callback/range_absent.txt and rtc_alarm_pending/range_absent.txt
 The frozen callback and pending prompts state these \emph{Required observable checks}, respectively:
@@ -67,7 +67,7 @@ The frozen callback and pending prompts state these \emph{Required observable ch
 ``The test configures and reads back a supported RTC alarm time successfully. The alarm is not observed pending before its configured RTC time. The alarm is observed pending after the RTC reaches its configured time, under a finite, justified observation bound.''
 \end{quote}
 
-\textbf{Schedule and attribution.} Each measured suite ran in a fresh Renode process (an instruction-level embedded simulator)~\cite{renodetime} at 100 shared, uniformly sampled integer LSI settings and both endpoints. ELF, source, CPU, SysTick, and synchronization quantum were fixed. The arm measured all 36 suites without a scalar clock prediction and a balanced sample of 14 of the 30 predictable suites; 16 remain forecast only. Assertion flips were classified using saved traces, source boundaries, same-input replays, and task-specific references that check premature behavior and wait under a 26-second experimental ceiling. Ambiguous, firmware, simulator, and harness outcomes remain separate. At nominal host settings, all 66 eligible generated suites and three upstream cases faced the oscillator and nonarrival probes; 39 generated and two upstream alarm cases faced the signed alarm offsets. Twenty-seven generated and one upstream counting case were non-activation controls. The task is the primary comparison unit; the registered prompt contrast subtracts absent from present rates within model and task, then averages tasks and models equally. Missing verdicts and forecasts are never recoded as observed passes. The fault probes, alarm-offset probes, and all-attempt, paired, and similarity analyses were added after varied-clock runs began; the dated amendment log is in the repository.
+\textbf{Schedule and attribution.} Each measured suite ran in a fresh Renode process (an instruction-level embedded simulator)~\cite{renodetime} at 100 shared, uniformly sampled integer LSI settings and both endpoints. ELF, source, CPU, SysTick, and synchronization quantum were fixed. We measured all 36 suites without a scalar clock prediction and a balanced sample of 14 of the 30 predictable suites; 16 remain forecast only. Assertion flips were classified using saved traces, source boundaries, same-input replays, and task-specific references that check premature behavior and wait under a 26-second experimental ceiling. Ambiguous, firmware, simulator, and harness outcomes remain separate. At nominal host settings, all 66 eligible generated suites and three upstream cases faced the oscillator and nonarrival probes; 39 generated and two upstream alarm cases faced the signed alarm offsets. Twenty-seven generated and one upstream counting case were non-activation controls. The task is the primary comparison unit; the registered prompt contrast subtracts base-prompt rates from clock-range-prompt rates within model and task, then averages tasks and models equally. Missing verdicts and forecasts are never recoded as observed passes. The fault probes, alarm-offset probes, and all-attempt, paired, and similarity analyses were added after varied-clock runs began; the dated amendment log is in the repository.
 
 \begin{figure}[t]
 \centering
@@ -89,7 +89,7 @@ The frozen callback and pending prompts state these \emph{Required observable ch
 
 \section{Results}
 \subsection{Legal-clock flips (RQ1)}
-A fixed observation window $T$ has an ideal failure boundary $f<320/T$ kHz. Its analytic failing fraction over a continuous uniform 17--47 kHz interval is $\max(0,\min(1,(320/T-17)/30))$. Table~\ref{tab:human} compares these fractions with the registered samples. Small differences reflect finite integer-frequency sampling; counting uses an approximate last-poll boundary.
+The selected human-written tests failed at many legal slow-clock settings, while most measured generated tests held up. A fixed observation window $T$ has an ideal failure boundary $f<320/T$ kHz. For the 13-second wait in the Introduction, the alarm arrives too late below 24.615 kHz in this ideal model. Its analytic failing fraction over a continuous uniform 17--47 kHz interval is $\max(0,\min(1,(320/T-17)/30))$. Table~\ref{tab:human} compares these fractions with the registered samples. Small differences reflect finite integer-frequency sampling; counting uses an approximate last-poll boundary.
 
 \begin{table}[t]
 \caption{Upstream legal-LSI thresholds and sampled failures.}
@@ -127,56 +127,84 @@ Pending & 24.615 kHz & 25.38\% & 26/100 \\
 
 Across the 53 measured suites, including upstream controls, 5,300 seeded originals yielded 5,182 passes, 106 assertion failures, and 12 harness errors. All 112 seeded-plus-endpoint assertion failures reproduced in persisted replay fields. References passed 3/3 nominal controls, 6/6 endpoints, and 69/69 distinct failing-setting challenges; source boundaries and traces classify all 112 as brittle test assumptions. The 12 errors stay missing.
 
-All 37 generated-suite failures came from three range-absent pending suites: Sol r01 (11), Sol r03 (13), and Astra r05 (13). Their full forecast vectors matched. Measured range-absent suites had 37 failures in 2,400 seed slots, with four missing; range-present suites had zero in 2,600, with eight missing. At suite level, 3/24 absent versus 0/26 present flipped (two-sided Fisher $p=0.103$). Table~\ref{tab:agent} keeps measured and forecast-only suites distinct.
+All 37 generated-suite failures came from three base-prompt pending suites: Sol r01 (11), Sol r03 (13), and Astra r05 (13). Their full forecast vectors matched. Measured base-prompt suites had 37 failures in 2,400 seed slots, with four missing; suites prompted with clock ranges had zero in 2,600, with eight missing. At suite level, 3/24 base-prompt suites versus 0/26 clock-range-prompt suites flipped (two-sided Fisher $p=0.103$). Table~\ref{tab:agent} keeps measured and forecast-only suites distinct.
 
 \begin{table}[t]
-\caption{Generated RTC clock outcomes by model and prompt. A/P denote range absent/present. Failures use evaluable measured seeds.}
+\caption{Generated RTC clock outcomes by model and prompt. Base is the base prompt; Ranges adds clock ranges. Failures use evaluable measured seeds.}
 \label{tab:agent}\scriptsize
 \begin{tabular}{@{}llrrr@{}}\toprule
 Model & Prompt & Eligible & Measured & Fail/evaluable \\ \midrule
-Luna & A & 4 & 2 & 0/200 \\
-Luna & P & 3 & 2 & 0/200 \\
-Sol & A & 15 & 11 & 24/1096 \\
-Sol & P & 15 & 13 & 0/1292 \\
-Astra & A & 15 & 11 & 13/1100 \\
-Astra & P & 14 & 11 & 0/1100 \\
+Luna & Base & 4 & 2 & 0/200 \\
+Luna & Ranges & 3 & 2 & 0/200 \\
+Sol & Base & 15 & 11 & 24/1096 \\
+Sol & Ranges & 15 & 13 & 0/1292 \\
+Astra & Base & 15 & 11 & 13/1100 \\
+Astra & Ranges & 14 & 11 & 0/1100 \\
 \bottomrule\end{tabular}
 \end{table}
 
-The registered present-minus-absent task contrasts are Sol callback $-0.2$ to $+1.2$, counting zero, pending $-5.4$ to $-4.4$ percentage points; Astra callback/counting zero, pending $-2.6$; and Luna counting zero. Equal-task averages are Sol $-1.87$ to $-1.07$, Astra $-0.87$, and Luna zero points; the equal-model average is $-0.91$ to $-0.64$. Hybrid bounds combine measured verdicts with 16 frozen forecasts for unrun suites and bracket missing outcomes as passes or failures; they are not fully measured rates. Suite-weighted sensitivity and missing-outcome details are in the repository's analysis materials.
+Hybrid bounds combine measured verdicts with 16 frozen forecasts for unrun suites and bracket missing outcomes as passes or failures; they are not fully measured rates. Table~\ref{tab:hybridcontrast} gives the registered prompt contrasts. Suite-weighted sensitivity and missing-outcome details are in the repository's analysis materials.
+
+\begin{table}[t]
+\caption{Registered clock-range minus base-prompt hybrid contrasts in percentage points. Missing outcomes are bounded.}
+\label{tab:hybridcontrast}\scriptsize
+\begin{tabular}{@{}llr@{}}\toprule
+Model & Task or summary & Contrast \\ \midrule
+Sol & Callback & $-0.2$ to $+1.2$ \\
+Sol & Counting & 0 \\
+Sol & Pending & $-5.4$ to $-4.4$ \\
+Sol & Equal-task mean & $-1.87$ to $-1.07$ \\
+Astra & Callback/counting & 0 \\
+Astra & Pending & $-2.6$ \\
+Astra & Equal-task mean & $-0.87$ \\
+Luna & Counting only & 0 \\
+All & Equal-model mean & $-0.91$ to $-0.64$ \\
+\bottomrule\end{tabular}
+\end{table}
 
 \subsection{Paired comparisons on the registered settings}
 % Source: analysis/rtc_stage_a_quant.json, mcnemar_per_suite
-Each measured generated suite was compared with its matched upstream case on identical evaluable frequencies. Exact per-suite McNemar tests gave $p<0.05$ for 19/19 callback, 20/20 pending, and 11/11 counting suites. Upstream-fail/generated-pass discordances totaled 492, 480, and 187 by task; no evaluable pair had the reverse discordance. Seven callback and five pending seed pairs with missing generated verdicts were omitted. The 50 suites reuse the same settings and share only three task families, so these tests describe this schedule rather than 50 independent replications.
+Generated suites usually passed the same clock settings that failed their task-matched upstream case. Each measured generated suite was compared with its matched upstream case on identical evaluable frequencies. Table~\ref{tab:paired} summarizes exact per-suite McNemar tests and paired discordances; seven callback and five pending seed pairs with missing generated verdicts were omitted. The 50 suites reuse the same settings and share only three task families, so these tests describe this schedule rather than 50 independent replications.
+
+\begin{table}[t]
+\caption{Paired clock verdicts on identical evaluable settings. Discordances count upstream failures with generated passes (U only) and the reverse (LLM only).}
+\label{tab:paired}\scriptsize
+\begin{tabular}{@{}lrrr@{}}\toprule
+Task & Suites $p<0.05$ & U only & LLM only \\ \midrule
+Callback & 19/19 & 492 & 0 \\
+Pending & 20/20 & 480 & 0 \\
+Counting & 11/11 & 187 & 0 \\
+\bottomrule\end{tabular}
+\end{table}
 
 \subsection{Fault detection (RQ2)}
-The ideal legal ten-second alarm-arrival window is 6.809--18.824 host seconds. The 64-kHz oscillator reaches the target at 5.000 s; the 10-kHz oscillator reaches it at 32.000 s. The fast-clock probe needs an independent time reference, whereas the alarm-offset probes change the compare relative to the nominal RTC calendar. Every selected upstream and generated suite survived the fast oscillator. Slow-fault and nonarrival kills are in Table~\ref{tab:faults}; the one missing Luna nonarrival original is unscored. Over-padding mattered: 0/12 suites with a scalar budget above twice the legal slow bound killed the slow fault, versus 18/18 at or below twice the bound. By wait style, slow-fault kills were 39/53 for fixed-sleep-only tests, 7/9 for event-wait-only tests, and 3/4 for mixed tests (tabulations in the repository's analysis directory).
+Surviving legal clock speeds did not mean a test would detect a faulty alarm or oscillator. The ideal legal ten-second alarm-arrival window is 6.809--18.824 host seconds. The 64-kHz oscillator reaches the target at 5.000 s; the 10-kHz oscillator reaches it at 32.000 s. The 13-second wait from the Introduction detects the slow fault because the alarm arrives well after the wait; a much longer wait may miss it. The fast-clock probe needs an independent time reference, whereas the alarm-offset probes change the compare relative to the nominal RTC calendar. Every selected upstream and generated suite survived the fast oscillator. Slow-fault and nonarrival detections are in Table~\ref{tab:faults}; the one missing Luna nonarrival original is unscored. Over-padding mattered: 0/12 suites with a scalar budget above twice the legal slow bound detected the slow fault, versus 18/18 at or below twice the bound. By wait style, slow-fault detections were 39/53 for fixed-sleep-only tests, 7/9 for event-wait-only tests, and 3/4 for mixed tests (tabulations in the repository's analysis directory).
 
 
 
 \begin{table*}[t]
-\caption{Out-of-spec oscillator and nonarrival kills at nominal host timing, with descriptive 95\% Wilson intervals. One Luna absent nonarrival original is missing.}
+\caption{Out-of-spec oscillator and nonarrival kills at nominal host timing, with descriptive 95\% Wilson intervals. One Luna base-prompt nonarrival original is missing.}
 \label{tab:faults}
 \small
 \begin{tabular}{@{}llrrr@{}}
 \toprule
-Model & Range & Fast oscillator & Slow oscillator & Nonarrival \\
+Model & Prompt & Fast oscillator & Slow oscillator & Nonarrival \\
 \midrule
 Upstream & n/a & 0/3 [0, 56.1]\% & 3/3 [43.9, 100]\% & 3/3 [43.9, 100]\% \\
-Luna & absent & 0/4 [0, 49.0]\% & 4/4 [51.0, 100]\% & 3/3 [43.9, 100]\% +1 missing \\
-Luna & present & 0/3 [0, 56.1]\% & 0/3 [0, 56.1]\% & 3/3 [43.9, 100]\% \\
-Sol & absent & 0/15 [0, 20.4]\% & 13/15 [62.1, 96.3]\% & 15/15 [79.6, 100]\% \\
-Sol & present & 0/15 [0, 20.4]\% & 9/15 [35.7, 80.2]\% & 15/15 [79.6, 100]\% \\
-Astra & absent & 0/15 [0, 20.4]\% & 9/15 [35.7, 80.2]\% & 15/15 [79.6, 100]\% \\
-Astra & present & 0/14 [0, 21.5]\% & 14/14 [78.5, 100]\% & 14/14 [78.5, 100]\% \\
+Luna & Base & 0/4 [0, 49.0]\% & 4/4 [51.0, 100]\% & 3/3 [43.9, 100]\% +1 missing \\
+Luna & Ranges & 0/3 [0, 56.1]\% & 0/3 [0, 56.1]\% & 3/3 [43.9, 100]\% \\
+Sol & Base & 0/15 [0, 20.4]\% & 13/15 [62.1, 96.3]\% & 15/15 [79.6, 100]\% \\
+Sol & Ranges & 0/15 [0, 20.4]\% & 9/15 [35.7, 80.2]\% & 15/15 [79.6, 100]\% \\
+Astra & Base & 0/15 [0, 20.4]\% & 9/15 [35.7, 80.2]\% & 15/15 [79.6, 100]\% \\
+Astra & Ranges & 0/14 [0, 21.5]\% & 14/14 [78.5, 100]\% & 14/14 [78.5, 100]\% \\
 \midrule
 All LLM & both & 0/66 [0, 5.5]\% & 49/66 [62.6, 83.3]\% & 65/65 [94.4, 100]\% +1 missing \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
-At nominal clock, the upstream callback killed neither signed one-RTC-second alarm offset, whereas generated callback suites killed 18/18 evaluable early and 14/18 late. The pending task is readback-heavy by specification: all 20 generated pending suites killed both signs; upstream pending killed late, while its early original had no verdict. All 56 counting-control runs passed without alarm programming. Of 73 activated kills, 72 first failed a programmed-compare or calendar-relative check; one composite flag had an unresolved immediate cause. % Sources: generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r01/test.c and r02/test.c; range_present/r01/test.c and r05/test.c
-The four late-offset survivors were Sol range-absent callback r01 and r02, whose final assertions accept RTC second 5 \emph{or} 6, and Sol range-present callback r01 and r05, which lack an upper calendar-time bound. r05 additionally allows a 60-second deadline. Missing originals are never replaced by diagnostic reruns.
+At nominal clock, the upstream callback detected neither signed one-RTC-second alarm offset, whereas generated callback suites detected 18/18 evaluable early and 14/18 late. The pending task is readback-heavy by specification: all 20 generated pending suites detected both signs; upstream pending detected late, while its early original had no verdict. All 56 counting-control runs passed without alarm programming. Of 73 activated detections, 72 first failed a programmed-compare or calendar-relative check; one composite flag had an unresolved immediate cause. % Sources: generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r01/test.c and r02/test.c; range_present/r01/test.c and r05/test.c
+The four late-offset survivors were Sol base-prompt callback r01 and r02, whose final assertions accept RTC second 5 \emph{or} 6, and Sol clock-range-prompt callback r01 and r05, which lack an upper calendar-time bound. r05 additionally allows a 60-second deadline. Missing originals are never replaced by diagnostic reruns.
 
 \begin{table}[t]
 \caption{Alarm-offset kills by matched task at nominal clock, with descriptive 95\% Wilson intervals for generated suites. Missing originals are excluded.}
@@ -191,21 +219,21 @@ Generated pending & 20/20 [83.9, 100]\% & 20/20 [83.9, 100]\% \\
 \end{table}
 
 \subsection{Prediction and generation yield (RQ3)}
-A clock-only threshold applied to 30/66 eligible RTC suites. Eleven of 14 sampled predictable suites had zero-failure forecasts with budgets above the legal slow-arrival bound. The three nontrivial forecasts matched exact 100-setting vectors, including 37/37 failures; agreement across the full sample was 1,400/1,400. The other 16 predictable suites remain unrun forecasts. The frozen forecast ledger in the repository's analysis directory records their budgets.
+The simple clock model predicted observed failures exactly when a test had one clear waiting deadline. A clock-only threshold applied to 30/66 eligible RTC suites. Eleven of 14 sampled predictable suites had zero-failure forecasts with budgets above the legal slow-arrival bound. The three nontrivial forecasts matched exact 100-setting vectors, including 37/37 failures; agreement across the full sample was 1,400/1,400. The other 16 predictable suites remain unrun forecasts. The frozen forecast ledger in the repository's analysis directory records their budgets.
 
-Across all 90 RTC attempts, 15 failed to build, eight failed the functional gate, and one failed nominal screening. Thirty-nine attempts produced a confirmed clock-robust test; 29 also killed the slow and nonarrival faults. A stricter source-coded criterion requiring a known, non-over-padded clock budget admitted 5/90. Table~\ref{tab:yield} preserves the condition-level denominator. Luna had no eligible alarm suite; its range-present counting suites used 60-second windows and all missed the slow fault. Sol had two clock-flipping pending suites and weaker slow-fault detection with the range; Astra had one flipping pending suite and 14/14 range-present slow-fault kills. Between-model Fisher tests are exploratory because the three tasks share a driver and emulator.
+Across all 90 RTC attempts, 15 failed to build, eight failed the functional gate, and one failed nominal screening. Thirty-nine attempts produced a confirmed clock-robust test; 29 also detected the slow and nonarrival faults. A stricter source-coded criterion requiring a known, non-over-padded clock budget admitted 5/90. Table~\ref{tab:yield} preserves the condition-level denominator. Luna had no eligible alarm suite; its counting suites prompted with clock ranges used 60-second windows and all missed the slow fault. Sol had two clock-flipping pending suites and weaker slow-fault detection with clock ranges; Astra had one flipping pending suite and 14/14 slow-fault detections when prompted with clock ranges. Between-model Fisher tests are exploratory because the three tasks share a driver and emulator.
 
 \begin{table}[t]
-\caption{All-attempt RTC yield. Each row contains 15 generation attempts. Robust means 100 observed legal-clock passes without missing verdicts; +2 also kills slow and nonarrival faults.}
+\caption{All-attempt RTC yield. Each row contains 15 generation attempts. Robust means 100 observed legal-clock passes without missing verdicts; +2 also kills slow and nonarrival faults. Base is the base prompt; Ranges adds clock ranges.}
 \label{tab:yield}\scriptsize
 \begin{tabular}{@{}llrrr@{}}\toprule
 Model & Prompt & Working & Robust & Robust+2 \\ \midrule
-Luna & A & 4/15 & 2/15 & 2/15 \\
-Luna & P & 3/15 & 2/15 & 0/15 \\
-Sol & A & 15/15 & 6/15 & 5/15 \\
-Sol & P & 15/15 & 8/15 & 3/15 \\
-Astra & A & 15/15 & 10/15 & 8/15 \\
-Astra & P & 14/15 & 11/15 & 11/15 \\
+Luna & Base & 4/15 & 2/15 & 2/15 \\
+Luna & Ranges & 3/15 & 2/15 & 0/15 \\
+Sol & Base & 15/15 & 6/15 & 5/15 \\
+Sol & Ranges & 15/15 & 8/15 & 3/15 \\
+Astra & Base & 15/15 & 10/15 & 8/15 \\
+Astra & Ranges & 14/15 & 11/15 & 11/15 \\
 \bottomrule\end{tabular}
 \end{table}
 
@@ -214,14 +242,14 @@ Astra & P & 14/15 & 11/15 & 11/15 \\
 At 28 measured callback-reference frequencies, ztest duration minus $320000/f$ ranged from $-0.001$ to $+0.127$ s; this supports Renode's internal timing, not silicon fidelity. Among 33 scanned upstream RTC, counter, and timer files, none explicitly measured interrupt-to-callback latency against a registered bound.
 
 \subsection{Supporting source review (RQ4)}
-A single unblinded automated review flagged latency or ordering assumptions in 28/66 eligible RTC suites; 24 were unknown and 14 had no flagged pattern. Among 47 measured suites without clock-induced assertion failures, 21 had a definite latency premise and 23 were unknown. The three selected upstream RTC files were marked as clock-bound shortfalls in the 33-file scan.
+Many suites that survived clock variation still assumed something about callback delivery or ordering. A single unblinded automated review flagged latency or ordering assumptions in 28/66 eligible RTC suites; 24 were unknown and 14 had no flagged pattern. Among 47 measured suites without clock-induced assertion failures, 21 had a definite latency premise and 23 were unknown. The three selected upstream RTC files were marked as clock-bound shortfalls in the 33-file scan.
 
 \subsection{Source similarity to upstream}
 % Sources: analysis/rtc_stage_a_similarity.json and analysis/rtc_stage_a_oracle_assertions.csv
 A rule-based audit compared all 90 generated RTC sources with matched upstream tests across assertion types, fault profiles, API calls, and token overlap. The maximum pairwise five-token Jaccard score was 0.131, flagging no near-copy under this metric but not ruling out smaller reused fragments or training exposure.
 
 \section{Discussion and Threats to Validity}
-The selected upstream callback checks absence after one fixed sleep and occurrence after another. By contrast, an Astra generated callback captures RTC calendar time and asserts equality with the requested target second. Figure~\ref{fig:sourcecontrast} shows the source excerpts. The former accepts either alarm offset; the latter kills both. This is an illustrative, task-matched contrast: the generated prompt asked for configured-time firing, while Zephyr's upstream tests run across many boards and drivers where a lenient window may support portability. The pending prompt expressly required readback, so its kills mainly show instruction-following. Still, four generated callback suites missed the late offset despite the explicit instruction. A stronger oracle would wait for an event under a justified worst-case ceiling, check earliest legal arrival against an independent clock, and verify the RTC calendar target.
+The selected upstream callback checks absence after one fixed sleep and occurrence after another. By contrast, an Astra generated callback captures RTC calendar time and asserts equality with the requested target second. Figure~\ref{fig:sourcecontrast} shows the source excerpts. The former accepts either alarm offset; the latter detects both. This is an illustrative, task-matched contrast: the generated prompt asked for configured-time firing, while Zephyr's upstream tests run across many boards and drivers where a lenient window may support portability. The pending prompt expressly required readback, so its detections mainly show instruction-following. Still, four generated callback suites missed the late offset despite the explicit instruction. A stronger oracle would wait for an event under a justified worst-case ceiling, check earliest legal arrival against an independent clock, and verify the RTC calendar target.
 
 % Sources: subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c; generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r01/test.c
 \begin{figure*}[t]
@@ -235,7 +263,7 @@ k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));
 zassert_equal(callback_called_status, true,
               "Alarm %d callback should have been called", j);
 \end{verbatim}
-\textbf{LLM-generated Astra range-absent callback r01, \texttt{test.c}, lines 68 and 136--140:}
+\textbf{LLM-generated Astra base-prompt callback r01, \texttt{test.c}, lines 68 and 136--140:}
 \begin{verbatim}
 o->time_result = rtc_get_time(dev, &o->time);
 zassert_true(calendar_compare(&o->time, &target) >= 0,
@@ -244,15 +272,15 @@ zassert_equal(calendar_compare(&o->time, &target), 0,
               "Alarm %u fired outside the target RTC second",
               (unsigned int)i);
 \end{verbatim}
-\caption{Literal, noncontiguous excerpts from the pinned upstream callback case and saved Astra range-absent callback r01. The first checks a fixed window; the second checks the calendar captured at callback against the target.}
+\caption{Literal, noncontiguous excerpts from the pinned upstream callback case and saved Astra base-prompt callback r01. The first checks a fixed window; the second checks the calendar captured at callback against the target.}
 \Description{Source excerpts show upstream absence and presence assertions around two fixed sleeps, and an LLM-generated calendar capture with early and exact-target assertions.}
 \label{fig:sourcecontrast}
 \end{figure*}
 
-The baseline has only three purposively selected, correlated cases and one board, driver, and Renode model. Clock inputs do not bound delivery latency; our one-tick injection failed reference feasibility, so dynamic latency results remain future work. References and replays show internal consistency, not silicon fidelity. Sixteen generated suites have forecasts rather than measured legal-clock outcomes; 12 RTC original verdicts are missing. Wilson intervals over seeds and Fisher/McNemar tests over related suites do not supply independent task replication. The range-present prompt included a generic reminder that tolerance does not bound callback delivery, so numeric-range effects cannot be isolated. A looser-spec control is also needed to separate requested precision from model-chosen precision. Source and padding labels have one unblinded automated reviewer, without inter-rater agreement; model backend version snapshots and training-data overlap with upstream tests are unavailable.
+The baseline has only three purposively selected, correlated cases and one board, driver, and Renode model. Clock inputs do not bound delivery latency; our one-tick injection failed reference feasibility, so dynamic latency results remain future work. References and replays show internal consistency, not silicon fidelity. Sixteen generated suites have forecasts rather than measured legal-clock outcomes; 12 RTC original verdicts are missing. Wilson intervals over seeds and Fisher/McNemar tests over related suites do not supply independent task replication. The prompt with clock ranges also included a generic reminder that tolerance does not bound callback delivery, so numeric-range effects cannot be isolated. A looser-spec control is also needed to separate requested precision from model-chosen precision. Source and padding labels have one unblinded automated reviewer, without inter-rater agreement; model backend version snapshots and training-data overlap with upstream tests are unavailable.
 
 \section{Related Work}
-Rerun studies link asynchronous waits to flakiness~\cite{luo2014flaky}; FlakeRake uses targeted pauses~\cite{rahman2024flakerake}, and Strandberg et al. study embedded test assumptions~\cite{strandberg2020}. Berndt et al. examine LLM-generated flaky tests~\cite{berndt2026}. Mutation testing and test-oracle surveys frame the distinction between fault kills and correct judgments~\cite{jia2011mutation,barr2015oracle}. ChatUniTest, CoverUp, and MuTAP generate tests using LLMs~\cite{chen2024chatunitest,pizzorno2025coverup,dakhel2024mutap}; \emph{All Smoke, No Alarm} studies oracle signals in agent-authored tests~\cite{banik2026}. EmbedAgent and EmbC-Test address embedded development and testing~\cite{embedagent2026,embctest2026}. Interrupt-analysis work includes Regehr's schedule testing, SDRacer, AIM, and AidFuzzer~\cite{regehr2005random,sdracer2017,aim2023,aidfuzzer2025}. Our study holds test binaries fixed while varying a documented peripheral clock and scores fault detection separately.
+Rerun studies link asynchronous waits to flakiness~\cite{luo2014flaky}; FlakeRake uses targeted pauses~\cite{rahman2024flakerake}, and Strandberg et al. study embedded test assumptions~\cite{strandberg2020}. Berndt et al. examine LLM-generated flaky tests~\cite{berndt2026}. Mutation testing and test-oracle surveys frame the distinction between fault detection and correct judgments~\cite{jia2011mutation,barr2015oracle}. ChatUniTest, CoverUp, and MuTAP generate tests using LLMs~\cite{chen2024chatunitest,pizzorno2025coverup,dakhel2024mutap}; \emph{All Smoke, No Alarm} studies oracle signals in agent-authored tests~\cite{banik2026}. EmbedAgent and EmbC-Test address embedded development and testing~\cite{embedagent2026,embctest2026}. Interrupt-analysis work includes Regehr's schedule testing, SDRacer, AIM, and AidFuzzer~\cite{regehr2005random,sdracer2017,aim2023,aidfuzzer2025}. Our study holds test binaries fixed while varying a documented peripheral clock and scores fault detection separately.
 
 \section{Conclusion and Future Work}
 On these selected RTC tasks, legal clock variation exposed upstream timing windows and three generated pending suites. Most eligible generated suites survived, but over-padding and missing upper calendar checks weakened some fault probes. Thus legal-clock survival alone does not establish a strong alarm oracle. For RTC alarms, bound waits by the worst-case legal clock with a justified delivery margin, check premature arrival against an independent time reference, and assert the requested RTC calendar target rather than eventual arrival alone.
