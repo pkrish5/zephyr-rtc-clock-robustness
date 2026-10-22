@@ -1,0 +1,86 @@
+Bootstrap: docker
+From: mcr.microsoft.com/dotnet/runtime@sha256:8080f384fe551bb616f03011d1b288dea756a4ce79a7b2292bb921c741b2cf66
+
+%labels
+    org.opencontainers.image.title Zephyr RTC Lonestar6 calibration
+    org.opencontainers.image.version 2026-10-22-v1
+    rtc.renode.version 1.17.0
+    rtc.dotnet.version 8.0.21
+    rtc.zephyr.commit 3568e1b6d5cdd51a6b964a2a1d6d29200fea2056
+    rtc.sdk.version 0.17.4
+
+%files
+    harness /opt/rtc-code/harness
+    results/phase1/environment.json /opt/rtc-pins/original-environment.json
+
+%post
+    set -eu
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update
+    apt-get install -y --no-install-recommends ca-certificates curl git \
+        python3 python3-venv ninja-build gperf device-tree-compiler xz-utils \
+        file make gcc g++ pkg-config libglib2.0-0t64 libgtk-3-0t64 libfontconfig1 \
+        libx11-6 libusb-1.0-0 libncurses6 libtinfo6 time
+    python3 -m venv /opt/rtc-python
+    /opt/rtc-python/bin/pip install --no-cache-dir \
+        pexpect==4.9.0 west==1.5.0 cmake==3.31.10
+    curl -fL --retry 3 \
+        https://github.com/renode/renode/releases/download/v1.17.0/renode-1.17.0.linux-portable.tar.gz \
+        -o /tmp/renode.tar.gz
+    echo '4ba7c68b59e2447f188ef4b4b112fcccd2802582c460beedceb63b84e5605a5f  /tmp/renode.tar.gz' | sha256sum -c -
+    mkdir -p /opt/renode
+    tar -xzf /tmp/renode.tar.gz --strip-components=1 -C /opt/renode
+    echo 'a78bb20f3e594fffa9aec25d2ee85a7b165e8a381c603303ee237e7ce67d1194  /opt/renode/platforms/cpus/stm32f4.repl' | sha256sum -c -
+    # The archive embeds .NET 8.0.12; use the original study's 8.0.21.
+    cat > /opt/renode/Renode.pinned.runtimeconfig.json <<'EOF'
+{"runtimeOptions":{"tfm":"net8.0","rollForward":"Disable","framework":{"name":"Microsoft.NETCore.App","version":"8.0.21"},"configProperties":{"System.Globalization.Invariant":true,"System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization":false}}}
+EOF
+    cat > /opt/renode/renode-pinned <<'EOF'
+#!/bin/sh
+exec /usr/bin/dotnet exec --runtimeconfig /opt/renode/Renode.pinned.runtimeconfig.json /opt/renode/Renode.dll "$@"
+EOF
+    chmod 755 /opt/renode/renode-pinned
+    mkdir -p /opt/zephyrproject
+    git clone --depth 1 --branch v4.3.0 \
+        https://github.com/zephyrproject-rtos/zephyr.git /opt/zephyrproject/zephyr
+    test "$(git -C /opt/zephyrproject/zephyr rev-parse HEAD)" = 3568e1b6d5cdd51a6b964a2a1d6d29200fea2056
+    cd /opt/zephyrproject
+    /opt/rtc-python/bin/west init -l zephyr
+    /opt/rtc-python/bin/west update cmsis cmsis_6 hal_stm32
+    /opt/rtc-python/bin/python - <<'PY'
+import json, subprocess
+from pathlib import Path
+pins=json.loads(Path('/opt/rtc-pins/original-environment.json').read_text())
+for name, value in pins['components'].items():
+    paths={'zephyr':'zephyr','cmsis':'modules/hal/cmsis','cmsis_6':'modules/hal/cmsis_6','hal_stm32':'modules/hal/stm32'}
+    actual=subprocess.check_output(['git','-C',paths[name],'rev-parse','HEAD'], text=True).strip()
+    if actual != value['commit']: raise SystemExit(f'Component commit differs: {name}: {actual}')
+PY
+    /opt/rtc-python/bin/pip install --no-cache-dir -r zephyr/scripts/requirements-base.txt
+    curl -fL --retry 3 \
+        https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.17.4/zephyr-sdk-0.17.4_linux-x86_64_minimal.tar.xz \
+        -o /tmp/sdk.tar.xz
+    echo 'a7258bf50c892c4669712b2aacdfcd5e303245bcf36cb458a296039a664594f5  /tmp/sdk.tar.xz' | sha256sum -c -
+    mkdir -p /opt/zephyr-sdk-0.17.4
+    tar -xJf /tmp/sdk.tar.xz --strip-components=1 -C /opt/zephyr-sdk-0.17.4
+    cd /opt/zephyr-sdk-0.17.4
+    ./setup.sh -t arm-zephyr-eabi
+    /opt/rtc-python/bin/pip freeze > /opt/rtc-pins/python-packages.txt
+    dpkg-query -W > /opt/rtc-pins/os-packages.txt
+    rm /tmp/renode.tar.gz /tmp/sdk.tar.xz
+    apt-get clean
+
+%environment
+    export PATH=/opt/rtc-python/bin:/opt/zephyr-sdk-0.17.4/arm-zephyr-eabi/bin:$PATH
+    export RENODE_BIN=/opt/renode/renode-pinned
+    export ZEPHYR_BASE=/opt/zephyrproject/zephyr
+    export ZEPHYR_SDK_INSTALL_DIR=/opt/zephyr-sdk-0.17.4
+    export PYTHONDONTWRITEBYTECODE=1
+
+%test
+    /opt/renode/renode-pinned --version
+    /opt/zephyr-sdk-0.17.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc --version
+    /opt/rtc-python/bin/python -c 'import pexpect; assert pexpect.__version__ == "4.9.0"'
+
+%runscript
+    exec /opt/rtc-python/bin/python /opt/rtc-code/harness/tacc_phase1/calibration.py "$@"

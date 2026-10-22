@@ -352,6 +352,74 @@ This dated audit uses only already saved Stage B records; it introduces no new e
 
 The user requested a revised estimate before continuing and instructed a stop if the remaining full round exceeds 12 hours. With 58 calls still unfinalized, repeated CLI timeouts, nominal gates, legal-clock challenges, and fault probes remaining, the revised full-round estimate is 14--22 additional wall hours under a working service, with further delay possible if timeouts recur. The generator and idle build watcher are stopped. No Stage B legal-clock or fault run has started. Preserve the 60-call lock and all completed records. A reduced scope requires a new dated amendment and user approval before any new model call or simulation.
 
+## 2026-10-22 Lonestar6 environment and calibration amendment (before new runs)
+
+The user authorized Phase 1 setup and calibration on Lonestar6, allocation
+`TRA25006`. The user logs in using MFA and runs the supplied commands;
+no credentials are shared with the automated agent. Put the clone, image,
+transfer bundle, runtime temporary directories and results under `$WORK`,
+never `$HOME` or `$SCRATCH`. Pack records into single-node jobs, not Slurm
+arrays. Use the development queue for the resource probe and calibration.
+No production run, forecast-only measurement, fault control, repair,
+generation, or manuscript update starts before the calibration report and
+the user's approval at that checkpoint.
+
+Reuse exact saved ELFs, sources, platform bytes, clock settings and the
+original observation/verdict code. The flipping subjects are Sol base
+pending r01/r03 and Astra base pending r05. Choose five complete-passing
+subjects as the lexicographically first saved suite in each of these
+strata: Astra/base/callback, Sol/ranges/callback, Luna/base/counting,
+Luna/ranges/counting and Astra/ranges/pending. Every selected suite receives
+its 100 saved frequencies and both endpoints, for 816 calibration records.
+Selection uses existing results only. Lock original record and trace
+hashes, source, ELF and platform hashes, frozen runner dependencies and the
+new adapter before submission. Compare verdicts and entire trace-file
+hashes exactly; do not normalize differing traces. Execution record hashes
+will differ because node, job, container and timestamps are recorded.
+
+First perform one separate resource-probe run of the selected Astra base
+callback at 17 kHz, with the same ELF and strict comparison. Measure peak
+resident memory and wall time using GNU time on a compute node. Set packed
+concurrency to the minimum of the requested cap, allocated CPU count, and
+80% of available node memory divided by 1.5 times measured single-run peak
+memory. The 1.5 factor is a prospective safety allowance, not a measured
+memory bound. Keep per-run resource usage during calibration. A mismatch,
+missing verdict, invalid input, or incomplete task blocks further launches.
+Already-running packed tasks may finish and remain recorded. Never
+replace an original harness error with a retry that passed.
+
+Pin Renode 1.17.0, .NET 8.0.21, Zephyr commit
+`3568e1b6d5cdd51a6b964a2a1d6d29200fea2056` and SDK 0.17.4 in the
+Apptainer definition. Checksum-pin the Linux downloads and base image.
+Seal the built SIF SHA-256 and software inventory before the probe. Every
+record stores node, container hash, Slurm job ID, task index and plan hash.
+Capture the actual Renode version and stop if it differs from the saved
+version. Transfer only the existing SVD cache, not user history or other
+configuration, to avoid network downloads on compute nodes. The image and
+packed runner remain unvalidated until the user's Linux build, resource
+probe and calibration complete. STOP for approval after calibration.
+Later experiments require separate dated amendments; the optional LLM
+repair arm is not started by this registration.
+
+**2026-10-22 access-boundary addendum, before remote execution:** the user
+made an existing `ssh ls6` session available. Use noninteractive SSH;
+if it disconnects or requires authentication, stop without attempting to
+authenticate. All remote work, including caches and temporary files, is
+restricted to `$WORK/zephyr-rtc-clock-robustness`; use its
+`tacc_work/20261022` subdirectory for this phase. Do not touch SSH or
+account settings. Pull code using `git pull` only, transfer data/results
+using rsync, and never push from Lonestar6. Submit builds, probes,
+calibration and substantive analyses only to compute nodes. Development
+jobs are authorized under `TRA25006`; every normal-queue submission
+requires a separate job/node/time/SU report and explicit approval.
+
+**2026-10-22 module-pinning addendum, before image build and calibration:**
+Load `tacc-apptainer/1.4.1` and `launcher/3.10` explicitly. Pack one
+`apptainer exec` invocation per jobfile line with TACC Launcher, using the
+resource-probe-derived process count. Record the actual Apptainer version
+as well as the SIF SHA-256 in every run. Do not use the default Apptainer
+1.1.8 module or GNU parallel for this calibration.
+
 ## 2026-10-12 Stage B deferred
 
 The user closed the exploratory Stage B round as **deferred** because repeated Codex CLI connectivity timeouts interrupted the locked generation sequence. Do not run the proposed 12-call pilot or resume the 60-call round under this protocol. Retain the frozen prompts, call order, two completed sources, failed CLI and build attempts, nominal originals, and separately labeled access retries. The [condition-level interruption audit](../notes/STAGE_B_CALLBACK_INTERRUPTION_2026-10-12.md) remains part of the project record. Neither completed Stage B source enters any manuscript result, denominator, figure, table, or model/prompt comparison. The manuscript may describe the frozen design and the same-spec human packet solely as planned follow-up. Any future execution requires a new dated authorization and protocol amendment before generating or running tests.
