@@ -430,6 +430,15 @@ and use a separate `tacc_work/20261022-v2` base for the next build. Suite
 selection, saved inputs, calibration comparisons and stopping rules do not
 change. No image was built and no Renode run occurred in the failed job.
 
+**2026-10-22 package-version string correction, before image build or Renode data:**
+Development job 3529760 loaded the correct pinned module, whose executable
+reports `apptainer version 1.4.1-1.el8`. Accept this exact TACC RPM package
+string in addition to upstream `apptainer version 1.4.1`; continue recording
+the full string and requiring the pinned module. No other runtime version
+is allowed. The job stopped before image creation. Preserve its logs and
+seal v3 code/input hashes for a new `tacc_work/20261022-v3` build directory.
+The selected tests, inputs and all calibration criteria remain unchanged.
+
 ## 2026-10-12 Stage B deferred
 
 The user closed the exploratory Stage B round as **deferred** because repeated Codex CLI connectivity timeouts interrupted the locked generation sequence. Do not run the proposed 12-call pilot or resume the 60-call round under this protocol. Retain the frozen prompts, call order, two completed sources, failed CLI and build attempts, nominal originals, and separately labeled access retries. The [condition-level interruption audit](../notes/STAGE_B_CALLBACK_INTERRUPTION_2026-10-12.md) remains part of the project record. Neither completed Stage B source enters any manuscript result, denominator, figure, table, or model/prompt comparison. The manuscript may describe the frozen design and the same-spec human packet solely as planned follow-up. Any future execution requires a new dated authorization and protocol amendment before generating or running tests.

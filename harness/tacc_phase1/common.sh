@@ -23,7 +23,7 @@ module load launcher/3.10
 set -u
 RTC_APPTAINER_VERSION=$(apptainer --version)
 case "$RTC_APPTAINER_VERSION" in
-    'apptainer version 1.4.1'|'apptainer version 1.4.1 '*) ;;
+    'apptainer version 1.4.1'|'apptainer version 1.4.1-1.el8') ;;
     *) echo "STOP: Apptainer 1.4.1 required: $RTC_APPTAINER_VERSION" >&2; exit 2 ;;
 esac
 case ":${LOADEDMODULES:-}:" in

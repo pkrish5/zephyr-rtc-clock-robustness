@@ -4,7 +4,6 @@ import argparse
 import importlib.util
 import json
 import os
-import re
 import socket
 import subprocess
 import sys
@@ -83,7 +82,7 @@ def run(args):
         if len(image_hash) != 64 or any(c not in "0123456789abcdef" for c in image_hash):
             raise ValueError("Missing or invalid sealed container hash")
         apptainer_version = os.environ["RTC_APPTAINER_VERSION"]
-        if not re.search(r"\b1\.4\.1(?:\s|$)", apptainer_version):
+        if apptainer_version not in ("apptainer version 1.4.1", "apptainer version 1.4.1-1.el8"):
             raise ValueError(f"Apptainer 1.4.1 required: {apptainer_version}")
         if os.environ.get("RTC_LAUNCHER_MODULE") != "launcher/3.10":
             raise ValueError("Launcher 3.10 required")
@@ -169,7 +168,7 @@ def compare(args):
             if not d.get(key):
                 raise ValueError(f"Missing execution provenance: {task['run_id']}: {key}")
             provenance[key].add(d[key])
-        if not re.search(r"\b1\.4\.1(?:\s|$)", d["apptainer_version"]):
+        if d["apptainer_version"] not in ("apptainer version 1.4.1", "apptainer version 1.4.1-1.el8"):
             raise ValueError("A record used an unapproved Apptainer version")
         # Recompute agreement; never trust saved boolean flags alone.
         r["verdict_agrees"] = d["outcome"] == task["expected_outcome"]

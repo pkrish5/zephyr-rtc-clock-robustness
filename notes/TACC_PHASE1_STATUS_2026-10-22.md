@@ -66,3 +66,16 @@ v2 bundle preserves the same 816 calibration tasks and expected local
 verdicts (776 pass, 40 fail), with plan SHA-256
 `35f10f450591f8c3f393e813c2e6a3a77d79dde1343b98fdc48780c7fb434fb8`.
 The next attempt uses `tacc_work/20261022-v2`; v1 and its job logs remain.
+
+The corrected code was published locally as commit
+`12393ae21169ba3915100850362137684968f3a8` and pulled on LS6.
+The v2 input bundle transferred successfully. The second container-build
+attempt was submitted as development job 3529760 under TRA25006
+(one whole node, two-hour wall limit). Its outcome is not yet known.
+
+Job 3529760 stopped on compute node c308-005 before the image build,
+because the strict version check rejected the exact TACC package string
+`apptainer version 1.4.1-1.el8`. v3 explicitly accepts that string with the
+pinned module and records it unchanged. Its sealed plan SHA-256 is
+`c9c0fdc77590ec6eb7b27e5244599e9ce3c9a26435b7019d8a621b5f5f818915`.
+No Renode run or successful image exists yet.

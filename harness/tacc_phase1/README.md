@@ -204,3 +204,9 @@ while loading pinned modules, then restores it. The next attempt uses
 `artifacts/tacc_phase1_20261022_v2` and exports
 `RTC_BASE="$RTC_REPO/tacc_work/20261022-v2"`, with bundle and image paths
 derived from that base. Preserve v1 inputs and failed-job logs.
+
+The v2 job 3529760 reached the compute node, then rejected TACC's exact
+`apptainer version 1.4.1-1.el8` package string. v3 accepts that string while
+retaining it in every record; the module stays pinned to 1.4.1. Use a new
+`artifacts/tacc_phase1_20261022_v3` bundle and `tacc_work/20261022-v3` base.
+No image or Renode run occurred in either failed build attempt.
