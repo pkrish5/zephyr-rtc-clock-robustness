@@ -15,8 +15,12 @@ export TMPDIR="$RTC_BASE/tmp"
 export XDG_CACHE_HOME="$RTC_BASE/xdg-cache"
 export LC_ALL=C
 mkdir -p "$APPTAINER_CACHEDIR" "$APPTAINER_TMPDIR" "$APPTAINER_CONFIGDIR" "$TMPDIR" "$XDG_CACHE_HOME"
+# TACC's Apptainer completion script reads optional unset variables.
+# Keep errexit enabled; restore nounset immediately after module loading.
+set +u
 module load tacc-apptainer/1.4.1
 module load launcher/3.10
+set -u
 RTC_APPTAINER_VERSION=$(apptainer --version)
 case "$RTC_APPTAINER_VERSION" in
     'apptainer version 1.4.1'|'apptainer version 1.4.1 '*) ;;

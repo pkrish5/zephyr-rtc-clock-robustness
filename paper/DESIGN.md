@@ -420,6 +420,16 @@ resource-probe-derived process count. Record the actual Apptainer version
 as well as the SIF SHA-256 in every run. Do not use the default Apptainer
 1.1.8 module or GNU parallel for this calibration.
 
+**2026-10-22 infrastructure correction, before image build or Renode data:**
+Development build job 3529750 stopped during module loading because the
+Apptainer shell-completion script referenced an unset optional variable
+under Bash nounset. Temporarily disable nounset only while loading the two
+pinned modules, then restore it; retain errexit and version checks. Preserve
+the failed job logs. Seal a new v2 transfer bundle with updated code hashes
+and use a separate `tacc_work/20261022-v2` base for the next build. Suite
+selection, saved inputs, calibration comparisons and stopping rules do not
+change. No image was built and no Renode run occurred in the failed job.
+
 ## 2026-10-12 Stage B deferred
 
 The user closed the exploratory Stage B round as **deferred** because repeated Codex CLI connectivity timeouts interrupted the locked generation sequence. Do not run the proposed 12-call pilot or resume the 60-call round under this protocol. Retain the frozen prompts, call order, two completed sources, failed CLI and build attempts, nominal originals, and separately labeled access retries. The [condition-level interruption audit](../notes/STAGE_B_CALLBACK_INTERRUPTION_2026-10-12.md) remains part of the project record. Neither completed Stage B source enters any manuscript result, denominator, figure, table, or model/prompt comparison. The manuscript may describe the frozen design and the same-spec human packet solely as planned follow-up. Any future execution requires a new dated authorization and protocol amendment before generating or running tests.

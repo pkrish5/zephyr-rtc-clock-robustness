@@ -1,6 +1,7 @@
 # Local environments and generated compiler output
 /tacc_work/
 /artifacts/tacc_phase1_20261022_v1/
+/artifacts/tacc_phase1_20261022_v2/
 .venv/
 .DS_Store
 **/__pycache__/

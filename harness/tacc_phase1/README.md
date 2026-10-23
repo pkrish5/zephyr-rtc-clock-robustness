@@ -195,3 +195,12 @@ Sources: [LS6 guide](https://docs.tacc.utexas.edu/hpc/lonestar6/),
 [Apptainer 1.4 build options](https://apptainer.org/docs/user/1.4/cli/apptainer_build.html),
 [Renode 1.17.0](https://github.com/renode/renode/releases/tag/v1.17.0),
 [SDK 0.17.4](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.17.4).
+
+## LS6 module-loading correction (2026-10-22)
+
+Development build 3529750 stopped in the Apptainer completion script under
+Bash nounset, before image creation. The wrapper now disables nounset only
+while loading pinned modules, then restores it. The next attempt uses
+`artifacts/tacc_phase1_20261022_v2` and exports
+`RTC_BASE="$RTC_REPO/tacc_work/20261022-v2"`, with bundle and image paths
+derived from that base. Preserve v1 inputs and failed-job logs.
