@@ -1,5 +1,8 @@
 # Lonestar6 Phase 1: image, resource probe and strict calibration
 
+Current recovery attempt: v4, using `tacc_work/20261022-v4` and a sealed
+`artifacts/tacc_phase1_20261022_v4` bundle. See the recovery notes below.
+
 Status: prepared implementation. A successful local syntax/unit check does
 not establish that the Linux image builds or that calibration agrees.
 The agent may use the user's existing `ssh ls6` session without prompting.
@@ -210,3 +213,28 @@ The v2 job 3529760 reached the compute node, then rejected TACC's exact
 retaining it in every record; the module stays pinned to 1.4.1. Use a new
 `artifacts/tacc_phase1_20261022_v3` bundle and `tacc_work/20261022-v3` base.
 No image or Renode run occurred in either failed build attempt.
+
+## WORK-only fakeroot helper (v4, 2026-10-22)
+
+Job 3529805 verified the inputs but failed at apt's setgroups/seteuid calls
+because LS6 lacked a fakeroot helper. Dependent probe 3529827 was cancelled
+without running. v4 builds Debian fakeroot 1.37.1.1 under the authorized
+project's WORK tools directory, on the development compute node. Its source
+is checksum pinned; compiler, installed-file hashes and job/node metadata
+are recorded. This follows Apptainer's documented root-mapped namespace
+plus host fakeroot-helper mode. No system/account settings change.
+
+Before package commands, the image recipe checks a marker proving /root
+is bound to the project's WORK-backed build home. The image manifest also
+records the helper inventory hash. All simulator pins and calibration inputs
+and rules stay unchanged. Latest paths to export before submitting:
+
+```bash
+export RTC_REPO="$WORK/zephyr-rtc-clock-robustness"
+export RTC_BASE="$RTC_REPO/tacc_work/20261022-v4"
+export RTC_BUNDLE="$RTC_BASE/calibration-bundle"
+export RTC_IMAGE="$RTC_BASE/images/rtc-ls6-v1.sif"
+```
+
+Use the sealed v4 input bundle, preserve previous attempts and logs, and
+submit the same build/probe/calibration scripts only to development.

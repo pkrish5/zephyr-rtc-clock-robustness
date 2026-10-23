@@ -439,6 +439,28 @@ is allowed. The job stopped before image creation. Preserve its logs and
 seal v3 code/input hashes for a new `tacc_work/20261022-v3` build directory.
 The selected tests, inputs and all calibration criteria remain unchanged.
 
+**2026-10-22 WORK-only fakeroot helper, before image build or Renode data:**
+Development build 3529805 verified inputs but failed during apt package-list
+setup: LS6 supplied a root-mapped namespace without a fakeroot command or
+subuid mapping, so setgroups/seteuid failed. Dependent resource job 3529827
+was cancelled without running. Use Apptainer's documented host-helper mode
+by compiling fakeroot 1.37.1.1 as the ordinary user on a development node,
+solely under `tacc_work/20261022-v4/tools`, before building the image. Its
+Debian source URL is
+https://deb.debian.org/debian/pool/main/f/fakeroot/fakeroot_1.37.1.1.orig.tar.gz
+and SHA-256 is
+`86b0b75bf319ca42e525c098675b6ed10a06b76e69ec9ccf20ef5e03883b3a14`,
+matching the official source-control `.dsc` checksum obtained over HTTPS.
+Record compiler, helper file hashes, node/job and helper-inventory hash in
+the image provenance. Do not alter subuid/subgid, account, SSH or system
+configuration; do not use sudo. Inspecting Apptainer v1.4.1 source confirmed
+that build configuration disables the usual home mount and passes explicit
+binds; add a WORK-home marker check before any package commands as a guard.
+Seal a separate v4 code/input bundle; preserve all failed-build logs. The
+Renode/.NET/Zephyr/SDK pins, test selection, trace comparisons and stopping
+rules remain unchanged. No image or Renode result exists from v3.
+Reference: https://apptainer.org/docs/user/1.4/fakeroot.html (host-helper mode).
+
 ## 2026-10-12 Stage B deferred
 
 The user closed the exploratory Stage B round as **deferred** because repeated Codex CLI connectivity timeouts interrupted the locked generation sequence. Do not run the proposed 12-call pilot or resume the 60-call round under this protocol. Retain the frozen prompts, call order, two completed sources, failed CLI and build attempts, nominal originals, and separately labeled access retries. The [condition-level interruption audit](../notes/STAGE_B_CALLBACK_INTERRUPTION_2026-10-12.md) remains part of the project record. Neither completed Stage B source enters any manuscript result, denominator, figure, table, or model/prompt comparison. The manuscript may describe the frozen design and the same-spec human packet solely as planned follow-up. Any future execution requires a new dated authorization and protocol amendment before generating or running tests.

@@ -15,6 +15,8 @@ From: mcr.microsoft.com/dotnet/runtime@sha256:8080f384fe551bb616f03011d1b288dea7
 
 %post
     set -eu
+    # Refuse package installation unless /root is the WORK-backed build home.
+    grep -qx 'rtc-work-backed-build-home' /root/.rtc-work-home
     export DEBIAN_FRONTEND=noninteractive
     apt-get update
     apt-get install -y --no-install-recommends ca-certificates curl git \

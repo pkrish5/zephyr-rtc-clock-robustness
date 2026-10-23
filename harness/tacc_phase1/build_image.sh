@@ -7,6 +7,14 @@ test "$(uname -m)" = x86_64 || { echo 'STOP: definition is pinned for LS6 x86_64
 test ! -e "$RTC_IMAGE" || { echo 'STOP: image already exists; preserve it' >&2; exit 2; }
 test ! -e "$RTC_BASE/images/image.json" || { echo 'STOP: sealed image already exists' >&2; exit 2; }
 python3 "$script_dir/calibration.py" verify --bundle "$RTC_BUNDLE" --repo "$RTC_REPO"
+bash "$script_dir/build_fakeroot.sh"
+export PATH="$RTC_BASE/tools/fakeroot-1.37.1.1/bin:$PATH"
+python3 - "$RTC_BASE/build-home/.rtc-work-home" <<'PY'
+import sys
+from pathlib import Path
+with Path(sys.argv[1]).open('x') as f:
+    f.write('rtc-work-backed-build-home\n')
+PY
 cd "$RTC_REPO"
 # Use a WORK-backed build home/cache/temp, including for unprivileged fakeroot.
 apptainer build --fakeroot --bind "$RTC_BASE/build-home:/root" \
@@ -40,6 +48,7 @@ record={'image_path':str(image),'container_sha256':h.hexdigest(),
  'apptainer_version':sys.argv[4],'apptainer_module':'tacc-apptainer/1.4.1',
  'launcher_module':'launcher/3.10','sealed_utc':datetime.now(timezone.utc).isoformat(),
  'calibration_plan_sha256':hashlib.sha256((bundle/'calibration_plan.json').read_bytes()).hexdigest(),
+ 'fakeroot_helper_inventory_sha256':hashlib.sha256((folder.parent/'tools/fakeroot-inventory.json').read_bytes()).hexdigest(),
  'software_inventory_sha256':hashlib.sha256((folder/'software-inventory.json').read_bytes()).hexdigest()}
 with (folder/'image.json').open('x') as f: json.dump(record,f,indent=2,sort_keys=True);f.write('\n')
 with (folder/'rtc-ls6-v1.sif.sha256').open('x') as f: f.write(h.hexdigest()+'  '+image.name+'\n')

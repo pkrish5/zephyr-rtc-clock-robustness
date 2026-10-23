@@ -79,3 +79,36 @@ because the strict version check rejected the exact TACC package string
 pinned module and records it unchanged. Its sealed plan SHA-256 is
 `c9c0fdc77590ec6eb7b27e5244599e9ce3c9a26435b7019d8a621b5f5f818915`.
 No Renode run or successful image exists yet.
+
+The v3 compatibility fix was published from the Mac as commit 93877b24.
+The next noninteractive SSH command (git pull plus v3 directory preparation)
+timed out after 35 seconds with no output. Its completion is unconfirmed.
+Remote work stopped under the connection-failure rule. No v3 bundle
+transfer or build submission was attempted. The v2 failed-job logs have
+not yet been retrieved locally; they remain under the authorized WORK
+project directory. Only v1 failed-job logs were copied back. No image hash,
+resource measurement, or calibration agreement is available.
+
+## Connection restored again and v3 build queued, 2026-10-22
+
+After the user's confirmation, SSH succeeded and the checkout pulled commit
+93877b24. The sealed v3 bundle transferred successfully. Development build
+3529805 was submitted under TRA25006 (one node, two-hour limit). Slurm
+estimated 2026-10-22 21:26:58 Central as its start; that estimate can change.
+The development partition reported 15 allocated and three drained nodes.
+The v2 failed-job logs were retrieved to the local v2 artifact.
+No resource measurement or Renode run has occurred at this checkpoint.
+
+Development resource probe 3529827 was queued with
+`afterok:3529805` and `--kill-on-invalid-dep=yes`, so it cannot launch unless
+the build job completes successfully, including strict image sealing.
+It requests one node and 20 minutes under TRA25006. Calibration remains
+unsubmitted until the probe agrees and its resource measurements are read.
+
+Job 3529805 ran on c302-006 for 39 seconds and failed during apt setup
+(setgroups/seteuid errors in a root-mapped namespace without a fakeroot
+helper). Probe 3529827 was cancelled without running. No image or Renode
+result exists. v4 adds a checksum-pinned WORK-only fakeroot helper compiled
+on the development node and a build-home mount marker guard. Its plan SHA
+is `770d53b021db67a69ec2becf71b95a3067721a425cd855d328f0cead258539fa`.
+The same 816 saved calibration tasks remain selected.
