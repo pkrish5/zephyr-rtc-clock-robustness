@@ -106,7 +106,7 @@ def main():
     code += sorted((ROOT / "harness/tacc_phase1").glob("*.py"))
     code += sorted((ROOT / "harness/tacc_phase1").glob("*.sh"))
     code += sorted((ROOT / "harness/tacc_phase1").glob("*.sbatch"))
-    code += [ROOT / "harness/tacc_phase1/rtc-ls6.def"]
+    code += sorted((ROOT / "harness/tacc_phase1").glob("*.def"))
     plan = {"schema_version": 1, "registered_utc": datetime.now(timezone.utc).isoformat(),
             "status": "registered before resource probe and TACC calibration",
             "system": "Lonestar6", "allocation": "TRA25006",
@@ -117,6 +117,8 @@ def main():
             "tasks": tasks, "input_sha256": files,
             "code_sha256": {str(p.relative_to(ROOT)): sha(p) for p in code},
             "expected_renode_version": m["renode_version"],
+            "execution_renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+            "environment_resolution": "User approved official macOS ARM64 versus Linux portable packages at embedded revision f1dd1b4af7838b45a925c17603cdfed0a583844a; pin execution runtime to 8.0.21; exact verdict and complete raw trace SHA-256 decide calibration; no production authorized.",
             "probe_task_index": next(t["index"] for t in tasks
                                      if t["suite_id"] == passing[0] and t["condition"] == "min"),
             "agreement": "Exact outcome and complete raw trace-file SHA-256; no normalization",

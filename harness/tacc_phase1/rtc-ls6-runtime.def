@@ -1,0 +1,28 @@
+Bootstrap: localimage
+From: tacc_work/20261022-v8/images/rtc-ls6-v1.sif
+
+%labels
+    org.opencontainers.image.version 2026-10-22-v9
+    rtc.dotnet.version 8.0.21
+    rtc.parent.sha256 1f10025ee9d9b5e291c9d518ac65646c79e2f833886f96561c5259cb4c86d2b4
+
+%files
+    harness /opt/rtc-update/harness
+
+%post
+    set -eu
+    grep -qx 'rtc-work-backed-build-home' /root/.rtc-work-home
+    grep -qx 'rtc-work-backed-build-tmp' /tmp/.rtc-work-tmp
+    grep -qx 'rtc-work-backed-build-var-tmp' /var/tmp/.rtc-work-var-tmp
+    cp -a /opt/rtc-update/harness/. /opt/rtc-code/harness/
+    /opt/rtc-python/bin/python /opt/rtc-code/harness/tacc_phase1/pin_runtime.py /opt/renode
+    cat > /opt/renode/renode-pinned <<'EOF'
+#!/bin/sh
+exec /usr/bin/dotnet exec --runtimeconfig /opt/renode/Renode.pinned.runtimeconfig.json --depsfile /opt/renode/Renode.pinned.deps.json /opt/renode/Renode.dll "$@"
+EOF
+    chmod 755 /opt/renode/renode-pinned
+
+%test
+    grep -qx 'rtc-work-backed-build-tmp' /tmp/.rtc-work-tmp
+    grep -qx 'rtc-work-backed-build-var-tmp' /var/tmp/.rtc-work-var-tmp
+    /opt/renode/renode-pinned --version

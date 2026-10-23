@@ -284,3 +284,24 @@ configProperty and changing only bundled-framework selection to external
 handling flag. Pending build 3529922 was cancelled without executing.
 Use `artifacts/tacc_phase1_20261022_v8` and
 `RTC_BASE="$RTC_REPO/tacc_work/20261022-v8"`; other paths derive from it.
+
+## Approved platform-package resolution (2026-10-22)
+
+The local macOS ARM64 and LS6 Linux portable release packages embed the same
+source revision f1dd1b4af, with differing build dates. The current tag ref
+differs from that embedded revision; use the checksum-pinned release assets.
+Provenance evidence: `notes/TACC_PHASE1_RENODE_PROVENANCE_2026-10-22.json`.
+
+The original Linux deps manifest selects bundled .NET 8.0.12 even when its
+runtimeconfig selects external 8.0.21. `pin_runtime.py` derives a separate
+deps file that excludes only that bundled runtimepack. The original
+config/deps and all application binaries stay intact. The derived manifests
+must sit beside the application to resolve its libraries.
+
+The v9 build uses `rtc-ls6-runtime.def` and the hash-verified existing v8 SIF
+at `tacc_work/20261022-v8/images/rtc-ls6-v1.sif` as its parent, preserving
+installed packages and toolchains. It updates only the runtime launcher /
+derived manifests and calibration adapter. The plan preserves the original
+Mac version and checks the exact approved Linux/.NET 8.0.21 version.
+Complete verdict and raw trace SHA-256 equality remains mandatory. This
+resolution authorizes development probe/calibration only, not production.

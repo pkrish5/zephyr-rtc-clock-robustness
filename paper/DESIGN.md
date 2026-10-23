@@ -526,3 +526,70 @@ renode-1.17.0.linux-portable.tar.gz archive (SHA recorded above).
 ## 2026-10-12 Stage B deferred
 
 The user closed the exploratory Stage B round as **deferred** because repeated Codex CLI connectivity timeouts interrupted the locked generation sequence. Do not run the proposed 12-call pilot or resume the 60-call round under this protocol. Retain the frozen prompts, call order, two completed sources, failed CLI and build attempts, nominal originals, and separately labeled access retries. The [condition-level interruption audit](../notes/STAGE_B_CALLBACK_INTERRUPTION_2026-10-12.md) remains part of the project record. Neither completed Stage B source enters any manuscript result, denominator, figure, table, or model/prompt comparison. The manuscript may describe the frozen design and the same-spec human packet solely as planned follow-up. Any future execution requires a new dated authorization and protocol amendment before generating or running tests.
+
+## 2026-10-22 Phase 1 image identity checkpoint (no firmware runs)
+
+The authorized v8 retry completed its sealed-input transfer and produced a
+SIF in development build 3529954. Software inventory failed on Git's
+container ownership guard; the dependent probe 3529956 was cancelled
+without execution. Development inspection 3530002 used only a command-scoped
+`git -c safe.directory=/opt/zephyrproject/zephyr` override, without account
+or persistent Git configuration changes. Its records show a Renode version
+string differing from the frozen plan: Linux build 20260907 and reported
+.NET 8.0.12 versus saved local build 20260906 and reported .NET 8.0.21,
+with the same f1dd1b4af source revision. External installed .NET is 8.0.21.
+Version equivalence is not inferred from the shared source revision.
+SIF SHA-256: `1f10025ee9d9b5e291c9d518ac65646c79e2f833886f96561c5259cb4c86d2b4`.
+
+Stop before all firmware executions. Preserve image, logs, input bundle,
+and original version/trace criteria. No changed scientific inputs, new
+verdicts, resource-probe results, or calibration agreement are reported.
+Any next execution must first resolve this image identity checkpoint;
+no normal-queue submission is authorized. Source records:
+`artifacts/tacc_phase1_20261022_v8/calibration_plan.json`
+(`expected_renode_version`) and
+`artifacts/tacc_phase1_20261022_v8/returned-slurm/inspect-3530002.out`.
+
+## 2026-10-22 Approved Phase 1 environment resolution, before firmware data
+
+The user authorizes official macOS ARM64 versus Linux portable release
+packages as a disclosed environment difference, subject to exact calibration
+verdicts and full raw trace-file hashes. Both checksum-verified official
+v1.17.0 assets embed commit `f1dd1b4af7838b45a925c17603cdfed0a583844a`; their
+build dates differ (20260906 / 20260907). The current GitHub v1.17.0 ref
+resolves to `ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2`, distinct from the
+embedded asset revision. Do not rebuild from that moving ref or assert
+bitwise cross-platform binary identity. Official release asset digests:
+macOS `63b1fb691207f503cea937e4ec8fad3e068a517d0abac3c24c0206c62f6c4d12`;
+Linux `4ba7c68b59e2447f188ef4b4b112fcccd2802582c460beedceb63b84e5605a5f`.
+The mounted original Mac executable, Renode.dll, dependency/configuration
+files and STM32F4 platform all match the checksum-verified macOS package.
+
+Development diagnostic 3530040 shows that a runtimeconfig pin alone still
+loads `/opt/renode/libcoreclr.so` from the bundled 8.0.12 runtimepack. Derive
+a separate deps manifest removing only that runtimepack entry, so the
+external, fixed 8.0.21 framework supplies runtime files. Preserve all other
+dependencies, original manifest files, runtime configProperties, application
+assemblies, toolchain, frozen ELFs, selected suites and frequencies. Test
+the pin beside the application without executing firmware. Derive v9 from
+the exact existing v8 SIF to avoid reinstalling packages; record both hashes.
+The original local version remains in the plan alongside the exact expected
+Linux execution version; this explicit approved difference is not an open
+version allowlist. Fix only inventory's Git ownership check with a
+command-scoped safe.directory option. Seal a new v9 bundle, retaining v8.
+
+Proceed to the original one-run resource probe and, only on agreement,
+packed development calibration. Any verdict, raw trace SHA-256, or
+infrastructure error stops launches; do not normalize hashes or replace
+failed results. Report all eight suites, with missing/unrun cells explicit.
+Only complete exact agreement can be described as calibration-validated.
+Stop for user approval before production. Source evidence is retained in
+`notes/TACC_PHASE1_RENODE_PROVENANCE_2026-10-22.json` and the v8 returned
+runtime host traces / development logs. No calibration result exists at
+the time of this amendment.
+
+The sealed v9 plan SHA-256 is
+`e7fed249d4931344bbb022d4d63efec5435093cc1d7c92934de15f09ea00e0c9`.
+Its 816 tasks, input hashes, selected suites, resource-probe choice and exact
+comparison rule are identical to v8; only execution-environment metadata
+and adapter/build code hashes differ.

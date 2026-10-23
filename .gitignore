@@ -46,3 +46,5 @@
 *.pem
 *.key
 *credentials*
+
+/artifacts/tacc_phase1_20261022_v9/

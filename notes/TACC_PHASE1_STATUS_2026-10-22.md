@@ -184,3 +184,58 @@ archive, preserving all four original properties while selecting external
 confirms property preservation. v8 plan SHA-256:
 `01c1f6db06ae0dd6b4f8002561fa4271644edd62083e5064fc7cc234f26aa740`.
 No image or Renode simulation exists yet.
+
+## Transfer timeout and stop, 2026-10-22
+
+v8 was published locally as 7a4edf286ad2da25dcad0755ed5fe53f8428c12e
+and the LS6 checkout successfully pulled it. The v8 transfer then reported
+`rsync(77536): error: poll: timeout` under a 45-second inactivity timeout.
+Remote work stopped under the connection-failure rule. Only the agent's
+own rsync client was terminated; no user SSH master/account settings were
+changed. The v8 bundle transfer is unconfirmed and may be partial. No v8
+build/probe/calibration was submitted. All previously submitted jobs are
+failed or cancelled; 3529922 was cancelled while pending. There is no
+sealed SIF hash, resource measurement or calibration agreement. Resume only
+after the user confirms connection availability, using the same sealed v8
+bundle and verifying hashes before submission.
+
+## Authorized retry, 2026-10-22
+
+After the user requested another retry, the read-only SSH check succeeded.
+The sealed v8 rsync completed (1,830 files; no remaining changed files),
+and the remote plan SHA-256 matched
+`01c1f6db06ae0dd6b4f8002561fa4271644edd62083e5064fc7cc234f26aa740`.
+The LS6 checkout is at `7a4edf286ad2da25dcad0755ed5fe53f8428c12e`.
+Development build **3529954** was submitted under TRA25006, one node,
+two-hour wall limit. No probe or calibration has been submitted yet.
+
+Development probe **3529956** is queued with `afterok:3529954` and
+`kill-on-invalid-dep=yes`. It cannot execute after a failed image build.
+Full calibration remains unsubmitted pending probe agreement and capacity.
+
+Build 3529954 created the SIF but failed during software inventory after
+7:28 because Git rejected the container checkout's ownership. Probe
+3529956 was cancelled with zero runtime. No simulation occurred.
+A read-only image inspection was submitted as development job 3530002
+(one node, five minutes, TRA25006), recording SIF hash and actual pinned
+launcher version and using only a command-scoped safe.directory option.
+It does not change Git/account settings or run firmware. The original
+build log and failed inventory remain retained.
+
+Inspection job **3530002** completed successfully in five seconds on
+`c304-006.ls6.tacc.utexas.edu`. Apptainer reports
+`apptainer version 1.4.1-1.el8`. The created, unsealed SIF SHA-256 is
+`1f10025ee9d9b5e291c9d518ac65646c79e2f833886f96561c5259cb4c86d2b4`.
+Its pinned launcher reports `1.17.0+20260907gitf1dd1b4af` and `.NET 8.0.12`,
+whereas the frozen plan expects `1.17.0+20260906gitf1dd1b4af` and `.NET 8.0.21`.
+`dotnet --list-runtimes` lists external 8.0.21. This does not establish which
+part of Renode's reported runtime is build metadata; no equivalence is
+assumed. Compiler 12.2.0 and Zephyr commit match the pins.
+
+Stopped before probe/calibration because full Renode version identity has
+not been established. Do not relax the plan/version/trace gate or rerun
+scientific cases without resolving this checkpoint. No active Phase 1
+jobs remain, no normal submission occurred, and no firmware test ran.
+The build and inspection logs were copied back with rsync to
+`artifacts/tacc_phase1_20261022_v8/returned-slurm/` and the build log to
+`returned-images/`. The SIF remains in WORK; no image.json seal exists.

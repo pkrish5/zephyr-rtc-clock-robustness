@@ -76,7 +76,7 @@ def run(args):
             raise ValueError("Frozen platform changed")
         binary = Path(os.environ["RENODE_BIN"])
         actual_version = subprocess.check_output([str(binary), "--version"], text=True).strip()
-        if actual_version != plan["expected_renode_version"]:
+        if actual_version != plan["execution_renode_version"]:
             raise ValueError(f"Renode version differs: {actual_version!r}")
         image_hash = os.environ["RTC_CONTAINER_SHA256"]
         if len(image_hash) != 64 or any(c not in "0123456789abcdef" for c in image_hash):
@@ -109,7 +109,9 @@ def run(args):
                          "slurm_partition": os.environ.get("SLURM_JOB_PARTITION"),
                          "calibration_plan_sha256": plan_hash, "calibration_task_index": index,
                          "calibration_phase": args.phase, "original_record_sha256": task["original_record_sha256"],
-                         "actual_renode_version": actual_version}
+                         "actual_renode_version": actual_version,
+                         "original_renode_version": plan["expected_renode_version"],
+                         "environment_resolution": plan["environment_resolution"]}
             saved_writer(path, value)
         module.write_new = provenance_writer
         schedule = json.loads((study / "subjects/phase3_rtc/plan.json").read_text())
@@ -184,6 +186,12 @@ def compare(args):
               "missing_task_indices": missing, "mismatches": mismatch, "probe_agrees": probe_ok,
               "outcomes": dict(Counter(r["observed_outcome"] for r in rows)),
               "execution_provenance": {k: sorted(v) for k, v in provenance.items()},
+              "per_suite": {sid: {
+                  "expected": sum(t["suite_id"] == sid for t in plan["tasks"]),
+                  "completed": sum(plan["tasks"][r["task_index"]]["suite_id"] == sid for r in rows),
+                  "verdict_agreement": sum(plan["tasks"][r["task_index"]]["suite_id"] == sid and r["verdict_agrees"] for r in rows),
+                  "trace_hash_agreement": sum(plan["tasks"][r["task_index"]]["suite_id"] == sid and r["trace_hash_agrees"] for r in rows)
+              } for sid in plan["selected_suites"]},
               "status": "agreement_pending_user_approval" if not missing and not mismatch and probe_ok
                         and not (output / "STOP.json").exists() else "STOP_incomplete_or_mismatch",
               "next_action": "STOP and send this report to the user; do not submit production"}

@@ -1,0 +1,43 @@
+{
+  "assets": [
+    {
+      "browser_download_url": "https://github.com/renode/renode/releases/download/v1.17.0/renode-1.17.0.linux-portable.tar.gz",
+      "digest": "sha256:4ba7c68b59e2447f188ef4b4b112fcccd2802582c460beedceb63b84e5605a5f",
+      "name": "renode-1.17.0.linux-portable.tar.gz",
+      "size": 63459129
+    },
+    {
+      "browser_download_url": "https://github.com/renode/renode/releases/download/v1.17.0/renode-1.17.0.osx-arm64-portable.dmg",
+      "digest": "sha256:63b1fb691207f503cea937e4ec8fad3e068a517d0abac3c24c0206c62f6c4d12",
+      "name": "renode-1.17.0.osx-arm64-portable.dmg",
+      "size": 75720019
+    }
+  ],
+  "calibration_status": "not run; exact verdict and raw trace hash agreement required; production approval required",
+  "current_tag_observed_commit": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+  "date": "2026-10-22",
+  "local_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "ls6_platform": "Linux x86_64 portable tar.gz",
+  "original_local_files_match_checksum_verified_official_macos_asset": {
+    "Renode.deps.json": "4a5da52b47c24a7cdfe7b9accdc909bcf1ea5354a506f5df29a7948b695d48d6",
+    "Renode.dll": "36b6d4171c8ddc26ceb8e37deaab742b6dd6d4310aee45fd89b985c7e33f3299",
+    "Renode.runtimeconfig.json": "df7d1cac916e569b827976cc7b1472a657a973f367f9a21706a47740bf93477b",
+    "platforms/cpus/stm32f4.repl": "a78bb20f3e594fffa9aec25d2ee85a7b165e8a381c603303ee237e7ce67d1194",
+    "renode": "9276f9fc6f2aa5af962b55cd48b75b6df3d9fe6521373343a568330442e2a6ac"
+  },
+  "original_local_platform": "macOS ARM64 portable DMG",
+  "parent_container_sha256": "1f10025ee9d9b5e291c9d518ac65646c79e2f833886f96561c5259cb4c86d2b4",
+  "parent_container_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.12",
+  "proposed_resolution": "Remove only the bundled runtimepack from a derived deps manifest colocated with the original binaries; use fixed framework 8.0.21 and preserve original config properties. Verify actual version before simulation.",
+  "release_assets_source_revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+  "release_url": "https://github.com/renode/renode/releases/tag/v1.17.0",
+  "runtime_diagnostic": {
+    "actual_CoreCLR_path": "/opt/renode/libcoreclr.so",
+    "framework_selected": "/usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.21",
+    "job": "3530040",
+    "reason": "The self-contained runtimepack in Renode.deps.json overrides the external framework for runtime assets.",
+    "source": "artifacts/tacc_phase1_20261022_v8/returned-runtime-identity/host-trace.txt"
+  },
+  "source_revision_url": "https://github.com/renode/renode/commit/f1dd1b4af7838b45a925c17603cdfed0a583844a",
+  "tag_caveat": "The current ref differs from the revision embedded in both official release packages. Package provenance and embedded source revision are recorded separately; no binary identity or source rebuild equivalence is assumed."
+}
