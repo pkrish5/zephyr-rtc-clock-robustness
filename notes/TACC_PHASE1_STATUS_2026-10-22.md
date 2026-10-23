@@ -342,3 +342,102 @@ Only permitted packaging files differ:
 | `harness/tacc_phase1/build_image.sh` | `16e32c742214b750eb6fc65d56459bbe709a81cdbd49466f59d963abf10ed650` | `74824ac15b59624b42ae0fb8fa2d598820c41f49eee1f144315bd7daae9a4f45` |
 | `harness/tacc_phase1/rtc-ls6-runtime.def` | `d85332e08fbffea23fd50f8e9bd13ea09e47d2e6652720f225e02575c92cb64a` | `cce95dfc23a3e2734861d0cbcd6a67a2891e248e9b454fa23ae440a427aed2f8` |
 | `harness/tacc_phase1/rtc-ls6.def` | `0dd545e55e86596e30e8970f4b46c8cc9502c82a196b79a7c55aa056fabcf3df` | `0f044280dc1c4a8a4ac5b071cdf0e455d4d432ba2ed13838b0a61bcde3afe9e4` |
+
+Code 2a82f905 was published locally and pulled on LS6. The v10 bundle and
+hash audit transferred and matched their seals. Development build
+**3531417** is submitted (one node, 20-minute limit, TRA25006); probe
+**3531420** is conditional on afterok:3531417 (one node, 10-minute limit).
+No full calibration or normal job is submitted at this checkpoint.
+
+Build 3531417 completed image sealing on c303-006 after the permission
+fix and ordinary-user adapter --help check passed. New image SHA-256:
+`94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1`.
+Renode reports .NET 8.0.21; the exact approved Linux build string matches.
+The seal and software inventory are copied back under returned-images.
+Probe agreement is still pending; no calibration submission yet.
+
+Probe **3531420** passed exactly on c303-006. The expected and observed
+complete raw trace SHA-256 is
+`36fa96cf49940ff1f5f850dc641d3a131374d0c0b3f8956a0d11248d4461dabc`,
+with the same pass verdict (Astra base callback r01, 17 kHz). Local audit
+recomputed both original and new trace hashes from returned raw files and
+verified the recorded SIF hash. Peak RSS 320,488 KiB (313 MiB), wall 83.4 s,
+128 CPUs and 255,925,244 KiB available node memory were measured.
+The successful probe resets the consecutive infrastructure-failure count
+to zero. This is one resource-probe agreement, not 816-case calibration.
+
+The locked rule chooses cap 32 (memory limit alone permits 425). The
+conservative aggregate allowance is 14.67 GiB versus 195.26 GiB (80% of
+measured available memory). For 816 cases the estimate is 3,372.6 s
+(56.21 min), 0.9368 node-hour/SU at the documented one-SU/node-hour rate,
+with a 90-minute requested upper reservation of 1.5 SU. This is an estimate
+from one probe, not measured packed throughput. Proceed with one packed
+development node under TRA25006; no normal-queue approval is implied.
+
+Packed calibration **3531436** was submitted to development under TRA25006:
+one whole node, 128 allocated CPUs, cap 32, 90-minute wall limit. All
+816 jobfile commands invoke one apptainer exec each; no Slurm array is
+used. No normal job is submitted. Stop after its report or any mismatch.
+
+## 2026-10-23 Phase 1 calibration complete: STOP for user approval
+
+Development calibration **3531436** completed successfully on
+`c303-006.ls6.tacc.utexas.edu`, exit 0:0, in **1,009 seconds (16:49)**
+(17:03:11--17:20:00 Central, according to Slurm accounting).
+All **816/816 verdicts and 816/816 complete raw trace-file SHA-256 values
+match** the frozen originals. All eight suites have 102/102 matches for
+both measures (100 saved seeds plus two endpoints). There are **776 passes,
+40 expected assertion failures, zero missing cases and zero mismatches**.
+The separate resource probe also matched; it is not added to the 816-case
+calibration denominator.
+
+| Frozen suite | Cases completed | Verdict matches | Raw trace SHA-256 matches |
+|---|---:|---:|---:|
+| `astra-range_absent-rtc_alarm_callback-r01` | 102/102 | 102/102 | 102/102 |
+| `astra-range_absent-rtc_alarm_pending-r05` | 102/102 | 102/102 | 102/102 |
+| `astra-range_present-rtc_alarm_pending-r01` | 102/102 | 102/102 | 102/102 |
+| `luna-range_absent-rtc_time_counting-r01` | 102/102 | 102/102 | 102/102 |
+| `luna-range_present-rtc_time_counting-r01` | 102/102 | 102/102 | 102/102 |
+| `sol-range_absent-rtc_alarm_pending-r01` | 102/102 | 102/102 | 102/102 |
+| `sol-range_absent-rtc_alarm_pending-r03` | 102/102 | 102/102 | 102/102 |
+| `sol-range_present-rtc_alarm_callback-r01` | 102/102 | 102/102 | 102/102 |
+
+The macOS ARM64 and Linux x86_64 portable packages embed the same
+`f1dd1b4af7838b45a925c17603cdfed0a583844a` source revision, but their build
+dates differ (20260906 versus 20260907), as recorded in the provenance
+note. The actual runtime is now .NET 8.0.21 on both. This environment
+difference is **disclosed and calibration-validated for these eight suites
+and 816 saved cases**; no broader platform or silicon equivalence is claimed.
+The current v1.17.0 ref differs from the embedded asset revision, so the
+checksum-pinned official assets and embedded revision remain the anchors.
+
+SIF SHA-256:
+`94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1`.
+Every calibration record contains node, SIF hash, Slurm ID, actual Apptainer
+version `1.4.1-1.el8`, and pinned module metadata. All records show
+`development`, job 3531436, and the same SIF. Launcher used 32 workers.
+The maximum measured per-command peak RSS across calibration was
+328,692 KiB (321 MiB), within the probe-based safety allowance; median
+individual wall time was 33.08 s (range 22.2--56.21 s). These are process
+measurements, not aggregate node peak memory.
+
+All raw records, traces, monitor/UART logs, resource logs, comparisons,
+Launcher logs, build/seal inventories and Slurm logs were returned by rsync
+under `artifacts/tacc_phase1_20261023_v10/`. Local re-execution of the
+unchanged comparison analysis recomputed raw trace and record hashes and
+produced a report identical to the remote report:
+`verified_calibration_report.json` (SHA-256 `2ef964ac4a41fe13733f7aa4e33019536aaf29024f9cbfac0fa4708449c551ea`).
+`phase1_success_summary.json` gives the concise eight-suite summary.
+`slurm_accounting.txt` records all three v10 jobs as COMPLETED.
+
+The post-calibration audit again hashes all **29,634 protected files** and
+finds no change, and confirms permitted packaging files still match the
+v10 after-fix hashes. Source:
+`post_calibration_hash_verification.json` (SHA-256 `e7bbefcd71c8a074c1c1f94d8ca0b288b2ece084312920ebae2eeb03de18c428`).
+The prior full per-file before/after audit remains immutable. No frozen
+source, ELF, forecast, original result, or harness logic was changed.
+
+Consecutive infrastructure failures are zero after this successful attempt.
+**Execution is STOPPED pending user approval. No normal-queue job or
+further experiment is submitted.** Future production requires the separate
+job/node/wall-time/SU proposal and approval specified by the user.

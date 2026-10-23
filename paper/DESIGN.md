@@ -640,3 +640,41 @@ sealed original input hashes match. Full before/after log is
 Only build_image.sh and the two container definitions differ. The new
 plan SHA-256 is
 `aed1c266d9bbc2c962f57d882c4337ac3a7b1d3e2590c1ff29e453cb8e6d5e66`.
+
+2026-10-23 v10 probe checkpoint: verdict and complete trace hash match.
+The unchanged resource rule selects cap 32 and estimates 56.21 minutes for
+the locked 816 cases, fitting the pre-existing 90-minute development job.
+Proceed to packed calibration under standing approval. Full environment
+validation remains pending all eight suite results; stop afterward.
+
+## 2026-10-23 Phase 1 calibration-validated environment difference; STOP
+
+The permission-only v10 fix passed ordinary-user readability and its
+resource probe. Development job 3531436 then completed all eight suites,
+102 saved cases per suite: **816/816 verdict agreements and 816/816 complete
+raw trace-file SHA-256 agreements**, including 776 passes and 40 expected
+assertion failures. No missing cases or mismatches. The original simulation
+loop, adapter logic, source, ELF, forecasts and existing records were not
+changed. The post-run audit confirms all 29,634 protected files unchanged.
+The 32-worker packed run took 16:49 on one LS6 node; no Slurm array was used.
+
+The official macOS ARM64 versus Linux x86_64 packages have different build
+dates but the same embedded f1dd1b4af7838b45a925c17603cdfed0a583844a revision.
+Both now use actual .NET 8.0.21. Record this as a **disclosed,
+calibration-validated environment difference for the selected eight suites
+and 816 saved cases**. It does not assert bitwise cross-platform package
+identity or general emulator/silicon equivalence. The separately observed
+current v1.17.0 ref difference remains disclosed in the provenance record.
+SIF SHA-256:
+`94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1`.
+
+Evidence: `artifacts/tacc_phase1_20261023_v10/verified_calibration_report.json`
+(SHA-256 `2ef964ac4a41fe13733f7aa4e33019536aaf29024f9cbfac0fa4708449c551ea`), returned raw records/traces,
+`post_calibration_hash_verification.json` (SHA-256 `e7bbefcd71c8a074c1c1f94d8ca0b288b2ece084312920ebae2eeb03de18c428`), and
+`slurm_accounting.txt`. The full per-suite table and prior failures/fixes
+are retained in notes/TACC_PHASE1_STATUS_2026-10-22.md. These are calibration
+reproduction checks, not additions to the original paper's denominators.
+
+STOP after this report for explicit user approval. No production or normal
+queue job has been submitted. Standing infrastructure approval does not
+authorize a new scientific phase or bypass the next production approval.
