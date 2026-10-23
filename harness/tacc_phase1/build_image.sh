@@ -36,6 +36,7 @@ import json, subprocess
 from pathlib import Path
 def cmd(*x): return subprocess.check_output(x,text=True).strip()
 print(json.dumps({'renode_version':cmd('/opt/renode/renode-pinned','--version'),
+ 'unprivileged_calibration_cli':cmd('/opt/rtc-python/bin/python','/opt/rtc-code/harness/tacc_phase1/calibration.py','--help'),
  'dotnet_runtimes':cmd('/usr/bin/dotnet','--list-runtimes'),
  'compiler_version':cmd('/opt/zephyr-sdk-0.17.4/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc','--version'),
  'zephyr_commit':cmd('git','-c','safe.directory=/opt/zephyrproject/zephyr','-C','/opt/zephyrproject/zephyr','rev-parse','HEAD'),

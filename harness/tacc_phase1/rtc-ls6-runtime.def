@@ -15,6 +15,8 @@ From: tacc_work/20261022-v8/images/rtc-ls6-v1.sif
     grep -qx 'rtc-work-backed-build-tmp' /tmp/.rtc-work-tmp
     grep -qx 'rtc-work-backed-build-var-tmp' /var/tmp/.rtc-work-var-tmp
     cp -a /opt/rtc-update/harness/. /opt/rtc-code/harness/
+    # The runtime uses an ordinary UID, not the image builder's fake root.
+    chmod -R a+rX /opt/rtc-code
     /opt/rtc-python/bin/python /opt/rtc-code/harness/tacc_phase1/pin_runtime.py /opt/renode
     cat > /opt/renode/renode-pinned <<'EOF'
 #!/bin/sh

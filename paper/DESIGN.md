@@ -593,3 +593,50 @@ The sealed v9 plan SHA-256 is
 Its 816 tasks, input hashes, selected suites, resource-probe choice and exact
 comparison rule are identical to v8; only execution-environment metadata
 and adapter/build code hashes differ.
+
+## 2026-10-23 Phase 1 probe permission failure; execution stopped
+
+The approved v9 image sealed with actual .NET 8.0.21 and SHA-256
+`831dffc44d479a06ed7945a68bd746302319d2160edb19d731e3f0cd380d4239`.
+Probe 3530050 then failed before adapter startup because the ordinary
+container user could not open calibration.py (Permission denied). No
+firmware verdicts or trace comparisons were generated. This is an
+infrastructure failure, not a calibration mismatch or test failure.
+Stop all further submissions; all eight suite comparisons remain unrun.
+Preserve the failed v9 image and logs. A local correction is prepared to
+normalize read/traverse permissions on the image's harness tree and check
+adapter --help as the ordinary runtime user during sealing. Do not deploy
+or submit a retry without new user authorization after this stop. No
+ELF, source, original record, schedule, trace rule, model parameter or
+paper result changes. Source: v9 returned-slurm/probe-3530050.out,
+probe stdout/0.log, STOP.json, and returned-images/image.json.
+
+## 2026-10-23 Standing Phase 1 infrastructure approval, before attempt v10
+
+The user authorizes permission/path/bind/module/packaging corrections and
+resubmissions on the development queue, without additional confirmation,
+provided harness logic, sources, ELFs, frozen forecasts and existing records
+remain byte-identical and before/after SHA-256 audits are logged. Stop after
+three consecutive failed attempts. Conservatively count the prior v9 probe
+permission failure as consecutive failure 1; no successful probe has reset
+that counter. Any verdict or raw trace mismatch, required harness/test-input
+change, completed calibration, or proposed normal-queue submission still
+requires stopping for user approval. All credential and WORK-only rules
+remain.
+
+v10 applies only chmod -R a+rX to the container harness tree and an ordinary
+user adapter --help check before sealing, as prepared after v9. The
+calibration adapter, original simulator loop, resource logic, Launcher and
+run wrapper are unchanged. The image remains derived from the same
+checksum-verified v8 parent with the already approved .NET 8.0.21 pin. Use
+a new v10 bundle and results directory; preserve v9 and its STOP marker.
+Hash audits compare all protected tracked files and frozen calibration
+inputs, and separately list the three permitted container-packaging changes.
+
+v10 pre-execution audit: 29,634 protected files unchanged and all 1,755
+sealed original input hashes match. Full before/after log is
+`artifacts/tacc_phase1_20261023_v10/hash_audit.json` (SHA-256
+`6d52e9179d54993ec4f49671825988b6f004c437a7974f1b52ff61f70e774ea5`).
+Only build_image.sh and the two container definitions differ. The new
+plan SHA-256 is
+`aed1c266d9bbc2c962f57d882c4337ac3a7b1d3e2590c1ff29e453cb8e6d5e66`.

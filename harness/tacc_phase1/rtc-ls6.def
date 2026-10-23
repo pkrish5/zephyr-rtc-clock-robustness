@@ -30,6 +30,7 @@ From: mcr.microsoft.com/dotnet/runtime@sha256:8080f384fe551bb616f03011d1b288dea7
         pexpect==4.9.0 west==1.5.0 cmake==3.31.10
     export PATH=/opt/rtc-python/bin:$PATH
     command -v cmake wget which
+    chmod -R a+rX /opt/rtc-code
     curl -fL --retry 3 \
         https://github.com/renode/renode/releases/download/v1.17.0/renode-1.17.0.linux-portable.tar.gz \
         -o /tmp/renode.tar.gz

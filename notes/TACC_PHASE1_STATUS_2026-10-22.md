@@ -239,3 +239,106 @@ jobs remain, no normal submission occurred, and no firmware test ran.
 The build and inspection logs were copied back with rsync to
 `artifacts/tacc_phase1_20261022_v8/returned-slurm/` and the build log to
 `returned-images/`. The SIF remains in WORK; no image.json seal exists.
+
+## Approved resolution and v9, 2026-10-22
+
+The user authorized checking official platform-package provenance, pinning
+the actual runtime where feasible, and proceeding to probe/calibration with
+exact raw trace and verdict agreement as the deciding test.
+Development diagnostic 3530040 traced bundled 8.0.12 selection. Diagnostic
+3530042 failed to find Infrastructure.dll when the derived deps file was
+placed away from the application; no firmware ran. Diagnostic **3530044**
+passed when the deps file was colocated with the application: --version
+reports .NET 8.0.21 and the host trace confirms CoreCLR is loaded from
+`/usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.21/libcoreclr.so`.
+Only the bundled runtimepack is removed from the derived deps manifest.
+
+The official macOS asset checksum and mounted-original executable, assembly,
+manifests and platform hashes match. Both release packages embed source
+revision f1dd1b4af7838b45a925c17603cdfed0a583844a; the current v1.17.0 ref
+points to a different commit. Full evidence is in
+`notes/TACC_PHASE1_RENODE_PROVENANCE_2026-10-22.json`.
+
+Published local code **11741f28** was pulled on LS6. Sealed v9 bundle
+`e7fed249d4931344bbb022d4d63efec5435093cc1d7c92934de15f09ea00e0c9`
+transferred successfully. Its 816 tasks, inputs and comparison criteria
+match v8 exactly. Development build **3530049** derives from the hash-verified
+v8 SIF with a 20-minute limit. Probe **3530050** has afterok:3530049 and a
+10-minute limit. Both are one-node TRA25006 jobs. No full calibration or
+production has been submitted.
+
+## Status-command timeout and stop, 2026-10-22 (local date)
+
+The read-only status command timed out at 45 seconds after returning
+squeue / squeue --start output. Its partial stdout showed build 3530049
+PENDING (Resources) and probe 3530050 PENDING (Dependency), with estimated
+build start 2026-10-22T23:50:28 Central. No sacct/log output returned.
+This may be a stalled accounting command rather than loss of SSH; the
+cause is unconfirmed. No new remote commands were attempted after timeout,
+and no credentials or account settings were requested/changed.
+
+Existing jobs were not cancelled or resubmitted and may execute while
+monitoring is stopped. The afterok probe is guarded by image/input checks
+and exact verdict/trace equality; full calibration is NOT queued, and no
+production is submitted. Ask the user to confirm usable access, then first
+inspect these same job IDs and retained outputs. Never repeat completed
+calls or overwrite records. No rebuilt-image hash or probe/calibration
+outcome has been observed yet. Runtime pinning itself was verified in
+diagnostic 3530044; it is not a calibration result.
+
+## 2026-10-23 restored access: sealed image, probe infrastructure stop
+
+The user restored access and authorized continuation. Inspection of the
+existing jobs found build 3530049 had completed image sealing. New SIF
+SHA-256: `831dffc44d479a06ed7945a68bd746302319d2160edb19d731e3f0cd380d4239`.
+The seal records Renode Linux build 20260907 / f1dd1b4af with actual .NET
+8.0.21 and Apptainer `1.4.1-1.el8`. The original local build version is
+retained separately. The image sealed at 2026-10-23 04:57 UTC (October 22,
+23:57 Central).
+
+Probe 3530050 passed host input/image preflight but failed to launch the
+calibration adapter: `/opt/rtc-python/bin/python: can't open file
+'/opt/rtc-code/harness/tacc_phase1/calibration.py': [Errno 13] Permission
+denied`. STOP.json records process exit 2. No firmware ran, no Renode
+resource measurement or selected-case verdict exists, and no trace-hash
+comparison was possible. All eight suite calibrations are unrun (0/816).
+No further jobs were submitted. Image/build/probe/STOP logs were returned
+with rsync. `phase1_checkpoint_report.json` in the local v9 artifact lists
+all eight missing suite comparisons explicitly.
+
+A scoped permission correction is prepared locally, not deployed: grant
+ordinary-user read/traverse access only to `/opt/rtc-code` inside the new
+image, and make image inventory execute adapter --help as the ordinary
+container user before sealing. This is not a firmware execution. Do not
+overwrite the v9 SIF or failed attempt; any authorized retry must use a
+new sealed bundle/output directory and preserve the exact calibration
+inputs and verdict/hash comparison. No calibration-validated environment
+equivalence is claimed. Await user approval before further jobs.
+
+## 2026-10-23 standing approval: permission attempt v10
+
+Cause: v9 probe 3530050 could not read the container adapter; firmware never
+started. Fix: grant read/traverse access to the image harness tree and run
+adapter --help as the ordinary runtime user before sealing. No adapter,
+simulation, resource, Launcher, input, forecast, or comparison logic changes.
+The user grants standing approval for infrastructure-only development
+resubmissions, with a three-consecutive-failure stop. Conservatively track
+v9 as failure 1; v10 is the next attempt. No normal job is authorized.
+
+Before/after audit: **29,634 protected files unchanged**, including all
+tracked harness/generated/results/analysis/subjects files and additional
+manifest-referenced frozen files; all **1,755** prior sealed input hashes
+match both bundles and originals. Scientific task list and plan fields
+are unchanged. Full per-file before/after SHA-256 log:
+`artifacts/tacc_phase1_20261023_v10/hash_audit.json`, SHA-256
+`6d52e9179d54993ec4f49671825988b6f004c437a7974f1b52ff61f70e774ea5`.
+Sealed v10 plan SHA-256:
+`aed1c266d9bbc2c962f57d882c4337ac3a7b1d3e2590c1ff29e453cb8e6d5e66`.
+
+Only permitted packaging files differ:
+
+| File | Before SHA-256 (v9) | After SHA-256 (v10) |
+|---|---|---|
+| `harness/tacc_phase1/build_image.sh` | `16e32c742214b750eb6fc65d56459bbe709a81cdbd49466f59d963abf10ed650` | `74824ac15b59624b42ae0fb8fa2d598820c41f49eee1f144315bd7daae9a4f45` |
+| `harness/tacc_phase1/rtc-ls6-runtime.def` | `d85332e08fbffea23fd50f8e9bd13ea09e47d2e6652720f225e02575c92cb64a` | `cce95dfc23a3e2734861d0cbcd6a67a2891e248e9b454fa23ae440a427aed2f8` |
+| `harness/tacc_phase1/rtc-ls6.def` | `0dd545e55e86596e30e8970f4b46c8cc9502c82a196b79a7c55aa056fabcf3df` | `0f044280dc1c4a8a4ac5b071cdf0e455d4d432ba2ed13838b0a61bcde3afe9e4` |
