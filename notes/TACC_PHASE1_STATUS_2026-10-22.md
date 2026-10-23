@@ -149,3 +149,23 @@ v6 explicitly binds WORK tmp/var-tmp for image build and inventory, with
 marker guards before package operations and in image tests. Plan SHA-256:
 `3db87243286fee74597053391c5c985ef19dcb45492ed5bfeb15b9e822d19acd`.
 There is still no sealed image or Renode simulation result.
+
+The v6 storage fix was published locally as fc9db144 and pulled on LS6.
+The sealed v6 bundle transferred successfully. Development image build
+3529906 was submitted under TRA25006 (one node, two-hour limit). No v6
+probe is submitted at this checkpoint.
+
+The v6 build passed the home, /tmp and /var/tmp WORK-marker guards and
+entered apt package installation on c302-006. Resource probe 3529910 is
+queued with afterok:3529906 and kill-on-invalid-dep. Full calibration is
+still unsubmitted pending probe agreement and resource measurements.
+
+Build 3529906 reached SDK setup after passing storage guards and verifying
+Renode/Zephyr/module/SDK source pins. SDK setup could not find CMake on its
+build-time PATH; the pinned wheel was installed in the venv, whose PATH
+was previously set only for runtime. The same checksum-verified SDK archive
+was copied back and its setup.sh inspected: it also requires wget and which.
+v7 adds the venv build PATH, explicit wget/debianutils and early command
+checks. New plan SHA-256:
+`b96bd1752570e9e79ea4b78ccf1febd55eb8b116b001671e594a191beb896682`.
+No sealed image or Renode simulation result exists at this checkpoint.

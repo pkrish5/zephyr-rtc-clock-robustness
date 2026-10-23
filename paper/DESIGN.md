@@ -495,6 +495,19 @@ verdict/trace criteria and stage approval gates remain unchanged.
 Source inspected: Apptainer v1.4.1, pkg/util/apptainerconf/config.go and
 internal/pkg/runtime/engine/apptainer/container_linux.go.
 
+**2026-10-22 SDK installer dependency correction, before image or Renode data:**
+Build 3529906 passed all WORK mount guards, installed Renode and the pinned
+Zephyr/modules, and verified the SDK minimal archive checksum. SDK setup
+then failed its CMake availability check: the pinned CMake wheel is in
+`/opt/rtc-python/bin`, but the image `%environment` PATH does not apply to
+`%post`. Add this venv directory to the build-time PATH. Inspection of the
+same checksum-verified SDK archive's setup.sh shows unconditional checks
+for CMake and wget using which; explicitly install wget and debianutils,
+and check the three commands before later build steps. No runtime version
+pin or selected input changes. Retain v6 logs; seal a separate v7 bundle
+and use `tacc_work/20261022-v7`. No image was sealed or Renode simulation
+run in v6; its afterok probe cannot execute after build failure.
+
 ## 2026-10-12 Stage B deferred
 
 The user closed the exploratory Stage B round as **deferred** because repeated Codex CLI connectivity timeouts interrupted the locked generation sequence. Do not run the proposed 12-call pilot or resume the 60-call round under this protocol. Retain the frozen prompts, call order, two completed sources, failed CLI and build attempts, nominal originals, and separately labeled access retries. The [condition-level interruption audit](../notes/STAGE_B_CALLBACK_INTERRUPTION_2026-10-12.md) remains part of the project record. Neither completed Stage B source enters any manuscript result, denominator, figure, table, or model/prompt comparison. The manuscript may describe the frozen design and the same-spec human packet solely as planned follow-up. Any future execution requires a new dated authorization and protocol amendment before generating or running tests.

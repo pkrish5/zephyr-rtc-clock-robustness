@@ -1,7 +1,7 @@
 # Lonestar6 Phase 1: image, resource probe and strict calibration
 
-Current recovery attempt: v6, using `tacc_work/20261022-v6` and a sealed
-`artifacts/tacc_phase1_20261022_v6` bundle. See the recovery notes below.
+Current recovery attempt: v7, using `tacc_work/20261022-v7` and a sealed
+`artifacts/tacc_phase1_20261022_v7` bundle. See the recovery notes below.
 
 Status: prepared implementation. A successful local syntax/unit check does
 not establish that the Linux image builds or that calibration agrees.
@@ -263,3 +263,14 @@ wrappers already use explicit WORK-backed tmp binds. Latest transfer bundle
 is `artifacts/tacc_phase1_20261022_v6`; export
 `RTC_BASE="$RTC_REPO/tacc_work/20261022-v6"` and derive bundle/image paths
 from that base. Preserve all earlier attempts.
+
+## SDK build-time dependencies (v7, 2026-10-22)
+
+v6 passed every WORK mount guard and reached SDK setup, which could not
+find CMake because `%environment` does not set the `%post` PATH. v7 exports
+the venv PATH during the build, explicitly installs wget/debianutils for
+the SDK's wget/which checks, and checks those commands early. All runtime
+pins and experiment inputs remain unchanged. Use bundle
+`artifacts/tacc_phase1_20261022_v7` and
+`RTC_BASE="$RTC_REPO/tacc_work/20261022-v7"`, deriving bundle/image paths.
+No image or Renode simulation was produced by v6.

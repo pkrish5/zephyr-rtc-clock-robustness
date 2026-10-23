@@ -21,13 +21,15 @@ From: mcr.microsoft.com/dotnet/runtime@sha256:8080f384fe551bb616f03011d1b288dea7
     grep -qx 'rtc-work-backed-build-var-tmp' /var/tmp/.rtc-work-var-tmp
     export DEBIAN_FRONTEND=noninteractive
     apt-get update
-    apt-get install -y --no-install-recommends ca-certificates curl git \
+    apt-get install -y --no-install-recommends ca-certificates curl git wget debianutils \
         python3 python3-venv ninja-build gperf device-tree-compiler xz-utils \
         file make gcc g++ pkg-config libglib2.0-0t64 libgtk-3-0t64 libfontconfig1 \
         libx11-6 libusb-1.0-0 libncurses6 libtinfo6 time
     python3 -m venv /opt/rtc-python
     /opt/rtc-python/bin/pip install --no-cache-dir \
         pexpect==4.9.0 west==1.5.0 cmake==3.31.10
+    export PATH=/opt/rtc-python/bin:$PATH
+    command -v cmake wget which
     curl -fL --retry 3 \
         https://github.com/renode/renode/releases/download/v1.17.0/renode-1.17.0.linux-portable.tar.gz \
         -o /tmp/renode.tar.gz
