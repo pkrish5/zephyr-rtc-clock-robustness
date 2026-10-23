@@ -1,7 +1,7 @@
 # Lonestar6 Phase 1: image, resource probe and strict calibration
 
-Current recovery attempt: v5, using `tacc_work/20261022-v5` and a sealed
-`artifacts/tacc_phase1_20261022_v5` bundle. See the recovery notes below.
+Current recovery attempt: v6, using `tacc_work/20261022-v6` and a sealed
+`artifacts/tacc_phase1_20261022_v6` bundle. See the recovery notes below.
 
 Status: prepared implementation. A successful local syntax/unit check does
 not establish that the Linux image builds or that calibration agrees.
@@ -105,8 +105,9 @@ the historical version. The SIF hash is written to `images/image.json`
 and `images/rtc-ls6-v1.sif.sha256`; the full software inventory is saved.
 
 Apptainer caches, temporary files, private homes, build logs and SIF are
-all WORK-backed. The definition's internal `/opt` and `/tmp` are paths in
-the image/build sandbox, not writes to the login node's OS.
+all WORK-backed. The definition's `/opt` is inside the WORK-backed build rootfs. v6 also
+explicitly binds WORK directories over `/tmp` and `/var/tmp`; setting
+APPTAINER_TMPDIR alone does not isolate the build's automatic tmp mounts.
 The build uses unprivileged fakeroot. If LS6 disallows that feature, or
 network access from the build node fails, retain the log and report it;
 do not use sudo, change account settings, or substitute an unpinned image.
@@ -245,3 +246,20 @@ helper wrapper with `ac_cv_func_capset=no`, records it in the helper
 inventory, and uses `artifacts/tacc_phase1_20261022_v5` and
 `RTC_BASE="$RTC_REPO/tacc_work/20261022-v5"`. No system headers, account
 settings or kernel capabilities are changed. Probe 3529851 was cancelled.
+
+## Explicit build tmp mounts (v6, 2026-10-22)
+
+The v5 helper worked and package installation proceeded. Inspection then
+showed that the default build configuration can expose compute-node /tmp
+and /var/tmp inside the container. The build was cancelled at 4:23 and its
+dependent probe cancelled before execution. The log shows temporary pip
+paths and a download under /tmp, so a WORK-only storage deviation is
+possible. No cleanup outside the authorized tree is attempted.
+
+v6 explicitly binds `RTC_BASE/build-tmp` and `RTC_BASE/build-var-tmp` over
+those paths for both build and inventory, and checks WORK markers before
+package commands and in the image test section. Runtime probe/calibration
+wrappers already use explicit WORK-backed tmp binds. Latest transfer bundle
+is `artifacts/tacc_phase1_20261022_v6`; export
+`RTC_BASE="$RTC_REPO/tacc_work/20261022-v6"` and derive bundle/image paths
+from that base. Preserve all earlier attempts.

@@ -2,25 +2,32 @@
 set -euo pipefail
 script_dir=$(cd -- "$(dirname -- "$0")" && pwd)
 source "$script_dir/common.sh"
-mkdir -p "$RTC_BASE/images" "$RTC_BASE/build-home"
+mkdir -p "$RTC_BASE/images" "$RTC_BASE/build-home" "$RTC_BASE/build-tmp" "$RTC_BASE/build-var-tmp"
 test "$(uname -m)" = x86_64 || { echo 'STOP: definition is pinned for LS6 x86_64' >&2; exit 2; }
 test ! -e "$RTC_IMAGE" || { echo 'STOP: image already exists; preserve it' >&2; exit 2; }
 test ! -e "$RTC_BASE/images/image.json" || { echo 'STOP: sealed image already exists' >&2; exit 2; }
 python3 "$script_dir/calibration.py" verify --bundle "$RTC_BUNDLE" --repo "$RTC_REPO"
 bash "$script_dir/build_fakeroot.sh"
 export PATH="$RTC_BASE/tools/fakeroot-1.37.1.1/bin:$PATH"
-python3 - "$RTC_BASE/build-home/.rtc-work-home" <<'PY'
+python3 - "$RTC_BASE" <<'PY'
 import sys
 from pathlib import Path
-with Path(sys.argv[1]).open('x') as f:
-    f.write('rtc-work-backed-build-home\n')
+base=Path(sys.argv[1])
+for folder, name, value in (
+    ('build-home','.rtc-work-home','rtc-work-backed-build-home'),
+    ('build-tmp','.rtc-work-tmp','rtc-work-backed-build-tmp'),
+    ('build-var-tmp','.rtc-work-var-tmp','rtc-work-backed-build-var-tmp')):
+    with (base/folder/name).open('x') as f:
+        f.write(value+'\n')
 PY
 cd "$RTC_REPO"
 # Use a WORK-backed build home/cache/temp, including for unprivileged fakeroot.
 apptainer build --fakeroot --bind "$RTC_BASE/build-home:/root" \
+    --bind "$RTC_BASE/build-tmp:/tmp" --bind "$RTC_BASE/build-var-tmp:/var/tmp" \
     "$RTC_IMAGE" "$script_dir/rtc-ls6.def" \
     > "$RTC_BASE/images/build.log" 2>&1
 apptainer exec --cleanenv --containall --home "$RTC_BASE/build-home:/home/rtc" \
+    --bind "$RTC_BASE/build-tmp:/tmp" --bind "$RTC_BASE/build-var-tmp:/var/tmp" \
     "$RTC_IMAGE" /opt/rtc-python/bin/python - <<'PY' > "$RTC_BASE/images/software-inventory.json"
 import json, subprocess
 from pathlib import Path

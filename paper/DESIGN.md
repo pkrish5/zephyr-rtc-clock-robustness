@@ -473,6 +473,28 @@ a separately sealed v5 bundle and `tacc_work/20261022-v5`. Other helper
 options, source hash, simulator/toolchain pins, inputs and calibration
 criteria remain unchanged. No image or Renode run occurred in v4.
 
+**2026-10-22 build temporary-storage correction, before image sealing or Renode data:**
+Build 3529884 successfully compiled the WORK-local helper and passed apt
+setup. Further inspection of Apptainer v1.4.1 source showed that its build
+configuration disables automatic home mounting but retains automatic
+host `/tmp` and `/var/tmp` mounts. APPTAINER_TMPDIR redirects build bundles,
+but does not by itself redirect those mounts inside `%post`. The build log
+shows pip temporary paths and the Renode download under `/tmp`, so v5 may
+have created and cleaned temporary build files on the compute node outside
+the authorized WORK tree. This is a storage-boundary deviation, not an
+experimental result. Build 3529884 was cancelled after 4:23; dependent probe
+3529889 was cancelled without running. Do not inspect, delete or otherwise
+modify files outside the authorized project to clean up the prior attempt.
+No existing user-data modification was observed, and no simulation ran.
+For v6, explicitly bind WORK-backed build-tmp and build-var-tmp directories
+to both paths during image build and inventory execution. Check unique
+WORK markers before package installation and during `%test`; retain the
+WORK-home guard and all existing cache settings. Preserve v5 logs, seal a
+new v6 bundle and use `tacc_work/20261022-v6`. All tool pins, selected inputs,
+verdict/trace criteria and stage approval gates remain unchanged.
+Source inspected: Apptainer v1.4.1, pkg/util/apptainerconf/config.go and
+internal/pkg/runtime/engine/apptainer/container_linux.go.
+
 ## 2026-10-12 Stage B deferred
 
 The user closed the exploratory Stage B round as **deferred** because repeated Codex CLI connectivity timeouts interrupted the locked generation sequence. Do not run the proposed 12-call pilot or resume the 60-call round under this protocol. Retain the frozen prompts, call order, two completed sources, failed CLI and build attempts, nominal originals, and separately labeled access retries. The [condition-level interruption audit](../notes/STAGE_B_CALLBACK_INTERRUPTION_2026-10-12.md) remains part of the project record. Neither completed Stage B source enters any manuscript result, denominator, figure, table, or model/prompt comparison. The manuscript may describe the frozen design and the same-spec human packet solely as planned follow-up. Any future execution requires a new dated authorization and protocol amendment before generating or running tests.

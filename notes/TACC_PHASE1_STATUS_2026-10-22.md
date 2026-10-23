@@ -127,3 +127,25 @@ using ac_cv_func_capset=no and records that choice in helper provenance.
 The new plan SHA-256 is
 `338081f7331ed673b493832fee6b979bccc1a3e12b1515a4140c93656df35e24`;
 the same 816 tasks remain locked. No image or Renode result exists yet.
+
+The v5 fix was published locally as 3ec18466 and pulled on LS6. The v5
+bundle transferred successfully, and development build 3529884 was
+submitted under TRA25006 (one node, two hours). No v5 probe is submitted
+at this checkpoint.
+
+The v5 helper compiled and installed on c302-006, and Apptainer found it.
+The build passed the WORK-home guard and progressed through apt package
+installation, beyond the v3 failure. Resource probe 3529889 was queued
+with afterok:3529884 and kill-on-invalid-dep. No Renode run has occurred
+at this checkpoint; image sealing is still pending.
+
+Build 3529884 and dependent probe 3529889 were cancelled after inspection
+showed Apptainer build configuration retains automatic host /tmp mounts.
+The build ran 4:23; the probe never ran. Its log shows temporary pip paths
+and the Renode archive under /tmp, so the tools may have created/cleaned
+temporary build files outside WORK. This storage-boundary deviation is
+recorded in DESIGN.md. No cleanup outside the project is attempted.
+v6 explicitly binds WORK tmp/var-tmp for image build and inventory, with
+marker guards before package operations and in image tests. Plan SHA-256:
+`3db87243286fee74597053391c5c985ef19dcb45492ed5bfeb15b9e822d19acd`.
+There is still no sealed image or Renode simulation result.
