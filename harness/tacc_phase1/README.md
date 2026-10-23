@@ -1,7 +1,7 @@
 # Lonestar6 Phase 1: image, resource probe and strict calibration
 
-Current recovery attempt: v7, using `tacc_work/20261022-v7` and a sealed
-`artifacts/tacc_phase1_20261022_v7` bundle. See the recovery notes below.
+Current recovery attempt: v8, using `tacc_work/20261022-v8` and a sealed
+`artifacts/tacc_phase1_20261022_v8` bundle. See the recovery notes below.
 
 Status: prepared implementation. A successful local syntax/unit check does
 not establish that the Linux image builds or that calibration agrees.
@@ -274,3 +274,13 @@ pins and experiment inputs remain unchanged. Use bundle
 `artifacts/tacc_phase1_20261022_v7` and
 `RTC_BASE="$RTC_REPO/tacc_work/20261022-v7"`, deriving bundle/image paths.
 No image or Renode simulation was produced by v6.
+
+## Preserve original runtime properties (v8, 2026-10-22)
+
+Before any simulation, v8 derives its .NET launcher configuration from the
+archive's supplied Renode.runtimeconfig.json, preserving every original
+configProperty and changing only bundled-framework selection to external
+.NET 8.0.21 with rollForward disabled. This retains the original culture
+handling flag. Pending build 3529922 was cancelled without executing.
+Use `artifacts/tacc_phase1_20261022_v8` and
+`RTC_BASE="$RTC_REPO/tacc_work/20261022-v8"`; other paths derive from it.

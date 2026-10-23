@@ -169,3 +169,18 @@ v7 adds the venv build PATH, explicit wget/debianutils and early command
 checks. New plan SHA-256:
 `b96bd1752570e9e79ea4b78ccf1febd55eb8b116b001671e594a191beb896682`.
 No sealed image or Renode simulation result exists at this checkpoint.
+
+Build 3529906 failed after 6:31; dependent probe 3529910 was cancelled
+without running. The v7 code was published locally as ef258db5 and pulled
+on LS6; the sealed v7 bundle transferred successfully. Development build
+3529922 was submitted under TRA25006 (one node, two-hour limit). No v7
+probe is submitted at this checkpoint.
+
+Preflight archive inspection identified omitted runtime configProperties
+in the custom launcher. Pending job 3529922 was cancelled with zero elapsed
+time before execution. v8 derives the config directly from the original
+archive, preserving all four original properties while selecting external
+.NET 8.0.21 with roll-forward disabled. A local config transformation check
+confirms property preservation. v8 plan SHA-256:
+`01c1f6db06ae0dd6b4f8002561fa4271644edd62083e5064fc7cc234f26aa740`.
+No image or Renode simulation exists yet.

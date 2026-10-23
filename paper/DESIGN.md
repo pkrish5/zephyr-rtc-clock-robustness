@@ -508,6 +508,21 @@ pin or selected input changes. Retain v6 logs; seal a separate v7 bundle
 and use `tacc_work/20261022-v7`. No image was sealed or Renode simulation
 run in v6; its afterok probe cannot execute after build failure.
 
+**2026-10-22 runtime-configuration preservation, before any Renode simulation:**
+Inspection of the checksum-verified Linux Renode archive showed that its
+supplied runtimeconfig includes four configProperties. The earlier custom
+launcher retained only two, omitting PredefinedCulturesOnly=false and
+MetadataUpdater.IsSupported=false. Before testing, derive the external
+.NET runtimeconfig directly from the supplied file, preserving every
+property and changing only includedFrameworks (bundled 8.0.12) to framework
+8.0.21 with rollForward=Disable, as required by the saved original version.
+This avoids an unintended culture-handling difference. Pending build
+3529922 was cancelled at zero elapsed time; v7 produced no image or data.
+Seal v8 and use `tacc_work/20261022-v8`. All earlier SDK/PATH and WORK-mount
+fixes remain; no frozen source, ELF, original record, clock schedule or
+comparison rule changes. Source: Renode.runtimeconfig.json in the pinned
+renode-1.17.0.linux-portable.tar.gz archive (SHA recorded above).
+
 ## 2026-10-12 Stage B deferred
 
 The user closed the exploratory Stage B round as **deferred** because repeated Codex CLI connectivity timeouts interrupted the locked generation sequence. Do not run the proposed 12-call pilot or resume the 60-call round under this protocol. Retain the frozen prompts, call order, two completed sources, failed CLI and build attempts, nominal originals, and separately labeled access retries. The [condition-level interruption audit](../notes/STAGE_B_CALLBACK_INTERRUPTION_2026-10-12.md) remains part of the project record. Neither completed Stage B source enters any manuscript result, denominator, figure, table, or model/prompt comparison. The manuscript may describe the frozen design and the same-spec human packet solely as planned follow-up. Any future execution requires a new dated authorization and protocol amendment before generating or running tests.

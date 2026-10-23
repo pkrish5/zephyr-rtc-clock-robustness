@@ -38,9 +38,17 @@ From: mcr.microsoft.com/dotnet/runtime@sha256:8080f384fe551bb616f03011d1b288dea7
     tar -xzf /tmp/renode.tar.gz --strip-components=1 -C /opt/renode
     echo 'a78bb20f3e594fffa9aec25d2ee85a7b165e8a381c603303ee237e7ce67d1194  /opt/renode/platforms/cpus/stm32f4.repl' | sha256sum -c -
     # The archive embeds .NET 8.0.12; use the original study's 8.0.21.
-    cat > /opt/renode/Renode.pinned.runtimeconfig.json <<'EOF'
-{"runtimeOptions":{"tfm":"net8.0","rollForward":"Disable","framework":{"name":"Microsoft.NETCore.App","version":"8.0.21"},"configProperties":{"System.Globalization.Invariant":true,"System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization":false}}}
-EOF
+    /opt/rtc-python/bin/python - <<'PY'
+import json
+from pathlib import Path
+root=Path('/opt/renode')
+cfg=json.loads((root/'Renode.runtimeconfig.json').read_text())
+opts=cfg['runtimeOptions']
+assert opts.pop('includedFrameworks') == [{'name':'Microsoft.NETCore.App','version':'8.0.12'}]
+opts['framework']={'name':'Microsoft.NETCore.App','version':'8.0.21'}
+opts['rollForward']='Disable'
+(root/'Renode.pinned.runtimeconfig.json').write_text(json.dumps(cfg,indent=2)+'\n')
+PY
     cat > /opt/renode/renode-pinned <<'EOF'
 #!/bin/sh
 exec /usr/bin/dotnet exec --runtimeconfig /opt/renode/Renode.pinned.runtimeconfig.json /opt/renode/Renode.dll "$@"
