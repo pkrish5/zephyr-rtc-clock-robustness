@@ -461,6 +461,18 @@ Renode/.NET/Zephyr/SDK pins, test selection, trace comparisons and stopping
 rules remain unchanged. No image or Renode result exists from v3.
 Reference: https://apptainer.org/docs/user/1.4/fakeroot.html (host-helper mode).
 
+**2026-10-22 helper-header compatibility correction, before image or Renode data:**
+Development job 3529840 verified the frozen inputs and helper source hash,
+but its configure test found a capset symbol without `sys/capability.h`;
+fakeroot compilation then failed on the missing capability typedefs.
+Dependent probe 3529851 was cancelled without running. Disable only this
+optional fakeroot wrapper with the configure cache `ac_cv_func_capset=no`,
+and record that setting in helper provenance. Do not add system headers,
+change kernel capabilities or account settings. Preserve v4 logs and use
+a separately sealed v5 bundle and `tacc_work/20261022-v5`. Other helper
+options, source hash, simulator/toolchain pins, inputs and calibration
+criteria remain unchanged. No image or Renode run occurred in v4.
+
 ## 2026-10-12 Stage B deferred
 
 The user closed the exploratory Stage B round as **deferred** because repeated Codex CLI connectivity timeouts interrupted the locked generation sequence. Do not run the proposed 12-call pilot or resume the 60-call round under this protocol. Retain the frozen prompts, call order, two completed sources, failed CLI and build attempts, nominal originals, and separately labeled access retries. The [condition-level interruption audit](../notes/STAGE_B_CALLBACK_INTERRUPTION_2026-10-12.md) remains part of the project record. Neither completed Stage B source enters any manuscript result, denominator, figure, table, or model/prompt comparison. The manuscript may describe the frozen design and the same-spec human packet solely as planned follow-up. Any future execution requires a new dated authorization and protocol amendment before generating or running tests.

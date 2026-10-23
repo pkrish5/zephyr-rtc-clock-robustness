@@ -14,7 +14,9 @@ curl -fL --retry 3 --max-time 180 \
 echo "86b0b75bf319ca42e525c098675b6ed10a06b76e69ec9ccf20ef5e03883b3a14  $src/source.tar.gz" | sha256sum -c -
 tar -xzf "$src/source.tar.gz" -C "$src"
 cd "$src/fakeroot-1.37.1.1"
-CC=/usr/bin/gcc ./configure --prefix="$helper" --disable-static \
+# LS6 exposes the capset symbol but not its optional development header.
+# Disable only that helper wrapper; no system capability settings change.
+ac_cv_func_capset=no CC=/usr/bin/gcc ./configure --prefix="$helper" --disable-static \
     > "$src/configure.log" 2>&1
 make -j4 > "$src/make.log" 2>&1
 make install > "$src/install.log" 2>&1
@@ -30,6 +32,7 @@ print(json.dumps({'version':'1.37.1.1','prefix':str(p),
  'source_url':'https://deb.debian.org/debian/pool/main/f/fakeroot/fakeroot_1.37.1.1.orig.tar.gz',
  'source_sha256':'86b0b75bf319ca42e525c098675b6ed10a06b76e69ec9ccf20ef5e03883b3a14',
  'node_name':socket.gethostname(),'slurm_job_id':sys.argv[2],
+ 'configure_cache':{'ac_cv_func_capset':'no'},
  'compiler_version':subprocess.check_output(['/usr/bin/gcc','--version'],text=True).strip(),
  'files_sha256':files},indent=2,sort_keys=True))
 PY

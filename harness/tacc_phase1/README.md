@@ -1,7 +1,7 @@
 # Lonestar6 Phase 1: image, resource probe and strict calibration
 
-Current recovery attempt: v4, using `tacc_work/20261022-v4` and a sealed
-`artifacts/tacc_phase1_20261022_v4` bundle. See the recovery notes below.
+Current recovery attempt: v5, using `tacc_work/20261022-v5` and a sealed
+`artifacts/tacc_phase1_20261022_v5` bundle. See the recovery notes below.
 
 Status: prepared implementation. A successful local syntax/unit check does
 not establish that the Linux image builds or that calibration agrees.
@@ -238,3 +238,10 @@ export RTC_IMAGE="$RTC_BASE/images/rtc-ls6-v1.sif"
 
 Use the sealed v4 input bundle, preserve previous attempts and logs, and
 submit the same build/probe/calibration scripts only to development.
+
+The v4 helper configure test found capset but no sys/capability.h; build
+3529840 therefore failed before image creation. v5 disables that optional
+helper wrapper with `ac_cv_func_capset=no`, records it in the helper
+inventory, and uses `artifacts/tacc_phase1_20261022_v5` and
+`RTC_BASE="$RTC_REPO/tacc_work/20261022-v5"`. No system headers, account
+settings or kernel capabilities are changed. Probe 3529851 was cancelled.

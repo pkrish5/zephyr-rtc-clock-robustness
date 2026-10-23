@@ -112,3 +112,18 @@ result exists. v4 adds a checksum-pinned WORK-only fakeroot helper compiled
 on the development node and a build-home mount marker guard. Its plan SHA
 is `770d53b021db67a69ec2becf71b95a3067721a425cd855d328f0cead258539fa`.
 The same 816 saved calibration tasks remain selected.
+
+The v4 code was published locally as 342f9811 and pulled on LS6.
+Development build 3529840 (one node, two hours) and dependent resource
+probe 3529851 (one node, 20 minutes, afterok:3529840) are queued under
+TRA25006. The probe cannot launch if image sealing fails. v3's image-build
+log and Slurm logs are now retained in the local v3 artifact.
+
+Job 3529840 failed after 23 seconds in helper compilation: configure found
+capset but no sys/capability.h, leaving missing capability typedefs. Probe
+3529851 was cancelled without running. Compiler/configure logs were copied
+to the local v4 artifact. v5 disables only this optional fakeroot wrapper
+using ac_cv_func_capset=no and records that choice in helper provenance.
+The new plan SHA-256 is
+`338081f7331ed673b493832fee6b979bccc1a3e12b1515a4140c93656df35e24`;
+the same 816 tasks remain locked. No image or Renode result exists yet.
