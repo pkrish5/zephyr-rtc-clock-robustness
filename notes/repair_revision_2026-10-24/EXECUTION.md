@@ -68,10 +68,12 @@ export RTC_D_BUNDLE="$PWD/tacc_work/20261024-phase2/d-bundle"
 export RTC_IMAGE="$PWD/tacc_work/20261023-v10/images/rtc-ls6-v1.sif"
 mkdir -p "$RTC_BASE/logs"
 export RTC_E_STAGE=gates
-repair_gate_id=$(sbatch --parsable -A TRA25006 -p normal -N 1 -n 128 \
+repair_gate_submission=$(sbatch --parsable -A TRA25006 -p normal -N 1 -n 128 \
   -t 04:00:00 -J rtc-repair-gates --dependency=afterok:3532338 \
   --output="$RTC_BASE/logs/gates-%j.out" --error="$RTC_BASE/logs/gates-%j.err" \
   harness/tacc_phase2/packed_e.sbatch)
+# The TACC submission wrapper may print banners before the parsable job ID.
+repair_gate_id=$(printf '%s\n' "$repair_gate_submission" | awk '/^[0-9]+$/ {id=$0} END {if (id) print id; else exit 1}')
 export RTC_E_STAGE=evaluate
 sbatch --parsable -A TRA25006 -p normal -N 1 -n 128 \
   -t 18:00:00 -J rtc-repair-eval --dependency="afterok:$repair_gate_id" \

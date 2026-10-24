@@ -162,3 +162,53 @@ No authentication attempt was made. Asked user to restore/check the session
 and confirm resumption. Latest confirmed D state was PENDING (Priority).
 Remote monitoring, transfer and E submissions are paused for connection
 recovery. Local protocol/adapter preparation continued. No paper edits.
+
+
+## 2026-10-24 resumed access and first E submission
+
+User confirmed reconnection. The read-only check succeeded; D was still
+PENDING (Priority). Pulled the approved scripts on LS6 with git pull only,
+transferred a path-validated 9,991,877-byte bundle archive, and unpacked it
+inside the new WORK repair directory. Remote plan SHA-256 matched the sealed
+local value 2c9317ea293b72a4cbf1e7779f22ceecdbf5f3a835559db35e4114a1a95971b6.
+
+E gates/builds submission returned definite job **3532458**, normal,
+TRA25006, one node, four-hour limit, cap 16, afterok:3532338. Estimate 2 SUs,
+reservation ceiling 4 SUs. Compute preflight additionally requires all 216 D
+builds and nominal controls to pass before any repair compilation starts.
+Local receipt is artifacts/tacc_phase2_20261024_v1/e_gate_submission.json.
+All 30,067 protected files remain unchanged at submission; full audit
+SHA-256 5ec82c4a4f7e95633c9419ec579cffbff2cbbc690210e58e893921e235a7bdcc.
+
+The dependent E evaluation submission (one node, 18 hours, estimate 8 SUs)
+timed out before returning a job ID. Its acceptance is UNKNOWN; do not
+resubmit until a read-only scheduler check resolves the original attempt.
+The concurrent A–B rsync was still making partial progress, so no credential
+expiry is inferred. Paused only the transfer client and issued one bounded,
+read-only queue check. No authentication attempt or account change.
+
+
+## E evaluation acceptance resolved without duplicate submission
+
+The one read-only scheduler check returned successfully and confirmed
+**3532464 | rtc-repair-eval | PENDING | afterok:3532458(unfulfilled)**.
+The timed-out submission had been accepted. No duplicate was submitted.
+No credential expiry/drop is inferred: the shared transfer was progressing,
+and the bounded follow-up read succeeded after pausing it. The original
+unknown-outcome record is retained, alongside the resolved submission receipt.
+
+Approved job chain is now:
+D controls 3532338 -> E builds/gates 3532458 -> E evaluation 3532464.
+All three were pending at the last read. E gates use one node / 04:00:00,
+estimate 2 SUs; E evaluation uses one node / 18:00:00, estimate 8 SUs.
+Normal / TRA25006 throughout. Total E estimate 10 SUs; reservation ceiling
+22 SUs. D's explicit raw-hash/pass checks and E's reference controls remain
+mandatory before downstream execution. No further scientific approval is
+needed to execute this approved chain. E2 and paper edits remain held.
+
+A–B raw return is partial (claims transferred, bulk records/traces not yet
+returned). The compute-verified report is present locally; no claim of full
+local raw verification is made. The per-file rsync was paused to avoid
+blocking status/submission traffic on the shared connection. Complete raw
+artifact return and independent verification remain required before the
+Phase 3 before/after report. No E outcome has been observed yet.
