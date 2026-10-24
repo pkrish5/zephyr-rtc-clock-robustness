@@ -1,0 +1,9 @@
+{
+  "archive_files": 2596,
+  "archive_sha256": "57ac17983f0f2e0d1d4d8f1facb33f2a6a8c681c1f32416e0ac998cdd5ddb5dc",
+  "build_elf_and_log_hashes_verified": 216,
+  "node_name": "c307-005.ls6.tacc.utexas.edu",
+  "omitted": "Compiler intermediates and ELFs remain immutable at the original WORK result prefix; ELF hashes verified on compute",
+  "purpose": "Read-only evidence verification and packaging; no firmware executions",
+  "slurm_job_id": "3532546"
+}

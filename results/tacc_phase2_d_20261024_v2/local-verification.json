@@ -1,0 +1,495 @@
+{
+  "archive_sha256": "57ac17983f0f2e0d1d4d8f1facb33f2a6a8c681c1f32416e0ac998cdd5ddb5dc",
+  "archive_members": 2596,
+  "raw_report_agrees": true,
+  "breakdown_agrees": true,
+  "report": {
+    "build_outcomes": {
+      "pass": 216
+    },
+    "complete": true,
+    "expected": 216,
+    "forecast_evaluable": 0,
+    "forecast_matches": 0,
+    "forecast_mismatches": [],
+    "next_action": "STOP at Phase 3 before editing paper; repairs still require approval",
+    "outcomes": {
+      "pass": 216
+    },
+    "per_suite": {
+      "astra-range_absent-rtc_alarm_callback-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_alarm_callback-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_alarm_callback-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_alarm_callback-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_alarm_callback-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_alarm_pending-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_alarm_pending-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_alarm_pending-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_alarm_pending-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_alarm_pending-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_time_counting-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_time_counting-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_time_counting-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_time_counting-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_absent-rtc_time_counting-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_alarm_callback-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_alarm_callback-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_alarm_callback-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_alarm_callback-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_alarm_pending-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_alarm_pending-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_alarm_pending-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_alarm_pending-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_alarm_pending-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_time_counting-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_time_counting-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_time_counting-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_time_counting-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "astra-range_present-rtc_time_counting-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "human-rtc_alarm_callback": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "human-rtc_alarm_pending": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "human-rtc_time_counting": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "luna-range_absent-rtc_time_counting-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "luna-range_absent-rtc_time_counting-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "luna-range_absent-rtc_time_counting-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "luna-range_absent-rtc_time_counting-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "luna-range_present-rtc_time_counting-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "luna-range_present-rtc_time_counting-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "luna-range_present-rtc_time_counting-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "reference-alarm_offset_zero-rtc_alarm_callback": {
+        "outcomes": {
+          "pass": 1
+        },
+        "records": 1
+      },
+      "reference-alarm_offset_zero-rtc_alarm_pending": {
+        "outcomes": {
+          "pass": 1
+        },
+        "records": 1
+      },
+      "reference-alarm_offset_zero-rtc_time_counting": {
+        "outcomes": {
+          "pass": 1
+        },
+        "records": 1
+      },
+      "reference-nonarrival_zero-rtc_alarm_callback": {
+        "outcomes": {
+          "pass": 1
+        },
+        "records": 1
+      },
+      "reference-nonarrival_zero-rtc_alarm_pending": {
+        "outcomes": {
+          "pass": 1
+        },
+        "records": 1
+      },
+      "reference-nonarrival_zero-rtc_time_counting": {
+        "outcomes": {
+          "pass": 1
+        },
+        "records": 1
+      },
+      "reference-oscillator_zero-rtc_alarm_callback": {
+        "outcomes": {
+          "pass": 1
+        },
+        "records": 1
+      },
+      "reference-oscillator_zero-rtc_alarm_pending": {
+        "outcomes": {
+          "pass": 1
+        },
+        "records": 1
+      },
+      "reference-oscillator_zero-rtc_time_counting": {
+        "outcomes": {
+          "pass": 1
+        },
+        "records": 1
+      },
+      "sol-range_absent-rtc_alarm_callback-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_alarm_callback-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_alarm_callback-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_alarm_callback-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_alarm_callback-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_alarm_pending-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_alarm_pending-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_alarm_pending-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_alarm_pending-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_alarm_pending-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_time_counting-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_time_counting-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_time_counting-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_time_counting-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_absent-rtc_time_counting-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_callback-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_callback-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_callback-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_callback-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_callback-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_pending-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_pending-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_pending-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_pending-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_alarm_pending-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_time_counting-r01": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_time_counting-r02": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_time_counting-r03": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_time_counting-r04": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      },
+      "sol-range_present-rtc_time_counting-r05": {
+        "outcomes": {
+          "pass": 3
+        },
+        "records": 3
+      }
+    },
+    "phase": "D",
+    "records": 216,
+    "stop_marker": null,
+    "tasks_accounted_for": 216
+  },
+  "elf_return": "Remote only; 216 ELF hashes verified on compute by packing job"
+}

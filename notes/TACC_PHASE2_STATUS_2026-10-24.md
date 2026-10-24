@@ -342,3 +342,39 @@ Submission receipts: e_cache_gate_submission.json and
 e_cache_evaluation_submission.json under artifacts/tacc_phase2_20261024_v1.
 Protected-file audit at submission: all 30,067 unchanged, SHA-256
 9c2dcde8664adea7bfee6e43b2d02b24855cbedb98d177c47289b2b012f6fcc0.
+
+
+## D read-only evidence archive sealed
+
+Development packing job **3532546** produced 2,596 archive files, including
+raw outputs, records, build records, app inputs and build logs. It independently
+recomputed D's report and compared it byte-for-byte with the original, then
+verified all 216 generated ELF hashes and build-log hashes on the compute node.
+The 3.2-MB archive SHA-256 is
+57ac17983f0f2e0d1d4d8f1facb33f2a6a8c681c1f32416e0ac998cdd5ddb5dc.
+Compiler intermediates and ELFs remain immutable on LS6 and are deliberately
+not in this evidence transfer; ELF hashes were verified before packaging.
+No firmware was built/run by the packer. Its estimate was 0.25 SU. E jobs
+3532542/3532543 were still PENDING Priority/Dependency at the latest read.
+
+
+## User-requested pause after committing D evidence
+
+On 2026-10-24 the user requested one final E-state check, then no further
+polling; the user will monitor E and request resumption after it finishes.
+No jobs are cancelled by this pause. E2 and manuscript edits remain held.
+
+D archive SHA-256 and all 2,596 safe relative regular-file members were
+verified locally. Independently recomputed raw-hash and group reports match
+the compute reports exactly: 216/216 builds and 216/216 nominal controls
+passed. All 216 returned build-log hashes also match their build records.
+The evidence archive, sealed plan, reports and verification metadata are
+committed under `results/tacc_phase2_d_20261024_v2/`. Generated ELF hashes
+were checked on the compute node; those binaries remain remote and are not
+claimed as returned.
+
+The final user-requested scheduler check confirms **3532542 COMPLETED 0:0**,
+elapsed 00:44:19, node c312-194; its gate log sealed 165 primary passes,
+17,375 evaluations and 19 controls. **3532543 PENDING (Priority)**, no node
+assigned, no evaluation execution claimed. Stop monitoring here; do not
+submit replacement or additional experimental jobs while paused.

@@ -1,0 +1,2569 @@
+{
+  "expected": 216,
+  "built": 216,
+  "nominal_records": 216,
+  "outcomes": {
+    "pass": 216
+  },
+  "groups": {
+    "oscillator_zero|ai|astra|range_absent|rtc_alarm_callback": {
+      "pass": 5
+    },
+    "oscillator_zero|ai|astra|range_absent|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "oscillator_zero|ai|astra|range_absent|rtc_time_counting": {
+      "pass": 5
+    },
+    "oscillator_zero|ai|astra|range_present|rtc_alarm_callback": {
+      "pass": 4
+    },
+    "oscillator_zero|ai|astra|range_present|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "oscillator_zero|ai|astra|range_present|rtc_time_counting": {
+      "pass": 5
+    },
+    "oscillator_zero|human|human|None|rtc_alarm_callback": {
+      "pass": 1
+    },
+    "oscillator_zero|human|human|None|rtc_alarm_pending": {
+      "pass": 1
+    },
+    "oscillator_zero|human|human|None|rtc_time_counting": {
+      "pass": 1
+    },
+    "oscillator_zero|ai|luna|range_absent|rtc_time_counting": {
+      "pass": 4
+    },
+    "oscillator_zero|ai|luna|range_present|rtc_time_counting": {
+      "pass": 3
+    },
+    "oscillator_zero|reference|reference|None|rtc_alarm_callback": {
+      "pass": 1
+    },
+    "oscillator_zero|reference|reference|None|rtc_alarm_pending": {
+      "pass": 1
+    },
+    "oscillator_zero|reference|reference|None|rtc_time_counting": {
+      "pass": 1
+    },
+    "oscillator_zero|ai|sol|range_absent|rtc_alarm_callback": {
+      "pass": 5
+    },
+    "oscillator_zero|ai|sol|range_absent|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "oscillator_zero|ai|sol|range_absent|rtc_time_counting": {
+      "pass": 5
+    },
+    "oscillator_zero|ai|sol|range_present|rtc_alarm_callback": {
+      "pass": 5
+    },
+    "oscillator_zero|ai|sol|range_present|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "oscillator_zero|ai|sol|range_present|rtc_time_counting": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|astra|range_absent|rtc_alarm_callback": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|astra|range_absent|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|astra|range_absent|rtc_time_counting": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|astra|range_present|rtc_alarm_callback": {
+      "pass": 4
+    },
+    "alarm_offset_zero|ai|astra|range_present|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|astra|range_present|rtc_time_counting": {
+      "pass": 5
+    },
+    "alarm_offset_zero|human|human|None|rtc_alarm_callback": {
+      "pass": 1
+    },
+    "alarm_offset_zero|human|human|None|rtc_alarm_pending": {
+      "pass": 1
+    },
+    "alarm_offset_zero|human|human|None|rtc_time_counting": {
+      "pass": 1
+    },
+    "alarm_offset_zero|ai|luna|range_absent|rtc_time_counting": {
+      "pass": 4
+    },
+    "alarm_offset_zero|ai|luna|range_present|rtc_time_counting": {
+      "pass": 3
+    },
+    "alarm_offset_zero|reference|reference|None|rtc_alarm_callback": {
+      "pass": 1
+    },
+    "alarm_offset_zero|reference|reference|None|rtc_alarm_pending": {
+      "pass": 1
+    },
+    "alarm_offset_zero|reference|reference|None|rtc_time_counting": {
+      "pass": 1
+    },
+    "alarm_offset_zero|ai|sol|range_absent|rtc_alarm_callback": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|sol|range_absent|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|sol|range_absent|rtc_time_counting": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|sol|range_present|rtc_alarm_callback": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|sol|range_present|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "alarm_offset_zero|ai|sol|range_present|rtc_time_counting": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|astra|range_absent|rtc_alarm_callback": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|astra|range_absent|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|astra|range_absent|rtc_time_counting": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|astra|range_present|rtc_alarm_callback": {
+      "pass": 4
+    },
+    "nonarrival_zero|ai|astra|range_present|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|astra|range_present|rtc_time_counting": {
+      "pass": 5
+    },
+    "nonarrival_zero|human|human|None|rtc_alarm_callback": {
+      "pass": 1
+    },
+    "nonarrival_zero|human|human|None|rtc_alarm_pending": {
+      "pass": 1
+    },
+    "nonarrival_zero|human|human|None|rtc_time_counting": {
+      "pass": 1
+    },
+    "nonarrival_zero|ai|luna|range_absent|rtc_time_counting": {
+      "pass": 4
+    },
+    "nonarrival_zero|ai|luna|range_present|rtc_time_counting": {
+      "pass": 3
+    },
+    "nonarrival_zero|reference|reference|None|rtc_alarm_callback": {
+      "pass": 1
+    },
+    "nonarrival_zero|reference|reference|None|rtc_alarm_pending": {
+      "pass": 1
+    },
+    "nonarrival_zero|reference|reference|None|rtc_time_counting": {
+      "pass": 1
+    },
+    "nonarrival_zero|ai|sol|range_absent|rtc_alarm_callback": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|sol|range_absent|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|sol|range_absent|rtc_time_counting": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|sol|range_present|rtc_alarm_callback": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|sol|range_present|rtc_alarm_pending": {
+      "pass": 5
+    },
+    "nonarrival_zero|ai|sol|range_present|rtc_time_counting": {
+      "pass": 5
+    }
+  },
+  "rows": [
+    {
+      "index": 0,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 1,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 2,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 3,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 4,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 5,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 6,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 7,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 8,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 9,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 10,
+      "suite_id": "astra-range_absent-rtc_time_counting-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 11,
+      "suite_id": "astra-range_absent-rtc_time_counting-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 12,
+      "suite_id": "astra-range_absent-rtc_time_counting-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 13,
+      "suite_id": "astra-range_absent-rtc_time_counting-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 14,
+      "suite_id": "astra-range_absent-rtc_time_counting-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 15,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 16,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 17,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 18,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 19,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 20,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 21,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 22,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 23,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 24,
+      "suite_id": "astra-range_present-rtc_time_counting-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 25,
+      "suite_id": "astra-range_present-rtc_time_counting-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 26,
+      "suite_id": "astra-range_present-rtc_time_counting-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 27,
+      "suite_id": "astra-range_present-rtc_time_counting-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 28,
+      "suite_id": "astra-range_present-rtc_time_counting-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 29,
+      "suite_id": "human-rtc_alarm_callback",
+      "implementation": "oscillator_zero",
+      "kind": "human",
+      "model": "human",
+      "prompt_condition": null,
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 30,
+      "suite_id": "human-rtc_alarm_pending",
+      "implementation": "oscillator_zero",
+      "kind": "human",
+      "model": "human",
+      "prompt_condition": null,
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 31,
+      "suite_id": "human-rtc_time_counting",
+      "implementation": "oscillator_zero",
+      "kind": "human",
+      "model": "human",
+      "prompt_condition": null,
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 32,
+      "suite_id": "luna-range_absent-rtc_time_counting-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 33,
+      "suite_id": "luna-range_absent-rtc_time_counting-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 34,
+      "suite_id": "luna-range_absent-rtc_time_counting-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 35,
+      "suite_id": "luna-range_absent-rtc_time_counting-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 36,
+      "suite_id": "luna-range_present-rtc_time_counting-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 37,
+      "suite_id": "luna-range_present-rtc_time_counting-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 38,
+      "suite_id": "luna-range_present-rtc_time_counting-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 39,
+      "suite_id": "reference-oscillator_zero-rtc_alarm_callback",
+      "implementation": "oscillator_zero",
+      "kind": "reference",
+      "model": "reference",
+      "prompt_condition": null,
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 40,
+      "suite_id": "reference-oscillator_zero-rtc_alarm_pending",
+      "implementation": "oscillator_zero",
+      "kind": "reference",
+      "model": "reference",
+      "prompt_condition": null,
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 41,
+      "suite_id": "reference-oscillator_zero-rtc_time_counting",
+      "implementation": "oscillator_zero",
+      "kind": "reference",
+      "model": "reference",
+      "prompt_condition": null,
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 42,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 43,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 44,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 45,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 46,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 47,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 48,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 49,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 50,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 51,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 52,
+      "suite_id": "sol-range_absent-rtc_time_counting-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 53,
+      "suite_id": "sol-range_absent-rtc_time_counting-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 54,
+      "suite_id": "sol-range_absent-rtc_time_counting-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 55,
+      "suite_id": "sol-range_absent-rtc_time_counting-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 56,
+      "suite_id": "sol-range_absent-rtc_time_counting-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 57,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 58,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 59,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 60,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 61,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 62,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 63,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 64,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 65,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 66,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 67,
+      "suite_id": "sol-range_present-rtc_time_counting-r01",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 68,
+      "suite_id": "sol-range_present-rtc_time_counting-r02",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 69,
+      "suite_id": "sol-range_present-rtc_time_counting-r03",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 70,
+      "suite_id": "sol-range_present-rtc_time_counting-r04",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 71,
+      "suite_id": "sol-range_present-rtc_time_counting-r05",
+      "implementation": "oscillator_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 72,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 73,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 74,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 75,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 76,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 77,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 78,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 79,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 80,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 81,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 82,
+      "suite_id": "astra-range_absent-rtc_time_counting-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 83,
+      "suite_id": "astra-range_absent-rtc_time_counting-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 84,
+      "suite_id": "astra-range_absent-rtc_time_counting-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 85,
+      "suite_id": "astra-range_absent-rtc_time_counting-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 86,
+      "suite_id": "astra-range_absent-rtc_time_counting-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 87,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 88,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 89,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 90,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 91,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 92,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 93,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 94,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 95,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 96,
+      "suite_id": "astra-range_present-rtc_time_counting-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 97,
+      "suite_id": "astra-range_present-rtc_time_counting-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 98,
+      "suite_id": "astra-range_present-rtc_time_counting-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 99,
+      "suite_id": "astra-range_present-rtc_time_counting-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 100,
+      "suite_id": "astra-range_present-rtc_time_counting-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 101,
+      "suite_id": "human-rtc_alarm_callback",
+      "implementation": "alarm_offset_zero",
+      "kind": "human",
+      "model": "human",
+      "prompt_condition": null,
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 102,
+      "suite_id": "human-rtc_alarm_pending",
+      "implementation": "alarm_offset_zero",
+      "kind": "human",
+      "model": "human",
+      "prompt_condition": null,
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 103,
+      "suite_id": "human-rtc_time_counting",
+      "implementation": "alarm_offset_zero",
+      "kind": "human",
+      "model": "human",
+      "prompt_condition": null,
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 104,
+      "suite_id": "luna-range_absent-rtc_time_counting-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 105,
+      "suite_id": "luna-range_absent-rtc_time_counting-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 106,
+      "suite_id": "luna-range_absent-rtc_time_counting-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 107,
+      "suite_id": "luna-range_absent-rtc_time_counting-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 108,
+      "suite_id": "luna-range_present-rtc_time_counting-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 109,
+      "suite_id": "luna-range_present-rtc_time_counting-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 110,
+      "suite_id": "luna-range_present-rtc_time_counting-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 111,
+      "suite_id": "reference-alarm_offset_zero-rtc_alarm_callback",
+      "implementation": "alarm_offset_zero",
+      "kind": "reference",
+      "model": "reference",
+      "prompt_condition": null,
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 112,
+      "suite_id": "reference-alarm_offset_zero-rtc_alarm_pending",
+      "implementation": "alarm_offset_zero",
+      "kind": "reference",
+      "model": "reference",
+      "prompt_condition": null,
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 113,
+      "suite_id": "reference-alarm_offset_zero-rtc_time_counting",
+      "implementation": "alarm_offset_zero",
+      "kind": "reference",
+      "model": "reference",
+      "prompt_condition": null,
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 114,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 115,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 116,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 117,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 118,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 119,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 120,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 121,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 122,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 123,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 124,
+      "suite_id": "sol-range_absent-rtc_time_counting-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 125,
+      "suite_id": "sol-range_absent-rtc_time_counting-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 126,
+      "suite_id": "sol-range_absent-rtc_time_counting-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 127,
+      "suite_id": "sol-range_absent-rtc_time_counting-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 128,
+      "suite_id": "sol-range_absent-rtc_time_counting-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 129,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 130,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 131,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 132,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 133,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 134,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 135,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 136,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 137,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 138,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 139,
+      "suite_id": "sol-range_present-rtc_time_counting-r01",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 140,
+      "suite_id": "sol-range_present-rtc_time_counting-r02",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 141,
+      "suite_id": "sol-range_present-rtc_time_counting-r03",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 142,
+      "suite_id": "sol-range_present-rtc_time_counting-r04",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 143,
+      "suite_id": "sol-range_present-rtc_time_counting-r05",
+      "implementation": "alarm_offset_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 144,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 145,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 146,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 147,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 148,
+      "suite_id": "astra-range_absent-rtc_alarm_callback-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 149,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 150,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 151,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 152,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 153,
+      "suite_id": "astra-range_absent-rtc_alarm_pending-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 154,
+      "suite_id": "astra-range_absent-rtc_time_counting-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 155,
+      "suite_id": "astra-range_absent-rtc_time_counting-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 156,
+      "suite_id": "astra-range_absent-rtc_time_counting-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 157,
+      "suite_id": "astra-range_absent-rtc_time_counting-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 158,
+      "suite_id": "astra-range_absent-rtc_time_counting-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 159,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 160,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 161,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 162,
+      "suite_id": "astra-range_present-rtc_alarm_callback-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 163,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 164,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 165,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 166,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 167,
+      "suite_id": "astra-range_present-rtc_alarm_pending-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 168,
+      "suite_id": "astra-range_present-rtc_time_counting-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 169,
+      "suite_id": "astra-range_present-rtc_time_counting-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 170,
+      "suite_id": "astra-range_present-rtc_time_counting-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 171,
+      "suite_id": "astra-range_present-rtc_time_counting-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 172,
+      "suite_id": "astra-range_present-rtc_time_counting-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "astra",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 173,
+      "suite_id": "human-rtc_alarm_callback",
+      "implementation": "nonarrival_zero",
+      "kind": "human",
+      "model": "human",
+      "prompt_condition": null,
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 174,
+      "suite_id": "human-rtc_alarm_pending",
+      "implementation": "nonarrival_zero",
+      "kind": "human",
+      "model": "human",
+      "prompt_condition": null,
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 175,
+      "suite_id": "human-rtc_time_counting",
+      "implementation": "nonarrival_zero",
+      "kind": "human",
+      "model": "human",
+      "prompt_condition": null,
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 176,
+      "suite_id": "luna-range_absent-rtc_time_counting-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 177,
+      "suite_id": "luna-range_absent-rtc_time_counting-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 178,
+      "suite_id": "luna-range_absent-rtc_time_counting-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 179,
+      "suite_id": "luna-range_absent-rtc_time_counting-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 180,
+      "suite_id": "luna-range_present-rtc_time_counting-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 181,
+      "suite_id": "luna-range_present-rtc_time_counting-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 182,
+      "suite_id": "luna-range_present-rtc_time_counting-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "luna",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 183,
+      "suite_id": "reference-nonarrival_zero-rtc_alarm_callback",
+      "implementation": "nonarrival_zero",
+      "kind": "reference",
+      "model": "reference",
+      "prompt_condition": null,
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 184,
+      "suite_id": "reference-nonarrival_zero-rtc_alarm_pending",
+      "implementation": "nonarrival_zero",
+      "kind": "reference",
+      "model": "reference",
+      "prompt_condition": null,
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 185,
+      "suite_id": "reference-nonarrival_zero-rtc_time_counting",
+      "implementation": "nonarrival_zero",
+      "kind": "reference",
+      "model": "reference",
+      "prompt_condition": null,
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 186,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 187,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 188,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 189,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 190,
+      "suite_id": "sol-range_absent-rtc_alarm_callback-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 191,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 192,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 193,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 194,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 195,
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 196,
+      "suite_id": "sol-range_absent-rtc_time_counting-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 197,
+      "suite_id": "sol-range_absent-rtc_time_counting-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 198,
+      "suite_id": "sol-range_absent-rtc_time_counting-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 199,
+      "suite_id": "sol-range_absent-rtc_time_counting-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 200,
+      "suite_id": "sol-range_absent-rtc_time_counting-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_absent",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 201,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 202,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 203,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 204,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 205,
+      "suite_id": "sol-range_present-rtc_alarm_callback-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_callback",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 206,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 207,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 208,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 209,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 210,
+      "suite_id": "sol-range_present-rtc_alarm_pending-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_alarm_pending",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 211,
+      "suite_id": "sol-range_present-rtc_time_counting-r01",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 212,
+      "suite_id": "sol-range_present-rtc_time_counting-r02",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 213,
+      "suite_id": "sol-range_present-rtc_time_counting-r03",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 214,
+      "suite_id": "sol-range_present-rtc_time_counting-r04",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    },
+    {
+      "index": 215,
+      "suite_id": "sol-range_present-rtc_time_counting-r05",
+      "implementation": "nonarrival_zero",
+      "kind": "ai",
+      "model": "sol",
+      "prompt_condition": "range_present",
+      "family": "rtc_time_counting",
+      "build_status": "pass",
+      "outcome": "pass"
+    }
+  ],
+  "next_action": "Review all control failures/missingness; STOP before E runs and paper edits"
+}
