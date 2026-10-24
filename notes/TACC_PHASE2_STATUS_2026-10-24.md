@@ -313,3 +313,32 @@ Phase 3 review, not manuscript changes; D and E remain pending.
 
 At elapsed 11:39, D v2 had 101 build and 99 nominal records, no STOP marker.
 No E source generation, compilation or execution has started.
+
+
+## D cache-path retry passed; approved E chain restored
+
+D job **3532515** COMPLETED, exit 0:0, elapsed 00:21:03, node c307-005.
+The compute report verifies 216/216 builds and 216/216 nominal controls
+passed, no STOP marker and no missing verdict. It checked raw-output hashes
+and node/SIF/Slurm/Apptainer provenance. Each primary suite passed all three
+disabled implementations; the nine reference controls passed as well.
+Source: artifacts/tacc_phase2_20261024_v1/d_cache_v2_final_report.json.
+Full local raw return is still required; this is a retrieved compute report.
+The first build log explicitly records `/var/tmp/zephyr` as its cache, with
+Apptainer 1.4.1 and the unchanged calibrated image hash. The successful retry
+ends the consecutive infrastructure-failure streak. The original cancelled
+D v1 failures remain preserved and separate.
+
+Replaced the cancelled, never-started E jobs with **3532542** (gates/builds,
+normal, one node, 04:00:00, estimate 2 SUs, afterok:3532515) and **3532543**
+(controls/evaluation, normal, one node, 18:00:00, estimate 8 SUs,
+afterok:3532542). Allocation TRA25006 on both; no further scientific scope
+change. Estimates were reported before submission. E2 stays on hold; Phase 3
+old/new-number review must precede manuscript edits. The original E output
+directory was empty before replacement gate submission, confirming that no
+E source was built or run by the cancelled jobs.
+
+Submission receipts: e_cache_gate_submission.json and
+e_cache_evaluation_submission.json under artifacts/tacc_phase2_20261024_v1.
+Protected-file audit at submission: all 30,067 unchanged, SHA-256
+9c2dcde8664adea7bfee6e43b2d02b24855cbedb98d177c47289b2b012f6fcc0.
