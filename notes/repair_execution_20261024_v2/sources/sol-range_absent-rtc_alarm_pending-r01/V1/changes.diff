@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r01/test.c
++++ V1/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r01/test.c
+@@ -6,6 +6,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 0
++#include "repair_wait.h"
+ 
+ #define ALARM_ID 0
+ #define ALARM_MASK (RTC_ALARM_TIME_MASK_SECOND | \
+@@ -54,7 +57,7 @@
+     zassert_true(rc >= 0);
+     zassert_ok(rtc_set_time(rtc, &start));
+ 
+-    int64_t deadline = k_uptime_get() + 16000;
++    int64_t deadline = repair_deadline;
+ 
+     do {
+         struct rtc_time first;

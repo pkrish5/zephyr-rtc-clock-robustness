@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r05/test.c
++++ V2/generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r05/test.c
+@@ -6,6 +6,9 @@
+ #include <zephyr/ztest.h>
+ #include <stdint.h>
+ #include <time.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ #define POLL_MS 100
+ #define MAX_POLLS 200
+@@ -80,7 +83,7 @@
+ 	 * is claimed; that would additionally require a scheduling/interrupt
+ 	 * latency bound. Normal kernel timeout delivery is required.
+ 	 */
+-	for (int i = 0; i < MAX_POLLS; ++i) {
++	for (int i = 0; !repair_expired(); ++i) {
+ 		k_sleep(K_MSEC(POLL_MS));
+ 		zassert_equal(rtc_get_time(rtc, &observed), 0,
+ 			      "rtc_get_time failed at poll %d", i);

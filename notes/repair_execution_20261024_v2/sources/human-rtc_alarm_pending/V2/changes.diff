@@ -1,0 +1,62 @@
+--- V0/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm.c
++++ V2/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm.c
+@@ -10,6 +10,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/sys/atomic.h>
+ #include <zephyr/sys/util.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ #define RTC_TEST_ALARM_TEST_NOT_PENDING_DELAY (3)
+ #define RTC_TEST_ALARM_TEST_PENDING_DELAY     (10)
+@@ -66,6 +69,33 @@
+ 	RTC_ALARM_TIME_MASK_NSEC
+ };
+ 
++static int repair_pending[DT_PROP(DT_ALIAS(rtc), alarms_count)];
++static void repair_wait_pending(void)
++{
++    for (uint16_t id = 0; id < alarms_count; ++id) {
++        repair_pending[id] = 0;
++    }
++    while (!repair_expired()) {
++        bool complete = true;
++        for (uint16_t id = 0; id < alarms_count; ++id) {
++            if (repair_pending[id] != 1) {
++
++                int status = rtc_alarm_is_pending(rtc, id);
++
++                repair_pending[id] = status;
++                if (status < 0) {
++                    return;
++                }
++            }
++            complete &= repair_pending[id] == 1;
++        }
++        if (complete) {
++            return;
++        }
++        k_sleep(K_MSEC(20));
++    }
++}
++
+ ZTEST(rtc_api, test_alarm)
+ {
+ 	int ret;
+@@ -195,11 +225,11 @@
+ 		}
+ 
+ 		/* Wait for alarm to trigger */
+-		k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_PENDING_DELAY));
+-
+-		/* Validate alarm is pending */
++		repair_wait_pending();
++
++		/* Validate alarm is pending; the state wait latched consuming reads. */
+ 		for (uint16_t i = 0; i < alarms_count; i++) {
+-			ret = rtc_alarm_is_pending(rtc, i);
++			ret = repair_pending[i];
+ 			zassert_equal(ret, 1, "Alarm %d should be pending", i);
+ 		}
+ 	}

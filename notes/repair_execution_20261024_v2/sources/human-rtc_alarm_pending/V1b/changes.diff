@@ -1,0 +1,21 @@
+--- V0/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm.c
++++ V1b/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm.c
+@@ -10,6 +10,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/sys/atomic.h>
+ #include <zephyr/sys/util.h>
++
++#define REPAIR_EVENT_WAIT 0
++#include "repair_wait.h"
+ 
+ #define RTC_TEST_ALARM_TEST_NOT_PENDING_DELAY (3)
+ #define RTC_TEST_ALARM_TEST_PENDING_DELAY     (10)
+@@ -195,7 +198,7 @@
+ 		}
+ 
+ 		/* Wait for alarm to trigger */
+-		k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_PENDING_DELAY));
++		repair_fixed_wait();
+ 
+ 		/* Validate alarm is pending */
+ 		for (uint16_t i = 0; i < alarms_count; i++) {

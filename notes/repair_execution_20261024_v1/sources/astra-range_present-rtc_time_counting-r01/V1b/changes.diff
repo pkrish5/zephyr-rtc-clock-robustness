@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r01/test.c
++++ V1b/generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r01/test.c
+@@ -7,6 +7,9 @@
+ 
+ #include <stdint.h>
+ #include <time.h>
++
++#define REPAIR_EVENT_WAIT 0
++#include "repair_wait.h"
+ 
+ static int64_t calendar_seconds(const struct rtc_time *rtc)
+ {
+@@ -68,7 +71,7 @@
+ 	 * latency has no supplied upper bound. Delayed execution adds RTC
+ 	 * counting time and is not itself grounds for failing the test.
+ 	 */
+-	for (int sample = 0; sample < 20; ++sample) {
++	for (int sample = 0; !repair_expired(); ++sample) {
+ 		k_sleep(K_MSEC(1000));
+ 		rc = rtc_get_time(rtc, &observed);
+ 		zassert_equal(rc, 0, "rtc_get_time failed: %d", rc);

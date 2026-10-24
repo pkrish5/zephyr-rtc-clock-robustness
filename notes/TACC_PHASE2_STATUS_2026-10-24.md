@@ -104,3 +104,61 @@ an exact upper calendar bound to the pending task's looser specification.
 Wait for explicit approval before generating the full E cohort or executing
 any E variant. Review D outcomes before any such execution. No manuscript
 or original analysis count is updated in this phase.
+
+
+## 2026-10-24 approved V1/V1b split and E preparation
+
+User approved E execution with V1=max(original,20.824 s), a separate V1b
+exactly 20.824 s, and unchanged V2/V3 semantics. The dated DESIGN revision
+and service-stage clarification were written before any repair builds/runs.
+The updated six diffs include an over-padded 60-second counting suite:
+V1 is a deliberate no-op; V1b reduces its scalar ceiling. The full cohort
+contains 165 source versions, with 22 V1 source/ELF no-ops. Source sites were
+sealed first. All non-time assertions remain unchanged; the two timeout-only
+assertion substitutions are enumerated in the source manifest. The old V2/V3
+example sources are byte-identical. E2 remains on hold.
+
+Offline policy tests pass: infrastructure/ambiguous nominal outcomes cannot
+clear the five-run gate, V1 never shortens a recorded scalar budget, and the
+approved V2/V3 examples are unchanged. Python/shell syntax checks pass.
+These are adapter checks, not new firmware experiments.
+
+E bundle plan SHA-256:
+`2c9317ea293b72a4cbf1e7779f22ceecdbf5f3a835559db35e4114a1a95971b6`.
+The sealed inputs include original source/ELF bytes, new mechanical source
+copies, immutable fault drivers, saved legal/nominal/fault platform files,
+references, overlays, configurations and the unchanged original simulation
+code hashes. No E build or run has occurred at this checkpoint.
+
+E submission plan: gates/builds one node normal four hours, estimated 2 SUs;
+controls/evaluation one node normal 18 hours, estimated 8 SUs. Total estimate
+10 SUs, reservation ceiling 22 SUs, with D then gate-job dependencies and
+explicit compute-node D verification. Details and exact commands are in
+notes/repair_revision_2026-10-24/EXECUTION.md. These are planning estimates;
+no E job has been submitted while the connection is unavailable.
+
+## A–B completed; connection stalled during return transfer
+
+Job 3532327 COMPLETED, exit 0:0, 00:32:35, node c314-024. The compute-generated
+report records 1,632/1,632 passes (16 suites x 102), 1,600/1,600 exact seeded
+forecast matches, zero mismatches and zero missing verdicts. It verified raw
+record/traces on the compute node. At one SU per node-hour the elapsed charge
+estimate is 0.543 SUs. New endpoint outcomes remain separate from forecasts.
+No assertion failure required replay or a failing-frequency reference.
+
+Returned report SHA-256:
+`20b9abe19a83b2bd2867c856443072303d7541151f36c8b4713078c741a02749`.
+The rsync transfer stalled before the bulk raw record/trace directories
+arrived, so independent local raw-hash verification is still pending. The
+returned report alone is not described as a complete local artifact return.
+The protected-file audit still finds all 30,067 original protected files
+unchanged: pre_e_source_hash_check.json, SHA-256
+`fa9dc7612bd2244306e197ab50b8412112a7feb2cb489c83b876538dcfd69d0b`.
+
+The next status SSH client stalled for over a minute, and the rsync client
+for over three minutes. Stopped only those local clients (PIDs 1421, 1422,
+1555); did not stop Slurm jobs or touch the authenticated master connection.
+No authentication attempt was made. Asked user to restore/check the session
+and confirm resumption. Latest confirmed D state was PENDING (Priority).
+Remote monitoring, transfer and E submissions are paused for connection
+recovery. Local protocol/adapter preparation continued. No paper edits.

@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r01/test.c
++++ V2/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r01/test.c
+@@ -3,6 +3,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ /* Seconds since 2023-12-31 23:59:55, for dates this test can observe. */
+ static int seconds_from_start(const struct rtc_time *t)
+@@ -42,7 +45,7 @@
+ 		     "initial calendar does not match the set time");
+ 
+ 	/* Allow 60 wall-clock seconds for ten independent LSI-driven RTC ticks. */
+-	for (int i = 0; i < 600 && previous < 10; i++) {
++	for (int i = 0; !repair_expired() && previous < 10; i++) {
+ 		int current;
+ 
+ 		k_sleep(K_MSEC(100));

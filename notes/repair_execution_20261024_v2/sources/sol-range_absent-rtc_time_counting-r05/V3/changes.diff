@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r05/test.c
++++ V3/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r05/test.c
+@@ -3,6 +3,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ /* Seconds since 2023-12-31 23:59:55; -1 means an unexpected date. */
+ static int calendar_offset(const struct rtc_time *t)
+@@ -42,7 +45,7 @@
+ 	zassert_true(elapsed >= 0 && elapsed <= 2, "Initial calendar differs from set time");
+ 
+ 	/* 300 samples spaced 100 ms apart allow 30 CPU seconds for 10 RTC seconds. */
+-	for (int i = 0; i < 300 && elapsed < 10; ++i) {
++	for (int i = 0; !repair_expired() && elapsed < 10; ++i) {
+ 		k_sleep(K_MSEC(100));
+ 		zassert_equal(rtc_get_time(rtc, &observed), 0, "RTC read failed");
+ 		int next = calendar_offset(&observed);

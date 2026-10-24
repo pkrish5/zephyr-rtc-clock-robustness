@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r01/test.c
++++ V1/generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r01/test.c
+@@ -4,6 +4,9 @@
+ #include <zephyr/kernel.h>
+ #include <zephyr/sys/timeutil.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 0
++#include "repair_wait.h"
+ 
+ #define RTC_DEVICE DEVICE_DT_GET(DT_ALIAS(rtc))
+ #define OBSERVATION_LIMIT_SECONDS 20
+@@ -49,7 +52,7 @@
+ 	zassert_equal(previous, INITIAL_EPOCH_SECONDS,
+ 		       "initial calendar mismatch: got %lld", (long long)previous);
+ 
+-	deadline = k_uptime_get() + OBSERVATION_LIMIT_SECONDS * MSEC_PER_SEC;
++	deadline = repair_deadline;
+ 	while (previous < INITIAL_EPOCH_SECONDS + 10 && k_uptime_get() < deadline) {
+ 		int64_t current;
+ 

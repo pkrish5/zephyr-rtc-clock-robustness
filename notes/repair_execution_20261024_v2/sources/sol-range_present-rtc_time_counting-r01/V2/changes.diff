@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r01/test.c
++++ V2/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r01/test.c
+@@ -5,6 +5,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ static uint64_t calendar_key(const struct rtc_time *t)
+ {
+@@ -48,7 +51,7 @@
+     zassert_true(previous >= calendar_key(&initial));
+ 
+     started_ms = k_uptime_get();
+-    while (previous < target && k_uptime_get() - started_ms < 40000) {
++    while (previous < target && !repair_expired()) {
+         uint64_t current;
+ 
+         k_sleep(K_MSEC(100));

@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r02/test.c
++++ V1b/generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r02/test.c
+@@ -2,6 +2,9 @@
+ #include <zephyr/device.h>
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 0
++#include "repair_wait.h"
+ 
+ #define RTC_OBSERVATION_BOUND_MS 60000
+ #define RTC_POLL_INTERVAL_MS 100
+@@ -65,7 +68,7 @@
+ 	 * 10 * (128 * 250) / 17000 = 18.83 seconds. The 60-second bound
+ 	 * leaves substantial time for polling and thread/interrupt delivery.
+ 	 */
+-	for (int64_t elapsed_ms = 0; elapsed_ms < RTC_OBSERVATION_BOUND_MS;
++	for (int64_t elapsed_ms = 0; !repair_expired();
+ 	     elapsed_ms += RTC_POLL_INTERVAL_MS) {
+ 		k_sleep(K_MSEC(RTC_POLL_INTERVAL_MS));
+ 

@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r03/test.c
++++ V3/generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r03/test.c
+@@ -6,6 +6,9 @@
+ #include <zephyr/kernel.h>
+ #include <zephyr/sys/timeutil.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ #define RTC_OBSERVATION_BOUND_MS 60000
+ #define RTC_POLL_INTERVAL_MS 250
+@@ -57,7 +60,7 @@
+ 		      "Initial RTC readback differs from set value");
+ 	previous = observed;
+ 	previous_epoch = observed_epoch;
+-	deadline = k_uptime_get() + RTC_OBSERVATION_BOUND_MS;
++	deadline = repair_deadline;
+ 
+ 	/* At the documented 17 kHz LSI minimum, 10 RTC seconds take under 19 s
+ 	 * with a 128 x 250 prescaler. The 60 s bound allows additional time for

@@ -1,0 +1,69 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r03/test.c
++++ V3/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r03/test.c
+@@ -5,6 +5,7 @@
+ #include <zephyr/devicetree.h>
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
++#include <zephyr/sys/util.h>
+ #include <zephyr/ztest.h>
+ 
+ #define ALARM_MASK (RTC_ALARM_TIME_MASK_SECOND | \
+@@ -39,6 +40,8 @@
+     };
+     struct rtc_time readback;
+     struct rtc_time now;
++    struct rtc_time repair_pending_before;
++    struct rtc_time repair_pending_after;
+     uint16_t mask = 0;
+     bool saw_before = false;
+     bool saw_after = false;
+@@ -47,6 +50,7 @@
+     int64_t deadline;
+ 
+     zassert_true(device_is_ready(rtc));
++    const int64_t repair_deadline = k_uptime_get() + 20824;
+     zassert_ok(rtc_set_time(rtc, &start));
+     zassert_ok(rtc_alarm_set_time(rtc, 0, ALARM_MASK, &alarm));
+     zassert_ok(rtc_alarm_get_time(rtc, 0, &mask, &readback));
+@@ -55,8 +59,8 @@
+     zassert_equal(readback.tm_min, alarm.tm_min);
+     zassert_equal(readback.tm_sec, alarm.tm_sec);
+ 
+-    /* The alarm is ten RTC seconds away; allow 15 wall-clock seconds. */
+-    deadline = k_uptime_get() + 15000;
++    /* Share one 20,824-ms observation ceiling from the calendar reset. */
++    deadline = repair_deadline;
+     while (k_uptime_get() < deadline) {
+         zassert_ok(rtc_get_time(rtc, &now));
+         if (!before_time(&now, &alarm)) {
+@@ -75,20 +79,26 @@
+             saw_after = pending > 0;
+             break;
+         }
+-        k_sleep(K_MSEC(50));
++        k_sleep(K_MSEC(MAX(INT64_C(0), MIN(INT64_C(20), deadline - k_uptime_get()))));
+     }
+ 
+     zassert_true(saw_before, "no pre-alarm observation");
+     zassert_true(reached, "RTC did not reach alarm time");
+ 
+-    /* Allow three more seconds for the alarm status to become visible. */
+-    deadline = k_uptime_get() + 3000;
++    /* Preserve the service allowance, capped by the shared observation ceiling. */
++    deadline = MIN(k_uptime_get() + 3000, repair_deadline);
+     while (!saw_after && k_uptime_get() < deadline) {
++        zassert_ok(rtc_get_time(rtc, &repair_pending_before));
+         pending = rtc_alarm_is_pending(rtc, 0);
+         zassert_true(pending >= 0);
++        zassert_ok(rtc_get_time(rtc, &repair_pending_after));
++        if (pending > 0) {
++            zassert_false(before_time(&repair_pending_after, &alarm),
++                          "pending observed before configured calendar target");
++        }
+         saw_after = pending > 0;
+         if (!saw_after) {
+-            k_sleep(K_MSEC(50));
++            k_sleep(K_MSEC(MAX(INT64_C(0), MIN(INT64_C(20), deadline - k_uptime_get()))));
+         }
+     }
+     zassert_true(saw_after, "alarm never became pending");

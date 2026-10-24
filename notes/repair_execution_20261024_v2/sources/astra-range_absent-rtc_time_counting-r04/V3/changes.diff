@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r04/test.c
++++ V3/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r04/test.c
+@@ -5,6 +5,9 @@
+ #include <zephyr/ztest.h>
+ #include <stdbool.h>
+ #include <stdint.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ /* Seconds relative to 2025-12-31 00:00:00, across the tested boundary. */
+ static int64_t calendar_seconds(const struct rtc_time *t)
+@@ -66,7 +69,7 @@
+ 	 * for oscillator tolerance, calendar phase and scheduling overhead.
+ 	 * Polling stops immediately once sufficient calendar progress occurs.
+ 	 */
+-	deadline = k_uptime_get() + 60000;
++	deadline = repair_deadline;
+ 	while (k_uptime_get() < deadline) {
+ 		int64_t current;
+ 

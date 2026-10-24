@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r04/test.c
++++ V2/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r04/test.c
+@@ -3,6 +3,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ static int calendar_cmp(const struct rtc_time *a, const struct rtc_time *b)
+ {
+@@ -44,7 +47,7 @@
+ 	 * Up to 160 polling sleeps provide 40 seconds of sleep time.
+ 	 * Polling does not depend on RTC interrupt delivery latency.
+ 	 */
+-	for (int i = 0; i < 160; ++i) {
++	for (int i = 0; !repair_expired(); ++i) {
+ 		k_sleep(K_MSEC(250));
+ 		zassert_ok(rtc_get_time(rtc, &current), "RTC read failed");
+ 		zassert_true(calendar_cmp(&current, &previous) >= 0,

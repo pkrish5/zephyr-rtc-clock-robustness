@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r02/test.c
++++ V2/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r02/test.c
+@@ -5,6 +5,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ static uint64_t calendar_key(const struct rtc_time *t)
+ {
+@@ -53,7 +56,7 @@
+ 	 * prescaler, the calendar advances at least 15 RTC seconds.
+ 	 * Polling avoids reliance on interrupt delivery latency.
+ 	 */
+-	for (int i = 0; i < 300; ++i) {
++	for (int i = 0; !repair_expired(); ++i) {
+ 		k_sleep(K_MSEC(100));
+ 		zassert_equal(rtc_get_time(rtc, &observed), 0, "RTC read failed");
+ 		check_calendar(&observed);

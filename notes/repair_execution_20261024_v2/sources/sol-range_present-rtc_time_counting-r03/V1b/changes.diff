@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r03/test.c
++++ V1b/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r03/test.c
+@@ -7,6 +7,9 @@
+ #include <zephyr/kernel.h>
+ #include <zephyr/sys/timeutil.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 0
++#include "repair_wait.h"
+ 
+ static int64_t calendar_seconds(const struct rtc_time *rtc_time)
+ {
+@@ -54,7 +57,7 @@
+ 	 * at most 18.83 real seconds. Allow 30 seconds of requested sleeps
+ 	 * for polling and scheduling overhead; the iteration count is finite.
+ 	 */
+-	for (int i = 0; i < 300 && !(crossed && advanced); ++i) {
++	for (int i = 0; !repair_expired() && !(crossed && advanced); ++i) {
+ 		int64_t current;
+ 
+ 		k_sleep(K_MSEC(100));

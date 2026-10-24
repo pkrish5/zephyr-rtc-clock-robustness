@@ -1,0 +1,69 @@
+--- V0/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c
++++ V2/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c
+@@ -9,6 +9,9 @@
+ #include <zephyr/device.h>
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/sys/atomic.h>
++#include <zephyr/kernel.h>
++#include <zephyr/sys/util.h>
++#include <stdint.h>
+ 
+ #define RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY (3)
+ #define RTC_TEST_ALARM_TEST_CALLED_DELAY     (10)
+@@ -62,12 +65,25 @@
+ 	atomic_set_bit(&callback_called_mask_even, id);
+ }
+ 
++static bool repair_all_called(void)
++{
++	for (uint16_t id = 0; id < alarms_count; ++id) {
++		bool called = (id % 2) ? atomic_test_bit(&callback_called_mask_odd, id)
++				       : atomic_test_bit(&callback_called_mask_even, id);
++		if (!called) {
++			return false;
++		}
++	}
++	return true;
++}
++
+ ZTEST(rtc_api, test_alarm_callback)
+ {
+ 	int ret;
+ 	atomic_val_t callback_called_mask_status_odd;
+ 	atomic_val_t callback_called_mask_status_even;
+ 	bool callback_called_status;
++	int64_t repair_deadline;
+ 
+ 	/* Disable alarm callback */
+ 	for (uint16_t i = 0; i < alarms_count; i++) {
+@@ -87,6 +103,7 @@
+ 	}
+ 
+ 	/* Set RTC time */
++	repair_deadline = k_uptime_get() + 20824;
+ 	ret = rtc_set_time(rtc, &test_rtc_time_set);
+ 	zassert_ok(ret, "Failed to set time");
+ 
+@@ -129,7 +146,13 @@
+ 			      "Alarm callback called prematurely");
+ 
+ 		/* Wait for alarm to trigger */
+-		k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));
++		while (!repair_all_called() && k_uptime_get() < repair_deadline) {
++			int64_t repair_remaining = repair_deadline - k_uptime_get();
++			if (repair_remaining <= 0) {
++				break;
++			}
++			k_sleep(K_MSEC(MIN(INT64_C(20), repair_remaining)));
++		}
+ 
+ 		/* Validate alarm callback called */
+ 		for (uint16_t j = 0; j < alarms_count; j++) {
+@@ -142,6 +165,7 @@
+ 		}
+ 
+ 		/* Reset RTC time */
++		repair_deadline = k_uptime_get() + 20824;
+ 		ret = rtc_set_time(rtc, &test_rtc_time_set);
+ 		zassert_ok(ret, "Failed to set time");
+ 	}

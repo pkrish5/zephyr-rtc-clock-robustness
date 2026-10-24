@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r03/test.c
++++ V1b/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r03/test.c
+@@ -4,6 +4,9 @@
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
+ #include <stdint.h>
++
++#define REPAIR_EVENT_WAIT 0
++#include "repair_wait.h"
+ 
+ static bool leap_year(int year)
+ {
+@@ -83,7 +86,7 @@
+ 	 * at its slow end. No equality with CPU-clock elapsed time is assumed.
+ 	 * Equal consecutive calendar readings are expected and permitted.
+ 	 */
+-	for (int i = 0; i < 600; ++i) {
++	for (int i = 0; !repair_expired(); ++i) {
+ 		k_sleep(K_MSEC(100));
+ 		zassert_equal(rtc_get_time(rtc, &observed), 0,
+ 			      "rtc_get_time failed during observation");

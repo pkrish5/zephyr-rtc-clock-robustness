@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r03/test.c
++++ V3/generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r03/test.c
+@@ -3,6 +3,9 @@
+ #include <zephyr/kernel.h>
+ #include <zephyr/sys/timeutil.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ ZTEST(rtc_calendar, test_calendar_counts_across_year_boundary)
+ {
+@@ -35,7 +38,7 @@
+                   "Initial RTC read did not match the set calendar time");
+ 
+     /* Allow up to 20 seconds for at least 10 RTC ticks, with scheduling margin. */
+-    for (int elapsed_ms = 0; elapsed_ms < 20000; elapsed_ms += 100) {
++    for (int elapsed_ms = 0; !repair_expired(); elapsed_ms += 100) {
+         k_sleep(K_MSEC(100));
+         zassert_ok(rtc_get_time(rtc, &current), "Failed to read RTC time");
+         current_seconds = timeutil_timegm(&current);

@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r04/test.c
++++ V1b/generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r04/test.c
+@@ -4,6 +4,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 0
++#include "repair_wait.h"
+ 
+ /* Seconds since 2024-12-31 23:59:55, for the dates this test observes. */
+ static int calendar_seconds(const struct rtc_time *t)
+@@ -50,7 +53,7 @@
+ 		     "initial calendar read differs from the set time");
+ 
+ 	/* Up to 25 CPU seconds allows ample margin for LSI clock variation. */
+-	for (int i = 0; i < 100 && previous < 10; ++i) {
++	for (int i = 0; !repair_expired() && previous < 10; ++i) {
+ 		int current;
+ 
+ 		k_sleep(K_MSEC(250));

@@ -1,0 +1,614 @@
+{
+  "registered_utc": "2026-10-24T17:00:38.706285+00:00",
+  "revision_sha256": "43cd03c9015cf8c85ed511a4e44242e3e5353390440ad34d7e4650130a2463b5",
+  "subjects": {
+    "astra-range_absent-rtc_alarm_pending-r05": {
+      "budget_seconds": "15",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "deadline = k_uptime_get() + 15000;",
+          "deadline = repair_deadline;"
+        ]
+      ],
+      "source_sha256": "91d05288a05af0314aef5d675191da491cfdbeaf2208054fdbba140f725309d7",
+      "source_sites": [
+        {
+          "lines": [
+            65
+          ],
+          "text": "deadline = k_uptime_get() + 15000;"
+        }
+      ]
+    },
+    "astra-range_absent-rtc_time_counting-r01": {
+      "budget_seconds": "40",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < MAX_POLLS",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "67c3485fd385d9a85fc186535242219c0a31b005dd56438b98fbce0058b86d25",
+      "source_sites": [
+        {
+          "lines": [
+            70
+          ],
+          "text": "i < MAX_POLLS"
+        }
+      ]
+    },
+    "astra-range_absent-rtc_time_counting-r02": {
+      "budget_seconds": "40",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "deadline = k_uptime_get() + OBSERVATION_MS;",
+          "deadline = repair_deadline;"
+        ]
+      ],
+      "source_sha256": "c1cb0dd214534c4dfc27b25be651c7c6d5a17d4fa690d34beaaa6f2676ab694f",
+      "source_sites": [
+        {
+          "lines": [
+            73
+          ],
+          "text": "deadline = k_uptime_get() + OBSERVATION_MS;"
+        }
+      ]
+    },
+    "astra-range_absent-rtc_time_counting-r03": {
+      "budget_seconds": "60",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 600",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "9eb79b92d5ce7c080606b29ccd8f2e9c3738433693aee52f4ae26fcb6fe07e44",
+      "source_sites": [
+        {
+          "lines": [
+            86
+          ],
+          "text": "i < 600"
+        }
+      ]
+    },
+    "astra-range_absent-rtc_time_counting-r04": {
+      "budget_seconds": "60",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "deadline = k_uptime_get() + 60000;",
+          "deadline = repair_deadline;"
+        ]
+      ],
+      "source_sha256": "09ef4b74590f2e3e8811297ee045d672c597bb21b2de6afc2a398649fe5b5785",
+      "source_sites": [
+        {
+          "lines": [
+            69
+          ],
+          "text": "deadline = k_uptime_get() + 60000;"
+        }
+      ]
+    },
+    "astra-range_absent-rtc_time_counting-r05": {
+      "budget_seconds": "60",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "deadline = k_uptime_get() + 60000;",
+          "deadline = repair_deadline;"
+        ]
+      ],
+      "source_sha256": "bff59e56598d76f741326876b83dd264a5a3425d2a5f7b9e65d9f7f68a0a99dd",
+      "source_sites": [
+        {
+          "lines": [
+            67
+          ],
+          "text": "deadline = k_uptime_get() + 60000;"
+        }
+      ]
+    },
+    "astra-range_present-rtc_time_counting-r01": {
+      "budget_seconds": "20",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "sample < 20",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "63f5e73760c528ea083bb4771f325cf399420fd289f05438cfbf07dd4a4be465",
+      "source_sites": [
+        {
+          "lines": [
+            71
+          ],
+          "text": "sample < 20"
+        }
+      ]
+    },
+    "astra-range_present-rtc_time_counting-r02": {
+      "budget_seconds": "30",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "k_uptime_get() - start <= OBSERVATION_MS",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "508b5eab755a7a9b0d77896bfc9915347f903e454f035edd23f6bc4659004ce2",
+      "source_sites": [
+        {
+          "lines": [
+            79
+          ],
+          "text": "k_uptime_get() - start <= OBSERVATION_MS"
+        }
+      ]
+    },
+    "astra-range_present-rtc_time_counting-r03": {
+      "budget_seconds": "20",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < MAX_POLLS",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "e155a5f3758448e27024f797bc528f5ea726bab407e2a12ea20f7d48c0c7abfa",
+      "source_sites": [
+        {
+          "lines": [
+            86
+          ],
+          "text": "i < MAX_POLLS"
+        }
+      ]
+    },
+    "astra-range_present-rtc_time_counting-r04": {
+      "budget_seconds": "24",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < MAX_POLLS",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "3893a3d9601c0a10edf76732ec21777e065c6eb3c3ce1a41d1d52bda21e1b562",
+      "source_sites": [
+        {
+          "lines": [
+            92
+          ],
+          "text": "i < MAX_POLLS"
+        }
+      ]
+    },
+    "astra-range_present-rtc_time_counting-r05": {
+      "budget_seconds": "20",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < MAX_POLLS",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "b7bd2b7c7434dbefd5e0d88a01a1e54fab66fc5e6a7412c383dad3b6d119ff7b",
+      "source_sites": [
+        {
+          "lines": [
+            83
+          ],
+          "text": "i < MAX_POLLS"
+        }
+      ]
+    },
+    "human-rtc_alarm_callback": {
+      "budget_seconds": "13",
+      "mode": "approved_existing_preview",
+      "replacements": [],
+      "source_sha256": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792",
+      "source_sites": [
+        "saved V1/V2/V3 example diffs"
+      ]
+    },
+    "human-rtc_alarm_pending": {
+      "budget_seconds": "13",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_PENDING_DELAY));",
+          "repair_fixed_wait();"
+        ]
+      ],
+      "source_sha256": "6eaee3162c2ffb14736e241c9d80454db6a22bed9a697d24228ad4919810ed29",
+      "source_sites": [
+        {
+          "lines": [
+            198
+          ],
+          "text": "k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_PENDING_DELAY));"
+        }
+      ]
+    },
+    "human-rtc_time_counting": {
+      "budget_seconds": "14.5",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < RTC_TEST_TIME_COUNTING_POLL_LIMIT",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "80d893f8ea9ff9a1bcb21e86b0a23bf1652037c37b4aaa9aa34fa4850316d55e",
+      "source_sites": [
+        {
+          "lines": [
+            37,
+            58
+          ],
+          "text": "i < RTC_TEST_TIME_COUNTING_POLL_LIMIT"
+        }
+      ]
+    },
+    "luna-range_absent-rtc_time_counting-r01": {
+      "budget_seconds": "20",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "deadline = k_uptime_get() + OBSERVATION_LIMIT_SECONDS * MSEC_PER_SEC;",
+          "deadline = repair_deadline;"
+        ]
+      ],
+      "source_sha256": "c4ce1faabae8b4f762c411922dcb67d8b71ca139a4398ca9ecc159a5308d619c",
+      "source_sites": [
+        {
+          "lines": [
+            52
+          ],
+          "text": "deadline = k_uptime_get() + OBSERVATION_LIMIT_SECONDS * MSEC_PER_SEC;"
+        }
+      ]
+    },
+    "luna-range_absent-rtc_time_counting-r02": {
+      "budget_seconds": "30",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "elapsed_ms < OBSERVATION_BOUND_MS",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "62e32151c494a9a936228ed70b221d3c2ae710e467ad3fef0bec14df97596ce8",
+      "source_sites": [
+        {
+          "lines": [
+            51
+          ],
+          "text": "elapsed_ms < OBSERVATION_BOUND_MS"
+        }
+      ]
+    },
+    "luna-range_absent-rtc_time_counting-r03": {
+      "budget_seconds": "20",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "elapsed_ms < 20000",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "8d9e66aba4657f2ba0c06e292fdf6e0e0879436db4985b19dc6ea6e31b2193d0",
+      "source_sites": [
+        {
+          "lines": [
+            38
+          ],
+          "text": "elapsed_ms < 20000"
+        }
+      ]
+    },
+    "luna-range_absent-rtc_time_counting-r05": {
+      "budget_seconds": "30",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 30",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "307ccc752c3db05ee8478b6d248e455661f74d0ec79074782e7502bb02aab136",
+      "source_sites": [
+        {
+          "lines": [
+            37
+          ],
+          "text": "i < 30"
+        }
+      ]
+    },
+    "luna-range_present-rtc_time_counting-r01": {
+      "budget_seconds": "60",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < RTC_OBSERVATION_BOUND_SECONDS",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "b82ca2d47766fde8e9ff300b89c9f1ab36433074e50e54a63caea293ddfe1d7a",
+      "source_sites": [
+        {
+          "lines": [
+            75
+          ],
+          "text": "i < RTC_OBSERVATION_BOUND_SECONDS"
+        }
+      ]
+    },
+    "luna-range_present-rtc_time_counting-r02": {
+      "budget_seconds": "60",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "elapsed_ms < RTC_OBSERVATION_BOUND_MS",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "bbdf624e799dd13e733b09323a5f21b23f5804cd117f7fbe26accc1e607ec3c4",
+      "source_sites": [
+        {
+          "lines": [
+            68
+          ],
+          "text": "elapsed_ms < RTC_OBSERVATION_BOUND_MS"
+        }
+      ]
+    },
+    "luna-range_present-rtc_time_counting-r03": {
+      "budget_seconds": "60",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "deadline = k_uptime_get() + RTC_OBSERVATION_BOUND_MS;",
+          "deadline = repair_deadline;"
+        ]
+      ],
+      "source_sha256": "40b4fa1547126c51ddacb7164880d8cc5add3b9d13d793a011c565067c7d037b",
+      "source_sites": [
+        {
+          "lines": [
+            60
+          ],
+          "text": "deadline = k_uptime_get() + RTC_OBSERVATION_BOUND_MS;"
+        }
+      ]
+    },
+    "sol-range_absent-rtc_alarm_pending-r01": {
+      "budget_seconds": "16",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "deadline = k_uptime_get() + 16000;",
+          "deadline = repair_deadline;"
+        ]
+      ],
+      "source_sha256": "986318144e5ff3355d8a97fb506c70abfcd30e19fd7dd70e22de24f015c7575e",
+      "source_sites": [
+        {
+          "lines": [
+            57
+          ],
+          "text": "deadline = k_uptime_get() + 16000;"
+        }
+      ]
+    },
+    "sol-range_absent-rtc_alarm_pending-r03": {
+      "budget_seconds": "15",
+      "mode": "approved_existing_preview",
+      "replacements": [],
+      "source_sha256": "ba3fafc7fbac98b08be9e0fb6fbfcaad4f65420232024491d3f231d3b8a47eda",
+      "source_sites": [
+        "saved V1/V2/V3 example diffs"
+      ]
+    },
+    "sol-range_absent-rtc_time_counting-r01": {
+      "budget_seconds": "60",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 600",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "3f5e5b3201563b155413c0692d64db365d8087be0714d8a3c4bd97b7569ee75e",
+      "source_sites": [
+        {
+          "lines": [
+            45
+          ],
+          "text": "i < 600"
+        }
+      ]
+    },
+    "sol-range_absent-rtc_time_counting-r02": {
+      "budget_seconds": "30",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 30",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "8e64862e0be6c6506eaeb09172e4462fa02c68fc05291db2223da9f1c48e69b9",
+      "source_sites": [
+        {
+          "lines": [
+            57
+          ],
+          "text": "i < 30"
+        }
+      ]
+    },
+    "sol-range_absent-rtc_time_counting-r03": {
+      "budget_seconds": "45",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 450",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "e708436eb6c0c30c502b79d85c52517e433d8ff52437d411af440035c5b8ab69",
+      "source_sites": [
+        {
+          "lines": [
+            72
+          ],
+          "text": "i < 450"
+        }
+      ]
+    },
+    "sol-range_absent-rtc_time_counting-r04": {
+      "budget_seconds": "25",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 100",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "7356219b9afce9840b1161e28f34641aeca1453fca36135de3ca00b2a31abd25",
+      "source_sites": [
+        {
+          "lines": [
+            53
+          ],
+          "text": "i < 100"
+        }
+      ]
+    },
+    "sol-range_absent-rtc_time_counting-r05": {
+      "budget_seconds": "30",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 300",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "46a1d39f2ea21c3546e8f37b1018a2c500fdd377ea53646ba24e3f7d52ff1835",
+      "source_sites": [
+        {
+          "lines": [
+            45
+          ],
+          "text": "i < 300"
+        }
+      ]
+    },
+    "sol-range_present-rtc_time_counting-r01": {
+      "budget_seconds": "40",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "k_uptime_get() - started_ms < 40000",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "2281d36d38ad083ce9748c355241efd77be5902fa828623b6c491949dd267d38",
+      "source_sites": [
+        {
+          "lines": [
+            51
+          ],
+          "text": "k_uptime_get() - started_ms < 40000"
+        }
+      ]
+    },
+    "sol-range_present-rtc_time_counting-r02": {
+      "budget_seconds": "30",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 300",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "d1b1cf8549333502b3f0f455fa2e563f7fe22410363884f90298123d8ed419b7",
+      "source_sites": [
+        {
+          "lines": [
+            56
+          ],
+          "text": "i < 300"
+        }
+      ]
+    },
+    "sol-range_present-rtc_time_counting-r03": {
+      "budget_seconds": "30",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 300",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "537ff865f7b7fa5ec97e25d4b36c66f55a0ca324455d915d8a7936cd3a37e576",
+      "source_sites": [
+        {
+          "lines": [
+            57
+          ],
+          "text": "i < 300"
+        }
+      ]
+    },
+    "sol-range_present-rtc_time_counting-r04": {
+      "budget_seconds": "40",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "i < 160",
+          "!repair_expired()"
+        ]
+      ],
+      "source_sha256": "1534119ba39ecf710d7bd2ad3b3c0743d84b6068b142ab65d9beb8f1205a0d90",
+      "source_sites": [
+        {
+          "lines": [
+            47
+          ],
+          "text": "i < 160"
+        }
+      ]
+    },
+    "sol-range_present-rtc_time_counting-r05": {
+      "budget_seconds": "30",
+      "mode": "frozen_source_site_substitution",
+      "replacements": [
+        [
+          "deadline = k_uptime_get() + 30000;",
+          "deadline = repair_deadline;"
+        ]
+      ],
+      "source_sha256": "0324173db5fd8ee4c8ba1ec7a41b12bb26fdfc0285d8118beab64835673745e1",
+      "source_sites": [
+        {
+          "lines": [
+            47
+          ],
+          "text": "deadline = k_uptime_get() + 30000;"
+        }
+      ]
+    }
+  }
+}

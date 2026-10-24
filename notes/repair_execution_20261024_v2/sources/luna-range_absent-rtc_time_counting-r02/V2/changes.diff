@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r02/test.c
++++ V2/generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r02/test.c
+@@ -2,6 +2,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ #define OBSERVATION_BOUND_MS 30000
+ #define POLL_INTERVAL_MS 250
+@@ -48,7 +51,7 @@
+ 		     (long long)previous, (long long)initial);
+ 
+ 	int elapsed_ms = 0;
+-	while (elapsed_ms < OBSERVATION_BOUND_MS && previous < initial + 10) {
++	while (!repair_expired() && previous < initial + 10) {
+ 		k_sleep(K_MSEC(POLL_INTERVAL_MS));
+ 		elapsed_ms += POLL_INTERVAL_MS;
+ 		zassert_ok(rtc_get_time(rtc, &observed), "Could not read RTC calendar");

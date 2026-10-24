@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r02/test.c
++++ V2/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r02/test.c
+@@ -4,6 +4,9 @@
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
+ #include <stdint.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ #define OBSERVATION_MS 40000
+ #define POLL_MS 100
+@@ -70,7 +73,7 @@
+ 	 * seconds. Forty seconds provides ample phase and scheduling margin.
+ 	 * Uptime only bounds observation; progress is measured by calendar.
+ 	 */
+-	deadline = k_uptime_get() + OBSERVATION_MS;
++	deadline = repair_deadline;
+ 	while (k_uptime_get() < deadline) {
+ 		k_sleep(K_MSEC(POLL_MS));
+ 		zassert_equal(rtc_get_time(rtc, &observed), 0,

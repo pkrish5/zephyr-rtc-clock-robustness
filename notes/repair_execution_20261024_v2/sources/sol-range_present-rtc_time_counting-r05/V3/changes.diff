@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r05/test.c
++++ V3/generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r05/test.c
+@@ -3,6 +3,9 @@
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ static int calendar_cmp(const struct rtc_time *a, const struct rtc_time *b)
+ {
+@@ -44,7 +47,7 @@
+ 	/* At 17 kHz with a 128 x 250 prescaler, ten RTC seconds take
+ 	 * under 19 wall seconds. Allow 30 seconds for polling and scheduling.
+ 	 */
+-	deadline = k_uptime_get() + 30000;
++	deadline = repair_deadline;
+ 	do {
+ 		zassert_true(k_uptime_get() < deadline,
+ 			     "RTC did not reach ten seconds within 30 seconds");

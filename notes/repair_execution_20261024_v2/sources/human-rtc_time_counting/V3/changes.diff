@@ -1,0 +1,29 @@
+--- V0/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_time_incrementing.c
++++ V3/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_time_incrementing.c
+@@ -10,6 +10,9 @@
+ #include <zephyr/sys/timeutil.h>
+ 
+ #include <time.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ /* Wed Dec 31 2025 23:59:55 GMT+0000 */
+ #define RTC_TEST_TIME_COUNTING_SET_TIME	  (1767225595UL)
+@@ -34,7 +37,7 @@
+ 
+ 	zassert_equal(rtc_set_time(rtc, &datetime_set), 0, "Failed to set time");
+ 
+-	for (i = 0; i < RTC_TEST_TIME_COUNTING_POLL_LIMIT; i++) {
++	for (i = 0; !repair_expired(); i++) {
+ 		/* Get time */
+ 		zassert_equal(rtc_get_time(rtc, &datetime_get), 0, "Failed to get time");
+ 
+@@ -55,6 +58,6 @@
+ 		k_msleep(500);
+ 	}
+ 
+-	zassert_true(i < RTC_TEST_TIME_COUNTING_POLL_LIMIT,
++	zassert_true(!repair_expired(),
+ 		     "Timeout occurred waiting for time to increment");
+ }

@@ -1,0 +1,44 @@
+[
+  {
+    "diff_path": "notes/repair_execution_20261024_v2/sources/sol-range_absent-rtc_alarm_pending-r03/V1/changes.diff",
+    "source_path": "notes/repair_execution_20261024_v2/sources/sol-range_absent-rtc_alarm_pending-r03/V1/test.c",
+    "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+    "unchanged": false,
+    "variant": "V1"
+  },
+  {
+    "diff_path": "notes/repair_execution_20261024_v2/sources/sol-range_absent-rtc_alarm_pending-r03/V1b/changes.diff",
+    "source_path": "notes/repair_execution_20261024_v2/sources/sol-range_absent-rtc_alarm_pending-r03/V1b/test.c",
+    "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+    "unchanged": false,
+    "variant": "V1b"
+  },
+  {
+    "diff_path": "notes/repair_execution_20261024_v2/sources/sol-range_absent-rtc_time_counting-r01/V1/changes.diff",
+    "source_path": "notes/repair_execution_20261024_v2/sources/sol-range_absent-rtc_time_counting-r01/V1/test.c",
+    "suite_id": "sol-range_absent-rtc_time_counting-r01",
+    "unchanged": true,
+    "variant": "V1"
+  },
+  {
+    "diff_path": "notes/repair_execution_20261024_v2/sources/sol-range_absent-rtc_time_counting-r01/V1b/changes.diff",
+    "source_path": "notes/repair_execution_20261024_v2/sources/sol-range_absent-rtc_time_counting-r01/V1b/test.c",
+    "suite_id": "sol-range_absent-rtc_time_counting-r01",
+    "unchanged": false,
+    "variant": "V1b"
+  },
+  {
+    "diff_path": "notes/repair_execution_20261024_v2/sources/human-rtc_alarm_callback/V1/changes.diff",
+    "source_path": "notes/repair_execution_20261024_v2/sources/human-rtc_alarm_callback/V1/test.c",
+    "suite_id": "human-rtc_alarm_callback",
+    "unchanged": false,
+    "variant": "V1"
+  },
+  {
+    "diff_path": "notes/repair_execution_20261024_v2/sources/human-rtc_alarm_callback/V1b/changes.diff",
+    "source_path": "notes/repair_execution_20261024_v2/sources/human-rtc_alarm_callback/V1b/test.c",
+    "suite_id": "human-rtc_alarm_callback",
+    "unchanged": false,
+    "variant": "V1b"
+  }
+]

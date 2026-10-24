@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r05/test.c
++++ V1/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r05/test.c
+@@ -5,6 +5,9 @@
+ #include <zephyr/ztest.h>
+ #include <stdbool.h>
+ #include <stdint.h>
++
++#define REPAIR_EVENT_WAIT 0
++#include "repair_wait.h"
+ 
+ static const struct device *const rtc = DEVICE_DT_GET(DT_ALIAS(rtc));
+ 
+@@ -62,7 +65,7 @@
+ 	/* Target is 10 RTC seconds away. Allow another 5 seconds for tick
+ 	 * phase, polling and scheduling; uptime bounds even a stopped RTC.
+ 	 */
+-	const int64_t deadline = k_uptime_get() + 15000;
++	const int64_t deadline = repair_deadline;
+ 
+ 	zassert_ok(rtc_alarm_set_time(rtc, 0, mask, &target),
+ 		   "Cannot configure alarm");

@@ -1,0 +1,21 @@
+--- V0/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r05/test.c
++++ V2/generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r05/test.c
+@@ -4,6 +4,9 @@
+ #include <zephyr/kernel.h>
+ #include <zephyr/ztest.h>
+ #include <stdint.h>
++
++#define REPAIR_EVENT_WAIT 1
++#include "repair_wait.h"
+ 
+ /* Calendar seconds relative to 2025-12-31 00:00:00. */
+ static int32_t calendar_seconds(const struct rtc_time *t)
+@@ -64,7 +67,7 @@
+ 	 * tolerance and polling overhead. Normally this exits after about ten
+ 	 * RTC seconds. Equal reads are expected with 250 ms polling.
+ 	 */
+-	deadline = k_uptime_get() + 60000;
++	deadline = repair_deadline;
+ 	while (k_uptime_get() < deadline) {
+ 		k_sleep(K_MSEC(250));
+ 		zassert_equal(rtc_get_time(rtc, &observed), 0,
