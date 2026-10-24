@@ -678,3 +678,72 @@ reproduction checks, not additions to the original paper's denominators.
 STOP after this report for explicit user approval. No production or normal
 queue job has been submitted. Standing infrastructure approval does not
 authorize a new scientific phase or bypass the next production approval.
+
+
+## 2026-10-24 Phase 2 A–B prospective completion, before new execution
+
+User approval follows the exact 816-case Phase 1 calibration. Measure only the
+16 IDs in `analysis/rtc_threshold_sample_v2/sample.json`, field
+`unsampled_prediction_only_run_ids`, using their unchanged original nominal
+ELFs and sources from `results/rtc_timing_mutants_two_faults/manifest.json`.
+Run the original shared 100 seeds and both exact legal endpoints: 1,632
+primary cases. These IDs are all calendar-counting suites. Reuse the calibrated
+Linux portable Renode image with actual .NET 8.0.21, SIF SHA-256
+`94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1`.
+
+Frozen forecasts, sample lock, saved platform bytes, test sources, ELFs, original
+simulation implementation and old raw records stay unchanged. New adapters
+bind sealed inputs and write exclusively to a new Phase 2 result directory.
+Check protected-file hashes before and after. Do not fill the 12 historical
+missing verdicts. No retries until pass: startup errors, timeouts and other
+missing outcomes remain separately reported. Compare the 1,600 new seeded
+verdicts with the original forecasts exactly by seed, not only by totals;
+endpoints are separate measured challenges, not newly claimed frozen forecasts.
+Report every mismatch without revising predictions. Replay each explicit
+assertion failure in a fresh process and run the frozen task reference at
+each distinct failing task/frequency, retaining unknown attribution pending
+source, replay and reference evidence. Preserve the known raw tuple/list
+comparison flag and independently audit persisted fields and raw trace hashes.
+
+Normal queue, allocation TRA25006, one whole node, 32 Launcher workers with
+memory capped at 80% using the Phase 1 resource allowance. Conservative primary
+runtime: 120 + ceil(1632/32) * 83.4 * 1.5 = 6500.1 seconds, approximately
+1.81 node-hours/SUs at one SU per node-hour. Request three hours (reservation
+ceiling 3 SUs); additional failure replays/references consume that reservation
+and never justify an unapproved additional job. Report node, Slurm ID, actual
+Apptainer 1.4.1 version, image hash and plan hash in each record. Phase 3 must
+present before/after numbers for approval before any manuscript change.
+
+## 2026-10-24 Phase 2 D zero-fault controls, before new execution
+
+After A–B, rebuild and nominally run the 66 eligible generated suites and three
+upstream cases for each of three distinct disabled implementations: original
+production RTC driver at 32 kHz (the shared disabled fast/slow oscillator
+implementation); frozen `rtc_ll_stm32_quality.c` with every QUALITY switch and
+delay explicitly zero (disabled nonarrival implementation); and frozen
+`rtc_ll_stm32_alarm_offset.c` with QUALITY_ALARM_OFFSET_SIGN=0 (shared disabled
+positive/negative offset implementation). No fault-driver source edits.
+The two signed offsets share exactly the same zero variant and are not
+misrepresented as two independent controls. Add three task references per
+implementation: 207 primary controls plus nine reference controls = 216
+build/run attempts. Offset-specific references use their frozen readback
+sources; other references use the original reference triage sources.
+
+Compile unchanged test sources/configurations with the pinned container
+Zephyr commit and SDK. Preserve the board, overlays and supported alarm-mask
+define. Record commands, macros, source/config/driver/overlay/build-log and new
+ELF hashes; store new ELFs and logs only under the new D directory. Build
+failures are distinct from selected-case assertion failures and infrastructure
+missingness. Run each successful build once at nominal clock using the
+unchanged quality simulator loop; no retries or substitutions. Report outcomes
+by implementation, task, model and prompt, with references separate. Any
+unexpected selected-case failure is retained and triggers a stop before repair
+execution; it does not authorize modifying the harness or test inputs.
+
+Use one normal-queue whole node, TRA25006, Launcher cap 16 and two compiler
+workers per build. Reserve 4 GiB per worker under the same 80% memory ceiling.
+A provisional estimate uses 300 seconds per build plus 125.1 seconds per run:
+120 + ceil(216/16) * 425.1 = 6071.4 seconds (1.69 node-hours/SUs); build time is
+an allowance, not a measured throughput claim. Request four hours (reservation
+ceiling 4 SUs). Confirm and report this estimate at submission. No repairs or
+LLM repair generation is authorized by this control job.
