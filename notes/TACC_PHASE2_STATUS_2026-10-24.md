@@ -249,3 +249,67 @@ still requires separate approval. After complete passing D controls, restore
 the already-approved E normal jobs with the same scientific plan and sealed
 source cohort, using the validated cache environment. E2 stays held and
 Phase 3 must precede any paper edits.
+
+
+## D cache retry submitted on development
+
+Job **3532515**, development / TRA25006, one node, two-hour limit, cap 16.
+Provisional estimate 1.69 SUs, reservation ceiling 2 SUs. This is infrastructure
+attempt 2 after the cancelled read-only-cache attempt; task 0 must build and
+pass before the remaining 215 controls launch. New D v2 plan hash matched on
+LS6; the original D/E worker code and input hashes remain unchanged. Receipt:
+`artifacts/tacc_phase2_20261024_v1/d_cache_v2_submission.json`. E remains
+unstarted and cancelled pending validation. The A–B read-only packing job
+3532492 reached COMPLETING; archive return and local verification are next.
+
+The D v2 first-control gate succeeded: the development stdout entered Launcher
+for tasks 1..215 only after task 0 built and passed. Thus the writable-cache
+fix passed its first planned control; full D outcomes remain pending. A bounded
+read-only SSH check succeeded after pausing the stalled rsync client; there
+is no evidence of credential expiry. Protected-file post-submission audit:
+30,067 unchanged, SHA-256
+24e6dc335f4f647b99c71532994459a2b8812875a15abef14bed8e0b30e5da40.
+
+
+## A–B complete raw return and independent local verification
+
+The read-only compute packaging job 3532492 completed. A single compressed
+rsync transfer succeeded after earlier uncompressed attempts stalled. Measured
+throughput was approximately 6 KB/s; authenticated read-only SSH still worked
+after pausing transfer traffic, so no account change or authentication retry
+was performed. Archive SHA-256:
+1704dc2bc2f2b71f7d2fdb6c49319469704603a895defaaf3253f03585fd40ea.
+
+All 13,070 archive members were checked for relative paths, regular files or
+directories only, then extracted into a new local complete-return directory.
+The original report adapter independently rehashed returned trace/UART/monitor
+files and checked required provenance. Its result exactly equals the compute
+report: 1,632/1,632 passes, 1,600/1,600 seeded forecast matches, zero
+mismatches and missing verdicts. Source: returned-ab-complete/local-verification.json
+under artifacts/tacc_phase2_20261024_v1. Partial earlier transfer directories
+and original frozen results remain intact. No manuscript counts were edited.
+
+Latest D v2 progress: 3532515 RUNNING on c307-005, elapsed 10:02, 83 build
+records and 82 nominal records present. No STOP marker was reported. These
+are progress counts only, not a final control result. E has not started.
+
+
+## A–B derived comparison prepared for later Phase 3 review
+
+New read-only adapter `harness/tacc_phase2/compare_ab.py` verifies all old
+suite summaries against their original seeded records; checks all new raw
+output hashes, original source/ELF hashes and schedule; and verifies the
+existing mutant-record hashes before calculating combined yields. It writes
+only a new derived file, never the frozen analysis ledgers.
+
+`returned-ab-complete/ab-derived-comparison.json` records source-file hashes
+and before/after values: measured suites 50 -> 66; forecast-only 16 -> 0;
+seed slots 5,000 -> 6,600; passing seeds 4,951 -> 6,551; assertion failures
+37 -> 37; harness errors 12 -> 12; confirmed robust attempts 39 -> 55;
+robust plus slow/nonarrival detections 29 -> 38; stricter non-padding Q
+5 -> 14; evaluated predictable suites 14 -> 30 and exact verdict matches
+1,400/1,400 -> 3,000/3,000. These are A–B-only derived values for the
+Phase 3 review, not manuscript changes; D and E remain pending.
+
+At elapsed 11:39, D v2 had 101 build and 99 nominal records, no STOP marker.
+No E source generation, compilation or execution has started.
