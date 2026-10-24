@@ -441,3 +441,18 @@ Consecutive infrastructure failures are zero after this successful attempt.
 **Execution is STOPPED pending user approval. No normal-queue job or
 further experiment is submitted.** Future production requires the separate
 job/node/wall-time/SU proposal and approval specified by the user.
+
+
+## 2026-10-24 infrastructure standing-approval handoff: Phase 2 cache path
+
+Phase 1's completed 816/816 verdict and trace agreement remains unchanged.
+Phase 2 D job 3532338 hit a shared read-only Zephyr compiler-cache path error;
+the job was cancelled and its raw attempt preserved. Pending E jobs 3532458
+and 3532464 were cancelled before repair execution. A new development-only
+D v2 retry sets container XDG_CACHE_HOME=/var/tmp, already privately backed
+by WORK, with unchanged SIF, original workers, sources, ELFs and forecasts.
+The new wrapper validates task 0 once before the remaining 215 controls.
+This is infrastructure attempt 2 after the initial D cache failure; stop
+if three consecutive infrastructure attempts fail. Full causes, plan seals
+and before/after hash audits are logged in the Phase 2 status note and DESIGN.
+No normal E replacement is released until the D fix is validated.

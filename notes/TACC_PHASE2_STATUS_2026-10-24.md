@@ -212,3 +212,40 @@ local raw verification is made. The per-file rsync was paused to avoid
 blocking status/submission traffic on the shared connection. Complete raw
 artifact return and independent verification remain required before the
 Phase 3 before/after report. No E outcome has been observed yet.
+
+
+## 2026-10-24 Phase 2 compiler-cache infrastructure correction, before E builds
+
+D job 3532338 encountered a common build-environment failure: pinned Zephyr
+attempted writes beneath `/opt/zephyrproject/zephyr/.cache` inside the read-only
+SIF. Two independently inspected initial build logs show this same compiler
+capability-cache error. These are infrastructure build losses, not selected
+ztest assertion failures or evidence against a source. The attempt was
+cancelled and its existing logs/build records remain preserved in D v1.
+Unstarted E jobs 3532458 and 3532464 were cancelled before any repair build/run.
+Do not substitute successful retries into those original failed records.
+
+Under the standing infrastructure-only development-queue authorization,
+validate a path-only fix in a new D v2 bundle/results directory. Set explicit
+container XDG_CACHE_HOME=/var/tmp using APPTAINERENV_XDG_CACHE_HOME; /var/tmp is
+already bound to a private per-task runtime/work directory under WORK.
+Pinned `cmake/modules/user_cache.cmake` prefers this writable cache location.
+No SIF rebuild, firmware source change, driver modification, compiler flag
+change, frozen ELF change, forecast change, or simulation-loop change.
+Both the original D Python worker and original E build/simulation adapters
+remain byte-identical; new shell packaging wrappers only set the cache path
+and allow development execution for the D retry.
+
+D v2 keeps the exact 216-task roster, source/config/driver hashes and frozen
+simulation hashes. Its new plan SHA-256 is
+61b8715bce7400dc5a380599731f970d8657defb946584875973cdfde81e6518.
+Run task 0 once, confirm its successful build and nominal pass, then pack
+only tasks 1..215. If that first control fails, stop before launching the
+remainder. Report the actual development partition in every record. Source
+and raw-result immutability checks precede and follow the fix; count the
+cancelled D job as infrastructure attempt 1. Stop after three consecutive
+failed infrastructure attempts; any required simulation/test-input change
+still requires separate approval. After complete passing D controls, restore
+the already-approved E normal jobs with the same scientific plan and sealed
+source cohort, using the validated cache environment. E2 stays held and
+Phase 3 must precede any paper edits.
