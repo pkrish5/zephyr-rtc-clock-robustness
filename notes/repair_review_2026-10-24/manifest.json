@@ -1,0 +1,86 @@
+{
+  "amendment_sha256": "1755ac857093e2bd65920c615a357e23b8b8bf730586e2a9b5d7ba85993037bd",
+  "created_utc": "2026-10-24T16:21:12.673654+00:00",
+  "examples": [
+    {
+      "all_original_assertions_retained": true,
+      "diff_path": "notes/repair_review_2026-10-24/examples/upstream_callback/V1/changes.diff",
+      "diff_sha256": "ed4b2a1191f34d42ea53c9d12995a59ad6696162029babbb3669e95f8069eb9b",
+      "original_assertion_invocations": 12,
+      "original_sha256": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792",
+      "original_source_path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+      "preview_assertion_invocations": 12,
+      "preview_path": "notes/repair_review_2026-10-24/examples/upstream_callback/V1/test.c",
+      "preview_sha256": "83820c080eac4a4cdbe0407f8f276bcbf7024b4b5fa84072ddf8ac52fa09e1dd",
+      "suite_id": "human-rtc_alarm_callback",
+      "variant": "V1"
+    },
+    {
+      "all_original_assertions_retained": true,
+      "diff_path": "notes/repair_review_2026-10-24/examples/upstream_callback/V2/changes.diff",
+      "diff_sha256": "6db523ad52e9463cd01e2fb91e8b70ad383b55cd8bb9d012116dbf1d0b91b566",
+      "original_assertion_invocations": 12,
+      "original_sha256": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792",
+      "original_source_path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+      "preview_assertion_invocations": 12,
+      "preview_path": "notes/repair_review_2026-10-24/examples/upstream_callback/V2/test.c",
+      "preview_sha256": "c3b858e55c82e2f3757993cfe965f8db76b542d7b89b17bd02334284df4cd54c",
+      "suite_id": "human-rtc_alarm_callback",
+      "variant": "V2"
+    },
+    {
+      "all_original_assertions_retained": true,
+      "diff_path": "notes/repair_review_2026-10-24/examples/upstream_callback/V3/changes.diff",
+      "diff_sha256": "f08cb9705c105afcb18b00b139fcabac5e4f2f5ab21c7bad399902601fcfb924",
+      "original_assertion_invocations": 12,
+      "original_sha256": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792",
+      "original_source_path": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+      "preview_assertion_invocations": 21,
+      "preview_path": "notes/repair_review_2026-10-24/examples/upstream_callback/V3/test.c",
+      "preview_sha256": "b1dccbd08d6b222f3bc8e806f997d60f596f01ba3fabe796c28f23f130bbbe2e",
+      "suite_id": "human-rtc_alarm_callback",
+      "variant": "V3"
+    },
+    {
+      "all_original_assertions_retained": true,
+      "diff_path": "notes/repair_review_2026-10-24/examples/generated_sol_pending/V1/changes.diff",
+      "diff_sha256": "e532382361f41638a966de9e6c4d5b11caff6417318e8d419f0294c7300c286a",
+      "original_assertion_invocations": 16,
+      "original_sha256": "ba3fafc7fbac98b08be9e0fb6fbfcaad4f65420232024491d3f231d3b8a47eda",
+      "original_source_path": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r03/test.c",
+      "preview_assertion_invocations": 16,
+      "preview_path": "notes/repair_review_2026-10-24/examples/generated_sol_pending/V1/test.c",
+      "preview_sha256": "eba6afecc4866e10144bf1ebe21d5d542341625a3024b72102eb1fc501409b39",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+      "variant": "V1"
+    },
+    {
+      "all_original_assertions_retained": true,
+      "diff_path": "notes/repair_review_2026-10-24/examples/generated_sol_pending/V2/changes.diff",
+      "diff_sha256": "891bb9a0c2f3db5ad58ba1bc3dcfad5a0361d738e9388e3734312291d5dae76b",
+      "original_assertion_invocations": 16,
+      "original_sha256": "ba3fafc7fbac98b08be9e0fb6fbfcaad4f65420232024491d3f231d3b8a47eda",
+      "original_source_path": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r03/test.c",
+      "preview_assertion_invocations": 16,
+      "preview_path": "notes/repair_review_2026-10-24/examples/generated_sol_pending/V2/test.c",
+      "preview_sha256": "968328080db6687cfacbafd6203697ab2c001425479edbc218ecd765905856c6",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+      "variant": "V2"
+    },
+    {
+      "all_original_assertions_retained": true,
+      "diff_path": "notes/repair_review_2026-10-24/examples/generated_sol_pending/V3/changes.diff",
+      "diff_sha256": "0a3809201442d9758274f44dc4f4006cc4555f5bbd770c333f6e2903a7bc70bc",
+      "original_assertion_invocations": 16,
+      "original_sha256": "ba3fafc7fbac98b08be9e0fb6fbfcaad4f65420232024491d3f231d3b8a47eda",
+      "original_source_path": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r03/test.c",
+      "preview_assertion_invocations": 19,
+      "preview_path": "notes/repair_review_2026-10-24/examples/generated_sol_pending/V3/test.c",
+      "preview_sha256": "a41d07f42aabf0386963faee856841921cfe89d7b293878c9586d8531f7fab8a",
+      "suite_id": "sol-range_absent-rtc_alarm_pending-r03",
+      "variant": "V3"
+    }
+  ],
+  "roster_sha256": "5058d50f938cd54e5c62abdf07eed082097f02a5fe410c89029073aae8b6ab49",
+  "status": "REVIEW_ONLY_NOT_BUILT_OR_RUN"
+}

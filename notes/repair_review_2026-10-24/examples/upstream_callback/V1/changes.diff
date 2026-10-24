@@ -1,0 +1,45 @@
+--- V0/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c
++++ V1/subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c
+@@ -9,6 +9,9 @@
+ #include <zephyr/device.h>
+ #include <zephyr/drivers/rtc.h>
+ #include <zephyr/sys/atomic.h>
++#include <zephyr/kernel.h>
++#include <zephyr/sys/util.h>
++#include <stdint.h>
+ 
+ #define RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY (3)
+ #define RTC_TEST_ALARM_TEST_CALLED_DELAY     (10)
+@@ -68,6 +71,7 @@
+ 	atomic_val_t callback_called_mask_status_odd;
+ 	atomic_val_t callback_called_mask_status_even;
+ 	bool callback_called_status;
++	int64_t repair_deadline;
+ 
+ 	/* Disable alarm callback */
+ 	for (uint16_t i = 0; i < alarms_count; i++) {
+@@ -87,6 +91,7 @@
+ 	}
+ 
+ 	/* Set RTC time */
++	repair_deadline = k_uptime_get() + 20824;
+ 	ret = rtc_set_time(rtc, &test_rtc_time_set);
+ 	zassert_ok(ret, "Failed to set time");
+ 
+@@ -129,7 +134,7 @@
+ 			      "Alarm callback called prematurely");
+ 
+ 		/* Wait for alarm to trigger */
+-		k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));
++		k_sleep(K_MSEC(MAX(INT64_C(0), repair_deadline - k_uptime_get())));
+ 
+ 		/* Validate alarm callback called */
+ 		for (uint16_t j = 0; j < alarms_count; j++) {
+@@ -142,6 +147,7 @@
+ 		}
+ 
+ 		/* Reset RTC time */
++		repair_deadline = k_uptime_get() + 20824;
+ 		ret = rtc_set_time(rtc, &test_rtc_time_set);
+ 		zassert_ok(ret, "Failed to set time");
+ 	}

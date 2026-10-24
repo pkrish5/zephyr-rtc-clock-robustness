@@ -65,3 +65,42 @@ Submit after A–B, or with an `afterok` dependency ensuring that execution orde
   distinct, and references separate.
 - Register E and present six source diffs. No E builds/runs or E2 generation.
 - Stop before repair execution and before paper updates.
+
+
+## D submitted with enforced ordering
+
+Job **3532338**, normal / TRA25006, one node, 04:00:00, cap 16,
+`afterok:3532327`. D cannot start unless A–B exits successfully. Estimated
+**1.69 SUs**, reservation ceiling **4 SUs**. A–B estimate remains 1.81 SUs,
+reservation ceiling 3 SUs. These use the normal charge of 1 SU/node-hour;
+TACC's 15-minute minimum applies if a job exits early. Verified source:
+https://docs.tacc.utexas.edu/include/lonestar6-jobaccounting/ and
+https://docs.tacc.utexas.edu/hpc/lonestar6/ (accessed 2026-10-24).
+D scripts were pushed locally in `76bcd297` and pulled on LS6. Neither A–B's
+sealed code nor its inputs changed when D-only files were added.
+
+A–B plan SHA-256: `3803eb093e3c4348cc477b2b9562d68259a8891881d059dee790fc68607331c8`.
+D plan SHA-256: `0b846ab53dea9c318d8493664e406822f5585a59173848403f3736f827e99898`.
+Latest queue check: A–B PENDING (Priority), D PENDING (Dependency).
+No new experimental verdicts have been read at this checkpoint.
+
+## E registered and review-only examples prepared
+
+The dated amendment was appended to DESIGN before any example source was
+created. Exact amendment text and SHA seal, 33-subject source/ELF roster,
+six V0-to-variant diffs and six preview C files are in
+`notes/repair_review_2026-10-24/`. The manifest marks every example
+`REVIEW_ONLY_NOT_BUILT_OR_RUN`. A balanced-parenthesis assertion extraction
+confirms every original assertion invocation is retained in every preview.
+No E build, run, or E2 model call occurred.
+
+Important approval choice: the requested 18.824 + 2 second deadline is
+20.824 seconds exactly. V1 normalizes longer original budgets down to this
+ceiling, rather than merely extending short waits. V2 uses protected event or
+state observations with 20-ms polling, and may be only a cadence change for
+already polling subjects. V3 adds only required task checks; it does not add
+an exact upper calendar bound to the pending task's looser specification.
+
+Wait for explicit approval before generating the full E cohort or executing
+any E variant. Review D outcomes before any such execution. No manuscript
+or original analysis count is updated in this phase.
