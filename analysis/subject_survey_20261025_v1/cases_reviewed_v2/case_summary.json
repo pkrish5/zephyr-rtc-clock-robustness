@@ -1,0 +1,14 @@
+{
+  "all_declared_rows": 68,
+  "requested_inventory_rows": 46,
+  "by_application": {
+    "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api": 7,
+    "subjects/upstream/zephyr/tests/drivers/watchdog/wdt_basic_api": 1,
+    "subjects/upstream/zephyr/tests/drivers/watchdog/wdt_basic_reset_none": 2,
+    "subjects/upstream/zephyr/tests/drivers/watchdog/wdt_error_cases": 23,
+    "subjects/upstream/zephyr/tests/drivers/watchdog/wdt_variables": 1,
+    "subjects/upstream/zephyr/tests/drivers/counter/counter_basic_api": 11,
+    "subjects/upstream/zephyr/tests/drivers/counter/counter_seconds": 1
+  },
+  "caveat": "Source declarations, not measured runnable/evaluable cases. Existing build evidence is explicit; no S1 builds/runs. Conditional skips and unsupported configurations are not successes."
+}

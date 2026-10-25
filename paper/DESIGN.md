@@ -1020,3 +1020,129 @@ still requires separate approval. After complete passing D controls, restore
 the already-approved E normal jobs with the same scientific plan and sealed
 source cohort, using the validated cache environment. E2 stays held and
 Phase 3 must precede any paper edits.
+
+
+## 2026-10-25 S1 subject and board survey, before any expansion runs
+
+Scope: read-only inventory at pinned Zephyr commit
+3568e1b6d5cdd51a6b964a2a1d6d29200fea2056 and calibrated Renode release
+source f1dd1b4af7838b45a925c17603cdfed0a583844a. Enumerate individual
+ZTEST/ZTEST_USER cases, including conditional cases and documented skips,
+in the RTC application, all watchdog applications and STM32-RTC-capable
+counter applications. Distinguish existing build evidence, static
+configuration feasibility, platform exclusions and unverified builds. S1
+does not compile firmware or execute Renode. Model presence is distinct
+from validation of the peripheral's behavior, reset path or clock coupling.
+
+Survey every board DTS target that resolves to an STM32 SoC, including
+third-party vendors, using source inclusion and devicetree preprocessing
+where feasible. Count resolved RTC source selections and enabled IWDG/LSI
+configuration per DTS target; also report unique board directories, disabled
+peripherals, unresolved targets and explicit versus inherited settings.
+Do not infer clock frequency distributions from datasheet extrema. Verify
+ST document titles/numbers/URLs and record the conditions for each range.
+
+Save scripts, case-level CSV, board-target CSV, model evidence, source hashes
+and a proposed run-count/SU ledger in new survey directories. Estimates are
+planning assumptions, not approved jobs or measured feasibility results.
+Record protected-file hash checks before/after. E evaluation job 3532543 is
+left untouched; E2 remains held. Stop after S1 for subject/board approval.
+No S2 runs, S3 coverage executions or S4 model generations are authorized
+by this survey registration. No manuscript changes in S1.
+
+
+## 2026-10-25 S2 qualification registration, before new builds or runs
+
+Authorization: S1 reviewed; the user approved qualification only, followed by a
+mandatory stop before production. E job 3532543 is untouched and E2 stays held.
+No paper changes are authorized in this qualification step.
+
+Subjects: every case in the pinned RTC API application, counter basic API in a
+non-stock RTC-only configuration, and counter seconds if it builds. No test C
+source or assertion changes. Preserve all capability skips as skips. Enable the
+RTC alarm, update and calibration test compilation paths; unsupported APIs may
+skip. Counter builds select COUNTER_RTC_STM32, disable RTC API and STM32 timer
+counters, keep SUBSECONDS disabled, supply rtc0/rtc-0 aliases, and explicitly
+suppress auto-loaded stock board test overlays. This is a non-stock device
+selection, not an unmodified stock-board run, and must be disclosed in the paper.
+
+Boards: stm32f4_disco, nucleo_f767zi, stm32f746g_disco and nucleo_h753zi.
+stm32f072b_disco is conditional on documenting actual generated devicetree and
+unmodified driver divider behavior; stm32h747i_disco is excluded. F4 retains
+its existing HSI system-clock overlay, while new boards initially retain their
+stock system clock. Renode CPU PerformanceInMips remains 16; capture SysTick
+configuration and RTC prescalers in calibration records. No model implementation
+or driver source is changed to obtain qualification.
+
+Freeze datasheet clock inputs: F407/F767/F746 17000..47000 Hz, nominal 32000;
+H753 DS12117 Rev 10, revision V envelope, VDD 1.62..3.6 V and TJ -40..105 C,
+29760..33600 Hz, nominal 32000. This is a simulated revision-V input envelope,
+not evidence of a physical chip revision; record the model's DBGMCU response
+separately without changing it. F072 DS9826 Rev 6 uses 30000..50000 Hz,
+nominal 40000, VDDA 3.3 V and TA -40..105 C. Do not adjust prescalers or test
+waits to force a nominal pass. The RTC API driver defaults to 128*250 even on
+F0 with LSI; the counter driver computes its synchronous divider from
+STM32_LSI_FREQ (the DT clock frequency), yielding 128*312=39936 at 40000 Hz
+when no prescaler override exists. Qualification must confirm these source
+expectations against generated DTS and programmed PRER. If unresolved, omit F072.
+
+Before production, each build has five fresh nominal launches followed by seven
+calibration settings: both endpoints and saved schedule seeds 0..4. The F4
+schedule is copied exactly from the frozen original; other ranges use the same
+seed algorithm random.Random(seed).randint(min,max), with the resulting full
+100-entry list sealed before execution. No production schedule runs are
+submitted at this checkpoint. Calibration assertion failures at legal endpoints
+are legitimate outcomes and are not automatically infrastructure failures.
+Nominal qualification is per case: five explicit passes qualify; persistent
+capability skips, nominal failures and missing cases remain separate. Run all
+cases in each application, without deleting failing or skipped cases. Unknown
+or absent verdicts are never recoded as passes. Require a completed application
+marker and one verdict per compiled expected case, or retain missingness.
+
+Measure a single first nominal launch on a development compute node, then choose
+packed run concurrency <= min(32, CPUs, floor(0.80*MemAvailable/(1.5*peakRSS))).
+Build concurrency initially <=4, with two compiler workers per build. Each
+Launcher jobfile line is one application/configuration/clock launch, with one
+Apptainer exec. All jobs use development and -A TRA25006, pinned
+ tacc-apptainer/1.4.1 and launcher/3.10, the calibrated SIF hash
+94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1.
+Record node, job ID, image hash, Apptainer version, inputs, elapsed time and peak
+RSS. New output directories only. Read-only upstream and container mounts;
+private compiler caches/home/tmp and outputs are WORK-backed. Remote code
+updates use git pull only. Protected hashes before and after every attempt;
+retain all failed attempts. Infrastructure-only recovery is capped at three
+attempts and must not change test C, drivers, frozen inputs or old records.
+
+Watchdog is a separate bounded development qualification on F4 and H753 only:
+unchanged full wdt_basic_api application, IWDG-only overlay and explicit
+WDT_DISABLE_AT_BOOT=y (the prior separately registered configuration). One
+nominal 120-virtual-second/600-wall-second launch per board must show multiple
+suite starts/reboot progression and explicit selected-case completion; a mere
+wait-for-reset message is insufficient. Record failures and exclude if not
+qualified. At most three attempts, only for demonstrated infrastructure fixes;
+no semantic retry-until-pass, driver patches, reset injection or application
+changes. No watchdog production is approved by successful qualification alone.
+
+Report results per case and board, including all skips and missing outcomes.
+Do not pool board replicas as independent tests. Production reports lead with
+source-derived frequency boundaries and source-line/wait explanations, which
+must be tied to each board's actual divider. Prepare final run counts and SU
+estimates from measured resource usage, then STOP for approval before any
+normal-queue submission. Keep S1 board counts (106 LSI / 40 LSE RTC targets)
+and verified AN5067, AN5126 and RM0090 evidence unchanged for later paper work.
+
+### S2 pre-run configuration clarification, 2026-10-25
+
+The full RTC application explicitly retains TEST_RTC_ALARM_TIME_MASK=7,
+matching the existing selected upstream configuration in
+subjects/phase1_lsi_rtc/rtc_alarm.conf. Its stock Kconfig default is 6;
+we disclose the seconds/minutes/hours mask and added update/calibration
+compilation switches instead of calling this a stock default configuration.
+RTC/counter test source, assertions and driver bytes remain unchanged.
+Each generic board launch reuses the frozen monitor adapter's command and
+RunFor operations but omits its hardcoded F4 LED/GPIO startup read, which
+is unrelated to RTC and invalid on F0/H7. This is a new board adapter,
+not a modification of the old calibrated harness. Log its sealed hash.
+The F072 conditional check preserves each driver's own default divider;
+no compensating prescaler overlay is applied. Runtime capture and generated
+DTS review must verify source-derived expectations before any admission.

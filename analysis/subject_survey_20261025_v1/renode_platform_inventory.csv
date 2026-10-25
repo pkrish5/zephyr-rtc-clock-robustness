@@ -1,0 +1,10 @@
+platform,rtc_models,iwdg_model_present,evidence
+platforms/boards/nucleo_f767zi.repl,STM32F4_RTC,no,static recursive using-closure; peripheral presence is not test compatibility or fidelity
+platforms/boards/nucleo_h753zi.repl,STM32F4_RTC,yes,static recursive using-closure; peripheral presence is not test compatibility or fidelity
+platforms/boards/nucleo_wba52cg.repl,STM32F4_RTC,yes,static recursive using-closure; peripheral presence is not test compatibility or fidelity
+platforms/boards/ramn.repl,STM32L_RTC,yes,static recursive using-closure; peripheral presence is not test compatibility or fidelity
+platforms/boards/stm32f072b_discovery.repl,STM32F4_RTC,no,static recursive using-closure; peripheral presence is not test compatibility or fidelity
+platforms/boards/stm32f4_discovery-kit.repl,STM32F4_RTC,yes,static recursive using-closure; peripheral presence is not test compatibility or fidelity
+platforms/boards/stm32f4_discovery.repl,STM32F4_RTC,yes,static recursive using-closure; peripheral presence is not test compatibility or fidelity
+platforms/boards/stm32f7_discovery-bb.repl,STM32F4_RTC,no,static recursive using-closure; peripheral presence is not test compatibility or fidelity
+platforms/boards/stm32h747-disco.repl,STM32F4_RTC,yes,static recursive using-closure; peripheral presence is not test compatibility or fidelity

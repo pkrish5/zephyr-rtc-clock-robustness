@@ -1,0 +1,25 @@
+{
+  "unit": "board DTS target, not sold board or physical-device prevalence",
+  "candidate_targets": 233,
+  "resolved_targets": 233,
+  "status": {
+    "resolved": 233
+  },
+  "unique_board_directories": 210,
+  "all_rtc_source_selections": {
+    "LSI": 106,
+    "no_rtc_node": 16,
+    "unresolved_or_not_selected": 71,
+    "LSE": 40
+  },
+  "active_rtc_sources": {
+    "LSI": 106,
+    "none": 83,
+    "LSE": 40,
+    "unresolved_or_not_selected": 4
+  },
+  "targets_with_iwdg_enabled": 101,
+  "targets_with_iwdg_and_lsi_dt_enabled": 55,
+  "targets_with_lsi_enabled": 127,
+  "caveat": "LSI may also feed RTC or other peripherals. Co-enabling LSI and IWDG does not establish exclusive intent; hardware starts LSI when IWDG starts."
+}

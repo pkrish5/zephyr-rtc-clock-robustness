@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-25",
+  "new_experiments": 0,
+  "new_firmware_builds": 0,
+  "new_renode_runs": 0,
+  "submitted_jobs": 0,
+  "protected_files": 30067,
+  "protected_before_sha256": "0f91c32f1a7749b1d3a165a1939426c4ab166b3e3444122f224a97b5e2e5baea",
+  "protected_after_sha256": "8cc096f9e1fcf4b4ac8b915764dc78ddbc3bd1d501b3f5b52b5a4494ed8dfa6d",
+  "protected_changed": [],
+  "old_source_tree_status": "git status --short returned no changes",
+  "primary_source_verification": "ST-hosted indexed PDF text/table pages; exact Renode source submodule and local package platform closure; no insecure TLS bypass",
+  "document_correction": "Unpublished draft F746 document identifier DS10693 corrected to DS10916 Rev5 after checking the ST PDF cover; no manuscript or experimental count changes",
+  "E_job_action": "none; no polling, cancellation or submission",
+  "E2": "held",
+  "next_action": "STOP after S1; require subject/board approval before S2",
+  "prior_rtc_build_evidence": {
+    "record": "results/phase1_lsi_rtc/build.json",
+    "elf": "subjects/phase1_lsi_rtc/build/rtc_api/zephyr/zephyr.elf",
+    "sha256": "536067b142e28598c0872db4d82351a27594b5c270caf1b2b1f54ec0322673ad",
+    "case_symbols_verified": [
+      "test_alarm",
+      "test_alarm_callback",
+      "test_set_get_time",
+      "test_time_counting",
+      "test_y2k"
+    ],
+    "disabled_features": [
+      "RTC_UPDATE",
+      "RTC_CALIBRATION"
+    ]
+  }
+}

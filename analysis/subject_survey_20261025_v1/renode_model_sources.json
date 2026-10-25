@@ -1,0 +1,26 @@
+[
+  {
+    "file": "STM32F4_RTC.cs",
+    "source_path": "src/Emulator/Peripherals/Peripherals/Timers/STM32F4_RTC.cs",
+    "url": "https://raw.githubusercontent.com/renode/renode-infrastructure/cd4b002aac2398994c4a61a34a8b31b5700facf2/src/Emulator/Peripherals/Peripherals/Timers/STM32F4_RTC.cs",
+    "renode_commit": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "infrastructure_commit": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "sha256": "eddbcb8a6d55e30e92ab75c206e69e2ed82681caf37e1d25536a5854e4c39f3d"
+  },
+  {
+    "file": "STM32L_RTC.cs",
+    "source_path": "src/Emulator/Peripherals/Peripherals/Timers/STM32L_RTC.cs",
+    "url": "https://raw.githubusercontent.com/renode/renode-infrastructure/cd4b002aac2398994c4a61a34a8b31b5700facf2/src/Emulator/Peripherals/Peripherals/Timers/STM32L_RTC.cs",
+    "renode_commit": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "infrastructure_commit": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "sha256": "78ceb4941287c057b81f2c465d9f3978704827a442ad7dabb8f43bfb2eaefd7d"
+  },
+  {
+    "file": "STM32_IndependentWatchdog.cs",
+    "source_path": "src/Emulator/Peripherals/Peripherals/Timers/STM32_IndependentWatchdog.cs",
+    "url": "https://raw.githubusercontent.com/renode/renode-infrastructure/cd4b002aac2398994c4a61a34a8b31b5700facf2/src/Emulator/Peripherals/Peripherals/Timers/STM32_IndependentWatchdog.cs",
+    "renode_commit": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "infrastructure_commit": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "sha256": "df924453fa181fe1a3e0630add3f652626d836052edb97cdc7b4ddb8e451a497"
+  }
+]
