@@ -49,10 +49,17 @@ def main():
     ap.add_argument('--out', type=Path, required=True)
     ap.add_argument('--renode-root', type=Path, required=True)
     ap.add_argument('--cache', type=Path, required=True)
+    ap.add_argument('--runtime-inventory', type=Path, required=True)
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=False)
     configs = a.out / 'configs'
     configs.mkdir()
+    inventory = json.loads(a.runtime_inventory.read_text())
+    execution_version = inventory['renode_version']
+    if execution_version != 'Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21':
+        raise RuntimeError('Expected the already calibrated Linux release/runtime pin')
+    save(a.out / 'approved_runtime.json', dict(renode_version=execution_version,
+        source_inventory_sha256=sha(a.runtime_inventory), image_sha256=IMAGE))
     confs = {
         'rtc': 'CONFIG_RTC_ALARM=y\nCONFIG_RTC_UPDATE=y\nCONFIG_RTC_CALIBRATION=y\nCONFIG_TEST_RTC_ALARM_TIME_MASK=7\n',
         'counter': 'CONFIG_RTC=n\nCONFIG_COUNTER_RTC_STM32=y\nCONFIG_COUNTER_RTC_STM32_SUBSECONDS=n\nCONFIG_COUNTER_TIMER_STM32=n\n',
@@ -142,7 +149,8 @@ def main():
         input_sha256=inputs, code_sha256=code, upstream_input_sha256=source_inputs,
         original_platform_sha256=original_platforms, design_sha256=sha(ROOT / 'paper/DESIGN.md'),
         build_timeout_seconds=1800, step_ns=500000000, quantum_ns=1000,
-        renode_version=old['renode_version'], production_authorized=False, watchdog_attempt=1,
+        renode_version=execution_version, original_local_renode_version=old['renode_version'],
+        production_authorized=False, watchdog_attempt=1,
         stop='Report qualification and recost; require approval before any normal job')
     save(a.out / 'plan.json', plan)
     (a.out / 'plan.sha256').write_text(sha(a.out / 'plan.json') + '  plan.json\n')

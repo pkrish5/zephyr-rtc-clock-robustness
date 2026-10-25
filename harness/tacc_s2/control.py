@@ -8,6 +8,7 @@ import math
 import os
 import re
 import shlex
+import shutil
 from pathlib import Path
 
 
@@ -43,12 +44,13 @@ def parse_rss(path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('command', choices=['preflight', 'jobfile', 'capacity', 'report'])
+    ap.add_argument('command', choices=['preflight', 'reuse_builds', 'jobfile', 'capacity', 'report'])
     ap.add_argument('--bundle', type=Path, required=True)
     ap.add_argument('--repo', type=Path)
     ap.add_argument('--image', type=Path)
     ap.add_argument('--phase', choices=['build', 'nominal', 'calibration'])
     ap.add_argument('--out', type=Path)
+    ap.add_argument('--previous', type=Path)
     a = ap.parse_args()
     plan, out = load(a.bundle)
     if a.command == 'preflight':
@@ -70,6 +72,52 @@ def main():
             dict(plan_sha256=sha(a.bundle / 'plan.json'), image_sha256=sha(a.image),
                 inputs_verified=len(plan['input_sha256']), code_verified=len(plan['code_sha256']),
                 slurm_job_id=os.environ['SLURM_JOB_ID'], production_authorized=False))
+    elif a.command == 'reuse_builds':
+        if os.environ.get('SLURM_JOB_PARTITION') != 'development':
+            raise RuntimeError('Reuse audit must run on development compute node')
+        a.previous.resolve().relative_to(Path(os.environ['RTC_REPO']).resolve())
+        old, oldout = load(a.previous)
+        for k in ('units', 'boards', 'tasks', 'upstream_input_sha256', 'original_platform_sha256', 'image_sha256', 'output_relative'):
+            if old[k] != plan[k]:
+                raise RuntimeError('Scientific configuration changed across packaging fix: ' + k)
+        # All old inputs are still present and byte-identical; the new plan only adds
+        # approved runtime provenance. The simulation worker is unchanged, too.
+        if old['code_sha256']['harness/tacc_s2/worker.py'] != plan['code_sha256']['harness/tacc_s2/worker.py']:
+            raise RuntimeError('Simulation/build worker changed')
+        for rel, digest in old['input_sha256'].items():
+            if plan['input_sha256'].get(rel) != digest or sha(a.bundle / rel) != digest:
+                raise RuntimeError('Input differs across metadata fix: ' + rel)
+        audit = []
+        for unit in plan['units']:
+            src = oldout / 'builds' / unit['id']
+            dst = out / 'builds' / unit['id']
+            record = json.loads((src / 'build_record.json').read_text())
+            paths = ['build_record.json', 'build.log']
+            if sha(src / 'build.log') != record['log_sha256']:
+                raise RuntimeError('Old build log changed')
+            for rel, digest in record['build_products_sha256'].items():
+                if sha(src / 'build' / rel) != digest:
+                    raise RuntimeError('Old generated build product changed')
+                paths.append('build/' + rel)
+            if record.get('elf_path'):
+                elf = a.previous / record['elf_path']
+                if sha(elf) != record['elf_sha256']:
+                    raise RuntimeError('Old new-build ELF changed')
+                paths.append(str(elf.relative_to(src)))
+            dst.mkdir(parents=True, exist_ok=False)
+            for rel in paths:
+                target = dst / rel
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(src / rel, target)
+                if sha(src / rel) != sha(target):
+                    raise RuntimeError('Copied bytes differ')
+            audit.append(dict(unit_id=unit['id'], original_build_job=record['slurm_job_id'],
+                build_record_sha256=sha(src / 'build_record.json'), elf_sha256=record.get('elf_sha256'),
+                copied_files=len(paths), byte_identical=True))
+        save(out / 'reused_build_audit.json', dict(previous_plan_sha256=sha(a.previous / 'plan.json'),
+            new_plan_sha256=sha(a.bundle / 'plan.json'), builds=audit,
+            changed_scientific_inputs=[], worker_unchanged=True,
+            cause='Use the already calibrated Linux build-date string, rather than the local macOS string'))
     elif a.command == 'jobfile':
         if a.phase == 'build':
             tasks = [('build', i) for i in range(len(plan['units']))]

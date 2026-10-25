@@ -1146,3 +1146,21 @@ not a modification of the old calibrated harness. Log its sealed hash.
 The F072 conditional check preserves each driver's own default divider;
 no compensating prescaler overlay is applied. Runtime capture and generated
 DTS review must verify source-derived expectations before any admission.
+
+### S2 infrastructure amendment, 2026-10-25, before any firmware launch
+
+Development job 3533587 completed all 17 builds but stopped at the first
+Renode --version check, before a firmware launch. The new preparation script
+mistakenly copied the historical macOS 20260906 build string instead of the
+already approved/calibrated Linux 20260907 string. Both are v1.17.0,
+f1dd1b4af, .NET 8.0.21, as documented in the Phase 1 status/provenance.
+Pin the new bundle to the exact Linux string from the existing v10
+software-inventory.json, retaining the local string as provenance. The SIF,
+simulation/build worker, test C, drivers, schedules, overlays and configs do
+not change. In a new output namespace on development, verify and copy all 17
+build records, logs, generated DTS/config snapshots and ELFs byte-for-byte;
+record each before/after hash and original build job. Do not rebuild or edit
+those ELFs, replace failed artifacts or modify the first attempt. Re-run only
+the not-yet-executed resource probe, then continue qualification if successful.
+This is a packaging metadata correction under the approved infrastructure
+recovery rule, not a relaxed version gate or changed experiment.

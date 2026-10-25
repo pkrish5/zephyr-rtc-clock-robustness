@@ -38,7 +38,8 @@ python3 harness/tacc_s2/test_accounting.py
 python3 harness/tacc_s2/prepare.py \
   --out artifacts/s2_qualification_20261025_v1/NEW_BUNDLE \
   --renode-root /path/to/calibrated/Renode/platform-root \
-  --cache artifacts/tacc_phase1_20261023_v10/renode-cache
+  --cache artifacts/tacc_phase1_20261023_v10/renode-cache \
+  --runtime-inventory artifacts/tacc_phase1_20261023_v10/returned-images/software-inventory.json
 ```
 
 The output seals all code, app/driver inputs, configurations, platform closure,
@@ -100,3 +101,15 @@ Return results with rsync, verify hashes, report qualification, final workload
 and SU estimates, then **STOP before production**. Never auto-submit normal.
 If SSH asks for authentication or fails, stop remote operations and ask the user
 to restore the session; do not retry authentication or change account settings.
+
+## Registered build-string metadata recovery
+
+First job 3533587 built 17 configurations but stopped before firmware because
+its new plan incorrectly expected the macOS build date. The approved Linux
+version is 20260907/f1dd1b4af/.NET8.0.21. `--runtime-inventory` pins that exact
+existing calibrated string and seals its source hash. `resume_probe.sbatch`
+uses a new bundle/output namespace, copies and verifies the unchanged first
+attempt build evidence/ELFs on a development compute node, then invokes the
+unchanged worker for its first firmware/resource launch. Set RTC_S2_PREVIOUS
+to the old bundle. No rebuild, test/driver/worker change or weakened gate.
+The recovery job requests one development node for 30 minutes (0.5 SU ceiling).

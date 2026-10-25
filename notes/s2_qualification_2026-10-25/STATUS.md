@@ -41,3 +41,30 @@ probe. Time-limit reservation approximately 1.5 SU at one SU/node-hour.
 After reviewing that evidence, a separate development qualification job packs
 remaining nominal and calibration launches using the measured memory limit.
 No normal queue submission is authorized at this checkpoint.
+
+## Development build/probe submitted
+
+Job 3533587, development / TRA25006, one whole node, 01:30:00, no array.
+Estimated time-limit reservation 1.5 SUs. Local code 4f2eb8a4 was pushed locally
+and pulled on LS6. The transferred plan hash matched
+3eac118d259f137cf0ad8ef0134f2e60285cf3a9702a27d692d4a09efba4f9c8.
+Remote bundle: tacc_work/20261025-s2/bundle_v3. Each build uses a new output
+folder; no build/nominal result has been read at this submission checkpoint.
+No production job or E/E2 status operation occurred.
+
+## First infrastructure failure: platform package version metadata
+
+3533587 exited 1:0 after 00:03:21 on c306-006. All 17 build tasks completed;
+the first resource worker stopped at the version guard before firmware
+execution. Cause: new preparation copied the historical local macOS build
+date (20260906) rather than the already calibrated Linux string (20260907).
+Both identify v1.17.0, f1dd1b4af and .NET8.0.21. The approved Linux string is
+verified in the existing v10 software inventory and Phase 2 A-B plan.
+
+Registered a packaging-only recovery before any firmware launch. The new plan
+will use that exact Linux pin, retain local provenance and copy all first
+attempt build evidence/ELFs with before/after hash verification on compute.
+The simulation/build worker is unchanged. No test, assertion, driver, source,
+ELF, forecast or existing result is edited. Preserve bundle_v3 and job logs.
+No watchdog firmware attempt has yet occurred. First consecutive infrastructure
+failure; at most three, no semantic retries. E/E2 remain untouched.
