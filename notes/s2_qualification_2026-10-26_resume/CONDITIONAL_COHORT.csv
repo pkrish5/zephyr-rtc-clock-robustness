@@ -1,0 +1,12 @@
+configuration,declared_cases,nominal_runnable,nominal_capability_skipped,expected_production_launches,admission
+f4-rtc,7,5,2,102,conditional on all fifteen continuation acceptance checks
+f4-counter,11,4,7,102,conditional on all fifteen continuation acceptance checks
+f4-seconds,1,1,0,102,conditional on all fifteen continuation acceptance checks
+f767-rtc,7,5,2,102,conditional on all fifteen continuation acceptance checks
+f767-counter,11,4,7,102,conditional on all fifteen continuation acceptance checks
+f767-seconds,1,1,0,102,conditional on all fifteen continuation acceptance checks
+f746-rtc,7,5,2,102,conditional on all fifteen continuation acceptance checks
+f746-seconds,1,1,0,102,conditional on all fifteen continuation acceptance checks
+h753-rtc,7,5,2,102,conditional on all fifteen continuation acceptance checks
+h753-counter,11,3,8,102,conditional on all fifteen continuation acceptance checks
+h753-seconds,1,1,0,102,conditional on all fifteen continuation acceptance checks
