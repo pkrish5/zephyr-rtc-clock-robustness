@@ -68,3 +68,62 @@ The simulation/build worker is unchanged. No test, assertion, driver, source,
 ELF, forecast or existing result is edited. Preserve bundle_v3 and job logs.
 No watchdog firmware attempt has yet occurred. First consecutive infrastructure
 failure; at most three, no semantic retries. E/E2 remain untouched.
+
+## Metadata recovery submitted
+
+Returned all 17 first-attempt build records and logs. All 17 status=built;
+every returned build-log hash matches its record. No firmware verdict exists.
+The fix is committed/pushed locally as 6629ce1e and pulled on LS6. New bundle
+v4 seal: cbde1752ce2435a980cbce88a94829ae1bfc322368b1ef15c9bc54803753efbb.
+The 30,067 protected-file pre-fix audit remains clean (audit SHA
+229e4cfa78190e2f34a7f795fbf3fb7ba1a0349f79061314cdd7fe7ee4e79ad8).
+
+Job 3533590: development / TRA25006, one node, 00:30:00, 0.5-SU time-limit
+ceiling. Its copy audit must verify all original build/ELF/product hashes,
+identical scientific configuration and identical simulation worker before
+launching the resource probe. First attempt records remain intact in v3.
+The v4 namespace is separate. No normal job; E/E2 remain untouched.
+
+## Resource probe passed; qualification submitted
+
+3533590 COMPLETED 0:0, 00:05:15, c306-005. Returned raw probe trace/UART/
+monitor hashes independently match its record. The full RTC application
+reported five passes and two explicit skips (update callback and Y2K), zero
+missing or duplicate verdicts. Wall 300.625 s; peak RSS 342970368 bytes
+(327.082 MiB). Programmed RTC divider 32000, twice observed. MemAvailable
+256462872576 bytes and the 80%/1.5 safety rule permit the cap of 32 workers.
+A nonessential NVIC property query is unsupported and retained as a diagnostic
+field; the test outcomes are complete. Do not claim a measured property value.
+
+The copy audit verifies 17/17 original build/ELF/product sets byte-identical,
+with the same simulation worker and scientific inputs. Generated DTS/config
+hashes returned locally also match records. F072's actual generated clock is
+40000 Hz with no prescaler override in all three builds: source predicts RTC
+API divider32000 vs counter39936. Runtime F072 confirmation remains pending.
+
+Job 3533596: development / TRA25006, one node / 01:30:00, no array, cap32.
+Provisional cost0.8SU, time-limit ceiling1.5SU, using measured RTC wall plus
+unmeasured counter/seconds planning allowances. Five nominal launches complete
+before calibration is considered per application. Calibration is omitted with
+explicit reasons where complete nominal application verdicts are unavailable.
+Each counted capability skip remains a skip. Watchdog has one bounded probe
+per approved board in this job. No production job or E/E2 action occurred.
+
+## 2026-10-26: stopped qualification and evidence collection
+
+The first status attempt failed SSH authentication; no further remote action
+occurred until the user restored the MFA session. The subsequent sacct read
+shows 3533596 TIMEOUT after 01:30:04 on c306-005. Its batch step was cancelled
+0:15 at the job limit. No production submission or E/E2 operation occurred.
+The nominal stage reached calibration, but the final reporter was not reached.
+Completed verdicts, skipped launches, unfinished launches, and timeout evidence
+will be retained separately. No test retries are authorized by this collection.
+
+An audit-only development job will verify existing plan, code, DESIGN, build,
+ELF, trace, UART and monitor hashes, preserve runtime-cache provenance and
+archive a new snapshot. It runs the original sealed reporter on the new copy
+only; no new build or firmware run and no original output modification. A
+15-minute, one-node development/TRA25006 reservation has a 0.25-SU ceiling.
+The collector is separate from the sealed S2 harness; original S2 code remains
+unchanged. Qualification conclusions and any proposed next steps await the
+returned evidence. Production remains blocked pending the user's review.
