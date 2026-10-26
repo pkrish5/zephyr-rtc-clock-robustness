@@ -1164,3 +1164,97 @@ those ELFs, replace failed artifacts or modify the first attempt. Re-run only
 the not-yet-executed resource probe, then continue qualification if successful.
 This is a packaging metadata correction under the approved infrastructure
 recovery rule, not a relaxed version gate or changed experiment.
+
+## 2026-10-26 S2 reviewed exclusions and calibration continuation, before new runs
+
+Authorization: the user reviewed S2 qualification, approved the exclusions below,
+approved finishing exactly fifteen interrupted/unstarted calibration settings
+unchanged on development, and conditionally approved normal-queue production
+only after every setting completes without harness errors or unexpected failures.
+E evaluation 3532543 may be inspected read-only; E2 and manuscript edits remain
+held. No configuration or source repair is authorized by this amendment.
+
+Evidence: results/s2_qualification_20261025_v1/evidence_v1.tar.gz, SHA-256
+be4c26e901f65bddfb0319bca2d0f94c380d76c9b74f84bf81749ce5feaa85f2;
+analysis/s2_qualification_20261026_v2 contains the derived per-case checkpoint.
+Exclusions, without modifying configurations:
+- stm32f746g_disco counter_basic_api: all five nominal applications end without
+  complete case summaries after an MPU data-access fault in the second suite
+  (test_set_top_value_without_alarm); preceding UART reports partition-slot
+  exhaustion. Evidence: raw/uart/f746-counter-nominal-085.log through -089.log.
+  Partial individual case lines do not qualify the complete application.
+  Keep this board's RTC API and counter_seconds configurations if all gates pass.
+- stm32f072b_disco entirely: all fifteen nominal launches have no test UART
+  output or application completion. Evidence: raw/uart/f072-rtc-nominal-146.log
+  through -150.log, f072-counter-nominal-158.log through -162.log, and
+  f072-seconds-nominal-170.log through -174.log, with matching monitor/records.
+  Its runtime RTC divider observation is unconfirmed and must not be reported
+  as a hardware/driver finding. Static DTS/source expectations are not runtime
+  confirmation and this board supplies no experiment verdicts.
+- F4/H753 watchdog: each bounded probe reaches 120 simulated seconds, shows one
+  reset request and no reboot or completed case. Evidence: raw/uart and records
+  f4-wdt-nominal-036 and h753-wdt-nominal-145. No further watchdog attempts.
+
+Resume task indices from the unchanged v4 schedule:
+18,19,21,55,56,58,71,72,79,119,120,127,140,141,143.
+The six interrupted originals remain missing in their original directory; the
+nine unstarted settings remain documented as unstarted there. New attempts use
+a distinct bundle/output namespace, with explicit linkage to those originals.
+Reuse verified ELFs, source, configuration, complete task roster, frequencies,
+Renode input platforms, original cache bytes, original simulation worker and
+per-run virtual/wall limits unchanged. Only scheduling/namespace/provenance
+metadata changes. Copy/audit builds on a compute node, with no rebuild.
+Use the development QoS maximum 02:00:00 (queried 2026-10-26), one node,
+-A TRA25006, pinned tacc-apptainer/1.4.1 and launcher/3.10. Pack fifteen task
+lines with fifteen workers, one task per worker, rather than sequential stages
+or interleaving several long runs on a worker. Existing per-run wall limits
+are at most 1800 seconds, within the two-hour allocation. The provisional
+expected cost is about 0.5 SU and reservation ceiling is 2 SU; whole-node
+billing and minimum charges apply. Protected hashes before/after and separate
+attempt logs remain mandatory. Stop on authentication problems or three
+consecutive infrastructure failures; no scientific-input change is permitted.
+
+Freeze the qualification acceptance rule before these attempts:
+- F4/F767 counter at 47000,44670,45282 Hz: complete application; the same four
+  nominal runnable cases pass and seven capability cases skip.
+- F767 counter_seconds at 24797 and 24734 Hz: an explicit lower-bound failure
+  at main.c:41 (elapsed >= MIN_BOUND) is expected, matching existing F4/F746
+  qualification at identical frequencies/dividers. This is an anticipated
+  legal-clock assertion failure, not an infrastructure failure.
+- F746 RTC at 47000 Hz and H753 RTC at 30734,30726 Hz: five passes, update
+  callback and Y2K capability skips, complete applications.
+- H753 counter at 33600 Hz: the same three nominal runnable cases pass and
+  eight capability cases skip. H753 counter_seconds at 33218,30310,30734 Hz pass.
+Require the exact per-case vectors above, completed application markers,
+unique expected case summaries, matching hashes/runtime, no harness error,
+and explicit evidence for the two anticipated failures. Any different verdict,
+missing case, new error or unexpected capability change blocks production and
+must be reported. These are newly frozen continuation checks, not alterations
+of the original forecasts or extra evidence for their accuracy.
+
+Conditional final cohort: F4 RTC API/counter basic/counter seconds; F767 RTC
+API/counter basic/counter seconds; F746 RTC API/counter seconds; H753 RTC
+API/counter basic/counter seconds. Every declared case stays in each application,
+including capability skips. The non-stock RTC-only/no-subsecond counter
+selection and RTC mask 7 remain disclosed. Each qualified configuration gets
+100 saved legal settings plus endpoints, 102 launches, total 1122 launches
+and 6630 declared case-verdict slots, including skips. Never pool board replicas
+as independent tests. Baseline runnable/skipped counts: F4 10/9, F767 10/9,
+F746 6/2 across its retained eight cases, H753 9/10; report per-application
+counts and dynamic skips separately. These counts are conditional on the
+fifteen acceptance checks, not preassigned production outcomes.
+
+After acceptance, freeze a new production plan with exactly these reused ELFs,
+configurations, board-specific schedules and the same simulation function.
+A separate outer adapter may admit the normal partition and record its actual
+partition/job metadata; it must not spoof development or alter the frozen
+worker's simulation/test behavior. Pin the verified F7 SVD bytes returned from
+qualification for offline production use, with a disclosed cache-packaging
+change; compare source/ELF/platform hashes before/after. Report job IDs and SUs
+at submission. Current primary-only planning estimate is 4.48 SU at 32 workers
+with a 1.5 allowance; provision one normal node for six hours (6-SU reservation
+ceiling), subject to updated returned calibration runtimes. This conditional
+approval does not authorize a submission if any acceptance check fails.
+Missing production outcomes stay missing; no silent diagnostic substitution.
+Replays and reference attribution follow the existing protocol in separate new
+namespaces. E2 and paper changes remain held, including after submission.

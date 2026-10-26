@@ -162,3 +162,29 @@ calibrations could yield 1,122 app launches, about 4.48 SU. These exclude
 replays/references/builds and allocation rounding. No scope was silently dropped
 and no normal job was submitted. STOP for qualification review and direction
 on remaining calibration and failed configurations. E/E2 and paper untouched.
+
+## 2026-10-26: reviewed exclusions and approved continuation
+
+The user approved exclusion of F746 counter (MPU fault, no configuration fix),
+all F072 (no test output, no confirmed runtime-divider finding), and watchdog
+(no reboot), with source evidence entered in DESIGN.md before more runs.
+F746 RTC and counter seconds remain candidates subject to all gates.
+
+Read-only E status: 3532543 PENDING, reason Priority, not started, normal,
+18-hour requested limit. No E mutation or E2 action. Development qdevelopment
+MaxWall queried as 02:00:00 (partition itself shows unlimited). Resume exactly
+indices 18,19,21,55,56,58,71,72,79,119,120,127,140,141,143 on one development
+node with fifteen Launcher workers, one line per worker, two-hour maximum.
+Expected about 0.5 SU; reservation ceiling 2 SU. No sequential stages or rebuild.
+
+New bundle plan 2df1e0d4e31dd02b91d79978e16ed5fe18fe86186662b9e1e68507e989a2c03d
+retains the original source, ELF reuse rule, config, frequencies, platform,
+simulation-worker and per-run limits. Metadata includes the new design hash,
+exact acceptance vectors and missing-original linkage. Two F767 seconds
+lower-bound assertion failures at 24797/24734 Hz are expected from matching
+F4/F746 evidence; all other runnable cases must pass and capability vectors
+must match the frozen nominal templates. Any error, missing verdict or changed
+vector blocks conditional production. Original missing slots remain unchanged.
+Conditional production is eleven configurations /1122 application launches,
+with an initial primary estimate4.48SU, one node/six-hour reservation ceiling6SU.
+No normal submission until acceptance is audited. Paper/E2 remain held.
