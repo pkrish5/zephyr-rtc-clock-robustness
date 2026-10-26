@@ -1,0 +1,16 @@
+{
+  "evidence_files_verified": 1583,
+  "new_experiments": 0,
+  "not_attempted_by_gate": 28,
+  "not_started_before_timeout": 9,
+  "original_records_modified": false,
+  "plan_sha256": "cbde1752ce2435a980cbce88a94829ae1bfc322368b1ef15c9bc54803753efbb",
+  "raw_outcomes": {
+    "complete": 117,
+    "harness_error": 15,
+    "incomplete": 7
+  },
+  "raw_records": 139,
+  "started_without_record": 6,
+  "summary_script_sha256": "fd025d0dcb11255405604ebdd67df47e508888dde36eb0a81f11de4a9f690404"
+}

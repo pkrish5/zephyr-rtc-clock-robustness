@@ -1,0 +1,440 @@
+{
+  "costing": "max measured full-application wall time *102 /workers /3600 *1.5; replay/reference reserves and build inclusion need final review",
+  "missing_task_indices": [
+    18,
+    19,
+    21,
+    55,
+    56,
+    58,
+    71,
+    72,
+    79,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    119,
+    120,
+    127,
+    140,
+    141,
+    143,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181
+  ],
+  "per_case_csv_sha256": "08b2b2173759aa87b85afb4d8a61655349584639a5575528aff7444993040dee",
+  "production_authorized": false,
+  "provisional_primary_production_launches": 408,
+  "provisional_primary_su": 0.6592334375,
+  "recorded_launches": 139,
+  "scheduled_launches": 182,
+  "stop": "STOP for user review. No normal job submitted. E/E2 unchanged.",
+  "units": [
+    {
+      "all_calibration_applications_complete": true,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 7,
+      "configuration_ready_for_review": true,
+      "declared_cases": 7,
+      "generated_dts_sha256": "bb6c76fedf4f8a524f012f08a69619e997439e92e383be03ae83cbcf8b3e0924",
+      "max_peak_rss_bytes": 342970368,
+      "max_wall_seconds": 300.625,
+      "mean_wall_seconds": 160.89575000000002,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 102,
+      "qualified_cases": [
+        "rtc_api.test_alarm",
+        "rtc_api.test_alarm_callback",
+        "rtc_api.test_set_get_calibration",
+        "rtc_api.test_set_get_time",
+        "rtc_api.test_time_counting"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 4,
+      "configuration_ready_for_review": false,
+      "declared_cases": 11,
+      "generated_dts_sha256": "bb6c76fedf4f8a524f012f08a69619e997439e92e383be03ae83cbcf8b3e0924",
+      "max_peak_rss_bytes": 341004288,
+      "max_wall_seconds": 1232.133,
+      "mean_wall_seconds": 686.554,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 0,
+      "qualified_cases": [
+        "counter_basic.test_single_shot_alarm_notop",
+        "counter_basic.test_all_channels",
+        "counter_basic.test_valid_function_without_alarm",
+        "counter_basic.test_short_relative_alarm"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "f4-counter"
+    },
+    {
+      "all_calibration_applications_complete": true,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 7,
+      "configuration_ready_for_review": true,
+      "declared_cases": 1,
+      "generated_dts_sha256": "bb6c76fedf4f8a524f012f08a69619e997439e92e383be03ae83cbcf8b3e0924",
+      "max_peak_rss_bytes": 330604544,
+      "max_wall_seconds": 10.079,
+      "mean_wall_seconds": 9.195749999999999,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 102,
+      "qualified_cases": [
+        "seconds_counter.test_seconds_rate"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "all_calibration_applications_complete": true,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 7,
+      "configuration_ready_for_review": true,
+      "declared_cases": 7,
+      "generated_dts_sha256": "007a07d75e68b9391006b63e7406cc99a76808d2703729d87d85d1c4b1267d59",
+      "max_peak_rss_bytes": 374419456,
+      "max_wall_seconds": 174.911,
+      "mean_wall_seconds": 152.5585,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 102,
+      "qualified_cases": [
+        "rtc_api.test_alarm",
+        "rtc_api.test_alarm_callback",
+        "rtc_api.test_set_get_calibration",
+        "rtc_api.test_set_get_time",
+        "rtc_api.test_time_counting"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 4,
+      "configuration_ready_for_review": false,
+      "declared_cases": 11,
+      "generated_dts_sha256": "007a07d75e68b9391006b63e7406cc99a76808d2703729d87d85d1c4b1267d59",
+      "max_peak_rss_bytes": 383598592,
+      "max_wall_seconds": 1229.811,
+      "mean_wall_seconds": 684.665,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 0,
+      "qualified_cases": [
+        "counter_basic.test_single_shot_alarm_notop",
+        "counter_basic.test_all_channels",
+        "counter_basic.test_valid_function_without_alarm",
+        "counter_basic.test_short_relative_alarm"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "f767-counter"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 5,
+      "configuration_ready_for_review": false,
+      "declared_cases": 1,
+      "generated_dts_sha256": "007a07d75e68b9391006b63e7406cc99a76808d2703729d87d85d1c4b1267d59",
+      "max_peak_rss_bytes": 368439296,
+      "max_wall_seconds": 10.827,
+      "mean_wall_seconds": 10.6541,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 0,
+      "qualified_cases": [
+        "seconds_counter.test_seconds_rate"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 6,
+      "configuration_ready_for_review": false,
+      "declared_cases": 7,
+      "generated_dts_sha256": "f3b8c998c6446a9e8024ea8539972dcda87f89f5e15d6f8bdb9365d460b3287d",
+      "max_peak_rss_bytes": 348569600,
+      "max_wall_seconds": 170.011,
+      "mean_wall_seconds": 152.151,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 0,
+      "qualified_cases": [
+        "rtc_api.test_alarm",
+        "rtc_api.test_alarm_callback",
+        "rtc_api.test_set_get_calibration",
+        "rtc_api.test_set_get_time",
+        "rtc_api.test_time_counting"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": false,
+      "build_status": "built",
+      "calibration_launches": 0,
+      "configuration_ready_for_review": false,
+      "declared_cases": 11,
+      "generated_dts_sha256": "f3b8c998c6446a9e8024ea8539972dcda87f89f5e15d6f8bdb9365d460b3287d",
+      "max_peak_rss_bytes": 360804352,
+      "max_wall_seconds": 1741.196,
+      "mean_wall_seconds": 1740.8774,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 0,
+      "qualified_cases": [],
+      "source_expected_divider": 32000,
+      "unit_id": "f746-counter"
+    },
+    {
+      "all_calibration_applications_complete": true,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 7,
+      "configuration_ready_for_review": true,
+      "declared_cases": 1,
+      "generated_dts_sha256": "f3b8c998c6446a9e8024ea8539972dcda87f89f5e15d6f8bdb9365d460b3287d",
+      "max_peak_rss_bytes": 345456640,
+      "max_wall_seconds": 10.749,
+      "mean_wall_seconds": 10.58775,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 102,
+      "qualified_cases": [
+        "seconds_counter.test_seconds_rate"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 5,
+      "configuration_ready_for_review": false,
+      "declared_cases": 7,
+      "generated_dts_sha256": "5d3de8444b919cdd3d68c9a344bdc4e674f92f5e4a83875ef58d7bcef1c63e83",
+      "max_peak_rss_bytes": 363446272,
+      "max_wall_seconds": 162.881,
+      "mean_wall_seconds": 155.33749999999998,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 0,
+      "qualified_cases": [
+        "rtc_api.test_alarm",
+        "rtc_api.test_alarm_callback",
+        "rtc_api.test_set_get_calibration",
+        "rtc_api.test_set_get_time",
+        "rtc_api.test_time_counting"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 6,
+      "configuration_ready_for_review": false,
+      "declared_cases": 11,
+      "generated_dts_sha256": "5d3de8444b919cdd3d68c9a344bdc4e674f92f5e4a83875ef58d7bcef1c63e83",
+      "max_peak_rss_bytes": 358735872,
+      "max_wall_seconds": 59.624,
+      "mean_wall_seconds": 56.47081818181818,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 0,
+      "qualified_cases": [
+        "counter_basic.test_single_shot_alarm_notop",
+        "counter_basic.test_all_channels",
+        "counter_basic.test_valid_function_without_alarm"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "h753-counter"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": true,
+      "build_status": "built",
+      "calibration_launches": 4,
+      "configuration_ready_for_review": false,
+      "declared_cases": 1,
+      "generated_dts_sha256": "5d3de8444b919cdd3d68c9a344bdc4e674f92f5e4a83875ef58d7bcef1c63e83",
+      "max_peak_rss_bytes": 352182272,
+      "max_wall_seconds": 11.08,
+      "mean_wall_seconds": 9.704333333333334,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32000
+      ],
+      "programmed_divider_matches": true,
+      "provisional_production_launches": 0,
+      "qualified_cases": [
+        "seconds_counter.test_seconds_rate"
+      ],
+      "source_expected_divider": 32000,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": false,
+      "build_status": "built",
+      "calibration_launches": 0,
+      "configuration_ready_for_review": false,
+      "declared_cases": 7,
+      "generated_dts_sha256": "750d41d9a2ef7e92a0606a0cedd3582a3206e128a3078d7c73f701dae9413a9f",
+      "max_peak_rss_bytes": 314408960,
+      "max_wall_seconds": 842.058,
+      "mean_wall_seconds": 841.2443999999999,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32768
+      ],
+      "programmed_divider_matches": false,
+      "provisional_production_launches": 0,
+      "qualified_cases": [],
+      "source_expected_divider": 32000,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": false,
+      "build_status": "built",
+      "calibration_launches": 0,
+      "configuration_ready_for_review": false,
+      "declared_cases": 11,
+      "generated_dts_sha256": "750d41d9a2ef7e92a0606a0cedd3582a3206e128a3078d7c73f701dae9413a9f",
+      "max_peak_rss_bytes": 323059712,
+      "max_wall_seconds": 1742.44,
+      "mean_wall_seconds": 1741.2548,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32768
+      ],
+      "programmed_divider_matches": false,
+      "provisional_production_launches": 0,
+      "qualified_cases": [],
+      "source_expected_divider": 39936,
+      "unit_id": "f072-counter"
+    },
+    {
+      "all_calibration_applications_complete": false,
+      "all_nominal_applications_complete": false,
+      "build_status": "built",
+      "calibration_launches": 0,
+      "configuration_ready_for_review": false,
+      "declared_cases": 1,
+      "generated_dts_sha256": "750d41d9a2ef7e92a0606a0cedd3582a3206e128a3078d7c73f701dae9413a9f",
+      "max_peak_rss_bytes": 313401344,
+      "max_wall_seconds": 181.211,
+      "mean_wall_seconds": 177.6628,
+      "nominal_launches": 5,
+      "observed_dividers": [
+        32768
+      ],
+      "programmed_divider_matches": false,
+      "provisional_production_launches": 0,
+      "qualified_cases": [],
+      "source_expected_divider": 39936,
+      "unit_id": "f072-seconds"
+    }
+  ],
+  "watchdog": [
+    {
+      "attempt": 1,
+      "build_status": "built",
+      "exclusion_if_failed": "reboot and explicit completion not demonstrated",
+      "qualified": false,
+      "records": [
+        "f4-wdt-nominal-036"
+      ],
+      "unit_id": "f4-wdt"
+    },
+    {
+      "attempt": 1,
+      "build_status": "built",
+      "exclusion_if_failed": "reboot and explicit completion not demonstrated",
+      "qualified": false,
+      "records": [
+        "h753-wdt-nominal-145"
+      ],
+      "unit_id": "h753-wdt"
+    }
+  ]
+}

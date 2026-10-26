@@ -1,0 +1,16 @@
+unit_id,nominal_working_cases,nominal_skipped_cases,nominal_missing_cases,nominal_failed_cases,nominal_complete,calibration_completed_launches,calibration_required_launches,qualified_for_review,observed_dividers,maximum_wall_seconds,maximum_rss_bytes
+f4-rtc,5,2,0,0,True,7,7,True,32000,300.625,342970368
+f4-counter,4,7,0,0,True,4,7,False,32000,1232.133,341004288
+f4-seconds,1,0,0,0,True,7,7,True,32000,10.079,330604544
+f767-rtc,5,2,0,0,True,7,7,True,32000,174.911,374419456
+f767-counter,4,7,0,0,True,4,7,False,32000,1229.811,383598592
+f767-seconds,1,0,0,0,True,5,7,False,32000,10.827,368439296
+f746-rtc,5,2,0,0,True,6,7,False,32000,170.011,348569600
+f746-counter,0,0,11,0,False,0,7,False,32000,1741.196,360804352
+f746-seconds,1,0,0,0,True,7,7,True,32000,10.749,345456640
+h753-rtc,5,2,0,0,True,5,7,False,32000,162.881,363446272
+h753-counter,3,8,0,0,True,6,7,False,32000,59.624,358735872
+h753-seconds,1,0,0,0,True,4,7,False,32000,11.08,352182272
+f072-rtc,0,0,7,0,False,0,7,False,32768,842.058,314408960
+f072-counter,0,0,11,0,False,0,7,False,32768,1742.44,323059712
+f072-seconds,0,0,1,0,False,0,7,False,32768,181.211,313401344

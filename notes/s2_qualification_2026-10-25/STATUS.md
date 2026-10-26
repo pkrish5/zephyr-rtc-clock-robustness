@@ -127,3 +127,38 @@ only; no new build or firmware run and no original output modification. A
 The collector is separate from the sealed S2 harness; original S2 code remains
 unchanged. Qualification conclusions and any proposed next steps await the
 returned evidence. Production remains blocked pending the user's review.
+
+## 2026-10-26: evidence verified; qualification checkpoint
+
+Audit-only development job 3535059 COMPLETED 0:0 in 54 seconds on c306-006.
+Returned via rsync, archive SHA-256:
+be4c26e901f65bddfb0319bca2d0f94c380d76c9b74f84bf81749ce5feaa85f2.
+All 1,583 archive file hashes independently match. The copied original reporter
+completed successfully without changing original outputs. Verified evidence is
+published under results/s2_qualification_20261025_v1; derived checkpoint under
+analysis/s2_qualification_20261026_v2. First local summary preparation had an
+optional-CSV-column error; the incomplete local v1 is retained, not published
+as a result. No experiment or input changed in that reporting correction.
+
+Final records: 139/182; 117 complete, 15 harness wall ceilings, seven incomplete.
+Twenty-eight calibration launches were omitted for incomplete nominal apps;
+six other calibrations started but were interrupted, nine never started.
+Four configurations meet all existing gates; seven more need fifteen remaining
+calibration records. F746 counter has an MPU fault after partial UART outcomes;
+its five applications are incomplete. Conditional F072 has no UART outcomes or
+confirmed programmed divider. Both bounded watchdog probes lack reboot/case
+completion and are excluded without retry. No new firmware attempt was made.
+
+A potential counter failure cascade is explicitly retained: an all-channels
+callback-count assertion precedes missed cancellation, then single-shot setup
+fails -EBUSY. It is not classified as a second independent brittle wait.
+Source-backed preliminary explanations and excerpts are in the analysis folder;
+reference/replay classification remains pending. The non-stock RTC-only counter
+configuration and all explicit capability skips remain documented.
+
+Only conditional primary production costs can be given: four currently ready
+configurations imply 408 app launches, about 0.66 SU; completing seven more
+calibrations could yield 1,122 app launches, about 4.48 SU. These exclude
+replays/references/builds and allocation rounding. No scope was silently dropped
+and no normal job was submitted. STOP for qualification review and direction
+on remaining calibration and failed configurations. E/E2 and paper untouched.

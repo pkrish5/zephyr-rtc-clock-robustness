@@ -1,0 +1,123 @@
+{
+  "assumption": "1 node; 32 workers; 102 full-application launches per configuration; max observed wall *1.5 safety; no builds, replays or references included",
+  "conditional_on_finishing_calibration": {
+    "application_launches": 1122,
+    "case_verdict_slots": 6630,
+    "configurations": [
+      "f4-rtc",
+      "f4-counter",
+      "f4-seconds",
+      "f767-rtc",
+      "f767-counter",
+      "f767-seconds",
+      "f746-rtc",
+      "f746-seconds",
+      "h753-rtc",
+      "h753-counter",
+      "h753-seconds"
+    ],
+    "estimated_su": 4.479408359375
+  },
+  "currently_ready": {
+    "application_launches": 408,
+    "case_verdict_slots": 1632,
+    "configurations": [
+      "f4-rtc",
+      "f4-seconds",
+      "f767-rtc",
+      "f746-seconds"
+    ],
+    "estimated_su": 0.6592334375000001
+  },
+  "per_configuration": [
+    {
+      "currently_qualified": true,
+      "max_observed_wall_seconds": 300.625,
+      "per_launch_case_verdict_slots": 7,
+      "primary_application_launches": 102,
+      "unit_id": "f4-rtc",
+      "unrounded_su": 0.399267578125
+    },
+    {
+      "currently_qualified": false,
+      "max_observed_wall_seconds": 1232.133,
+      "per_launch_case_verdict_slots": 11,
+      "primary_application_launches": 102,
+      "unit_id": "f4-counter",
+      "unrounded_su": 1.6364266406249999
+    },
+    {
+      "currently_qualified": true,
+      "max_observed_wall_seconds": 10.079,
+      "per_launch_case_verdict_slots": 1,
+      "primary_application_launches": 102,
+      "unit_id": "f4-seconds",
+      "unrounded_su": 0.013386171875
+    },
+    {
+      "currently_qualified": true,
+      "max_observed_wall_seconds": 174.911,
+      "per_launch_case_verdict_slots": 7,
+      "primary_application_launches": 102,
+      "unit_id": "f767-rtc",
+      "unrounded_su": 0.232303671875
+    },
+    {
+      "currently_qualified": false,
+      "max_observed_wall_seconds": 1229.811,
+      "per_launch_case_verdict_slots": 11,
+      "primary_application_launches": 102,
+      "unit_id": "f767-counter",
+      "unrounded_su": 1.633342734375
+    },
+    {
+      "currently_qualified": false,
+      "max_observed_wall_seconds": 10.827,
+      "per_launch_case_verdict_slots": 1,
+      "primary_application_launches": 102,
+      "unit_id": "f767-seconds",
+      "unrounded_su": 0.014379609375000001
+    },
+    {
+      "currently_qualified": false,
+      "max_observed_wall_seconds": 170.011,
+      "per_launch_case_verdict_slots": 7,
+      "primary_application_launches": 102,
+      "unit_id": "f746-rtc",
+      "unrounded_su": 0.225795859375
+    },
+    {
+      "currently_qualified": true,
+      "max_observed_wall_seconds": 10.749,
+      "per_launch_case_verdict_slots": 1,
+      "primary_application_launches": 102,
+      "unit_id": "f746-seconds",
+      "unrounded_su": 0.014276015625000001
+    },
+    {
+      "currently_qualified": false,
+      "max_observed_wall_seconds": 162.881,
+      "per_launch_case_verdict_slots": 7,
+      "primary_application_launches": 102,
+      "unit_id": "h753-rtc",
+      "unrounded_su": 0.21632632812500002
+    },
+    {
+      "currently_qualified": false,
+      "max_observed_wall_seconds": 59.624,
+      "per_launch_case_verdict_slots": 11,
+      "primary_application_launches": 102,
+      "unit_id": "h753-counter",
+      "unrounded_su": 0.079188125
+    },
+    {
+      "currently_qualified": false,
+      "max_observed_wall_seconds": 11.08,
+      "per_launch_case_verdict_slots": 1,
+      "primary_application_launches": 102,
+      "unit_id": "h753-seconds",
+      "unrounded_su": 0.014715625
+    }
+  ],
+  "production_submission_authorized": false
+}

@@ -1,0 +1,144 @@
+{
+  "builds": [
+    {
+      "elf_sha256": "f7361cc795f36cc56a611776ee8ce7f631fcaa0b0ab616177f339eb7074796d7",
+      "status": "built",
+      "unit_id": "f4-rtc"
+    },
+    {
+      "elf_sha256": "ceda84d8a03383be5857e546d2ac87ecd2ed9c72c9e45bf0ca47661437c7ccb1",
+      "status": "built",
+      "unit_id": "f4-counter"
+    },
+    {
+      "elf_sha256": "01023ff06fdccd58831468ebf4eb43c8b4b26cb480d148b13c92594a0006c889",
+      "status": "built",
+      "unit_id": "f4-seconds"
+    },
+    {
+      "elf_sha256": "2b3b623cf8cd2752e885deb823dc2730c17833300c2794ead9637b061b15822b",
+      "status": "built",
+      "unit_id": "f4-wdt"
+    },
+    {
+      "elf_sha256": "dd354d56cccd9fe74b57436effd57cc8ef465f76a7be6a44fa8372b15ea9997e",
+      "status": "built",
+      "unit_id": "f767-rtc"
+    },
+    {
+      "elf_sha256": "e8678e6927a50c29033798c5c349b64e543bff666dbefc1b161c9bd3f0845b4d",
+      "status": "built",
+      "unit_id": "f767-counter"
+    },
+    {
+      "elf_sha256": "b6c8fc141b6cf9f84da6661d55175305c6579f57791e33046b0fc3bbbe9d4e1a",
+      "status": "built",
+      "unit_id": "f767-seconds"
+    },
+    {
+      "elf_sha256": "945395166076e15a04cb5d58a3afc2dd58bc309c3be20cfd9530db59c47f68d9",
+      "status": "built",
+      "unit_id": "f746-rtc"
+    },
+    {
+      "elf_sha256": "901b339521d251e85be7c418a6ae228b99c789354119aed3d71cd5212da1fa0e",
+      "status": "built",
+      "unit_id": "f746-counter"
+    },
+    {
+      "elf_sha256": "d5692d9ddfb7c232a6a16a350670b308afea7dc067f0d1d01931bca173f0f5e2",
+      "status": "built",
+      "unit_id": "f746-seconds"
+    },
+    {
+      "elf_sha256": "2ae7ae26f94e3e878b3c22117fc2804b05e782f513cb2ba7d7053f509191bd9e",
+      "status": "built",
+      "unit_id": "h753-rtc"
+    },
+    {
+      "elf_sha256": "f894cde8c1402676a19028da9487375790efba7834f33ac6a02350fbe27d3ff9",
+      "status": "built",
+      "unit_id": "h753-counter"
+    },
+    {
+      "elf_sha256": "1f9fd1eb55a050af50876d5e9304964fdb859e90ba54189471eb7217673fd393",
+      "status": "built",
+      "unit_id": "h753-seconds"
+    },
+    {
+      "elf_sha256": "353c43ce545ecadf6fbab61480bb34886483474c9dc70acf03be081151ebb261",
+      "status": "built",
+      "unit_id": "h753-wdt"
+    },
+    {
+      "elf_sha256": "4d6525b7c0e6fa8e9f56539e71aecd1beddda4f0cff594a1b3462743321c5a95",
+      "status": "built",
+      "unit_id": "f072-rtc"
+    },
+    {
+      "elf_sha256": "fc9245ece9dfbc62203d92d8300e2ed20f185fc69e27175829d055bd6ea3bb63",
+      "status": "built",
+      "unit_id": "f072-counter"
+    },
+    {
+      "elf_sha256": "91d49200b0da051b2f6b7990bb5cdb46d85a30b6922307cba8fc4dc749b7051d",
+      "status": "built",
+      "unit_id": "f072-seconds"
+    }
+  ],
+  "cache_runs": 139,
+  "collector_job": "3535059",
+  "collector_sha256": "6d59d955d3b8061adbfcccb35d133b0d6c34922a30d0231901aba2147adde475",
+  "missing_task_indices": [
+    18,
+    19,
+    21,
+    55,
+    56,
+    58,
+    71,
+    72,
+    79,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    119,
+    120,
+    127,
+    140,
+    141,
+    143,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181
+  ],
+  "new_builds": 0,
+  "new_firmware_runs": 0,
+  "plan_sha256": "cbde1752ce2435a980cbce88a94829ae1bfc322368b1ef15c9bc54803753efbb",
+  "production_authorized": false,
+  "records_verified": 139,
+  "report_present": true,
+  "unique_cache_blobs": 144
+}

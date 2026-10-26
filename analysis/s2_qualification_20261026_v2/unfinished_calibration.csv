@@ -1,0 +1,16 @@
+condition,frequency_hz,index,setting_index,unit_id,evidence_state,seed
+max,47000,18,1,f4-counter,started_without_final_record,
+seed,44670,19,2,f4-counter,started_without_final_record,0
+seed,45282,21,4,f4-counter,started_without_final_record,2
+max,47000,55,1,f767-counter,started_without_final_record,
+seed,44670,56,2,f767-counter,started_without_final_record,0
+seed,45282,58,4,f767-counter,started_without_final_record,2
+seed,24797,71,5,f767-seconds,not_started_before_job_timeout,3
+seed,24734,72,6,f767-seconds,not_started_before_job_timeout,4
+max,47000,79,1,f746-rtc,not_started_before_job_timeout,
+seed,30734,119,5,h753-rtc,not_started_before_job_timeout,3
+seed,30726,120,6,h753-rtc,not_started_before_job_timeout,4
+max,33600,127,1,h753-counter,not_started_before_job_timeout,
+seed,33218,140,2,h753-seconds,not_started_before_job_timeout,0
+seed,30310,141,3,h753-seconds,not_started_before_job_timeout,1
+seed,30734,143,5,h753-seconds,not_started_before_job_timeout,3
