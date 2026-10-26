@@ -116,3 +116,27 @@ Production packaging checks use fake text ELFs/images in temporary local
 fixtures, never Renode/compiler/SSH/Slurm. Three tests verify byte-identical
 ELF-pointer packaging and rejection of image/board-clock drift. All pass.
 Existing scientific worker and active continuation scripts are unchanged.
+
+## Calibration acceptance and conditional production gate passed
+
+3535399 COMPLETED0:0,21:44,c306-005. Returned archive via rsync, SHA-256
+1f58aa9ed60585246ad4169d71ff11bafc456d31e44da14048963baf6978e463.
+All347 file hashes independently verify; all15 acceptance settings accepted,
+with no harness errors or unexpected vectors. The two F767 seconds failures
+are the registered main.c:41 lower-bound failures, not missing outcomes.
+No rebuild occurred. The original missing attempts remain in their original
+archive. Final cohort:11 configurations /1122 full-application launches,
+6630 declared-case verdict slots. F746 RTC and seconds pass all gates.
+
+Source/evidence: results/s2_qualification_continuation_20261026_v1 and
+analysis/s2_qualification_final_20261026_v1. Prospective source interpretation
+notes preserve intentional rate-check and possible shared-state-cascade
+questions for reference attribution; no new reference/isolation experiment.
+
+Production plan719b3bc42f2b93f44455a11eca3eacd69eacbbf4e8c714b90300d5a8343d0612
+retains the same scientific worker, source, ELFs, clocks, configs and limits.
+F7 SVD bytes match qualification and are prepackaged for offline use.
+Updated primary estimate4.541397265625SU, one normal node /06:00:00,
+reservation ceiling6SU, -A TRA25006. This estimate was reported before
+submission, under the user's satisfied conditional approval. No S2 primary
+job has yet been submitted at this log checkpoint. E2/paper remain held.

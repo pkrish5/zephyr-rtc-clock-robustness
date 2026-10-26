@@ -1,0 +1,7 @@
+{
+  "subjects/upstream/zephyr/drivers/counter/counter_ll_stm32_rtc.c": "19f51d71e8c0e184816161f44ef23c35e3f962eba3f540197339351b5139303c",
+  "subjects/upstream/zephyr/include/zephyr/drivers/counter.h": "abfe7079c6f0de74faddedfe1e196f400a710f534b0738e287224d84fb7f668e",
+  "subjects/upstream/zephyr/tests/drivers/counter/counter_basic_api/src/test_counter.c": "8f5e476627fd7386d2393c7fbc2140e67d6393308f86ba6e60c5a5cdba1ffde8",
+  "subjects/upstream/zephyr/tests/drivers/counter/counter_seconds/src/main.c": "ad3d48be4c9f85fa1731d85f75afa6b9a2c9f9cb028d4c1153aef43fd811cab7",
+  "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_calibrate.c": "fd41f676c53ad59af01bdfe0f6499bcf943d785095a3a5a9abaeda5b5e57804d"
+}

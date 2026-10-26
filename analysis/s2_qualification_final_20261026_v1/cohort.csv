@@ -1,0 +1,12 @@
+board,unit_id,declared_cases,runnable_nominal_cases,capability_skipped_nominal_cases,nominal_launches,calibration_launches,expected_production_launches,expected_case_verdict_slots,maximum_wall_seconds
+stm32f4_disco,f4-rtc,7,5,2,5,7,102,714,300.625
+stm32f4_disco,f4-counter,11,4,7,5,7,102,1122,1273.603
+stm32f4_disco,f4-seconds,1,1,0,5,7,102,102,10.079
+nucleo_f767zi,f767-rtc,7,5,2,5,7,102,714,174.911
+nucleo_f767zi,f767-counter,11,4,7,5,7,102,1122,1234.86
+nucleo_f767zi,f767-seconds,1,1,0,5,7,102,102,10.982
+stm32f746g_disco,f746-rtc,7,5,2,5,7,102,714,170.011
+stm32f746g_disco,f746-seconds,1,1,0,5,7,102,102,10.749
+nucleo_h753zi,h753-rtc,7,5,2,5,7,102,714,162.881
+nucleo_h753zi,h753-counter,11,3,8,5,7,102,1122,59.624
+nucleo_h753zi,h753-seconds,1,1,0,5,7,102,102,11.08

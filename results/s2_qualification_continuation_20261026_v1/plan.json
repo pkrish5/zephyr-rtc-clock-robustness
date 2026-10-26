@@ -1,0 +1,3159 @@
+{
+  "acceptance": {
+    "119": {
+      "expected_vector": {
+        "rtc_api.test_alarm": "pass",
+        "rtc_api.test_alarm_callback": "pass",
+        "rtc_api.test_set_get_calibration": "pass",
+        "rtc_api.test_set_get_time": "pass",
+        "rtc_api.test_time_counting": "pass",
+        "rtc_api.test_update_callback": "skip",
+        "rtc_api.test_y2k": "skip"
+      },
+      "nominal_vector": {
+        "rtc_api.test_alarm": "pass",
+        "rtc_api.test_alarm_callback": "pass",
+        "rtc_api.test_set_get_calibration": "pass",
+        "rtc_api.test_set_get_time": "pass",
+        "rtc_api.test_time_counting": "pass",
+        "rtc_api.test_update_callback": "skip",
+        "rtc_api.test_y2k": "skip"
+      }
+    },
+    "120": {
+      "expected_vector": {
+        "rtc_api.test_alarm": "pass",
+        "rtc_api.test_alarm_callback": "pass",
+        "rtc_api.test_set_get_calibration": "pass",
+        "rtc_api.test_set_get_time": "pass",
+        "rtc_api.test_time_counting": "pass",
+        "rtc_api.test_update_callback": "skip",
+        "rtc_api.test_y2k": "skip"
+      },
+      "nominal_vector": {
+        "rtc_api.test_alarm": "pass",
+        "rtc_api.test_alarm_callback": "pass",
+        "rtc_api.test_set_get_calibration": "pass",
+        "rtc_api.test_set_get_time": "pass",
+        "rtc_api.test_time_counting": "pass",
+        "rtc_api.test_update_callback": "skip",
+        "rtc_api.test_y2k": "skip"
+      }
+    },
+    "127": {
+      "expected_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "skip",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      },
+      "nominal_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "skip",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      }
+    },
+    "140": {
+      "expected_vector": {
+        "seconds_counter.test_seconds_rate": "pass"
+      },
+      "nominal_vector": {
+        "seconds_counter.test_seconds_rate": "pass"
+      }
+    },
+    "141": {
+      "expected_vector": {
+        "seconds_counter.test_seconds_rate": "pass"
+      },
+      "nominal_vector": {
+        "seconds_counter.test_seconds_rate": "pass"
+      }
+    },
+    "143": {
+      "expected_vector": {
+        "seconds_counter.test_seconds_rate": "pass"
+      },
+      "nominal_vector": {
+        "seconds_counter.test_seconds_rate": "pass"
+      }
+    },
+    "18": {
+      "expected_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      },
+      "nominal_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      }
+    },
+    "19": {
+      "expected_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      },
+      "nominal_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      }
+    },
+    "21": {
+      "expected_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      },
+      "nominal_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      }
+    },
+    "55": {
+      "expected_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      },
+      "nominal_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      }
+    },
+    "56": {
+      "expected_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      },
+      "nominal_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      }
+    },
+    "58": {
+      "expected_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      },
+      "nominal_vector": {
+        "counter_basic.test_all_channels": "pass",
+        "counter_basic.test_cancelled_alarm_does_not_expire": "skip",
+        "counter_basic.test_late_alarm": "skip",
+        "counter_basic.test_late_alarm_error": "skip",
+        "counter_basic.test_multiple_alarms": "skip",
+        "counter_basic.test_set_top_value_with_alarm": "skip",
+        "counter_basic.test_short_relative_alarm": "pass",
+        "counter_basic.test_single_shot_alarm_notop": "pass",
+        "counter_basic.test_single_shot_alarm_top": "skip",
+        "counter_basic.test_valid_function_without_alarm": "pass",
+        "counter_no_callback.test_set_top_value_without_alarm": "skip"
+      }
+    },
+    "71": {
+      "expected_vector": {
+        "seconds_counter.test_seconds_rate": "fail"
+      },
+      "nominal_vector": {
+        "seconds_counter.test_seconds_rate": "pass"
+      }
+    },
+    "72": {
+      "expected_vector": {
+        "seconds_counter.test_seconds_rate": "fail"
+      },
+      "nominal_vector": {
+        "seconds_counter.test_seconds_rate": "pass"
+      }
+    },
+    "79": {
+      "expected_vector": {
+        "rtc_api.test_alarm": "pass",
+        "rtc_api.test_alarm_callback": "pass",
+        "rtc_api.test_set_get_calibration": "pass",
+        "rtc_api.test_set_get_time": "pass",
+        "rtc_api.test_time_counting": "pass",
+        "rtc_api.test_update_callback": "skip",
+        "rtc_api.test_y2k": "skip"
+      },
+      "nominal_vector": {
+        "rtc_api.test_alarm": "pass",
+        "rtc_api.test_alarm_callback": "pass",
+        "rtc_api.test_set_get_calibration": "pass",
+        "rtc_api.test_set_get_time": "pass",
+        "rtc_api.test_time_counting": "pass",
+        "rtc_api.test_update_callback": "skip",
+        "rtc_api.test_y2k": "skip"
+      }
+    }
+  },
+  "boards": {
+    "f072": {
+      "board": "stm32f072b_disco",
+      "calibration_settings": [
+        {
+          "condition": "min",
+          "frequency_hz": 30000
+        },
+        {
+          "condition": "max",
+          "frequency_hz": 50000
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 42623,
+          "seed": 0
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 34402,
+          "seed": 1
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 31853,
+          "seed": 2
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 37797,
+          "seed": 3
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 37734,
+          "seed": 4
+        }
+      ],
+      "maximum": 50000,
+      "minimum": 30000,
+      "nominal": 40000,
+      "platform": "stm32f072b_discovery.repl",
+      "rtc_address": 1073752064,
+      "seeded_frequencies_hz": [
+        42623,
+        34402,
+        31853,
+        37797,
+        37734,
+        38370,
+        48802,
+        40611,
+        37428,
+        45171,
+        48723,
+        44823,
+        45550,
+        38487,
+        33500,
+        36847,
+        41846,
+        47104,
+        35939,
+        31417,
+        34954,
+        35405,
+        34599,
+        39499,
+        42545,
+        42352,
+        36643,
+        45724,
+        33701,
+        47960,
+        47664,
+        30402,
+        32536,
+        48688,
+        47332,
+        47979,
+        40770,
+        49914,
+        43799,
+        36876,
+        45027,
+        42485,
+        33648,
+        31263,
+        43386,
+        38908,
+        32502,
+        41529,
+        47962,
+        32191,
+        46303,
+        37979,
+        38792,
+        37079,
+        34504,
+        32960,
+        48342,
+        31394,
+        49030,
+        37346,
+        40086,
+        46203,
+        48850,
+        44586,
+        45602,
+        43590,
+        32320,
+        32450,
+        45281,
+        31222,
+        33880,
+        40608,
+        32406,
+        39168,
+        46884,
+        44773,
+        42142,
+        38281,
+        36149,
+        34762,
+        38896,
+        46578,
+        34742,
+        46258,
+        39292,
+        36540,
+        31016,
+        34782,
+        43024,
+        32657,
+        36673,
+        32736,
+        43796,
+        46198,
+        47917,
+        47427,
+        42143,
+        36374,
+        41678,
+        43237
+      ],
+      "source": "DS9826 Rev6; VDDA3.3V; TA -40..105C; conditional divider qualification",
+      "uart": "usart1"
+    },
+    "f4": {
+      "board": "stm32f4_disco",
+      "calibration_settings": [
+        {
+          "condition": "min",
+          "frequency_hz": 17000
+        },
+        {
+          "condition": "max",
+          "frequency_hz": 47000
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 44670,
+          "seed": 0
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 21402,
+          "seed": 1
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 45282,
+          "seed": 2
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 24797,
+          "seed": 3
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 24734,
+          "seed": 4
+        }
+      ],
+      "maximum": 47000,
+      "minimum": 17000,
+      "nominal": 32000,
+      "platform": "stm32f4_discovery.repl",
+      "rtc_address": 1073752064,
+      "seeded_frequencies_hz": [
+        44670,
+        21402,
+        45282,
+        24797,
+        24734,
+        37411,
+        42996,
+        27611,
+        24428,
+        32171,
+        35723,
+        31823,
+        32550,
+        25487,
+        20500,
+        23847,
+        28846,
+        34104,
+        22939,
+        39188,
+        46676,
+        22405,
+        46732,
+        42538,
+        40342,
+        29352,
+        41487,
+        38249,
+        20701,
+        34960,
+        34664,
+        17402,
+        19536,
+        35688,
+        34332,
+        34979,
+        27770,
+        39347,
+        37954,
+        23876,
+        32027,
+        29485,
+        37952,
+        18263,
+        30386,
+        25908,
+        46106,
+        28529,
+        34962,
+        19191,
+        33303,
+        24979,
+        25792,
+        37222,
+        46938,
+        19960,
+        44797,
+        18394,
+        36030,
+        24346,
+        27086,
+        33203,
+        35850,
+        31586,
+        32602,
+        30590,
+        19320,
+        19450,
+        41303,
+        39421,
+        46811,
+        27608,
+        19406,
+        26168,
+        45171,
+        31773,
+        29142,
+        43185,
+        43688,
+        21762,
+        25896,
+        33578,
+        21742,
+        33258,
+        40970,
+        23540,
+        42936,
+        21782,
+        30024,
+        19657,
+        23673,
+        19736,
+        30796,
+        46895,
+        34917,
+        41908,
+        29143,
+        23374,
+        28678,
+        30237
+      ],
+      "source": "DS8626 Rev12; VDD3V; TA -40..105C",
+      "uart": "usart2"
+    },
+    "f746": {
+      "board": "stm32f746g_disco",
+      "calibration_settings": [
+        {
+          "condition": "min",
+          "frequency_hz": 17000
+        },
+        {
+          "condition": "max",
+          "frequency_hz": 47000
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 44670,
+          "seed": 0
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 21402,
+          "seed": 1
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 45282,
+          "seed": 2
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 24797,
+          "seed": 3
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 24734,
+          "seed": 4
+        }
+      ],
+      "maximum": 47000,
+      "minimum": 17000,
+      "nominal": 32000,
+      "platform": "stm32f7_discovery-bb.repl",
+      "rtc_address": 1073752064,
+      "seeded_frequencies_hz": [
+        44670,
+        21402,
+        45282,
+        24797,
+        24734,
+        37411,
+        42996,
+        27611,
+        24428,
+        32171,
+        35723,
+        31823,
+        32550,
+        25487,
+        20500,
+        23847,
+        28846,
+        34104,
+        22939,
+        39188,
+        46676,
+        22405,
+        46732,
+        42538,
+        40342,
+        29352,
+        41487,
+        38249,
+        20701,
+        34960,
+        34664,
+        17402,
+        19536,
+        35688,
+        34332,
+        34979,
+        27770,
+        39347,
+        37954,
+        23876,
+        32027,
+        29485,
+        37952,
+        18263,
+        30386,
+        25908,
+        46106,
+        28529,
+        34962,
+        19191,
+        33303,
+        24979,
+        25792,
+        37222,
+        46938,
+        19960,
+        44797,
+        18394,
+        36030,
+        24346,
+        27086,
+        33203,
+        35850,
+        31586,
+        32602,
+        30590,
+        19320,
+        19450,
+        41303,
+        39421,
+        46811,
+        27608,
+        19406,
+        26168,
+        45171,
+        31773,
+        29142,
+        43185,
+        43688,
+        21762,
+        25896,
+        33578,
+        21742,
+        33258,
+        40970,
+        23540,
+        42936,
+        21782,
+        30024,
+        19657,
+        23673,
+        19736,
+        30796,
+        46895,
+        34917,
+        41908,
+        29143,
+        23374,
+        28678,
+        30237
+      ],
+      "source": "DS10916 Rev5; VDD3V; TA -40..105C",
+      "uart": "usart1"
+    },
+    "f767": {
+      "board": "nucleo_f767zi",
+      "calibration_settings": [
+        {
+          "condition": "min",
+          "frequency_hz": 17000
+        },
+        {
+          "condition": "max",
+          "frequency_hz": 47000
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 44670,
+          "seed": 0
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 21402,
+          "seed": 1
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 45282,
+          "seed": 2
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 24797,
+          "seed": 3
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 24734,
+          "seed": 4
+        }
+      ],
+      "maximum": 47000,
+      "minimum": 17000,
+      "nominal": 32000,
+      "platform": "nucleo_f767zi.repl",
+      "rtc_address": 1073752064,
+      "seeded_frequencies_hz": [
+        44670,
+        21402,
+        45282,
+        24797,
+        24734,
+        37411,
+        42996,
+        27611,
+        24428,
+        32171,
+        35723,
+        31823,
+        32550,
+        25487,
+        20500,
+        23847,
+        28846,
+        34104,
+        22939,
+        39188,
+        46676,
+        22405,
+        46732,
+        42538,
+        40342,
+        29352,
+        41487,
+        38249,
+        20701,
+        34960,
+        34664,
+        17402,
+        19536,
+        35688,
+        34332,
+        34979,
+        27770,
+        39347,
+        37954,
+        23876,
+        32027,
+        29485,
+        37952,
+        18263,
+        30386,
+        25908,
+        46106,
+        28529,
+        34962,
+        19191,
+        33303,
+        24979,
+        25792,
+        37222,
+        46938,
+        19960,
+        44797,
+        18394,
+        36030,
+        24346,
+        27086,
+        33203,
+        35850,
+        31586,
+        32602,
+        30590,
+        19320,
+        19450,
+        41303,
+        39421,
+        46811,
+        27608,
+        19406,
+        26168,
+        45171,
+        31773,
+        29142,
+        43185,
+        43688,
+        21762,
+        25896,
+        33578,
+        21742,
+        33258,
+        40970,
+        23540,
+        42936,
+        21782,
+        30024,
+        19657,
+        23673,
+        19736,
+        30796,
+        46895,
+        34917,
+        41908,
+        29143,
+        23374,
+        28678,
+        30237
+      ],
+      "source": "DS11532 Rev9; VDD3V; TA -40..105C",
+      "uart": "usart3"
+    },
+    "h753": {
+      "board": "nucleo_h753zi",
+      "calibration_settings": [
+        {
+          "condition": "min",
+          "frequency_hz": 29760
+        },
+        {
+          "condition": "max",
+          "frequency_hz": 33600
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 33218,
+          "seed": 0
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 30310,
+          "seed": 1
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 33295,
+          "seed": 2
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 30734,
+          "seed": 3
+        },
+        {
+          "condition": "seed",
+          "frequency_hz": 30726,
+          "seed": 4
+        }
+      ],
+      "maximum": 33600,
+      "minimum": 29760,
+      "nominal": 32000,
+      "platform": "nucleo_h753zi.repl",
+      "rtc_address": 1476411392,
+      "seeded_frequencies_hz": [
+        33218,
+        30310,
+        33295,
+        30734,
+        30726,
+        32311,
+        33009,
+        31086,
+        30688,
+        31656,
+        32100,
+        31612,
+        31703,
+        30820,
+        30197,
+        30615,
+        31240,
+        31898,
+        30502,
+        32533,
+        33469,
+        30435,
+        33476,
+        33548,
+        32677,
+        31304,
+        32820,
+        32416,
+        30222,
+        32005,
+        31968,
+        29810,
+        30077,
+        32096,
+        31926,
+        32007,
+        31106,
+        32553,
+        32379,
+        30619,
+        31638,
+        31320,
+        32379,
+        29917,
+        31433,
+        30873,
+        33398,
+        31201,
+        32005,
+        30033,
+        31797,
+        30757,
+        30859,
+        32287,
+        33502,
+        30130,
+        33234,
+        29934,
+        32138,
+        30678,
+        31020,
+        31785,
+        33561,
+        31583,
+        31710,
+        31458,
+        30050,
+        30066,
+        32797,
+        32562,
+        33486,
+        31086,
+        30060,
+        30906,
+        33281,
+        31606,
+        31277,
+        33033,
+        33096,
+        30355,
+        30872,
+        31832,
+        30352,
+        31792,
+        32756,
+        30577,
+        33002,
+        30357,
+        31388,
+        30092,
+        30594,
+        30102,
+        31484,
+        33496,
+        31999,
+        32873,
+        31277,
+        30556,
+        31219,
+        31414
+      ],
+      "source": "DS12117 Rev10; revision V; VDD1.62..3.6V; TJ -40..105C",
+      "uart": "usart3"
+    }
+  },
+  "build_timeout_seconds": 1800,
+  "code_sha256": {
+    "harness/tacc_s2/README.md": "d51ce21dc25d184cfb3dc69bb406b1e9f7f5b3186303b236d49f60d053cbc12f",
+    "harness/tacc_s2/control.py": "69b669faaa28ca6f9894430de865d5e72f0a54032783db153b669ea9390b3746",
+    "harness/tacc_s2/development.sbatch": "4492597442326bad7c3f8bb02fb6c765b91e13db102b1725903def430fcebc9d",
+    "harness/tacc_s2/prepare.py": "e02107b0ff4b550e2dc0b578698ba2e9371eef3547d23d4a3fe314eba049a46b",
+    "harness/tacc_s2/resume_probe.sbatch": "9cccf582e2f84957eb4983cbb7aa151de674edb54c03f0bfc8acf451d70668e8",
+    "harness/tacc_s2/task.sh": "36a1d54f3128c1980acaaa84dd3284af29d8367a999ff05dbd38c885e2a8fe39",
+    "harness/tacc_s2/test_accounting.py": "176d1bf62007d1a430936873f2fcfd7202775203145a1db36b45a2812d00e4d5",
+    "harness/tacc_s2/worker.py": "a1737e8a973b8147f6834a443e544e736723e6045dd0e0c264bddb4e7b116f86"
+  },
+  "compiler_parallelism": 2,
+  "continuation": {
+    "date": "2026-10-26",
+    "original_missing_outcomes_preserved": true,
+    "original_plan_sha256": "cbde1752ce2435a980cbce88a94829ae1bfc322368b1ef15c9bc54803753efbb",
+    "purpose": "Finish exactly fifteen interrupted/unstarted calibration settings; no source/config/runtime change",
+    "task_indices": [
+      18,
+      19,
+      21,
+      55,
+      56,
+      58,
+      71,
+      72,
+      79,
+      119,
+      120,
+      127,
+      140,
+      141,
+      143
+    ]
+  },
+  "design_sha256": "a4e097397af55e57efe721d9dc5a65f84a924d40981cb64d45dcf2625897cadc",
+  "followup_code_sha256": {
+    "harness/tacc_s2_followup/finalize.py": "c5925d12c8192e24a3ba45eee1ceccfb17df3b660d318d35ebd1c57e728bab67",
+    "harness/tacc_s2_followup/manage.py": "efd3de9d7510bc8c1b6a7c5e4557ec140df4408a54c282493f1734dca5765173",
+    "harness/tacc_s2_followup/prepare_resume.py": "f71214b7b25f4733188a8df6b36fa8714f27be44146125fa072149fce3bc83f8",
+    "harness/tacc_s2_followup/resume.sbatch": "f2d998d54667728a4b24c5ad69455fd79f171b91e92c59aa704ef78ec5a1e33f"
+  },
+  "image_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "input_sha256": {
+    "approved_runtime.json": "ffacca0f50d2982cf8f77825196ca2c5e96a0075d6ba5e2e141a343948a1c88b",
+    "configs/counter.conf": "c04e21729a405424a56b9e262fecd2dc2c0d8ed0a8f20a2f105c103ce85241ed",
+    "configs/f072.overlay": "d0d21e123d9d24b10bdc7363e440445e8d9f96118d20d6dbb5f707cead7c8056",
+    "configs/f4-wdt.overlay": "9f46319c7d928a2304b7e8b9527c816b3393c2bb9b29479a8d9aec0d9f04e0e6",
+    "configs/f4.overlay": "2606f8f84512e58e710ce341e71498266776a90be614bc91e379e7756650583b",
+    "configs/f746.overlay": "2dceda04819efdada156ca16191603bce27f37c3447cec4ddb1ccfac19b343ef",
+    "configs/f767.overlay": "2dceda04819efdada156ca16191603bce27f37c3447cec4ddb1ccfac19b343ef",
+    "configs/h753-wdt.overlay": "22f0355262091456714a59c6ab5c57cc5941e60655ef89fc77bdc082ad07f33b",
+    "configs/h753.overlay": "2dceda04819efdada156ca16191603bce27f37c3447cec4ddb1ccfac19b343ef",
+    "configs/rtc.conf": "cae4fd3032042434bdd5448c2a610e7a6e402f5feb61701658c86e125d4602ed",
+    "configs/seconds.conf": "c04e21729a405424a56b9e262fecd2dc2c0d8ed0a8f20a2f105c103ce85241ed",
+    "configs/wdt.conf": "546642faa58172a2589c1173a2e09201b86066488358a8bab0528f5832708acb",
+    "renode-cache/binaries_index": "e3db9aa6372f37c2297856d0123fd69c2a212d7732f534c61a8560cf0f994d5b",
+    "renode-cache/cached_binaries/bin0": "6e2b0146a335a932b3f3791dac0926d3576f7879900456f6508e2e0738d9375c",
+    "renode/platforms/boards/nucleo_f767zi.repl": "6a6bc147d107b82e69c4e1604978e6fe54158bd0300a21c65c12ec8f83cd3fcd",
+    "renode/platforms/boards/nucleo_h753zi.repl": "d335d901e4b0d43d57f2e7793fbba18de1cc27f92f54cb638e802f65a14a2e7f",
+    "renode/platforms/boards/stm32f072b_discovery.repl": "e0624a21681456e2ddc9fd6694d012e2c569bb3b7dc2172e399e257736ef8172",
+    "renode/platforms/boards/stm32f4_discovery.repl": "dd3a7018ac84f3941b4365961f45d01ac0e6bbf7c3d02996f138d893847a7073",
+    "renode/platforms/boards/stm32f7_discovery-bb.repl": "a57b0ec26faaeb63c679f294c9fa44ed09f51a3d184f243194277141bd2415aa",
+    "renode/platforms/cpus/stm32f0.repl": "30b0e1555601a8bf3fefcfae8767db70950df98ebbc945bd938ca835465f3ea4",
+    "renode/platforms/cpus/stm32f072.repl": "83117d62482dfedc0f6143d837b36aa0a3f754706ccb94c4e945e1768c8bc27f",
+    "renode/platforms/cpus/stm32f4.repl": "a78bb20f3e594fffa9aec25d2ee85a7b165e8a381c603303ee237e7ce67d1194",
+    "renode/platforms/cpus/stm32f746.repl": "c8799c95048c0ae5466a70f5e8ef7fcb10ae2807d6a3a12d8e8f15437b73679c",
+    "renode/platforms/cpus/stm32f777.repl": "24bc73c01412100559c22b7c36b8c10bbd637351cc34c6ad1b783cf318011f4d",
+    "renode/platforms/cpus/stm32h7.repl": "b85cb4af7a7e98f784ed822941ddc2ec4ddc0c3928c3efe7ef7bb4702764251e",
+    "renode/platforms/cpus/stm32h743.repl": "f78cf640cb789796dfa610d99637b76c2f6ceda1c93529a544f26e80d14b5719",
+    "renode/platforms/cpus/stm32h753.repl": "13c5571ea3c2a66d23d7dc5e49d09c6013d31c946abdbfc450aebb08929d10ce"
+  },
+  "maximum_workers": 32,
+  "original_local_renode_version": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "original_platform_sha256": {
+    "platforms/boards/nucleo_f767zi.repl": "9b79f21888159fb482fc6b99437739421c43293bc9efaea74129d655515ba297",
+    "platforms/boards/nucleo_h753zi.repl": "979d71751b20634ef69349754bf1fd15262875840caae0d8cb7cf46eceb601b4",
+    "platforms/boards/stm32f072b_discovery.repl": "065687c339800ee01a9bc8aede314a48042960c9aa428e490db688ee950f201a",
+    "platforms/boards/stm32f4_discovery.repl": "6421c6838e1a4e72007519806134fc33616bbbd8c49b18e34e79fc3b86121c1e",
+    "platforms/boards/stm32f7_discovery-bb.repl": "996d5c70ef85b185c554fad80cd31189f1f4d41799e02f9576b4f8628d116810",
+    "platforms/cpus/stm32f0.repl": "30b0e1555601a8bf3fefcfae8767db70950df98ebbc945bd938ca835465f3ea4",
+    "platforms/cpus/stm32f072.repl": "83117d62482dfedc0f6143d837b36aa0a3f754706ccb94c4e945e1768c8bc27f",
+    "platforms/cpus/stm32f4.repl": "a78bb20f3e594fffa9aec25d2ee85a7b165e8a381c603303ee237e7ce67d1194",
+    "platforms/cpus/stm32f746.repl": "c8799c95048c0ae5466a70f5e8ef7fcb10ae2807d6a3a12d8e8f15437b73679c",
+    "platforms/cpus/stm32f777.repl": "24bc73c01412100559c22b7c36b8c10bbd637351cc34c6ad1b783cf318011f4d",
+    "platforms/cpus/stm32h7.repl": "b85cb4af7a7e98f784ed822941ddc2ec4ddc0c3928c3efe7ef7bb4702764251e",
+    "platforms/cpus/stm32h743.repl": "86b2c2c5f524a3f2b65da8ce20101c7a83690b1fb8c98a8cff96d399c15f231c",
+    "platforms/cpus/stm32h753.repl": "13c5571ea3c2a66d23d7dc5e49d09c6013d31c946abdbfc450aebb08929d10ce"
+  },
+  "output_relative": "results/s2_qualification_20261025_v1",
+  "phase": "S2 qualification only",
+  "probe_task_index": 0,
+  "production_authorized": false,
+  "quantum_ns": 1000,
+  "registered_date": "2026-10-25",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "schema": 1,
+  "step_ns": 500000000,
+  "stop": "Report qualification and recost; require approval before any normal job",
+  "tasks": [
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 0,
+      "repeat_index": 0,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 1,
+      "repeat_index": 1,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 2,
+      "repeat_index": 2,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 3,
+      "repeat_index": 3,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 4,
+      "repeat_index": 4,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 17000,
+      "index": 5,
+      "setting_index": 0,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 47000,
+      "index": 6,
+      "setting_index": 1,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 44670,
+      "index": 7,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 21402,
+      "index": 8,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 45282,
+      "index": 9,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24797,
+      "index": 10,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24734,
+      "index": 11,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f4-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 12,
+      "repeat_index": 0,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 13,
+      "repeat_index": 1,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 14,
+      "repeat_index": 2,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 15,
+      "repeat_index": 3,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 16,
+      "repeat_index": 4,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 17000,
+      "index": 17,
+      "setting_index": 0,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 47000,
+      "index": 18,
+      "setting_index": 1,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 44670,
+      "index": 19,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 21402,
+      "index": 20,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 45282,
+      "index": 21,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24797,
+      "index": 22,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24734,
+      "index": 23,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f4-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 24,
+      "repeat_index": 0,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 25,
+      "repeat_index": 1,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 26,
+      "repeat_index": 2,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 27,
+      "repeat_index": 3,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 28,
+      "repeat_index": 4,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 17000,
+      "index": 29,
+      "setting_index": 0,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 47000,
+      "index": 30,
+      "setting_index": 1,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 44670,
+      "index": 31,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 21402,
+      "index": 32,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 45282,
+      "index": 33,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24797,
+      "index": 34,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24734,
+      "index": 35,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f4-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 36,
+      "repeat_index": 0,
+      "unit_id": "f4-wdt"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 37,
+      "repeat_index": 0,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 38,
+      "repeat_index": 1,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 39,
+      "repeat_index": 2,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 40,
+      "repeat_index": 3,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 41,
+      "repeat_index": 4,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 17000,
+      "index": 42,
+      "setting_index": 0,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 47000,
+      "index": 43,
+      "setting_index": 1,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 44670,
+      "index": 44,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 21402,
+      "index": 45,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 45282,
+      "index": 46,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24797,
+      "index": 47,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24734,
+      "index": 48,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f767-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 49,
+      "repeat_index": 0,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 50,
+      "repeat_index": 1,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 51,
+      "repeat_index": 2,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 52,
+      "repeat_index": 3,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 53,
+      "repeat_index": 4,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 17000,
+      "index": 54,
+      "setting_index": 0,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 47000,
+      "index": 55,
+      "setting_index": 1,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 44670,
+      "index": 56,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 21402,
+      "index": 57,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 45282,
+      "index": 58,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24797,
+      "index": 59,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24734,
+      "index": 60,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f767-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 61,
+      "repeat_index": 0,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 62,
+      "repeat_index": 1,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 63,
+      "repeat_index": 2,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 64,
+      "repeat_index": 3,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 65,
+      "repeat_index": 4,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 17000,
+      "index": 66,
+      "setting_index": 0,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 47000,
+      "index": 67,
+      "setting_index": 1,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 44670,
+      "index": 68,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 21402,
+      "index": 69,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 45282,
+      "index": 70,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24797,
+      "index": 71,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24734,
+      "index": 72,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f767-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 73,
+      "repeat_index": 0,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 74,
+      "repeat_index": 1,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 75,
+      "repeat_index": 2,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 76,
+      "repeat_index": 3,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 77,
+      "repeat_index": 4,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 17000,
+      "index": 78,
+      "setting_index": 0,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 47000,
+      "index": 79,
+      "setting_index": 1,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 44670,
+      "index": 80,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 21402,
+      "index": 81,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 45282,
+      "index": 82,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24797,
+      "index": 83,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24734,
+      "index": 84,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f746-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 85,
+      "repeat_index": 0,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 86,
+      "repeat_index": 1,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 87,
+      "repeat_index": 2,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 88,
+      "repeat_index": 3,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 89,
+      "repeat_index": 4,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 17000,
+      "index": 90,
+      "setting_index": 0,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 47000,
+      "index": 91,
+      "setting_index": 1,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 44670,
+      "index": 92,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 21402,
+      "index": 93,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 45282,
+      "index": 94,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24797,
+      "index": 95,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24734,
+      "index": 96,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f746-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 97,
+      "repeat_index": 0,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 98,
+      "repeat_index": 1,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 99,
+      "repeat_index": 2,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 100,
+      "repeat_index": 3,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 101,
+      "repeat_index": 4,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 17000,
+      "index": 102,
+      "setting_index": 0,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 47000,
+      "index": 103,
+      "setting_index": 1,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 44670,
+      "index": 104,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 21402,
+      "index": 105,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 45282,
+      "index": 106,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24797,
+      "index": 107,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 24734,
+      "index": 108,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f746-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 109,
+      "repeat_index": 0,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 110,
+      "repeat_index": 1,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 111,
+      "repeat_index": 2,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 112,
+      "repeat_index": 3,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 113,
+      "repeat_index": 4,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 29760,
+      "index": 114,
+      "setting_index": 0,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 33600,
+      "index": 115,
+      "setting_index": 1,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 33218,
+      "index": 116,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 30310,
+      "index": 117,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 33295,
+      "index": 118,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 30734,
+      "index": 119,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 30726,
+      "index": 120,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "h753-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 121,
+      "repeat_index": 0,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 122,
+      "repeat_index": 1,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 123,
+      "repeat_index": 2,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 124,
+      "repeat_index": 3,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 125,
+      "repeat_index": 4,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 29760,
+      "index": 126,
+      "setting_index": 0,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 33600,
+      "index": 127,
+      "setting_index": 1,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 33218,
+      "index": 128,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 30310,
+      "index": 129,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 33295,
+      "index": 130,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 30734,
+      "index": 131,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 30726,
+      "index": 132,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "h753-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 133,
+      "repeat_index": 0,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 134,
+      "repeat_index": 1,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 135,
+      "repeat_index": 2,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 136,
+      "repeat_index": 3,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 137,
+      "repeat_index": 4,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 29760,
+      "index": 138,
+      "setting_index": 0,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 33600,
+      "index": 139,
+      "setting_index": 1,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 33218,
+      "index": 140,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 30310,
+      "index": 141,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 33295,
+      "index": 142,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 30734,
+      "index": 143,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 30726,
+      "index": 144,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "h753-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 32000,
+      "index": 145,
+      "repeat_index": 0,
+      "unit_id": "h753-wdt"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 146,
+      "repeat_index": 0,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 147,
+      "repeat_index": 1,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 148,
+      "repeat_index": 2,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 149,
+      "repeat_index": 3,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 150,
+      "repeat_index": 4,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 30000,
+      "index": 151,
+      "setting_index": 0,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 50000,
+      "index": 152,
+      "setting_index": 1,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 42623,
+      "index": 153,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 34402,
+      "index": 154,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 31853,
+      "index": 155,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 37797,
+      "index": 156,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 37734,
+      "index": 157,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f072-rtc"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 158,
+      "repeat_index": 0,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 159,
+      "repeat_index": 1,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 160,
+      "repeat_index": 2,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 161,
+      "repeat_index": 3,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 162,
+      "repeat_index": 4,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 30000,
+      "index": 163,
+      "setting_index": 0,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 50000,
+      "index": 164,
+      "setting_index": 1,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 42623,
+      "index": 165,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 34402,
+      "index": 166,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 31853,
+      "index": 167,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 37797,
+      "index": 168,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 37734,
+      "index": 169,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f072-counter"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 170,
+      "repeat_index": 0,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 171,
+      "repeat_index": 1,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 172,
+      "repeat_index": 2,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 173,
+      "repeat_index": 3,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "nominal",
+      "frequency_hz": 40000,
+      "index": 174,
+      "repeat_index": 4,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "min",
+      "frequency_hz": 30000,
+      "index": 175,
+      "setting_index": 0,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "max",
+      "frequency_hz": 50000,
+      "index": 176,
+      "setting_index": 1,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 42623,
+      "index": 177,
+      "seed": 0,
+      "setting_index": 2,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 34402,
+      "index": 178,
+      "seed": 1,
+      "setting_index": 3,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 31853,
+      "index": 179,
+      "seed": 2,
+      "setting_index": 4,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 37797,
+      "index": 180,
+      "seed": 3,
+      "setting_index": 5,
+      "unit_id": "f072-seconds"
+    },
+    {
+      "condition": "seed",
+      "frequency_hz": 37734,
+      "index": 181,
+      "seed": 4,
+      "setting_index": 6,
+      "unit_id": "f072-seconds"
+    }
+  ],
+  "units": [
+    {
+      "app": "tests/drivers/rtc/rtc_api",
+      "board_id": "f4",
+      "config": "configs/rtc.conf",
+      "expected_declared_cases": [
+        "rtc_api.test_alarm",
+        "rtc_api.test_alarm_callback",
+        "rtc_api.test_set_get_calibration",
+        "rtc_api.test_set_get_time",
+        "rtc_api.test_time_counting",
+        "rtc_api.test_update_callback",
+        "rtc_api.test_y2k"
+      ],
+      "family": "rtc",
+      "id": "f4-rtc",
+      "max_virtual_seconds": 180,
+      "overlay": "configs/f4.overlay",
+      "wall_timeout_seconds": 900
+    },
+    {
+      "app": "tests/drivers/counter/counter_basic_api",
+      "board_id": "f4",
+      "config": "configs/counter.conf",
+      "expected_declared_cases": [
+        "counter_basic.test_set_top_value_with_alarm",
+        "counter_no_callback.test_set_top_value_without_alarm",
+        "counter_basic.test_single_shot_alarm_notop",
+        "counter_basic.test_single_shot_alarm_top",
+        "counter_basic.test_multiple_alarms",
+        "counter_basic.test_all_channels",
+        "counter_basic.test_valid_function_without_alarm",
+        "counter_basic.test_late_alarm",
+        "counter_basic.test_late_alarm_error",
+        "counter_basic.test_short_relative_alarm",
+        "counter_basic.test_cancelled_alarm_does_not_expire"
+      ],
+      "family": "counter",
+      "id": "f4-counter",
+      "max_virtual_seconds": 600,
+      "overlay": "configs/f4.overlay",
+      "wall_timeout_seconds": 1800
+    },
+    {
+      "app": "tests/drivers/counter/counter_seconds",
+      "board_id": "f4",
+      "config": "configs/seconds.conf",
+      "expected_declared_cases": [
+        "seconds_counter.test_seconds_rate"
+      ],
+      "family": "seconds",
+      "id": "f4-seconds",
+      "max_virtual_seconds": 30,
+      "overlay": "configs/f4.overlay",
+      "wall_timeout_seconds": 300
+    },
+    {
+      "app": "tests/drivers/watchdog/wdt_basic_api",
+      "board_id": "f4",
+      "config": "configs/wdt.conf",
+      "expected_declared_cases": [
+        "wdt_basic_test_suite.test_wdt"
+      ],
+      "family": "wdt",
+      "id": "f4-wdt",
+      "max_virtual_seconds": 120,
+      "overlay": "configs/f4-wdt.overlay",
+      "wall_timeout_seconds": 600
+    },
+    {
+      "app": "tests/drivers/rtc/rtc_api",
+      "board_id": "f767",
+      "config": "configs/rtc.conf",
+      "expected_declared_cases": [
+        "rtc_api.test_alarm",
+        "rtc_api.test_alarm_callback",
+        "rtc_api.test_set_get_calibration",
+        "rtc_api.test_set_get_time",
+        "rtc_api.test_time_counting",
+        "rtc_api.test_update_callback",
+        "rtc_api.test_y2k"
+      ],
+      "family": "rtc",
+      "id": "f767-rtc",
+      "max_virtual_seconds": 180,
+      "overlay": "configs/f767.overlay",
+      "wall_timeout_seconds": 900
+    },
+    {
+      "app": "tests/drivers/counter/counter_basic_api",
+      "board_id": "f767",
+      "config": "configs/counter.conf",
+      "expected_declared_cases": [
+        "counter_basic.test_set_top_value_with_alarm",
+        "counter_no_callback.test_set_top_value_without_alarm",
+        "counter_basic.test_single_shot_alarm_notop",
+        "counter_basic.test_single_shot_alarm_top",
+        "counter_basic.test_multiple_alarms",
+        "counter_basic.test_all_channels",
+        "counter_basic.test_valid_function_without_alarm",
+        "counter_basic.test_late_alarm",
+        "counter_basic.test_late_alarm_error",
+        "counter_basic.test_short_relative_alarm",
+        "counter_basic.test_cancelled_alarm_does_not_expire"
+      ],
+      "family": "counter",
+      "id": "f767-counter",
+      "max_virtual_seconds": 600,
+      "overlay": "configs/f767.overlay",
+      "wall_timeout_seconds": 1800
+    },
+    {
+      "app": "tests/drivers/counter/counter_seconds",
+      "board_id": "f767",
+      "config": "configs/seconds.conf",
+      "expected_declared_cases": [
+        "seconds_counter.test_seconds_rate"
+      ],
+      "family": "seconds",
+      "id": "f767-seconds",
+      "max_virtual_seconds": 30,
+      "overlay": "configs/f767.overlay",
+      "wall_timeout_seconds": 300
+    },
+    {
+      "app": "tests/drivers/rtc/rtc_api",
+      "board_id": "f746",
+      "config": "configs/rtc.conf",
+      "expected_declared_cases": [
+        "rtc_api.test_alarm",
+        "rtc_api.test_alarm_callback",
+        "rtc_api.test_set_get_calibration",
+        "rtc_api.test_set_get_time",
+        "rtc_api.test_time_counting",
+        "rtc_api.test_update_callback",
+        "rtc_api.test_y2k"
+      ],
+      "family": "rtc",
+      "id": "f746-rtc",
+      "max_virtual_seconds": 180,
+      "overlay": "configs/f746.overlay",
+      "wall_timeout_seconds": 900
+    },
+    {
+      "app": "tests/drivers/counter/counter_basic_api",
+      "board_id": "f746",
+      "config": "configs/counter.conf",
+      "expected_declared_cases": [
+        "counter_basic.test_set_top_value_with_alarm",
+        "counter_no_callback.test_set_top_value_without_alarm",
+        "counter_basic.test_single_shot_alarm_notop",
+        "counter_basic.test_single_shot_alarm_top",
+        "counter_basic.test_multiple_alarms",
+        "counter_basic.test_all_channels",
+        "counter_basic.test_valid_function_without_alarm",
+        "counter_basic.test_late_alarm",
+        "counter_basic.test_late_alarm_error",
+        "counter_basic.test_short_relative_alarm",
+        "counter_basic.test_cancelled_alarm_does_not_expire"
+      ],
+      "family": "counter",
+      "id": "f746-counter",
+      "max_virtual_seconds": 600,
+      "overlay": "configs/f746.overlay",
+      "wall_timeout_seconds": 1800
+    },
+    {
+      "app": "tests/drivers/counter/counter_seconds",
+      "board_id": "f746",
+      "config": "configs/seconds.conf",
+      "expected_declared_cases": [
+        "seconds_counter.test_seconds_rate"
+      ],
+      "family": "seconds",
+      "id": "f746-seconds",
+      "max_virtual_seconds": 30,
+      "overlay": "configs/f746.overlay",
+      "wall_timeout_seconds": 300
+    },
+    {
+      "app": "tests/drivers/rtc/rtc_api",
+      "board_id": "h753",
+      "config": "configs/rtc.conf",
+      "expected_declared_cases": [
+        "rtc_api.test_alarm",
+        "rtc_api.test_alarm_callback",
+        "rtc_api.test_set_get_calibration",
+        "rtc_api.test_set_get_time",
+        "rtc_api.test_time_counting",
+        "rtc_api.test_update_callback",
+        "rtc_api.test_y2k"
+      ],
+      "family": "rtc",
+      "id": "h753-rtc",
+      "max_virtual_seconds": 180,
+      "overlay": "configs/h753.overlay",
+      "wall_timeout_seconds": 900
+    },
+    {
+      "app": "tests/drivers/counter/counter_basic_api",
+      "board_id": "h753",
+      "config": "configs/counter.conf",
+      "expected_declared_cases": [
+        "counter_basic.test_set_top_value_with_alarm",
+        "counter_no_callback.test_set_top_value_without_alarm",
+        "counter_basic.test_single_shot_alarm_notop",
+        "counter_basic.test_single_shot_alarm_top",
+        "counter_basic.test_multiple_alarms",
+        "counter_basic.test_all_channels",
+        "counter_basic.test_valid_function_without_alarm",
+        "counter_basic.test_late_alarm",
+        "counter_basic.test_late_alarm_error",
+        "counter_basic.test_short_relative_alarm",
+        "counter_basic.test_cancelled_alarm_does_not_expire"
+      ],
+      "family": "counter",
+      "id": "h753-counter",
+      "max_virtual_seconds": 600,
+      "overlay": "configs/h753.overlay",
+      "wall_timeout_seconds": 1800
+    },
+    {
+      "app": "tests/drivers/counter/counter_seconds",
+      "board_id": "h753",
+      "config": "configs/seconds.conf",
+      "expected_declared_cases": [
+        "seconds_counter.test_seconds_rate"
+      ],
+      "family": "seconds",
+      "id": "h753-seconds",
+      "max_virtual_seconds": 30,
+      "overlay": "configs/h753.overlay",
+      "wall_timeout_seconds": 300
+    },
+    {
+      "app": "tests/drivers/watchdog/wdt_basic_api",
+      "board_id": "h753",
+      "config": "configs/wdt.conf",
+      "expected_declared_cases": [
+        "wdt_basic_test_suite.test_wdt"
+      ],
+      "family": "wdt",
+      "id": "h753-wdt",
+      "max_virtual_seconds": 120,
+      "overlay": "configs/h753-wdt.overlay",
+      "wall_timeout_seconds": 600
+    },
+    {
+      "app": "tests/drivers/rtc/rtc_api",
+      "board_id": "f072",
+      "config": "configs/rtc.conf",
+      "expected_declared_cases": [
+        "rtc_api.test_alarm",
+        "rtc_api.test_alarm_callback",
+        "rtc_api.test_set_get_calibration",
+        "rtc_api.test_set_get_time",
+        "rtc_api.test_time_counting",
+        "rtc_api.test_update_callback",
+        "rtc_api.test_y2k"
+      ],
+      "family": "rtc",
+      "id": "f072-rtc",
+      "max_virtual_seconds": 180,
+      "overlay": "configs/f072.overlay",
+      "wall_timeout_seconds": 900
+    },
+    {
+      "app": "tests/drivers/counter/counter_basic_api",
+      "board_id": "f072",
+      "config": "configs/counter.conf",
+      "expected_declared_cases": [
+        "counter_basic.test_set_top_value_with_alarm",
+        "counter_no_callback.test_set_top_value_without_alarm",
+        "counter_basic.test_single_shot_alarm_notop",
+        "counter_basic.test_single_shot_alarm_top",
+        "counter_basic.test_multiple_alarms",
+        "counter_basic.test_all_channels",
+        "counter_basic.test_valid_function_without_alarm",
+        "counter_basic.test_late_alarm",
+        "counter_basic.test_late_alarm_error",
+        "counter_basic.test_short_relative_alarm",
+        "counter_basic.test_cancelled_alarm_does_not_expire"
+      ],
+      "family": "counter",
+      "id": "f072-counter",
+      "max_virtual_seconds": 600,
+      "overlay": "configs/f072.overlay",
+      "wall_timeout_seconds": 1800
+    },
+    {
+      "app": "tests/drivers/counter/counter_seconds",
+      "board_id": "f072",
+      "config": "configs/seconds.conf",
+      "expected_declared_cases": [
+        "seconds_counter.test_seconds_rate"
+      ],
+      "family": "seconds",
+      "id": "f072-seconds",
+      "max_virtual_seconds": 30,
+      "overlay": "configs/f072.overlay",
+      "wall_timeout_seconds": 300
+    }
+  ],
+  "upstream_input_sha256": {
+    "drivers/counter/counter_ll_stm32_rtc.c": "19f51d71e8c0e184816161f44ef23c35e3f962eba3f540197339351b5139303c",
+    "drivers/rtc/rtc_ll_stm32.c": "94616939fbb74bdce6b36341458a7d6d238f9adfce44c3e79899a148c4095070",
+    "drivers/watchdog/wdt_iwdg_stm32.c": "28ec193c20b90b85f472f56f49a6dc10be680fb1ccbebb5db01a90674d9a9eac",
+    "include/zephyr/drivers/clock_control/stm32_clock_control.h": "be75abd566f381a95b7c50e2a19f6056758aa2f29a5ce9ac3a47fbd70dad66d0",
+    "tests/drivers/counter/counter_basic_api/CMakeLists.txt": "02dcf8f58611bcd5bbec415e5e728ec88eec2dde2cc0a2d6cb6395ad7708ae11",
+    "tests/drivers/counter/counter_basic_api/Kconfig": "8d4b6ae19d79cd1d95ca5fa1f15a8d8d090265da0c7f31e607292ab50723b837",
+    "tests/drivers/counter/counter_basic_api/boards/apollo3_evb.overlay": "590b10f275b4f2a7dc9b355439f49a385721066d0bae9dbe70330dc64469e964",
+    "tests/drivers/counter/counter_basic_api/boards/apollo3p_evb.overlay": "590b10f275b4f2a7dc9b355439f49a385721066d0bae9dbe70330dc64469e964",
+    "tests/drivers/counter/counter_basic_api/boards/apollo4p_blue_kxr_evb.overlay": "590b10f275b4f2a7dc9b355439f49a385721066d0bae9dbe70330dc64469e964",
+    "tests/drivers/counter/counter_basic_api/boards/apollo4p_evb.overlay": "590b10f275b4f2a7dc9b355439f49a385721066d0bae9dbe70330dc64469e964",
+    "tests/drivers/counter/counter_basic_api/boards/apollo510_evb.overlay": "590b10f275b4f2a7dc9b355439f49a385721066d0bae9dbe70330dc64469e964",
+    "tests/drivers/counter/counter_basic_api/boards/b_u585i_iot02a.overlay": "92492553823e8e7b9234886a3c6ce79c305c1161e10581bbd3d19de690153aa4",
+    "tests/drivers/counter/counter_basic_api/boards/bl54l15_dvk_nrf54l10_cpuapp.overlay": "bc6332c02b98eec1f1893b9a9a619da44a890058568a53e9ed8430ee2aa966dc",
+    "tests/drivers/counter/counter_basic_api/boards/bl54l15_dvk_nrf54l15_common.dtsi": "913b1b9a5fe15b5f13bb8ee60592e099c92bbbd81cadd323f4699626392fdcf8",
+    "tests/drivers/counter/counter_basic_api/boards/bl54l15_dvk_nrf54l15_cpuapp.overlay": "15a9a3d555d15dafc106ce46898ada272e7c6934e07ea7a32b9478a967748ae4",
+    "tests/drivers/counter/counter_basic_api/boards/bl54l15_dvk_nrf54l15_cpuflpr.overlay": "15a9a3d555d15dafc106ce46898ada272e7c6934e07ea7a32b9478a967748ae4",
+    "tests/drivers/counter/counter_basic_api/boards/bl54l15u_dvk_nrf54l15_common.dtsi": "913b1b9a5fe15b5f13bb8ee60592e099c92bbbd81cadd323f4699626392fdcf8",
+    "tests/drivers/counter/counter_basic_api/boards/bl54l15u_dvk_nrf54l15_cpuapp.overlay": "6a6b0aca933c59540a652f6798619119cd543b3f5cc3e1296cedf5fbc7ca9913",
+    "tests/drivers/counter/counter_basic_api/boards/bl54l15u_dvk_nrf54l15_cpuflpr.overlay": "6a6b0aca933c59540a652f6798619119cd543b3f5cc3e1296cedf5fbc7ca9913",
+    "tests/drivers/counter/counter_basic_api/boards/cy8cproto_063_ble.overlay": "1d2bf5831cc42dae239a226d4d6f91fdb1eda89bb0aebdba366f667d30be5039",
+    "tests/drivers/counter/counter_basic_api/boards/da1469x_dk_pro.overlay": "96ba4e34ee2ffa94b0fbcd43994b7b15290a5ed141696c9c0ed44916b6ac80b4",
+    "tests/drivers/counter/counter_basic_api/boards/disco_l475_iot1.overlay": "afb95e0d338389f83acbc1b36a611b913e9d3fcff75d1b2ba4f569b0fbf1df84",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra2a1.overlay": "ab028048e5475831030539622e2c9c258850c4296aa87ed0075b7594e2c33cba",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra2l1.overlay": "d28439d8f2869ba5ccd31b3628c57672ca10bee19b58ba14c370c6797d37973d",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra4c1.overlay": "74aea8d61349c33253453565a4096134edea522dd2e0bc529941008ac68a5616",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra4e2.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra4l1.overlay": "74aea8d61349c33253453565a4096134edea522dd2e0bc529941008ac68a5616",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra4m1.overlay": "ab028048e5475831030539622e2c9c258850c4296aa87ed0075b7594e2c33cba",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra4m2.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra4m3.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra4w1.overlay": "ab028048e5475831030539622e2c9c258850c4296aa87ed0075b7594e2c33cba",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra6e2.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra6m1.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra6m2.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra6m3.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra6m4.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra6m5.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra8d1.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra8d2_r7ka8d2kflcac_cm85.overlay": "0b20b1fef93af561946fca4e8d485f828d9a24406d477c3e008f9e7b0e38cdc2",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra8m1.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/ek_ra8m2_r7ka8m2jflcac_cm85.overlay": "0b20b1fef93af561946fca4e8d485f828d9a24406d477c3e008f9e7b0e38cdc2",
+    "tests/drivers/counter/counter_basic_api/boards/fpb_ra4e1.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/fpb_ra6e1.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/fpb_ra6e2.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/frdm_k64f.overlay": "5efdf8f1a4a21b00139c6e0d6454271a90203d20ff7936bad8858da7e0dfbb9a",
+    "tests/drivers/counter/counter_basic_api/boards/frdm_k82f.overlay": "5efdf8f1a4a21b00139c6e0d6454271a90203d20ff7936bad8858da7e0dfbb9a",
+    "tests/drivers/counter/counter_basic_api/boards/frdm_ke17z.conf": "51c813f9da863206428769e3d625a62368b0647b829ad9feb0ec8526ee4f7abe",
+    "tests/drivers/counter/counter_basic_api/boards/frdm_ke17z.overlay": "7f03ea7466cfed255e33b1fcc30bf91e7a6365acb49a528ec6bf5fcaa3b0448c",
+    "tests/drivers/counter/counter_basic_api/boards/frdm_mcxw71.overlay": "fd621a91a583ac7b24467acd44c55a55704a3018d8be7d0b1a57f11af727a25f",
+    "tests/drivers/counter/counter_basic_api/boards/frdm_mcxw72_mcxw727c_cpu0.overlay": "30397e455026021c8032f8942bacf7a56e6bc5c8b20d9efd551f4baaeaaf1373",
+    "tests/drivers/counter/counter_basic_api/boards/frdm_rw612.conf": "8e33d559d9c24ac43b1193ffb2afd164fb4cb3149e20f12bb6b70405532573eb",
+    "tests/drivers/counter/counter_basic_api/boards/frdm_rw612.overlay": "a07c90b812f5e40e2710283db63abb725edd89da8eaec51f0fc68bd7686b42c3",
+    "tests/drivers/counter/counter_basic_api/boards/gd32e103v_eval.overlay": "853fa4c692518989a1430b646af353a57ef6a977e205af0331baf853620e9752",
+    "tests/drivers/counter/counter_basic_api/boards/gd32e507v_start.overlay": "b6eec5b2f076233bff42f071c24e195a7e1ada4159e75aa6f9f0a3c67ce6068c",
+    "tests/drivers/counter/counter_basic_api/boards/gd32e507z_eval.overlay": "d89a92e08cb0dc0ced51752935fef0274c0c9b3f95b3f50df6185b97ba4c999a",
+    "tests/drivers/counter/counter_basic_api/boards/gd32f403z_eval.overlay": "1f081341459e14405f2008a0155ca936ce8e3281d40a5f23f5fa2b1faa4c3b31",
+    "tests/drivers/counter/counter_basic_api/boards/gd32f407v_start.overlay": "d60e5758d2af74274624f9af9e37eb27b383407e5efcca37b8bac83945ff3e3f",
+    "tests/drivers/counter/counter_basic_api/boards/gd32f450i_eval.overlay": "95b7355ef803397a8c8615b986095a9ba840e932219d11d8fd0b41655605557b",
+    "tests/drivers/counter/counter_basic_api/boards/gd32f450v_start.overlay": "d60e5758d2af74274624f9af9e37eb27b383407e5efcca37b8bac83945ff3e3f",
+    "tests/drivers/counter/counter_basic_api/boards/gd32f450z_eval.overlay": "95b7355ef803397a8c8615b986095a9ba840e932219d11d8fd0b41655605557b",
+    "tests/drivers/counter/counter_basic_api/boards/gd32f470i_eval.overlay": "95b7355ef803397a8c8615b986095a9ba840e932219d11d8fd0b41655605557b",
+    "tests/drivers/counter/counter_basic_api/boards/google_dragonclaw.overlay": "dfe6feffeee32fef98f9f5c053d50344705d5f1f34f701366ab0c9ff0d9f8ad0",
+    "tests/drivers/counter/counter_basic_api/boards/imx8mm_evk_mimx8mm6_a53.overlay": "7f324367aac5bb7fbabb69c86d596069f98829ba511a0cc9918c7dd1206fb20a",
+    "tests/drivers/counter/counter_basic_api/boards/imx8mn_evk_mimx8mn6_a53.overlay": "7f324367aac5bb7fbabb69c86d596069f98829ba511a0cc9918c7dd1206fb20a",
+    "tests/drivers/counter/counter_basic_api/boards/imx8mp_evk_mimx8ml8_a53.overlay": "7f324367aac5bb7fbabb69c86d596069f98829ba511a0cc9918c7dd1206fb20a",
+    "tests/drivers/counter/counter_basic_api/boards/imx93_evk_mimx9352_a55.overlay": "4db1860e43cdcc71c7baca0038adb0e03b2e601d4c8391d478cfc83579eccef3",
+    "tests/drivers/counter/counter_basic_api/boards/imx943_evk_mimx94398_a55.overlay": "c6fa9471747cb5196745cb8aa5111f56df15230f57202703d9de331189023827",
+    "tests/drivers/counter/counter_basic_api/boards/imx95_evk_mimx9596_a55.overlay": "4db1860e43cdcc71c7baca0038adb0e03b2e601d4c8391d478cfc83579eccef3",
+    "tests/drivers/counter/counter_basic_api/boards/it515xx_evb.overlay": "b80b597f9728870a5573a0935747d05bfb945136a8211925985351f9d734c797",
+    "tests/drivers/counter/counter_basic_api/boards/it82xx2_evb.overlay": "b80b597f9728870a5573a0935747d05bfb945136a8211925985351f9d734c797",
+    "tests/drivers/counter/counter_basic_api/boards/it8xxx2_evb.overlay": "b80b597f9728870a5573a0935747d05bfb945136a8211925985351f9d734c797",
+    "tests/drivers/counter/counter_basic_api/boards/kit_psc3m5_evk.overlay": "3ad7f962cbbd8da97c6dadefac3d5a568b1c367c350d8f2cb46de2b4230cbd3d",
+    "tests/drivers/counter/counter_basic_api/boards/lpcxpresso55s69_lpc55s69_cpu0.overlay": "907a840f3acfc22874bbc391fb4e1ca5beb0b66920b1dae9c06f2ea5821b24da",
+    "tests/drivers/counter/counter_basic_api/boards/m5stack_cores3_procpu_se.overlay": "245f4daa8cfc407c167acb98fb512e93e646d1788a9e6eace4a53e0ff0130b56",
+    "tests/drivers/counter/counter_basic_api/boards/max32650evkit.overlay": "a68e6a673606718d1e087491c5a8c6087254c3fa562d1cea4350538ec4e4b477",
+    "tests/drivers/counter/counter_basic_api/boards/max32650fthr.overlay": "a68e6a673606718d1e087491c5a8c6087254c3fa562d1cea4350538ec4e4b477",
+    "tests/drivers/counter/counter_basic_api/boards/max32655evkit_max32655_m4.overlay": "421ad03045d51db180b641c6b0516e4f35576655091ec8e01bb4ad4d1538128e",
+    "tests/drivers/counter/counter_basic_api/boards/max32655fthr_max32655_m4.overlay": "421ad03045d51db180b641c6b0516e4f35576655091ec8e01bb4ad4d1538128e",
+    "tests/drivers/counter/counter_basic_api/boards/max32657evkit_max32657.overlay": "dd0a563352e4e6ea88dd01eb77506960f2fbacd319e3aa950ce600d9691dbdd4",
+    "tests/drivers/counter/counter_basic_api/boards/max32657evkit_max32657_ns.overlay": "dd0a563352e4e6ea88dd01eb77506960f2fbacd319e3aa950ce600d9691dbdd4",
+    "tests/drivers/counter/counter_basic_api/boards/max32662evkit.overlay": "078a4bdd150ae93ebac756e0e7f2dd0299abe0d5feddc847fa65cf0c4459c707",
+    "tests/drivers/counter/counter_basic_api/boards/max32666evkit_max32666_cpu0.overlay": "9fd113074e87526ff1092ab5f6ce9660825a1118897c1192a03a8badc8e5365b",
+    "tests/drivers/counter/counter_basic_api/boards/max32666fthr_max32666_cpu0.overlay": "9fd113074e87526ff1092ab5f6ce9660825a1118897c1192a03a8badc8e5365b",
+    "tests/drivers/counter/counter_basic_api/boards/max32670evkit.overlay": "9fd113074e87526ff1092ab5f6ce9660825a1118897c1192a03a8badc8e5365b",
+    "tests/drivers/counter/counter_basic_api/boards/max32672evkit.overlay": "9fd113074e87526ff1092ab5f6ce9660825a1118897c1192a03a8badc8e5365b",
+    "tests/drivers/counter/counter_basic_api/boards/max32672fthr.overlay": "9fd113074e87526ff1092ab5f6ce9660825a1118897c1192a03a8badc8e5365b",
+    "tests/drivers/counter/counter_basic_api/boards/max32680evkit_max32680_m4.overlay": "421ad03045d51db180b641c6b0516e4f35576655091ec8e01bb4ad4d1538128e",
+    "tests/drivers/counter/counter_basic_api/boards/max32690evkit_max32690_m4.overlay": "421ad03045d51db180b641c6b0516e4f35576655091ec8e01bb4ad4d1538128e",
+    "tests/drivers/counter/counter_basic_api/boards/max78000evkit_max78000_m4.overlay": "b52b7f856439a5f4b94be9d45d48e83ac1513f2810af872e31a5bc45f24072ad",
+    "tests/drivers/counter/counter_basic_api/boards/max78000fthr_max78000_m4.overlay": "b52b7f856439a5f4b94be9d45d48e83ac1513f2810af872e31a5bc45f24072ad",
+    "tests/drivers/counter/counter_basic_api/boards/max78002evkit_max78002_m4.overlay": "e7041f483529803182e5d110e5fb1caa97251422874e35581c291d09ac7b3dcf",
+    "tests/drivers/counter/counter_basic_api/boards/mck_ra8t1.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/mck_ra8t2_r7ka8t2lfecac_cm85.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1010_evk.overlay": "5b8601474a4e78ba5e0ac585ce3c7922ec4935c00b106638fdd184575e1389d6",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1060_evk.conf": "08a8f12425a7bebdb86b63486d25a0666b1d4e2ca8456e0d1a46757847a5f758",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1060_evk_mimxrt1062_qspi.overlay": "57db8cc6e479a47e3a8109394fc1237c16624cd6943b45a46d8950c26c1f2248",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1060_evk_mimxrt1062_qspi_C.overlay": "57db8cc6e479a47e3a8109394fc1237c16624cd6943b45a46d8950c26c1f2248",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1064_evk.overlay": "5efdf8f1a4a21b00139c6e0d6454271a90203d20ff7936bad8858da7e0dfbb9a",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1160_evk_mimxrt1166_cm7.overlay": "b338a7f980aa7d7fa42330dd9d4defa103ab09d54e403149385fa19e54190ea5",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1170_evk_mimxrt1176_cm7.overlay": "b338a7f980aa7d7fa42330dd9d4defa103ab09d54e403149385fa19e54190ea5",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1180_evk_mimxrt1189_cm33.conf": "0ba5780074187a558432b3c347bea5eecfb22378cc6d6c1f5cd285639e10385f",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1180_evk_mimxrt1189_cm33.overlay": "6ba5d89cbb4f0728ec9e1dd1848e4d0b714c5b22fc16c7fb3c9dcb9c8a768d8f",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1180_evk_mimxrt1189_cm7.conf": "0ba5780074187a558432b3c347bea5eecfb22378cc6d6c1f5cd285639e10385f",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt1180_evk_mimxrt1189_cm7.overlay": "795637db951e6e4b5807cae8c78016a7a2d6274353064fe2a27d60b4e15af169",
+    "tests/drivers/counter/counter_basic_api/boards/mimxrt685_evk_rtc_1khz.overlay": "84aa9ecc500da73b19c171643bc7fd833bfacabad2dc178b8744d9a01c5ec1cc",
+    "tests/drivers/counter/counter_basic_api/boards/mr_canhubk3.overlay": "5910cc343261873cc7cca1d52feddd15c7bdec1b792ab5a9147d45b35112766c",
+    "tests/drivers/counter/counter_basic_api/boards/nrf51dk_nrf51822.overlay": "a833de32ee93bf80e18627b722c61f5f9324c9389b94c2e5038be26307a6dc18",
+    "tests/drivers/counter/counter_basic_api/boards/nrf52833dk_nrf52833.overlay": "a813bd0153eab2bc21515e441c51559ddd1b5f1f896e4990adc99f54a29f7005",
+    "tests/drivers/counter/counter_basic_api/boards/nrf52840dk_nrf52811.overlay": "a833de32ee93bf80e18627b722c61f5f9324c9389b94c2e5038be26307a6dc18",
+    "tests/drivers/counter/counter_basic_api/boards/nrf52840dk_nrf52840.overlay": "88c4f2f98e2885cc974342443a9e6ae935baf3d603d0df41d546d6891c7bf316",
+    "tests/drivers/counter/counter_basic_api/boards/nrf52840dk_nrf52840_zli.overlay": "3c709c46ae22190a01a04e5c97ed05f2876961148cec96eea41234c280187e35",
+    "tests/drivers/counter/counter_basic_api/boards/nrf52_bsim.overlay": "8065f8044b8f3b34e6c92b29a51158814ba9d91ff72aa4ecd0c12dbe6fc604c2",
+    "tests/drivers/counter/counter_basic_api/boards/nrf52dk_nrf52810.overlay": "a833de32ee93bf80e18627b722c61f5f9324c9389b94c2e5038be26307a6dc18",
+    "tests/drivers/counter/counter_basic_api/boards/nrf52dk_nrf52832.overlay": "c37b4f9bed2fbf17165937184151c683f42ae466f47dffb97670ddbf68c62770",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54h20dk_nrf54h20_common.dtsi": "0d23a4cd4a6f1acbf0aef2aeff756824cf3937b8201350f9b4523791f7a1e762",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54h20dk_nrf54h20_cpuapp.overlay": "2ee913cc486d207c60d2dea348957ce8a275bc6546f055ccc21234264e1ae425",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54h20dk_nrf54h20_cpuppr.overlay": "3028376cd4e997db3a14e256d828e99bff7b541678f534d9818d38cb9d20e874",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54h20dk_nrf54h20_cpurad.overlay": "88f1e06acaff12d18139c74bec71550685ce20ab6aafa06a656d694eac2c37c3",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54l15bsim_nrf54l15_cpuapp.overlay": "539e1738c11c9f9c6bbfe6bf456114b47aa9a592dd359f07da803cf060d12432",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54l15dk_nrf54l05_cpuapp.overlay": "539e1738c11c9f9c6bbfe6bf456114b47aa9a592dd359f07da803cf060d12432",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54l15dk_nrf54l10_cpuapp.overlay": "539e1738c11c9f9c6bbfe6bf456114b47aa9a592dd359f07da803cf060d12432",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54l15dk_nrf54l15_common.dtsi": "53f0ee64e418b7ae071a5fa43ea224447e33a8c72827adbd26c07c3e8a047f69",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54l15dk_nrf54l15_cpuapp.overlay": "437f1f8e3fdb5c60bc147d261107bed47319bca2b1dfd33252629a7962ef3d9a",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54l15dk_nrf54l15_cpuflpr.overlay": "437f1f8e3fdb5c60bc147d261107bed47319bca2b1dfd33252629a7962ef3d9a",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54lm20bsim_nrf54lm20a_cpuapp.overlay": "379b5424beadc7a9a39cc7fd0fa04fc43e07042f69ad49a026d0d4ad762ad9c7",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54lm20dk_nrf54lm20_common.dtsi": "53f0ee64e418b7ae071a5fa43ea224447e33a8c72827adbd26c07c3e8a047f69",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54lm20dk_nrf54lm20a_cpuapp.overlay": "379b5424beadc7a9a39cc7fd0fa04fc43e07042f69ad49a026d0d4ad762ad9c7",
+    "tests/drivers/counter/counter_basic_api/boards/nrf54lm20dk_nrf54lm20a_cpuflpr.overlay": "379b5424beadc7a9a39cc7fd0fa04fc43e07042f69ad49a026d0d4ad762ad9c7",
+    "tests/drivers/counter/counter_basic_api/boards/nrf9160dk_nrf9160.overlay": "a833de32ee93bf80e18627b722c61f5f9324c9389b94c2e5038be26307a6dc18",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_c071rb.overlay": "6adac9d6b391b58f3cb2a55501819a7b6678796192ca67e5f72e3843afc5f834",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_c092rc.overlay": "86f013d69a8febbba0116728c01b0f98ab213daba3ad0080b9a8e17d5c2daa8d",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_f091rc.overlay": "32514dfd0fec8d0c82ba0a891d752c8e7e88ab5517757ceee94683ae78adf8be",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_f103rb.overlay": "b090ff8e8bff88feab93f1e8ade9ac41cb7ce9fd869987964dcbc02fb43147e8",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_f207zg.overlay": "71e04f0b71fac216a6d3226c4282b9e913eb3d9370b846c952ba863639ead933",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_f429zi.overlay": "59d522b9ef810a8de2477b9acca301f4fd871f3cba11a924a2be6a2cd0a9e9e4",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_f722ze.overlay": "84a0b49629b83d7e16be57117e9a83a66158667fc888fb2a8179ab257001d543",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_f746zg.overlay": "71e04f0b71fac216a6d3226c4282b9e913eb3d9370b846c952ba863639ead933",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_g071rb.overlay": "d223bfba2c9cf128463398d68d940050f308eb654028c41e729d16791168c2d9",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_g474re.overlay": "bd832b7261fa30029af0be2a6d1214b1e5bdd299751ac5d4a19870cb6103a1e0",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_h743zi.overlay": "cb0e627dd34b322654407972ed3216af090f3535f2ba8f560511de80047cb366",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_h753zi.overlay": "28b73202b80e80e952cc8803d4ff786b7cb405fb5e1a076f1ccc6853215ec58a",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_l073rz.overlay": "e7bda389d8e0ec1afa2e3e4eda1375fd9044925af76463e479503148ca6693c5",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_l152re.overlay": "937fe162fa0b15e680e068253143781a5eaa67b0c184770f58ad18b0d7fd833a",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_l433rc_p.overlay": "7f35c5237c906d210f6f3bd639bc423521d0e11c10b2f075f7a5158f242e34be",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_l476rg.overlay": "df1227a9f27626355a429ab024e485c9b27fd9cff24bed28893f25987ace48df",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_u083rc.overlay": "f84b7c8e1c12d40f27a2703af94d7fef974dff763fd618df24f6b4572608ace2",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_wb55rg.overlay": "c546e5e108769976aeb3d8150509430634f306dbd3befb996024af06411ff60f",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_wba55cg.overlay": "0d8df8a585f5e50b607126dc93c3324c4c8c91c5983d124bec7563aa82a3958a",
+    "tests/drivers/counter/counter_basic_api/boards/nucleo_wl55jc.overlay": "c546e5e108769976aeb3d8150509430634f306dbd3befb996024af06411ff60f",
+    "tests/drivers/counter/counter_basic_api/boards/ophelia4ev_nrf54l15_cpuapp.overlay": "437f1f8e3fdb5c60bc147d261107bed47319bca2b1dfd33252629a7962ef3d9a",
+    "tests/drivers/counter/counter_basic_api/boards/ophelia4ev_nrf54l15_cpuflpr.overlay": "437f1f8e3fdb5c60bc147d261107bed47319bca2b1dfd33252629a7962ef3d9a",
+    "tests/drivers/counter/counter_basic_api/boards/rd_rw612_bga.overlay": "d81820b8d66c85f70dd931c9e5a17280214b4ab649fa10eff293cfad51c0ce4b",
+    "tests/drivers/counter/counter_basic_api/boards/rza3ul_smarc.overlay": "fd32cac5dc4fd6353f8507c1c6fb3bf2ceac80e202ff1aa04a5ed6821ae795b4",
+    "tests/drivers/counter/counter_basic_api/boards/rzg3s_smarc_r9a08g045s33gbg_cm33.overlay": "a6e4f1a5e7c66ae5e31ad518dee5655b2e1174d9b2fb3de0b0ba66fa6069b488",
+    "tests/drivers/counter/counter_basic_api/boards/rzn2l_rsk.overlay": "92fffe46c29844a53dfb5e379293f6e7c6c45f231e2ca4881f565a8072861cb3",
+    "tests/drivers/counter/counter_basic_api/boards/rzt2m_rsk_r9a07g075m24gbg_cr520.overlay": "92fffe46c29844a53dfb5e379293f6e7c6c45f231e2ca4881f565a8072861cb3",
+    "tests/drivers/counter/counter_basic_api/boards/rzv2l_smarc_r9a07g054l23gbg_cm33.overlay": "fd32cac5dc4fd6353f8507c1c6fb3bf2ceac80e202ff1aa04a5ed6821ae795b4",
+    "tests/drivers/counter/counter_basic_api/boards/s32z2xxdc2_s32z270_rtu0.overlay": "391a87ad7fa9cd3bb4ed37e9e733a3c3af5d627daff05237fe017a44d0469179",
+    "tests/drivers/counter/counter_basic_api/boards/s32z2xxdc2_s32z270_rtu1.overlay": "28b3e2338bc92ca0ae07af8b390c23897af3dd3680b19293fd59aa2df041c232",
+    "tests/drivers/counter/counter_basic_api/boards/siwx917_rb4342a.overlay": "1f10aa827cdfcfde581dce83475fa72c093ba662177e4ed5d59f77056ee854fa",
+    "tests/drivers/counter/counter_basic_api/boards/stm32f3_disco.overlay": "16c67342bb5372ee943522aefa9e9f93360a0d5147c2068da46e5fc9fea05979",
+    "tests/drivers/counter/counter_basic_api/boards/stm32f4_disco.overlay": "3c60d193ec5d4ee3208423d41c4616a5cb33f262aa222dadaad01a8610522991",
+    "tests/drivers/counter/counter_basic_api/boards/stm32h573i_dk.overlay": "0162015364eed2aa7ae62e4ff35d127a5e3979045a07256d22343c38bb8011b4",
+    "tests/drivers/counter/counter_basic_api/boards/stm32h735g_disco.overlay": "4f8eba46d535ad2eed46c936aa6958a76885b57545ee97d20aae67d2bf727fb7",
+    "tests/drivers/counter/counter_basic_api/boards/stm32h747i_disco_stm32h747xx_m7.overlay": "fe327368450adbc6a1a395e966d3cab2e3e469078dfe2eba2aab6a9c81b0c0c2",
+    "tests/drivers/counter/counter_basic_api/boards/stm32l562e_dk.overlay": "d7797907c5c01c20d0afcf14771f2471f19ad4264032b21bd1ddcbc5c5bd9a2d",
+    "tests/drivers/counter/counter_basic_api/boards/stm32n6570_dk_sb.conf": "71c91b8feb9a180561baab35dcbf9726ff7f044b1089075724cd795192a20fb5",
+    "tests/drivers/counter/counter_basic_api/boards/stm32n6570_dk_sb.overlay": "f2f9e6b7aaa3139e6143563b6b9ec726f9927960f720ea46cf9bf2f6c3646169",
+    "tests/drivers/counter/counter_basic_api/boards/stm32u083c_dk.overlay": "f84b7c8e1c12d40f27a2703af94d7fef974dff763fd618df24f6b4572608ace2",
+    "tests/drivers/counter/counter_basic_api/boards/voice_ra4e1.overlay": "18e0b1e2a6e39c23ff8aaf2535b4a06d8d9e94352c45df30597cf550c7d81440",
+    "tests/drivers/counter/counter_basic_api/boards/yd_esp32_procpu.overlay": "e79bdd93f8ef368261625f52706a728ecfa42d9899144b48830564c8ddb05983",
+    "tests/drivers/counter/counter_basic_api/enable_standby.overlay": "7ad9e394792120dff6770d5d166b4a9c8dbe4feac062508481bade0fe2794899",
+    "tests/drivers/counter/counter_basic_api/prj.conf": "8be23d24fda479737e353ab734429c60b7463b8e43ce38d803ef11dfecb162fa",
+    "tests/drivers/counter/counter_basic_api/socs/esp32_procpu.overlay": "eabee9941117ca56feb48489bca698067c836aec9ee062df3716c8efcd796f2c",
+    "tests/drivers/counter/counter_basic_api/socs/esp32c2.overlay": "eabee9941117ca56feb48489bca698067c836aec9ee062df3716c8efcd796f2c",
+    "tests/drivers/counter/counter_basic_api/socs/esp32c3.overlay": "eabee9941117ca56feb48489bca698067c836aec9ee062df3716c8efcd796f2c",
+    "tests/drivers/counter/counter_basic_api/socs/esp32c3_usb.overlay": "eabee9941117ca56feb48489bca698067c836aec9ee062df3716c8efcd796f2c",
+    "tests/drivers/counter/counter_basic_api/socs/esp32c6_hpcore.overlay": "e96471f69bc44e53a0c7c0155ef00623e24e66d08e7c1de3367ca9a2fdd5eed9",
+    "tests/drivers/counter/counter_basic_api/socs/esp32h2.conf": "54877635201575a2cb26e900442ee76e857823e52b2ca934240bc404ac786ee9",
+    "tests/drivers/counter/counter_basic_api/socs/esp32h2.overlay": "e96471f69bc44e53a0c7c0155ef00623e24e66d08e7c1de3367ca9a2fdd5eed9",
+    "tests/drivers/counter/counter_basic_api/socs/esp32s2.overlay": "eabee9941117ca56feb48489bca698067c836aec9ee062df3716c8efcd796f2c",
+    "tests/drivers/counter/counter_basic_api/socs/esp32s3_procpu.overlay": "eabee9941117ca56feb48489bca698067c836aec9ee062df3716c8efcd796f2c",
+    "tests/drivers/counter/counter_basic_api/socs/rp2350a_hazard3.overlay": "10d627dea9ad34f9e622eb30735b958fe63d0f3b0a33647747bd75277ec1c24f",
+    "tests/drivers/counter/counter_basic_api/socs/rp2350a_m33.overlay": "10d627dea9ad34f9e622eb30735b958fe63d0f3b0a33647747bd75277ec1c24f",
+    "tests/drivers/counter/counter_basic_api/src/test_counter.c": "8f5e476627fd7386d2393c7fbc2140e67d6393308f86ba6e60c5a5cdba1ffde8",
+    "tests/drivers/counter/counter_basic_api/sysbuild/vpr_launcher/boards/nrf54h20dk_nrf54h20_cpuapp.overlay": "7c4ab664500d906ba60b351f04cfd2537cdbf9bb59afeae9a708a2afb9c6fd46",
+    "tests/drivers/counter/counter_basic_api/sysbuild/vpr_launcher/prj.conf": "81661c2d549ab252e266fcaad53350640c58a6d4d17dad54268e3cfc1166b6b3",
+    "tests/drivers/counter/counter_basic_api/testcase.yaml": "bfdf36c890a3f422013a66146084ff9ceba8f1d797e7176749532e207f5acd6a",
+    "tests/drivers/counter/counter_basic_api/zli.conf": "5396a75963b7214937dd8096aca7468cfaccd4ada188b4623536697b4347bf33",
+    "tests/drivers/counter/counter_seconds/CMakeLists.txt": "c7fd557bb43b883ebdee77b5bdc5e6b784ea91f4fa749984483bebc8bb3cadf0",
+    "tests/drivers/counter/counter_seconds/boards/mimxrt1064_evk.conf": "0107cb217ed3931421ef35aa1fa5d8958c94c91f5e4ab600345e8e6f1d5c8241",
+    "tests/drivers/counter/counter_seconds/boards/mimxrt1064_evk.overlay": "faad7369e114ea6ea3942efd470820a9362cd4fedd9f1d496322533c50774e0d",
+    "tests/drivers/counter/counter_seconds/prj.conf": "b589a0d7e6f3c285e0c42f5d1d50eb116d9748b967007656e181557c01ce9ece",
+    "tests/drivers/counter/counter_seconds/src/main.c": "ad3d48be4c9f85fa1731d85f75afa6b9a2c9f9cb028d4c1153aef43fd811cab7",
+    "tests/drivers/counter/counter_seconds/testcase.yaml": "72c1dd6b67c422c88471e79be203cf8e81883ba2fb0740227f2184da5fd25b00",
+    "tests/drivers/rtc/rtc_api/CMakeLists.txt": "1b2b414a72b6477c1684a7fac8e776e8d6ca449ec1e03737c9eef47bb6107fc1",
+    "tests/drivers/rtc/rtc_api/Kconfig": "b81330325dd1c2f5c017158a9788cc117c4a23c5954ec885e4b285de7f980e60",
+    "tests/drivers/rtc/rtc_api/boards/adafruit_macropad_rp2040.conf": "4366058db1e55401bfdc704cc231f4bd930935340476fc1ba82b1824db4bfb92",
+    "tests/drivers/rtc/rtc_api/boards/adafruit_macropad_rp2040.overlay": "baaae3198264553dc4b10c624e2d07de1aefd4debb03177b340ae0af61a3fd18",
+    "tests/drivers/rtc/rtc_api/boards/apollo3_evb.conf": "44a076dbad5b52250382675eb5f4dbecda4ca3636cbc4960151443d182e94fe0",
+    "tests/drivers/rtc/rtc_api/boards/apollo3_evb.overlay": "4cc538f3f550a8c4212c8e54ff91fd911695a0f2966428002e4c74251d3fd033",
+    "tests/drivers/rtc/rtc_api/boards/apollo4p_evb.conf": "44a076dbad5b52250382675eb5f4dbecda4ca3636cbc4960151443d182e94fe0",
+    "tests/drivers/rtc/rtc_api/boards/apollo4p_evb.overlay": "4cc538f3f550a8c4212c8e54ff91fd911695a0f2966428002e4c74251d3fd033",
+    "tests/drivers/rtc/rtc_api/boards/apollo510_evb.conf": "3ad7ecc3492abfa591e34db02674a54d704b3dfe2268b1c4455fab283cc6b541",
+    "tests/drivers/rtc/rtc_api/boards/apollo510_evb.overlay": "4cc538f3f550a8c4212c8e54ff91fd911695a0f2966428002e4c74251d3fd033",
+    "tests/drivers/rtc/rtc_api/boards/b_u585i_iot02a.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/b_u585i_iot02a.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/cyw920829m2evk_02.conf": "a69fc5b08aeaab3388bc3e558386d202b6fd8cea8a0d32aea08b73d4d3ac6788",
+    "tests/drivers/rtc/rtc_api/boards/cyw920829m2evk_02.overlay": "a4f94c4b7c8e00d9626709c4bc7863816344c2bdeb9e1795bbe031ce8d1f685a",
+    "tests/drivers/rtc/rtc_api/boards/da1469x_dk_pro.conf": "4a319ff99402c8552cf1ca2ff026ddd8a11ee261e294295c28aebb435079b981",
+    "tests/drivers/rtc/rtc_api/boards/da1469x_dk_pro.overlay": "d8dccec014945984b217203dbeb8fa96a7046e114ed21392f3ea86b731124d16",
+    "tests/drivers/rtc/rtc_api/boards/disco_l475_iot1.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/disco_l475_iot1.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/ek_ra4l1.conf": "bb70a1d29b6e7e3f0d1d35d58f87f124cae834534b3ad2638f46e40b631e867e",
+    "tests/drivers/rtc/rtc_api/boards/ek_ra4l1.overlay": "5e860a116785961ef423f0f1b6fab05446000a0c191b81ec77361ab0a77c310c",
+    "tests/drivers/rtc/rtc_api/boards/ek_ra8d1.conf": "bb70a1d29b6e7e3f0d1d35d58f87f124cae834534b3ad2638f46e40b631e867e",
+    "tests/drivers/rtc/rtc_api/boards/ek_ra8d1.overlay": "e7696bcdfac28b2614a9c1d504be8fbd8d31982010d1dcec8577a6b25ded851f",
+    "tests/drivers/rtc/rtc_api/boards/ek_ra8m1.conf": "bb70a1d29b6e7e3f0d1d35d58f87f124cae834534b3ad2638f46e40b631e867e",
+    "tests/drivers/rtc/rtc_api/boards/ek_ra8m1.overlay": "e7696bcdfac28b2614a9c1d504be8fbd8d31982010d1dcec8577a6b25ded851f",
+    "tests/drivers/rtc/rtc_api/boards/ek_ra8p1_r7ka8p1kflcac_cm85.conf": "bb70a1d29b6e7e3f0d1d35d58f87f124cae834534b3ad2638f46e40b631e867e",
+    "tests/drivers/rtc/rtc_api/boards/ek_ra8p1_r7ka8p1kflcac_cm85.overlay": "e7696bcdfac28b2614a9c1d504be8fbd8d31982010d1dcec8577a6b25ded851f",
+    "tests/drivers/rtc/rtc_api/boards/intel_adl_crb.conf": "4396a93392f59f65bf69c451fc20eb5eaec9aeab7c6a911ea9e8aac3857ba4e9",
+    "tests/drivers/rtc/rtc_api/boards/intel_btl_s_crb.conf": "4396a93392f59f65bf69c451fc20eb5eaec9aeab7c6a911ea9e8aac3857ba4e9",
+    "tests/drivers/rtc/rtc_api/boards/intel_ptl_h_crb.conf": "4a319ff99402c8552cf1ca2ff026ddd8a11ee261e294295c28aebb435079b981",
+    "tests/drivers/rtc/rtc_api/boards/intel_rpl_p_crb.conf": "4396a93392f59f65bf69c451fc20eb5eaec9aeab7c6a911ea9e8aac3857ba4e9",
+    "tests/drivers/rtc/rtc_api/boards/intel_rpl_s_crb.conf": "4396a93392f59f65bf69c451fc20eb5eaec9aeab7c6a911ea9e8aac3857ba4e9",
+    "tests/drivers/rtc/rtc_api/boards/lp_mspm0g3507.conf": "b4689ad3c8b6fe640b477ae1637b91eb2e35138dfee7682df7ce4688e2c4f82f",
+    "tests/drivers/rtc/rtc_api/boards/lp_mspm0g3507.overlay": "e0c21334fce2f17b3bc66fe0d6e8c61f14cdd5fe2df68eb9e3f13660e169c084",
+    "tests/drivers/rtc/rtc_api/boards/mimxrt700_evk_mimxrt798s_cm33_cpu0.conf": "af2c97030fab0eef433dcde818bd8fb1422fe2ec60b4ca05fd027c79423ec9d3",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f070rb.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f070rb.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f091rc.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f091rc.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f207zg.conf": "b4689ad3c8b6fe640b477ae1637b91eb2e35138dfee7682df7ce4688e2c4f82f",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f207zg.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f401re.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f401re.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f429zi.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f429zi.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f746zg.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f746zg.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f767zi.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_f767zi.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_g071rb.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_g071rb.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_g474re.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_g474re.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h533re.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h533re.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h563zi.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h563zi.overlay": "4aeb0a08eb4f4f6ff80f36937d356340f60308f33da04409cecb49222796c523",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h723zg.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h723zg.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h743zi.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h743zi.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h745zi_q_stm32h745xx_m4.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h745zi_q_stm32h745xx_m4.overlay": "a3c83c63fc8decdb0ceb8dcd3cceecab8f9538c9ffe06a237265a45c9900b90d",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h745zi_q_stm32h745xx_m7.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h745zi_q_stm32h745xx_m7.overlay": "a3c83c63fc8decdb0ceb8dcd3cceecab8f9538c9ffe06a237265a45c9900b90d",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h753zi.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_h753zi.overlay": "905c9dfcbdd597a15ea315eb684a4ed076f7cbdb4d0065062134b752d9fa3e1f",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_l073rz.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_l073rz.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_l152re.conf": "b4689ad3c8b6fe640b477ae1637b91eb2e35138dfee7682df7ce4688e2c4f82f",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_l152re.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_l4r5zi.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_l4r5zi.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_u575zi_q.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_u575zi_q.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_u5a5zj_q.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_u5a5zj_q.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_wb55rg.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_wb55rg.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_wba55cg.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_wba55cg.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_wl55jc.conf": "b4689ad3c8b6fe640b477ae1637b91eb2e35138dfee7682df7ce4688e2c4f82f",
+    "tests/drivers/rtc/rtc_api/boards/nucleo_wl55jc.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/qemu_x86.conf": "01414b6285ec30a35bd344b2bfa9b17ec3f9c272189a354ee91d2e943dc2139b",
+    "tests/drivers/rtc/rtc_api/boards/qemu_x86.overlay": "1e0f96e77f7b9be51803d92cc74a1848c6b9f72bb81e0ab24177544518537a0f",
+    "tests/drivers/rtc/rtc_api/boards/qemu_x86_64.conf": "01414b6285ec30a35bd344b2bfa9b17ec3f9c272189a354ee91d2e943dc2139b",
+    "tests/drivers/rtc/rtc_api/boards/qemu_x86_64.overlay": "1e0f96e77f7b9be51803d92cc74a1848c6b9f72bb81e0ab24177544518537a0f",
+    "tests/drivers/rtc/rtc_api/boards/rts5912_evb.overlay": "668dd9134c8970ec483f4b8f2505e80f9d6cc550d19c5d8d97128ac6a9cd1450",
+    "tests/drivers/rtc/rtc_api/boards/sam_v71_xult_samv71q21.conf": "ef28dd120056af53804928f34f84ad2e9d18c952c5efcfc2e9eec4c1803bba9b",
+    "tests/drivers/rtc/rtc_api/boards/sam_v71_xult_samv71q21b.conf": "ef28dd120056af53804928f34f84ad2e9d18c952c5efcfc2e9eec4c1803bba9b",
+    "tests/drivers/rtc/rtc_api/boards/sama7g54_ek.conf": "ef28dd120056af53804928f34f84ad2e9d18c952c5efcfc2e9eec4c1803bba9b",
+    "tests/drivers/rtc/rtc_api/boards/sama7g54_ek.overlay": "410cb739f9ef0949772e4bfa47e7a966e5d10373add199935434b851aa6761ee",
+    "tests/drivers/rtc/rtc_api/boards/samc21n_xpro.conf": "93b96d82ba80e9d0ed7a1c8c63033194fe86f0c72fa91663fce7adba3e323708",
+    "tests/drivers/rtc/rtc_api/boards/samd20_xpro.conf": "93b96d82ba80e9d0ed7a1c8c63033194fe86f0c72fa91663fce7adba3e323708",
+    "tests/drivers/rtc/rtc_api/boards/same54_xpro.conf": "93b96d82ba80e9d0ed7a1c8c63033194fe86f0c72fa91663fce7adba3e323708",
+    "tests/drivers/rtc/rtc_api/boards/saml21_xpro.conf": "93b96d82ba80e9d0ed7a1c8c63033194fe86f0c72fa91663fce7adba3e323708",
+    "tests/drivers/rtc/rtc_api/boards/samr21_xpro.conf": "93b96d82ba80e9d0ed7a1c8c63033194fe86f0c72fa91663fce7adba3e323708",
+    "tests/drivers/rtc/rtc_api/boards/siwx917_dk2605a.overlay": "63d1ae49f66f6688b38ce30683e095c3fa8669ce358c0dd789e680afb9d4880e",
+    "tests/drivers/rtc/rtc_api/boards/siwx917_rb4338a.overlay": "63d1ae49f66f6688b38ce30683e095c3fa8669ce358c0dd789e680afb9d4880e",
+    "tests/drivers/rtc/rtc_api/boards/stm32f3_disco.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/stm32f3_disco.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/stm32h573i_dk.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/stm32h573i_dk.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/stm32h750b_dk.conf": "e4fa4e46b2babc5df0ed11df4212816198c7eb0c90bb68a40f8c2af7ff6d0675",
+    "tests/drivers/rtc/rtc_api/boards/stm32h750b_dk.overlay": "f3ae1f2d82709a62ba0ac22e41d8d9f2f83ea56c1836a03392f8f7958fb73530",
+    "tests/drivers/rtc/rtc_api/boards/xmc45_relax_kit.conf": "7aa6d385888a400b0c743f06f499bae595b0cdfdd14052560c9fbe7480ba10d0",
+    "tests/drivers/rtc/rtc_api/boards/xmc47_relax_kit.conf": "7aa6d385888a400b0c743f06f499bae595b0cdfdd14052560c9fbe7480ba10d0",
+    "tests/drivers/rtc/rtc_api/prj.conf": "4b8ec79d909c27b9aa29f67f59a9354e28df1de615b3fc3fc7b8212afbf88218",
+    "tests/drivers/rtc/rtc_api/src/main.c": "8748c071eb380c191ae2b12383358f2923602e5dfaf20846328b525f20e4a9e0",
+    "tests/drivers/rtc/rtc_api/src/test_alarm.c": "6eaee3162c2ffb14736e241c9d80454db6a22bed9a697d24228ad4919810ed29",
+    "tests/drivers/rtc/rtc_api/src/test_alarm_callback.c": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792",
+    "tests/drivers/rtc/rtc_api/src/test_calibrate.c": "fd41f676c53ad59af01bdfe0f6499bcf943d785095a3a5a9abaeda5b5e57804d",
+    "tests/drivers/rtc/rtc_api/src/test_time.c": "2fcd2128c0c36d8502d323fc6ca6d939c7782384b9df75b458411865ba3d7fe5",
+    "tests/drivers/rtc/rtc_api/src/test_time_incrementing.c": "80d893f8ea9ff9a1bcb21e86b0a23bf1652037c37b4aaa9aa34fa4850316d55e",
+    "tests/drivers/rtc/rtc_api/src/test_update_callback.c": "51d70cd376530622cf9ae52ca277a5914c3d9d427ab59d3138f3e080f6b1f353",
+    "tests/drivers/rtc/rtc_api/src/test_y2k.c": "cf182bf5f760f8f1e6ef33d07ddd39a49989213acbe43354b39af870a7610604",
+    "tests/drivers/rtc/rtc_api/testcase.yaml": "cc8fe1e9134c9c092e93e7dd95716ba26ede61a07d752ea15fa206da72287d7c",
+    "tests/drivers/watchdog/wdt_basic_api/CMakeLists.txt": "540ef29a9f4c30418ba93d0dfd45756272bbdb13ac8cceb2c285ef84dd6a29f4",
+    "tests/drivers/watchdog/wdt_basic_api/boards/bl54l15_dvk_nrf54l10_cpuapp.overlay": "a5e35af72b35b17c88395b4e662445d02846da4e63fbf1887905cd51fbb03229",
+    "tests/drivers/watchdog/wdt_basic_api/boards/bl54l15_dvk_nrf54l15_cpuapp.overlay": "a5e35af72b35b17c88395b4e662445d02846da4e63fbf1887905cd51fbb03229",
+    "tests/drivers/watchdog/wdt_basic_api/boards/bl54l15_dvk_nrf54l15_cpuflpr.overlay": "36305e482058d4ea09761bec6da70ee40d313a1721007a434138942bc974caaa",
+    "tests/drivers/watchdog/wdt_basic_api/boards/bl54l15_dvk_nrf54l15_cpuflpr_xip.overlay": "36305e482058d4ea09761bec6da70ee40d313a1721007a434138942bc974caaa",
+    "tests/drivers/watchdog/wdt_basic_api/boards/bl54l15u_dvk_nrf54l15_cpuapp.overlay": "a5e35af72b35b17c88395b4e662445d02846da4e63fbf1887905cd51fbb03229",
+    "tests/drivers/watchdog/wdt_basic_api/boards/bl54l15u_dvk_nrf54l15_cpuflpr.overlay": "36305e482058d4ea09761bec6da70ee40d313a1721007a434138942bc974caaa",
+    "tests/drivers/watchdog/wdt_basic_api/boards/bl54l15u_dvk_nrf54l15_cpuflpr_xip.overlay": "36305e482058d4ea09761bec6da70ee40d313a1721007a434138942bc974caaa",
+    "tests/drivers/watchdog/wdt_basic_api/boards/cc3220sf_launchxl.overlay": "34bc9def255e712e7ecfad8355fefbebf5a54dde81083f5c8deea4611d336a53",
+    "tests/drivers/watchdog/wdt_basic_api/boards/cc3235sf_launchxl.overlay": "34bc9def255e712e7ecfad8355fefbebf5a54dde81083f5c8deea4611d336a53",
+    "tests/drivers/watchdog/wdt_basic_api/boards/gd32_fwdgt.overlay": "d01c26f64967e8f9beee507c68d0e8b35f05c99c192f5c05befc6bb8556aed80",
+    "tests/drivers/watchdog/wdt_basic_api/boards/gd32_wwdgt.overlay": "99be6e270c93434f43effabe1fdfcb09476b2b99f55a77497d9a59495ffe045f",
+    "tests/drivers/watchdog/wdt_basic_api/boards/intel_adl_crb.overlay": "edc63af564e8010b978bfa5e08b2dbb58819dd0934e1929663a108363aa0c788",
+    "tests/drivers/watchdog/wdt_basic_api/boards/intel_adl_rvp.overlay": "edc63af564e8010b978bfa5e08b2dbb58819dd0934e1929663a108363aa0c788",
+    "tests/drivers/watchdog/wdt_basic_api/boards/intel_btl_s_crb.overlay": "6d3523064d45b0c61c2356ca6ad6b55e1b64327cacfac2e0aa31aeac425d95f2",
+    "tests/drivers/watchdog/wdt_basic_api/boards/intel_ehl_crb.overlay": "edc63af564e8010b978bfa5e08b2dbb58819dd0934e1929663a108363aa0c788",
+    "tests/drivers/watchdog/wdt_basic_api/boards/intel_rpl_p_crb.overlay": "edc63af564e8010b978bfa5e08b2dbb58819dd0934e1929663a108363aa0c788",
+    "tests/drivers/watchdog/wdt_basic_api/boards/intel_rpl_s_crb.overlay": "edc63af564e8010b978bfa5e08b2dbb58819dd0934e1929663a108363aa0c788",
+    "tests/drivers/watchdog/wdt_basic_api/boards/mimxrt1050_evk_ti_tps382x.overlay": "24732c51c7463ff6e4c9dbba3204f0996fa19df30e73ca559f4c01f5daff7fd8",
+    "tests/drivers/watchdog/wdt_basic_api/boards/mimxrt1060_evk_mimxrt1062_qspi.conf": "8304b131ffebeb14cabef58ed6d40d186945dd9e9e09545bb7fe65031026e387",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf52840dk_nrf52840_counter.conf": "47be31b08a1a57aa9329cee6943bc7924c614b11b586c002a165220e9f862582",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf52840dk_nrf52840_counter.overlay": "d1dfc2aabd173960fa1596b2a9d9a9c147ce68926f8a6edf028a2b9b0d9d7417",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf54h20dk_nrf54h20_cpuapp.conf": "5f399207add0e0dbbe34045caeb465e68e5c94d359f1e08b068dff73d021eb40",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf54h20dk_nrf54h20_cpuapp.overlay": "3f2100264038050e5a2e584373027a41b9880e7fdf3493325989c808b1c8d5ed",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf54l15dk_nrf54l05_cpuapp.overlay": "a3a9d9697e3bf1d894ff7b7a552edfde95694079415bba29d88e23b9ab7ad2dd",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf54l15dk_nrf54l10_cpuapp.overlay": "a3a9d9697e3bf1d894ff7b7a552edfde95694079415bba29d88e23b9ab7ad2dd",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf54l15dk_nrf54l15_cpuapp.overlay": "a3a9d9697e3bf1d894ff7b7a552edfde95694079415bba29d88e23b9ab7ad2dd",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf54lm20dk_nrf54lm20a_cpuapp.overlay": "fe56d98a3d82b02413a6df90ed0c76a8ca6157c945cad08c4a7989cf3206be01",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf9280pdk_nrf9280_cpuapp.overlay": "3f2100264038050e5a2e584373027a41b9880e7fdf3493325989c808b1c8d5ed",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf9280pdk_nrf9280_cpuapp_iron.overlay": "26bb7d3542c182191bb76da755557c95baf096484318f551a7cd1a6bdb846a7a",
+    "tests/drivers/watchdog/wdt_basic_api/boards/nrf9280pdk_nrf9280_cpurad.overlay": "3f2100264038050e5a2e584373027a41b9880e7fdf3493325989c808b1c8d5ed",
+    "tests/drivers/watchdog/wdt_basic_api/boards/numaker_m2l31ki.overlay": "fc660353ddf090e7a6d6b792b7fe606323f0cf7948591a1d348512d809cdfe29",
+    "tests/drivers/watchdog/wdt_basic_api/boards/numaker_pfm_m467.overlay": "fc660353ddf090e7a6d6b792b7fe606323f0cf7948591a1d348512d809cdfe29",
+    "tests/drivers/watchdog/wdt_basic_api/boards/opentitan_earlgrey.overlay": "d305c7069878b9a41e31e9bc5912708dcc8ca4f355dc54d139b6f1a7cdaada46",
+    "tests/drivers/watchdog/wdt_basic_api/boards/ophelia4ev_nrf54l15_cpuapp.overlay": "7bbee3da624f87e03dd473c621930efa4434a7a89904f3dc887ba1afc1146083",
+    "tests/drivers/watchdog/wdt_basic_api/boards/ophelia4ev_nrf54l15_cpuflpr.overlay": "a15dd3c971c75fcf9d8310ad301e9c4f5c36d1bd875d4041630ca2cde9a7e66f",
+    "tests/drivers/watchdog/wdt_basic_api/boards/raytac_an54lq_db_15_nrf54l15_cpuapp.overlay": "a3a9d9697e3bf1d894ff7b7a552edfde95694079415bba29d88e23b9ab7ad2dd",
+    "tests/drivers/watchdog/wdt_basic_api/boards/raytac_an54lq_db_15_nrf54l15_cpuflpr.overlay": "31dc3e5a5413743220ce857a6081001596ceacb1393ef000bfec6e6150f5e7ef",
+    "tests/drivers/watchdog/wdt_basic_api/boards/raytac_an54lq_db_15_nrf54l15_cpuflpr_xip.overlay": "31dc3e5a5413743220ce857a6081001596ceacb1393ef000bfec6e6150f5e7ef",
+    "tests/drivers/watchdog/wdt_basic_api/boards/siwx917_rb4338a.overlay": "f0e2c2c6d7946064c56bcb4a241681f6a368dd723bbb3358c495882537a016b2",
+    "tests/drivers/watchdog/wdt_basic_api/boards/siwx917_rb4342a.overlay": "f0e2c2c6d7946064c56bcb4a241681f6a368dd723bbb3358c495882537a016b2",
+    "tests/drivers/watchdog/wdt_basic_api/boards/stm32_iwdg.overlay": "432056ba11d8bd53ae3fc7aa9a688a68301df4fff0cba7e0db753eba716f6cbb",
+    "tests/drivers/watchdog/wdt_basic_api/boards/stm32_wwdg.overlay": "ae28c93a3ce2b62ce608c29fad8f9ef6614a27f831c3dac68607e4a51f797416",
+    "tests/drivers/watchdog/wdt_basic_api/boards/stm32_wwdg_h7.overlay": "c41d42d191119a585a96968b2cfc888a035afa2d105615299a78106afb98b993",
+    "tests/drivers/watchdog/wdt_basic_api/boards/up_squared_pro_7000.overlay": "edc63af564e8010b978bfa5e08b2dbb58819dd0934e1929663a108363aa0c788",
+    "tests/drivers/watchdog/wdt_basic_api/boards/xiao_nrf54l15_nrf54l15_cpuapp.overlay": "18f6dc3289f40d689d418c6f0b0b77b90e44d6e2af9606528713cad3ffdb87d8",
+    "tests/drivers/watchdog/wdt_basic_api/boards/xiao_nrf54l15_nrf54l15_cpuflpr.overlay": "18f6dc3289f40d689d418c6f0b0b77b90e44d6e2af9606528713cad3ffdb87d8",
+    "tests/drivers/watchdog/wdt_basic_api/boards/xmc45_relax_kit.overlay": "f38c6ff1db8da3facd146075d5276020faa23c1f7473a0f64a98b995e55230cf",
+    "tests/drivers/watchdog/wdt_basic_api/boards/xmc47_relax_kit.overlay": "f38c6ff1db8da3facd146075d5276020faa23c1f7473a0f64a98b995e55230cf",
+    "tests/drivers/watchdog/wdt_basic_api/prj.conf": "a7314f54008396301f613e8edf7bc05cd4793799ca38d37534919e40d81b053d",
+    "tests/drivers/watchdog/wdt_basic_api/src/main.c": "b48fa1a3150be5a265078d5e7f5baa36e72e34f1f0a5fafcd1b400a560d2741d",
+    "tests/drivers/watchdog/wdt_basic_api/src/test_wdt.c": "1c6a72805dd35d0772680c41b9a344014695b3f33bb405642afd6fed9e1edbc8",
+    "tests/drivers/watchdog/wdt_basic_api/testcase.yaml": "591c879a3b753f44ca4948e6fa96a11572cd4bf1e4b761af5d941694725e1d0f"
+  },
+  "verified_f7_svd_sha256": "9b806b03ac7078f3ec5a3f39d61cb2b8442605ebd837015ef5539b08c57530dd",
+  "watchdog_attempt": 1,
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}
