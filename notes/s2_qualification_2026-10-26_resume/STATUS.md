@@ -140,3 +140,40 @@ Updated primary estimate4.541397265625SU, one normal node /06:00:00,
 reservation ceiling6SU, -A TRA25006. This estimate was reported before
 submission, under the user's satisfied conditional approval. No S2 primary
 job has yet been submitted at this log checkpoint. E2/paper remain held.
+
+## S2 primary submission infrastructure rejection, before any primary run
+
+The first primary sbatch call returned exit1 with no job ID and
+'Batch job submission failed: Job dependency problem' for afterok:3535399.
+Its receipt and in-progress marker are preserved under the new primary WORK
+namespace. Calibration had already COMPLETED0:0 and all15 acceptance checks
+were independently verified. The scheduler dependency is redundant with that
+completed gate. Retry the same sealed plan, code, inputs, outputs and six-hour
+allocation without that dependency after checking archived completion and no
+accepted primary job. Record a separate retry receipt; do not overwrite the
+rejection or alter tests/harness/ELFs. This is submission packaging only.
+
+## S2 primary accepted
+
+After the dependency-only rejection, checked calibration3535399 in sacct as
+COMPLETED0:0 and verified no accepted rtc-s2-primary job existed. Reused the
+same sealed plan and sbatch command with only --dependency omitted. Job3535524
+accepted: normal /TRA25006,one node,06:00:00,32 workers,1122 app launches,
+primary estimate4.541397265625SU, ceiling6SU. Failed and accepted receipts
+returned via rsync; both retained under results/s2_production_20261026_v1.
+The first rejection created no job or firmware result and is not scored.
+The second submission's plan hash remains719b3bc42f2b93f44455a11eca3eacd69eacbbf4e8c714b90300d5a8343d0612.
+No observation limit or scientific input changed. E replacement3535400 retains
+its approved12-hour limit and unchanged165 gate-qualified variants/17375
+primary evaluation tasks/19 controls. No E2 or paper edit.
+
+## Final submission checkpoint
+
+Final sacct/squeue read:3535524 PENDING Priority,normal,06:00:00;3535400 PENDING
+Priority,normal,12:00:00. No production outcome is claimed. Both useTRA25006.
+All30,067 protected files remain unchanged after submission; audit SHA-256
+6bccd39d3ebff7a5a90ef47bd0e45b027c2c8308d300c109ab520077c83a9d7a.
+Production code/DESIGN seals match the plan; no new build, E2 or manuscript
+edit. The full final11-configuration cohort, per-case counts, exclusions,
+receipts and cost estimates are summarized in FINAL_STATUS.md. Stop at this
+submission checkpoint; further outcome analysis needs the completed jobs.

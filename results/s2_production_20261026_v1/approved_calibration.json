@@ -1,0 +1,586 @@
+{
+  "all_15_accepted": true,
+  "new_design_sha256": "a4e097397af55e57efe721d9dc5a65f84a924d40981cb64d45dcf2625897cadc",
+  "original_missing_outcomes_preserved": true,
+  "production_condition_satisfied": true,
+  "settings": [
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 47000,
+      "index": 18,
+      "reasons": [],
+      "record_sha256": "1f0d2d156e967fb044f6c7b12e230883c21036389bf5b47b6d781f81d620fd29",
+      "unit_id": "f4-counter",
+      "wall_seconds": 1273.603
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 44670,
+      "index": 19,
+      "reasons": [],
+      "record_sha256": "91102f12bdd2e50d15d57d17ef9a9f2c5ca0257fb6da7b804a6cd52dd8723f18",
+      "unit_id": "f4-counter",
+      "wall_seconds": 1211.033
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 45282,
+      "index": 21,
+      "reasons": [],
+      "record_sha256": "bc5a06c0a30d4aa31af6d1ab358c2349d4894fd88fc6c17da718c1be867030cc",
+      "unit_id": "f4-counter",
+      "wall_seconds": 1228.133
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 47000,
+      "index": 55,
+      "reasons": [],
+      "record_sha256": "61fd8be7e0847fe6d60dc3889ac348a728486581963ec29590918599a0f7ffd3",
+      "unit_id": "f767-counter",
+      "wall_seconds": 1196.938
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 44670,
+      "index": 56,
+      "reasons": [],
+      "record_sha256": "1574ef5b153ad9c9e73fbee421c1112b59727e00ebef87c0bd45d502116adf5a",
+      "unit_id": "f767-counter",
+      "wall_seconds": 1234.86
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 45282,
+      "index": 58,
+      "reasons": [],
+      "record_sha256": "82baccece4c5b3d3c896c1fa65014ab257639eca8d55ef3c66ba74ce7ad15dee",
+      "unit_id": "f767-counter",
+      "wall_seconds": 1184.834
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "seconds_counter.test_seconds_rate",
+          "status": "fail"
+        }
+      ],
+      "frequency_hz": 24797,
+      "index": 71,
+      "reasons": [],
+      "record_sha256": "0d8ae58f0c7e81bff8e9d40848d9e2b5844edac6dce3eddba2eaacf8810c86c0",
+      "unit_id": "f767-seconds",
+      "wall_seconds": 10.6
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "seconds_counter.test_seconds_rate",
+          "status": "fail"
+        }
+      ],
+      "frequency_hz": 24734,
+      "index": 72,
+      "reasons": [],
+      "record_sha256": "3cba2e0cd3a61a29bb8c95b0a1b4c9a5ffa993c3acd8c04040355b32c79c39bc",
+      "unit_id": "f767-seconds",
+      "wall_seconds": 10.982
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "rtc_api.test_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_set_get_calibration",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_set_get_time",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_time_counting",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_update_callback",
+          "status": "skip"
+        },
+        {
+          "case": "rtc_api.test_y2k",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 47000,
+      "index": 79,
+      "reasons": [],
+      "record_sha256": "7f34448dbb22e996d4541de57fe3911e6fe8f029a812f58a446e8aa86761d0fd",
+      "unit_id": "f746-rtc",
+      "wall_seconds": 141.73
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "rtc_api.test_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_set_get_calibration",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_set_get_time",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_time_counting",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_update_callback",
+          "status": "skip"
+        },
+        {
+          "case": "rtc_api.test_y2k",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 30734,
+      "index": 119,
+      "reasons": [],
+      "record_sha256": "e3781766b1c05de3cd3db15943f233338ec10d8bab3ee7ace26a3a7fe130f5d7",
+      "unit_id": "h753-rtc",
+      "wall_seconds": 147.556
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "rtc_api.test_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_set_get_calibration",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_set_get_time",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_time_counting",
+          "status": "pass"
+        },
+        {
+          "case": "rtc_api.test_update_callback",
+          "status": "skip"
+        },
+        {
+          "case": "rtc_api.test_y2k",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 30726,
+      "index": 120,
+      "reasons": [],
+      "record_sha256": "4df8fb80d1106edf1b9cf127b4f2b66539cbb010599ceccf5d4959be14b27e9f",
+      "unit_id": "h753-rtc",
+      "wall_seconds": 144.976
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "frequency_hz": 33600,
+      "index": 127,
+      "reasons": [],
+      "record_sha256": "cfaa8b2b5bc2da87dfbf940a86bb3b55272d7aec097c802a8e3cc4faf6212aaf",
+      "unit_id": "h753-counter",
+      "wall_seconds": 53.304
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "seconds_counter.test_seconds_rate",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 33218,
+      "index": 140,
+      "reasons": [],
+      "record_sha256": "744af6c0ccf2eeda7903107fa236dff439975b84c5d9ee3a6f194a91b3f61cac",
+      "unit_id": "h753-seconds",
+      "wall_seconds": 9.847
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "seconds_counter.test_seconds_rate",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 30310,
+      "index": 141,
+      "reasons": [],
+      "record_sha256": "c193c5077db57470caf825da83eb58288b0edd5dfbb1bf5a4d7806fcdd0effce",
+      "unit_id": "h753-seconds",
+      "wall_seconds": 9.632
+    },
+    {
+      "accepted": true,
+      "actual_cases": [
+        {
+          "case": "seconds_counter.test_seconds_rate",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 30734,
+      "index": 143,
+      "reasons": [],
+      "record_sha256": "b3642098a06f22f0f1c33f4734a42725c2ca047b0720555e5312c902cdadc9ed",
+      "unit_id": "h753-seconds",
+      "wall_seconds": 9.668
+    }
+  ],
+  "slurm_job_id": "3535399"
+}

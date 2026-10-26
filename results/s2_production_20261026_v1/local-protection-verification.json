@@ -1,0 +1,25 @@
+{
+  "E2_started": false,
+  "audit_sha256": "6bccd39d3ebff7a5a90ef47bd0e45b027c2c8308d300c109ab520077c83a9d7a",
+  "changed": [],
+  "design_sha256": "a4e097397af55e57efe721d9dc5a65f84a924d40981cb64d45dcf2625897cadc",
+  "new_builds": 0,
+  "paper_edited": false,
+  "protected_count": 30067,
+  "source_code_sha256": {
+    "harness/tacc_s2/README.md": "d51ce21dc25d184cfb3dc69bb406b1e9f7f5b3186303b236d49f60d053cbc12f",
+    "harness/tacc_s2/control.py": "69b669faaa28ca6f9894430de865d5e72f0a54032783db153b669ea9390b3746",
+    "harness/tacc_s2/development.sbatch": "4492597442326bad7c3f8bb02fb6c765b91e13db102b1725903def430fcebc9d",
+    "harness/tacc_s2/prepare.py": "e02107b0ff4b550e2dc0b578698ba2e9371eef3547d23d4a3fe314eba049a46b",
+    "harness/tacc_s2/resume_probe.sbatch": "9cccf582e2f84957eb4983cbb7aa151de674edb54c03f0bfc8acf451d70668e8",
+    "harness/tacc_s2/task.sh": "36a1d54f3128c1980acaaa84dd3284af29d8367a999ff05dbd38c885e2a8fe39",
+    "harness/tacc_s2/test_accounting.py": "176d1bf62007d1a430936873f2fcfd7202775203145a1db36b45a2812d00e4d5",
+    "harness/tacc_s2/worker.py": "a1737e8a973b8147f6834a443e544e736723e6045dd0e0c264bddb4e7b116f86",
+    "harness/tacc_s2_production/prepare.py": "957117bc19f49235741098a0120fe06eb5cc44a2ff2d2facc8bdc995533234e9",
+    "harness/tacc_s2_production/primary.sbatch": "7458fe2eff1a16a8b92e90324bb501c3c878ef97a30d0109474815d9a7d6bd72",
+    "harness/tacc_s2_production/setup.py": "e8ec31c3c856fb4b67f15ee86e90c5fd877cf99438a22d918a4a83af120b5731",
+    "harness/tacc_s2_production/task.sh": "99275af9db4f0a735de3ef09e696c794903704010f04f805b62a5f702f853be7",
+    "harness/tacc_s2_production/test_packaging.py": "434755bcd2483d9f0865f350158ba83b1554ced6d097d9732461ba0ae5ecda00",
+    "harness/tacc_s2_production/worker.py": "dc764f067f495cccbbc7c3574b67185b435a4758381083c2ec9d01e77b40da9a"
+  }
+}
