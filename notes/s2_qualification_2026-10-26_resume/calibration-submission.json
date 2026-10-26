@@ -1,0 +1,14 @@
+{
+  "account": "TRA25006",
+  "checkout_clean_before_submission": true,
+  "estimated_su": 0.5,
+  "job_id": "3535399",
+  "ls6_head": "f096174075864e19e30d86a8e1ff750e96c57052",
+  "mac_head": "f096174075864e19e30d86a8e1ff750e96c57052",
+  "nodes": 1,
+  "partition": "development",
+  "plan_sha256": "42c5a316c3d8c049393561eab3c26ac39e00d50d26feabb238530dc577f0f33f",
+  "reservation_ceiling_su": 2,
+  "wall_limit": "02:00:00",
+  "workers": 15
+}

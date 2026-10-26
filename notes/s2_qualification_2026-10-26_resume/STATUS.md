@@ -84,3 +84,35 @@ DESIGN before actions. Planned E replacement: normal /TRA25006, one node,
 12:00:00, expected8SU, reservation ceiling12SU, original gates and manifests
 unchanged. Recheck state/unused output before pending-only cancellation and
 avoid a duplicate if the original starts. E2 and paper remain held.
+
+## Calibration and E replacement submitted after successful recovery
+
+Recovery was checked at abff0ced, then the new incident/amendment commit
+f096174075864e19e30d86a8e1ff750e96c57052 was pushed locally and pulled on LS6.
+HEAD equality and clean LS6 git status were required before calibration submit.
+A first identity assertion used an incorrect expected full-hash literal after
+a successful pull; no job was submitted by that command. Corrected it using
+the actual Mac git rev-parse result, then verified the exact match and clean
+status before submission. No file or scientific-input correction was involved.
+
+Updated unsubmitted v2 plan (metadata/design/offline-reporter provenance only):
+42c5a316c3d8c049393561eab3c26ac39e00d50d26feabb238530dc577f0f33f.
+Job3535399: development /TRA25006, one node,02:00:00,15 workers; estimated0.5SU,
+reservation ceiling2SU. All fifteen indices unchanged. Earlier unsubmitted
+bundles remain preserved. The latest scheduler estimate was14:28:35 Central,
+not a guaranteed start. No S2 production has been submitted.
+
+E3532543 was still PENDING with zero elapsed/no start. Verified completed gate
+3532542 and absence of control/evaluation raw/Launcher directories. Held the
+pending job, cancelled it with a PENDING-state filter, verified CANCELLED with
+zero elapsed, then submitted replacement3535400 on normal /TRA25006,one node,
+12:00:00,estimated8SU,ceiling12SU. Gate/ELF execution and control/evaluation
+manifest hashes are unchanged before/after. No rebuild or nominal rerun.
+Receipts and cancellation proof are in e-resubmission/ beside this note.
+The approved replacement ends the earlier read-only status restriction for
+this scheduling action only; E2 and paper remain held.
+
+Production packaging checks use fake text ELFs/images in temporary local
+fixtures, never Renode/compiler/SSH/Slurm. Three tests verify byte-identical
+ELF-pointer packaging and rejection of image/board-clock drift. All pass.
+Existing scientific worker and active continuation scripts are unchanged.

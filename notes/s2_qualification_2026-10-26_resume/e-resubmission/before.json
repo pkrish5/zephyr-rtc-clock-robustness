@@ -1,0 +1,16 @@
+{
+  "completed_gate": "3532542|COMPLETED|0:0\n",
+  "expected_su": 8,
+  "metadata_sha256": {
+    "plan.json": "2c9317ea293b72a4cbf1e7779f22ceecdbf5f3a835559db35e4114a1a95971b6",
+    "study/results/tacc_phase2_e_20261024_v1/execution.json": "3bbd9f88a717442b4900d646a0f54db5636a735ab750b5ae78deae08b0b20b8c",
+    "study/results/tacc_phase2_e_20261024_v1/execution.sha256": "8fe57730e597997c0883f82c094e8e819e07e1f56772e46472c0c4763a5d61ea",
+    "study/results/tacc_phase2_e_20261024_v1/tasks-controls.json": "cc8102b2504af2443e1c5d261f2b7c698e506a7ffb05daa0eaaaf1c693db680b",
+    "study/results/tacc_phase2_e_20261024_v1/tasks-evaluate.json": "6ff6e45b9177594ed522d402c040e08a9382ca5942e23d95cd4af619742112ff"
+  },
+  "original_job": "3532543",
+  "requested_limit": "12:00:00",
+  "reservation_ceiling_su": 12,
+  "slurm": "JobId=3532543 JobName=rtc-repair-eval UserId=pk23377(903995) GroupId=G-827254(827254) MCS_label=N/A Priority=2216 Nice=0 Account=TRA25006 QOS=qdefault JobState=PENDING Reason=Priority Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=18:00:00 TimeMin=N/A SubmitTime=2026-10-24T13:23:47 EligibleTime=2026-10-24T14:37:31 AccrueTime=2026-10-24T14:37:31 StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-26T13:51:48 Scheduler=Main Partition=normal AllocNode:Sid=login1:341505 ReqNodeList=(null) ExcNodeList=(null) NodeList= NumNodes=1-1 NumCPUs=128 NumTasks=128 CPUs/Task=1 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=128,mem=1M,node=1,billing=128 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/harness/tacc_phase2/packed_e_cache.sbatch WorkDir=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness StdErr=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261024-repair-v1/logs/evaluate-3532543.err StdIn=/dev/null StdOut=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261024-repair-v1/logs/evaluate-3532543.out Power= \n",
+  "timestamp_utc": "2026-10-26T18:51:55.038040+00:00"
+}
