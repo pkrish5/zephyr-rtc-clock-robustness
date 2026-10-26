@@ -45,3 +45,42 @@ Original code stays unchanged. Source/config/ELF checks precede any production
 launch; F7 cache packaging uses exact previously returned SVD bytes. It is not
 activated without calibration acceptance. Python/shell syntax checks pass;
 a synthetic unaccepted report is rejected before any output or experiment.
+
+## WORK-responsive retry: checkout collisions, no submission
+
+After the user confirmed WORK was responsive, git pull fetched abff0ced but
+refused to merge: the interrupted earlier checkout left two tracked files
+modified and26 newly added files untracked. A read-only comparison verified
+all28 files byte-identical to origin/main, including DESIGN.md, the status
+note, continuation scripts and copied S2 evidence. HEAD remains eedb8b1e.
+No recovery mutation, experiment or job submission has occurred.
+
+The user's git-pull-only rule requires an explicit one-time recovery exception.
+Prepared recover_checkout.py: preserve/hash all28 under an exclusive WORK
+backup, move only the26 verified untracked collisions, restore only the two
+backed-up tracked paths to current HEAD, git pull --ff-only, then recheck all
+file hashes and unchanged S2 core code. Pending user approval; the script has
+not run. Do not push this preparation before recovery because its target
+origin/main is explicitly pinned to abff0ced for the reviewed comparison.
+Local protected-file retry audit remains clean for all30,067 files.
+
+## Recovery completed and verified, before any job
+
+The user approved the one-time recovery exception. Preserved all28 files under
+WORK/zephyr-rtc-clock-robustness/tacc_work/20261026-git-checkout-recovery-v1;
+26 untracked collisions moved, only two tracked paths restored, then git pull.
+Returned backup metadata via rsync. All28 files match their retained hashes;
+HEAD on both LS6 and Mac equals abff0ced99983e9b3f60dc35ee5209c8a065f831.
+The subsequent git status --porcelain output is empty. The original S2 worker,
+task wrapper and controller SHA-256 values match before/after. The local full
+protected-file audit passes30067/30067, SHA-256
+7a8bfb74eca3008823a06bf6ffc9824ac518d078ac8241d579ab1b1445446ede.
+No frozen sources, ELFs, forecasts or original run directories were touched.
+The backup remains on WORK. No recovery-related experiment or job was run.
+
+E3532543 remained PENDING Priority with zero elapsed and no start. The user
+explicitly approved resubmission at12h if pending. Scheduling amendment entered
+DESIGN before actions. Planned E replacement: normal /TRA25006, one node,
+12:00:00, expected8SU, reservation ceiling12SU, original gates and manifests
+unchanged. Recheck state/unused output before pending-only cancellation and
+avoid a duplicate if the original starts. E2 and paper remain held.

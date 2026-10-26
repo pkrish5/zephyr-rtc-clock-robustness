@@ -1,0 +1,12 @@
+{
+  "all_28_files_match": true,
+  "backup": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261026-git-checkout-recovery-v1",
+  "core_sha256": {
+    "harness/tacc_s2/control.py": "69b669faaa28ca6f9894430de865d5e72f0a54032783db153b669ea9390b3746",
+    "harness/tacc_s2/task.sh": "36a1d54f3128c1980acaaa84dd3284af29d8367a999ff05dbd38c885e2a8fe39",
+    "harness/tacc_s2/worker.py": "a1737e8a973b8147f6834a443e544e736723e6045dd0e0c264bddb4e7b116f86"
+  },
+  "head": "abff0ced99983e9b3f60dc35ee5209c8a065f831",
+  "new_jobs_submitted": 0,
+  "scientific_files_changed": []
+}

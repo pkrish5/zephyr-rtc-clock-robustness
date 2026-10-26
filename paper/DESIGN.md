@@ -1258,3 +1258,35 @@ approval does not authorize a submission if any acceptance check fails.
 Missing production outcomes stay missing; no silent diagnostic substitution.
 Replays and reference attribution follow the existing protocol in separate new
 namespaces. E2 and paper changes remain held, including after submission.
+
+## 2026-10-26 scheduling-only E resubmission and checkout recovery verification
+
+The user authorized one preservation-first exception to git-pull-only recovery.
+All 28 checkout collisions matched origin/main before recovery. Backed up/hash
+logged all files under WORK/tacc_work/20261026-git-checkout-recovery-v1, moved
+only the 26 untracked collisions, restored only DESIGN.md and the S2 status
+note to the former HEAD, then pulled. LS6 and Mac both reached
+abff0ced99983e9b3f60dc35ee5209c8a065f831; all 28 pulled hashes match the retained
+backup, LS6 git status is clean and the protected audit reports 30,067 unchanged
+files (audit SHA 7a8bfb74eca3008823a06bf6ffc9824ac518d078ac8241d579ab1b1445446ede).
+S2 simulation/packing core hashes are unchanged. Keep the WORK backup.
+The fifteen-setting continuation is re-sealed in an unused metadata namespace
+only to include this updated DESIGN hash and additional offline-report code;
+its task roster, scientific inputs, original worker and all run limits remain
+unchanged. Earlier unsubmitted seals are retained, not experiment attempts.
+
+The user also authorized replacing E evaluation 3532543 with a 12-hour normal
+allocation if it remains pending. The read-only check still showed PENDING,
+Priority, no start, with 18-hour limit. Before cancelling, recheck pending state
+and no evaluation/control outputs. Cancel only in PENDING state; if it starts,
+leave it running and do not create a duplicate. Reuse the completed gate job
+3532542, sealed execution/ELF manifest, existing E protocol, tasks and per-run
+limits unchanged. No gate rebuilds or nominal reruns. Submit the same controls
+and evaluation stages with -A TRA25006, one node, normal, 12:00:00, cap32,
+tacc-apptainer/1.4.1 and launcher/3.10. The prior expected cost is 8 SU; new
+reservation ceiling is 12 SU. Preserve old submission/cancellation evidence,
+new receipt, and all hashes. An unstarted pending job contributes no firmware
+verdicts. New control/evaluation raw directories must not replace existing
+records. This changes the Slurm allocation limit, not test observation bounds.
+E2 and paper edits stay held. S2 production remains conditional on all fifteen
+registered continuation checks, independently of E scheduling.
