@@ -1,0 +1,94 @@
+{
+  "audit_sha256": "49f1fc8fd8ff7864a8ad3a327dad5fbde1a34226a8c7462ba051779a092cf2f6",
+  "board_replicas_are_independent_subjects": false,
+  "boards": [
+    {
+      "always_skipped_cases": 9,
+      "applications": 3,
+      "board": "stm32f4_disco",
+      "board_id": "f4",
+      "cases_with_any_primary_failure": 6,
+      "declared_cases": 19,
+      "launches": 306,
+      "missing_case_slots": 0,
+      "nominal_capability_skipped": 9,
+      "nominal_pass_cases_with_primary_failure": 6,
+      "nominal_runnable": 10,
+      "runnable_at_any_legal_setting": 10
+    },
+    {
+      "always_skipped_cases": 2,
+      "applications": 2,
+      "board": "stm32f746g_disco",
+      "board_id": "f746",
+      "cases_with_any_primary_failure": 4,
+      "declared_cases": 8,
+      "launches": 204,
+      "missing_case_slots": 0,
+      "nominal_capability_skipped": 2,
+      "nominal_pass_cases_with_primary_failure": 4,
+      "nominal_runnable": 6,
+      "runnable_at_any_legal_setting": 6
+    },
+    {
+      "always_skipped_cases": 9,
+      "applications": 3,
+      "board": "nucleo_f767zi",
+      "board_id": "f767",
+      "cases_with_any_primary_failure": 6,
+      "declared_cases": 19,
+      "launches": 306,
+      "missing_case_slots": 0,
+      "nominal_capability_skipped": 9,
+      "nominal_pass_cases_with_primary_failure": 6,
+      "nominal_runnable": 10,
+      "runnable_at_any_legal_setting": 10
+    },
+    {
+      "always_skipped_cases": 9,
+      "applications": 3,
+      "board": "nucleo_h753zi",
+      "board_id": "h753",
+      "cases_with_any_primary_failure": 0,
+      "declared_cases": 19,
+      "launches": 306,
+      "missing_case_slots": 0,
+      "nominal_capability_skipped": 10,
+      "nominal_pass_cases_with_primary_failure": 0,
+      "nominal_runnable": 9,
+      "runnable_at_any_legal_setting": 10
+    }
+  ],
+  "case_slot_counts": {
+    "fail": 470,
+    "missing": 0,
+    "pass": 3022,
+    "skip": 3138
+  },
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "declared_case_slots": 6630,
+  "expected_launches": 1122,
+  "missing_indices": [],
+  "new_builds": 0,
+  "new_simulations": 0,
+  "nodes": [
+    "c309-016.ls6.tacc.utexas.edu"
+  ],
+  "nominal_case_source_sha256": "a6803b8b7b17152933c8737c9cd9b478780a3b13b1c32371c718c7228c3af3ec",
+  "observed_partial_summaries_unscored": 0,
+  "outcome_counts": {
+    "complete": 1122
+  },
+  "plan_sha256": "719b3bc42f2b93f44455a11eca3eacd69eacbbf4e8c714b90300d5a8343d0612",
+  "process_exit_counts": {},
+  "raw_log_and_elf_hashes_verified": false,
+  "records": 1122,
+  "records_with_duplicate_cases": [],
+  "records_with_error": [],
+  "records_with_missing_cases": [],
+  "replay_reference_attribution_complete": false,
+  "slurm_job_ids": [
+    "3535524"
+  ],
+  "verification_level": "provisional record metadata only"
+}
