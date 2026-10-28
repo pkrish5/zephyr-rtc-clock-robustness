@@ -1,0 +1,17 @@
+{
+  "collector_and_selection_unchanged": true,
+  "files": {
+    "harness/tacc_s2_evidence/audit_primary.py": {
+      "before_sha256": "49f1fc8fd8ff7864a8ad3a327dad5fbde1a34226a8c7462ba051779a092cf2f6",
+      "after_sha256": "49f1fc8fd8ff7864a8ad3a327dad5fbde1a34226a8c7462ba051779a092cf2f6"
+    },
+    "harness/tacc_s2_evidence/return_primary.py": {
+      "before_sha256": "705354658c8db1e71e33568f985acadbc91a12af97320a52c808ea5aec41ec1f",
+      "after_sha256": "705354658c8db1e71e33568f985acadbc91a12af97320a52c808ea5aec41ec1f"
+    },
+    "harness/tacc_s2_evidence/return_primary.sbatch": {
+      "before_sha256": "bfebc53467647553c676007b2234fdf6514abb202b32020f20793abf081ff4a0",
+      "after_sha256": "bfebc53467647553c676007b2234fdf6514abb202b32020f20793abf081ff4a0"
+    }
+  }
+}

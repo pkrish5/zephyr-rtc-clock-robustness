@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/harness/tacc_phase2/audit.py", line 26, in <module>
+    base = read(a.snapshot)
+  File "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/harness/tacc_phase2/support.py", line 22, in read
+    return json.loads(Path(path).read_text())
+  File "/opt/apps/intel19/python3/3.9.7/lib/python3.9/pathlib.py", line 1266, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/opt/apps/intel19/python3/3.9.7/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/opt/apps/intel19/python3/3.9.7/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/artifacts/tacc_phase2_20261024_v1/protected_baseline.json'
+Traceback (most recent call last):
+  File "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/harness/tacc_s2_evidence/return_primary.py", line 101, in <module>
+    main()
+  File "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/harness/tacc_s2_evidence/return_primary.py", line 40, in main
+    subprocess.run([sys.executable, str(audit), 'check', '--root', str(repo),
+  File "/opt/apps/intel19/python3/3.9.7/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/apps/intel19/python3/3.9.7/bin/python3', '/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/harness/tacc_phase2/audit.py', 'check', '--root', '/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness', '--snapshot', '/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/artifacts/tacc_phase2_20261024_v1/protected_baseline.json', '--out', '/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261027-s2-return-v1/evidence_v1/protected_before.json']' returned non-zero exit status 1.

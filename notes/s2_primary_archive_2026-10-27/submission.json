@@ -1,0 +1,15 @@
+{
+  "job_id": "3537962",
+  "queue": "development",
+  "allocation": "TRA25006",
+  "nodes": 1,
+  "walltime": "00:30:00",
+  "reservation_node_hours_ceiling": 0.5,
+  "repo_commit": "c258b10833db93f0c9a770d3bbd54900290dc466",
+  "primary_job_id": "3535524",
+  "remote_destination": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261027-s2-return-v1/evidence_v1",
+  "new_simulations": 0,
+  "new_builds": 0,
+  "E2_started": false,
+  "paper_edited": false
+}

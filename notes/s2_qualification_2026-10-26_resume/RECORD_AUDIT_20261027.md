@@ -38,3 +38,18 @@ check failed authentication with `Permission denied (publickey,keyboard-interact
 and TACC password/token instructions. Remote access stopped immediately;
 no authentication was attempted, no Git pull ran, and no archive job was
 submitted. The local helper remains prepared for a later authenticated session.
+
+On the following authorized continuation, SSH authenticated and returned
+LS6 HEAD d84f7c053e2d5e5810255a2cc1c435e032eb36f6, but the full Git status
+scan did not return. Only that diagnostic client was stopped. The audit
+collector and provisional ledgers were committed/pushed from the Mac as
+c258b108. A separate authorized `git pull --ff-only` on LS6 also returned
+no output and its stalled client was stopped. The pull's remote completion
+state is unconfirmed; verify HEAD and checkout state before any further
+checkout operation. No archive job or simulation was submitted.
+
+The local pre-archive protected audit again passed all 30,067 files:
+`artifacts/s2_production_20261026_v1/returned_20261027_v1/protected_before_archive_submission.json`,
+SHA-256 3d838226a627df9151f52f04578c81d25ea324e36207bd7f5f6b9f466fe2446f.
+The archive wrapper has a 30-minute development reservation on one node
+(0.5 node-hour ceiling); it remains unsubmitted. E2 and paper remain held.
