@@ -54,3 +54,45 @@ Confirmed local audit SHA-256 values:
 - Before: `4547290d1d14096abe220f213883051243a2661ec56754395b3f59cbb46bc803`.
 - After: `0858a0374db32cfe7b24eb69d4eefd81e55682835be836316c4805a889bbd6ee`.
 - Both report `count: 30067` and `changed: []`.
+
+## Delivery checkpoint
+
+Fix committed/pushed from the Mac as
+`ea7ab441fb43838f4490f9bd9c2849e14d0ea84a`.
+The LS6 `git pull --ff-only` client then returned:
+
+```
+mux_client_request_session: read from master failed: Broken pipe
+pk23377@ls6.tacc.utexas.edu: Permission denied (publickey,keyboard-interactive).
+```
+
+TACC also printed its password/token instructions. Remote access stopped
+immediately; no authentication was attempted. The remote pull completion
+state is unconfirmed and must be checked after the user reconnects.
+**No retry job has been submitted, so no new job ID exists yet.** The failed
+archive remains the only executed archive attempt; its evidence is retained.
+The intended retry remains development / TRA25006 / one node / 30 minutes.
+
+## Confirmed retry submission
+
+After the user's reconnection, the read-only check independently returned
+LS6 HEAD `ea7ab441fb43838f4490f9bd9c2849e14d0ea84a`, no Git index lock,
+and the retry wrapper present. The fresh local full audit again verified
+all 30,067 protected files with no changes; its SHA-256 is
+`b50bdc2e2a1e61b6177b18949b6d76cd5645d56bc21fc8d0ebf2f1be03356042`.
+The original three collector/audit files still match their c258b108 hashes.
+
+**3539741** was accepted on development / TRA25006: one node, 30-minute
+ceiling, at most 0.5 node-hours reserved. This replaces failed archive job
+3537962; no firmware builds or runs are submitted. A remote exclusive
+submission-attempt receipt prevents a blind duplicate submission. The
+accepted receipt is saved as `submission-3539741.json` beside this note.
+
+Remote output: `tacc_work/20261028-s2-return-v2/evidence_v2`.
+Logs: `tacc_work/20261028-s2-return-v2/slurm/return-3539741.out` and `.err`.
+Provisioning receipt: `tacc_work/20261028-s2-return-v2/path-provisioning.json`.
+Provisioning verifies existing bytes before adding missing identical
+copies, then performs the unchanged full protected-file audit as a gate
+before the unchanged collector. The remote gate has not yet been observed
+to complete; submission does not imply successful verification or archiving.
+No ongoing polling. E2 and manuscript edits remain on hold.
