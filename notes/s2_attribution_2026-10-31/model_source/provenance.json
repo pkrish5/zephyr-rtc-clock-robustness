@@ -1,0 +1,18 @@
+{
+  "release_asset_source": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+  "infrastructure_submodule_commit": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+  "source_url": "https://raw.githubusercontent.com/renode/renode-infrastructure/cd4b002aac2398994c4a61a34a8b31b5700facf2/src/Emulator/Peripherals/Peripherals/Timers/STM32F4_RTC.cs",
+  "sha256": "eddbcb8a6d55e30e92ab75c206e69e2ed82681caf37e1d25536a5854e4c39f3d",
+  "bytes": 50570,
+  "retrieved_date": "2026-10-31",
+  "read_only_source_review": true,
+  "new_experiments": 0,
+  "limit_timer": {
+    "url": "https://raw.githubusercontent.com/renode/renode-infrastructure/cd4b002aac2398994c4a61a34a8b31b5700facf2/src/Emulator/Main/Peripherals/Timers/LimitTimer.cs",
+    "sha256": "f362509e9f6583080a9c5475204f5402c467e88a4d9f5ece1905ae053f3496d4",
+    "bytes": 10688
+  },
+  "source_revision_tree_api": "https://api.github.com/repos/renode/renode/git/trees/f1dd1b4af7838b45a925c17603cdfed0a583844a",
+  "infrastructure_parent_tree_verified": true,
+  "upstream_license_note": "Both files identify MIT licensing in their original headers; review copies only. Original referenced licenses/MIT.txt was not available at the attempted parent-repository URL (HTTP 404)."
+}

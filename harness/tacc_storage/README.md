@@ -31,3 +31,16 @@ working destination bound to SCRATCH and its original registered DESIGN
 snapshot read only. Only the verified final archive is copied to WORK.
 New scientific wrappers are not approved merely by existing in this folder:
 their frozen task lists, protocol amendments and submission gates still apply.
+
+## Coordinator draft for the new wrappers
+
+`run_packed.sh LABEL command ...` sources the storage guard, enforces the
+headroom gate, and writes full original protection checks before and after
+the command. Its EXIT/USR1/TERM/INT path stops the command process group
+before publishing a checked complete, failed or interrupted archive. The
+new Slurm wrapper must reserve ten minutes with `--signal=B:USR1@600` and
+run local Launcher workers in that command tree, without detached writers.
+Do not invoke historical task.sh wrappers: they source the old WORK runtime.
+The coordinator and new task adapters require a compute-node infrastructure
+check before scientific use. Only syntax and local archive fixtures have
+been checked so far. No scientific job has used these new files yet.

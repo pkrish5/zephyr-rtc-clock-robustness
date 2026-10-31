@@ -1,5 +1,45 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint (supersedes earlier queue snapshots below)
+
+Mac and LS6 both reached commit
+`87249a2d1f4facc3b896bd1dd61efbd85c2cf616` by Mac push and LS6
+`git pull --ff-only`; no scientific input or original record changed.
+
+- **3544396 COMPLETED**, 15:22. Fifteen build records checked; 3,389
+  regenerable leaves and 3,324 empty directories removed. All 30,067 protected
+  hashes matched. WORK read 933,195 before its three proof files were added.
+  The returned proof was independently checked on the Mac; see
+  `batch-3544396/local-verification.json`.
+- **3544417 COMPLETED**, 15:21. Eighty-four build records checked; 18,720
+  regenerable leaves and 18,020 empty directories removed, with 31,990 retained
+  file checks. All 30,067 protected hashes matched. WORK read **896,584** before
+  three proof files were added. The returned proof archive SHA-256 is
+  `c7b8ce9ffc1ad61569e7a9aa77a4adcefbe6750f7884adcede360d7dc2e0fe07`.
+  Local verification confirms the identical protected maps and all 84
+  historical recorded-ELF comparisons; see `batch-3544417/local-verification.json`.
+- **3544431 RUNNING**: full completed D-v2 output and separate closed runtime
+  archival/verification, then pruning. Development, one node, 02:00:00,
+  TRA25006, afterok:3544417. Source SHA-256
+  `d58a267e6c022291c80fd96bb4c2bb5389d381a93a621d604e68ad0836faeb10`.
+  Its final archive and compressed pre-deletion manifest must be on WORK before
+  any loose output is removed. Historical hashes of all 216 D build records,
+  ELFs and build logs are pinned to the previously verified D evidence.
+- **3544399 PENDING**, read-only completed-output inventory, now
+  afterok:3544431. This avoids racing the D prune.
+- **3544434 PENDING**, S2 primary collection, afterok:3544431. Development,
+  one node, 02:00:00, TRA25006. Source SHA-256
+  `95c8f79e53272093df6f639ebdb6ff1fce4fa5ed91c584f54ddd696c34104385`.
+  A fresh quota check must be **below 700,000** before the unchanged collector
+  starts. Collection, hashing and packaging use SCRATCH; only the checked
+  archive and receipts are published on WORK. No new simulations or builds.
+
+3544397 and 3544424 were cancelled while PENDING and never ran. The latter
+was a narrower superseded-D build cleanup, replaced by 3544431's verified
+full completed-D archive. No S2 replay/reference execution, E recovery,
+E2, or manuscript edit has started at this checkpoint. The below-700,000
+target is **not yet demonstrated**.
+
 ## User constraints and priority
 
 Target current WORK quota usage **below 700,000** before scientific follow-up
@@ -90,3 +130,19 @@ local temporary fixture checked publication/manifest hashes and preservation
 of its original output. This is infrastructure verification, not a firmware
 experiment. Scientific wrappers must call publication after stopping writers
 and arrange a signal path before any scientific job is submitted.
+
+## Preparation during D archival
+
+The returned 3544417 proof independently passed archive SHA verification,
+protected before/after equality (30,067 entries), and all 84 recorded ELF
+comparisons. D archive 3544431 was still RUNNING at 16:18 with no stderr
+error, no pruning receipt, and increasing Slurm disk-read counters. This
+is not yet a below-700,000 quota result.
+
+Prepared (not executed) a replay-roster generator that rejects provisional
+metadata and an outer replay adapter calling the frozen S2 simulation body.
+No primary or historical harness file changed. Source review of the exact
+release's RTC model identified preserved subsecond phase across calendar
+writes; final S2 explanation tables must account for phase and application
+state, rather than transplant isolated-case counts/boundaries. See
+`notes/s2_attribution_2026-10-31/FULL_APPLICATION_PHASE.md`.

@@ -63,3 +63,29 @@ runnable at any legal setting, dynamic skip transitions, and missing slots.
 Keep observed primary failure distinct from replay-confirmed and reference-
 attributed brittle behavior. The raw 100-setting schedule is a controlled
 sensitivity intervention, not an observed distribution of devices.
+
+## Replay infrastructure prepared while storage cleanup runs
+
+`harness/tacc_s2_evidence/prepare_replay_plan.py` refuses a provisional
+record-only audit and creates its roster only after the returned archive and
+independent raw-log/ELF audit agree. It covers every primary assertion failure
+with one replay of each affected full-application launch. The proposal is not
+submission authorization.
+
+`harness/tacc_s2_evidence/replay_worker.py` is a new outer adapter that checks
+the proposal, original plan/input hashes, original record and trace, build
+record and ELF, then calls the byte-identical S2 `run()` function. It uses
+real new provenance. Mount `/primary` read only, identical original inputs at
+`/bundle`, SCRATCH output at the original logical output path, original builds
+read only, and `/renode` plus the sealed worker read only. Private cache/home
+paths must be node-local. No replay has run and no normal submission is
+authorized by these files. A checked job/subject archive must be published to
+WORK before the new wrapper exits, including on interruption.
+
+Provisional metadata suggested 274 affected application launches, covering
+470 case failures, with 12,492.39 summed saved worker seconds. These are
+planning inputs from the earlier record-only copy, not independently verified
+S2 results. At 32 workers and a 1.5 allowance, the throughput component is
+0.163 node-hours; registration, input audits, metadata contention, reference
+qualification and packing require separate allowances. Freeze the actual
+roster and reservation only after full evidence verification.
