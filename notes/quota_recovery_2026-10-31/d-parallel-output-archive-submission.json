@@ -1,0 +1,28 @@
+{
+  "source_sha256": "5ffad5f1bfcfcf1c5dc7b576afde61ce202096cb4127c9a37938b708f9715283",
+  "tag": "quota-d-output-archive-20261031-v2",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "-A",
+    "TRA25006",
+    "-p",
+    "development",
+    "--export=ALL",
+    "--chdir=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/quota-d-output-archive-20261031-v2",
+    "--output=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/quota-d-output-archive-20261031-v2/job-%j.out",
+    "--error=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/quota-d-output-archive-20261031-v2/job-%j.err",
+    "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/quota-d-output-archive-20261031-v2/job.sbatch"
+  ],
+  "report": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/quota-d-output-archive-20261031-v2/report",
+  "allocation": "TRA25006",
+  "queue": "development",
+  "nodes": 1,
+  "walltime": "02:00:00",
+  "new_builds": 0,
+  "new_simulations": 0,
+  "exit_code": 0,
+  "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login1)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (development)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.00% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.63% allocated...OK\n3544463\n",
+  "stderr": "",
+  "job_id": "3544463"
+}

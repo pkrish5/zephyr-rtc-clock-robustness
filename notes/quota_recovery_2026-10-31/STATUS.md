@@ -2,6 +2,16 @@
 
 ## Latest checkpoint (supersedes earlier queue snapshots below)
 
+**Current queue:** 3544463 PENDING Resources (replacement D archive),
+3544434 PENDING afterok:3544463 (S2 collection), 3544399 PENDING
+afterany:3544434 (read-only inventory). At 14:15 Central the scheduler
+estimated 3544463's start at 14:17:02; this is not a guaranteed start.
+3544431 was cancelled during its initial read-only inventory, before
+any archive or deletion manifest existed, at 33:14 elapsed. See the
+replacement evidence below. Latest completed cleanup file-count reading
+remains 896,584 before that batch's three proof files; no below-700,000
+result has yet been demonstrated. E, E2 and manuscript edits remain held.
+
 Mac and LS6 both reached commit
 `87249a2d1f4facc3b896bd1dd61efbd85c2cf616` by Mac push and LS6
 `git pull --ff-only`; no scientific input or original record changed.
@@ -18,7 +28,7 @@ Mac and LS6 both reached commit
   `c7b8ce9ffc1ad61569e7a9aa77a4adcefbe6750f7884adcede360d7dc2e0fe07`.
   Local verification confirms the identical protected maps and all 84
   historical recorded-ELF comparisons; see `batch-3544417/local-verification.json`.
-- **3544431 RUNNING**: full completed D-v2 output and separate closed runtime
+- **3544431**, subsequently cancelled before pruning: full completed D-v2 output and separate closed runtime
   archival/verification, then pruning. Development, one node, 02:00:00,
   TRA25006, afterok:3544417. Source SHA-256
   `d58a267e6c022291c80fd96bb4c2bb5389d381a93a621d604e68ad0836faeb10`.
@@ -26,8 +36,8 @@ Mac and LS6 both reached commit
   any loose output is removed. Historical hashes of all 216 D build records,
   ELFs and build logs are pinned to the previously verified D evidence.
 - **3544399 PENDING**, read-only completed-output inventory, now
-  afterok:3544431. This avoids racing the D prune.
-- **3544434 PENDING**, S2 primary collection, afterok:3544431. Development,
+  afterany:3544434. This avoids racing D pruning and gives S2 priority.
+- **3544434 PENDING**, S2 primary collection, now afterok:3544463. Development,
   one node, 02:00:00, TRA25006. Source SHA-256
   `95c8f79e53272093df6f639ebdb6ff1fce4fa5ed91c584f54ddd696c34104385`.
   A fresh quota check must be **below 700,000** before the unchanged collector
@@ -146,3 +156,34 @@ release's RTC model identified preserved subsecond phase across calendar
 writes; final S2 explanation tables must account for phase and application
 state, rather than transplant isolated-case counts/boundaries. See
 `notes/s2_attribution_2026-10-31/FULL_APPLICATION_PHASE.md`.
+
+## Serial I/O replacement before deletion
+
+3544431 remained in its initial read-only inventory after more than30minutes.
+Before cancellation, its report directory contained exactly
+`protected_before.json` and `targets.json`: no original inventory, tar,
+pre-deletion manifest or prune receipt existed. The script cannot enter
+pruning until all those later checks and a verified WORK archive complete.
+Cancelled only3544431 and retained its SCRATCH evidence; no pruning phase
+was entered. Receipt `d-serial-cancelled/cancel-before-pruning.json`.
+
+Prepared a replacement with eight bounded directory/file readers and bounded
+archive prefetch. Local fixtures prove identical inventory, tar member order,
+metadata and extracted content, including links, a large streamed file and
+special-file rejection. AST comparison confirms `main`, `must_keep`,
+`verify`, `snapshot`, `sha`, and `save` are unchanged. Same D target list and
+historical216 build-record seals. Receipt `parallel-archive-local-check.json`.
+New source SHA-256:
+`5ffad5f1bfcfcf1c5dc7b576afde61ce202096cb4127c9a37938b708f9715283`.
+
+Replacement **3544463** accepted on development /TRA25006, one node,
+02:00:00; PENDING Priority at its first check. Its preflight will recheck all
+30,067 protected files before any pruning. S2 **3544434** now waits for
+afterok:3544463. Inventory **3544399** waits for afterany:3544434, giving
+S2 priority and still permitting read-only diagnosis if its headroom guard
+stops it. No E job or S2 scientific replay/reference job was submitted.
+
+The earlier commit/pull **1f395d25ec9ffe25b58f7dd9140b6fa296455797** is
+on both Mac and LS6. The source-model review copies were not added to the
+Git commit; their immutable upstream URLs and hashes are in the committed
+provenance note. The manuscript changes remain preexisting and excluded.

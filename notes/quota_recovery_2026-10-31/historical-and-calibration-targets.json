@@ -1,0 +1,15 @@
+[
+  {
+    "relative_path": "results",
+    "completion_evidence": "artifacts/tacc_phase2_20261024_v1/protected_baseline.json",
+    "completion_evidence_sha256": "b0078f949d83672aadf1a5e385caebcb61842435b92cf41e1e30507e41102aef",
+    "archive_only": true,
+    "scope_note": "Historical protected results snapshot; no loose original is deleted and forecasts remain forecasts."
+  },
+  {
+    "relative_path": "tacc_work/20261023-v10/calibration-bundle/study/results/tacc_phase1_20261022_v1",
+    "completion_evidence": "tacc_work/20261023-v10/calibration-bundle/study/results/tacc_phase1_20261022_v1/calibration_report.json",
+    "completion_evidence_sha256": "2ef964ac4a41fe13733f7aa4e33019536aaf29024f9cbfac0fa4708449c551ea",
+    "scope_note": "Completed Phase1 calibration816/816, no mismatches, approved Phase1; archive and verify before pruning unprotected output."
+  }
+]

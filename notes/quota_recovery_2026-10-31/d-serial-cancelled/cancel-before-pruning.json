@@ -1,0 +1,12 @@
+{
+  "job_id": "3544431",
+  "reason": "Serial Lustre initial inventory still running after >30 minutes; prevent repeat wall-limit failure",
+  "checkpoint_files": [
+    "protected_before.json",
+    "targets.json"
+  ],
+  "no_archive_or_predelete_manifest_created": true,
+  "original_data_pruning_not_entered": true,
+  "replacement_policy": "Same selection, archive member order/metadata/bytes, original-content verification, and deletion rules; eight bounded readers only",
+  "new_experiments": 0
+}

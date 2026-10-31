@@ -1,0 +1,9 @@
+{
+  "serial_parallel_inventory_equal": true,
+  "serial_parallel_archive_members_metadata_and_content_equal": true,
+  "external_links_not_followed": true,
+  "large_file_stream_checked": true,
+  "special_file_guard_passed": true,
+  "main_and_selection_verification_ast_unchanged": true,
+  "new_experiments": 0
+}

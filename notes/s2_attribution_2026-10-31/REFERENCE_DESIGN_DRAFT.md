@@ -89,3 +89,20 @@ S2 results. At 32 workers and a 1.5 allowance, the throughput component is
 0.163 node-hours; registration, input audits, metadata contention, reference
 qualification and packing require separate allowances. Freeze the actual
 roster and reservation only after full evidence verification.
+
+A draft replay submission packet now includes `setup_replays.py`,
+`replay_task.sh` and `replays.sbatch`: normal / TRA25006, one node, one hour,
+32 local Launcher workers, no arrays and no requeue. At the existing LS6
+node-hour accounting convention the reservation ceiling is 1 SU. This is
+**not submitted or authorized**. It needs the verified replay roster, a frozen
+code-hash manifest, the explicit user normal-queue approval receipt, and the
+compute-node storage-coordinator infrastructure check. The saved-runtime
+throughput estimate alone excludes filesystem/audit/packing costs.
+
+The proposed task adapter retains all primary plan/task/binary/platform and
+monitor settings. Original inputs and original build records are read only;
+new raw records, resource/process logs and full protection checks go to
+SCRATCH and then a verified WORK archive. Each task uses a private node-local
+container home/cache/temp. The ten-minute Slurm signal reserve is for stopping
+writers and preserving partial evidence. Unfinished or mismatching replays
+remain separate and cannot replace original scores.
