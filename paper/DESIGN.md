@@ -1349,3 +1349,35 @@ path. Regenerated headers within build/ are not the original test sources;
 the verified archive retains their bytes or link metadata. The closed D
 private runtime/cache tree is separately archived and verified before pruning.
 E's partial verdict directories and the checkout recovery backup are excluded.
+
+## 2026-10-31 S2 evidence-return infrastructure rerun, before resubmission
+
+WORK read 686,770 files (`lfs quota`) after cleanup jobs 3544396, 3544417 and
+3544463 completed, below the 700,000 gate. User decision of 2026-10-31: the
+700,000 target gates E only; S2 evidence and replays may proceed below 920,000
+with SCRATCH/node-local outputs and archive-only WORK publication. Both gates
+currently pass, so no gate code changes.
+
+S2 evidence-return job 3544434 (adapter `s2_archive_scratch.py`, SHA-256
+`95c8f79e53272093df6f639ebdb6ff1fce4fa5ed91c584f54ddd696c34104385`) failed
+with exit 127 after 1:23. Its headroom gate passed (686,766) and its staging
+audit verified all 30,067 protected files unchanged. The collector never
+started: the inner `bash -l -c` set `set -u` before `module load
+tacc-apptainer/1.4.1`, whose bash-completion references unbound
+`BASH_COMPLETION_DEBUG`. The failure was reproduced on a login node and the
+fix there ran with exit 0. This is an infrastructure failure. No collector
+output, firmware run or original record was produced or changed. Its SCRATCH
+report and two WORK staging receipts under
+`tacc_work/20261031-s2-return-3544434/` are retained.
+
+Rerun once under a new tag with
+`notes/quota_recovery_2026-10-31/s2_archive_scratch_v2.py` (SHA-256
+`891054aebdfaf8d00e29d10e90cab456fb1de9b51ee30f3288b519b0f409b2a0`). The only
+functional change is `set +u` / `set -u` around the two module loads, matching
+`harness/tacc_storage/runtime.sh`. The collector, selection code, sealed
+plan/SIF hashes, historical DESIGN snapshot (`ea7ab441`), command list,
+verification and WORK publication are unchanged. Use the development queue,
+one node, 02:00:00, TRA25006, and no dependency. The S2 production
+simulations (job 3535524) are not rerun. No new builds or simulations are
+run. The earlier conditional replay plan stays unfrozen until this archive is
+returned and its coverage, checksums, ELF and logs are independently verified.
