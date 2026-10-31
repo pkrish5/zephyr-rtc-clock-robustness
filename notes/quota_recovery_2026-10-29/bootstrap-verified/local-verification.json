@@ -1,0 +1,8 @@
+{
+  "proof_sha256": "da977541198be50e35609b3dcc4a38cae728cbc0d41f9b15fc221edfc06fb754",
+  "archive_member_coverage_verified": 13070,
+  "extracted_hashes_match": true,
+  "protected_present_hashes_match_before_after": 29582,
+  "protected_absent_before_after": 485,
+  "raw_AB_archive_retained": true
+}

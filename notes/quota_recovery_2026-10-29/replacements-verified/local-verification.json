@@ -1,0 +1,9 @@
+{
+  "protected_count": 30067,
+  "changed": [],
+  "restored_originals": 485,
+  "batch_units": 32,
+  "proof_sha256": "baf1b0b1d780a7db0a65f52e4b13851d13bf98673f62b4eecacbaeb1f8790264",
+  "intermediates_removed": 7280,
+  "empty_dirs_removed": 7028
+}

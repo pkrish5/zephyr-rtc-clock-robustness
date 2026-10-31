@@ -1,0 +1,17 @@
+{
+  "client_timestamp_utc": "2026-10-29T21:11:42.262859+00:00",
+  "tag": "quota-build-batch-20261029-v2b",
+  "source_sha256": "f7719eb14d30fa5a389154e724ee4ebc779434d197975e918e3f70bda7d4d837",
+  "queue": "development",
+  "allocation": "TRA25006",
+  "nodes": 1,
+  "walltime": "00:30:00",
+  "submission_state": "unknown",
+  "job_id": null,
+  "client_error": "SSH subprocess timed out after 120 seconds",
+  "remote_submission_receipt": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/quota-build-batch-20261029-v2b/submission.json",
+  "remote_submission_attempt": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/quota-build-batch-20261029-v2b/submission-attempt.json",
+  "duplicate_submission_forbidden_until_reconciled": true,
+  "new_builds": 0,
+  "new_simulations": 0
+}

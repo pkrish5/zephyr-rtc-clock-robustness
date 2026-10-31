@@ -1,0 +1,13 @@
+{
+  "job_id": "3541156",
+  "archive_sha256": "1f204261b5cea0e979dfa55bafde695e38e07dfef0bc9bb6e6350daf6e2efaba",
+  "protected_count": 30067,
+  "changed": [],
+  "completed_units": 128,
+  "intermediates_removed": 29158,
+  "empty_dirs_removed": 28376,
+  "remaining_build_records": 446,
+  "ambiguity_resolved": "submission accepted and completed; no duplicate required",
+  "work_quota_entries": 939908,
+  "net_quota_entry_reduction": 84093
+}

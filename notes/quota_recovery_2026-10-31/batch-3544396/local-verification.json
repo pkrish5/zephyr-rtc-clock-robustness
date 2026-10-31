@@ -1,0 +1,11 @@
+{
+  "job_id": "3544396",
+  "proof_sha256": "20684642029a6095f9b1deb781b456bf1062ce70f02cb6e38743eef423eb2d1e",
+  "protected_count": 30067,
+  "changed": [],
+  "completed_units": 15,
+  "remaining_build_records": 431,
+  "intermediates_removed": 3389,
+  "empty_dirs_removed": 3324,
+  "recorded_elf_checks_passed": true
+}

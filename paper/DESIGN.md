@@ -1290,3 +1290,62 @@ verdicts. New control/evaluation raw directories must not replace existing
 records. This changes the Slurm allocation limit, not test observation bounds.
 E2 and paper edits stay held. S2 production remains conditional on all fifteen
 registered continuation checks, independently of E scheduling.
+
+
+## 2026-10-31 Storage recovery and S2 priority, before new follow-up execution
+
+The user requires WORK quota usage below 700,000 files before resuming E and
+prioritizes S2 for Progress Report 2 around November 7. Restore headroom, then
+collect and verify S2 primary evidence and finish S2 replay/reference
+attribution before auditing/resuming E. E2 and manuscript changes remain held.
+
+Only closed, unprotected outputs may be pruned after an archive on WORK has
+exact member coverage and matching extracted-content hashes. Preserve the
+archive hash and verification manifest before deleting any loose original.
+Original factorial records in the immutable protection ledger stay loose;
+archiving does not waive protection. Preserve all frozen sources, forecasts,
+ELFs, build logs, recorded hashes and the checkout-recovery backup. Build
+cleanup removes only regenerable intermediates with per-unit checkpoints and
+retained-file/input/protection checks. Missing scientific verdicts stay missing.
+
+New jobs use the storage contract in harness/tacc_storage/: build trees and
+loose run output on SCRATCH; per-task container homes/caches/temporary files on
+node-local /tmp; checksummed final archives and manifests on WORK. The frozen
+legacy WORK-writing wrappers are retained but must not be invoked for future
+follow-ups. A storage bind may preserve a locked worker's logical output
+paths, while its physical new output remains separate from original records.
+Record that mapping plus actual node, job ID, container hash, Apptainer version
+and pinned modules. Pack outputs before publishing to WORK, including a
+documented interruption path; final evidence must not remain only on SCRATCH.
+No original harness logic, test source, ELF, forecast or record changes.
+
+S2 evidence collection continues to use the original collector and selection
+logic. Validate primary evidence against the registered DESIGN snapshot that
+its plan seals, not a subsequently appended amendment. The snapshot is a
+read-only protocol view; the current amendment log is not reset or overwritten.
+Replays use identical full-application inputs and the original simulation
+function in fresh processes, in a new namespace. A single application replay
+may cover several failing cases; compare each case separately and preserve
+capability skips. Reference artifacts and task lists must be frozen before
+reference builds/runs. Passing a reference alone does not establish brittle
+behavior when it omits an original rate contract or when an earlier case can
+cause later shared-state failure. Keep those explanations unresolved unless
+the source, trace and reference evidence establish the attribution.
+
+Normal replay/reference submissions still require the job, nodes, wall time
+and estimated SUs to be reported and approved under the standing rules. No
+new S2 follow-up run or E recovery run is authorized by a storage fix alone.
+The separate E amendment and exact incomplete/not-started index list will be
+recorded only after S2, before any E retry. Completed records and finalized
+harness-error missing verdicts will not be rerun.
+
+Storage implementation clarification, 2026-10-31, before archival pruning:
+The completed D-v2 output can be archived in full, including generated build
+headers/link copies, before pruning its regenerable build products. Pin all
+216 build-record hashes to the previously verified D evidence archive and
+verify historical ELF/log hashes before pruning. Keep configurations, DTS,
+metadata, app inputs, ELFs and logs loose. Never prune a protected/sealed input
+path. Regenerated headers within build/ are not the original test sources;
+the verified archive retains their bytes or link metadata. The closed D
+private runtime/cache tree is separately archived and verified before pruning.
+E's partial verdict directories and the checkout recovery backup are excluded.
