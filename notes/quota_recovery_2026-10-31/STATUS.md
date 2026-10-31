@@ -1,6 +1,29 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
-## Latest checkpoint (supersedes earlier queue snapshots below)
+## Latest checkpoint — S2 return rerun submitted (supersedes all below)
+
+WORK read **686,770** files after 3544463 completed (0:0, 10:00), so the
+below-700,000 target is **met**. Read-only inventory 3544399 COMPLETED 0:0.
+
+S2 return **3544434 FAILED** (exit 127, 1:23) before the collector started:
+inner `bash -l -c` had `set -u` active during `module load tacc-apptainer`,
+whose bash-completion references unbound `BASH_COMPLETION_DEBUG`. Headroom
+gate (686,766) and staging audit (30,067 unchanged) had passed. Reproduced on
+a login node; the `set +u`/`set -u` fix exits 0. Registered in DESIGN.md
+(commit `dd0bbd0a`, pulled on LS6).
+
+Fixed adapter `s2_archive_scratch_v2.py`, SHA-256 `891054ae…b2a0`; only the
+module-load wrap differs. Local protected audit before submission: 30,067
+unchanged (`mac-protected-before-s2-return-v4.json`, audit SHA `e85964d5…`).
+**3544535 submitted**, development/TRA25006, one node, 02:00:00, no
+dependency, tag `s2-priority-return-20261031-v4`; receipt
+`s2-return-submission-v4.json`. PENDING (Resources) at first check.
+
+Next: on completion, transfer and independently verify the returned archive
+(coverage, checksums, ELF and logs), then freeze and submit the pre-approved
+replay job. E stays held until S2 is done; E2 and manuscript edits remain held.
+
+## Earlier checkpoint (superseded)
 
 **Current queue:** 3544463 PENDING Resources (replacement D archive),
 3544434 PENDING afterok:3544463 (S2 collection), 3544399 PENDING
