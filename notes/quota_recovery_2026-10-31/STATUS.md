@@ -1,5 +1,26 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — S2 references verified; E audit next, 2026-11-02
+
+Reference job 3547096 COMPLETED 0:0 in 39:00. Independent Mac verification of
+archive 7b4ce8ae… confirmed 3,137 entries, raw/ELF/config/log hashes, all 351
+reference records and both 30,067-file unchanged protection checks. Qualified
+77 launches; evaluated all 274 failure-setting launches, covering every one
+of 470 original failures, with no missing outcome or harness error.
+
+277 waiting-failure slots passed references; 88 clean-state single-shot passes
+leave the original cascades classified separately. All 105 seconds-rate slots
+failed the retained rate reference while legal-clock progress passed; these
+are flagged firmware/simulator or accuracy-contract investigation, not test
+brittleness. F767 remains an F4 configuration replica, and phase is supported
+but not directly measured. Full results and updated per-failure attribution:
+notes/s2_reference_2026-11-02_v1/REFERENCE_RESULTS.md and verified-3547096-v1/.
+
+Latest reference publication headroom was 687,073 WORK files, below 700,000.
+Next: unchanged E partial-index audit on development with packed new output,
+then freeze a dated infrastructure-interruption amendment and exact retry
+list before any evaluation resumption. E2 and paper edits remain held.
+
 ## Latest checkpoint — reference job 3547096 accepted, connection dropped
 
 2026-11-02: LS6 reconnected, queue empty, WORK 686,917 files. Clean git pull

@@ -1,0 +1,96 @@
+{
+  "archive_entries_verified": 3137,
+  "archive_sha256": "7b4ce8ae94d65ec889a5026e3846911d3fba7028329798de44247f4b67e92fb6",
+  "board_roles": {
+    "f4": "F4 configuration",
+    "f746": "F746 configuration",
+    "f767": "F4 configuration replica (F767)",
+    "h753": "H753 configuration, narrower legal range"
+  },
+  "build_proofs": [
+    {
+      "build_record_sha256": "127b3aa39a38e0c4d32ef59cf966cdedf52d547102ecb17df75c8e7a37c77448",
+      "status": "built",
+      "unit_id": "f4-rtc"
+    },
+    {
+      "build_record_sha256": "5ece0bddd9960cb06116e826eb6e6b29827e014f0e3e634894b33818ed751b14",
+      "status": "built",
+      "unit_id": "f4-counter"
+    },
+    {
+      "build_record_sha256": "f542a3a04be0718258b680f990097a3d818ba5a0a083bc5b7aab1343766bc621",
+      "status": "built",
+      "unit_id": "f4-seconds"
+    },
+    {
+      "build_record_sha256": "182d58cc8c9d89d8319bbcdb8bb868f1195c73fae7b107fce3d470e5a2f232b1",
+      "status": "built",
+      "unit_id": "f767-rtc"
+    },
+    {
+      "build_record_sha256": "b44f7c026d75fae219432a252a59d3847fc76975a6bfa6f9ec227c2a94b33865",
+      "status": "built",
+      "unit_id": "f767-counter"
+    },
+    {
+      "build_record_sha256": "7b360049a3b43e35365c38abc378da942075a4b93b69e2adc4178fd4dc036a85",
+      "status": "built",
+      "unit_id": "f767-seconds"
+    },
+    {
+      "build_record_sha256": "e8672c706d61b267c13ccf9d58d2a038fe48d9cd036843398479fd4514c6da5a",
+      "status": "built",
+      "unit_id": "f746-rtc"
+    },
+    {
+      "build_record_sha256": "11e32a92edf598c5ec01eb8212b042c956affb72d117db990ec6a2783e205255",
+      "status": "built",
+      "unit_id": "f746-seconds"
+    },
+    {
+      "build_record_sha256": "2b456724bdef6203044494db756bf862eb6565f6706f8b692865663149008ece",
+      "status": "built",
+      "unit_id": "h753-rtc"
+    },
+    {
+      "build_record_sha256": "7b83be2188627d9b0a5b85447d88eb07fd93484e4ec2c0e71d61db609fa397c8",
+      "status": "built",
+      "unit_id": "h753-counter"
+    },
+    {
+      "build_record_sha256": "ec1cd3f4f297ee05dd1ae8cfcbb81032ed6031533020e597e14380ba999cabe1",
+      "status": "built",
+      "unit_id": "h753-seconds"
+    }
+  ],
+  "by_board": {
+    "f4": {
+      "clean_state_reference_pass_original_cascade_not_independent_defect": 44,
+      "firmware_or_simulator_investigation_not_test_brittleness": 35,
+      "reference_supported_waiting_explanation_simulation_only": 107
+    },
+    "f746": {
+      "firmware_or_simulator_investigation_not_test_brittleness": 35,
+      "reference_supported_waiting_explanation_simulation_only": 63
+    },
+    "f767": {
+      "clean_state_reference_pass_original_cascade_not_independent_defect": 44,
+      "firmware_or_simulator_investigation_not_test_brittleness": 35,
+      "reference_supported_waiting_explanation_simulation_only": 107
+    },
+    "h753": {}
+  },
+  "flags": {
+    "clean_state_reference_pass_original_cascade_not_independent_defect": 88,
+    "firmware_or_simulator_investigation_not_test_brittleness": 105,
+    "reference_supported_waiting_explanation_simulation_only": 277
+  },
+  "job_id": "3547096",
+  "linked_primary_failure_slots": 470,
+  "new_experiments_run_by_analysis": 0,
+  "original_records_replaced": 0,
+  "output_state": "complete",
+  "protected_files_unchanged": 30067,
+  "reference_records": 351
+}

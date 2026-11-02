@@ -1563,3 +1563,33 @@ callback 22/26, counting 12/17 over the same 100 seeded F4 settings. The model
 phase explanation is supported but not directly measured. Original counts and
 forecasts are never replaced. E audit and its quota-interruption rerun amendment
 follow reference validation; E2 and manuscript edits remain held.
+
+## 2026-11-02 S2 references complete, before the E partial-record audit
+
+Reference job 3547096 completed 0:0 in 39 minutes. Its checked archive
+7b4ce8ae94d65ec889a5026e3846911d3fba7028329798de44247f4b67e92fb6
+contains 3,137 verified entries; kept ELFs, configurations, build logs, raw
+records/traces/logs and both 30,067-file protection checks pass independent
+Mac verification. Eleven builds, 77 qualified launches, and all 274 evaluation
+launches are complete without missing verdicts or harness errors. All 470
+original failures have explicit per-case reference links.
+
+All 277 waiting-failure slots passed references, as did the 88 clean-state
+single-shot slots whose originals remain cleanup cascades, not independent
+waiting defects. All 105 retained seconds-rate checks failed while separate
+legal-clock progress passed. Those receive firmware/simulator investigation
+flags, not test brittleness; the intended rate-accuracy contract remains
+unresolved. These flags do not themselves prove an implementation bug. F767
+remains an F4 configuration replica, and full-application/isolated results
+remain side by side with phase supported but not directly measured. Full
+results are in notes/s2_reference_2026-11-02_v1/REFERENCE_RESULTS.md and the
+verified per-failure links. No primary record or prior reported count changed.
+
+The next operation is the unchanged read-only partial E index audit, on a
+development compute node, with new packed SCRATCH output and before/after
+protection checks. It is not a rerun or new simulation. The original auditor
+SHA-256 is 43364d36d82af2725a45fc33db5db45fc47a6d164c84bf9192670400eb47e952.
+Only after its exact classification is verified will an additional dated
+amendment freeze the incomplete/not-started retry indices. Complete records,
+including finalized harness errors and missing verdicts, remain unchanged.
+E2 and paper edits stay held.

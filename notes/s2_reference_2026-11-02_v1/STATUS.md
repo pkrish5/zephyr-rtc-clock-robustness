@@ -1,5 +1,22 @@
 # S2 reference validation, 2026-11-02
 
+## Latest checkpoint: complete and independently verified
+
+3547096 COMPLETED 0:0, 39:00. Archive
+`7b4ce8ae94d65ec889a5026e3846911d3fba7028329798de44247f4b67e92fb6`
+passed independent Mac verification: 3,137 entries, kept build products/raw
+hashes, 30,067 unchanged protected files. All 77 qualification and 274
+evaluation launches completed with no missing verdict or harness error.
+All 470 primary failing case slots are linked: 277 waiting-reference passes,
+88 clean-state cascade-reference passes, 105 retained rate-reference failures
+with progress passes. No primary record was replaced. See REFERENCE_RESULTS.md
+and verified-3547096-v1/primary_failure_reference_links.csv.
+
+This reference job is over; its checkout no longer needs to remain pinned.
+The read-only watcher stays paused. Next is the authorized E partial-record
+audit on development, then a separate dated exact-index retry amendment.
+E2 and manuscript edits remain held. Earlier connection notes below are history.
+
 ## Submitted job and current blocker
 
 **3547096 accepted** on development, TRA25006, one node, 02:00:00, at most

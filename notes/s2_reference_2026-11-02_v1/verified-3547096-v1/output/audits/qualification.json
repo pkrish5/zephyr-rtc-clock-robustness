@@ -1,0 +1,1822 @@
+{
+  "board_roles": {
+    "f4": "F4 configuration",
+    "f746": "F746 configuration",
+    "f767": "F4 configuration replica (F767)",
+    "h753": "H753 configuration, narrower legal range"
+  },
+  "errors": [],
+  "launches": 77,
+  "original_records_modified": false,
+  "phase": "qualification",
+  "rows": [
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 0,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "74edc5a31051540b296a414cc57840d0ddf294f6a817fb905c8fb13005f1bf51",
+      "run_id": "f4-rtc-nominal-000",
+      "status": "complete",
+      "unit_id": "f4-rtc"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 1,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "a862ff43d28e0384e3c55d384e53b6411a4ecfff0ec2c4faa45769727bc51414",
+      "run_id": "f4-rtc-nominal-001",
+      "status": "complete",
+      "unit_id": "f4-rtc"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 2,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "c86a4d0e938ee09cca36ee066646c25a8058d33cc8b9ac0c8e5787c05886f88c",
+      "run_id": "f4-rtc-nominal-002",
+      "status": "complete",
+      "unit_id": "f4-rtc"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 3,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "109b93c6aa8e7722699335fa395fffa60d66580f7a6b18852a50923295b748c3",
+      "run_id": "f4-rtc-nominal-003",
+      "status": "complete",
+      "unit_id": "f4-rtc"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 4,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "e8aba8e9090d21bfd43acb7e2cf6ba2a14758c880fab69448e4aa45ba95ce46c",
+      "run_id": "f4-rtc-nominal-004",
+      "status": "complete",
+      "unit_id": "f4-rtc"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 17000,
+      "index": 5,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "8056f15cc10c36654d7ca18582728d4f026d67125998bee4f32b47889bd5476e",
+      "run_id": "f4-rtc-min-005",
+      "status": "complete",
+      "unit_id": "f4-rtc"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 47000,
+      "index": 6,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "9f89e27a0641d5e12438b95669c5737e5b473820830ea857d096f75126f01336",
+      "run_id": "f4-rtc-max-006",
+      "status": "complete",
+      "unit_id": "f4-rtc"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 7,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "132dddd59ba4b31ad39e014964f69db7cb4d28fbfb0e93066e9d47ef1215d2ae",
+      "run_id": "f4-counter-nominal-007",
+      "status": "complete",
+      "unit_id": "f4-counter"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 8,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "2402a4df2a5edb00a3a514fc58d6f2d65ee47ae11dcec896a8bbdf69e87797a0",
+      "run_id": "f4-counter-nominal-008",
+      "status": "complete",
+      "unit_id": "f4-counter"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 9,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "b4e8bff53bfeb6916696afa0c2f1096d951bf68d5b88af823d50b3ddd169c978",
+      "run_id": "f4-counter-nominal-009",
+      "status": "complete",
+      "unit_id": "f4-counter"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 10,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "a8247b72cb5b21eca2444d8913da2641e934af18333bc52176a9c92ca91d5272",
+      "run_id": "f4-counter-nominal-010",
+      "status": "complete",
+      "unit_id": "f4-counter"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 11,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "5a5efce1bf6b1e1fe604069810b302c24c2a2ff60f23bbb84ed47025c589e5d4",
+      "run_id": "f4-counter-nominal-011",
+      "status": "complete",
+      "unit_id": "f4-counter"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 17000,
+      "index": 12,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "01d1c924fbefc1ae0d071321f9fe2f2526b8fd31cc054555c05dd6a048593db4",
+      "run_id": "f4-counter-min-012",
+      "status": "complete",
+      "unit_id": "f4-counter"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 47000,
+      "index": 13,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "ce51a65e210ba8b7d2e980a3f61ddbe0fcbfa5b75711682d3daf24d79b7f1c07",
+      "run_id": "f4-counter-max-013",
+      "status": "complete",
+      "unit_id": "f4-counter"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 14,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "bb72f7468911439ab971482a6a9d36d8a692d0c08f4ed2625f6b2ff13c79a587",
+      "run_id": "f4-seconds-nominal-014",
+      "status": "complete",
+      "unit_id": "f4-seconds"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 15,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "fd6e8383309be8a2c4f9ec86e171aa55dbb7de8d312d17da2cbd5db35c1d8d95",
+      "run_id": "f4-seconds-nominal-015",
+      "status": "complete",
+      "unit_id": "f4-seconds"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 16,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "50d825fa00f77842dcaf44bfea8a434b511dc41251729f22ea5c46dcc85e641e",
+      "run_id": "f4-seconds-nominal-016",
+      "status": "complete",
+      "unit_id": "f4-seconds"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 17,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "3f32b7c57c028a8c58750e77f23a09abb9076f5679d59f7ca90ec5bc0246d4b7",
+      "run_id": "f4-seconds-nominal-017",
+      "status": "complete",
+      "unit_id": "f4-seconds"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 18,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "2949b333ee1b939bd2cf2857ec9aed6155b707e91b90bfc906109ad613e464de",
+      "run_id": "f4-seconds-nominal-018",
+      "status": "complete",
+      "unit_id": "f4-seconds"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "fail"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 17000,
+      "index": 19,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "7475ffecd3e45da764e6d5417fbf9f01df4bceafd84e940a6b316bd331447cc9",
+      "run_id": "f4-seconds-min-019",
+      "status": "complete",
+      "unit_id": "f4-seconds"
+    },
+    {
+      "board_role": "F4 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 47000,
+      "index": 20,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "7bef935a0c74c23219ebfcc3bbcdf6e13bc8fff8f54146d554492c5179011e3a",
+      "run_id": "f4-seconds-max-020",
+      "status": "complete",
+      "unit_id": "f4-seconds"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 21,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "3695e7394777966d6055363f8019c181264f35bc39f18a0a8b8036a34baba0fa",
+      "run_id": "f767-rtc-nominal-021",
+      "status": "complete",
+      "unit_id": "f767-rtc"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 22,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "c53b6b6b550c91dfc3c467935a140184f55e8539ef4eca83a43993bfc7f34524",
+      "run_id": "f767-rtc-nominal-022",
+      "status": "complete",
+      "unit_id": "f767-rtc"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 23,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "3a883e3ca077b586b4cc08d497eb5c688f5ef64e7d00d11fc23754d92c9ee0c8",
+      "run_id": "f767-rtc-nominal-023",
+      "status": "complete",
+      "unit_id": "f767-rtc"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 24,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "dfd72c477aa4c251b1628fdb17f3d1c24a05e61bab5eb819a156e4cd7964ab0d",
+      "run_id": "f767-rtc-nominal-024",
+      "status": "complete",
+      "unit_id": "f767-rtc"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 25,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "8a67bfcf75a53cb7b60043a5b930b89ccbdbfee024211679339e83d6cfe93d77",
+      "run_id": "f767-rtc-nominal-025",
+      "status": "complete",
+      "unit_id": "f767-rtc"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 17000,
+      "index": 26,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "10545153cc8f57f5e933b9047d54ab16f51472dfd93a1a9c521505036f81b0cd",
+      "run_id": "f767-rtc-min-026",
+      "status": "complete",
+      "unit_id": "f767-rtc"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 47000,
+      "index": 27,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "c641126d31df949618d696f6d33d8dac0b952ffb56468a544e9d29ffb7a81062",
+      "run_id": "f767-rtc-max-027",
+      "status": "complete",
+      "unit_id": "f767-rtc"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 28,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "a06db4024340dee624c9dc38753ae341178f01f82c65d1d7676b1ad10881214f",
+      "run_id": "f767-counter-nominal-028",
+      "status": "complete",
+      "unit_id": "f767-counter"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 29,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "fb35858cec320a3d73497a0158959a1705c4075547fc35f618d1ad0816d6ffba",
+      "run_id": "f767-counter-nominal-029",
+      "status": "complete",
+      "unit_id": "f767-counter"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 30,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "807f5d50bfa71bea6c9781ca66ec268e2eda1f6a1489aaa8de4bc9a4e754a69e",
+      "run_id": "f767-counter-nominal-030",
+      "status": "complete",
+      "unit_id": "f767-counter"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 31,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "78dddebe66980808386f1f0a00eae01ce028e829035f8dbb20121da563765c6c",
+      "run_id": "f767-counter-nominal-031",
+      "status": "complete",
+      "unit_id": "f767-counter"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 32,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "34e87b8a5213bb94598388857bd7a2cfc570c2f788d9db604d0a8dda23d9c9b9",
+      "run_id": "f767-counter-nominal-032",
+      "status": "complete",
+      "unit_id": "f767-counter"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 17000,
+      "index": 33,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "6256defbc515a3f9a988c60755c6275273dee0c1e56de4542e29e411f7ebd6d4",
+      "run_id": "f767-counter-min-033",
+      "status": "complete",
+      "unit_id": "f767-counter"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 47000,
+      "index": 34,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "c91926794e37cdfba12a4ee9b5c4b332695012b7dd5aba3d49ec53ea009527ae",
+      "run_id": "f767-counter-max-034",
+      "status": "complete",
+      "unit_id": "f767-counter"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 35,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "6b663913b1658affaecfda0323b41690be9314efbebd6571a66bb7a66c6c110f",
+      "run_id": "f767-seconds-nominal-035",
+      "status": "complete",
+      "unit_id": "f767-seconds"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 36,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "22e3d028ff29108de092a74fdbd7f3679d5f9489734b56dd9921744d4a2388d4",
+      "run_id": "f767-seconds-nominal-036",
+      "status": "complete",
+      "unit_id": "f767-seconds"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 37,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "cdf4968e242f7899d915232528eeb184d1eec6a63881275e5d61dc41618d834c",
+      "run_id": "f767-seconds-nominal-037",
+      "status": "complete",
+      "unit_id": "f767-seconds"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 38,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "99cf676883ac9d95e4920b07a98798acbf24894fa8ff6f231e7e092257d903ac",
+      "run_id": "f767-seconds-nominal-038",
+      "status": "complete",
+      "unit_id": "f767-seconds"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 39,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "52f7964b405038c63c405d78a87d813e603e02b95e27a71b2ee1a50ea50cf95c",
+      "run_id": "f767-seconds-nominal-039",
+      "status": "complete",
+      "unit_id": "f767-seconds"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "fail"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 17000,
+      "index": 40,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "86a36ffebda583283daa961b069c8b282b6ba6e325dfcf8834bbb3c0fc8790ce",
+      "run_id": "f767-seconds-min-040",
+      "status": "complete",
+      "unit_id": "f767-seconds"
+    },
+    {
+      "board_role": "F4 configuration replica (F767)",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 47000,
+      "index": 41,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "f1700fb9f800eb12c281b7d27e0d4bbbb0ece878f4bcd18a9feb50ba6414e248",
+      "run_id": "f767-seconds-max-041",
+      "status": "complete",
+      "unit_id": "f767-seconds"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 42,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "3c1667a2498fa83c78ac0ae43f5d4dd8c466341f421fd780713ecd3a81fdb298",
+      "run_id": "f746-rtc-nominal-042",
+      "status": "complete",
+      "unit_id": "f746-rtc"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 43,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "ffd93ffc421b0534cb75eccb0bd2f630666602b486d5a6f3a787614ea4105d18",
+      "run_id": "f746-rtc-nominal-043",
+      "status": "complete",
+      "unit_id": "f746-rtc"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 44,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "73c5a3dfa33d778dcfc9af02de1afd0a49445125c0eafdff2c4b7b530aa97a2b",
+      "run_id": "f746-rtc-nominal-044",
+      "status": "complete",
+      "unit_id": "f746-rtc"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 45,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "fb6e7ccc7f7bc7d92b86fbe5dc0781d14d6c6cedbfb4383606d633343ccbc68b",
+      "run_id": "f746-rtc-nominal-045",
+      "status": "complete",
+      "unit_id": "f746-rtc"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 46,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "2d508381188b83596b72efbca82ac32ddb2025daa04fe7ed3d705284416fafe6",
+      "run_id": "f746-rtc-nominal-046",
+      "status": "complete",
+      "unit_id": "f746-rtc"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 17000,
+      "index": 47,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "23c168b88cc063b0af8488e9613ed5914ecbbb5c6aae6f479de843f46957d7aa",
+      "run_id": "f746-rtc-min-047",
+      "status": "complete",
+      "unit_id": "f746-rtc"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 47000,
+      "index": 48,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "cb9e8dfc9fd3698c5904cdb8a8fad9496933c602f612d33333f4fb726341cb18",
+      "run_id": "f746-rtc-max-048",
+      "status": "complete",
+      "unit_id": "f746-rtc"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 49,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "fe0f547e171ef8803b6c1f63523c6a90b9fb5c02ecb52b99a4ea8e15a323874d",
+      "run_id": "f746-seconds-nominal-049",
+      "status": "complete",
+      "unit_id": "f746-seconds"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 50,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "74010ca9dccfdddbc998510cecd919d30c32cd848ef4ba4ea862677c7375ded7",
+      "run_id": "f746-seconds-nominal-050",
+      "status": "complete",
+      "unit_id": "f746-seconds"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 51,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "b547cc617f108e793f910b296c91c32ba51b265608f1800b5c4ae2e74879b404",
+      "run_id": "f746-seconds-nominal-051",
+      "status": "complete",
+      "unit_id": "f746-seconds"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 52,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "908b200b3598215aaad7ea47e348b036afffc8a8c93c4b6e6dc0b95849aa6546",
+      "run_id": "f746-seconds-nominal-052",
+      "status": "complete",
+      "unit_id": "f746-seconds"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 53,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "1f7bfe4cb44a33ff8a501d7e52586cdcbe51e88dde0debdf19f6d160d9086bd8",
+      "run_id": "f746-seconds-nominal-053",
+      "status": "complete",
+      "unit_id": "f746-seconds"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "fail"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 17000,
+      "index": 54,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "270159c064299000735cd5359a9a4ee2ca6f8f1478e46251ba43fb791e6902e8",
+      "run_id": "f746-seconds-min-054",
+      "status": "complete",
+      "unit_id": "f746-seconds"
+    },
+    {
+      "board_role": "F746 configuration",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 47000,
+      "index": 55,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "8c266339b3ded2ed04608529ead5ad1eccdf5801110eea0bcb2b32e3a179367b",
+      "run_id": "f746-seconds-max-055",
+      "status": "complete",
+      "unit_id": "f746-seconds"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 56,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "c1eff1783feb655a9b45904e68b43c9f67ba4c4983c025baeec706362d69ebb4",
+      "run_id": "h753-rtc-nominal-056",
+      "status": "complete",
+      "unit_id": "h753-rtc"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 57,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "45811807f9bcab1c4c9871ecd8bced4acee39599877d35f778defb74e7e4a9dd",
+      "run_id": "h753-rtc-nominal-057",
+      "status": "complete",
+      "unit_id": "h753-rtc"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 58,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "a54ae5061d87aa088118af39fe6f13f53020acd8d23a567d06120d93473d9a72",
+      "run_id": "h753-rtc-nominal-058",
+      "status": "complete",
+      "unit_id": "h753-rtc"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 59,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "85d4249b297f212fe0cb0f0e7a81a63d65663625fc3a4106f796ad26807a151e",
+      "run_id": "h753-rtc-nominal-059",
+      "status": "complete",
+      "unit_id": "h753-rtc"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 60,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "694cf08ada90afaea7fe7b653eaf780931b4c1944a911e60717fde996bc79840",
+      "run_id": "h753-rtc-nominal-060",
+      "status": "complete",
+      "unit_id": "h753-rtc"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 29760,
+      "index": 61,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "232f7be608328e4897bcdb76f1611d529f429314c266f5206c185453e4903b89",
+      "run_id": "h753-rtc-min-061",
+      "status": "complete",
+      "unit_id": "h753-rtc"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_rtc.test_a_alarm_pending",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_b_alarm_callback",
+          "status": "pass"
+        },
+        {
+          "case": "ref_rtc.test_c_time_counting",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 33600,
+      "index": 62,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "e5105ea8ea11570128201112fc0fc6c2d9498ade66d79f176d8c4b019de87f09",
+      "run_id": "h753-rtc-max-062",
+      "status": "complete",
+      "unit_id": "h753-rtc"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 63,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "dd7c4d80d5576d5498190bc7b348dd2951670ee9096df1f6aecfb1f90dad1e85",
+      "run_id": "h753-counter-nominal-063",
+      "status": "complete",
+      "unit_id": "h753-counter"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 64,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "859ca5f4bd7fb3f765adeb36e96b5458d2c7f3bd56d48d1f1466b5915a2af68d",
+      "run_id": "h753-counter-nominal-064",
+      "status": "complete",
+      "unit_id": "h753-counter"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 65,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "af41106098ba23a29acfb3ff208480b5983e24e85a9141e2a4a1f16edbda3afd",
+      "run_id": "h753-counter-nominal-065",
+      "status": "complete",
+      "unit_id": "h753-counter"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 66,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "b54360e22d16e4d63ebd80b60db33d1e5bbf12a59bb1d5f808c2b9eee7e752dc",
+      "run_id": "h753-counter-nominal-066",
+      "status": "complete",
+      "unit_id": "h753-counter"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 67,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "6ba6adf656fc3f26ac7c48a95f798671fd6c5458f67806aa43280b4c40990de6",
+      "run_id": "h753-counter-nominal-067",
+      "status": "complete",
+      "unit_id": "h753-counter"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 29760,
+      "index": 68,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "4a33a3129b49c281100bc65028c405c767af05d8bb812c08e36984bdaf74b263",
+      "run_id": "h753-counter-min-068",
+      "status": "complete",
+      "unit_id": "h753-counter"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_counter.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "ref_counter.test_single_shot_alarm_notop",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 33600,
+      "index": 69,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "88acfce184723b42d9ad68fc3ca3693ec2553f096adb92dad9d00dc2abe9c2a0",
+      "run_id": "h753-counter-max-069",
+      "status": "complete",
+      "unit_id": "h753-counter"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 70,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "fada3619c029e38ccd7c234b1f8bd909b90468d61a07ded764ccb2654c2501ba",
+      "run_id": "h753-seconds-nominal-070",
+      "status": "complete",
+      "unit_id": "h753-seconds"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 71,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "14a5c88e2c4be13a9b1ff4ea9b85ab2f4c67de4ee2eb8681cf6465a34b899332",
+      "run_id": "h753-seconds-nominal-071",
+      "status": "complete",
+      "unit_id": "h753-seconds"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 72,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "91c78c78f85358bafde23e981b7c85ca23dcfe5a78dee2824f6a3d71209b352d",
+      "run_id": "h753-seconds-nominal-072",
+      "status": "complete",
+      "unit_id": "h753-seconds"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 73,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "b63248fc8532e99374eec1d7e91d0cd55b43281e0ebde6ccfe933190222b43d1",
+      "run_id": "h753-seconds-nominal-073",
+      "status": "complete",
+      "unit_id": "h753-seconds"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 32000,
+      "index": 74,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "75793422e4f26b5b00f6c416bca6cda69e112b81582f12ab60120bbf3c94f6d2",
+      "run_id": "h753-seconds-nominal-074",
+      "status": "complete",
+      "unit_id": "h753-seconds"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 29760,
+      "index": 75,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "8996a66b6ab1ec3ad2ef6739d33b1bc1fb784188afe36cbd13e298fffdbe33d8",
+      "run_id": "h753-seconds-min-075",
+      "status": "complete",
+      "unit_id": "h753-seconds"
+    },
+    {
+      "board_role": "H753 configuration, narrower legal range",
+      "cases": [
+        {
+          "case": "ref_seconds.test_a_rate_contract",
+          "status": "pass"
+        },
+        {
+          "case": "ref_seconds.test_b_legal_clock_progress",
+          "status": "pass"
+        }
+      ],
+      "error": null,
+      "frequency_hz": 33600,
+      "index": 76,
+      "linked_primary_cases": [],
+      "primary_run_id": null,
+      "record_sha256": "394d8a1020b65087081f862bded6484d845aa0c6576010fc506fca0f44fee3b1",
+      "run_id": "h753-seconds-max-076",
+      "status": "complete",
+      "unit_id": "h753-seconds"
+    }
+  ],
+  "slurm_job_id": "3547096",
+  "valid": true
+}
