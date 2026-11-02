@@ -1436,3 +1436,13 @@ most one hour, about 1 SU, TRA25006), to be submitted once the archive verifies.
 Its sealed code manifest is registered in a further dated note before execution.
 Replay mismatches are reported separately and never replace a primary verdict;
 missing replay verdicts stay missing.
+
+Storage check rerun note, 2026-11-01. Check job 3546137 failed after 3 seconds,
+before any writer, archive or protected check, with no firmware run. This was
+`runtime.sh`'s first compute-node use. `module load tacc-apptainer/1.4.1` sets
+`APPTAINER_CACHEDIR` to a shared SCRATCH path, overwriting the node-local value,
+and the runtime guard correctly refused to continue. `runtime.sh` (SHA-256
+`94824b806985ec216e3c0b41968ce876a3588eaf73a6fb526d54279b2a933202`) now sets that variable after the module load (SHA-256 `f8c6ade9e552b51ef62da163dec0f6c33ceb8feefd838894e89c8c1ac1bc9adf`). The
+other storage variables are not changed by the modules, checked on a login node.
+The same storage check is rerun unchanged: development, one node, 00:30:00,
+TRA25006.
