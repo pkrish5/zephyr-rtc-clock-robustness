@@ -1,0 +1,13 @@
+{
+  "changed": [],
+  "count": 30067,
+  "full_receipt_sha256": "bfd2b5c510601b75494a5a8d49fd5385690b5fcf4085fa8b52e3d19cb4b7b5aa",
+  "manuscript_sha256": {
+    "paper/draft/main.pdf": "5f33635f42e9b9b4ae6e44ee5add20a993c4e52bba3a6895f073cae02f2a42cc",
+    "paper/draft/main.tex": "2f5c7f32e3528a28969103b4993a64e8b62ab9c256c6148d8333a95d8d85d189"
+  },
+  "manuscript_unchanged": true,
+  "new_experiments": 0,
+  "snapshot_sha256": "b0078f949d83672aadf1a5e385caebcb61842435b92cf41e1e30507e41102aef",
+  "timestamp_utc": "2026-11-02T15:15:14.394250+00:00"
+}

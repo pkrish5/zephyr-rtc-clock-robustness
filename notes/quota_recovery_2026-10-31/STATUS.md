@@ -1,6 +1,46 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
-## Latest checkpoint — S2 replays submitted, 2026-11-01 (supersedes all below)
+## Latest checkpoint — replay evidence verified and S2 report delivered, 2026-11-02
+
+Job **3546149 COMPLETED 0:0**, elapsed **00:12:26**, scheduler start
+2026-11-02T07:21:12 and end 2026-11-02T07:33:38. No LS6 pull or new job
+submission occurred during this continuation. The watcher remains paused.
+
+The returned WORK archive has SHA-256
+`9247f19e878b94370e8d9ed85717dfacc787184654ab90f68d661ff1bb56dfb2`.
+Independent local verification checked its checksum, complete-state receipt,
+2,214 manifest entries, safe extraction and exact extracted inventory.
+Protected-before and protected-after each match all 30,067 baseline hashes.
+`compare_replays.py` reports **274/274 identical replays**, covering **470/470
+case failures**: no verdict, UART, trace, selected-field, provenance or roster
+differences; zero missing replays. No primary verdict was replaced.
+
+The source-supported S2 report and machine-readable case/application,
+frequency-band, category, source-excerpt and isolated-case reconciliation
+tables are in `notes/s2_attribution_2026-10-31/s2_report_20261102_v3/`.
+Observed flip cases: F4 6/10 runnable, F767 6/10, F746 4/6, H753 0/10
+runnable at any setting (0/9 nominal runnable). Missing slots: zero.
+Category case counts (a/b/c/d) per board: F4 1/3/1/1, F767 1/3/1/1,
+F746 1/2/0/1, H753 0/0/0/0. Cascades are not independent waiting defects.
+Counter all-channels uses category (b)'s free-running relative-tick phase
+subtype, explicitly distinct from calendar-write phase.
+
+Platform input hashes confirm all four boards use STM32F4_RTC. Full-app
+versus isolated F4 seeded failures are pending 26/26, callback 22/26, and
+counting 12/17; the last two have four and five isolated-fail/full-pass
+settings, with none in the reverse direction. Preserved model phase supports
+the context explanation, but phase was not directly observed. H753's extra
+runnable case passes its timing-based capability gate in 10 seed settings;
+90 seed skips plus both endpoint skips remain skips, not passes. The gate's
+exact internal false-return branch is not logged.
+
+**References have not run.** Categories are post-result source-supported
+explanations, not reference-validated brittle-test counts. S2 evidence and
+replay results are ready for Progress Report 2 without waiting for E.
+Reference protocol registration/approval, E, E2 and manuscript edits remain
+held. User edits to main.tex and main.pdf are not staged or committed.
+
+## Earlier checkpoint — S2 replays submitted, 2026-11-01 (superseded)
 
 S2 return 3544535 COMPLETED 0:0; archive `0de8c18e…` independently verified on
 the Mac (1,122 records; 3,022 pass, 470 fail, 3,138 skip, 0 missing). Failures

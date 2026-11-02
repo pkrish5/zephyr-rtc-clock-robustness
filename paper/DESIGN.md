@@ -1465,3 +1465,41 @@ Frozen simulation body `harness/tacc_s2/worker.py` is unchanged
 user's pre-approval in `approval_receipt.json`. Each launch runs once. Mismatches
 and missing replay verdicts are reported separately, not rerun and never substituted
 for a primary verdict.
+
+## 2026-11-02 S2 replay results and source-supported attribution, no new experiment
+
+Replay job 3546149 completed with exit 0:0 after 00:12:26. The checked WORK
+archive SHA-256 is 9247f19e878b94370e8d9ed85717dfacc787184654ab90f68d661ff1bb56dfb2.
+Independent local verification confirms its 2,214 entries, extracted-stream
+hashes, complete-state receipt and all 30,067 protected hashes before/after.
+The unchanged comparison helper reports 274/274 identical full-application
+replays covering 470/470 original assertion failures, including UART and trace
+hash agreement. No original record or missing verdict was replaced. No new
+job, build, simulation, reference run or manuscript edit is registered here.
+
+Post-result attribution tables use the user-requested categories: (a) a
+single-boundary waiting candidate; (b) phase-dependent failures, separating
+calendar-write phase from the counter's free-running relative-alarm phase;
+(c) shared-state cleanup cascades, not independent waiting defects; (d)
+unresolved clock-accuracy contract. Case counts a/b/c/d are F4 1/3/1/1,
+F767 1/3/1/1, F746 1/2/0/1 and H753 0/0/0/0. These categories are supported by
+source, saved traces and replays but are not completed reference-based brittle
+test classifications. Phase is inferred, not directly observed. The four
+sealed platform include chains were checked against packaged input hashes;
+each instantiates Timers.STM32F4_RTC.
+
+Reconciliation compares all 102 same-frequency F4 settings per RTC case with
+the existing isolated-case records. Pending agrees at every setting; callback
+and counting have four and five isolated-fail/full-pass differences,
+respectively, with none in the reverse direction. Context and preserved model
+phase explain the direction but have not been experimentally isolated. No
+counter/seconds isolated baseline exists. H753's short-relative capability
+predicate produces ten passing seed settings and ninety skipped seed settings,
+plus two skipped endpoints; its exact false-return branch is not observed.
+
+The report, original-versus-full reconciliation and evidence ledgers are in
+notes/s2_attribution_2026-10-31/s2_report_20261102_v3/. S2 reference runs need
+separate source/roster registration and approval; no additional normal-queue
+job or replay retry is authorized by this analysis. E, E2 and paper edits
+remain held. Progress Report 2 may use these verified observed results while
+clearly identifying the remaining reference/semantic limitations.

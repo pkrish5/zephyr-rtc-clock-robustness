@@ -1,0 +1,38 @@
+{
+  "by_unit": {
+    "f4-counter": {
+      "identical": 44
+    },
+    "f4-rtc": {
+      "identical": 27
+    },
+    "f4-seconds": {
+      "identical": 35
+    },
+    "f746-rtc": {
+      "identical": 27
+    },
+    "f746-seconds": {
+      "identical": 35
+    },
+    "f767-counter": {
+      "identical": 44
+    },
+    "f767-rtc": {
+      "identical": 27
+    },
+    "f767-seconds": {
+      "identical": 35
+    }
+  },
+  "case_failures_in_identical_replays": 470,
+  "case_failures_on_roster": 470,
+  "differences": {},
+  "primary_verdicts_changed": 0,
+  "provenance_problems": {},
+  "records_outside_roster": [],
+  "roster_launches": 274,
+  "status_counts": {
+    "identical": 274
+  }
+}

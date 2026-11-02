@@ -1,0 +1,15 @@
+{
+  "archive_entries_verified": 2214,
+  "archive_sha256": "9247f19e878b94370e8d9ed85717dfacc787184654ab90f68d661ff1bb56dfb2",
+  "extracted_inventory_matches": true,
+  "job_id": "3546149",
+  "manifest_sha256": "b2a985de48a6957e45c1344add6b0fb73de09d670602262773d7eaf0ed7aa388",
+  "no_new_builds_or_simulations": true,
+  "original_records_modified": false,
+  "output_state": "complete",
+  "protected_files_unchanged": 30067,
+  "protected_receipts_sha256": {
+    "protected_after.json": "d0b47cf65538f9b9b2a5d337c0f8a17f20bf4ab786a36a81ab8a258e955d3081",
+    "protected_before.json": "d0b47cf65538f9b9b2a5d337c0f8a17f20bf4ab786a36a81ab8a258e955d3081"
+  }
+}

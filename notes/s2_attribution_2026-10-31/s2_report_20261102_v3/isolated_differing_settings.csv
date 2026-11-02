@@ -1,0 +1,10 @@
+case,frequency_hz,condition,isolated,full_application,isolated_run_id,full_run_id
+rtc_api.test_alarm_callback,24428,seeded,fail,pass,human-rtc_alarm_callback-seeded-008,f4-rtc-seeded-088
+rtc_api.test_alarm_callback,23847,seeded,fail,pass,human-rtc_alarm_callback-seeded-015,f4-rtc-seeded-165
+rtc_api.test_alarm_callback,23876,seeded,fail,pass,human-rtc_alarm_callback-seeded-039,f4-rtc-seeded-429
+rtc_api.test_alarm_callback,24346,seeded,fail,pass,human-rtc_alarm_callback-seeded-059,f4-rtc-seeded-649
+rtc_api.test_time_counting,21402,seeded,fail,pass,human-rtc_time_counting-seeded-001,f4-rtc-seeded-011
+rtc_api.test_time_counting,20701,seeded,fail,pass,human-rtc_time_counting-seeded-028,f4-rtc-seeded-308
+rtc_api.test_time_counting,21762,seeded,fail,pass,human-rtc_time_counting-seeded-079,f4-rtc-seeded-869
+rtc_api.test_time_counting,21742,seeded,fail,pass,human-rtc_time_counting-seeded-082,f4-rtc-seeded-902
+rtc_api.test_time_counting,21782,seeded,fail,pass,human-rtc_time_counting-seeded-087,f4-rtc-seeded-957

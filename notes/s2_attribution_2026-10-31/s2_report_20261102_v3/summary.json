@@ -1,0 +1,107 @@
+{
+  "categories_by_board": [
+    {
+      "a_cases": 1,
+      "a_failure_slots": 27,
+      "b_cases": 3,
+      "b_failure_slots": 80,
+      "board_id": "f4",
+      "c_cases": 1,
+      "c_failure_slots": 44,
+      "d_cases": 1,
+      "d_failure_slots": 35
+    },
+    {
+      "a_cases": 1,
+      "a_failure_slots": 27,
+      "b_cases": 3,
+      "b_failure_slots": 80,
+      "board_id": "f767",
+      "c_cases": 1,
+      "c_failure_slots": 44,
+      "d_cases": 1,
+      "d_failure_slots": 35
+    },
+    {
+      "a_cases": 1,
+      "a_failure_slots": 27,
+      "b_cases": 2,
+      "b_failure_slots": 36,
+      "board_id": "f746",
+      "c_cases": 0,
+      "c_failure_slots": 0,
+      "d_cases": 1,
+      "d_failure_slots": 35
+    },
+    {
+      "a_cases": 0,
+      "a_failure_slots": 0,
+      "b_cases": 0,
+      "b_failure_slots": 0,
+      "board_id": "h753",
+      "c_cases": 0,
+      "c_failure_slots": 0,
+      "d_cases": 0,
+      "d_failure_slots": 0
+    }
+  ],
+  "category_failure_slots": {
+    "a": 81,
+    "b": 196,
+    "c": 88,
+    "d": 105
+  },
+  "h753_short_relative_status_counts": {
+    "pass": 10,
+    "skip": 92
+  },
+  "no_new_experiments": true,
+  "original_records_changed": 0,
+  "primary_case_slots": {
+    "fail": 470,
+    "pass": 3022,
+    "skip": 3138
+  },
+  "primary_launches": 1122,
+  "reference_runs": 0,
+  "reference_validated_brittle_cases": 0,
+  "replay_summary": {
+    "by_unit": {
+      "f4-counter": {
+        "identical": 44
+      },
+      "f4-rtc": {
+        "identical": 27
+      },
+      "f4-seconds": {
+        "identical": 35
+      },
+      "f746-rtc": {
+        "identical": 27
+      },
+      "f746-seconds": {
+        "identical": 35
+      },
+      "f767-counter": {
+        "identical": 44
+      },
+      "f767-rtc": {
+        "identical": 27
+      },
+      "f767-seconds": {
+        "identical": 35
+      }
+    },
+    "case_failures_in_identical_replays": 470,
+    "case_failures_on_roster": 470,
+    "differences": {},
+    "primary_verdicts_changed": 0,
+    "provenance_problems": {},
+    "records_outside_roster": [],
+    "roster_launches": 274,
+    "status_counts": {
+      "identical": 274
+    }
+  },
+  "source_supported_attribution_only": true
+}
