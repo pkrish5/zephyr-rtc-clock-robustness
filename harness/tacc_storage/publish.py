@@ -12,6 +12,8 @@ from pathlib import Path
 import re
 import shutil
 import socket
+import subprocess
+import sys
 
 from archive import inventory, pack, sha, verify
 
@@ -46,6 +48,9 @@ def main():
         output_state=a.state,physical_loose_output=str(source),
         raw_bytes_unchanged=True,exact_archive_coverage=True,extracted_stream_hashes_match=True)
     if not re.fullmatch(r'[0-9a-f]{64}',provenance['container_sha256']):raise RuntimeError('Image identity missing')
+    # Re-check just before WORK publication; a successful entry gate is not
+    # evidence that headroom still exists after a long-running job.
+    subprocess.run([sys.executable, str(repo/'harness/tacc_storage/check_headroom.py')],check=True)
     dest.mkdir(parents=True,exist_ok=True)
     archive=dest/(stem+'.tar.gz')
     with temporary.open('rb') as src,archive.open('xb') as dst:shutil.copyfileobj(src,dst)

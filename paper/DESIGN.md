@@ -1503,3 +1503,63 @@ separate source/roster registration and approval; no additional normal-queue
 job or replay retry is authorized by this analysis. E, E2 and paper edits
 remain held. Progress Report 2 may use these verified observed results while
 clearly identifying the remaining reference/semantic limitations.
+
+## 2026-11-02 S2 task-specific reference validation, before any reference build/run
+
+The user authorized complete S2 reference checks before E resumption. Freeze
+new reference sources under subjects/s2_references_20261102_v1/ and their new
+outer adapters under harness/tacc_s2_references/. The source-preserving S2
+build/run bodies, original upstream/generated inputs, forecasts, primary and
+replay records remain unchanged. The exact checks, source-to-reference mapping,
+ceilings, interpretation, storage and execution gates are registered in
+notes/s2_reference_2026-11-02_v1/PROTOCOL.md and its sealed packet.
+
+All eleven qualified board/application configurations receive five nominal
+reference runs plus both legal endpoints (77 qualification launches). On
+qualification success, 274 reference application launches cover all 470
+failing primary case slots at their exact saved frequencies. Shared launches
+have explicit per-case links; H753 has qualification but no failure-setting
+reference launches. F767 is an F4 configuration replica in all derived tables.
+Counter configuration remains non-stock, RTC-only, without subsecond mode.
+
+RTC references check pending/readback and both callback IDs across the two
+original alarm repetitions, the original counting date and exact target,
+monotonicity and premature behavior. The 26-second ten-tick experimental ceiling
+is ceil(11*32000/17000 + 5); its earliest check is 6125 ms. Counter references
+preserve two requested relative ticks, account for the driver's extra tick,
+check ID/data/ISR/counter progress, wait under ceil(4*32000/17000+5)=13 seconds,
+and reject delivery before 1360 ms. The single-shot reference clears prior
+callback state explicitly and retains the extra three-second no-repeat check;
+its success does not make an original cleanup cascade an independent defect.
+All event polling is every 20 ms. These ceilings use the conservative cohort
+17--47-kHz envelope and an explicit five-second experimental service margin,
+not a claimed physical ISR bound. Callback time is checked in the callback;
+independent elapsed time uses the unperturbed SysTick clock.
+
+The seconds reference retains the original 1200-ms one-to-two-tick rate check
+first and separately checks ten-tick legal-clock progress. Do not replace its
+rate assertion with eventual progress or label it brittle when that contract
+remains unresolved. Every reference failure receives a firmware/simulator
+investigation flag, not test brittleness; that flag alone does not identify
+whether firmware, simulator, or an intended accuracy contract is wrong.
+Missing or invalid reference verdicts stay missing. Qualification requires all
+nominal cases to pass and all non-rate endpoint cases to pass; the retained
+rate check's legal-endpoint failures are anticipated property outcomes.
+Unexpected qualification outcomes stop evaluation and are reported.
+
+Planned execution is development/TRA25006, one node, 02:00:00, at most 2 SUs,
+four concurrent two-worker builds then 32 local Launcher runs. No normal job
+is authorized by this registration; any required normal submission must have
+its concrete SU estimate reported first and satisfy standing approval rules.
+Builds and loose outputs use SCRATCH, private runtime/cache uses node /tmp,
+and kept ELFs/logs/configuration/hashes plus raw results are packed and verified
+before WORK publication, with a new headroom check immediately before copying.
+Full protected-file checks run before and after. The existing storage
+coordinator and frozen simulation body are unchanged; the new adapters use
+new reference sources and truthful job/node/container/module provenance.
+
+Keep full-application/isolated RTC results side by side: pending 26/26,
+callback 22/26, counting 12/17 over the same 100 seeded F4 settings. The model
+phase explanation is supported but not directly measured. Original counts and
+forecasts are never replaced. E audit and its quota-interruption rerun amendment
+follow reference validation; E2 and manuscript edits remain held.

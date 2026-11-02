@@ -1,0 +1,15 @@
+{
+  "code_sha256_manifest": "c649855b2146b0fa46cc9ac18695f330f875af17e1893789cde49fc2be02acbd",
+  "design_sha256": "239c21f1a8832545eba96cc5470496cb912144d8a6543e8a069a191a3db34abc",
+  "evaluation_launches": 274,
+  "new_experiments_run": 0,
+  "new_reference_builds": 11,
+  "nodes": 1,
+  "original_failure_slots_covered": 470,
+  "plan_sha256": "ceb14326dea354408799e1e9a2356ee5c29dec4851998ad3fb56107798a3e7c7",
+  "qualification_launches": 77,
+  "queue": "development",
+  "reference_sources": 10,
+  "reservation_su_ceiling": 2.0,
+  "walltime": "02:00:00"
+}

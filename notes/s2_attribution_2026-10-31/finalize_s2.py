@@ -170,6 +170,9 @@ def main():
             row[cat + '_cases'] = sum(r['category'] == cat for r in cr)
             row[cat + '_failure_slots'] = sum(r['fail_count'] for r in cr if r['category'] == cat)
         category_rows.append(row)
+    for row in case_rows + app_rows + category_rows + failure_rows:
+        board = row.get('board_id') or row['unit_id'].split('-')[0]
+        row['board_role'] = 'F4 configuration replica (F767)' if board == 'f767' else 'primary configuration'
     csv_save(a.out / 'per_case.csv', case_rows)
     csv_save(a.out / 'per_application.csv', app_rows)
     csv_save(a.out / 'per_board_categories.csv', category_rows)
@@ -193,6 +196,8 @@ def main():
                 assert any('rtc: Timers.STM32F4_RTC' in line for line in lines)
             platform_rows.append(dict(board_id=board, source=rel, sha256=value, original_platform_sha256=plan['original_platform_sha256'][rel],
                                       role='rtc: Timers.STM32F4_RTC' if i == len(chain) - 1 else 'include'))
+    for row in platform_rows:
+        row['board_role'] = 'F4 configuration replica (F767)' if row['board_id'] == 'f767' else 'primary configuration'
     csv_save(a.out / 'platform_model_verification.csv', platform_rows)
 
     # Reconcile all 102 F4 frequencies for each matched historical isolated RTC case.

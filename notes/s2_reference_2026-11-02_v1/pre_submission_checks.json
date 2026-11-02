@@ -1,0 +1,17 @@
+{
+  "all_existing_s2_table_values_unchanged": true,
+  "changed": [],
+  "frozen_code_files": 26,
+  "frozen_code_matches": true,
+  "full_audit_sha256": "a0bb60927d972cf463fb5816e2f82c91f332466e8061b6f99a2e1a3837446ed5",
+  "manuscript_sha256": {
+    "paper/draft/main.pdf": "5f33635f42e9b9b4ae6e44ee5add20a993c4e52bba3a6895f073cae02f2a42cc",
+    "paper/draft/main.tex": "2f5c7f32e3528a28969103b4993a64e8b62ab9c256c6148d8333a95d8d85d189"
+  },
+  "manuscript_unchanged": true,
+  "new_builds": 0,
+  "new_simulations": 0,
+  "protected_count": 30067,
+  "registered_design_matches": true,
+  "remote_status": "authentication rejected; stopped without retry"
+}

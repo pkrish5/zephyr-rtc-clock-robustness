@@ -1,66 +1,66 @@
-board,board_id,unit_id,case,nominal_status,pass_count,fail_count,skip_count,missing_count,category,subtype,minimum_failed_hz,maximum_failed_hz,minimum_passed_hz,maximum_passed_hz,observed_sample_single_transition,source_boundary,effective_wait,source,source_lines,reference_status,attribution_status
-stm32f4_disco,f4,f4-rtc,rtc_api.test_alarm,pass,75,27,0,0,a,single-boundary waiting,17000,24428,24734,47000,True,"24.615 kHz, ideal zero-phase 320/13",3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm.c,14-15;177-204,not run,source-supported; not reference-validated
-stm32f4_disco,f4,f4-rtc,rtc_api.test_alarm_callback,pass,79,23,0,0,b,calendar-write phase,17000,23673,23847,47000,True,22.154--24.615 kHz phase envelope; no unique source-only threshold,3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm_callback.c,13-14;119-141,not run,source-supported; not reference-validated
-stm32f4_disco,f4,f4-rtc,rtc_api.test_set_get_calibration,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-rtc,rtc_api.test_set_get_time,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-rtc,rtc_api.test_time_counting,pass,89,13,0,0,b,calendar-write phase,17000,20500,20701,47000,True,19.862--22.069 kHz phase envelope; last-poll approximation,30 polls every 500 ms; last observation about 14.5 s,tests/drivers/rtc/rtc_api/src/test_time_incrementing.c,15-17;35-59,not run,source-supported; not reference-validated
-stm32f4_disco,f4,f4-rtc,rtc_api.test_update_callback,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-rtc,rtc_api.test_y2k,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-counter,counter_basic.test_set_top_value_with_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-counter,counter_no_callback.test_set_top_value_without_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-counter,counter_basic.test_single_shot_alarm_notop,pass,58,44,0,0,c,shared-state cleanup cascade,17000,29143,29352,47000,True,none: observed failure is -EBUSY before any wait,none before observed setup failure,tests/drivers/counter/counter_basic_api/src/test_counter.c,225-249;473-478;692-701,not run,source-supported; not reference-validated
-stm32f4_disco,f4,f4-counter,counter_basic.test_single_shot_alarm_top,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-counter,counter_basic.test_multiple_alarms,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-counter,counter_basic.test_all_channels,pass,58,44,0,0,b,free-running relative-alarm phase,17000,29143,29352,47000,True,21.333--32.000 kHz phase envelope: (3-phi)*32/3,3 host seconds for a two-tick relative alarm,tests/drivers/counter/counter_basic_api/src/test_counter.c,179-185;658-702,not run,source-supported; not reference-validated
-stm32f4_disco,f4,f4-counter,counter_basic.test_valid_function_without_alarm,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-counter,counter_basic.test_late_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-counter,counter_basic.test_late_alarm_error,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-counter,counter_basic.test_short_relative_alarm,pass,58,0,44,0,,,,,29352,47000,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-counter,counter_basic.test_cancelled_alarm_does_not_expire,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f4_disco,f4,f4-seconds,seconds_counter.test_seconds_rate,pass,67,35,0,0,d,unresolved clock-accuracy contract,17000,26168,27086,47000,True,26.667 kHz ideal zero-phase comparison; not a validated defect boundary,1200 ms; require one to two integer ticks,tests/drivers/counter/counter_seconds/src/main.c,10-12;20-42,not run,source-supported; not reference-validated
-nucleo_f767zi,f767,f767-rtc,rtc_api.test_alarm,pass,75,27,0,0,a,single-boundary waiting,17000,24428,24734,47000,True,"24.615 kHz, ideal zero-phase 320/13",3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm.c,14-15;177-204,not run,source-supported; not reference-validated
-nucleo_f767zi,f767,f767-rtc,rtc_api.test_alarm_callback,pass,79,23,0,0,b,calendar-write phase,17000,23673,23847,47000,True,22.154--24.615 kHz phase envelope; no unique source-only threshold,3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm_callback.c,13-14;119-141,not run,source-supported; not reference-validated
-nucleo_f767zi,f767,f767-rtc,rtc_api.test_set_get_calibration,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-rtc,rtc_api.test_set_get_time,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-rtc,rtc_api.test_time_counting,pass,89,13,0,0,b,calendar-write phase,17000,20500,20701,47000,True,19.862--22.069 kHz phase envelope; last-poll approximation,30 polls every 500 ms; last observation about 14.5 s,tests/drivers/rtc/rtc_api/src/test_time_incrementing.c,15-17;35-59,not run,source-supported; not reference-validated
-nucleo_f767zi,f767,f767-rtc,rtc_api.test_update_callback,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-rtc,rtc_api.test_y2k,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-counter,counter_basic.test_set_top_value_with_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-counter,counter_no_callback.test_set_top_value_without_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-counter,counter_basic.test_single_shot_alarm_notop,pass,58,44,0,0,c,shared-state cleanup cascade,17000,29143,29352,47000,True,none: observed failure is -EBUSY before any wait,none before observed setup failure,tests/drivers/counter/counter_basic_api/src/test_counter.c,225-249;473-478;692-701,not run,source-supported; not reference-validated
-nucleo_f767zi,f767,f767-counter,counter_basic.test_single_shot_alarm_top,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-counter,counter_basic.test_multiple_alarms,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-counter,counter_basic.test_all_channels,pass,58,44,0,0,b,free-running relative-alarm phase,17000,29143,29352,47000,True,21.333--32.000 kHz phase envelope: (3-phi)*32/3,3 host seconds for a two-tick relative alarm,tests/drivers/counter/counter_basic_api/src/test_counter.c,179-185;658-702,not run,source-supported; not reference-validated
-nucleo_f767zi,f767,f767-counter,counter_basic.test_valid_function_without_alarm,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-counter,counter_basic.test_late_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-counter,counter_basic.test_late_alarm_error,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-counter,counter_basic.test_short_relative_alarm,pass,58,0,44,0,,,,,29352,47000,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-counter,counter_basic.test_cancelled_alarm_does_not_expire,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_f767zi,f767,f767-seconds,seconds_counter.test_seconds_rate,pass,67,35,0,0,d,unresolved clock-accuracy contract,17000,26168,27086,47000,True,26.667 kHz ideal zero-phase comparison; not a validated defect boundary,1200 ms; require one to two integer ticks,tests/drivers/counter/counter_seconds/src/main.c,10-12;20-42,not run,source-supported; not reference-validated
-stm32f746g_disco,f746,f746-rtc,rtc_api.test_alarm,pass,75,27,0,0,a,single-boundary waiting,17000,24428,24734,47000,True,"24.615 kHz, ideal zero-phase 320/13",3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm.c,14-15;177-204,not run,source-supported; not reference-validated
-stm32f746g_disco,f746,f746-rtc,rtc_api.test_alarm_callback,pass,79,23,0,0,b,calendar-write phase,17000,23673,23847,47000,True,22.154--24.615 kHz phase envelope; no unique source-only threshold,3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm_callback.c,13-14;119-141,not run,source-supported; not reference-validated
-stm32f746g_disco,f746,f746-rtc,rtc_api.test_set_get_calibration,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure
-stm32f746g_disco,f746,f746-rtc,rtc_api.test_set_get_time,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure
-stm32f746g_disco,f746,f746-rtc,rtc_api.test_time_counting,pass,89,13,0,0,b,calendar-write phase,17000,20500,20701,47000,True,19.862--22.069 kHz phase envelope; last-poll approximation,30 polls every 500 ms; last observation about 14.5 s,tests/drivers/rtc/rtc_api/src/test_time_incrementing.c,15-17;35-59,not run,source-supported; not reference-validated
-stm32f746g_disco,f746,f746-rtc,rtc_api.test_update_callback,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f746g_disco,f746,f746-rtc,rtc_api.test_y2k,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-stm32f746g_disco,f746,f746-seconds,seconds_counter.test_seconds_rate,pass,67,35,0,0,d,unresolved clock-accuracy contract,17000,26168,27086,47000,True,26.667 kHz ideal zero-phase comparison; not a validated defect boundary,1200 ms; require one to two integer ticks,tests/drivers/counter/counter_seconds/src/main.c,10-12;20-42,not run,source-supported; not reference-validated
-nucleo_h753zi,h753,h753-rtc,rtc_api.test_alarm,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-rtc,rtc_api.test_alarm_callback,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-rtc,rtc_api.test_set_get_calibration,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-rtc,rtc_api.test_set_get_time,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-rtc,rtc_api.test_time_counting,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-rtc,rtc_api.test_update_callback,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-rtc,rtc_api.test_y2k,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_set_top_value_with_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_no_callback.test_set_top_value_without_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_single_shot_alarm_notop,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_single_shot_alarm_top,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_multiple_alarms,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_all_channels,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_valid_function_without_alarm,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_late_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_late_alarm_error,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_short_relative_alarm,skip,10,0,92,0,,,,,32287,32756,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-counter,counter_basic.test_cancelled_alarm_does_not_expire,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure
-nucleo_h753zi,h753,h753-seconds,seconds_counter.test_seconds_rate,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure
+board,board_id,unit_id,case,nominal_status,pass_count,fail_count,skip_count,missing_count,category,subtype,minimum_failed_hz,maximum_failed_hz,minimum_passed_hz,maximum_passed_hz,observed_sample_single_transition,source_boundary,effective_wait,source,source_lines,reference_status,attribution_status,board_role
+stm32f4_disco,f4,f4-rtc,rtc_api.test_alarm,pass,75,27,0,0,a,single-boundary waiting,17000,24428,24734,47000,True,"24.615 kHz, ideal zero-phase 320/13",3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm.c,14-15;177-204,not run,source-supported; not reference-validated,primary configuration
+stm32f4_disco,f4,f4-rtc,rtc_api.test_alarm_callback,pass,79,23,0,0,b,calendar-write phase,17000,23673,23847,47000,True,22.154--24.615 kHz phase envelope; no unique source-only threshold,3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm_callback.c,13-14;119-141,not run,source-supported; not reference-validated,primary configuration
+stm32f4_disco,f4,f4-rtc,rtc_api.test_set_get_calibration,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-rtc,rtc_api.test_set_get_time,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-rtc,rtc_api.test_time_counting,pass,89,13,0,0,b,calendar-write phase,17000,20500,20701,47000,True,19.862--22.069 kHz phase envelope; last-poll approximation,30 polls every 500 ms; last observation about 14.5 s,tests/drivers/rtc/rtc_api/src/test_time_incrementing.c,15-17;35-59,not run,source-supported; not reference-validated,primary configuration
+stm32f4_disco,f4,f4-rtc,rtc_api.test_update_callback,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-rtc,rtc_api.test_y2k,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_set_top_value_with_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-counter,counter_no_callback.test_set_top_value_without_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_single_shot_alarm_notop,pass,58,44,0,0,c,shared-state cleanup cascade,17000,29143,29352,47000,True,none: observed failure is -EBUSY before any wait,none before observed setup failure,tests/drivers/counter/counter_basic_api/src/test_counter.c,225-249;473-478;692-701,not run,source-supported; not reference-validated,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_single_shot_alarm_top,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_multiple_alarms,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_all_channels,pass,58,44,0,0,b,free-running relative-alarm phase,17000,29143,29352,47000,True,21.333--32.000 kHz phase envelope: (3-phi)*32/3,3 host seconds for a two-tick relative alarm,tests/drivers/counter/counter_basic_api/src/test_counter.c,179-185;658-702,not run,source-supported; not reference-validated,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_valid_function_without_alarm,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_late_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_late_alarm_error,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_short_relative_alarm,pass,58,0,44,0,,,,,29352,47000,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-counter,counter_basic.test_cancelled_alarm_does_not_expire,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f4_disco,f4,f4-seconds,seconds_counter.test_seconds_rate,pass,67,35,0,0,d,unresolved clock-accuracy contract,17000,26168,27086,47000,True,26.667 kHz ideal zero-phase comparison; not a validated defect boundary,1200 ms; require one to two integer ticks,tests/drivers/counter/counter_seconds/src/main.c,10-12;20-42,not run,source-supported; not reference-validated,primary configuration
+nucleo_f767zi,f767,f767-rtc,rtc_api.test_alarm,pass,75,27,0,0,a,single-boundary waiting,17000,24428,24734,47000,True,"24.615 kHz, ideal zero-phase 320/13",3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm.c,14-15;177-204,not run,source-supported; not reference-validated,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-rtc,rtc_api.test_alarm_callback,pass,79,23,0,0,b,calendar-write phase,17000,23673,23847,47000,True,22.154--24.615 kHz phase envelope; no unique source-only threshold,3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm_callback.c,13-14;119-141,not run,source-supported; not reference-validated,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-rtc,rtc_api.test_set_get_calibration,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-rtc,rtc_api.test_set_get_time,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-rtc,rtc_api.test_time_counting,pass,89,13,0,0,b,calendar-write phase,17000,20500,20701,47000,True,19.862--22.069 kHz phase envelope; last-poll approximation,30 polls every 500 ms; last observation about 14.5 s,tests/drivers/rtc/rtc_api/src/test_time_incrementing.c,15-17;35-59,not run,source-supported; not reference-validated,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-rtc,rtc_api.test_update_callback,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-rtc,rtc_api.test_y2k,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_set_top_value_with_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_no_callback.test_set_top_value_without_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_single_shot_alarm_notop,pass,58,44,0,0,c,shared-state cleanup cascade,17000,29143,29352,47000,True,none: observed failure is -EBUSY before any wait,none before observed setup failure,tests/drivers/counter/counter_basic_api/src/test_counter.c,225-249;473-478;692-701,not run,source-supported; not reference-validated,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_single_shot_alarm_top,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_multiple_alarms,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_all_channels,pass,58,44,0,0,b,free-running relative-alarm phase,17000,29143,29352,47000,True,21.333--32.000 kHz phase envelope: (3-phi)*32/3,3 host seconds for a two-tick relative alarm,tests/drivers/counter/counter_basic_api/src/test_counter.c,179-185;658-702,not run,source-supported; not reference-validated,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_valid_function_without_alarm,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_late_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_late_alarm_error,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_short_relative_alarm,pass,58,0,44,0,,,,,29352,47000,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-counter,counter_basic.test_cancelled_alarm_does_not_expire,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,F4 configuration replica (F767)
+nucleo_f767zi,f767,f767-seconds,seconds_counter.test_seconds_rate,pass,67,35,0,0,d,unresolved clock-accuracy contract,17000,26168,27086,47000,True,26.667 kHz ideal zero-phase comparison; not a validated defect boundary,1200 ms; require one to two integer ticks,tests/drivers/counter/counter_seconds/src/main.c,10-12;20-42,not run,source-supported; not reference-validated,F4 configuration replica (F767)
+stm32f746g_disco,f746,f746-rtc,rtc_api.test_alarm,pass,75,27,0,0,a,single-boundary waiting,17000,24428,24734,47000,True,"24.615 kHz, ideal zero-phase 320/13",3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm.c,14-15;177-204,not run,source-supported; not reference-validated,primary configuration
+stm32f746g_disco,f746,f746-rtc,rtc_api.test_alarm_callback,pass,79,23,0,0,b,calendar-write phase,17000,23673,23847,47000,True,22.154--24.615 kHz phase envelope; no unique source-only threshold,3 + 10 host seconds,tests/drivers/rtc/rtc_api/src/test_alarm_callback.c,13-14;119-141,not run,source-supported; not reference-validated,primary configuration
+stm32f746g_disco,f746,f746-rtc,rtc_api.test_set_get_calibration,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure,primary configuration
+stm32f746g_disco,f746,f746-rtc,rtc_api.test_set_get_time,pass,102,0,0,0,,,,,17000,47000,False,,,,,not run,no observed failure,primary configuration
+stm32f746g_disco,f746,f746-rtc,rtc_api.test_time_counting,pass,89,13,0,0,b,calendar-write phase,17000,20500,20701,47000,True,19.862--22.069 kHz phase envelope; last-poll approximation,30 polls every 500 ms; last observation about 14.5 s,tests/drivers/rtc/rtc_api/src/test_time_incrementing.c,15-17;35-59,not run,source-supported; not reference-validated,primary configuration
+stm32f746g_disco,f746,f746-rtc,rtc_api.test_update_callback,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f746g_disco,f746,f746-rtc,rtc_api.test_y2k,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+stm32f746g_disco,f746,f746-seconds,seconds_counter.test_seconds_rate,pass,67,35,0,0,d,unresolved clock-accuracy contract,17000,26168,27086,47000,True,26.667 kHz ideal zero-phase comparison; not a validated defect boundary,1200 ms; require one to two integer ticks,tests/drivers/counter/counter_seconds/src/main.c,10-12;20-42,not run,source-supported; not reference-validated,primary configuration
+nucleo_h753zi,h753,h753-rtc,rtc_api.test_alarm,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-rtc,rtc_api.test_alarm_callback,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-rtc,rtc_api.test_set_get_calibration,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-rtc,rtc_api.test_set_get_time,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-rtc,rtc_api.test_time_counting,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-rtc,rtc_api.test_update_callback,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-rtc,rtc_api.test_y2k,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_set_top_value_with_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_no_callback.test_set_top_value_without_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_single_shot_alarm_notop,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_single_shot_alarm_top,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_multiple_alarms,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_all_channels,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_valid_function_without_alarm,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_late_alarm,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_late_alarm_error,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_short_relative_alarm,skip,10,0,92,0,,,,,32287,32756,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-counter,counter_basic.test_cancelled_alarm_does_not_expire,skip,0,0,102,0,,,,,,,False,,,,,not run,no observed failure,primary configuration
+nucleo_h753zi,h753,h753-seconds,seconds_counter.test_seconds_rate,pass,102,0,0,0,,,,,29760,33600,False,,,,,not run,no observed failure,primary configuration

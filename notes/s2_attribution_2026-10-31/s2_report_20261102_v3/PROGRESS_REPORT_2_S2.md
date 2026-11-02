@@ -62,9 +62,9 @@ Capability skips remain skips.
 | STM32F4 Discovery | RTC | 7 | 5 / 2 | 5 / 2 | 3 |
 | STM32F4 Discovery | Counter basic | 11 | 4 / 7 | 4 / 7 | 2 |
 | STM32F4 Discovery | Counter seconds | 1 | 1 / 0 | 1 / 0 | 1 |
-| Nucleo-F767ZI | RTC | 7 | 5 / 2 | 5 / 2 | 3 |
-| Nucleo-F767ZI | Counter basic | 11 | 4 / 7 | 4 / 7 | 2 |
-| Nucleo-F767ZI | Counter seconds | 1 | 1 / 0 | 1 / 0 | 1 |
+| Nucleo-F767ZI (F4 configuration replica) | RTC | 7 | 5 / 2 | 5 / 2 | 3 |
+| Nucleo-F767ZI (F4 configuration replica) | Counter basic | 11 | 4 / 7 | 4 / 7 | 2 |
+| Nucleo-F767ZI (F4 configuration replica) | Counter seconds | 1 | 1 / 0 | 1 / 0 | 1 |
 | STM32F746G Discovery | RTC | 7 | 5 / 2 | 5 / 2 | 3 |
 | STM32F746G Discovery | Counter seconds | 1 | 1 / 0 | 1 / 0 | 1 |
 | Nucleo-H753ZI | RTC | 7 | 5 / 2 | 5 / 2 | 0 |
@@ -74,7 +74,7 @@ Capability skips remain skips.
 | Board | Declared cases | Nominal runnable / skipped | Runnable at any legal setting | Observed flip cases / runnable at any setting | Always skipped | Missing slots |
 |---|---:|---:|---:|---:|---:|---:|
 | STM32F4 Discovery | 19 | 10 / 9 | 10 | 6/10 | 9 | 0 |
-| Nucleo-F767ZI | 19 | 10 / 9 | 10 | 6/10 | 9 | 0 |
+| Nucleo-F767ZI (F4 configuration replica) | 19 | 10 / 9 | 10 | 6/10 | 9 | 0 |
 | STM32F746G Discovery | 8 | 6 / 2 | 6 | 4/6 | 2 | 0 |
 | Nucleo-H753ZI | 19 | 9 / 10 | 10 | 0/10 | 9 | 0 |
 
@@ -98,7 +98,7 @@ replicas share sources, driver, and simulator and are not independent subjects.
 | Board | (a) Single-boundary wait | (b) Phase-dependent | (c) Cleanup cascade | (d) Unresolved rate contract |
 |---|---:|---:|---:|---:|
 | STM32F4 Discovery | 1 (27) | 3 (80) | 1 (44) | 1 (35) |
-| Nucleo-F767ZI | 1 (27) | 3 (80) | 1 (44) | 1 (35) |
+| Nucleo-F767ZI (F4 configuration replica) | 1 (27) | 3 (80) | 1 (44) | 1 (35) |
 | STM32F746G Discovery | 1 (27) | 2 (36) | 0 (0) | 1 (35) |
 | Nucleo-H753ZI | 0 (0) | 0 (0) | 0 (0) | 0 (0) |
 

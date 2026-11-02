@@ -1,12 +1,12 @@
-board,unit_id,application,launches,declared_cases,nominal_runnable,nominal_skipped,runnable_at_any_setting,always_skipped,cases_with_any_failure,pass_slots,fail_slots,skip_slots,missing_slots
-stm32f4_disco,f4-rtc,tests/drivers/rtc/rtc_api,102,7,5,2,5,2,3,447,63,204,0
-stm32f4_disco,f4-counter,tests/drivers/counter/counter_basic_api,102,11,4,7,4,7,2,276,88,758,0
-stm32f4_disco,f4-seconds,tests/drivers/counter/counter_seconds,102,1,1,0,1,0,1,67,35,0,0
-nucleo_f767zi,f767-rtc,tests/drivers/rtc/rtc_api,102,7,5,2,5,2,3,447,63,204,0
-nucleo_f767zi,f767-counter,tests/drivers/counter/counter_basic_api,102,11,4,7,4,7,2,276,88,758,0
-nucleo_f767zi,f767-seconds,tests/drivers/counter/counter_seconds,102,1,1,0,1,0,1,67,35,0,0
-stm32f746g_disco,f746-rtc,tests/drivers/rtc/rtc_api,102,7,5,2,5,2,3,447,63,204,0
-stm32f746g_disco,f746-seconds,tests/drivers/counter/counter_seconds,102,1,1,0,1,0,1,67,35,0,0
-nucleo_h753zi,h753-rtc,tests/drivers/rtc/rtc_api,102,7,5,2,5,2,0,510,0,204,0
-nucleo_h753zi,h753-counter,tests/drivers/counter/counter_basic_api,102,11,3,8,4,7,0,316,0,806,0
-nucleo_h753zi,h753-seconds,tests/drivers/counter/counter_seconds,102,1,1,0,1,0,0,102,0,0,0
+board,unit_id,application,launches,declared_cases,nominal_runnable,nominal_skipped,runnable_at_any_setting,always_skipped,cases_with_any_failure,pass_slots,fail_slots,skip_slots,missing_slots,board_role
+stm32f4_disco,f4-rtc,tests/drivers/rtc/rtc_api,102,7,5,2,5,2,3,447,63,204,0,primary configuration
+stm32f4_disco,f4-counter,tests/drivers/counter/counter_basic_api,102,11,4,7,4,7,2,276,88,758,0,primary configuration
+stm32f4_disco,f4-seconds,tests/drivers/counter/counter_seconds,102,1,1,0,1,0,1,67,35,0,0,primary configuration
+nucleo_f767zi,f767-rtc,tests/drivers/rtc/rtc_api,102,7,5,2,5,2,3,447,63,204,0,F4 configuration replica (F767)
+nucleo_f767zi,f767-counter,tests/drivers/counter/counter_basic_api,102,11,4,7,4,7,2,276,88,758,0,F4 configuration replica (F767)
+nucleo_f767zi,f767-seconds,tests/drivers/counter/counter_seconds,102,1,1,0,1,0,1,67,35,0,0,F4 configuration replica (F767)
+stm32f746g_disco,f746-rtc,tests/drivers/rtc/rtc_api,102,7,5,2,5,2,3,447,63,204,0,primary configuration
+stm32f746g_disco,f746-seconds,tests/drivers/counter/counter_seconds,102,1,1,0,1,0,1,67,35,0,0,primary configuration
+nucleo_h753zi,h753-rtc,tests/drivers/rtc/rtc_api,102,7,5,2,5,2,0,510,0,204,0,primary configuration
+nucleo_h753zi,h753-counter,tests/drivers/counter/counter_basic_api,102,11,3,8,4,7,0,316,0,806,0,primary configuration
+nucleo_h753zi,h753-seconds,tests/drivers/counter/counter_seconds,102,1,1,0,1,0,0,102,0,0,0,primary configuration

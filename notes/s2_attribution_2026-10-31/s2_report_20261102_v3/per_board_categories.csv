@@ -1,5 +1,5 @@
-board_id,a_cases,a_failure_slots,b_cases,b_failure_slots,c_cases,c_failure_slots,d_cases,d_failure_slots
-f4,1,27,3,80,1,44,1,35
-f767,1,27,3,80,1,44,1,35
-f746,1,27,2,36,0,0,1,35
-h753,0,0,0,0,0,0,0,0
+board_id,a_cases,a_failure_slots,b_cases,b_failure_slots,c_cases,c_failure_slots,d_cases,d_failure_slots,board_role
+f4,1,27,3,80,1,44,1,35,primary configuration
+f767,1,27,3,80,1,44,1,35,F4 configuration replica (F767)
+f746,1,27,2,36,0,0,1,35,primary configuration
+h753,0,0,0,0,0,0,0,0,primary configuration

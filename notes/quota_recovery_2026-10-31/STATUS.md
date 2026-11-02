@@ -1,5 +1,44 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — reference packet frozen, SSH blocked, 2026-11-02
+
+The user reviewed S2 and authorized reference validation first, then E audit
+and quota-interrupted resumption. F767 must be labeled an F4 configuration
+replica in every derived table; that label is now explicit in the current
+S2 report/CSVs without changing any outcome or count. Full-application versus
+isolated results remain side by side, with phase supported but not measured.
+
+The first BatchMode-only LS6 queue/quota check returned Permission denied with
+password/MFA instructions. Remote access stopped immediately; no pull, build,
+simulation, deletion, reference job or E job was submitted. The user must
+reconnect personally and confirm before remote access resumes.
+
+Meanwhile new task-specific reference sources, new outer adapters, and the
+pre-execution DESIGN amendment were prepared locally. Protocol:
+`notes/s2_reference_2026-11-02_v1/PROTOCOL.md`; sealed packet in its `packet/`.
+Plan SHA-256 `ceb14326dea354408799e1e9a2356ee5c29dec4851998ad3fb56107798a3e7c7`;
+code-manifest SHA-256 `c649855b2146b0fa46cc9ac18695f330f875af17e1893789cde49fc2be02acbd`.
+Eleven new reference builds, 77 qualification launches, then 274 evaluation
+launches covering all 470 primary failures. No reference has been built or run.
+
+Planned job: development/TRA25006, one node, two-hour limit, at most 2 SUs;
+four concurrent builds then 32 Launcher workers, with a qualification gate
+before evaluation. It uses the original build/run body unchanged, new sources,
+SCRATCH builds/records and node-local runtime. Kept ELFs/logs/configurations and
+raw records are archived on WORK, with before/after protection audits and a
+fresh headroom check before publishing. No normal reference submission is
+authorized by the packet. A failing reference is flagged for firmware/simulator
+investigation, not test brittleness. The seconds-rate contract is retained
+alongside a separate legal-clock progress reference.
+
+Next after reconnection: commit/push prepared code from the Mac; git pull only
+on LS6 (3546149 is finished), verify HEAD/seals, inspect queue/headroom, and
+submit the development reference job once. Reconcile any uncertain sbatch
+acceptance rather than duplicating it. On reference completion transfer,
+verify and update the per-failure table. Only then audit E's partial records,
+register its exact infrastructure-interrupted retry list, and submit approved
+chunks of at most three hours with reported SUs. E2 and paper edits stay held.
+
 ## Latest checkpoint — replay evidence verified and S2 report delivered, 2026-11-02
 
 Job **3546149 COMPLETED 0:0**, elapsed **00:12:26**, scheduler start
