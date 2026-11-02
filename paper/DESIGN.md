@@ -1381,3 +1381,58 @@ one node, 02:00:00, TRA25006, and no dependency. The S2 production
 simulations (job 3535524) are not rerun. No new builds or simulations are
 run. The earlier conditional replay plan stays unfrozen until this archive is
 returned and its coverage, checksums, ELF and logs are independently verified.
+
+## 2026-11-01 S2 archive verified, replay roster frozen, storage check before replays
+
+S2 evidence-return job 3544535 COMPLETED (exit 0, 8:08) with no new builds or
+simulations. Its archive, SHA-256
+`0de8c18ebabe0dd8e91b4df43072dbd1aa5843e1455f455831afbf00d951d85e`, was
+transferred and independently verified on the Mac with the unchanged
+`verify_returned.py` and `audit_primary.py`: 9,117 manifest files, source
+copies, protected before/after (30,067 unchanged), logs, traces, inputs and
+reused ELFs. All five returned audit files match byte for byte. The audit
+requires the DESIGN snapshot registered in the sealed plan
+(`a4e09739...`, commit `ea7ab441`), so it read a local view substituting only
+that file, as the LS6 collector did with a read-only bind. Result: 1,122 of
+1,122 records complete, no errors, no missing or duplicate cases; case slots
+3,022 pass, 470 fail, 3,138 skip, 0 missing. Failures remain unattributed.
+
+Replay roster frozen from that verified audit by the unchanged
+`prepare_replay_plan.py`: 274 full-application launches covering all 470
+observed case failures; f4-rtc 27, f4-counter 44, f4-seconds 35, f767-rtc 27,
+f767-counter 44, f767-seconds 35, f746-rtc 27, f746-seconds 35. H753 has no
+failures and no replays. `replay_proposal.json` SHA-256
+`c8dc42ae2e5e5b54903fba91eef03a60ba982b8f9fd0b5103182bd4e9877f84e`; it
+identifies the source archive and return verification. The roster equals the
+earlier records-only draft in every launch, record hash, trace hash, failed
+case, unit, frequency and condition, so that condition holds with no
+differences to report.
+
+Infrastructure defect fixed before any job used it. `run_packed.sh` (SHA-256
+`f7b6b6adad43724523834c5dcb7bedad2653a9a6475fb7ca751273b98f373f29`) stopped writers by process group, but task-level `timeout` moves itself
+and the container to a separate group. A login-node test with the same nesting
+left `timeout` and its child alive after a group TERM and nothing alive after a
+session TERM. A surviving simulation would make `publish.py` refuse the archive
+on a walltime interrupt. It now signals the session (SHA-256
+`2507fe4593bf49785953bbe8ecb24a744b0815868117eca2dcd4e5daa8a9872b`). No scientific job has used either
+version. Simulation code and the roster are unaffected.
+
+Storage check, not an experiment: development queue, one node, 00:30:00,
+TRA25006, at most 0.5 SU. It runs no firmware, no builds and never calls the
+simulation body. `fixture.sbatch` (`3dda14bbfbb6cfd21c169515bd60a972d518aef12236f8d7f5e02372d334c952`),
+`fixture_task.sh` (`fd51ae2dd7c22d44dd3b252cc532ba53d97a16a346dce1f8a3df2968426aec15`),
+`fixture_probe.py` (`44c63fe29145c200aeecc1cf465c3c7b74a54500d68325fcc2789ed6d5cc3542`) and
+`fixture_check.py` (`26284bea2c6e48b1adc48887dde056d1e38ec4b51efc5709b2c5400b4c1796bb`). Thirty-two
+Launcher tasks use the replay mounts and time/timeout nesting, repeat the replay
+worker's read-only preconditions across the whole roster, confirm read-only
+originals, SCRATCH output and private node-local runtime, then write until a real
+Slurm USR1 interrupts them. It passes only if no writer survives, the interrupted
+archive publishes and verifies on WORK, the output stays unchanged afterwards,
+and protected checks and the primary bundle are unchanged. If it fails, replays
+are not submitted and the failure is reported.
+
+The user pre-approved the replay job on 2026-10-31 (normal queue, one node, at
+most one hour, about 1 SU, TRA25006), to be submitted once the archive verifies.
+Its sealed code manifest is registered in a further dated note before execution.
+Replay mismatches are reported separately and never replace a primary verdict;
+missing replay verdicts stay missing.

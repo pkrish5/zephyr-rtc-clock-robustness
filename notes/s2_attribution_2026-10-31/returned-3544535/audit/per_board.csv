@@ -1,0 +1,5 @@
+board_id,board,applications,launches,declared_cases,nominal_runnable,nominal_capability_skipped,nominal_pass_cases_with_primary_failure,cases_with_any_primary_failure,runnable_at_any_legal_setting,always_skipped_cases,missing_case_slots
+f4,stm32f4_disco,3,306,19,10,9,6,6,10,9,0
+f746,stm32f746g_disco,2,204,8,6,2,4,4,6,2,0
+f767,nucleo_f767zi,3,306,19,10,9,6,6,10,9,0
+h753,nucleo_h753zi,3,306,19,9,10,0,0,10,9,0

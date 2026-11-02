@@ -1,0 +1,34 @@
+{
+  "archive_bytes": 11354646,
+  "archive_sha256": "0de8c18ebabe0dd8e91b4df43072dbd1aa5843e1455f455831afbf00d951d85e",
+  "collector": {
+    "E2_started": false,
+    "apptainer_version": "apptainer version 1.4.1-1.el8",
+    "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+    "job_id": "3544535",
+    "manuscript_edited": false,
+    "new_builds": 0,
+    "new_simulations": 0,
+    "node": "c307-006",
+    "partition": "development",
+    "plan_sha256": "719b3bc42f2b93f44455a11eca3eacd69eacbbf4e8c714b90300d5a8343d0612",
+    "primary_job_id": "3535524",
+    "runtime_cache_included": false
+  },
+  "independent_audit_files_matching": [
+    "per_board.csv",
+    "per_case.csv",
+    "primary_failures.csv",
+    "record_sha256.json",
+    "report.json"
+  ],
+  "manifest_files_verified": 9117,
+  "new_builds": 0,
+  "new_simulations": 0,
+  "protected_audits": {
+    "protected_after.json": "fd7058042cd5554f1b69d53f27425f778e053519a26588b086301bbb2b8aea7c",
+    "protected_before.json": "1b0ab66879a990ae00238b9783af56de02026b6cc0d1cae713707b371e484fb8"
+  },
+  "replay_reference_attribution_complete": false,
+  "source_snapshot_files_verified": 9089
+}

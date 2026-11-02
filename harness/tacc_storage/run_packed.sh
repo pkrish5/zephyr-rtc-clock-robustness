@@ -17,14 +17,20 @@ finalize() {
     if [ "$finalizing" = 1 ]; then exit "$status"; fi
     finalizing=1
     # Stop writers before any inventory/archive is made. setsid below gives
-    # this command and its local Launcher descendants their own process group.
+    # this command and its local Launcher descendants their own session. Signal
+    # the session, not the process group: task-level timeout(1) moves itself
+    # and the container into a separate group that a group kill would miss.
     if [ -n "$child" ]; then
-        kill -TERM -- "-$child" 2>/dev/null || true
-        for ((i=0;i<30;i++)); do
-            if ! kill -0 -- "-$child" 2>/dev/null; then break; fi
+        pkill -TERM -s "$child" 2>/dev/null || true
+        for ((i=0;i<45;i++)); do
+            if ! pgrep -s "$child" >/dev/null 2>&1; then break; fi
             sleep 1
         done
-        kill -KILL -- "-$child" 2>/dev/null || true
+        pkill -KILL -s "$child" 2>/dev/null || true
+        for ((i=0;i<10;i++)); do
+            if ! pgrep -s "$child" >/dev/null 2>&1; then break; fi
+            sleep 1
+        done
         wait "$child" 2>/dev/null || true
     fi
     if ! python3 "$RTC_REPO/harness/tacc_storage/protected_check.py" \
@@ -52,7 +58,7 @@ set +e
 wait "$child"
 status=$?
 set -e
-# There must be no lingering group member when publication begins, even if
+# There must be no lingering session member when publication begins, even if
 # the command leader exited first. finalize() terminates remaining writers.
 if [ "$status" = 0 ]; then state=complete; fi
 exit "$status"

@@ -1,0 +1,13 @@
+{
+  "archive": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261031-s2-return-3544535/s2-evidence.tar.gz",
+  "collector_unchanged": true,
+  "design_snapshot_sha256": "a4e097397af55e57efe721d9dc5a65f84a924d40981cb64d45dcf2625897cadc",
+  "job_id": "3544535",
+  "manifest_files_verified": 9117,
+  "new_builds": 0,
+  "new_simulations": 0,
+  "original_records_modified": false,
+  "selection_unchanged": true,
+  "sha256": "0de8c18ebabe0dd8e91b4df43072dbd1aa5843e1455f455831afbf00d951d85e",
+  "source_sha256": "891054aebdfaf8d00e29d10e90cab456fb1de9b51ee30f3288b519b0f409b2a0"
+}
