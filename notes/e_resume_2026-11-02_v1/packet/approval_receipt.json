@@ -1,0 +1,8 @@
+{
+  "source": "Direct human instructions in this chat, after S2 results review",
+  "scope": "E quota-interruption recovery only, incomplete and not-started indices, jobs at most 3 hours, protected checks, new SCRATCH output, verified WORK archives; report job IDs and SUs",
+  "user_instruction": "E RESUME: WORK is below 700,000, so E may resume. Audit the partial E records, add the dated DESIGN.md amendment for infrastructure-interrupted reruns, and resubmit only incomplete and not-started indices in jobs of at most 3 hours, writing to SCRATCH and packing archives as in the new storage pattern. Report job IDs and SUs.",
+  "held": "E2 and manuscript edits; STOP at Phase 3 before/after number table",
+  "qualification_job_id": "3547838",
+  "scope_expansion": false
+}

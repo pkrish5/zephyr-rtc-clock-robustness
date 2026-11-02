@@ -1,0 +1,10 @@
+{
+  "original_scientific_code_files_unchanged": 21,
+  "disjoint_retry_indices": 9551,
+  "complete_originals_selected": 0,
+  "production_bind_arguments_identical_to_verified_fixture": true,
+  "syntactic_python_checks": true,
+  "new_experiments_run_by_local_checks": 0,
+  "fixture_job": "3547838",
+  "fixture_archive_sha256": "0b7ed7e5553752c82959761167c99a826e06817122d79f0085fa8f20d41ad757"
+}

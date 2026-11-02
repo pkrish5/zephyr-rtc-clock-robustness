@@ -1,5 +1,14 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — E recovery ready for approved normal submission, 2026-11-02
+
+3547838 passed independent archive/mount/protected/original-record validation.
+Seven <=3h one-node chunks cover exactly the 9,551 audited eligible indices;
+ceiling 3 SUs each, 21 total, TRA25006, 32 workers, afterok chain. No normal
+recovery job submitted yet. Registration/plan/code seals and qualification
+results: notes/e_resume_2026-11-02_v1/. Original 29 harness errors remain
+missing. E2/paper stay held, with Phase 3 stop before any paper edit.
+
 ## Latest checkpoint — E storage qualification accepted, 2026-11-02
 
 3547838 accepted on development/TRA25006, one node, two-hour limit, ceiling

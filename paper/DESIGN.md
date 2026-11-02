@@ -1631,3 +1631,49 @@ headroom below 700,000. Every submission has a new output namespace and actual
 provenance, with no automatic retries or requeue. Job list and timing-based
 chunk estimates are recorded before execution in a later seal. STOP at Phase 3
 with the before/after number table; E2 and manuscript edits remain held.
+
+## 2026-11-02 E recovery mount qualification passed; normal chunks frozen before execution
+
+Development storage qualification 3547838 completed 0:0 in 7:05. Archive
+0b7ed7e5553752c82959761167c99a826e06817122d79f0085fa8f20d41ad757
+was independently checked for exact coverage (119 entries), extracted bytes,
+metadata seals and both 30,067-file protected checks. All 32 actual container
+mount probes passed. The 35,708 retained original E evidence files matched
+the audit ledger. No firmware, Renode evaluator or compiler ran in qualification.
+WORK had 687,233 files at publication, below the 700,000 E recovery gate.
+
+All 7,824 complete primary evaluations have saved full-worker resource files,
+including their automatic replay/reference work when applicable. Their elapsed
+median/p95/maximum are 34.845/110.1/320.79 seconds; maximum recorded peak RSS
+is 331,924 KiB. Exact profiles and family/variant/operator summaries are in the
+verified qualification archive. These are infrastructure cost measurements,
+not changes to scientific results.
+
+Freeze notes/e_resume_2026-11-02_v1/packet/resume_plan.json, SHA-256
+faaed0c9b07bb664fe90295a918141140ac864037b4838c1a64f376976e20b8b.
+Its seven disjoint ordered chunks have 1436, 1437, 1392, 1435, 1436, 1437 and
+978 indices, exactly the 9,551 previously audited eligible indices. None of
+the 7,824 complete originals, including 29 harness errors, is selected. Each
+job uses normal/TRA25006, one node, 32 Launcher workers, at most 03:00:00,
+no automatic requeue and a ten-minute packing signal. SU reservation ceiling
+is 3 per job, 21 total. The per-index budgeting rule is ceil(1.5 times the
+larger of global and family/variant/operator full-worker p95 plus 10 seconds).
+Each chunk has at most 8,000 budgeted seconds per worker, plus 1,800 seconds
+for setup/verification/publication and one maximum-budget task tail. Estimated
+node times including that reserve/tail are 2.86, 2.86, 2.81, 2.86, 2.86, 2.86
+and 2.15 hours. These are budget estimates, not runtime guarantees.
+
+The new recovery adapters only check eligible indices, preserve read-only
+mounts and provide fresh SCRATCH/runtime/provenance. They exec the original
+sealed worker_e.py without importing or changing its simulation loops. Original
+sources, variants, ELFs, control results, forecasts, stimuli and all old code
+hashes stay unchanged. The production bind arguments equal the verified fixture.
+All original E evidence is rehashed before and after every chunk. A new STOP
+or process/seal error fails the job; later chunks depend on successful earlier
+jobs. Every job has a separate physical namespace and verified WORK archive.
+Completed new missing outcomes remain missing. An interrupted job is audited
+before any new selection; no blind resubmission or primary-result replacement.
+The user's scoped E-recovery approval authorizes these <=3h chunks after the
+specified gates; report IDs and SUs at submission, honor queue limits, and stop
+on uncertain acceptance or authentication trouble. E2 and manuscript edits
+remain held. STOP at Phase 3 with the before/after number table.

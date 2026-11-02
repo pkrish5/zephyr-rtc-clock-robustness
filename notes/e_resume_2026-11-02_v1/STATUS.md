@@ -1,5 +1,26 @@
 # E quota-interruption recovery, 2026-11-02
 
+## Latest checkpoint — fixture verified; normal chunks sealed, 2026-11-02
+
+3547838 completed 0:0 in 7:05. Independently verified its exact 119-entry
+archive (0b7ed7e5…), all 32 container mount probes, sealed metadata, 35,708
+unchanged retained E evidence files and both 30,067-file protection receipts.
+No builds/firmware ran. WORK publication count 687,233 passes the E gate.
+All 7,824 saved worker resource profiles are complete: median/p95/max elapsed
+34.845/110.1/320.79s, max peak RSS 331,924 KiB.
+
+Seven exact ordered, disjoint normal chunks contain 1,436 / 1,437 / 1,392 /
+1,435 / 1,436 / 1,437 / 978 indices. Total 9,551 eligible; zero completed
+originals selected. Each is one node, 32 Launcher workers, <=03:00:00,
+TRA25006, ceiling 3 SUs each / 21 total. Plan faaed0c9…, production code/input
+manifest ebd8424c6fab92ec31392aa8d03aa3384b1c5d4e233b4524b54773d1d59e8a15.
+Dated DESIGN registration and direct-user scoped approval receipt precede runs.
+Before submitting, commit/push, git pull on LS6, verify clean matching HEAD and
+queue. Submit once per chunk only as queue limits allow, chained afterok to
+prevent further evaluation after a failed chunk; reconcile uncertain acceptance.
+No normal job is submitted yet. Never pull while any chunk is pending/running.
+E2 and manuscript edits stay held; stop at Phase 3 before/after number table.
+
 ## Latest checkpoint — storage qualification submitted, 2026-11-02
 
 Development job **3547838** accepted: TRA25006, one node, 02:00:00,
