@@ -1,0 +1,14 @@
+{
+  "head": "78137bf4aac0e63556dde2bed423cceaddc9cd6c",
+  "partition": "development",
+  "account": "TRA25006",
+  "nodes": 1,
+  "wall_time": "02:00:00",
+  "SU_ceiling": 2,
+  "directory": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/e-partial-audit-20261102-v1",
+  "state": "accepted",
+  "returncode": 0,
+  "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login1)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (development)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.00% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.38% allocated...OK\n3547562\n",
+  "stderr": "",
+  "job_id": "3547562"
+}

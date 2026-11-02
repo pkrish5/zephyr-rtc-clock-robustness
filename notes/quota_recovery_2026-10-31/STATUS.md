@@ -1,5 +1,14 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — E read-only audit accepted, 2026-11-02
+
+After user reconnection, BatchMode access succeeded and clean LS6 HEAD matched
+Mac/origin 78137bf4. Job **3547562** accepted on development/TRA25006, one node,
+two-hour limit, reservation ceiling 2 SUs. Last verified PENDING. It uses the
+unchanged original auditor and new packed SCRATCH output; no E evaluation has
+resumed. Receipt and next verification gates are in
+`notes/e_resume_2026-11-02_v1/`. E2 and manuscript edits remain held.
+
 ## Latest checkpoint — S2 references complete, E audit blocked by SSH
 
 2026-11-02: reference results verified and pushed in 71f1d04f. The first

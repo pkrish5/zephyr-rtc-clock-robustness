@@ -1,5 +1,22 @@
 # E quota-interruption recovery, 2026-11-02
 
+## Latest checkpoint — read-only audit submitted, 2026-11-02
+
+User reconnected and authorized continuation. BatchMode access succeeded;
+queue was empty. LS6 git pull reached Mac/origin commit
+78137bf4aac0e63556dde2bed423cceaddc9cd6c with clean status.
+Development job **3547562** was accepted: TRA25006, one node, 02:00:00,
+reservation ceiling 2 SUs, no requeue and ten-minute packing signal.
+Receipt: `audit_submission_v1.json`. One subsequent read-only sacct check
+reported PENDING, start/end Unknown. No simulations or resume job submitted.
+
+Next: when this job finishes, inspect its logs and packed-state receipt,
+transfer its new archive, independently verify the exact inventory, hashes,
+protected checks and classifications. Any integrity anomaly stops resumption.
+Only then freeze retry indices and the dated DESIGN amendment. E2 and paper
+edits remain held. Do not pull while this job runs; do not resubmit it blindly.
+The earlier authentication-stop account below is retained as history.
+
 ## Current state
 
 S2 reference validation is complete and independently verified; see
