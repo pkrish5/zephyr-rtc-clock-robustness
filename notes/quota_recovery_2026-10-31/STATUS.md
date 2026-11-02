@@ -1,5 +1,21 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — reference job 3547096 accepted, connection dropped
+
+2026-11-02: LS6 reconnected, queue empty, WORK 686,917 files. Clean git pull
+reached registered commit 3fa39cc83b3eea080ef981226276ca9ace7c7501, matching
+the Mac and origin. Reference job **3547096 accepted**, development/TRA25006,
+one node, two-hour limit, at most 2 SUs. Last verified PENDING, no start/end.
+Do not pull LS6 while it is pending or running. No normal job was submitted.
+
+The next status check lost the master connection (Broken pipe) and returned
+Permission denied plus password/MFA instructions. Stopped remote access; no
+authentication, retry or duplicate submission. The user must reconnect again.
+New checkpoint and exact verification/resume steps:
+`notes/s2_reference_2026-11-02_v1/STATUS.md`; accepted receipt in
+`submission_v1.json`. No reference outcome is yet verified. E follows reference
+completion; E2 and paper edits stay held.
+
 ## Latest checkpoint — reference packet frozen, SSH blocked, 2026-11-02
 
 The user reviewed S2 and authorized reference validation first, then E audit
