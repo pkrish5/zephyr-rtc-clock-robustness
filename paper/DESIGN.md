@@ -1446,3 +1446,22 @@ and the runtime guard correctly refused to continue. `runtime.sh` (SHA-256
 other storage variables are not changed by the modules, checked on a login node.
 The same storage check is rerun unchanged: development, one node, 00:30:00,
 TRA25006.
+
+Replay registration, 2026-11-01, before execution. Storage check job 3546138
+COMPLETED and passed all 20 checks (receipt `storage_check_3546138.json`): a real
+Slurm USR1 interrupted 32 Launcher writers, none survived, the interrupted archive
+(`b26c471f...`) published and verified on WORK, loose output stayed unchanged
+afterwards, the replay preconditions held for the whole roster, the primary bundle
+gained nothing, and all 30,067 protected files were unchanged before and after.
+
+Replay job: normal queue, TRA25006, one node, 01:00:00 with a ten-minute packing
+reserve, 32 local Launcher workers, at most 1 SU, no rebuilds and no dependency.
+Roster `replay_proposal.json` (`c8dc42ae2e5e5b54903fba91eef03a60ba982b8f9fd0b5103182bd4e9877f84e`): 274 launches, 470
+case failures. Code manifest `seal/code.sha256.json` (`9d61ee5563fb13d8c80c9e2d3ae7a57e880b243cfd68040752debbce77b11b3d`),
+packet `seal/submission_proposal.json` (`de4941ed3b759416b6e71ec525807dcb7a6f8864ae8209e6f4045c8a959e27a2`).
+Frozen simulation body `harness/tacc_s2/worker.py` is unchanged
+(`a1737e8a973b8147f6834a443e544e736723e6045dd0e0c264bddb4e7b116f86`). The packet's
+`execution_authorized: false` is its generator's fixed text; authorization is the
+user's pre-approval in `approval_receipt.json`. Each launch runs once. Mismatches
+and missing replay verdicts are reported separately, not rerun and never substituted
+for a primary verdict.

@@ -1,0 +1,10 @@
+{
+  "approved_by": "user, in chat, 2026-10-31",
+  "decision": "REPLAYS PRE-APPROVED: once the S2 archive passes verification, freeze the replay list and submit the replay job without waiting for approval.",
+  "limits": {"queue": "normal", "nodes": 1, "max_wall_time": "01:00:00", "approx_su": 1, "account": "TRA25006"},
+  "conditions_met": {
+    "archive_verified": "job 3544535, returned-3544535/audit/return_verification.json",
+    "roster_frozen": "replay_proposal.json, 274 launches, 470 case failures",
+    "compute_node_storage_check": "job 3546138, storage_check_3546138.json"
+  }
+}
