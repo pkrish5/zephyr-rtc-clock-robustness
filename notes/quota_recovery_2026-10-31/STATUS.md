@@ -1,5 +1,14 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — E audit verified, before resumption, 2026-11-02
+
+3547562 completed 0:0, 27:08. Independent verification: 7,824 complete,
+1 incomplete, 9,550 not started; 0 integrity anomalies or missing follow-ups.
+Preserve 29 finalized harness errors. Exact 9,551-index recovery list and dated
+amendment frozen in notes/e_resume_2026-11-02_v1/packet/ and DESIGN.md.
+WORK 687,145 at publication. Infrastructure-only development mount fixture is
+prepared, not yet submitted; no evaluations resumed. E2/paper remain held.
+
 ## Latest checkpoint — E read-only audit accepted, 2026-11-02
 
 After user reconnection, BatchMode access succeeded and clean LS6 HEAD matched

@@ -1,0 +1,24 @@
+{
+  "anomalies": 0,
+  "classifications": {
+    "complete-and-valid": 7824,
+    "incomplete": 1,
+    "not-started": 9550
+  },
+  "completed_outcomes": {
+    "fail": 246,
+    "harness_error": 29,
+    "pass": 7549
+  },
+  "execution_sha256": "3bbd9f88a717442b4900d646a0f54db5636a735ab750b5ae78deae08b0b20b8c",
+  "followups_missing": 0,
+  "job_id": "3547562",
+  "new_builds": 0,
+  "new_simulations": 0,
+  "originals_modified": false,
+  "quota_evidence_sha256": "4e6504a40a5e4cfbc340b9d14abf7d7df44b0ece704909fcd3410ec0793b89f2",
+  "resume_allowed": true,
+  "retry_count": 9551,
+  "source_sha256": "43364d36d82af2725a45fc33db5db45fc47a6d164c84bf9192670400eb47e952",
+  "tasks_sha256": "6ff6e45b9177594ed522d402c040e08a9382ca5942e23d95cd4af619742112ff"
+}

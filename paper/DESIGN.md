@@ -1593,3 +1593,41 @@ Only after its exact classification is verified will an additional dated
 amendment freeze the incomplete/not-started retry indices. Complete records,
 including finalized harness errors and missing verdicts, remain unchanged.
 E2 and paper edits stay held.
+
+## 2026-11-02 E quota-interruption recovery, before any resumed evaluation
+
+The read-only partial-index audit 3547562 completed 0:0 in 27:08; its archive
+f359400fd714d4b717ea9753dafddb0c6085d487580de598b2c7d7590b04e3d2
+was independently verified, including all 16 entries, internal hashes and
+both full 30,067-file protection checks. No integrity anomalies or incomplete
+derived follow-ups were found. Of 17,375 evaluations, 7,824 are complete and
+valid (7,549 pass, 246 fail, 29 finalized harness errors), one is incomplete
+(index 7979, claim/partial monitor but no verdict), and 9,550 were not started.
+
+Only the 9,551 incomplete/not-started indices may resume. Their exact list is
+notes/e_resume_2026-11-02_v1/packet/retry_indices.json, SHA-256
+3b2c67281af37b8092e9c6a4c896f2bac8beccacd8c3850579707cef4fdd7830;
+selection.json (3e4d45cb27a21bd49d673d310607ca031c65edff0655820e7d89ad05e1ebff2d)
+records each retained primary hash, interrupted-file hashes, and all excluded
+and eligible indices. Quota-interrupted evaluations without a final verdict
+are rerun under the user's approved recovery. This is distinct from finalized
+harness-error missing verdicts: all 29 remain missing, as do any new finalized
+missing outcomes. Existing complete records and their follow-ups are kept as is.
+
+Before resumption, qualify the storage mounts on development without invoking
+the E evaluator, Renode or a compiler; profile only the saved full-worker time
+records. Freeze the fixture code/inputs before submission. The exact protocol
+is notes/e_resume_2026-11-02_v1/PROTOCOL.md. Retain the original STOP, source,
+execution/task seals, forecasts, ELFs and old records read only. New SCRATCH
+output is overlaid at the original logical paths, with original builds and
+metadata nested read only; node-local home/cache/tmp and verified archive-only
+WORK publication replace the former loose-WORK runtime. No scientific code,
+source, stimulus, timeout, transformation or build changes are registered.
+
+Only after this infrastructure qualification passes may exact disjoint chunks
+be frozen and submitted under the prior E recovery approval, normal/TRA25006,
+one node each, at most three hours, with reported SU estimates and fresh
+headroom below 700,000. Every submission has a new output namespace and actual
+provenance, with no automatic retries or requeue. Job list and timing-based
+chunk estimates are recorded before execution in a later seal. STOP at Phase 3
+with the before/after number table; E2 and manuscript edits remain held.

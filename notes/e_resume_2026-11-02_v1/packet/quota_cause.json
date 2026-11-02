@@ -1,0 +1,10 @@
+{
+  "sha256": "4e6504a40a5e4cfbc340b9d14abf7d7df44b0ece704909fcd3410ec0793b89f2",
+  "stderr": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261024-repair-v1/logs/evaluate12h-3535400.err",
+  "stop": {
+    "exit_code": "1",
+    "index": "7979",
+    "reason": "repair adapter/container process failed",
+    "stage": "evaluate"
+  }
+}

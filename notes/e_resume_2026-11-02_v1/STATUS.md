@@ -1,5 +1,25 @@
 # E quota-interruption recovery, 2026-11-02
 
+## Latest checkpoint — E audit verified, fixture prepared, 2026-11-02
+
+Audit 3547562 completed 0:0 in 27:08. Returned archive f359400f… is independently
+verified (16 exact entries, internal hashes, both protected checks). Classification:
+7,824 complete and valid (7,549 pass, 246 fail, 29 finalized harness errors),
+1 incomplete (7979), 9,550 not started, 0 anomalies, 0 missing derived follow-ups.
+The 29 saved harness errors remain missing and will never enter recovery.
+WORK publication count 687,145 passes the 700,000 E gate.
+
+Exact retry list: packet/retry_indices.json, 9,551 indices, SHA-256 3b2c6728…;
+selection seal 3e4d45cb…. Dated DESIGN amendment is written before any resumed
+run. PROTOCOL.md and new infrastructure-only adapters qualify original read-only
+mounts and SCRATCH overlays without invoking Renode, a compiler or the E worker.
+They also profile saved full-worker timings to budget later normal chunks.
+The development fixture is prepared but not yet submitted: one node, two hours,
+TRA25006, at most 2 SUs. It must pass archive/hash/mount verification before any
+normal recovery submission. No E evaluation has resumed. E2/paper edits held.
+Fixture manifest: 804df2c9b5111accb65222c57e07dfc6b9a28863f3ac87d7325eb883560857ff.
+Local protected audit again reports 30,067 unchanged; manuscript unchanged.
+
 ## Latest checkpoint — read-only audit submitted, 2026-11-02
 
 User reconnected and authorized continuation. BatchMode access succeeded;

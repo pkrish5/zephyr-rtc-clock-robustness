@@ -1,0 +1,109 @@
+[
+  {
+    "index": 0,
+    "operator": "fast",
+    "version_id": "reference-rtc_alarm_callback"
+  },
+  {
+    "index": 1,
+    "operator": "slow",
+    "version_id": "reference-rtc_alarm_callback"
+  },
+  {
+    "index": 2,
+    "operator": "nonarrival",
+    "version_id": "reference-rtc_alarm_callback"
+  },
+  {
+    "index": 3,
+    "operator": "offset_early",
+    "version_id": "reference-rtc_alarm_callback"
+  },
+  {
+    "index": 4,
+    "operator": "offset_late",
+    "version_id": "reference-rtc_alarm_callback"
+  },
+  {
+    "condition": "min",
+    "index": 5,
+    "operator": "legal",
+    "seed": 0,
+    "version_id": "reference-rtc_alarm_callback"
+  },
+  {
+    "condition": "max",
+    "index": 6,
+    "operator": "legal",
+    "seed": 0,
+    "version_id": "reference-rtc_alarm_callback"
+  },
+  {
+    "index": 7,
+    "operator": "fast",
+    "version_id": "reference-rtc_alarm_pending"
+  },
+  {
+    "index": 8,
+    "operator": "slow",
+    "version_id": "reference-rtc_alarm_pending"
+  },
+  {
+    "index": 9,
+    "operator": "nonarrival",
+    "version_id": "reference-rtc_alarm_pending"
+  },
+  {
+    "index": 10,
+    "operator": "offset_early",
+    "version_id": "reference-rtc_alarm_pending"
+  },
+  {
+    "index": 11,
+    "operator": "offset_late",
+    "version_id": "reference-rtc_alarm_pending"
+  },
+  {
+    "condition": "min",
+    "index": 12,
+    "operator": "legal",
+    "seed": 0,
+    "version_id": "reference-rtc_alarm_pending"
+  },
+  {
+    "condition": "max",
+    "index": 13,
+    "operator": "legal",
+    "seed": 0,
+    "version_id": "reference-rtc_alarm_pending"
+  },
+  {
+    "index": 14,
+    "operator": "fast",
+    "version_id": "reference-rtc_time_counting"
+  },
+  {
+    "index": 15,
+    "operator": "slow",
+    "version_id": "reference-rtc_time_counting"
+  },
+  {
+    "index": 16,
+    "operator": "nonarrival",
+    "version_id": "reference-rtc_time_counting"
+  },
+  {
+    "condition": "min",
+    "index": 17,
+    "operator": "legal",
+    "seed": 0,
+    "version_id": "reference-rtc_time_counting"
+  },
+  {
+    "condition": "max",
+    "index": 18,
+    "operator": "legal",
+    "seed": 0,
+    "version_id": "reference-rtc_time_counting"
+  }
+]
