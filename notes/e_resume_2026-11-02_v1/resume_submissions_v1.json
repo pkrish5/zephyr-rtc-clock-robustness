@@ -1,0 +1,93 @@
+{
+  "head": "f25ac1b65a793d24bef792c14a13c87062026ad3",
+  "account": "TRA25006",
+  "partition": "normal",
+  "nodes_per_job": 1,
+  "wall_time_per_job": "03:00:00",
+  "SU_ceiling_per_job": 3,
+  "SU_ceiling_all_seven": 21,
+  "queue_before": "",
+  "directory": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/e-recovery-20261102-v1",
+  "state": "all_seven_accepted",
+  "jobs": [
+    {
+      "chunk_id": 0,
+      "indices": 1436,
+      "state": "accepted",
+      "dependency_afterok": null,
+      "SU_ceiling": 3,
+      "returncode": 0,
+      "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login2)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (normal)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.00% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.39% allocated...OK\n3547925\n",
+      "stderr": "",
+      "job_id": "3547925"
+    },
+    {
+      "chunk_id": 1,
+      "indices": 1437,
+      "state": "accepted",
+      "dependency_afterok": "3547925",
+      "SU_ceiling": 3,
+      "returncode": 0,
+      "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login2)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (normal)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.00% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.39% allocated...OK\n3547926\n",
+      "stderr": "",
+      "job_id": "3547926"
+    },
+    {
+      "chunk_id": 2,
+      "indices": 1392,
+      "state": "accepted",
+      "dependency_afterok": "3547926",
+      "SU_ceiling": 3,
+      "returncode": 0,
+      "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login2)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (normal)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.00% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.39% allocated...OK\n3547927\n",
+      "stderr": "",
+      "job_id": "3547927"
+    },
+    {
+      "chunk_id": 3,
+      "indices": 1435,
+      "state": "accepted",
+      "dependency_afterok": "3547927",
+      "SU_ceiling": 3,
+      "returncode": 0,
+      "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login2)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (normal)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.00% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.39% allocated...OK\n3547928\n",
+      "stderr": "",
+      "job_id": "3547928"
+    },
+    {
+      "chunk_id": 4,
+      "indices": 1436,
+      "state": "accepted",
+      "dependency_afterok": "3547928",
+      "SU_ceiling": 3,
+      "returncode": 0,
+      "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login2)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (normal)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.00% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.39% allocated...OK\n3547929\n",
+      "stderr": "",
+      "job_id": "3547929"
+    },
+    {
+      "chunk_id": 5,
+      "indices": 1437,
+      "state": "accepted",
+      "dependency_afterok": "3547929",
+      "SU_ceiling": 3,
+      "returncode": 0,
+      "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login2)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (normal)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.00% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.39% allocated...OK\n3547930\n",
+      "stderr": "",
+      "job_id": "3547930"
+    },
+    {
+      "chunk_id": 6,
+      "indices": 978,
+      "state": "accepted",
+      "dependency_afterok": "3547930",
+      "SU_ceiling": 3,
+      "returncode": 0,
+      "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login2)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (normal)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.00% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.39% allocated...OK\n3547931\n",
+      "stderr": "",
+      "job_id": "3547931"
+    }
+  ],
+  "eligible_indices": 9551,
+  "complete_originals_selected": 0
+}

@@ -1,5 +1,36 @@
 # E quota-interruption recovery, 2026-11-02
 
+## Latest checkpoint — seven E recovery jobs accepted, 2026-11-02
+
+All seven scoped normal submissions accepted under TRA25006, one node and
+32 Launcher workers each, three-hour limits, 3-SU ceilings (21 total).
+Last checked all PENDING: 3547925 for Priority; six successors for Dependency.
+Receipt: resume_submissions_v1.json; verification: resume_initial_status_v1.json.
+Clean LS6 HEAD matched registration
+commit f25ac1b65a793d24bef792c14a13c87062026ad3. Never git pull while any job
+is pending/running: the jobs verify this registered code and DESIGN snapshot.
+
+| Chunk | Job | Eligible indices | Dependency |
+|---|---|---:|---|
+| 0 | 3547925 | 1436 | none |
+| 1 | 3547926 | 1437 | afterok:3547925 |
+| 2 | 3547927 | 1392 | afterok:3547926 |
+| 3 | 3547928 | 1435 | afterok:3547927 |
+| 4 | 3547929 | 1436 | afterok:3547928 |
+| 5 | 3547930 | 1437 | afterok:3547929 |
+| 6 | 3547931 | 978 | afterok:3547930 |
+
+Exact disjoint union: 9,551 audited incomplete/not-started indices; no completed
+original, including finalized harness error, is selected. Old inputs, ELFs,
+execution seals, STOP, partial bytes and complete records are read only. New
+job outputs are on SCRATCH with checked WORK archives. No E result is yet
+verified; acceptance is not completion. Do not rerun completed jobs/indices or
+blindly retry an interrupted submission. On completion verify each archive and
+chunk result, recheck all original hashes, union by index with provenance and
+report missing outcomes separately. Stop on any integrity or process failure;
+later dependencies prevent subsequent chunks from executing after failure.
+E2 and manuscript edits remain held. STOP at Phase 3 before/after number table.
+
 ## Latest checkpoint — fixture verified; normal chunks sealed, 2026-11-02
 
 3547838 completed 0:0 in 7:05. Independently verified its exact 119-entry

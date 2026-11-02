@@ -1,5 +1,15 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — E normal recovery submitted, 2026-11-02
+
+3547925, 3547926, 3547927, 3547928, 3547929, 3547930, 3547931 accepted,
+normal/TRA25006. One node / 32 workers / <=3h / ceiling 3 SUs per job,
+21 SUs total, serial afterok chain. Exactly the 9,551 audited eligible indices;
+all complete originals and 29 finalized missing outcomes are excluded. No
+outcomes verified yet. Never pull LS6 while these sealed jobs are pending or
+running (registered commit f25ac1b6). Receipt and next verification steps are
+in notes/e_resume_2026-11-02_v1/STATUS.md. E2/paper held; Phase 3 stop remains.
+
 ## Latest checkpoint — E recovery ready for approved normal submission, 2026-11-02
 
 3547838 passed independent archive/mount/protected/original-record validation.
