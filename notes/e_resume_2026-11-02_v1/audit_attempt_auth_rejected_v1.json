@@ -1,0 +1,15 @@
+{
+  "automatic_retry": false,
+  "job_id": null,
+  "new_builds": 0,
+  "new_simulations": 0,
+  "remote_audit_started": false,
+  "remote_authentication": "rejected with password/MFA instructions",
+  "remote_git_pull_executed": false,
+  "required_next_action": "User reconnects with MFA and confirms; then pull code and submit the prepared development audit once",
+  "ssh_batch_mode": true,
+  "ssh_exit_code": 255,
+  "stage": "read-only E partial-record audit submission",
+  "submission_state": "not_submitted_authentication_failed_before_remote_command",
+  "timestamp_utc": "2026-11-02T18:57:45.220451+00:00"
+}

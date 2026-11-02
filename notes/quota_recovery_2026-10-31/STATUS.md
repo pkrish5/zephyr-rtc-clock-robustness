@@ -1,5 +1,14 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — S2 references complete, E audit blocked by SSH
+
+2026-11-02: reference results verified and pushed in 71f1d04f. The first
+connection to pull that code and submit the read-only E audit was rejected
+before its remote command ran (BatchMode exit 255, password/MFA instructions).
+Stopped with no retry. No E audit/resume job was submitted; LS6 is still last
+verified at 3fa39cc8. User reconnection requested. Exact prepared audit and
+resumption gates: `notes/e_resume_2026-11-02_v1/STATUS.md`.
+
 ## Latest checkpoint — S2 references verified; E audit next, 2026-11-02
 
 Reference job 3547096 COMPLETED 0:0 in 39:00. Independent Mac verification of
