@@ -1,5 +1,22 @@
 # E quota-interruption recovery, 2026-11-02
 
+## Latest checkpoint — storage qualification submitted, 2026-11-02
+
+Development job **3547838** accepted: TRA25006, one node, 02:00:00,
+reservation ceiling 2 SUs, no requeue, ten-minute publication reserve.
+Last checked PENDING, start/end Unknown. Receipt fixture_submission_v1.json.
+Clean LS6 HEAD matched Mac/origin
+registration commit a632aec72c5079685dcbda9944adc99f6994ac78.
+No normal job or E primary evaluation has been submitted. Do not git pull while
+this fixture is pending/running: it checks the sealed DESIGN and code hashes.
+
+Next: independently verify the completed fixture archive and all mount checks,
+read its full-worker resource profile, then freeze exact disjoint <=3h normal
+chunks of the 9,551 eligible indices and report concrete SU estimates under
+the user's scoped E recovery approval. Any fixture anomaly blocks submission.
+Complete originals, including 29 finalized harness errors, stay unchanged.
+E2 and manuscript edits remain held.
+
 ## Latest checkpoint — E audit verified, fixture prepared, 2026-11-02
 
 Audit 3547562 completed 0:0 in 27:08. Returned archive f359400f… is independently

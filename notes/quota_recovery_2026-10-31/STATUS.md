@@ -1,5 +1,12 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — E storage qualification accepted, 2026-11-02
+
+3547838 accepted on development/TRA25006, one node, two-hour limit, ceiling
+2 SUs; registration commit a632aec7. No firmware/builds in this qualification.
+Do not pull LS6 until it finishes. E normal resumption awaits verified mount
+checks and saved timing profiles. See notes/e_resume_2026-11-02_v1/STATUS.md.
+
 ## Latest checkpoint — E audit verified, before resumption, 2026-11-02
 
 3547562 completed 0:0, 27:08. Independent verification: 7,824 complete,
