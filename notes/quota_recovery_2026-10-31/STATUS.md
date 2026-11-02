@@ -1,6 +1,26 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
-## Latest checkpoint — S2 return rerun submitted (supersedes all below)
+## Latest checkpoint — S2 replays submitted, 2026-11-01 (supersedes all below)
+
+S2 return 3544535 COMPLETED 0:0; archive `0de8c18e…` independently verified on
+the Mac (1,122 records; 3,022 pass, 470 fail, 3,138 skip, 0 missing). Failures
+remain unattributed. Roster frozen: 274 launches, 470 failures, identical to the
+records-only draft (`notes/s2_attribution_2026-10-31/replay_plan_20261101_v1/`).
+
+Storage check 3546137 FAILED at the runtime guard in 3 s (module load overwrote
+`APPTAINER_CACHEDIR`; fixed). Rerun 3546138 COMPLETED and passed all 20 checks.
+`run_packed.sh` now stops writers by session, because `timeout` escapes a group
+kill.
+
+**Replay job 3546149 submitted** at registered commit `2cf37d57`: normal,
+TRA25006, one node, 01:00:00, at most 1 SU. PENDING (Resources) at first check.
+Do not `git pull` on LS6 until it finishes; its code hashes are checked at start.
+
+Next: transfer and verify its WORK archive under `tacc_work/packed-results/`,
+compare against primaries, then attribution (a)–(d) per board and reconciliation
+with isolated-case results. E, E2 and manuscript edits stay held.
+
+## Earlier checkpoint — S2 return rerun submitted (superseded)
 
 WORK read **686,770** files after 3544463 completed (0:0, 10:00), so the
 below-700,000 target is **met**. Read-only inventory 3544399 COMPLETED 0:0.
