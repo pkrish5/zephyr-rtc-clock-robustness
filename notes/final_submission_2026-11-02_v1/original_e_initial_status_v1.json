@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-11-03T13:40:28.108962+00:00",
+  "job_id": "3549010",
+  "state": "PENDING",
+  "exit_code": "0:0",
+  "elapsed": "00:00:00",
+  "submission_receipt": "original_e_submission_v1.json",
+  "all_seven_recovery_jobs_completed": true,
+  "ls6_clean_head_before_submission": "2e8d7c43199b9d426f3d1d7dbcb04a15bac78ec9",
+  "protected_before_collection_check_scheduled": true,
+  "new_simulations": 0,
+  "new_builds": 0,
+  "normal_submissions": 0,
+  "phase_B_executed": false
+}

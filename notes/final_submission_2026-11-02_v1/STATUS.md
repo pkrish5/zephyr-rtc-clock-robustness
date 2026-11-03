@@ -1,3 +1,25 @@
+# Latest checkpoint: development collector 3549010 accepted, 2026-11-03
+
+The original-E read-only collector was accepted as job 3549010, development,
+TRA25006, one node, 02:00:00 limit, 2-SU reservation ceiling. One initial check
+shows PENDING, 0:00 elapsed. Do not submit it again. Receipt:
+original_e_submission_v1.json; initial status: original_e_initial_status_v1.json.
+Its exclusive SCRATCH namespace is
+/scratch/10970/pk23377/zephyr-rtc-clock-robustness/e-original-evidence-20261103-v1,
+with collector-3549010.out/.err and submission.json. On completion, the WORK
+packed-results stem is 3549010-e-original-evidence. Transfer four archive
+sidecars/archive into a NEW directory, use the existing generic archive verifier,
+then reconcile all original E bytes and primary indices before Phase B.
+
+LS6 was fast-forwarded by git pull only after all seven sealed recovery jobs
+finished. HEAD matched Mac/origin registration
+2e8d7c43199b9d426f3d1d7dbcb04a15bac78ec9, with clean tracked status and empty
+queue before submission. No remote code edit, normal submission, simulation,
+build or pruning. Do not pull/mutate the collector's code while it runs.
+The automation now checks 3549010 first and explicitly forbids duplicate
+collector/recovery submission. Keep existing missing verdicts missing; proceed
+through verified B then authorized C/D automatically when evidence is ready.
+
 # Latest checkpoint, 2026-11-03 07:35 America/Chicago
 
 The final E chunk 3547931 completed 0:0 in 24:50. Its archive (7,977 entries)

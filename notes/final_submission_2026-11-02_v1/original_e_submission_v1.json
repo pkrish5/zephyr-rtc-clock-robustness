@@ -1,0 +1,55 @@
+{
+  "SU_reservation_ceiling": 2,
+  "account": "TRA25006",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "-A",
+    "TRA25006",
+    "--export=ALL,RTC_REPO=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness",
+    "--output=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/e-original-evidence-20261103-v1/collector-%j.out",
+    "--error=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/e-original-evidence-20261103-v1/collector-%j.err",
+    "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/notes/final_submission_2026-11-02_v1/collect_original_e.sbatch"
+  ],
+  "head": "2e8d7c43199b9d426f3d1d7dbcb04a15bac78ec9",
+  "job_id": "3549010",
+  "nodes": 1,
+  "partition": "development",
+  "queue_before": "",
+  "recovery_job_states": {
+    "3547925": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "3547926": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "3547927": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "3547928": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "3547929": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "3547930": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "3547931": [
+      "COMPLETED",
+      "0:0"
+    ]
+  },
+  "returncode": 0,
+  "started_utc": "2026-11-03T13:39:03.762290+00:00",
+  "state": "accepted",
+  "stderr": "",
+  "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login1)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (development)...OK\n--> Checking available allocation (TRA25006)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.01% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.39% allocated...OK\n3549010\n",
+  "wall_time": "02:00:00"
+}

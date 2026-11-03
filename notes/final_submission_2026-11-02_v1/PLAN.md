@@ -100,3 +100,13 @@ experiments, pruning or changes to frozen inputs/records are authorized.
 Connection persistence cannot replace TACC authentication. BatchMode only;
 on authentication failure, drop or stall stop remote access and pause.
 Complete independent local work where possible before reporting the blocker.
+
+## Original-E collection submitted, 2026-11-03
+
+Job 3549010 (development/TRA25006, one node, two hours, 2-SU ceiling) is already
+accepted. Do not submit it again. Read the submission receipt and initial status
+in this directory, check only its current state, and verify its eventual packed
+archive before final analysis. LS6 HEAD at submission was
+2e8d7c43199b9d426f3d1d7dbcb04a15bac78ec9; do not pull during collection.
+All seven E recovery chunks are verified, so the next evidence dependency is
+this read-only original-record collection, not any additional repair run.
