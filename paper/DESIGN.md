@@ -1677,3 +1677,34 @@ The user's scoped E-recovery approval authorizes these <=3h chunks after the
 specified gates; report IDs and SUs at submission, honor queue limits, and stop
 on uncertain acceptance or authentication trouble. E2 and manuscript edits
 remain held. STOP at Phase 3 with the before/after number table.
+
+## 2026-11-03 E recovery complete; read-only original-evidence collection before final analysis
+
+All seven sealed recovery jobs 3547925–3547931 completed 0:0. Independent
+Mac archive/record verification covers all 9,551 resumed indices, with 9,339
+passes, 212 explicit failures, zero new finalized missing outcomes, and exact
+persisted-field/raw-trace replay agreement for all 212 failures. The 26 legal
+failure slots have passing references (14 unique reference records). All jobs
+checked 30,067 protected files and 35,708 retained old evidence files before and
+after. Original 7,824 complete records, including 29 finalized harness errors,
+remain unchanged; the total 17,375 is operational accounting, not the final
+per-variant repair table. No source, forecast, ELF or prior record is replaced.
+
+Before final analysis, collect existing original E evidence on one development
+node under TRA25006, maximum 02:00:00 (2-SU reservation ceiling). This is a
+read-only infrastructure operation, not a new experiment: no builds, Renode,
+stimulus changes or pruning. The prepared collector copies every old verified
+file, sealed plan/input/build/gate evidence and all existing score/replay/legal
+reference files into a new SCRATCH namespace. It checks input hashes, copied
+bytes and original hashes again, with full protected audits before/after.
+Only an exactly verified archive and sidecars are published to WORK after fresh
+headroom checks; no final evidence is retained only on SCRATCH. Code hashes:
+notes/final_submission_2026-11-02_v1/original_e_collection_code_sha256.json.
+An exclusive submission namespace and receipt prevent duplicate attempts.
+
+The human explicitly waived the former Phase 3 human-approval stop on
+2026-11-02. The complete evidence package and before/after number ledger must
+still be internally verified before manuscript edits; then authorized Phases
+C and D proceed automatically. E2 remains held, failed references remain
+firmware/simulator/contract investigations, F767 remains an F4 configuration
+replica, and supported phase carryover is not described as directly measured.

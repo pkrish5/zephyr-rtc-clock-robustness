@@ -1,0 +1,38 @@
+{
+  "E2_started": false,
+  "accounted_for_original_plus_verified_new": 17375,
+  "combined_operational_outcomes_not_final_repair_analysis": {
+    "fail": 458,
+    "harness_error": 29,
+    "pass": 16888
+  },
+  "expected_total": 17375,
+  "legal_clock_failure_reference_slots": 26,
+  "new_jobs_submitted_this_turn": 0,
+  "new_outcomes": {
+    "fail": 212,
+    "pass": 9339
+  },
+  "old_complete_preserved": 7824,
+  "original_evidence_files_checked_before_and_after_each_job": 35708,
+  "paper_edited": false,
+  "persisted_fields_match": 212,
+  "raw_trace_hash_match": 212,
+  "reference_nonpasses": [],
+  "remaining_indices": 0,
+  "remaining_jobs_last_checked_pending": [],
+  "retained_old_harness_errors": 29,
+  "unchanged_protected_files": 30067,
+  "unique_reference_keys": 14,
+  "verified_chunk_jobs": [
+    "3547925",
+    "3547926",
+    "3547927",
+    "3547928",
+    "3547929",
+    "3547930",
+    "3547931"
+  ],
+  "verified_failure_replays": 212,
+  "verified_new_indices": 9551
+}

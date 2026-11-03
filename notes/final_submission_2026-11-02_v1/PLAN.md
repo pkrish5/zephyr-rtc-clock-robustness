@@ -10,9 +10,9 @@ No paper edit is allowed until the Phase A/B evidence checks actually pass.
 
 ## A: finish and verify existing runs
 
-E recovery chunks 0–5 are independently verified; the final chunk is already
-submitted (3547931). Check them with BatchMode only. Never
-pull LS6 until all sealed recovery jobs finish. Any infrastructure-only retry
+All seven E recovery chunks 3547925–3547931 completed and are independently
+verified. Collect the retained original E evidence next on development, then
+reconcile the union. The sealed-job prohibition on LS6 pulls is satisfied. Any infrastructure-only retry
 uses a fresh exact unfinished-index audit and the existing quota/interruption
 amendment, <=3h, archived SCRATCH output, retained finalized missing verdicts.
 The user now explicitly approves those scoped infrastructure retries. Any

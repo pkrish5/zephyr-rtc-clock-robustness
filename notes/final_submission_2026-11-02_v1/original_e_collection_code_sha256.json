@@ -1,0 +1,8 @@
+{
+  "harness/tacc_storage/publish.py": "54c595f6f633f1a98f7fb5cbd02ace58f98bc73c779556994f940412778fc075",
+  "harness/tacc_storage/run_packed.sh": "2507fe4593bf49785953bbe8ecb24a744b0815868117eca2dcd4e5daa8a9872b",
+  "harness/tacc_storage/runtime.sh": "f8c6ade9e552b51ef62da163dec0f6c33ceb8feefd838894e89c8c1ac1bc9adf",
+  "notes/final_submission_2026-11-02_v1/collect_original_e.py": "ddfe609260bb19f6a2562569890d5b4b6d012fae7c79ca6f1ed56c91b6518edb",
+  "notes/final_submission_2026-11-02_v1/collect_original_e.sbatch": "12c219573ecff2df36f951ae0dd7cf5783ec6411b5258431cce3f257036dc7e8",
+  "notes/final_submission_2026-11-02_v1/submit_original_e.py": "ec92875adb19ecfa326c9ff7ca07e22c7133d70559faf910266195928ec59820"
+}

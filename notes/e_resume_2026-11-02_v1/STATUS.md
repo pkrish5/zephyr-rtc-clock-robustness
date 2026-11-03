@@ -1,3 +1,25 @@
+# Latest checkpoint, 2026-11-03 07:35 America/Chicago
+
+The final E chunk 3547931 completed 0:0 in 24:50. Its archive (7,977 entries)
+and extracted contents match exactly; all 978 indices validated: 961 pass,
+17 fail, zero missing. All 17 failure replays match persisted fields/raw trace.
+All seven chunks: 9,551 indices, 9,339 pass, 212 fail, zero new missing,
+212/212 exact replays and passing references at all 26 legal failure slots.
+All 30,067 protected hashes and 35,708 old evidence hashes passed each job.
+Original plus recovery accounting covers all 17,375 indices; original 29
+finalized harness errors remain missing. Final repair analysis is not done yet.
+Archive SHA256: dae4b7eacafc931716eaf788001c364e863df8ea2824f7bf10ada69c5d54586e.
+
+The sealed jobs have all finished, so the prohibition on LS6 pulls is now
+satisfied. A read-only check found LS6 HEAD still f25ac1b65a793d24bef792c14a13c87062026ad3,
+no tracked changes, and an empty user queue. Register the original-evidence
+collector in DESIGN before submission, commit/push Mac, pull LS6 and verify
+clean matching HEAD. Collector is development/TRA25006, one node, two-hour
+limit, 2-SU ceiling; no simulation/build/prune. Submit with the new one-shot
+submit_original_e.py helper and never duplicate an uncertain receipt.
+Phase B/C wait for that original-evidence archive and full reconciliation.
+Draft/PDF unchanged. No normal job, E2 or new experiment has been submitted.
+
 # Latest checkpoint, 2026-11-03 04:05 America/Chicago
 
 E chunk 5 / 3547930 completed 0:0 in 50:42. Its archive returned via BatchMode
