@@ -1,0 +1,10 @@
+{
+  "python_syntax_checks": true,
+  "mathematical_checks": "Fisher exact known table and prior contrast, Wilson edge cases, legal-interval CDF bounds and symmetry passed",
+  "phase_A_gate_blocks_analysis_when_evidence_missing": true,
+  "gate_failure_created_no_result_directory": true,
+  "dataset_phase_B_not_executed": true,
+  "new_simulations": 0,
+  "manuscript_not_edited": true,
+  "collector_not_submitted": true
+}
