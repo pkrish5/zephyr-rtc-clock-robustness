@@ -1,3 +1,27 @@
+# Latest checkpoint, 2026-11-03 04:05 America/Chicago
+
+E chunk 5 / 3547930 completed 0:0 in 50:42. Its archive returned via BatchMode
+rsync and passed exact inventory (11,714 entries), extracted-file hashes and
+before/after protected checks. Independent validation verified all 1,437 indices:
+1,410 pass, 27 fail, no new missing. All 27 failures match persisted replay
+fields and raw trace hashes; no legal-clock failure slots needed references.
+Archive SHA256: df516d3e5f8a39ea50b2129fa068e0529863a95d146e4e72fd59dcf6e9c3f804.
+
+Six recovery chunks now cover 8,573 indices: 8,378 pass, 195 fail, zero new
+missing; all 195 failure replays agree. The earlier 26 legal failure slots have
+passing references. Original plus verified-new accounting is 16,397/17,375;
+978 evaluations remain in final chunk 3547931, still PENDING at this check.
+The 29 original finalized harness errors remain missing. These counts describe
+operational reconciliation, not final repair effects.
+
+No new jobs, cancellations or LS6 pulls. Fresh local protected audit: all
+30,067 unchanged. Manuscript/PDF baseline hashes unchanged. Continue from the
+final completed archive, then the original-E collector; Phase B/C remain gated
+on that verified evidence. User already authorized C/D after the checkpoint.
+Receipts: queue_checkpoint_20261103_1005_v1.json,
+protected_after_chunk05_receipt.json; E checkpoint_chunks_00_05_v1.json,
+verified-3547930-v1/verification.json and chunk-05-analysis-v1/*.json.
+
 # Latest checkpoint, 2026-11-03 00:34 America/Chicago
 
 E chunk 4 / 3547929 completed 0:0 in 40:10. Its packed archive and sidecars

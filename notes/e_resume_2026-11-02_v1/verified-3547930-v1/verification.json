@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "df516d3e5f8a39ea50b2129fa068e0529863a95d146e4e72fd59dcf6e9c3f804",
+  "exact_archive_entries": 11714,
+  "extracted_inventory_matches": true,
+  "job_id": "3547930",
+  "manifest_sha256": "85105d3f4b88e8075c5328f16792fb9d23548d6bf33ec557564589fd2d930849",
+  "output_state": "complete",
+  "protected_files_unchanged": 30067
+}
