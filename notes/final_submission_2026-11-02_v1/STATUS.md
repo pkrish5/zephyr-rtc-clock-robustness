@@ -1,3 +1,14 @@
+# Latest queue checkpoint, 2026-11-03 07:05 America/Chicago
+
+The final E chunk / 3547931 is now RUNNING (3:40 elapsed; Slurm start
+2026-11-03T07:01:43). Its running ExitCode 0:0 is not a final success. Earlier
+six chunks are independently verified; 978 indices in the last chunk remain
+unverified. No new archive was ready at this check. No LS6 pull, submissions,
+scientific analysis or manuscript edits. Both draft files retain baseline hashes.
+When the final archive completes, verify it before pulling code or submitting
+the authorized development-only original-E collector. Then continue B/C/D with
+no Phase 3 human approval stop. Receipt: queue_checkpoint_20261103_1305_v1.json.
+
 # Latest checkpoint, 2026-11-03 04:05 America/Chicago
 
 E chunk 5 / 3547930 completed 0:0 in 50:42. Its archive returned via BatchMode
