@@ -1,5 +1,34 @@
 # E quota-interruption recovery, 2026-11-02
 
+## Latest checkpoint — four E chunks independently verified, 2026-11-02
+
+3547925/26/27/28 completed 0:0 in 35:50 / 37:25 / 33:29 / 35:23.
+Their archives were returned and independently checked for exact inventory,
+byte hashes, per-index identity, source/ELF/frequency seals, raw traces,
+actual job/module/node provenance, fault-score derivation and follow-ups.
+5,700/5,700 scheduled indices are complete: 5,556 pass, 144 explicit fail,
+zero new finalized missing outcomes. All 144 failures match fresh-process
+replay fields and raw trace hashes; the 26 legal-clock failing slots have
+passing references (14 unique reference records). No reference nonpass or
+replay mismatch. Every job checked all 30,067 protected hashes and 35,708 old
+E evidence files before/after. A new local protected audit also passed.
+
+The original 7,824 completed records remain as audited, including 29 finalized
+harness errors. Original plus verified-new accounting is 13,524/17,375;
+3,851 indices remain. This is an operational checkpoint, not a final repair
+study result or a paper-number change. Phase 3 waits for full reconciliation.
+
+Latest read-only check after verification: 3547929 still PENDING (Priority),
+3547930 and 3547931 PENDING (Dependency), no starts. No new jobs, cancellations,
+resubmissions or LS6 git pulls occurred. Do not pull while any chunk is pending
+or running. Retain the original 21-SU reservation ceiling; no extra job budget
+is added here. E2 and manuscript edits remain held.
+
+Receipts: status_after_chunks_00_03_v1.json and checkpoint_chunks_00_03_v1.json.
+Detailed verification: verified-3547925/26/27/28-v1/verification.json and
+chunk-00/01/02/03-analysis-v1/. VALIDATION_NOTES.md records local checker schema
+corrections against the frozen sources; no run or record was changed.
+
 ## Latest checkpoint — seven E recovery jobs accepted, 2026-11-02
 
 All seven scoped normal submissions accepted under TRA25006, one node and

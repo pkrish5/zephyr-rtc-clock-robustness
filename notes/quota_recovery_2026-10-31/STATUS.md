@@ -1,5 +1,16 @@
 # Quota recovery and S2-first continuation, 2026-10-31
 
+## Latest checkpoint — E chunks 0–3 verified; three still queued, 2026-11-02
+
+3547925–3547928 completed 0:0; all four archives independently verified.
+5,700 new indices: 5,556 pass, 144 fail, no new missing. 144/144 failure
+replays match; references pass for all 26 new legal-clock failures. Protected
+and old-E hashes unchanged. Accounted original+new: 13,524/17,375, with the
+29 original finalized harness errors preserved. 3,851 indices remain.
+3547929 PENDING Priority; 3547930/31 PENDING Dependency. No new submissions
+or LS6 pulls. See notes/e_resume_2026-11-02_v1/STATUS.md and receipts.
+E2/paper held; Phase 3 before/after table still waits for complete evidence.
+
 ## Latest checkpoint — E normal recovery submitted, 2026-11-02
 
 3547925, 3547926, 3547927, 3547928, 3547929, 3547930, 3547931 accepted,

@@ -1,0 +1,8 @@
+{
+  "purpose": "remaining E job status after four archive verifications",
+  "ssh_exit": 0,
+  "stdout": "JobID           JobName      State ExitCode    Elapsed               Start                 End \n------------ ---------- ---------- -------- ---------- ------------------- ------------------- \n3547929       rtc-e-r04    PENDING      0:0   00:00:00             Unknown             Unknown \n3547930       rtc-e-r05    PENDING      0:0   00:00:00             Unknown             Unknown \n3547931       rtc-e-r06    PENDING      0:0   00:00:00             Unknown             Unknown \n3547929 PENDING (Priority)\n3547931 PENDING (Dependency)\n3547930 PENDING (Dependency)\n",
+  "stderr": "",
+  "new_jobs_submitted": 0,
+  "git_pull_performed": false
+}

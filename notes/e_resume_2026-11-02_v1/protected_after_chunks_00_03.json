@@ -1,0 +1,10 @@
+{
+  "full_receipt": "notes/e_resume_2026-11-02_v1/protected_after_chunks_00_03_full.json",
+  "full_receipt_sha256": "1973510b8a19ba3d290f97ea38c7ef3c3c4e1246acd3d8f21a66315f1932fd0b",
+  "count": 30067,
+  "changed": [],
+  "manuscript_sha256": {
+    "paper/draft/main.tex": "2f5c7f32e3528a28969103b4993a64e8b62ab9c256c6148d8333a95d8d85d189",
+    "paper/draft/main.pdf": "5f33635f42e9b9b4ae6e44ee5add20a993c4e52bba3a6895f073cae02f2a42cc"
+  }
+}
