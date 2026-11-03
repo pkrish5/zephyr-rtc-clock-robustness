@@ -1,7 +1,12 @@
 # Final course submission workflow, 2026-11-02
 
-This plan records the latest direct user instructions. Do not edit/stage the
-existing manuscript or PDF before the Phase 3 approval. E2 remains held.
+This plan records the latest direct user instructions. On 2026-11-02, the
+human explicitly removed the Phase 3 human-review stop and requested automatic
+continuation through Phases C and D. Generate and internally verify the complete
+Phase 3 evidence package, then proceed to paper revisions and the artifact
+release without asking for that approval again. E2 remains held. This replaces
+the earlier Phase 3 approval language in historical notes and generated outputs.
+No paper edit is allowed until the Phase A/B evidence checks actually pass.
 
 ## A: finish and verify existing runs
 
@@ -24,7 +29,7 @@ jobs finish. It must pack the original completed records, diagnostics and
 reference evidence without rebuilding, simulating, changing sources or deleting
 anything. Independent validation precedes the E union and Phase B execution.
 
-## B: existing-data analysis and Phase 3 STOP
+## B: existing-data analysis and Phase 3 evidence checkpoint
 
 Prepare/rebuild, without Renode:
 1. Exact source quotations with app/case/line and source hashes: an F4
@@ -45,15 +50,17 @@ Prepare/rebuild, without Renode:
    missingness, exact fault activation and reference/replay accounting. Primary
    samples are not multiplied by diagnostics or board replicas.
 6. Enumerate proposed changed manuscript numbers with old value, new value,
-   source hashes/paths and affected occurrences. No manuscript edits.
+   source hashes/paths and affected occurrences. Do not edit the manuscript during A/B.
 
-STOP and deliver the full Phase 3 package, including E and S2/reference tables,
-examples, sensitivity, two axes and before/after numbers. Do not silently omit
-unknown data, claim a defect from a failing reference, or cross this approval.
+Deliver/save the full Phase 3 package, including E and S2/reference tables,
+examples, sensitivity, two axes and before/after numbers. Verify it internally,
+then continue to C without waiting for a human reply. Do not silently omit
+unknown data or claim a defect from a failing reference. An inconsistency that
+cannot be resolved from retained evidence remains a real blocker.
 
-## C: manuscript, only after approval
+## C: manuscript, authorized after the evidence checkpoint
 
-Apply approved values consistently; insert expansion, repair, sensitivity,
+Apply independently verified values consistently; insert expansion, repair, sensitivity,
 configuration-replica and reconciliation evidence; use simulated seconds;
 distinguish programming, event timing and callback delivery; retain delivery
 assumptions in the exact-calendar example; describe manual source thresholds
@@ -65,7 +72,7 @@ no undefined citations/references or overfull boxes. Built-in compile required.
 
 Root DATA.md linked by README: dataset/table inventory, row/column meanings and
 units, reproduction/TACC commands. One no-Renode table-building command, tested
-in a fresh clone from archived records. Commit/push/tag the approved submission
+in a fresh clone from archived records. Commit/push/tag the verified submission
 and send release tag, final page count and clean-clone test output.
 
 ## Standing operations
@@ -78,3 +85,18 @@ failed attempts. Normal cost estimate before submitting outside specifically
 approved scopes. Stop all remote access on authentication prompt, drop or
 stall; no authentication or automatic retry. LS6 code via git pull only;
 never edit code or push there. Stage explicit local paths only.
+
+## Automation scope revision, 2026-11-02
+
+The 30-minute automation now continues through A, B, C and D in order; the
+interval is a dependency wakeup, not a one-step limit. It must preserve the
+existing author changes and edit the existing main.tex in place only in C,
+using the built-in compile tool, with inline references and <=6 total pages.
+After D, deliver PDF/release link/table-rebuild test output and pause.
+
+Normal-queue submissions remain outside this automation's scope; if required,
+report exact work and costs for the main workflow. No E2, new scientific
+experiments, pruning or changes to frozen inputs/records are authorized.
+Connection persistence cannot replace TACC authentication. BatchMode only;
+on authentication failure, drop or stall stop remote access and pause.
+Complete independent local work where possible before reporting the blocker.

@@ -1,3 +1,16 @@
+# Scope update, 2026-11-02: automatic completion authorized
+
+The human has removed the Phase 3 human-review stop and authorized automatic
+progress through paper revisions (C), artifact documentation/reproduction,
+commit/push/tagged submission release (D), after evidence verification (A/B).
+The evidence checkpoint remains mandatory, but no human reply is needed there.
+This supersedes the earlier stop/held-paper wording below. E2, pruning, new
+scientific experiments and normal-queue submissions from the automation remain
+excluded. Authentication failures still stop remote access; never authenticate
+or retry automatically. Preserve the author's current draft; do not reset it.
+The 30-minute wakeup should continue every ready authorized step in each run.
+Pause only on completion or an unresolved blocker requiring human action.
+
 # Final submission checkpoint, 2026-11-02
 
 ## Automation authorization and stop

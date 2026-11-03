@@ -93,7 +93,7 @@ def main():
     save(a.out / 'verified_st_documents.json', st_documents)
     save(a.out / 'input_hashes.json', input_hashes)
     save(a.out / 'manuscript_untouched.json', manuscript_before)
-    text = '# Phase 3 review package — STOP before paper edits\n\n'
+    text = '# Phase 3 evidence package — verify before paper edits\n\n'
     text += 'All registered E evaluations and S2 references have been reconciled. This package derives existing data only; it runs no Renode, changes no raw record and does not edit the manuscript. E2 remains held.\n\n'
     text += '## E repair study\n\n'
     text += markdown_table(repair['per_variant'], [
@@ -129,8 +129,8 @@ def main():
     text += markdown_table(axis_counts, [('scope', 'Context'), ('clock_status', 'Clock status'),
                                          ('slow_status', 'Slow-fault status'), ('suites_or_cases', 'Count')])
     text += '\nUnknown verdicts and capability skips are not passes. Expanded full-application S2 cases have no measured slow-fault result; their unknown axis is retained in two_axis_per_subject.csv rather than inferred from isolated cases or legal-clock results.\n\n'
-    text += '## Before/after number approval\n\nSee before_after_numbers.csv for every proposed replacement/table-row change, manuscript line locations and source paths, and unchanged_numbers.json for preserved original counts. Secondary paired, timing and similarity material is to move into the repository after approval. No replacements have been applied.\n\n'
-    text += '## Approval gate\n\n**STOP. Await the user’s approval before Phase C manuscript edits.** After approval, apply the approved values and framing, compile within six pages including the inline bibliography, then perform the Phase D artifact/data dictionary, clean-clone reproduction and tagged-release work.\n'
+    text += '## Before/after number approval\n\nSee before_after_numbers.csv for every proposed replacement/table-row change, manuscript line locations and source paths, and unchanged_numbers.json for preserved original counts. Secondary paired, timing and similarity material is to move into the repository after approval. No replacements have been applied by this evidence builder.\n\n'
+    text += '## Evidence checkpoint and authorized continuation\n\n**The human removed the Phase 3 approval stop on 2026-11-02.** Internally verify this complete evidence package, then continue directly to Phase C with verified values and framing, compile within six pages including the inline bibliography, and perform the Phase D artifact/data dictionary, clean-clone reproduction and tagged-release work. Do not proceed on unresolved integrity inconsistencies. E2 remains held; the automation cannot submit normal-queue jobs.\n'
     (a.out / 'PHASE3_PACKAGE.md').write_text(text)
     outputs = {str(p.relative_to(a.out)): sha(p) for p in sorted(a.out.iterdir()) if p.is_file()}
     save(a.out / 'output_hashes.json', outputs)
