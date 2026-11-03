@@ -1,3 +1,15 @@
+# Latest queue checkpoint, 2026-11-03 03:35 America/Chicago
+
+BatchMode status check succeeded. Chunk 5 / 3547930 is now RUNNING (23:24
+elapsed; Slurm start 2026-11-03T03:11:50); chunk 6 / 3547931 remains PENDING.
+A running 0:0 is not a completed verdict or a verified archive. No new completed
+chunk is ready to return. The five-chunk evidence checkpoint remains 14,960 of
+17,375 accounted for, with 2,415 outstanding and 29 original finalized harness
+errors preserved. No job submission, LS6 pull, new analysis or manuscript edit.
+Both manuscript files match their recorded baseline hashes. Wait for completed
+archives before advancing evidence-gated Phase B; retain automatic C/D authority.
+Receipt: queue_checkpoint_20261103_0935_v1.json.
+
 # Latest checkpoint, 2026-11-03 00:34 America/Chicago
 
 E chunk 4 / 3547929 completed 0:0 in 40:10. Its packed archive and sidecars
