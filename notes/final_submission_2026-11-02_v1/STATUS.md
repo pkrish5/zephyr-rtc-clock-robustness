@@ -1,3 +1,28 @@
+# Latest checkpoint, 2026-11-03 00:34 America/Chicago
+
+E chunk 4 / 3547929 completed 0:0 in 40:10. Its packed archive and sidecars
+returned successfully through BatchMode rsync. Exact archive inventory (11,688
+entries), extracted hashes and before/after protection checks passed. Independent
+per-index audit verified all 1,436 indices: 1,412 pass, 24 fail, no new missing;
+24/24 persisted-field and raw-trace replay matches. No legal-clock failure slots
+in this chunk required references; no mismatches or reference nonpasses.
+Archive SHA256: 73dcd6f0db6c7ec763ed5536bb1b46458a7213ac4457e42d2934471b7868ca0e.
+
+Five chunks now total 7,136 verified new indices, 168 exact failure replays and
+26 reference-supported legal failure slots. Together with the 7,824 retained
+originals, 14,960/17,375 are accounted for, with 2,415 still outstanding. Original
+29 finalized harness errors remain missing. These are operational accounting
+numbers, not final repair-effect statistics.
+
+3547930 and 3547931 remain PENDING at the one scheduled status check. No LS6
+pull or job submission/cancellation occurred. Local protected audit passed all
+30,067 files; draft/PDF match their baseline hashes. Phase B remains gated on
+the remaining chunks and the original-E evidence collection. Automatic C/D
+continuation is authorized after verified evidence, with no human Phase 3 stop.
+Receipts: queue_checkpoint_20261103_0634_v1.json,
+protected_after_chunk04_receipt.json; E checkpoint_chunks_00_04_v1.json,
+verified-3547929-v1/verification.json and chunk-04-analysis-v1/*.json.
+
 # Latest queue checkpoint, 2026-11-03 00:04 America/Chicago
 
 The scheduled BatchMode check succeeded. E chunk 4 (3547929) is now RUNNING

@@ -1,0 +1,30 @@
+{
+  "checked_at_utc": "2026-11-03T06:36:13.550168+00:00",
+  "sacct": [
+    {
+      "job_id": "3547929",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:40:10",
+      "start": "2026-11-02T23:41:13",
+      "end": "2026-11-03T00:21:23"
+    },
+    {
+      "job_id": "3547930",
+      "state": "PENDING",
+      "elapsed": "00:00:00"
+    },
+    {
+      "job_id": "3547931",
+      "state": "PENDING",
+      "elapsed": "00:00:00"
+    }
+  ],
+  "slurm_timezone": "not explicitly provided by sacct",
+  "archive_transfer_exit": 0,
+  "archive_verifier_exit": 0,
+  "per_index_verifier_exit": 0,
+  "ls6_pull": false,
+  "new_jobs": 0,
+  "phase_B_executed": false
+}

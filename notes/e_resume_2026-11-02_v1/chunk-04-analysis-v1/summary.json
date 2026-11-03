@@ -1,0 +1,35 @@
+{
+  "archive_sha256": "73dcd6f0db6c7ec763ed5536bb1b46458a7213ac4457e42d2934471b7868ca0e",
+  "chunk_id": 4,
+  "finalized_missing_outcomes_retained": true,
+  "job_id": "3547929",
+  "new_builds": 0,
+  "old_evidence_files_rechecked_before_after": 35708,
+  "original_finalized_records_retried": 0,
+  "original_records_modified": false,
+  "outcomes": {
+    "fail": 24,
+    "pass": 1412
+  },
+  "outcomes_by_operator": {
+    "fast": {
+      "pass": 13
+    },
+    "legal": {
+      "pass": 1397
+    },
+    "nonarrival": {
+      "fail": 13
+    },
+    "slow": {
+      "fail": 11,
+      "pass": 2
+    }
+  },
+  "protected_files_unchanged": 30067,
+  "reference_nonpasses": [],
+  "reference_trigger_slots": 0,
+  "replay_count": 24,
+  "replay_mismatches": [],
+  "verified_indices": 1436
+}
