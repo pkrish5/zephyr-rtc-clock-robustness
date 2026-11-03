@@ -1,3 +1,36 @@
+# COMPLETE: submission release published and public downloads verified, 2026-11-03
+
+Release: https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-submission-2026-11-03-v1
+Published 2026-11-03 12:53:22 CST (18:53:22 UTC), release ID 433093947.
+Immutable submission tag still points to 67ecb3d90e93895d5c5073ca6e8b78e9c8d1a05d.
+The human completed browser sign-in; the existing tag was selected and the
+four approved files uploaded and published: evidence archive, SHA sidecar,
+exact-tag fresh-clone proof, and main.pdf. No account/SSH settings were changed.
+
+Anonymous public downloads of PDF/checksum/clone proof match local hashes.
+The public archive URL then passed make tables without a cached archive or
+GitHub credentials: 113,433 files verified, eight table fragments exactly match,
+zero Renode runs, 61.713 seconds using Python 3.12.14. The prior fresh GitHub
+clone test on Python 3.14.6 remains PASS/clean at 35.098 seconds. Public release
+metadata, all digests, download receipts and output are in published_downloads_v2/.
+Screenshot: release_published_v1.png. PDF remains five total pages, 23 resolved
+inline references, zero [?]/undefined diagnostics and zero overfull h/v boxes.
+
+Two validation-environment details are disclosed, not hidden: the system Python
+3.14 lacked a configured trusted CA store, so the public test used bundled
+Python with its trusted certifi roots and TLS checks enabled. The second Python
+runtime changes a full-precision normal-CDF sensitivity CSV checksum by last-bit
+rounding (examples around 1e-17); only the derived provenance manifest differs,
+while all eight manuscript table hashes and all raw evidence remain identical.
+The initially stricter clean-status wrapper assertion was investigated and the
+actual provenance difference recorded; no raw result or table was modified to
+hide it. DATA.md explains this cross-runtime detail. No extra experiment ran.
+
+Phases A–D are complete. Keep the watcher PAUSED; no TACC monitoring/jobs,
+collector/recovery resubmission, E2, new experiment, prune or tag replacement
+is required. Later documentation-only commits retain the immutable submission
+tag. No further authentication is needed for public download/reproduction.
+
 # Exact submission tag verified; watcher PAUSED for release upload, 2026-11-03
 
 Submission tag course-submission-2026-11-03-v1 is pushed at immutable commit

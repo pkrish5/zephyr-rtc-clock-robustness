@@ -36,6 +36,15 @@ make tables EVIDENCE_ARCHIVE=/absolute/path/rtc-submission-evidence-v1.tar.gz
 The command ends with `status: PASS`, `rebuilt_tables: 8`,
 `all_table_hashes_match: true`, and `renode_runs: 0`. Expected hashes are pinned
 in [`reproduction/expected_tables.json`](reproduction/expected_tables.json).
+The public-download run was verified on Python 3.12.14 and the fresh-clone
+cached-archive run on Python 3.14.6. All eight LaTeX fragments match exactly.
+Full-precision illustrative normal-CDF values can differ in the last floating
+point bits between these runtimes (observed differences around 1e-17), so the
+derived `sensitivity.csv` checksum in the provenance manifest can change. This
+does not change raw evidence or any displayed paper table; the generated
+manifest records the actual derived bytes. Python must have a working trusted
+HTTPS CA store for downloads. The public test selected the bundled trusted CA
+roots through `SSL_CERT_FILE`; TLS verification was never disabled.
 The archive has 113,433 files, 634,459,796 unpacked bytes. It includes the exact
 records, traces, monitor/UART logs, manifests, reference/replay evidence and
 source excerpts needed for the final analyses. It excludes the SIF, full Zephyr

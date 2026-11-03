@@ -1,0 +1,55 @@
+{
+  "assets": [
+    {
+      "browser_download_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/download/course-submission-2026-11-03-v1/clean-clone-test.json",
+      "digest": "sha256:4beaadd882114cb45ececbf60da3e507d26c85cc6e621eaa419fd420d49cd2d5",
+      "name": "clean-clone-test.json",
+      "size": 604
+    },
+    {
+      "browser_download_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/download/course-submission-2026-11-03-v1/main.pdf",
+      "digest": "sha256:1041e0e9fd4cefcdc822944fff63e4a2667e4cc809679a50568d786800bbe443",
+      "name": "main.pdf",
+      "size": 123627
+    },
+    {
+      "browser_download_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/download/course-submission-2026-11-03-v1/rtc-submission-evidence-v1.tar.gz",
+      "digest": "sha256:805b776337f049164014fea9e2d29ca34ba750beb504e3477064015c46bdc921",
+      "name": "rtc-submission-evidence-v1.tar.gz",
+      "size": 130629595
+    },
+    {
+      "browser_download_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/download/course-submission-2026-11-03-v1/rtc-submission-evidence-v1.tar.gz.sha256",
+      "digest": "sha256:0aae3002c7d9dc76df76053a04c5fe3d3fbe9369a5db47bbb65dd0eb350758b9",
+      "name": "rtc-submission-evidence-v1.tar.gz.sha256",
+      "size": 100
+    }
+  ],
+  "authentication_used_for_downloads": false,
+  "draft": false,
+  "public_download_checks": [
+    {
+      "bytes": 604,
+      "name": "clean-clone-test.json",
+      "public_download_matches_local": true,
+      "sha256": "4beaadd882114cb45ececbf60da3e507d26c85cc6e621eaa419fd420d49cd2d5"
+    },
+    {
+      "bytes": 123627,
+      "name": "main.pdf",
+      "public_download_matches_local": true,
+      "sha256": "1041e0e9fd4cefcdc822944fff63e4a2667e4cc809679a50568d786800bbe443"
+    },
+    {
+      "bytes": 100,
+      "name": "rtc-submission-evidence-v1.tar.gz.sha256",
+      "public_download_matches_local": true,
+      "sha256": "0aae3002c7d9dc76df76053a04c5fe3d3fbe9369a5db47bbb65dd0eb350758b9"
+    }
+  ],
+  "published_at": "2026-11-03T18:53:22Z",
+  "release_id": 433093947,
+  "release_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-submission-2026-11-03-v1",
+  "tag": "course-submission-2026-11-03-v1",
+  "tls_certificate_verification": true
+}

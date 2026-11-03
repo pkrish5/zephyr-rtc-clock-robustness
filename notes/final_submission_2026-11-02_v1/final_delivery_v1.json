@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "evidence_sha256": "805b776337f049164014fea9e2d29ca34ba750beb504e3477064015c46bdc921",
+  "inline_references": 23,
+  "overfull_hboxes": 0,
+  "overfull_vboxes": 0,
+  "pages": 5,
+  "public_download_reproduction": {
+    "all_table_hashes_match": true,
+    "authentication_used": false,
+    "ca_bundle": "Bundled certifi trusted CA roots (certificate checks enabled)",
+    "cached_archive_supplied": false,
+    "derived_provenance_difference": {
+      "changed_derived_csv_sha256": [
+        "sensitivity.csv"
+      ],
+      "table_fragment_hashes_unchanged": true
+    },
+    "evidence_files_verified": 113433,
+    "evidence_sha256": "805b776337f049164014fea9e2d29ca34ba750beb504e3477064015c46bdc921",
+    "python": "3.12.14",
+    "rebuilt_tables": 8,
+    "release_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-submission-2026-11-03-v1",
+    "renode_runs": 0,
+    "seconds": 61.713,
+    "status": "PASS",
+    "submission_commit": "67ecb3d90e93895d5c5073ca6e8b78e9c8d1a05d",
+    "tls_certificate_verification": true,
+    "tracked_clone_changed_files": [
+      "paper/draft/tables/manifest.json"
+    ],
+    "verification_wrapper_initial_postcondition": "Initial clean-status assertion was stricter than the eight-table hash gate; investigated and recorded, not concealed."
+  },
+  "published_at": "2026-11-03T18:53:22Z",
+  "release_id": 433093947,
+  "release_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-submission-2026-11-03-v1",
+  "scientific_limits": "S2 rate-reference failures remain investigations; F767 is a configuration replica; no expanded S2 slow-fault measurement or physical-board validation; E2 held.",
+  "submission_commit": "67ecb3d90e93895d5c5073ca6e8b78e9c8d1a05d",
+  "tag": "course-submission-2026-11-03-v1",
+  "unresolved_citations": 0,
+  "watcher_status": "PAUSED"
+}
