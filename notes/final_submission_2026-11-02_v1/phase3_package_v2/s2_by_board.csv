@@ -1,0 +1,5 @@
+board,board_role,declared_cases,nominal_runnable,any_setting_runnable,always_skipped,any_observed_failure_cases,reference_supported_waiting_cases,cleanup_cascade_cases,firmware_simulator_or_contract_cases,missing_case_slots
+f4,F4 configuration,19,10,10,9,6,4,1,1,0
+f767,F4 configuration replica (F767),19,10,10,9,6,4,1,1,0
+f746,F746 configuration,8,6,6,2,4,3,0,1,0
+h753,"H753 configuration, narrower legal range",19,9,10,9,0,0,0,0,0

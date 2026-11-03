@@ -1,0 +1,13 @@
+{
+  "assertion": "S2 full-application context and E reruns never replace original missing verdicts or isolated results",
+  "eligible_RTC_generated": 66,
+  "original_RTC_attempts": 90,
+  "original_generation_attempts": 390,
+  "original_isolated_upstream_seed_failures": {
+    "human-rtc_alarm_callback": 26,
+    "human-rtc_alarm_pending": 26,
+    "human-rtc_time_counting": 17
+  },
+  "original_missing_seed_verdicts": 12,
+  "original_seeded_assertion_failures": 37
+}

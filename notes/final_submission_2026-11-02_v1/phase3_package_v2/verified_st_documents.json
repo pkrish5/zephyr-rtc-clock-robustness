@@ -1,0 +1,30 @@
+[
+  {
+    "evidence": "Introduction and sections2/3 discuss assembly, thermal and mechanical effects. Figure1 measures HSI16 on500 STM32F767 boards, not LSI. Does not supply a usable F407 LSI population distribution.",
+    "number": "AN5067",
+    "revision": "Rev 1, March2018",
+    "title": "How to optimize STM32 MCUs internal RC oscillator accuracy",
+    "url": "https://www.st.com/resource/en/application_note/dm00425536-how-to-optimize-stm32-mcus-internal-rc-oscillator-accuracy-stmicroelectronics.pdf"
+  },
+  {
+    "evidence": "Sections2/3/4 distinguish HSI trimming from LSI measurement, discuss process/temperature/voltage effects and timer capture. LSI is measured, not directly trimmed, on this family. No population probability model identified.",
+    "number": "AN5126",
+    "revision": "Rev 2, April2023",
+    "title": "How to calibrate internal oscillators on STM32G0 MCUs",
+    "url": "https://www.st.com/resource/en/application_note/dm00469014-using-xcuberccalib-software-to-calibrate-stm32g0-series-internal-rc-oscillator-stmicroelectronics.pdf"
+  },
+  {
+    "evidence": "Verified ST-hosted indexed passage describes manufacturing deviation and TIM5 channel4 LSI measurement, then adjusting RTC prescaler/IWDG timeout. Full local PDF retrieval failed; do not claim an archived PDF or full-manual distribution search.",
+    "number": "RM0090",
+    "revision": "Indexed Rev21 clock-measurement section6.2.11, pp160-161; current ST index advertises Rev22 separately",
+    "title": "STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm-based 32-bit MCUs",
+    "url": "https://www.st.com/resource/en/reference_manual/dm00031020-stm32f10x-microcontrollers-stmicroelectronics.pdf"
+  },
+  {
+    "evidence": "17/32/47-kHz characterization limits plus min/average/max temperature curves. These are not a device-frequency probability distribution.",
+    "number": "DS8626",
+    "revision": "Rev12, Table35 and Figure34",
+    "title": "STM32F405xx STM32F407xx datasheet",
+    "url": "https://www.st.com/resource/en/datasheet/stm32f407vg.pdf"
+  }
+]

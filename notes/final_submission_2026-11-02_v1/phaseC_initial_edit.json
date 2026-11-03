@@ -1,0 +1,20 @@
+{
+  "before_sha256": "2f5c7f32e3528a28969103b4993a64e8b62ab9c256c6148d8333a95d8d85d189",
+  "after_sha256": "5747140ccc4c6af8bec756f16c18e38ceafbf30d95ab8479aed4fd11390751d2",
+  "source_package": "phase3_package_v1",
+  "source_internal_review": "phase_AB_internal_review_v1.json",
+  "refs_bib_unchanged": true,
+  "removed_secondary_tables": [
+    "hybrid contrasts",
+    "paired McNemar"
+  ],
+  "removed_schematic": "legal-clock TikZ step plot; threshold table retained",
+  "added_primary_results": [
+    "S2 expansion and references",
+    "distribution sensitivity",
+    "repair variants",
+    "two-axis table",
+    "completed A-B cohort/yield"
+  ],
+  "new_experiments": 0
+}

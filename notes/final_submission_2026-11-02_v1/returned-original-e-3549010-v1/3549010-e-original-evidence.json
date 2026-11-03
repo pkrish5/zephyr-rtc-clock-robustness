@@ -1,0 +1,21 @@
+{
+  "account": "TRA25006",
+  "apptainer_module": "tacc-apptainer/1.4.1",
+  "apptainer_version": "apptainer version 1.4.1-1.el8",
+  "archive": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3549010-e-original-evidence.tar.gz",
+  "archive_entries": 39958,
+  "archive_sha256": "77abe35e33eec8972ea758fc1277dbac5a178cdf5788897381b9eb25dbb5722c",
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "exact_archive_coverage": true,
+  "extracted_stream_hashes_match": true,
+  "launcher_module": "launcher/3.10",
+  "manifest": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3549010-e-original-evidence.manifest.json.gz",
+  "manifest_sha256": "75ec086ee99f01f4e3e629dd5aa8534b0e413677dc720c8d06b848ae561e87b1",
+  "node_name": "c303-006",
+  "original_files_deleted": 0,
+  "output_state": "complete",
+  "partition": "development",
+  "physical_loose_output": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/jobs/3549010/output",
+  "raw_bytes_unchanged": true,
+  "slurm_job_id": "3549010"
+}

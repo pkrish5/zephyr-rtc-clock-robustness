@@ -1,0 +1,26 @@
+{
+  "experiment_execution": false,
+  "fragments": {
+    "agent.tex": "cbf69bd2967747e8af85f444ecdd76e6fec68fb2963f790b5e82d5a3f399efe6",
+    "axes.tex": "d2560db4ac08fdee4a40f5644c1ae577f2ce98c124cf17e4175055e69b52b66b",
+    "expanded.tex": "34ab8b120defc911b786345f6fd6d0438d1f978afd78bb2a44c616c916e1509a",
+    "faults.tex": "a3d52c987a28e2e0d1519aacd918a6ba230f70e65875b9f8e0bd7139e15bd4d1",
+    "human.tex": "831f6e4d530b4192c8190a048a093f8718502d0206a0176b2128472aec66a6be",
+    "offset.tex": "2a2a9289bfa86928c0f311e8a6ac8b35e80ac33e4233144c295e07a0f74a632d",
+    "repair.tex": "8360bbd1bf2e9926cf9eb4c50e0825d91b082688228ad392a3794f8b5527869c",
+    "yield.tex": "ede4bedacf910c51451b3a75c2abbad6a4a59639c8aa7e4ab9ad7f7943dd3f88"
+  },
+  "source_package": "verified raw-record reconciliation (build_package.py)",
+  "source_sha256": {
+    "original_alarm_offset_cells.csv": "0a546bdd3c14dfadbfb4a8a9742b87507970219bcf00ba255482e101847aefe7",
+    "original_fault_cells.csv": "c903bc4e45c8a2b7d1091090299ce7154fabe399ce5849ed56b1ad2fc9f29388",
+    "per_suite.csv": "b987cb57379533578b49ee74f12b7eb8f4181760bbdf4ec7c8d62ad59a627c96",
+    "repair_per_variant.csv": "4c3aca087ad2998912afa435a3afc78ce3d988bd5df4b5c22ad6773c33eec8e7",
+    "s2_by_board.csv": "91d81ac74a489790bddd879e9f390ef9ab397831b2213be73c38829e3aead834",
+    "s2_per_case_with_references.csv": "a6d0e480e543ac2254b9202bf409089b3bf83fb421fc7e326cf4154de3b1dc77",
+    "sensitivity.csv": "3dd46916267cc675958ca3fb16505835d3194c03f6b4426e1a5a985bc277a5c9",
+    "two_axis_counts.csv": "66c56d49e506ca830b2e0bb2a12c2a02a922ef7ced9cacf31ce5d84d41a67efa",
+    "yield_cells.csv": "66ea0d630ddf615627fd9f6f3a874317da800513d78b3a9a7388bfcd02ed9178"
+  },
+  "tables": 8
+}

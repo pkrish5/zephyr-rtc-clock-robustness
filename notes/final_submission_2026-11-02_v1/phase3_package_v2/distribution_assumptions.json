@@ -1,0 +1,22 @@
+{
+  "interpretation": "illustrative model sensitivity, not an empirical distribution of devices",
+  "legal_interval_hz": [
+    17000,
+    47000
+  ],
+  "normal_2sigma": {
+    "mass_outside_legal": 0.04550026389635842,
+    "mean_hz": 32000,
+    "sigma_hz": 7500
+  },
+  "normal_3sigma": {
+    "mass_outside_legal": 0.002699796063260207,
+    "mean_hz": 32000,
+    "sigma_hz": 5000
+  },
+  "phase_bands": "model-implied bounds across unknown phase, not a fitted exact threshold",
+  "primary_normal_columns": "conditional on the documented legal interval; untruncated CDF columns also supplied",
+  "service_assumption": "ideal clock model with normal software service; the oscillator range supplies no physical interrupt-delivery bound",
+  "uniform": "continuous uniform input interval",
+  "unresolved_and_cascade": "source-model CDF not identifiable; finite-sample monotone interpolation supplied separately and explicitly assumed"
+}

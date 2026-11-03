@@ -1,0 +1,4 @@
+case,compared_settings,isolated_seed_failures,full_seed_failures,isolated_all_failures,full_all_failures,isolated_last_fail_hz,isolated_first_pass_hz,full_last_fail_hz,full_first_pass_hz,isolated_fail_full_pass,isolated_pass_full_fail
+rtc_api.test_alarm,102,26,26,27,27,24428,24734,24428,24734,0,0
+rtc_api.test_alarm_callback,102,26,22,27,23,24428,24734,23673,23847,4,0
+rtc_api.test_time_counting,102,17,12,18,13,21782,22405,20500,20701,5,0

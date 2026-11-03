@@ -1,0 +1,7 @@
+{
+  "field_definitions": 15844,
+  "files": 129509,
+  "nested_json_note": "Arrays show [] and maps show {key}; map keys are data, not column names. Deep metadata objects remain objects. Null/blank is not numeric zero.",
+  "schemas": 340,
+  "scope": "Every Git-tracked results/analysis file, every final raw-analysis input, and every final-package output."
+}

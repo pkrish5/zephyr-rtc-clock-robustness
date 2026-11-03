@@ -39,6 +39,10 @@
 *.fls
 *.synctex.gz
 *.toc
+*.out
+
+# Large verified release assets are uploaded separately, not committed to Git.
+/submission_assets/
 
 # Credentials and local configuration
 .env

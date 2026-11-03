@@ -19,6 +19,8 @@ def main():
     ap.add_argument('--repo', type=Path, default=Path(__file__).resolve().parents[2])
     ap.add_argument('--original-e-verified', required=True)
     ap.add_argument('--chunk-verified', nargs=7, required=True)
+    ap.add_argument('--comparison-manuscript', default='paper/draft/main.tex',
+                    help='Saved pre-revision source used only for the before/after ledger')
     ap.add_argument('--out', type=Path, required=True)
     a = ap.parse_args()
     inputs = Inputs(a.repo)
@@ -33,7 +35,7 @@ def main():
     examples, example_text = s2_and_sensitivity.examples(inputs, s2)
     sensitivity, assumptions = s2_and_sensitivity.sensitivity(inputs, base, s2, repair)
     axes, axis_counts = s2_and_sensitivity.two_axes(base, s2)
-    changes, unchanged = number_changes.build(inputs, base, s2, repair)
+    changes, unchanged = number_changes.build(inputs, base, s2, repair, a.comparison_manuscript)
     statistics = base['statistics']
     statistics['confirmed_robust_wilson95'] = wilson(statistics['confirmed_robust'], 90)
     statistics['optimistic_ceiling_is_not_a_confidence_interval'] = True
@@ -73,6 +75,7 @@ def main():
     save(a.out / 'repair_scope.json', {k: v for k, v in repair.items() if k not in
                                       ('per_variant', 'per_subject', 'primary', 'replay_checks', 'reference_checks')})
     csv_save(a.out / 's2_per_case_with_references.csv', s2['cases'])
+    save(a.out / 's2_raw_audit.json', s2['raw_audit'])
     csv_save(a.out / 's2_by_board.csv', s2['boards'])
     csv_save(a.out / 'isolated_reconciliation.csv', s2['isolated_reconciliation'])
     save(a.out / 'examples.json', examples)
@@ -129,7 +132,7 @@ def main():
     text += markdown_table(axis_counts, [('scope', 'Context'), ('clock_status', 'Clock status'),
                                          ('slow_status', 'Slow-fault status'), ('suites_or_cases', 'Count')])
     text += '\nUnknown verdicts and capability skips are not passes. Expanded full-application S2 cases have no measured slow-fault result; their unknown axis is retained in two_axis_per_subject.csv rather than inferred from isolated cases or legal-clock results.\n\n'
-    text += '## Before/after number approval\n\nSee before_after_numbers.csv for every proposed replacement/table-row change, manuscript line locations and source paths, and unchanged_numbers.json for preserved original counts. Secondary paired, timing and similarity material is to move into the repository after approval. No replacements have been applied by this evidence builder.\n\n'
+    text += '## Before/after number ledger\n\nSee before_after_numbers.csv for every replacement/table-row change, saved pre-revision manuscript line locations and source paths, and unchanged_numbers.json for preserved original counts. Secondary paired, timing and similarity material is retained in the repository. This evidence builder never edits the manuscript. The human authorized paper revision after internal evidence review.\n\n'
     text += '## Evidence checkpoint and authorized continuation\n\n**The human removed the Phase 3 approval stop on 2026-11-02.** Internally verify this complete evidence package, then continue directly to Phase C with verified values and framing, compile within six pages including the inline bibliography, and perform the Phase D artifact/data dictionary, clean-clone reproduction and tagged-release work. Do not proceed on unresolved integrity inconsistencies. E2 remains held; the automation cannot submit normal-queue jobs.\n'
     (a.out / 'PHASE3_PACKAGE.md').write_text(text)
     outputs = {str(p.relative_to(a.out)): sha(p) for p in sorted(a.out.iterdir()) if p.is_file()}

@@ -1,0 +1,411 @@
+[
+  {
+    "app": "RTC API, full application",
+    "case": "rtc_api.test_time_counting",
+    "failing_frequency_hz": [
+      17000,
+      20500
+    ],
+    "id": "phase_dependent_F4_counting",
+    "passing_frequency_hz": [
+      20701,
+      47000
+    ],
+    "quoted_blocks": [
+      {
+        "end": 17,
+        "lines": [
+          {
+            "line": 15,
+            "text": "#define RTC_TEST_TIME_COUNTING_SET_TIME\t  (1767225595UL)"
+          },
+          {
+            "line": 16,
+            "text": "#define RTC_TEST_TIME_COUNTING_LIMIT\t  (RTC_TEST_TIME_COUNTING_SET_TIME + 10UL)"
+          },
+          {
+            "line": 17,
+            "text": "#define RTC_TEST_TIME_COUNTING_POLL_LIMIT (30U)"
+          }
+        ],
+        "start": 15
+      },
+      {
+        "end": 59,
+        "lines": [
+          {
+            "line": 35,
+            "text": "\tzassert_equal(rtc_set_time(rtc, &datetime_set), 0, \"Failed to set time\");"
+          },
+          {
+            "line": 36,
+            "text": ""
+          },
+          {
+            "line": 37,
+            "text": "\tfor (i = 0; i < RTC_TEST_TIME_COUNTING_POLL_LIMIT; i++) {"
+          },
+          {
+            "line": 38,
+            "text": "\t\t/* Get time */"
+          },
+          {
+            "line": 39,
+            "text": "\t\tzassert_equal(rtc_get_time(rtc, &datetime_get), 0, \"Failed to get time\");"
+          },
+          {
+            "line": 40,
+            "text": ""
+          },
+          {
+            "line": 41,
+            "text": "\t\ttimer_get = timeutil_timegm((struct tm *)(&datetime_get));"
+          },
+          {
+            "line": 42,
+            "text": ""
+          },
+          {
+            "line": 43,
+            "text": "\t\t/* Validate if time incrementing */"
+          },
+          {
+            "line": 44,
+            "text": "\t\tzassert_true(timer_get_last <= timer_get, \"Time is decrementing\");"
+          },
+          {
+            "line": 45,
+            "text": ""
+          },
+          {
+            "line": 46,
+            "text": "\t\t/* Check if limit reached */"
+          },
+          {
+            "line": 47,
+            "text": "\t\tif (timer_get == RTC_TEST_TIME_COUNTING_LIMIT) {"
+          },
+          {
+            "line": 48,
+            "text": "\t\t\tbreak;"
+          },
+          {
+            "line": 49,
+            "text": "\t\t}"
+          },
+          {
+            "line": 50,
+            "text": ""
+          },
+          {
+            "line": 51,
+            "text": "\t\t/* Save last timer get */"
+          },
+          {
+            "line": 52,
+            "text": "\t\ttimer_get_last = timer_get;"
+          },
+          {
+            "line": 53,
+            "text": ""
+          },
+          {
+            "line": 54,
+            "text": "\t\t/* Limit polling rate */"
+          },
+          {
+            "line": 55,
+            "text": "\t\tk_msleep(500);"
+          },
+          {
+            "line": 56,
+            "text": "\t}"
+          },
+          {
+            "line": 57,
+            "text": ""
+          },
+          {
+            "line": 58,
+            "text": "\tzassert_true(i < RTC_TEST_TIME_COUNTING_POLL_LIMIT,"
+          },
+          {
+            "line": 59,
+            "text": "\t\t     \"Timeout occurred waiting for time to increment\");"
+          }
+        ],
+        "start": 35
+      }
+    ],
+    "reference_status": "pass:13",
+    "source": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_time_incrementing.c",
+    "source_boundary": "19.862--22.069 kHz phase envelope; last-poll approximation",
+    "two_sentence_explanation": "The test rewrites the RTC calendar, then polls every 500 ms, with its last observation about 14.5 simulated seconds after the write. Renode preserves the fractional count across the write, so phase carried from earlier cases can shift the failure boundary; that explanation is supported by source and reconciliation but was not directly measured."
+  },
+  {
+    "app": "Counter seconds, RTC-only non-stock configuration",
+    "case": "seconds_counter.test_seconds_rate",
+    "failing_frequency_hz": [
+      17000,
+      26168
+    ],
+    "id": "F4_counter_seconds_rate",
+    "passing_frequency_hz": [
+      27086,
+      47000
+    ],
+    "quoted_blocks": [
+      {
+        "end": 12,
+        "lines": [
+          {
+            "line": 10,
+            "text": "/*"
+          },
+          {
+            "line": 11,
+            "text": " * Basic test to ensure that the clock is ticking at roughly 1Hz."
+          },
+          {
+            "line": 12,
+            "text": " */"
+          }
+        ],
+        "start": 10
+      },
+      {
+        "end": 42,
+        "lines": [
+          {
+            "line": 20,
+            "text": "#define DELAY_MS 1200\t/* pause 1.2 seconds should always pass */"
+          },
+          {
+            "line": 21,
+            "text": "#define MIN_BOUND 1\t/* counter must report at least MIN_BOUND .. */"
+          },
+          {
+            "line": 22,
+            "text": "#define MAX_BOUND 2\t/* .. but at most MAX_BOUND seconds elapsed */"
+          },
+          {
+            "line": 23,
+            "text": ""
+          },
+          {
+            "line": 24,
+            "text": "ZTEST(seconds_counter, test_seconds_rate)"
+          },
+          {
+            "line": 25,
+            "text": "{"
+          },
+          {
+            "line": 26,
+            "text": "\tconst struct device *const dev = DEVICE_DT_GET(CTR_DEV);"
+          },
+          {
+            "line": 27,
+            "text": "\tuint32_t start, elapsed;"
+          },
+          {
+            "line": 28,
+            "text": "\tint err;"
+          },
+          {
+            "line": 29,
+            "text": ""
+          },
+          {
+            "line": 30,
+            "text": "\tzassert_true(device_is_ready(dev), \"counter device is not ready\");"
+          },
+          {
+            "line": 31,
+            "text": ""
+          },
+          {
+            "line": 32,
+            "text": "\terr = counter_get_value(dev, &start);"
+          },
+          {
+            "line": 33,
+            "text": "\tzassert_true(err == 0, \"failed to read counter device\");"
+          },
+          {
+            "line": 34,
+            "text": ""
+          },
+          {
+            "line": 35,
+            "text": "\tk_msleep(DELAY_MS);"
+          },
+          {
+            "line": 36,
+            "text": ""
+          },
+          {
+            "line": 37,
+            "text": "\terr = counter_get_value(dev, &elapsed);"
+          },
+          {
+            "line": 38,
+            "text": "\tzassert_true(err == 0, \"failed to read counter device\");"
+          },
+          {
+            "line": 39,
+            "text": "\telapsed -= start;"
+          },
+          {
+            "line": 40,
+            "text": ""
+          },
+          {
+            "line": 41,
+            "text": "\tzassert_true(elapsed >= MIN_BOUND, \"busted minimum bound\");"
+          },
+          {
+            "line": 42,
+            "text": "\tzassert_true(elapsed <= MAX_BOUND, \"busted maximum bound\");"
+          }
+        ],
+        "start": 20
+      }
+    ],
+    "reference_status": "fail;pass:35",
+    "source": "subjects/upstream/zephyr/tests/drivers/counter/counter_seconds/src/main.c",
+    "source_boundary": "26.667 kHz ideal zero-phase comparison; not a validated defect boundary",
+    "two_sentence_explanation": "The test samples the counter around a 1,200-ms sleep and requires a change of one or two ticks. At slow legal inputs its retained rate reference also fails while eventual progress passes, so these outcomes remain a firmware/simulator or accuracy-contract investigation rather than evidence of a faulty test."
+  },
+  {
+    "app": "RTC API; full-application and original isolated contexts",
+    "case": "rtc_api.test_alarm_callback",
+    "failing_frequency_hz": [
+      17000,
+      23673
+    ],
+    "id": "original_upstream_callback",
+    "passing_frequency_hz": [
+      23847,
+      47000
+    ],
+    "quoted_blocks": [
+      {
+        "end": 14,
+        "lines": [
+          {
+            "line": 13,
+            "text": "#define RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY (3)"
+          },
+          {
+            "line": 14,
+            "text": "#define RTC_TEST_ALARM_TEST_CALLED_DELAY     (10)"
+          }
+        ],
+        "start": 13
+      },
+      {
+        "end": 141,
+        "lines": [
+          {
+            "line": 119,
+            "text": "\t\t/* Wait before validating alarm callbacks have not been called prematurely */"
+          },
+          {
+            "line": 120,
+            "text": "\t\tk_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY));"
+          },
+          {
+            "line": 121,
+            "text": ""
+          },
+          {
+            "line": 122,
+            "text": "\t\t/* Validate alarm callbacks have not been called prematurely */"
+          },
+          {
+            "line": 123,
+            "text": "\t\tcallback_called_mask_status_odd = atomic_get(&callback_called_mask_odd);"
+          },
+          {
+            "line": 124,
+            "text": "\t\tcallback_called_mask_status_even = atomic_get(&callback_called_mask_even);"
+          },
+          {
+            "line": 125,
+            "text": ""
+          },
+          {
+            "line": 126,
+            "text": "\t\tzassert_equal(callback_called_mask_status_odd, 0,"
+          },
+          {
+            "line": 127,
+            "text": "\t\t\t      \"Alarm callback called prematurely\");"
+          },
+          {
+            "line": 128,
+            "text": "\t\tzassert_equal(callback_called_mask_status_even, 0,"
+          },
+          {
+            "line": 129,
+            "text": "\t\t\t      \"Alarm callback called prematurely\");"
+          },
+          {
+            "line": 130,
+            "text": ""
+          },
+          {
+            "line": 131,
+            "text": "\t\t/* Wait for alarm to trigger */"
+          },
+          {
+            "line": 132,
+            "text": "\t\tk_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));"
+          },
+          {
+            "line": 133,
+            "text": ""
+          },
+          {
+            "line": 134,
+            "text": "\t\t/* Validate alarm callback called */"
+          },
+          {
+            "line": 135,
+            "text": "\t\tfor (uint16_t j = 0; j < alarms_count; j++) {"
+          },
+          {
+            "line": 136,
+            "text": "\t\t\tcallback_called_status ="
+          },
+          {
+            "line": 137,
+            "text": "\t\t\t\t(j % 2) ? atomic_test_bit(&callback_called_mask_odd, j)"
+          },
+          {
+            "line": 138,
+            "text": "\t\t\t\t\t: atomic_test_bit(&callback_called_mask_even, j);"
+          },
+          {
+            "line": 139,
+            "text": ""
+          },
+          {
+            "line": 140,
+            "text": "\t\t\tzassert_equal(callback_called_status, true,"
+          },
+          {
+            "line": 141,
+            "text": "\t\t\t\t      \"Alarm %d callback should have been called\", j);"
+          }
+        ],
+        "start": 119
+      }
+    ],
+    "reference_status": "pass:23",
+    "source": "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c",
+    "source_boundary": "22.154--24.615 kHz phase envelope; no unique source-only threshold",
+    "two_sentence_explanation": "The original callback test checks absence after three simulated seconds and eventual callback presence after another ten, without asserting equality to the requested calendar second. Its isolated and full-application contexts have different observed boundaries, consistent with a preserved phase explanation that has not been directly measured."
+  }
+]

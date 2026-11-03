@@ -1,0 +1,56 @@
+{
+  "E_finalized_missing_outcomes_retained": 29,
+  "S2_missing_case_slots": 0,
+  "S2_original_failure_links": 470,
+  "failure_replays_exact_fields_and_trace": 458,
+  "legal_failure_reference_links_pass": 112,
+  "limitations": [
+    "S2 rate reference fails remain firmware/simulator/accuracy-contract investigations",
+    "F767 is an F4 configuration replica",
+    "Phase carryover is source-supported but not directly measured",
+    "Expanded S2 slow-fault detection was not measured",
+    "Illustrative normals are assumed and primary columns conditional on legal interval",
+    "E repairs cover the 33 preselected scalar-budget subjects, no generated callback suites"
+  ],
+  "new_simulations": 0,
+  "original_generated_missing_slots_retained": 12,
+  "outcomes_by_variant": {
+    "V0": {
+      "fail": 173,
+      "harness_error": 10,
+      "pass": 3292
+    },
+    "V1": {
+      "fail": 62,
+      "harness_error": 7,
+      "pass": 3406
+    },
+    "V1b": {
+      "fail": 73,
+      "harness_error": 7,
+      "pass": 3395
+    },
+    "V2": {
+      "fail": 74,
+      "harness_error": 3,
+      "pass": 3398
+    },
+    "V3": {
+      "fail": 76,
+      "harness_error": 2,
+      "pass": 3397
+    }
+  },
+  "paper_changes_authorized_after_evidence_gate": true,
+  "phase_AB_gate_passed": true,
+  "primary_raw_records_recounted": 17375,
+  "raw_primary_hashes_rechecked": true,
+  "raw_seeded_medians_recomputed": {
+    "V0": 11.0,
+    "V1": 11.0,
+    "V1b": 11.0,
+    "V2": 11.0,
+    "V3": 11.0
+  },
+  "reviewed_at_utc": "2026-11-03T17:14:43.933676+00:00"
+}

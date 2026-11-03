@@ -1,0 +1,290 @@
+{
+  "all_attempts": 90,
+  "complete_case_prompt_cells": {
+    "range_absent": {
+      "flips": 3,
+      "suites": 31
+    },
+    "range_present": {
+      "flips": 0,
+      "suites": 27
+    }
+  },
+  "complete_case_prompt_fisher": {
+    "exact_fraction": "265/1102",
+    "table": [
+      [
+        3,
+        28
+      ],
+      [
+        0,
+        27
+      ]
+    ],
+    "two_sided_p": 0.24047186932849365
+  },
+  "confirmed_robust": 55,
+  "confirmed_robust_wilson95": [
+    0.5078245886506263,
+    0.7053008278906345
+  ],
+  "forecast_matches": 3000,
+  "forecast_only": 0,
+  "generated_suites": 66,
+  "measured_suites": 66,
+  "no_flip_latency_counts": {
+    "latency_assumption_not_exposed_by_clock_rate": 28,
+    "not_found": 11,
+    "unknown": 24
+  },
+  "no_observed_flip_suites": 63,
+  "nontrivial_forecast_failures": 37,
+  "optimistic_ceiling_is_not_a_confidence_interval": true,
+  "optimistic_robust_ceiling": 63,
+  "paired_by_task": [
+    {
+      "family": "rtc_alarm_callback",
+      "generated_only_fail": 0,
+      "missing_pairs": 7,
+      "significant": 19,
+      "suites": 19,
+      "upstream_only_fail": 492
+    },
+    {
+      "family": "rtc_alarm_pending",
+      "generated_only_fail": 0,
+      "missing_pairs": 5,
+      "significant": 20,
+      "suites": 20,
+      "upstream_only_fail": 480
+    },
+    {
+      "family": "rtc_time_counting",
+      "generated_only_fail": 0,
+      "missing_pairs": 0,
+      "significant": 27,
+      "suites": 27,
+      "upstream_only_fail": 459
+    }
+  ],
+  "predictable_measured": 30,
+  "predictable_verdicts": 3000,
+  "previous_metrics": {
+    "confirmed_robust": 39,
+    "measured": 50
+  },
+  "prompt_cells": {
+    "range_absent": {
+      "flips": 3,
+      "seeded_fail": 37,
+      "seeded_missing": 4,
+      "seeded_pass": 3359,
+      "suites": 34
+    },
+    "range_present": {
+      "flips": 0,
+      "seeded_fail": 0,
+      "seeded_missing": 8,
+      "seeded_pass": 3192,
+      "suites": 32
+    }
+  },
+  "prompt_fisher": {
+    "exact_fraction": "171/715",
+    "table": [
+      [
+        3,
+        31
+      ],
+      [
+        0,
+        32
+      ]
+    ],
+    "two_sided_p": 0.23916083916083916
+  },
+  "quality_confirmed": 14,
+  "registered_equal_model_contrast": {
+    "high_percentage_points": -0.6444444444444444,
+    "low_percentage_points": -0.9111111111111111
+  },
+  "registered_equal_task_by_model": [
+    {
+      "high_percentage_points": 0.0,
+      "low_percentage_points": 0.0,
+      "model": "luna"
+    },
+    {
+      "high_percentage_points": -1.0666666666666667,
+      "low_percentage_points": -1.866666666666667,
+      "model": "sol"
+    },
+    {
+      "high_percentage_points": -0.8666666666666666,
+      "low_percentage_points": -0.8666666666666666,
+      "model": "astra"
+    }
+  ],
+  "registered_task_contrasts": [
+    {
+      "high_percentage_points": 0.0,
+      "low_percentage_points": 0.0,
+      "model": "luna",
+      "task": "rtc_time_counting"
+    },
+    {
+      "high_percentage_points": 1.2,
+      "low_percentage_points": -0.2,
+      "model": "sol",
+      "task": "rtc_alarm_callback"
+    },
+    {
+      "high_percentage_points": -4.3999999999999995,
+      "low_percentage_points": -5.4,
+      "model": "sol",
+      "task": "rtc_alarm_pending"
+    },
+    {
+      "high_percentage_points": 0.0,
+      "low_percentage_points": 0.0,
+      "model": "sol",
+      "task": "rtc_time_counting"
+    },
+    {
+      "high_percentage_points": 0.0,
+      "low_percentage_points": 0.0,
+      "model": "astra",
+      "task": "rtc_alarm_callback"
+    },
+    {
+      "high_percentage_points": -2.6,
+      "low_percentage_points": -2.6,
+      "model": "astra",
+      "task": "rtc_alarm_pending"
+    },
+    {
+      "high_percentage_points": 0.0,
+      "low_percentage_points": 0.0,
+      "model": "astra",
+      "task": "rtc_time_counting"
+    }
+  ],
+  "robust_plus_two": 38,
+  "seed_fail": 37,
+  "seed_missing": 12,
+  "seed_pass": 6551,
+  "total_seed_slots": 6600,
+  "trivial_predictable_suites": 27,
+  "wilson_interpretation": "descriptive cohort/schedule intervals; clustered settings and shared tasks limit inference",
+  "yield_cells": [
+    {
+      "attempts": 15,
+      "condition": "range_absent",
+      "confirmed_robust": 4,
+      "confirmed_robust_wilson95": [
+        0.10897453325692377,
+        0.5195043405598057
+      ],
+      "evaluable": 400,
+      "fail": 0,
+      "flips": 0,
+      "missing": 0,
+      "model": "luna",
+      "optimistic_robust_ceiling": 4,
+      "quality_confirmed": 3,
+      "robust_plus_two": 3,
+      "working": 4
+    },
+    {
+      "attempts": 15,
+      "condition": "range_present",
+      "confirmed_robust": 3,
+      "confirmed_robust_wilson95": [
+        0.07047549346981563,
+        0.4518544871516935
+      ],
+      "evaluable": 300,
+      "fail": 0,
+      "flips": 0,
+      "missing": 0,
+      "model": "luna",
+      "optimistic_robust_ceiling": 3,
+      "quality_confirmed": 0,
+      "robust_plus_two": 0,
+      "working": 3
+    },
+    {
+      "attempts": 15,
+      "condition": "range_absent",
+      "confirmed_robust": 10,
+      "confirmed_robust_wilson95": [
+        0.41713547738519785,
+        0.8482367556028527
+      ],
+      "evaluable": 1496,
+      "fail": 24,
+      "flips": 2,
+      "missing": 4,
+      "model": "sol",
+      "optimistic_robust_ceiling": 13,
+      "quality_confirmed": 3,
+      "robust_plus_two": 8,
+      "working": 15
+    },
+    {
+      "attempts": 15,
+      "condition": "range_present",
+      "confirmed_robust": 10,
+      "confirmed_robust_wilson95": [
+        0.41713547738519785,
+        0.8482367556028527
+      ],
+      "evaluable": 1492,
+      "fail": 0,
+      "flips": 0,
+      "missing": 8,
+      "model": "sol",
+      "optimistic_robust_ceiling": 15,
+      "quality_confirmed": 3,
+      "robust_plus_two": 5,
+      "working": 15
+    },
+    {
+      "attempts": 15,
+      "condition": "range_absent",
+      "confirmed_robust": 14,
+      "confirmed_robust_wilson95": [
+        0.7018347012621999,
+        0.9881331045067314
+      ],
+      "evaluable": 1500,
+      "fail": 13,
+      "flips": 1,
+      "missing": 0,
+      "model": "astra",
+      "optimistic_robust_ceiling": 14,
+      "quality_confirmed": 0,
+      "robust_plus_two": 8,
+      "working": 15
+    },
+    {
+      "attempts": 15,
+      "condition": "range_present",
+      "confirmed_robust": 14,
+      "confirmed_robust_wilson95": [
+        0.7018347012621999,
+        0.9881331045067314
+      ],
+      "evaluable": 1400,
+      "fail": 0,
+      "flips": 0,
+      "missing": 0,
+      "model": "astra",
+      "optimistic_robust_ceiling": 14,
+      "quality_confirmed": 5,
+      "robust_plus_two": 14,
+      "working": 14
+    }
+  ]
+}

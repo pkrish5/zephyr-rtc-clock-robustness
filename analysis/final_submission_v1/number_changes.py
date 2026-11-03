@@ -2,8 +2,8 @@
 from collections import Counter
 
 
-def build(inputs, base, s2, repair):
-    source = inputs.text('paper/draft/main.tex')
+def build(inputs, base, s2, repair, manuscript='paper/draft/main.tex'):
+    source = inputs.text(manuscript)
     lines = source.splitlines()
     stats = base['statistics']
     old = inputs.json('analysis/rtc_factorial_v2_final_summary.json')

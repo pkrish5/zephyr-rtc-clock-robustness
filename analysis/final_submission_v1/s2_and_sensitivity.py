@@ -3,6 +3,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from common import failure_share, markdown_table
+import audit_s2_raw
 
 
 S2 = 'notes/s2_attribution_2026-10-31/s2_report_20261102_v3'
@@ -14,6 +15,7 @@ def s2_tables(inputs):
     links = inputs.csv(REF + '/primary_failure_reference_links.csv')
     proof = inputs.json(REF + '/reference_validation_summary.json')
     assert len(links) == proof['linked_primary_failure_slots'] == 470
+    raw_audit = audit_s2_raw.audit(inputs, cases, links)
     grouped = defaultdict(list)
     for link in links:
         grouped[link['unit_id'], link['primary_case']].append(link)
@@ -62,7 +64,7 @@ def s2_tables(inputs):
                            cleanup_cascade_cases=sum(r['category'] == 'c' for r in flips),
                            firmware_simulator_or_contract_cases=sum(r['category'] == 'd' for r in flips),
                            missing_case_slots=sum(int(r['missing_count']) for r in rows)))
-    return dict(cases=updated, boards=boards, reference_links=links,
+    return dict(cases=updated, boards=boards, reference_links=links, raw_audit=raw_audit,
                 isolated_reconciliation=inputs.csv(S2 + '/isolated_reconciliation.csv'))
 
 

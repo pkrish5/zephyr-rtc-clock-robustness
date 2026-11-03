@@ -1,3 +1,48 @@
+# Phase C complete; Phase D reproducibility in progress, 2026-11-03
+
+The existing manuscript is revised from independently reconciled evidence and
+compiles successfully with the built-in editor. The exported same-source PDF
+was rebuilt with Tectonic 0.17.0 and visually inspected on all five pages: 23
+inline references, no unresolved citations/references, zero overfull h/v boxes.
+All eight table fragments are generated; the stronger S2 raw audit checks all
+1,122 primary launches, 274 replays and 470 failure-reference links, without
+changing any scientific values. Phase A/B gate remains passed.
+
+Phase D has a new exact 113,433-file evidence archive, read back and hash-verified
+(SHA256 805b776337f049164014fea9e2d29ca34ba750beb504e3477064015c46bdc921).
+DATA.md and a safe no-Renode make-tables command are prepared; fresh-clone test,
+final push/tag/release remain. Git SSH can be used for publication; no GitHub
+HTTPS credential was available, and the browser is signed out. Release upload
+may require human GitHub sign-in after all independent work is complete.
+No TACC job, experiment, E2 or prune was performed in this continuation.
+
+# RESUMED: Phase A/B evidence gate passed; Phase C authorized, 2026-11-03
+
+The human confirmed MFA reconnection and requested resume. BatchMode check
+succeeded: collector 3549010 COMPLETED 0:0 in 5:38. Archive returned and verified
+exactly (39,958 entries; all protected hashes unchanged); archive SHA256
+77abe35e33eec8972ea758fc1277dbac5a178cdf5788897381b9eb25dbb5722c.
+The collector copied/rehashed 38,000 files without simulation, build or deletion.
+No resubmission occurred. Earlier authentication/tool blockers are resolved.
+
+Offline reconciliation and the complete Phase 3 package are saved under
+phase3_package_v1/. All 17,375 primary indices reconcile: 16,888 pass, 458 fail,
+29 finalized missing outcomes retained. All 458 failure replays match persisted
+fields and raw trace bytes; all 112 legal-failure reference links pass. A second
+raw-record recount/hash/duration check agrees. Core RTC cohort retains original
+12 missing slots: contrast 3/34 vs 0/32, Fisher171/715 (p0.2391608392), robust55/90,
+optimistic ceiling63/90, robust+slow/nonarrival38/90, descriptive Q14/90.
+Full before/after ledger and S2 references/examples/sensitivity/two-axis tables
+are in the package. See phase_AB_internal_review_v1.json for the internal review.
+
+Proceed directly to authorized C then D, without a Phase 3 human stop. Keep
+S2 failed rate references unresolved, F767 a configuration replica, phase
+explanation supported not measured, and S2 slow faults not measured. No more
+TACC jobs are required for this evidence package. Preserve author edits and
+edit existing main.tex in place only; use built-in compilation and six total
+pages. Re-enable the existing watcher with this authoritative checkpoint for
+continuation if the active run yields. E2 and new experiments remain held.
+
 # STOP: LS6 authentication expired; watcher PAUSED, 2026-11-03 10:12 wakeup
 
 App permission review is working again: the purpose-built automation pause

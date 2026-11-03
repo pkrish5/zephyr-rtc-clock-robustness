@@ -1,0 +1,14 @@
+{
+  "pages": 5,
+  "overfull_hboxes": 0,
+  "overfull_vboxes": 0,
+  "undefined_diagnostics": 0,
+  "inline_bibliography_entries": 23,
+  "built_in_compile": "success on final source",
+  "visual_review": "all five pages rendered and inspected; no clipping/overlap",
+  "files": {
+    "paper/draft/main.tex": "eec6a1802eb197b47363a1272e85e2a4a76f85b620cdafe1fd7dc2659e1d6cd7",
+    "paper/draft/main.pdf": "1041e0e9fd4cefcdc822944fff63e4a2667e4cc809679a50568d786800bbe443",
+    "paper/draft/refs.bib": "e26b725008714c1512c8f524f76c297141255b2a67144ec7ebc1322c8d7f28f6"
+  }
+}

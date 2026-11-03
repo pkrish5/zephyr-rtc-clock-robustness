@@ -1,0 +1,14 @@
+{
+  "archive_readback_verified": true,
+  "bytes": 130629595,
+  "excludes": "No SIF, full Zephyr checkout, caches or unrelated results; includes every input to the final offline analysis.",
+  "filename": "rtc-submission-evidence-v1.tar.gz",
+  "files": 113433,
+  "format": 1,
+  "manifest_sha256": "d4a51653a7e097665b767976c8ed7629d0631f3ce60f3810e7e7bf9b5062e60c",
+  "release_tag": "course-submission-2026-11-03-v1",
+  "sha256": "805b776337f049164014fea9e2d29ca34ba750beb504e3477064015c46bdc921",
+  "source_input_ledger_sha256": "35ad16cb6ccf59bf5aec0483cbd03b307afcf73fa592916190918b661e34b41a",
+  "unpacked_bytes": 634459796,
+  "url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/download/course-submission-2026-11-03-v1/rtc-submission-evidence-v1.tar.gz"
+}

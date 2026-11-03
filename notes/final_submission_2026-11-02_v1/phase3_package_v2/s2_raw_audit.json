@@ -1,0 +1,12 @@
+{
+  "identical_replay_launches": 274,
+  "linked_reference_failure_slots": 470,
+  "new_experiments": false,
+  "primary_case_slots": {
+    "fail": 470,
+    "pass": 3022,
+    "skip": 3138
+  },
+  "primary_launches": 1122,
+  "raw_records_checked": true
+}

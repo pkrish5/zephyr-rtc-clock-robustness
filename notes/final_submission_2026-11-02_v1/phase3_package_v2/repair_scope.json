@@ -1,0 +1,11 @@
+{
+  "duration_definition": "median virtual_ns / 1e9 among evaluable seeded legal-clock primary runs; endpoints, faults, diagnostics and harness errors excluded",
+  "missing_policy": "finalized missing outcomes retained; diagnostic replays do not replace primary scores",
+  "new_simulations_run_by_analysis": 0,
+  "original_records_replaced": 0,
+  "outcomes": {
+    "fail": 458,
+    "harness_error": 29,
+    "pass": 16888
+  }
+}
