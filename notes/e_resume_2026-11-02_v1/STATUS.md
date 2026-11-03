@@ -1,3 +1,12 @@
+# Final analysis complete, 2026-11-03
+
+The original collector 3549010 and all seven recovery chunks are independently
+verified and fully reconciled. All 17,375 primary evaluations comprise 16,888
+passes, 458 failures and the retained 29 finalized harness errors. All 458 failure
+replays agree and all 112 legal-failure reference links pass. Final V0/V1/V1b/V2/V3
+counts and durations are in the final submission phase3_package_v2. No E rerun,
+collector resubmission or E2 is required. Historical operational notes follow.
+
 # Latest checkpoint, 2026-11-03 07:35 America/Chicago
 
 The final E chunk 3547931 completed 0:0 in 24:50. Its archive (7,977 entries)

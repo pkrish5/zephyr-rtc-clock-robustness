@@ -1,3 +1,30 @@
+# Phases A–C and local D complete; GitHub release sign-in required, 2026-11-03
+
+Final candidate a82148aeba825eb052ada67934861dcecbf56d06 was pushed and cloned
+fresh from GitHub. The documented cached-archive make-tables command PASSed:
+113,433 evidence files verified, all eight table hashes identical, 0 Renode
+runs, 46.061 seconds; tracked clone files stayed clean. See
+clean_clone_test_v1.json/.txt. Network asset download is not yet tested because
+the release asset has not been uploaded. DATA.md, machine file/field catalogue,
+raw S2 checks and the complete Phase 3 package are committed. All 30,067 original
+protected files pass the final local audit. No old missing outcome was replaced.
+
+The same-source paper is five total pages, 23 visible/resolved inline references,
+zero [?], zero undefined diagnostics and zero overfull h/v boxes. Built-in editor
+compilation succeeds; final exported PDF and all five rendered pages were checked.
+No further TACC checks/jobs, E2, experiments or pruning are needed or authorized.
+
+Remaining action is GitHub release publication of the verified archive and PDF.
+Git SSH push works, but no configured HTTPS credential is available; the app
+browser shows GitHub Sign in, and native UI access reports the Mac locked.
+Do not authenticate on the human's behalf or expose credentials. A sign-in
+request is pending. Finish the non-overwriting tag/final clone validation, then
+pause the watcher at this actual authentication blocker. On human GitHub sign-in,
+resume only the release upload, verify the published asset/download and final
+links, deliver, and keep the watcher paused. Do not redo experiments/collector.
+Local release assets remain under submission_assets/ (ignored by Git), including
+the verified archive, SHA sidecar, release notes and exact publication command.
+
 # Phase C complete; Phase D reproducibility in progress, 2026-11-03
 
 The existing manuscript is revised from independently reconciled evidence and

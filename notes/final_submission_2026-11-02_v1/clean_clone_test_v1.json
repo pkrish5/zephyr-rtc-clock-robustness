@@ -1,0 +1,16 @@
+{
+  "all_table_hashes_match": true,
+  "clone_directory": "/private/tmp/rtc-submission-clean-clone-20261103-v1",
+  "clone_source": "git@github.com:pkrish5/zephyr-rtc-clock-robustness.git",
+  "commit": "a82148aeba825eb052ada67934861dcecbf56d06",
+  "evidence_files_verified": 113433,
+  "evidence_sha256": "805b776337f049164014fea9e2d29ca34ba750beb504e3477064015c46bdc921",
+  "initial_git_status": "clean before restoration",
+  "python": "3.14.6",
+  "rebuilt_tables": 8,
+  "renode_runs": 0,
+  "retrieval_mode": "documented cached release archive; network asset download not yet tested",
+  "seconds": 46.061,
+  "status": "PASS",
+  "tracked_git_status_after": "clean"
+}
