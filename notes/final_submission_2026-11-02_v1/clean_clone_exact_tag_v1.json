@@ -1,0 +1,16 @@
+{
+  "all_table_hashes_match": true,
+  "clone_source": "fresh GitHub clone of exact pushed tag",
+  "commit": "67ecb3d90e93895d5c5073ca6e8b78e9c8d1a05d",
+  "evidence_files_verified": 113433,
+  "evidence_sha256": "805b776337f049164014fea9e2d29ca34ba750beb504e3477064015c46bdc921",
+  "initial_git_status": "clean",
+  "python": "3.14.6",
+  "rebuilt_tables": 8,
+  "renode_runs": 0,
+  "retrieval_mode": "documented cached release archive; public asset download pending release upload",
+  "seconds": 35.098,
+  "status": "PASS",
+  "tag": "course-submission-2026-11-03-v1",
+  "tracked_git_status_after": "clean"
+}

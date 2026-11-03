@@ -1,0 +1,10 @@
+{
+  "tag": "course-submission-2026-11-03-v1",
+  "submission_commit": "67ecb3d90e93895d5c5073ca6e8b78e9c8d1a05d",
+  "release_created": false,
+  "archive_uploaded": false,
+  "authentication_blocker": "GitHub browser signed out; no configured HTTPS credential; native Mac UI locked",
+  "watcher_status": "PAUSED",
+  "remaining_action": "Human signs in; upload verified existing assets, verify download hash, deliver release URL",
+  "no_more_tacc_work": true
+}

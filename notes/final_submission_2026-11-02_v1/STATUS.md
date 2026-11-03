@@ -1,3 +1,27 @@
+# Exact submission tag verified; watcher PAUSED for release upload, 2026-11-03
+
+Submission tag course-submission-2026-11-03-v1 is pushed at immutable commit
+67ecb3d90e93895d5c5073ca6e8b78e9c8d1a05d. A second fresh GitHub clone of this
+exact tag passed make tables with the documented cached evidence archive:
+113,433 files verified, eight matching table hashes, zero Renode runs, 35.098 s.
+Tracked clone files stayed clean. See clean_clone_exact_tag_v1.json/.txt. The
+five-page PDF, 23 resolved inline references and zero overfull/undefined checks
+remain verified. All experiments and local artifact work are complete.
+
+GitHub release upload is NOT complete. Git SSH works, but the browser is signed
+out, the configured HTTPS helper has no credential, and the Mac is locked for
+native UI access. The human sign-in request is pending. The automation is
+confirmed PAUSED with failed-runs-only notifications and this checkpoint in its
+saved prompt. No automatic authentication/retry is allowed. No TACC job or poll,
+E2, new experiment, frozen-input edit, prune or tag replacement is needed.
+
+On human GitHub sign-in/gh authentication, publish the existing verified archive,
+SHA sidecar, exact-tag clone receipt and PDF using reproduction/publish_release.sh
+(or the authorized signed-in browser), then verify the release/download hash and
+report its real URL. A cached-archive test is not a public download test; do not
+claim the latter until it runs. Release assets are retained in submission_assets/.
+The submission tag remains on 67ecb3d9; later status-only commits do not alter it.
+
 # Phases A–C and local D complete; GitHub release sign-in required, 2026-11-03
 
 Final candidate a82148aeba825eb052ada67934861dcecbf56d06 was pushed and cloned
