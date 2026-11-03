@@ -1,0 +1,30 @@
+{
+  "checked_at_utc": "2026-11-03T06:05:16.868656+00:00",
+  "command": "ssh -o BatchMode=yes -o ConnectTimeout=20 -o ServerAliveInterval=10 -o ServerAliveCountMax=1 ls6 sacct -X -j 3547929,3547930,3547931 --format=JobID,State,ExitCode,Elapsed,Start,End",
+  "exit_code": 0,
+  "jobs": [
+    {
+      "job_id": "3547929",
+      "state": "RUNNING",
+      "exit_code": "0:0",
+      "elapsed": "00:23:33",
+      "slurm_start": "2026-11-02T23:41:13",
+      "slurm_timezone": "not explicitly provided by sacct"
+    },
+    {
+      "job_id": "3547930",
+      "state": "PENDING",
+      "elapsed": "00:00:00"
+    },
+    {
+      "job_id": "3547931",
+      "state": "PENDING",
+      "elapsed": "00:00:00"
+    }
+  ],
+  "new_jobs_submitted": 0,
+  "ls6_git_pull": false,
+  "phase_A_complete": false,
+  "phase_B_executed": false,
+  "manuscript_modified_by_this_run": false
+}

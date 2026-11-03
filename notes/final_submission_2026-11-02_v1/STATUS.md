@@ -1,3 +1,16 @@
+# Latest queue checkpoint, 2026-11-03 00:04 America/Chicago
+
+The scheduled BatchMode check succeeded. E chunk 4 (3547929) is now RUNNING
+(23:33 elapsed, Slurm start 2026-11-02T23:41:13); 3547930 and 3547931 remain
+PENDING. A running ExitCode 0:0 is not a final success. No new completed archive
+was indicated, so evidence-gated Phase B and paper edits have not started.
+No job submitted, no LS6 pull, no authentication action and no records changed.
+The original-E collector was read through with its wrapper: it requires all
+seven recovery jobs COMPLETED before copying/rehashing old evidence on compute.
+The manuscript/PDF still match the saved pre-work hashes. Receipt:
+queue_checkpoint_20261103_0604_v1.json. Next wake checks these existing jobs;
+continue all ready steps after completion, with no Phase 3 human approval stop.
+
 # Scope update, 2026-11-02: automatic completion authorized
 
 The human has removed the Phase 3 human-review stop and authorized automatic
