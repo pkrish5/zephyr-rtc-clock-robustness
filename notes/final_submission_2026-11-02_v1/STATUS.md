@@ -1,3 +1,61 @@
+# STOP: LS6 authentication expired; watcher PAUSED, 2026-11-03 10:12 wakeup
+
+App permission review is working again: the purpose-built automation pause
+request succeeded and saved status is PAUSED. The earlier tool-review timeout
+is resolved. One authorized bounded BatchMode status command then actually ran
+and LS6 returned exit 255, Permission denied (publickey,keyboard-interactive),
+with TACC password/token instructions. Remote access stopped immediately; no
+authentication, retry, resubmission, pull or job modification followed.
+
+Human MFA reconnection and explicit resume are required by the standing rule.
+Collector 3549010 already exists and must never be duplicated; current job
+state remains unknown. After human reconnection, check that existing job, read
+its logs if failed or return/verify its packed archive if complete, then continue
+verified A/B/C/D under the existing authorization. All seven E recovery chunks
+remain verified, and all old finalized missing verdicts remain missing. No paper
+edits or Phase B execution occurred; draft/PDF hashes match their baseline.
+Receipts: auth_blocked_20261103_1612_v1.json; previous tool-timeout history is
+retained below, superseded by this actual authentication blocker. Keep the
+watcher paused until the human confirms reconnection; preserve its full prompt.
+
+# STOP: tool permission review unavailable, 2026-11-03
+
+No further remote requests are authorized from an automatic wake while this
+blocker remains. The existing collector 3549010 was last verified PENDING at
+submission; its current state is unknown. No job failure or authentication
+failure has been established. Do not resubmit it.
+
+The status action timed out in automatic permission approval review before
+process creation. Its one permitted retry yielded no result and was terminated.
+Two attempts to pause this automation via the app tool also returned the same
+permission-review deadline error. The saved automation is still ACTIVE; human
+manual pause or restored tool approval is required. Do not bypass review by
+editing automation.toml. No more retries in this run. The full A–D prompt is
+retained for later resume. Local notes are saved but not committed/pushed because
+escalated operations are unavailable. Draft/PDF hashes match their baseline.
+See monitor_blocked_20261103_1405_v1.json. Resume only after this tool-access
+blocker is resolved, then one bounded BatchMode collector status check.
+
+# Monitoring blocked, 2026-11-03 08:05 America/Chicago wakeup
+
+Collector 3549010 current state is UNVERIFIED. The first authorized BatchMode
+status check was rejected before process creation because automatic permission
+approval review did not finish before its deadline. The tool expressly allowed
+one retry; that retry returned no result and its orchestration cell was
+terminated. No further remote command was attempted. A local process-inventory
+check was denied by the process sandbox, so execution of the retry is not
+confirmed. Do not infer an SSH authentication failure or job failure.
+
+Automation pause was requested but the app tool also returned an automatic
+permission-review timeout, so PAUSED is not confirmed. Do not issue a fresh
+remote request from a later wake until the access blocker has been resolved.
+Its full A–D prompt must be retained. No jobs were
+submitted/cancelled, no LS6 pull, no paper edit and no Phase B execution.
+The accepted development collector must NOT be duplicated. Resume with one
+bounded BatchMode sacct check only after this tool-access blocker is resolved;
+if complete, return/verify its packed archive and continue the approved workflow.
+Receipt: monitor_blocked_20261103_1405_v1.json. Do not ask for a password or token.
+
 # Latest checkpoint: development collector 3549010 accepted, 2026-11-03
 
 The original-E read-only collector was accepted as job 3549010, development,

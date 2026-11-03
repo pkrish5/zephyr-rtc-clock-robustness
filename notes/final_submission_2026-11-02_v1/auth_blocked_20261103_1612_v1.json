@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-11-03T16:13:53.637080+00:00",
+  "automation_id": "watch-s2-replay-3546149",
+  "automation_state": "PAUSED",
+  "pause_tool_result": "success",
+  "permission_review_timeout_blocker": "resolved: app pause control and SSH execution approval succeeded",
+  "collector_job_id": "3549010",
+  "collector_current_state": "unverified",
+  "ssh_exit_code": 255,
+  "ssh_output": "To access the system: If not using ssh-keys, please enter your TACC password at the password prompt. At the TACC Token prompt, enter your 6-digit code followed by <return>. pk23377@ls6.tacc.utexas.edu: Permission denied (publickey,keyboard-interactive).",
+  "batch_mode": true,
+  "authentication_attempted": false,
+  "subsequent_ls6_commands": 0,
+  "new_jobs_submitted": 0,
+  "ls6_pull": false,
+  "phase_B_executed": false,
+  "manuscript_matches_baseline": true,
+  "required_action": "Human reconnects with MFA and confirms resume; then check existing 3549010, never duplicate it."
+}

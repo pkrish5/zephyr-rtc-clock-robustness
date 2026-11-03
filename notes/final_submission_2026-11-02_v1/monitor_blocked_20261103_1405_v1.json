@@ -1,0 +1,20 @@
+{
+  "recorded_at_utc": "2026-11-03T14:10:24.554103+00:00",
+  "collector_job_id": "3549010",
+  "last_verified_state": "PENDING at initial submission check",
+  "current_state": "unverified",
+  "first_attempt": "CreateProcess rejected: automatic permission approval review did not finish before deadline; SSH not started",
+  "one_permitted_retry": "No result returned; orchestration cell terminated; execution unconfirmed",
+  "local_process_inventory": "ps denied by filesystem/process sandbox; no process inventory obtained",
+  "further_remote_attempts": 0,
+  "automation_state": "ACTIVE",
+  "new_jobs_submitted_this_run": 0,
+  "ls6_pull": false,
+  "paper_edited": false,
+  "phase_B_executed": false,
+  "requires_mfa_reconnect": "not established; do not assume authentication failure",
+  "pause_attempts": 2,
+  "pause_attempt_results": "Both returned automatic permission approval review deadline timeout; no further retries",
+  "local_blocker_checkpoint_committed": false,
+  "manuscript_matches_baseline": true
+}
