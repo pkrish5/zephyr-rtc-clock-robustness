@@ -1,0 +1,39 @@
+{
+  "jobs": [
+    {
+      "job": "3552681",
+      "unit": "f4-rtc",
+      "output_state": "failed",
+      "archive_sha256": "450947840c9d1db5b8a7ef5c65beea852f551d439c35d1ec1065df1357219fe2",
+      "renode_processes_started": 0,
+      "primary_records": 0,
+      "launch_indices_started": 0,
+      "scheduled_not_started": 90,
+      "protected_files_unchanged": 30067,
+      "error": "Preflight container hash assertion failed at coordinator.py:14",
+      "requested_image_path": "tacc_work/20261022-v9/images/rtc-ls6-v1.sif",
+      "required_image_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+      "correct_image_sidecar_path": "tacc_work/20261023-v10/images/rtc-ls6-v1.sif.sha256"
+    },
+    {
+      "job": "3552682",
+      "unit": "f4-counter",
+      "output_state": "failed",
+      "archive_sha256": "b40e6b73d28a9dfe1b97da0e58fbe8e6c9ced00c81088144c0e43a3ba4b3ff55",
+      "renode_processes_started": 0,
+      "primary_records": 0,
+      "launch_indices_started": 0,
+      "scheduled_not_started": 90,
+      "protected_files_unchanged": 30067,
+      "error": "Preflight container hash assertion failed at coordinator.py:14",
+      "requested_image_path": "tacc_work/20261022-v9/images/rtc-ls6-v1.sif",
+      "required_image_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+      "correct_image_sidecar_path": "tacc_work/20261023-v10/images/rtc-ls6-v1.sif.sha256"
+    }
+  ],
+  "new_scientific_verdicts": 0,
+  "scheduled_total_not_started": 180,
+  "not_within_setting_flakiness_evidence": true,
+  "old_archives_preserved": true,
+  "no_resubmission": true
+}

@@ -1,0 +1,8 @@
+{
+  "job_id": "3552682",
+  "unit": "f4-counter",
+  "archive_sha256": "b40e6b73d28a9dfe1b97da0e58fbe8e6c9ced00c81088144c0e43a3ba4b3ff55",
+  "exact_entries": 6,
+  "output_state": "failed",
+  "protected_files_unchanged": 30067
+}

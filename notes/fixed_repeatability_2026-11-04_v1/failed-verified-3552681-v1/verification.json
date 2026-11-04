@@ -1,0 +1,8 @@
+{
+  "job_id": "3552681",
+  "unit": "f4-rtc",
+  "archive_sha256": "450947840c9d1db5b8a7ef5c65beea852f551d439c35d1ec1065df1357219fe2",
+  "exact_entries": 6,
+  "output_state": "failed",
+  "protected_files_unchanged": 30067
+}

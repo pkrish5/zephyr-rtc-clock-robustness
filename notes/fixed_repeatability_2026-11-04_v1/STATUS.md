@@ -1,5 +1,32 @@
 # Fixed-setting repeatability status, 2026-11-04
 
+## Latest manual check: repeat jobs FAILED at preflight; counter chain PENDING
+
+A human-requested BatchMode check succeeded. Both3552681 and3552682 are FAILED
+(exit1:0). The four counter-repair jobs3552460-3552463 remain PENDING at this
+check. Read logs and independently verified both failed packed archives, each
+with6inventory entries and30,067 unchanged protected files. Both stopped at
+coordinator.py:14, before Launcher/Renode/any primary record. All180scheduled
+indices are not started, not scientific pass/fail outcomes. No flakiness
+conclusion is supported. The submission helper selected the old v9SIF path
+while the sealed hash requires v10. The correct image sidecar is at
+tacc_work/20261023-v10/images/rtc-ls6-v1.sif.sha256. No input was changed and
+no job was resubmitted. Recovery needs a new dated infrastructure amendment,
+new paths/receipts and approved cost before execution; keep these failed
+archives. Counter repair jobs/code/inputs and paper remain untouched.
+
+
+## Latest checkpoint: watcher PAUSED, 2026-11-04 16:25 Central
+
+The scheduled read-only BatchMode sacct check was rejected with password/MFA
+instructions before returning current job states. Remote access stopped and
+the watcher was confirmed PAUSED. No pull, submission, cancellation, archive
+transfer or experiment action occurred. The six accepted jobs remain untouched;
+their current states are unverified in this check. Human reconnection and a
+working BatchMode confirmation are required before resume. Earlier submitted/
+ACTIVE checkpoints below are historical.
+
+
 ## Current checkpoint: submitted; watcher ACTIVE
 
 RTC repeatability job **3552681** and counter repeatability job **3552682**
@@ -68,3 +95,8 @@ The new watcher is now confirmed ACTIVE on its30-minute schedule, with
 failed-runs-only notifications preserved. Latest sacct verifies3552681,3552682
 and all four counter-repair jobs PENDING. Never pull LS6 or change sealed code
 while either repeatability job is pending/running. No fresh verdict yet.
+
+Watcher resumed only for read-only monitoring of the four pending counter-repair
+jobs and eventual delivery of the saved follow-up. The failed repeatability
+archives are already verified; recovery proposal awaits human cost approval.
+No retry, scientific result or manuscript change is authorized from the watcher.
