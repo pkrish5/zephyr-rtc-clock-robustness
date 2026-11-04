@@ -1,9 +1,8 @@
-# Clock Robustness and Alarm Precision in Zephyr RTC Tests
+# Clock-Sensitive Waits and Fault-Aware Repair in Zephyr RTC Tests
 
 > Current focused course paper: [manuscript v2 (2026-11-04)](https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-paper-2026-11-04-v2). The original evidence release is unchanged and contains an older PDF. See [claim audit](notes/course_subjects_2026-11-04_v1/CLAIM_AUDIT.md) and `make course-tables` for the subject-level revision.
 
-
-This repository accompanies the paper [Clock Robustness and Alarm Precision in LLM-Generated and Upstream Zephyr RTC Tests](paper/draft/main.pdf). It contains the manuscript source, frozen protocols and prompts, all saved generated C test sources, experiment and analysis scripts, and non-binary run records.
+This repository accompanies [Clock-Sensitive Waits and Fault-Aware Repair in Zephyr RTC Tests](paper/draft/main.pdf). It contains the manuscript source, frozen protocols and prompts, all saved generated C test sources, experiment and analysis scripts, and non-binary run records.
 
 ## Contents
 
