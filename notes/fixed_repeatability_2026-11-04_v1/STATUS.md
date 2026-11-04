@@ -33,3 +33,9 @@ never be resubmitted, canceled, resealed or cleaned by this workflow.
 The local protected audit passes all30,067 original files. main.tex and main.pdf
 remain byte-identical to the published manuscriptv2. No fourth-case results
 are inserted. Finalized missing repeatability verdicts remain missing.
+
+The separate30-minute follow-up watcher was created PAUSED (id
+verify-f4-repeatability-and-deliver-counter-repair-follow-up). It must not make
+remote retries before the human reconnects and it is resumed. RUNBOOK.md records
+the exact continuation, receipt and independent archive-verification steps.
+Offline archive/report verifiers are ready; no fresh outcome exists yet.

@@ -1,0 +1,11 @@
+{
+  "protected_files_unchanged": 30067,
+  "counter_study_local_files_unchanged": 20,
+  "paper_tex_unchanged": true,
+  "paper_pdf_unchanged": true,
+  "repeatability_jobs_submitted": 0,
+  "fresh_renode_processes_executed": 0,
+  "watcher_id": "verify-f4-repeatability-and-deliver-counter-repair-follow-up",
+  "watcher_state": "PAUSED",
+  "blocker": "LS6 BatchMode authentication rejected; awaiting user MFA reconnection"
+}
