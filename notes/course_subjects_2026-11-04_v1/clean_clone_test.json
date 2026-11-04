@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "clone": "/private/tmp/rtc-course-v2-clean-20261104",
+  "source_commit": "942794eb43d2e9b4505a37551c5e6d3de753576a",
+  "command": "make course-tables EVIDENCE_ARCHIVE=/absolute/path/rtc-submission-evidence-v1.tar.gz",
+  "cached_archive": true,
+  "original_table_hashes_match": 8,
+  "readable_table_hashes_match": 3,
+  "numeric_claims": 35,
+  "paired_primary_records": 17375,
+  "renode_runs": 0,
+  "tracked_changes_after_run": "",
+  "log_sha256": "7dc33c2eca48dea746a464b158e6aa5bc50fbb5c66d3c99f57cf24a6269b2790"
+}

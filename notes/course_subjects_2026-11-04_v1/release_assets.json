@@ -1,0 +1,30 @@
+{
+  "assets": {
+    "clock-sensitive-waits-v2-source.zip": {
+      "bytes": 59375,
+      "sha256": "9cdc7c32ee9c99012bc68c6f60c819bb24237ae8a8d1dbbaf2f21dbc7e366a4c"
+    },
+    "clock-sensitive-waits-v2.pdf": {
+      "bytes": 105607,
+      "sha256": "73488b9c4892f929404c835955f489f92028160b4107504d44bd4e3373cca95b"
+    },
+    "main-v2.tex": {
+      "bytes": 27059,
+      "sha256": "0a7d9633a8021516086b517012e98d9aadd9691d12d2820d1364567ae34aca0c"
+    },
+    "CLAIM_AUDIT.md": {
+      "bytes": 9100,
+      "sha256": "1d70f2ec9aa8f19d129989a303d878677cdce95c9be62455331f6801969923b0"
+    },
+    "final_validation.json": {
+      "bytes": 613,
+      "sha256": "3210643003238a935b5a0631dc2faca3d37388be43627a32b6ed211cacbf60ca"
+    },
+    "clean_clone_test.json": {
+      "bytes": 539,
+      "sha256": "0cee43aa3eb2504b8e3e60717f172b91c0460bcfe7238993d5dbb0aa949764de"
+    }
+  },
+  "source_entries_verified": 29,
+  "old_evidence_unchanged": true
+}
