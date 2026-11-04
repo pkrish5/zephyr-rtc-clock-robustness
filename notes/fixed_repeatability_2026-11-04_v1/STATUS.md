@@ -1,5 +1,21 @@
 # Fixed-setting repeatability status, 2026-11-04
 
+## Current checkpoint: submitted; watcher ACTIVE
+
+RTC repeatability job **3552681** and counter repeatability job **3552682**
+were accepted on development/TRA25006. Each packs90full-application launches
+on one node with32Launcher workers. Wall limits1.5h and2h; estimated costs
+0.727864SU and1.714042SU, total2.441906SU; total ceiling3.5SU.
+Counter repeats depend only afterany:3552681, not on3552460-3552463.
+
+The guarded git pull matched Mac/LS6 HEADb48da832. Active counter execution-code
+hashes match before/after the pull, and the repeat plan seal matches. Receipts
+were returned with rsync into submission-returned-v1 and reconciled in
+submission_receipt.json. Never resubmit an accepted or uncertain job.
+No paper edit or fourth-case result has been made. Earlier preparation/access
+notes below are historical; this submission checkpoint supersedes them.
+
+
 Preregistered and sealed before execution. Six cells x30repeats=180planned
 fresh full-application launches, unchanged archived F4 ELFs. Input verification
 covers4boundary records and10nominal qualification records. Same ELF hashes
@@ -39,3 +55,16 @@ verify-f4-repeatability-and-deliver-counter-repair-follow-up). It must not make
 remote retries before the human reconnects and it is resumed. RUNBOOK.md records
 the exact continuation, receipt and independent archive-verification steps.
 Offline archive/report verifiers are ready; no fresh outcome exists yet.
+
+## Reconnection check, 2026-11-04T15:46:54.118406-06:00
+
+The human authorized pull/submission after reconnecting. The first bounded
+BatchMode read-only status/receipt check was again rejected with password/MFA
+instructions before any remote command executed. Remote access stopped. No
+git pull or repeatability submission occurred; watcher remains PAUSED. The
+human was asked to verify a BatchMode connection-ok command in their terminal.
+
+The new watcher is now confirmed ACTIVE on its30-minute schedule, with
+failed-runs-only notifications preserved. Latest sacct verifies3552681,3552682
+and all four counter-repair jobs PENDING. Never pull LS6 or change sealed code
+while either repeatability job is pending/running. No fresh verdict yet.

@@ -1,0 +1,37 @@
+{
+  "timestamp_america_chicago": "2026-11-04T15:55:22.920830-06:00",
+  "account": "TRA25006",
+  "partition": "development",
+  "nodes_per_job": 1,
+  "workers_per_node": 32,
+  "planned_launches": 180,
+  "estimated_su_total": 2.441906,
+  "reservation_ceiling_su_total": 3.5,
+  "remote_submission_head": "b48da8322cd60a179d2681ef951422bea3a48347",
+  "plan_sha256": "9c19539dcdf8df60b945debfa2fc69e721021bf80b87e157a1a80dacaa93a613",
+  "counter_execution_code_hashes_unchanged": true,
+  "counter_code_files": 5,
+  "jobs": {
+    "f4-rtc": {
+      "job_id": "3552681",
+      "state": "accepted",
+      "wall_limit": "01:30:00",
+      "estimated_su": 0.727864,
+      "reservation_su_ceiling": 1.5
+    },
+    "f4-counter": {
+      "job_id": "3552682",
+      "state": "accepted",
+      "wall_limit": "02:00:00",
+      "estimated_su": 1.714042,
+      "reservation_su_ceiling": 2
+    }
+  },
+  "counter_repair_jobs_untouched": [
+    "3552460",
+    "3552461",
+    "3552462",
+    "3552463"
+  ],
+  "no_existing_records_replaced": true
+}

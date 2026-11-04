@@ -1,0 +1,11 @@
+{
+  "timestamp_america_chicago": "2026-11-04T15:46:54.118406-06:00",
+  "attempt": "read-only BatchMode status/receipt check after human reconnection confirmation",
+  "exit_code": 255,
+  "result": "Permission denied (publickey,keyboard-interactive); password/MFA instructions",
+  "remote_commands_executed": false,
+  "git_pull_executed": false,
+  "repeatability_jobs_submitted": 0,
+  "watcher_state": "PAUSED",
+  "automatic_remote_retries_stopped": true
+}
