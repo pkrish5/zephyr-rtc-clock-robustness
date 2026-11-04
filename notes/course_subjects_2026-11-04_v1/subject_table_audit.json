@@ -1,0 +1,64 @@
+{
+  "subjects": [
+    {
+      "subject_id": "human-rtc_alarm_callback",
+      "label": "Alarm callback",
+      "original_seed_fail": 26,
+      "original_endpoint_fail": 1,
+      "repaired_pass_per_variant": 102,
+      "missing_per_variant": 0,
+      "slow_all_variants": "detected"
+    },
+    {
+      "subject_id": "human-rtc_alarm_pending",
+      "label": "Alarm pending",
+      "original_seed_fail": 26,
+      "original_endpoint_fail": 1,
+      "repaired_pass_per_variant": 102,
+      "missing_per_variant": 0,
+      "slow_all_variants": "detected"
+    },
+    {
+      "subject_id": "human-rtc_time_counting",
+      "label": "Calendar counting",
+      "original_seed_fail": 17,
+      "original_endpoint_fail": 1,
+      "repaired_pass_per_variant": 102,
+      "missing_per_variant": 0,
+      "slow_all_variants": "detected"
+    },
+    {
+      "subject_id": "sol-range_absent-rtc_alarm_pending-r01",
+      "label": "Sol pending r01",
+      "original_seed_fail": 11,
+      "original_endpoint_fail": 1,
+      "repaired_pass_per_variant": 102,
+      "missing_per_variant": 0,
+      "slow_all_variants": "detected"
+    },
+    {
+      "subject_id": "sol-range_absent-rtc_alarm_pending-r03",
+      "label": "Sol pending r03",
+      "original_seed_fail": 13,
+      "original_endpoint_fail": 1,
+      "repaired_pass_per_variant": 102,
+      "missing_per_variant": 0,
+      "slow_all_variants": "detected"
+    },
+    {
+      "subject_id": "astra-range_absent-rtc_alarm_pending-r05",
+      "label": "Astra pending r05",
+      "original_seed_fail": 13,
+      "original_endpoint_fail": 1,
+      "repaired_pass_per_variant": 102,
+      "missing_per_variant": 0,
+      "slow_all_variants": "detected"
+    }
+  ],
+  "table_sha256": {
+    "subjects_course_v2.tex": "674da70b63516b137a7b5c74508402d78ccf983ef36ca1df17e24ae1fbe31ddb",
+    "expanded_course_v2.tex": "11f59c2f80d4337c270b97d67c463b0b9ac38fadbea4aabbff0d6ba1fb1945e9",
+    "repairs_course_v2.tex": "04da686eee1ec57b8628b2d50554e154ed609b3b824ff2fff516cb1b39e25fd6"
+  },
+  "source_sha256": "77486ecccc18b76acb1aea288c2e724a751d831b55bb62aed779a6ae6f06742e"
+}

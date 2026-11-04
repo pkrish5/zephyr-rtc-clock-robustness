@@ -1,0 +1,15 @@
+{
+  "pages": 5,
+  "overfull_boxes": 0,
+  "unresolved_citations": 0,
+  "unresolved_references": 0,
+  "inline_bibliography_entries": 13,
+  "all_pages_visually_inspected": true,
+  "pdf_sha256": "73488b9c4892f929404c835955f489f92028160b4107504d44bd4e3373cca95b",
+  "tex_sha256": "0a7d9633a8021516086b517012e98d9aadd9691d12d2820d1364567ae34aca0c",
+  "refs_bib_sha256": "e26b725008714c1512c8f524f76c297141255b2a67144ec7ebc1322c8d7f28f6",
+  "evidence_sha256": "805b776337f049164014fea9e2d29ca34ba750beb504e3477064015c46bdc921",
+  "numeric_audit": 35,
+  "protected_files_unchanged": 30067,
+  "no_new_experiments": true
+}

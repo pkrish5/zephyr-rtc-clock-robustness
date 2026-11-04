@@ -1,0 +1,13 @@
+{
+  "primary_records_verified": 17375,
+  "primary_outcomes": {
+    "pass": 16888,
+    "fail": 458,
+    "harness_error": 29
+  },
+  "sensitive_subjects": 6,
+  "expanded_runnable_names": 10,
+  "right_sizing_slow_gains": 11,
+  "additional_polling_slow_gains": 0,
+  "any_paired_detection_losses": false
+}

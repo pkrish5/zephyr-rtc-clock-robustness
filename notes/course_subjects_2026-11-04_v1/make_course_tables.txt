@@ -1,0 +1,43 @@
+python3 -B analysis/final_submission_v1/reproduce.py --archive "/Users/pranavkrishnan/Development/Flakey_Tests_Embeded/submission_assets/rtc-submission-evidence-v1.tar.gz"
+/var/folders/sc/t5w_64p511d_qm0g75qv7ykm0000gn/T/rtc-tables-1ut4k1zn/analysis/PHASE3_PACKAGE.md
+{
+  "all_table_hashes_match": true,
+  "evidence_files_verified": 113433,
+  "evidence_sha256": "805b776337f049164014fea9e2d29ca34ba750beb504e3477064015c46bdc921",
+  "python": "3.14.6",
+  "rebuilt_tables": 8,
+  "renode_runs": 0,
+  "seconds": 57.03,
+  "status": "PASS"
+}
+python3 -B notes/course_subjects_2026-11-04_v1/build_subject_tables.py
+{
+  "subjects_course_v2.tex": "674da70b63516b137a7b5c74508402d78ccf983ef36ca1df17e24ae1fbe31ddb",
+  "expanded_course_v2.tex": "11f59c2f80d4337c270b97d67c463b0b9ac38fadbea4aabbff0d6ba1fb1945e9",
+  "repairs_course_v2.tex": "04da686eee1ec57b8628b2d50554e154ed609b3b824ff2fff516cb1b39e25fd6"
+}
+python3 -B notes/course_subjects_2026-11-04_v1/audit_paired_records.py
+{
+  "primary_records_verified": 17375,
+  "primary_outcomes": {
+    "pass": 16888,
+    "fail": 458,
+    "harness_error": 29
+  },
+  "sensitive_subjects": 6,
+  "expanded_runnable_names": 10,
+  "right_sizing_slow_gains": 11,
+  "additional_polling_slow_gains": 0,
+  "any_paired_detection_losses": false
+}
+python3 -B notes/course_subjects_2026-11-04_v1/verify_manuscript.py
+{
+  "status": "PASS",
+  "numeric_claims": 33,
+  "original_table_hashes_match": 8,
+  "readable_table_hashes_match": 3,
+  "citation_keys_resolve": 13,
+  "manuscript_sha256": "0a7d9633a8021516086b517012e98d9aadd9691d12d2820d1364567ae34aca0c",
+  "raw_records_mutated": false,
+  "renode_runs": 0
+}

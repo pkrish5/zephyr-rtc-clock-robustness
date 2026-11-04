@@ -1,0 +1,774 @@
+[
+  {
+    "url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness",
+    "status": 200,
+    "resolved_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness",
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/tree/main/results",
+    "status": 200,
+    "resolved_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/tree/main/results",
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-submission-2026-11-03-v1",
+    "status": 200,
+    "resolved_url": "https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-submission-2026-11-03-v1",
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://renode.readthedocs.io/en/latest/advanced/time_framework.html",
+    "status": 200,
+    "resolved_url": "https://renode.readthedocs.io/en/latest/advanced/time_framework.html",
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2606.18168",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/pdf/2606.18168",
+    "content_type": "application/pdf"
+  },
+  {
+    "url": "https://doi.org/10.1109/TSE.2014.2372785",
+    "crossref": {
+      "DOI": "10.1109/tse.2014.2372785",
+      "title": [
+        "The Oracle Problem in Software Testing: A Survey"
+      ],
+      "author": [
+        {
+          "given": "Earl T.",
+          "family": "Barr",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark",
+          "family": "Harman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Phil",
+          "family": "McMinn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Muzammil",
+          "family": "Shahbaz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shin",
+          "family": "Yoo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            1
+          ]
+        ]
+      },
+      "volume": "41",
+      "issue": "5",
+      "page": "507-525",
+      "URL": "https://doi.org/10.1109/tse.2014.2372785"
+    },
+    "access_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://doi.org/10.1145/3786583.3786919",
+    "crossref": {
+      "DOI": "10.1145/3786583.3786919",
+      "title": [
+        "On the Flakiness of LLM-Generated Tests for Industrial and Open-Source Database Management Systems"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-5248-6405",
+          "authenticated-orcid": false,
+          "given": "Alexander",
+          "family": "Berndt",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Heidelberg University, Heidelberg, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9993-2814",
+          "authenticated-orcid": false,
+          "given": "Thomas",
+          "family": "Bach",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "SAP, Walldorf, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2762-0050",
+          "authenticated-orcid": false,
+          "given": "Rainer",
+          "family": "Gemulla",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Mannheim, Mannheim, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3088-2166",
+          "authenticated-orcid": false,
+          "given": "Marcus",
+          "family": "Kessel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Mannheim, Mannheim, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2442-7522",
+          "authenticated-orcid": false,
+          "given": "Sebastian",
+          "family": "Baltes",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Heidelberg University, Heidelberg, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            11
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            12
+          ]
+        ]
+      },
+      "volume": null,
+      "issue": null,
+      "page": "819-830",
+      "URL": "https://doi.org/10.1145/3786583.3786919"
+    },
+    "access_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://arxiv.org/abs/2305.04764",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/2305.04764",
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://doi.org/10.1109/TSE.2010.62",
+    "crossref": {
+      "DOI": "10.1109/tse.2010.62",
+      "title": [
+        "An Analysis and Survey of the Development of Mutation Testing"
+      ],
+      "author": [
+        {
+          "given": "Yue",
+          "family": "Jia",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark",
+          "family": "Harman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Software Engineering"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2011,
+            9
+          ]
+        ]
+      },
+      "volume": "37",
+      "issue": "5",
+      "page": "649-678",
+      "URL": "https://doi.org/10.1109/tse.2010.62"
+    },
+    "access_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://doi.org/10.1145/2635868.2635920",
+    "crossref": {
+      "DOI": "10.1145/2635868.2635920",
+      "title": [
+        "An empirical analysis of flaky tests"
+      ],
+      "author": [
+        {
+          "given": "Qingzhou",
+          "family": "Luo",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Farah",
+          "family": "Hariri",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lamyaa",
+          "family": "Eloussi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Darko",
+          "family": "Marinov",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Illinois at Urbana-Champaign, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            11
+          ]
+        ]
+      },
+      "volume": null,
+      "issue": null,
+      "page": "643-653",
+      "URL": "https://doi.org/10.1145/2635868.2635920"
+    },
+    "access_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://doi.org/10.1109/ICST60714.2024.00032",
+    "crossref": {
+      "DOI": "10.1109/icst60714.2024.00032",
+      "title": [
+        "Automatically Reproducing Timing-Dependent Flaky-Test Failures"
+      ],
+      "author": [
+        {
+          "given": "Shanto",
+          "family": "Rahman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Texas at Austin,Austin,United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aaron",
+          "family": "Massey",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google,Boulder,United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wing",
+          "family": "Lam",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "George Mason University,Fairfax,United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "August",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Texas at Austin,Austin,United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jonathan",
+          "family": "Bell",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Northeastern University,Boston,United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 IEEE Conference on Software Testing, Verification and Validation (ICST)"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            27
+          ]
+        ]
+      },
+      "published-online": null,
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            27
+          ]
+        ]
+      },
+      "volume": null,
+      "issue": null,
+      "page": "269-280",
+      "URL": "https://doi.org/10.1109/icst60714.2024.00032"
+    },
+    "access_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://doi.org/10.1145/1086228.1086282",
+    "crossref": {
+      "DOI": "10.1145/1086228.1086282",
+      "title": [
+        "Random testing of interrupt-driven software"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Regehr",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Utah"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 5th ACM international conference on Embedded software"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            9,
+            18
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2005,
+            9,
+            18
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2005,
+            9,
+            18
+          ]
+        ]
+      },
+      "volume": null,
+      "issue": null,
+      "page": "290-298",
+      "URL": "https://doi.org/10.1145/1086228.1086282"
+    },
+    "access_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.st.com/resource/en/datasheet/stm32f407vg.pdf",
+    "access_error": "The read operation timed out"
+  },
+  {
+    "url": "https://doi.org/10.1145/3395363.3397359",
+    "crossref": {
+      "DOI": "10.1145/3395363.3397359",
+      "title": [
+        "Intermittently failing tests in the embedded systems domain"
+      ],
+      "author": [
+        {
+          "given": "Per Erik",
+          "family": "Strandberg",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Westermo Network Technologies, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas J.",
+          "family": "Ostrand",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "M\u00e4lardalen University, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elaine J.",
+          "family": "Weyuker",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "M\u00e4lardalen University, Sweden / University of Central Florida, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wasif",
+          "family": "Afzal",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "M\u00e4lardalen University, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel",
+          "family": "Sundmark",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "M\u00e4lardalen University, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            18
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            18
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            18
+          ]
+        ]
+      },
+      "volume": null,
+      "issue": null,
+      "page": "337-348",
+      "URL": "https://doi.org/10.1145/3395363.3397359"
+    },
+    "access_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://github.com/zephyrproject-rtos/zephyr/commit/3568e1b6d5cdd51a6b964a2a1d6d29200fea2056",
+    "status": 200,
+    "resolved_url": "https://github.com/zephyrproject-rtos/zephyr/commit/3568e1b6d5cdd51a6b964a2a1d6d29200fea2056",
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "url": "https://www.st.com/resource/en/application_note/dm00425536-how-to-optimize-stm32-mcus-internal-rc-oscillator-accuracy-stmicroelectronics.pdf",
+    "access_error": "The read operation timed out"
+  },
+  {
+    "url": "https://www.st.com/resource/en/application_note/dm00469014-using-xcuberccalib-software-to-calibrate-stm32g0-series-internal-rc-oscillator-stmicroelectronics.pdf",
+    "access_error": "The read operation timed out"
+  },
+  {
+    "url": "https://www.st.com/resource/en/reference_manual/dm00031020-stm32f10x-microcontrollers-stmicroelectronics.pdf",
+    "access_error": "The read operation timed out"
+  },
+  {
+    "url": "https://www.st.com/resource/en/datasheet/stm32h753zi.pdf",
+    "access_error": "The read operation timed out"
+  }
+]

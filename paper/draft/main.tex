@@ -1,257 +1,167 @@
-\documentclass[sigconf,nonacm]{acmart}
+\documentclass[sigconf,nonacm,balance=false]{acmart}
 \usepackage{booktabs}
-\usepackage{tikz}
 \emergencystretch=1.5em
+\raggedbottom
 \setcopyright{none}
 \settopmatter{printacmref=false}
 \renewcommand\footnotetextcopyrightpermission[1]{}
 \begin{document}
-% Resolve numeric citations on the editor compiler's first pass; aux labels take precedence on later passes.
 \makeatletter
-\@ifundefined{b@pizzorno2025coverup}{\bibcite{pizzorno2025coverup}{1}}{}
-\@ifundefined{b@renodetime}{\bibcite{renodetime}{2}}{}
-\@ifundefined{b@banik2026}{\bibcite{banik2026}{3}}{}
-\@ifundefined{b@barr2015oracle}{\bibcite{barr2015oracle}{4}}{}
-\@ifundefined{b@berndt2026}{\bibcite{berndt2026}{5}}{}
-\@ifundefined{b@chen2024chatunitest}{\bibcite{chen2024chatunitest}{6}}{}
-\@ifundefined{b@dakhel2024mutap}{\bibcite{dakhel2024mutap}{7}}{}
-\@ifundefined{b@aim2023}{\bibcite{aim2023}{8}}{}
-\@ifundefined{b@embctest2026}{\bibcite{embctest2026}{9}}{}
-\@ifundefined{b@jia2011mutation}{\bibcite{jia2011mutation}{10}}{}
-\@ifundefined{b@luo2014flaky}{\bibcite{luo2014flaky}{11}}{}
-\@ifundefined{b@rahman2024flakerake}{\bibcite{rahman2024flakerake}{12}}{}
-\@ifundefined{b@regehr2005random}{\bibcite{regehr2005random}{13}}{}
-\@ifundefined{b@stm32f407datasheet}{\bibcite{stm32f407datasheet}{14}}{}
-\@ifundefined{b@strandberg2020}{\bibcite{strandberg2020}{15}}{}
-\@ifundefined{b@aidfuzzer2025}{\bibcite{aidfuzzer2025}{16}}{}
-\@ifundefined{b@sdracer2017}{\bibcite{sdracer2017}{17}}{}
-\@ifundefined{b@embedagent2026}{\bibcite{embedagent2026}{18}}{}
-\@ifundefined{b@zephyrpinned}{\bibcite{zephyrpinned}{19}}{}
-\@ifundefined{b@st_an5067}{\bibcite{st_an5067}{20}}{}
-\@ifundefined{b@st_an5126}{\bibcite{st_an5126}{21}}{}
-\@ifundefined{b@st_rm0090}{\bibcite{st_rm0090}{22}}{}
-\@ifundefined{b@stm32h753datasheet}{\bibcite{stm32h753datasheet}{23}}{}
+\@ifundefined{b@renodetime}{\bibcite{renodetime}{1}}{}
+\@ifundefined{b@barr2015oracle}{\bibcite{barr2015oracle}{2}}{}
+\@ifundefined{b@jia2011mutation}{\bibcite{jia2011mutation}{3}}{}
+\@ifundefined{b@luo2014flaky}{\bibcite{luo2014flaky}{4}}{}
+\@ifundefined{b@rahman2024flakerake}{\bibcite{rahman2024flakerake}{5}}{}
+\@ifundefined{b@regehr2005random}{\bibcite{regehr2005random}{6}}{}
+\@ifundefined{b@stm32f407datasheet}{\bibcite{stm32f407datasheet}{7}}{}
+\@ifundefined{b@strandberg2020}{\bibcite{strandberg2020}{8}}{}
+\@ifundefined{b@zephyrpinned}{\bibcite{zephyrpinned}{9}}{}
+\@ifundefined{b@st_an5067}{\bibcite{st_an5067}{10}}{}
+\@ifundefined{b@st_an5126}{\bibcite{st_an5126}{11}}{}
+\@ifundefined{b@st_rm0090}{\bibcite{st_rm0090}{12}}{}
+\@ifundefined{b@stm32h753datasheet}{\bibcite{stm32h753datasheet}{13}}{}
 \makeatother
 
-
-\title[Clock Robustness and Alarm Precision]{Clock Robustness and Alarm Precision in LLM-Generated and Upstream Zephyr RTC Tests}
+\title[Clock-Sensitive Waits and Fault-Aware Repair]{Clock-Sensitive Waits and Fault-Aware Repair in Zephyr RTC Tests}
 \author{Pranav Krishnan}
 \affiliation{\institution{The University of Texas at Austin}\city{Austin}\state{Texas}\country{USA}}
 \author{Keshav Bhargava}
 \affiliation{\institution{The University of Texas at Austin}\city{Austin}\state{Texas}\country{USA}}
 
 \begin{abstract}
-Firmware tests often wait a fixed time for a hardware event. If a chip's clock runs slower than expected but remains within its datasheet limits, a correct program can fail its test. We compare selected and expanded upstream Zephyr real-time clock (RTC) tests with tests generated from frozen specifications. The three original upstream cases fail at 17--26 of 100 legal clock settings; three of 66 eligible generated suites fail, all base-prompt pending tests. The prompt contrast, 3/34 versus 0/32 suites, is not significant. Expanded full applications expose additional waiting failures, phase effects and cleanup cascades; a narrower H753 clock envelope produces no observed failures. In a registered 33-subject repair study, extending waits removes observed legal-clock failures but preserves weak slow-fault detection; right-sizing waits or waiting for state improves detection. Configured-time callback checks also expose alarm offsets, but the specification requested that precision. Clock robustness, generation yield and oracle strength require separate assessment.
+Firmware tests often wait a fixed time for a hardware event. A legal but slower clock can make a correct program fail that test. We study clock-sensitive waits and fault-aware repair using one Zephyr STM32 real-time clock (RTC) driver and the existing Renode model. Three selected upstream cases and three generated pending suites fail at legal clock settings. Each of four mechanical repairs makes each subject pass all 102 tested legal settings while retaining its measured slow-oscillator fault detection. This six-subject result is separate from right-sizing overlong deadlines in 11 already clock-tolerant generated counting tests, which adds slow-fault detection without requiring state polling. Added alarm checks address another weakness: early and late alarm programming. An expanded full-application study contains 10 distinct runnable upstream case names, of which four have waiting-sensitive failures; only the original three upstream subjects were repaired. We distinguish timing sensitivity across settings from unmeasured same-setting flakiness and separate waiting defects, cleanup cascades and unresolved rate contracts. The results support these repairs under the tested model and faults, not a general repair rate or a prevalence estimate for developer tests.
 \end{abstract}
-\keywords{embedded testing, flaky tests, interrupt-driven firmware, RTC, large language models}
+\keywords{embedded testing, timing sensitivity, test repair, RTC, fault detection}
 \maketitle
 
 \section{Introduction}
-An RTC alarm test may schedule an event ten calendar seconds ahead, wait thirteen simulated seconds, and assert that a callback arrived. This is justified only if the RTC clock and delivery path fit that window. Repeating a deterministic simulator schedule cannot test that premise. Varying the oscillator within its documented range can change a verdict while preserving test and firmware source.
+An RTC test schedules an alarm ten calendar seconds ahead, waits thirteen simulated (Renode virtual) seconds, and asserts that a callback arrived. Its wait assumes that the RTC clock and callback path fit the observation window. At a slower but datasheet-legal clock, the alarm target itself may occur after the assertion. Extending the wait can fix the legal-clock failure. An excessively long deadline can also accept a faulty clock, so a passing repaired test alone is insufficient.
 
-We call developer-written Zephyr cases \emph{upstream tests}. Our original comparison selected three cases with visible timing windows; a later expansion executes complete qualified applications and retains capability skips. Generated tests were written from scratch from task specifications derived from the original cases' documented purpose, without supplying upstream source. They cover only those three tasks, so expansion does not establish comparability across all developer tests. We ask: \textbf{RQ1}, which tests change verdict under legal clock settings? \textbf{RQ2}, which faults do they detect, and how do mechanical repairs change that? \textbf{RQ3}, where does a manually source-derived clock threshold predict failures? \textbf{RQ4}, which timing assumptions remain in source? We contribute frozen schedules, replay/reference attribution, expanded case accounting, distribution sensitivity, and a paired repair study. Sampled-setting shares describe simulator inputs, not field failure probabilities.
+Our question is: \textbf{when legal clock variation changes a test verdict, can we repair the timing assumption without weakening measured fault detection?} We analyze the completed paired repair records for one Zephyr STM32 RTC driver in Renode. The main result concerns six subjects, shown individually in Table~\ref{tab:subjects}. We separate their repair from correcting over-padding in other subjects, and distinguish deadline sizing, state polling and additional alarm checks.
 
-\section{Approach}
-\textbf{Clock model and distributions.} The pinned Zephyr revision~\cite{zephyrpinned} uses the low-speed internal oscillator (LSI) for the STM32F4 Discovery RTC. The STM32F407 datasheet characterizes 17--47 kHz at 3 V and $-40$ to $105\,^{\circ}$C~\cite{stm32f407datasheet}. With the build's fixed $128\times250$ prescaler, ten RTC seconds ideally take $t(f)=320{,}000/f$ Renode virtual seconds: 6.809--18.824 s. For a fixed window $T$, the ideal failure boundary is $f<320/T$ kHz. Thus the running example's 13-second wait is too short below 24.615 kHz, before additional delivery effects. Thresholds were manually derived from source and frozen before runs; they apply only where one scalar clock budget is defensible.
+\textbf{Connection to flaky tests.} Timing assumptions can make tests unreliable across operating conditions~\cite{luo2014flaky,strandberg2020,rahman2024flakerake}. Here, a deterministic pass at one fixed frequency and failure at another is \emph{timing sensitivity}, not observed nondeterminism at one setting. We did not measure same-setting flakiness or a device-frequency population distribution. Repeated nominal screens and attribution replays do not replace a systematic fixed-frequency repeatability experiment. Nor are selected developer tests a random sample from which to estimate flaky-test prevalence.
 
-% Sources: phase3_package_v1/sensitivity.csv, distribution_assumptions.json; verified_st_documents.json.
-We lead with boundaries or phase envelopes, then integrate illustrative distributions: uniform 17--47 kHz, and normals centered at 32 kHz with standard deviations 5 and 7.5 kHz (range at $\pm3\sigma$ and $\pm2\sigma$). Reported normal shares condition on the legal interval; the artifact also supplies untruncated values and tail mass. These are assumptions. ST discusses process, temperature, voltage, oscillator accuracy and LSI measurement in AN5067, AN5126 and RM0090~\cite{st_an5067,st_an5126,st_rm0090}; the reviewed evidence supplies no usable STM32F407 LSI population probability model.
+\section{Approach: Repair the Wait, Recheck the Oracle}
+\subsection{A clock-derived deadline}
+The pinned Zephyr v4.3.0 source~\cite{zephyrpinned} selects the low-speed internal oscillator (LSI) for the STM32F4 Discovery RTC. DS8626 Rev 12 characterizes its frequency as 17--47 kHz at 3 V and $-40$ to $105\,^{\circ}$C~\cite{stm32f407datasheet}. With a fixed $128\times250$ prescaler, ten RTC seconds ideally take
+\[
+ t(f)=320{,}000/f\quad\text{simulated seconds, with }f\text{ in Hz}.
+\]
+At 17 kHz this is 18.824 s, beyond the original 13-second wait. Its ideal boundary is 24.615 kHz. These are manually source-derived thresholds, not an automatically inferred specification; full-application phase effects can require a band rather than one boundary.
 
-\textbf{Fault probes and repairs.} Separate probes use out-of-spec 64-kHz and 10-kHz RTC inputs, a nominal-frequency \emph{nonarrival fault} suppressing callback/pending delivery or freezing counting reads, and nominal-clock alarm-compare shifts of $-1$ or $+1$ RTC second. A \emph{kill}, used in tables, means an activated fault produces an explicit selected-case assertion failure. Programming correctness, when the RTC reaches an event, and callback delivery are distinct properties.
-
-% Source: paper/DESIGN.md dated repair amendments; notes/repair_review_2026-10-24/subjects.json.
-Mechanical repairs preserve original checks and use a 20.824-second experimental ceiling (18.824 plus a 2-second margin). V0 is unchanged; V1 sets the wait to $\max(\text{original},20.824)$ and never shortens it; V1b sets it to exactly 20.824. V2 waits on the existing event/state predicate with 20-ms polling under that ceiling. V3 adds missing checks required by the frozen specification, including alarm readback and callback calendar equality. The margin is not a measured bound on delivery latency.
-
-\section{Experimental Setup}
-\textbf{Generation and screening.} \texttt{gpt-6-\allowbreak{}luna}, \texttt{gpt-6-\allowbreak{}sol}, and \texttt{gpt-6-\allowbreak{}astra} (Luna, Sol and Astra) each supplied five independent source-only C tests using ztest (Zephyr's test framework), for 13 tasks and two prompts: 390 generations. The \emph{base prompt} omits numeric clock limits; the \emph{prompt with clock ranges} adds LSI and high-speed internal oscillator (HSI) ranges plus a callback-delivery reminder. The other ten tasks concern narrower HSI timing effects and are outside this RTC/fault comparison. Models had no tools, execution or feedback. Functional review, build and five nominal passes determine eligibility; timing adequacy is measured separately. Across all tasks, 330/390 passed functional review and 321/390 nominal screening. The RTC cohort has 90 attempts and 66 eligible suites.
-
-% Sources: generated/spec_context_factorial_v1/prompts/rtc_alarm_callback/range_absent.txt and rtc_alarm_pending/range_absent.txt.
-The callback prompt's required checks include:
-\begin{quote}\small
-``Neither callback is observed before the alarm time. Both callbacks fire at the configured RTC time and report the expected alarm IDs.''
-\end{quote}
-The pending prompt includes:
-\begin{quote}\small
-``The test configures and reads back a supported RTC alarm time successfully. The alarm is not observed pending before its configured RTC time.''
-\end{quote}
-Its remaining check requires eventual pending state after the target under a finite, justified bound. Both prompt conditions use the same task checks.
-
-\textbf{Execution and attribution.} A fresh Renode process (an instruction-level embedded simulator)~\cite{renodetime} runs each of 100 shared sampled integer frequencies and both endpoints. Source/ELF, CPU, SysTick and synchronization quantum stay fixed. All 66 generated suites are now measured, including the 16 formerly forecast-only suites. The task is the comparison unit; registered contrasts subtract base from range-prompt rates within model/task, then average tasks and models equally. \emph{Hybrid bounds} originally combined measured verdicts, frozen forecasts and missing-outcome extremes; no unrun forecasts remain, but missing-outcome bounds still apply. Fault probes cover 66 generated and three isolated upstream cases; alarm offsets activate in 39 generated and two upstream alarm cases. The 27 generated and one upstream counting case are controls.
-
-A waiting-defect attribution requires a saved assertion, exact same-input replay, source explanation and passing task-specific reference checking premature behavior and eventual progress under a justified ceiling. Full applications additionally separate phase-dependent waits, cleanup cascades and unresolved rate contracts. Missing outcomes stay missing. Execution uses the calibrated Renode v1.17.0 Linux container; its 816-case calibration matched local verdicts and trace hashes. The fault/offset probes and all-attempt, paired, similarity, expansion and repair analyses were added after initial varied-clock runs began; dated amendments and immutable seals are in the repository.
-
-% Sources: S2 qualification/configuration records, phase3_package_v1/s2_per_case_with_references.csv.
-\textbf{Expansion and repair scope.} We run every case in RTC API (7 declared), counter basic (11) and counter seconds (1) on each qualified configuration. Counter applications use a \emph{non-stock RTC-only configuration}, disabling the STM32 timer counter and RTC API driver while enabling the RTC counter; capability predicates remain active. F4, F767 and F746 use 17--47 kHz. H753 uses 29.760--33.600 kHz from DS12117 Rev 10, revision V, VDD 1.62--3.6 V, junction $-40$ to $105\,^{\circ}$C~\cite{stm32h753datasheet}. F767 is an F4 configuration replica; all configurations share Renode's STM32F4 RTC implementation. F746 counter basic is excluded after an MPU fault, F072 after no test output, and watchdog after no reboot; no F072 divider finding is claimed. Each retained configuration passes build, five nominal runs and endpoint/setting calibration before production. The repair subset is the preselected 30 generated scalar-budget suites (27 counting, three pending) plus the three original upstream cases: no generated callback suite is in this subset.
+The repair ceiling is \textbf{20.824 simulated seconds}: the ideal slow-clock duration, 18.823529\ldots{} s, rounded up to the next millisecond (18.824 s), plus \textbf{two seconds of unvalidated experimental allowance}. It is not a measured or guaranteed interrupt-to-callback latency bound. Kernel uptime measures the wait while CPU/SysTick remain fixed. Figure~\ref{fig:timeline} makes the original waiting assumption concrete.
 
 \begin{figure}[t]
-\centering
-\begin{tikzpicture}[>=stealth,every node/.style={draw,rounded corners,align=center,font=\scriptsize,text width=.82\columnwidth,inner sep=2pt}]
-\node(p)at(0,0){Task specifications: base / clock ranges};
-\node(g)at(0,-.43){Generation: 3 models $\times$ 2 prompts $\times$ 5 attempts};
-\node(e)at(0,-.86){Build, functional and five-run nominal gates};
-\node(v)at(0,-1.29){Legal-clock schedule, fault probes and repairs};
-\node(a)at(0,-1.72){Verdicts, replay and reference attribution};
-\draw[->](p.south)--(g.north);\draw[->](g.south)--(e.north);
-\draw[->](e.south)--(v.north);\draw[->](v.south)--(a.north);
-\end{tikzpicture}
-\caption{Generated-test evaluation. Expansion runs complete upstream applications; repairs use the frozen scalar-budget subset.}
-\Description{Specifications lead to generation, screening, clock and fault challenges, then attributed verdicts.}
-\label{fig:pipeline}
+\centering\small
+\begin{tabular}{@{}rp{.70\columnwidth}@{}}\toprule
+Virtual time (s) & One upstream callback iteration\\\midrule
+0 & Set RTC time; alarm is ten calendar seconds ahead.\\
+3 & Check that no callback has arrived early.\\
+13 & Original final check: callback required.\\
+18.824 & Ideal target arrival at legal 17 kHz.\\
+20.824 & Repaired deadline: require callback by here.\\\bottomrule
+\end{tabular}
+\caption{Why the 13-second wait fails. Times illustrate zero initial subsecond phase and omit delivery latency; they are not measured arrival times.}
+\Description{The original deadline precedes the ideal alarm time at the legal slow clock; the repair retains the early check and moves the deadline beyond the target.}
+\label{fig:timeline}
 \end{figure}
 
+In the upstream callback source, lines 120 and 132 sleep for constants of three and ten seconds; lines 126--129 check for premature callbacks and lines 140--141 require arrival. V1/V1b retain the early check and sleep only until the revised deadline; V2 can finish when the completion predicate becomes true. At the injected 10-kHz slow fault, the same target ideally takes 32 s, so both the original and repaired deadlines reject it. This explains why extending this subject's wait can preserve its slow-fault check.
+
+\subsection{Paired mechanical variants}
+\textbf{V0} is the original test. \textbf{V1}, naive extension, uses the larger of the original wait and 20.824 s; it never shortens an overlong wait. \textbf{V1b}, right-sizing, uses a 20.824-second total ceiling while preserving the original fixed-sleep or polling strategy and cadence. \textbf{V2} uses the same ceiling and original completion predicate with 20-ms state polling, latching destructive pending reads. \textbf{V3} adds missing checks from the frozen task specification: supported alarm-field readback, callback identity/calendar checks, or counting progress/monotonicity as applicable. This deliberately augments upstream oracles. Original targets, early checks and non-time assertions remain. V1 preserves existing service stages (Sol pending r03 can reach 23.824 s); V1b--V3 share one total ceiling. The dated transformation rules were fixed before repair builds.
+
+Faults are tested separately: fast 64-kHz and slow 10-kHz oscillator inputs, a nominal-clock \emph{nonarrival fault} suppressing alarm delivery or freezing counting reads, and nominal-clock alarm-compare offsets of $-1$ or $+1$ RTC second. A table \emph{kill} means an activated fault detected by an explicit selected-case assertion. Alarm programming, calendar-target arrival and callback delivery are different properties: readback checks programming; calendar equality also assumes delivery before the calendar advances. No delivery-delay experiment was performed.
+
+\section{Experimental Setup and Scope}
+\textbf{Scope.} The original comparison purposively selected three upstream cases for visible timing windows: alarm callback, alarm pending and calendar counting. The later full-application expansion contains \textbf{10 distinct runnable upstream case names}, including those three, from 19 declared names: five runnable RTC API cases, four counter basic cases and one counter seconds case. Four distinct names have waiting-sensitive failures; only the original three upstream subjects were repaired. Configurations share \textbf{one Renode STM32F4 RTC model}, so board labels do not provide independent hardware replication. Counter applications use \textbf{non-stock RTC-only configurations}, with the existing counter adapter enabled and other timer counters and the RTC API driver disabled; they contextualize scope, not a second repaired driver. Capability predicates are retained. Neither this selection nor the repair subset estimates developer-test prevalence.
+
+\textbf{Execution.} Renode v1.17.0 is an instruction-level embedded simulator~\cite{renodetime}. Each run starts a fresh process with unchanged source/ELF, CPU, SysTick and synchronization quantum. The frozen schedule has 100 shared integer-frequency settings plus two endpoints within the documented interval. Build, five nominal passes and small calibration precede production; the Linux container was calibrated against local verdicts and trace hashes. All records analyzed here already existed; no study was rerun for this revision.
+
+F4, F767 and F746 use 17--47 kHz; F767 is explicitly an F4 configuration replica. H753 uses the frozen DS12117 Rev 10 revision-V envelope, 29.760--33.600 kHz at VDD 1.62--3.6 V and junction $-40$ to $105\,^{\circ}$C~\cite{stm32h753datasheet}. F746 counter basic is excluded after an MPU fault, F072 after no test output, and watchdog after no demonstrated reboot. The F072 divider observation remains unconfirmed.
+
+\textbf{Attribution and missingness.} Same-input failure replays, exact source lines and task-specific references distinguish waiting defects, phase-dependent waits, cleanup cascades and unresolved rate contracts. References check premature behavior and progress under their registered ceiling; a passing progress reference cannot override a failed rate reference. Capability skips and missing verdicts remain separate from passes. Infrastructure-interrupted evaluations without a verdict were resumed under a dated amendment, while finalized harness-error outcomes remain missing.
+
+\textbf{Repair cohort.} The roster was fixed after the initial clock study and before repair builds: three original isolated upstream cases plus 30 generated scalar-budget suites (27 counting, three pending), with no generated callback suite. The expanded full applications were not repaired. This selection favors identifiable waiting budgets and is not a general repair-success sample. Each variant has 3,300 seeded legal slots and 66 endpoints; alarm offsets apply to five alarm subjects. Paired comparisons use only subjects evaluable in both variants.
+
 \section{Results}
-\subsection{Legal-clock failures and expanded cases (RQ1)}
-The original upstream waits fail at legal slow settings; completing the generated cohort does not reveal additional failing suites. Across 69 measured suites, 6,900 seeded originals yield 6,782 passes, 106 assertion failures and 12 missing verdicts. All 112 seeded-plus-endpoint failures replay exactly and pass reference triage. Generated failures remain confined to three base-prompt pending suites: Sol r01 (11), Sol r03 (13), Astra r05 (13). The base/range-prompt totals are 37 failures in 3,400 slots with four missing, versus zero in 3,200 with eight missing. Suite-level flips are 3/34 versus 0/32 (two-sided Fisher $p=0.239$); Luna has none under either prompt. Table~\ref{tab:agent} keeps all denominators visible.
+\subsection{Six sensitive subjects: repaired waits retain slow-fault detection}
+\textbf{Each of the six subjects passes the tested legal settings after every repair and retains its measured slow-fault detection.} Table~\ref{tab:subjects} shows the three upstream subjects and three generated pending suites separately. Every repaired subject passes all 102 legal settings with zero missing verdicts. Naive extension already achieves this result: it does \emph{not} weaken slow-fault detection in these six subjects.
 
-% Source: phase3_package_v1/sensitivity.csv; original isolated upstream records.
-\begin{table}[t]
-\caption{Original isolated upstream cases. Boundary in kHz; failures per 100 sampled inputs. U is uniform; N3/N2 are illustrative legal-conditioned normal failing shares (\%).}
-\label{tab:human}\scriptsize\setlength{\tabcolsep}{3pt}
-\input{tables/human.tex}
-\end{table}
+\begin{table*}[t]
+\caption{The six originally sensitive subjects. Each repair is compared with the same subject's V0 records. All six detect the slow fault in V0 and each repair, with no missing outcomes.}
+\label{tab:subjects}\small\centering
+\input{tables/subjects_course_v2.tex}
+\end{table*}
 
-% Source: phase3_package_v1/yield_cells.csv; all original/A-B raw records.
-\begin{table}[t]
-\caption{Generated clock outcomes. B/R denote base/range prompts. All eligible suites are measured; failures exclude missing seed verdicts.}
-\label{tab:agent}\scriptsize
-\input{tables/agent.tex}
-\end{table}
+As supporting detail, the six subjects contribute 612 shared subject-setting pairs: V0 produces 500 passes and 112 failures; each repair produces 612 passes. These are \textbf{six subjects, not 612 independent tests}. Their repeated clock settings describe each subject's sensitivity. The 112 original failing slots have passing task-specific references and become observed passes under all repairs. This result concerns the original isolated contexts, not all expanded case names or untested clock settings.
 
-% Sources: phase3_package_v1/s2_by_board.csv, s2_per_case_with_references.csv; reference archive.
-Expansion produces failures in several complete applications, but not all are independent waiting defects (Table~\ref{tab:expanded}). There are 1,122 launches across 11 qualified board/application configurations, with 3,022 passing, 470 failing and 3,138 skipped case slots, no missing. On each wide-range configuration RTC has 3/5 runnable cases fail; F4/F767 counter basic has 2/4, and counter seconds has 1/1. H753 has no observed failure. Runnable means executed at least once; one H753 counter case is skipped nominally but runs at some settings. Capability-dependent skips never become passes.
+\subsection{A separate result: right-sizing over-padded counting tests}
+\textbf{Right-sizing adds 11 slow-fault detections in different, already clock-tolerant generated counting subjects.} Across the full 33-subject cohort, V1 retains V0's 21/33 slow-fault detections because it preserves long waits. V1b detects 32/32 evaluable slow faults: the 32 common V1/V1b pairs retain 21 detections, gain 11 and lose none. All 11 gains are generated counting subjects with 102 V0 legal passes and no missing legal verdicts. They correct over-padding; they are \emph{not} the six sensitive subjects in Table~\ref{tab:subjects}.
 
 \begin{table}[t]
-\caption{Expanded full applications, per configuration. Run/skip are distinct cases ever runnable/always skipped. F is any observed failure; A/B/C/D count single-boundary waits, phase-dependent waits, cleanup cascades and unresolved rate cases. F includes C/D.}
-\label{tab:expanded}\scriptsize\setlength{\tabcolsep}{3pt}
-\input{tables/expanded.tex}
+\caption{Full 33-subject cohort. Seed F/M: failures/missing out of 3,300 slots. Fault cells: detections/evaluable. Median is whole-test virtual time.}
+\label{tab:repairs}\small\centering\setlength{\tabcolsep}{3pt}
+\input{tables/repairs_course_v2.tex}
 \end{table}
 
-The pending case has an ideal 24.615-kHz boundary. In full applications, callback and counting failures occupy sampled bands 17.000--23.673 and 17.000--20.500 kHz, with passes from 23.847 and 20.701 kHz, respectively. Their source/model phase envelopes are 22.154--24.615 and 19.862--22.069 kHz. Renode calendar writes preserve the fractional count, so prior cases can change the remaining time to the target. This explanation is supported by source and reconciliation, not directly measured phase. For the same F4 case names, full-app versus isolated seed failures are pending 26/26, callback 22/26 and counting 12/17; no reverse disagreement occurs. Board replicas are not pooled as independent subjects.
+V0 has 106 seeded and six endpoint failures. Every repair has zero observed legal failures across the cohort, but V1/V1b/V2/V3 retain respectively 7/5/3/2 missing seeded outcomes; all 66 endpoints are observed passing. There are 29 finalized missing outcomes across legal and fault probes. They are not counted as successes. All 458 primary assertion failures replay exactly, including raw trace hashes.
 
-The counter all-channels case waits three seconds for an alarm involving two requested ticks plus a driver tick; its phase envelope is 21.333--32.000 kHz. Its failure skips cleanup, causing a later single-shot setup failure, which is a cascade. Counter seconds expects one or two ticks across a 1.2-second sleep: its observed fail/pass bands are 17.000--26.168 / 27.086--47.000 kHz, but its rate reference also fails while progress passes. These rate outcomes remain firmware/simulator or accuracy-contract investigations. All 470 failing slots have references: 277 waiting slots pass, 88 clean-state cascade slots pass, and 105 rate references fail. Exact lines, per-case explanations and distribution bounds are retained in the artifact.
+\subsection{Polling and added alarm checks do different work}
+\textbf{Polling adds no paired slow-fault detection, while extra alarm checks detect a previously accepted programming error.} V2 detects the slow fault in 33/33 subjects, but all 32 common V1b/V2 pairs already detect it under V1b. The remaining V1b outcome is missing, so the denominator change supplies no evidence of a polling gain. Polling instead shortens the upstream callback's median seeded whole-test duration from 42.0 s (V1b) to 20.75 s (V2). The pooled median is 11.0 s for every variant and hides this difference; whole-test time is not callback latency.
 
-% Declare the wide source excerpt early so it floats near the Discussion.
-\begin{figure*}[!t]
-\footnotesize
-\textbf{Upstream callback, \texttt{test\_alarm\_callback.c}, lines 120, 126--127, 132, 140--141:}
-\begin{verbatim}
-k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_NOT_CALLED_DELAY));
-zassert_equal(callback_called_mask_status_odd, 0,
-              "Alarm callback called prematurely");
-k_sleep(K_SECONDS(RTC_TEST_ALARM_TEST_CALLED_DELAY));
-zassert_equal(callback_called_status, true,
-              "Alarm %d callback should have been called", j);
-\end{verbatim}
-\textbf{LLM-generated Astra base-prompt callback r01, \texttt{test.c}, lines 68 and 136--140:}
-\begin{verbatim}
-o->time_result = rtc_get_time(dev, &o->time);
-zassert_true(calendar_compare(&o->time, &target) >= 0,
-             "Alarm %u fired prematurely", (unsigned int)i);
-zassert_equal(calendar_compare(&o->time, &target), 0,
-              "Alarm %u fired outside the target RTC second",
-              (unsigned int)i);
-\end{verbatim}
-\caption{Literal, noncontiguous excerpts from the pinned upstream callback case and saved Astra base-prompt callback r01. The first checks a fixed window; the second checks the calendar captured at callback against the target.}
-\Description{Source excerpts show upstream absence and presence assertions around two fixed sleeps, and an LLM-generated calendar capture with early and exact-target assertions.}
-\label{fig:sourcecontrast}
-\end{figure*}
+V0--V2 detect each alarm-offset sign in 4/5 applicable subjects. V3 reaches 5/5 for each sign by adding detection in the upstream callback. Readback and callback-calendar checks were introduced together; these records cannot isolate timestamp checking's effect. Across adjacent variants, no detected fault becomes accepted on common-evaluable subject pairs. Nonarrival is detected in 32/32 evaluable V0 subjects and 33/33 after repair; its missing V0 verdict is not a paired gain. No evaluable fast-oscillator probe is detected (0/32 for V1b, 0/33 otherwise). Preservation of this measured fault set therefore does not establish a complete oracle.
 
-\subsection{Fault detection and mechanical repairs (RQ2)}
-Surviving legal clock settings does not imply a strong fault oracle. The slow 10-kHz input takes 32 simulated seconds to reach the target: the running example's 13-second wait detects it, while a 60-second deadline may not. Every original upstream and generated suite accepts the fast oscillator, which requires an independent time reference to detect. Table~\ref{tab:faults} separates other faults. No suite above twice the legal slow bound detects the slow fault (0/12), versus 18/18 assessable suites at or below it; this $2\times$ grouping is descriptive. Wait-style detections are 39/53 fixed-sleep-only, 7/9 event-only and 3/4 mixed.
+\subsection{Expanded applications: scope and failure attribution}
+\textbf{Four waiting-sensitive names do not mean that every failing case is an independent test defect.} Table~\ref{tab:expanded} separates waiting failures from cleanup cascades and unresolved rates. Across 11 application/configuration combinations, 1,122 launches produce 3,022 passing, 470 failing and 3,138 capability-skipped case slots, with no missing primary case verdicts. Per board, waiting-sensitive names are 4/10 runnable names on F4 and its F767 replica, 3/6 on F746, and 0/10 on H753. These are within-cohort fractions, not population prevalence estimates.
 
-% Source: phase3_package_v1/original_fault_cells.csv; analysis/rtc_quality_mutant_scores/rows.csv.
 \begin{table}[t]
-\caption{Original oscillator/nonarrival kills with descriptive 95\% Wilson intervals. Missing originals are excluded; the Luna B nonarrival fault has one missing verdict. B/R are base/range prompts.}
-\label{tab:faults}\scriptsize
-\input{tables/faults.tex}
+\caption{Distinct case names per configuration. Run: ever runnable; Skip: always capability-skipped. Wait, Cascade and Rate are separate failure categories.}
+\label{tab:expanded}\small\centering\setlength{\tabcolsep}{3pt}
+\input{tables/expanded_course_v2.tex}
 \end{table}
 
-The alarm-offset contrast is illustrative: generated callbacks detect most offsets, but their specification explicitly requests configured-time firing (Table~\ref{tab:offset}). All generated pending cases detect both signs through readback-heavy checks. Across original tasks, 73 detections replay: 72 first identify compare/calendar checks and one a composite error flag. Four late-surviving Sol callbacks accept target second 5 or 6 (base r01/r02), or lack an upper calendar bound (range r01/r05); r05 additionally allows a 60-second deadline. Readback establishes compare programming, not callback-delivery precision.
+Pending has the ideal 24.615-kHz boundary. F4 full-application callback failures span sampled 17.000--23.673 kHz (passes 23.847--47.000); counting failures span 17.000--20.500 (passes 20.701--47.000). The counter all-channels wait has a source-derived phase envelope of 21.333--32.000 kHz. These phase-dependent cases cannot all be summarized by one exact frequency threshold: writing the RTC calendar preserves the subsecond count in the existing model. Relative to isolated runs, F4 full/isolated seeded failure counts are pending 26/26, callback 22/26 and counting 12/17. Phase carryover and ordering are a source-supported explanation, \emph{not directly measured phase}.
 
-% Source: phase3_package_v1/original_alarm_offset_cells.csv.
-\begin{table}[t]
-\caption{Original nominal-clock alarm-offset kills; descriptive Wilson intervals for generated suites. One generated callback original per sign and the upstream pending early original are missing and excluded.}
-\label{tab:offset}\scriptsize\setlength{\tabcolsep}{3pt}
-\input{tables/offset.tex}
-\end{table}
+A later counter single-shot setup failure follows skipped cleanup and is a cascade, not a fifth independent waiting-sensitive name. Counter seconds fails over sampled 17.000--26.168 kHz and passes 27.086--47.000, but its 105 rate references also fail while progress checks pass. It remains a firmware/simulator/accuracy-contract investigation, not a demonstrated waiting defect. All 470 failing slots have reference outcomes: 277 waiting references pass, 88 clean-state cascade references pass and 105 rate references fail. H753 has no observed failures in its narrower modeled interval; one counter case skips nominally but runs at some settings. This contrast varies the range/configuration within the shared model, not silicon validation. Source excerpts and complete per-case bands remain in the artifact.
 
-Table~\ref{tab:repair} shows why extending and right-sizing waits differ. V1 eliminates observed legal failures but leaves slow-fault detection at 21/33 because already-long waits stay long. V1b detects the slow fault in all 32 evaluable subjects; V2/V3 do so in 33/33. Only V3 makes the upstream callback detect both signed offsets. All seeded medians are 11.0 simulated seconds; these cohort medians hide subject-level differences. The 29 finalized E missing outcomes stay missing; none is replaced by a successful diagnostic. All 458 E failures replay exactly and all 112 legal-failure reference links pass.
+\subsection{Secondary generated-test context}
+The generated cohort covers only the original three task purposes: \texttt{gpt-6-\allowbreak{}luna}, \texttt{gpt-6-\allowbreak{}sol} and \texttt{gpt-6-\allowbreak{}astra} each produced five source-only ztests (Zephyr's test framework) per task and prompt. Of 90 attempts, 66 pass functional/build/five-nominal gates. The base prompt omits numeric clock ranges; the other adds ranges and a delivery reminder. Suite-level clock sensitivity is 3/34 base versus 0/32 with ranges (two-sided Fisher $p=0.239$); 12 original seeded verdicts remain missing. Models received purpose-derived specifications, not upstream code or execution feedback. The specifications requested stronger observables, including configured-time callbacks/IDs and pending readback/not-before checks. With no same-spec human baseline, neither oracle differences nor this small prompt contrast establishes model superiority or an isolated numeric-range effect. Detailed generation, yield, two-axis, fault and distribution tables are retained in the artifact rather than expanding this comparison here.
 
-% Source: phase3_package_v1/repair_per_variant.csv; median from legal seeded evaluable virtual_ns/1e9.
-\begin{table}[t]
-\caption{Paired repairs on 33 scalar-budget subjects. Seed F/M are failures/missing among 3,300 legal seed slots per variant; endpoint failures are 6/66 for V0 and 0/66 for all repairs. Fault columns are kills/evaluable; Early/late are alarm offsets, applicable to five subjects. Nonarrival has one V0 missing, and fast/slow each one V1b missing. Median duration uses evaluable seeded virtual time, excluding diagnostics.}
-\label{tab:repair}\scriptsize\setlength{\tabcolsep}{5pt}
-\input{tables/repair.tex}
-\end{table}
+\section{Discussion and Limitations}
+\textbf{What the repair evidence supports.} The six-subject result shows that these waits can accept tested legal clocks while retaining measured slow-fault detection. The different 11-subject counting result shows why preserving an already overlong wait can leave a weak slow-clock oracle. Right-sizing supplies those gains without polling; polling reduces time; augmented checks improve alarm-offset detection. None establishes semantic equivalence for every defect or an automatic general repair procedure.
 
-% Source: phase3_package_v1/two_axis_counts.csv. Expanded full-application slow faults were not run.
-\begin{table}[t]
-\caption{Two axes in the original measured cohort: legal-clock result versus slow-fault detection. Unknown means missing clock verdicts, not a pass. Expanded full-application cases have no measured slow-fault result.}
-\label{tab:axes}\scriptsize
-\input{tables/axes.tex}
-\end{table}
+\textbf{Clock ranges and distributions.} The pinned HSI (high-speed internal oscillator) context study varied 15.84--16.16 MHz ($\pm1\%$ at $25\,^{\circ}$C), with integer 99--101-MIPS CPU mapping: no failures among 943 upstream and 3,270 generated evaluable seeded runs; 87 seeded outcomes were not evaluable. Different tasks, the narrow range and throughput approximation prevent a direct HSI-versus-LSI causal comparison. The RTC study isolates LSI variation with fixed CPU/SysTick; its 17--47-kHz range is much wider. The HSI result does not imply HSI can never matter.
 
-\subsection{Threshold prediction and generation yield (RQ3)}
-For tests with one clear waiting deadline, the simple clock model matched every observed verdict we measured. The manually source-derived threshold applies to 30/66 eligible suites; all 30 are now measured. Three nontrivial vectors match exactly, including 37/37 failures, while the other 27 predict no failures because their budgets exceed the legal slow-arrival bound. Overall agreement is 3,000/3,000; this does not validate a threshold for the other 36 suites.
+Neither uniform sampling nor a datasheet interval measures how frequencies are distributed across devices. We lead with boundaries/bands, retaining uniform and legal-conditioned normal sensitivity calculations in the artifact as illustrative assumptions only. ST documents describe oscillator accuracy/calibration, not a usable F407 population distribution for this analysis~\cite{st_an5067,st_an5126,st_rm0090}. The board survey's 106 LSI versus 40 LSE (external-crystal) RTC-enabled targets supplies context, not a flaky-test prevalence estimate.
 
-Of 90 RTC attempts, 15 fail to build, eight fail functional review, and one fails nominal screening. Confirmed robustness requires all 100 original seed verdicts to pass: 55/90 attempts meet it, with an optimistic missing-outcome ceiling of 63/90 (Table~\ref{tab:yield}). Robustness plus slow/nonarrival detection is 38/90; additionally requiring a known, non-over-padded budget gives 14/90. Luna has no eligible alarm suite, and its range-prompt counting tests miss the slow fault. Model differences depend on eligibility and task composition, not a uniform range-prompt benefit.
-
-% Source: phase3_package_v1/yield_cells.csv.
-\begin{table}[t]
-\caption{All-attempt yield per 15 attempts. W: working; R: confirmed clock robustness; U: optimistic ceiling allowing missing outcomes to pass; +2: R plus slow/nonarrival kills. U is not a confidence interval.}
-\label{tab:yield}\scriptsize\setlength{\tabcolsep}{4pt}
-\input{tables/yield.tex}
-\end{table}
-
-\subsection{Remaining source assumptions (RQ4)}
-Clock survival leaves delivery and ordering assumptions unresolved. The single unblinded source review marks 28/66 suites definite, 24 unknown and 14 without a flagged pattern. Among the 63 measured suites without observed clock failures, 28 are definite and 24 unknown. The 33-file upstream scan finds no explicit interrupt-to-callback latency bound. Paired McNemar details, reference-duration checks and source similarity are in the repository's analysis materials; they do not supply additional independent subjects.
-
-\section{Discussion and Threats to Validity}
-
-The source contrast in Figure~\ref{fig:sourcecontrast} separates a fixed observation window from calendar equality. The Astra callback also assumes delivery before the RTC calendar advances beyond the target second. Its detection of both offsets is useful but does not independently validate delivery latency. The generated specification asked for configured-time firing and pending readback, whereas upstream windows may support portability across boards/drivers; their intended portability contract was not independently established. Thus these results compare selected/expanded developer cases with generated tests under a frozen specification, not inherent superiority of model authorship.
-
-The static board survey finds 106 RTC-enabled devicetree targets selecting LSI versus 40 selecting LSE (external crystal); these are targets, not independent devices. Yet all expanded configurations share an RTC model, and F767 is an F4 configuration replica. H753's null is a narrower modeled input-range contrast, not independent hardware validation. Counting uses a non-stock configuration. Calendar phase and prior-case cleanup alter full-application verdicts, and capability predicates can themselves depend on frequency. The rate-reference failures are retained investigations; no passing progress check substitutes for accuracy.
-
-Uniform and normal input models are sensitivity analyses, not measured silicon distributions. Oscillator bounds do not bound ISR, callback or scheduling delay. The one-tick latency pilot failed reference feasibility; no dynamic latency verdicts or board confirmation are available. Three original generated tasks, a selected repair subset, related suites and reused frequencies limit inference; Wilson intervals and Fisher tests are descriptive. Twelve core RTC and 29 E missing verdicts remain missing. Source/padding labels have one unblinded reviewer, without inter-rater agreement. Backend model snapshots and training overlap are unavailable. The range prompt includes a generic delivery reminder, and the task specification requests precision: without reminder-only and looser-spec controls, those effects cannot be separated.
+\textbf{Practical guidance and limits.} Derive waits from the worst-case legal clock, justify a delivery allowance, retain early-arrival checks against an independent time reference, and assert the RTC calendar/programming target rather than eventual arrival alone. Our extra two seconds is an unvalidated experimental allowance: no explicit interrupt-to-callback latency bound was found in 33 scanned files. A future delivery bound cannot be inferred from these records. Fast-fault blindness, purposive selection, shared model behavior and non-stock counters limit external validity. Source/padding coding used one unblinded reviewer; related suites and shared frequencies are not independent replication. The artifact's $2\times$ padding cutoff is descriptive, not a correctness threshold. Missing verdicts remain missing.
 
 \section{Related Work}
-Asynchronous waits cause flaky tests~\cite{luo2014flaky}; FlakeRake injects pauses~\cite{rahman2024flakerake}, and Strandberg et al. study embedded assumptions~\cite{strandberg2020}. Berndt et al. study generated test flakiness~\cite{berndt2026}. Mutation and oracle surveys distinguish fault detection from correct judgments~\cite{jia2011mutation,barr2015oracle}. ChatUniTest, CoverUp and MuTAP generate tests with LLMs~\cite{chen2024chatunitest,pizzorno2025coverup,dakhel2024mutap}; \emph{All Smoke, No Alarm} studies oracle signals~\cite{banik2026}. EmbedAgent and EmbC-Test address embedded development/testing~\cite{embedagent2026,embctest2026}. Interrupt analyses include Regehr, SDRacer, AIM and AidFuzzer~\cite{regehr2005random,sdracer2017,aim2023,aidfuzzer2025}. We keep test binaries fixed while varying a documented peripheral-clock interval and report fault detection separately.
+Flaky-test studies report asynchronous waits and environment assumptions~\cite{luo2014flaky,strandberg2020}; FlakeRake perturbs timing to reproduce intermittent failures~\cite{rahman2024flakerake}. Our clock changes expose sensitivity across settings without demonstrating within-setting nondeterminism. Interrupt-driven testing likewise explores scheduling conditions~\cite{regehr2005random}. Mutation testing and oracle research motivate fault checks after a repair, rather than accepting nominal passes alone~\cite{jia2011mutation,barr2015oracle}. Our contribution is the paired separation of wait repair, deadline sizing and oracle augmentation in this RTC setup.
 
-\section{Conclusion and Future Work}
-Legal clock variation exposes waiting assumptions, phase effects and cleanup cascades in selected/expanded upstream cases and three generated pending suites. Mechanical extension removes observed flips without fixing every oracle; right-sized or state-based waits improve slow-fault detection, and explicit calendar checks improve alarm precision. Bound waits by the worst-case legal clock with a justified delivery margin, check premature arrival against an independent clock, and assert the RTC target rather than eventual arrival alone.
-
-\textbf{Planned follow-up.} The frozen, deferred callback design adds looser upstream-style and reminder-only prompts alongside fresh base/range controls, five suites per model and condition. A same-spec human packet has no participants or results. These controls would separate requested from model-chosen precision and numeric clock information from a generic reminder. Board timing, measured delivery variation and independent source coding remain future work; the LLM repair arm is not included.
+\section{Conclusion}
+Each of six originally sensitive subjects passes its tested legal settings after repair and retains slow-fault detection. Separately, right-sizing improves detection in 11 already clock-tolerant counting subjects. Polling and alarm checks provide different benefits. These results support fault-aware repair of selected clock-sensitive waits, with explicit limits on subjects, faults and simulator scope.
 
 \section*{AI Use}
-LLMs generated the evaluated tests. Automated tooling assisted execution, auditing and manuscript preparation under author direction; the authors review the evidence and take responsibility for the claims.
+LLMs generated the evaluated suites. Automated tooling assisted execution, auditing and manuscript preparation under author direction; the authors review the evidence and take responsibility for the claims.
 
 \section*{Code and Data Availability}
-Code, frozen tests, amendment log and data dictionary: \url{https://github.com/pkrish5/zephyr-rtc-clock-robustness}. Results: \url{https://github.com/pkrish5/zephyr-rtc-clock-robustness/tree/main/results}. The submission release provides hashed evaluation archives and commands to rebuild every table without Renode.
+\href{https://github.com/pkrish5/zephyr-rtc-clock-robustness}{Code, frozen tests, amendments and data dictionary}; \href{https://github.com/pkrish5/zephyr-rtc-clock-robustness/tree/main/results}{results}. The unchanged \href{https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-submission-2026-11-03-v1}{evidence release v1} contains an \emph{older PDF}. The current PDF, TeX and claim audit are separately versioned as \href{https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-paper-2026-11-04-v2}{manuscript v2}. \texttt{make tables} verifies the pinned archive and rebuilds its eight detailed tables without Renode; the companion script generates this paper's three readable table views from those same records.
 
 \begin{thebibliography}{99}
-\bibitem{pizzorno2025coverup} Juan Altmayer Pizzorno and Emery D. Berger. 2025. CoverUp: Effective High Coverage Test Generation for Python. \emph{Proceedings of the ACM on Software Engineering} 2, FSE, 2897--2919. \url{https://doi.org/10.1145/3729398}
-\bibitem{renodetime} Antmicro. n.d. Renode time framework documentation. Renode documentation (accessed 2026-10-13). \url{https://renode.readthedocs.io/en/latest/advanced/time_framework.html}
-\bibitem{banik2026} Dipayan Banik, Kowshik Chowdhury, and Shazibul Islam Shamim. 2026. All Smoke, No Alarm: Oracle Signals in Agent-Authored Test Code. arXiv:2606.18168. \url{https://arxiv.org/pdf/2606.18168}
+\bibitem{renodetime} Antmicro. n.d. Renode time framework documentation. Renode documentation (accessed 2026-11-04). \url{https://renode.readthedocs.io/en/latest/advanced/time_framework.html}
 \bibitem{barr2015oracle} Earl T. Barr, Mark Harman, Phil McMinn, Muzammil Shahbaz, and Shin Yoo. 2015. The Oracle Problem in Software Testing: A Survey. \emph{IEEE Transactions on Software Engineering} 41, 5, 507--525. \url{https://doi.org/10.1109/TSE.2014.2372785}
-\bibitem{berndt2026} Alexander Berndt, Thomas Bach, Rainer Gemulla, Marcus Kessel, and Sebastian Baltes. 2026. On the Flakiness of LLM-Generated Tests for Industrial and Open-Source Database Management Systems. In \emph{Proceedings of the 48th International Conference on Software Engineering: Software Engineering in Practice}, 819--830. \url{https://doi.org/10.1145/3786583.3786919}
-\bibitem{chen2024chatunitest} Yinghao Chen, Zehao Hu, Chen Zhi, Junxiao Han, Shuiguang Deng, and Jianwei Yin. 2024. ChatUniTest: A Framework for LLM-Based Test Generation. arXiv:2305.04764. \url{https://arxiv.org/abs/2305.04764}
-\bibitem{dakhel2024mutap} Arghavan Moradi Dakhel, Amin Nikanjam, Vahid Majdinasab, Foutse Khomh, and Michel C. Desmarais. 2024. Effective Test Generation Using Pre-trained Large Language Models and Mutation Testing. \emph{Information and Software Technology} 171, 107468. \url{https://doi.org/10.1016/j.infsof.2024.107468}
-\bibitem{aim2023} Bo Feng, Meng Luo, Changming Liu, Long Lu, and Engin Kirda. 2024. AIM: Automatic Interrupt Modeling for Dynamic Firmware Analysis. \emph{IEEE Transactions on Dependable and Secure Computing} 21, 4, 3866--3882. \url{https://doi.org/10.1109/TDSC.2023.3339569}
-\bibitem{embctest2026} Maximilian Harnot, Sebastian Komarnicki, Michal Polok, and Timo Oksanen. 2026. EmbC-Test: How to Speed Up Embedded Software Testing Using LLMs and RAG. arXiv:2603.09497. \url{https://arxiv.org/pdf/2603.09497}
 \bibitem{jia2011mutation} Yue Jia and Mark Harman. 2011. An Analysis and Survey of the Development of Mutation Testing. \emph{IEEE Transactions on Software Engineering} 37, 5, 649--678. \url{https://doi.org/10.1109/TSE.2010.62}
 \bibitem{luo2014flaky} Qingzhou Luo, Farah Hariri, Lamyaa Eloussi, and Darko Marinov. 2014. An Empirical Analysis of Flaky Tests. In \emph{Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering}, 643--653. \url{https://doi.org/10.1145/2635868.2635920}
 \bibitem{rahman2024flakerake} Shanto Rahman, Aaron Massey, Wing Lam, August Shi, and Jonathan Bell. 2024. Automatically Reproducing Timing-Dependent Flaky-Test Failures. In \emph{2024 IEEE Conference on Software Testing, Verification and Validation (ICST)}, 269--280. \url{https://doi.org/10.1109/ICST60714.2024.00032}
-\bibitem{regehr2005random} John Regehr. 2005. Random Testing of Interrupt-Driven Software. In \emph{Proceedings of the 5th ACM International Conference on Embedded Software}. \url{https://doi.org/10.1145/1086228.1086282}
+\bibitem{regehr2005random} John Regehr. 2005. Random Testing of Interrupt-Driven Software. In \emph{Proceedings of the 5th ACM International Conference on Embedded Software}, 290--298. \url{https://doi.org/10.1145/1086228.1086282}
 \bibitem{stm32f407datasheet} STMicroelectronics. 2026. STM32F405xx, STM32F407xx Datasheet. STMicroelectronics datasheet DS8626 Rev 12. \url{https://www.st.com/resource/en/datasheet/stm32f407vg.pdf}
 \bibitem{strandberg2020} P. E. Strandberg, T. J. Ostrand, E. J. Weyuker, W. Afzal, and D. Sundmark. 2020. Intermittently Failing Tests in the Embedded Systems Domain. In \emph{Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis}, 337--348. \url{https://doi.org/10.1145/3395363.3397359}
-\bibitem{aidfuzzer2025} Jianqiang Wang, Qinying Wang, Tobias Scharnowski, Li Shi, Simon Woerner, and Thorsten Holz. 2025. AidFuzzer: Adaptive Interrupt-Driven Firmware Fuzzing via Run-Time State Recognition. In \emph{34th USENIX Security Symposium}, 1769--1786. \url{https://www.usenix.org/conference/usenixsecurity25/presentation/wang-jianqiang}
-\bibitem{sdracer2017} Yu Wang, Linzhang Wang, Tingting Yu, Jianhua Zhao, and Xuandong Li. 2017. Automatic Detection and Validation of Race Conditions in Interrupt-Driven Embedded Software. In \emph{Proceedings of the 26th ACM SIGSOFT International Symposium on Software Testing and Analysis}, 113--124. \url{https://doi.org/10.1145/3092703.3092724}
-\bibitem{embedagent2026} Ruiyang Xu, Jialun Cao, Mingyuan Wu, Wenliang Zhong, Yaojie Lu, Ben He, Xianpei Han, Shing-Chi Cheung, and Le Sun. 2026. EmbedAgent: Benchmarking Large Language Models in Embedded System Development. In \emph{Proceedings of the 48th International Conference on Software Engineering (ICSE 2026)}. \url{https://doi.org/10.1145/3744916.3787788}
 \bibitem{zephyrpinned} Zephyr Project. 2025. Zephyr RTOS v4.3.0 (release commit 3568e1b6d5cd). Zephyr Project source revision. \url{https://github.com/zephyrproject-rtos/zephyr/commit/3568e1b6d5cdd51a6b964a2a1d6d29200fea2056}
-\bibitem{st_an5067} STMicroelectronics. 2018. How to optimize STM32 MCUs internal RC oscillator accuracy. Application note AN5067, Rev 1. \url{https://www.st.com/resource/en/application_note/dm00425536-how-to-optimize-stm32-mcus-internal-rc-oscillator-accuracy-stmicroelectronics.pdf}
-\bibitem{st_an5126} STMicroelectronics. 2023. How to calibrate internal oscillators on STM32G0 MCUs. Application note AN5126, Rev 2. \url{https://www.st.com/resource/en/application_note/dm00469014-using-xcuberccalib-software-to-calibrate-stm32g0-series-internal-rc-oscillator-stmicroelectronics.pdf}
-\bibitem{st_rm0090} STMicroelectronics. n.d. STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm-based 32-bit MCUs. Reference manual RM0090, Rev 21, Sec. 6.2.11. \url{https://www.st.com/resource/en/reference_manual/dm00031020-stm32f10x-microcontrollers-stmicroelectronics.pdf}
+\bibitem{st_an5067} STMicroelectronics. 2018. How to optimize STM32 MCUs internal RC oscillator accuracy. Application note AN5067, Rev 1. \url{https://www.st.com/resource/en/application_note/an5067-how-to-optimize-stm32-mcus-internal-rc-oscillator-accuracy-stmicroelectronics.pdf}
+\bibitem{st_an5126} STMicroelectronics. 2023. How to calibrate internal oscillators on STM32G0 MCUs. Application note AN5126, Rev 2. \url{https://www.st.com/resource/en/application_note/an5126-how-to-calibrate-internal-oscillators-on-stm32g0-mcus-stmicroelectronics.pdf}
+\bibitem{st_rm0090} STMicroelectronics. 2024. STM32F405/415, STM32F407/417, STM32F427/437 and STM32F429/439 advanced Arm-based 32-bit MCUs. Reference manual RM0090, consulted Rev 21, Sec. 6.2.11. \url{https://www.st.com/resource/en/reference_manual/rm0090-stm32f4xx-reference-manual-stmicroelectronics.pdf}
 \bibitem{stm32h753datasheet} STMicroelectronics. 2026. STM32H753xI Datasheet. DS12117, Rev 10, Tables 38 and 135; registered revision V envelope. \url{https://www.st.com/resource/en/datasheet/stm32h753zi.pdf}
 \end{thebibliography}
-
 \end{document}

@@ -51,6 +51,33 @@ source excerpts needed for the final analyses. It excludes the SIF, full Zephyr
 checkout, caches and unrelated historical build trees. It is a new publication
 copy: no original data were removed or modified to create it.
 
+## Current manuscript v2 (2026-11-04)
+
+The original evidence release `course-submission-2026-11-03-v1` is immutable and
+contains an older PDF. The focused course manuscript and source are versioned
+separately as `course-paper-2026-11-04-v2`. The evidence archive and its pinned
+SHA256 are unchanged. The eight detailed tables remain artifact tables; the
+current paper uses three readable views of the same reconciled records.
+
+```bash
+make course-tables EVIDENCE_ARCHIVE=/absolute/path/rtc-submission-evidence-v1.tar.gz
+```
+
+This first runs the eight-table reproduction above, then builds the subject,
+repair-summary and expanded-scope views, hashes all 17,375 paired primary repair
+records, and runs the manuscript claim audit. It executes no firmware or Renode.
+The versioned audit, subject identities, paired gains/losses and claim/column
+provenance are in `notes/course_subjects_2026-11-04_v1/`. All times are simulated
+seconds, oscillator inputs Hz (displayed kHz), and failure/detection cells counts,
+not device probabilities. One subject-table row is one original test subject;
+its 102 legal settings are repeated measurements, not independent tests.
+
+The HSI contextual paragraph reuses a separate pinned historical study. To
+recheck its raw files without modifying the historical summary, run
+`python3 notes/course_subjects_2026-11-04_v1/audit_hsi_context.py` before the claim
+audit. The committed read-only HSI audit output is included for reproducibility;
+the old HSI study is not rerun by either table command.
+
 ## Complete file and field catalogue
 
 - [`reproduction/files.csv.gz`](reproduction/files.csv.gz): one row per retained

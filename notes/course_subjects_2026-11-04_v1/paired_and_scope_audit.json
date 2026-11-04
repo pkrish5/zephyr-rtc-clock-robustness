@@ -1,0 +1,465 @@
+{
+  "adjacent_variant_pairs": [
+    {
+      "after": "V1",
+      "before": "V0",
+      "both_missed": 33,
+      "common_evaluable": 33,
+      "gained": [],
+      "lost": [],
+      "operator": "fast",
+      "retained": 0
+    },
+    {
+      "after": "V1",
+      "before": "V0",
+      "both_missed": 12,
+      "common_evaluable": 33,
+      "gained": [],
+      "lost": [],
+      "operator": "slow",
+      "retained": 21
+    },
+    {
+      "after": "V1",
+      "before": "V0",
+      "both_missed": 0,
+      "common_evaluable": 32,
+      "gained": [],
+      "lost": [],
+      "operator": "nonarrival",
+      "retained": 32
+    },
+    {
+      "after": "V1",
+      "before": "V0",
+      "both_missed": 1,
+      "common_evaluable": 5,
+      "gained": [],
+      "lost": [],
+      "operator": "offset_early",
+      "retained": 4
+    },
+    {
+      "after": "V1",
+      "before": "V0",
+      "both_missed": 1,
+      "common_evaluable": 5,
+      "gained": [],
+      "lost": [],
+      "operator": "offset_late",
+      "retained": 4
+    },
+    {
+      "after": "V1b",
+      "before": "V1",
+      "both_missed": 32,
+      "common_evaluable": 32,
+      "gained": [],
+      "lost": [],
+      "operator": "fast",
+      "retained": 0
+    },
+    {
+      "after": "V1b",
+      "before": "V1",
+      "both_missed": 0,
+      "common_evaluable": 32,
+      "gained": [
+        "astra-range_absent-rtc_time_counting-r01",
+        "astra-range_absent-rtc_time_counting-r02",
+        "astra-range_absent-rtc_time_counting-r04",
+        "astra-range_absent-rtc_time_counting-r05",
+        "luna-range_present-rtc_time_counting-r01",
+        "luna-range_present-rtc_time_counting-r02",
+        "luna-range_present-rtc_time_counting-r03",
+        "sol-range_absent-rtc_time_counting-r01",
+        "sol-range_absent-rtc_time_counting-r03",
+        "sol-range_present-rtc_time_counting-r01",
+        "sol-range_present-rtc_time_counting-r04"
+      ],
+      "lost": [],
+      "operator": "slow",
+      "retained": 21
+    },
+    {
+      "after": "V1b",
+      "before": "V1",
+      "both_missed": 0,
+      "common_evaluable": 33,
+      "gained": [],
+      "lost": [],
+      "operator": "nonarrival",
+      "retained": 33
+    },
+    {
+      "after": "V1b",
+      "before": "V1",
+      "both_missed": 1,
+      "common_evaluable": 5,
+      "gained": [],
+      "lost": [],
+      "operator": "offset_early",
+      "retained": 4
+    },
+    {
+      "after": "V1b",
+      "before": "V1",
+      "both_missed": 1,
+      "common_evaluable": 5,
+      "gained": [],
+      "lost": [],
+      "operator": "offset_late",
+      "retained": 4
+    },
+    {
+      "after": "V2",
+      "before": "V1b",
+      "both_missed": 32,
+      "common_evaluable": 32,
+      "gained": [],
+      "lost": [],
+      "operator": "fast",
+      "retained": 0
+    },
+    {
+      "after": "V2",
+      "before": "V1b",
+      "both_missed": 0,
+      "common_evaluable": 32,
+      "gained": [],
+      "lost": [],
+      "operator": "slow",
+      "retained": 32
+    },
+    {
+      "after": "V2",
+      "before": "V1b",
+      "both_missed": 0,
+      "common_evaluable": 33,
+      "gained": [],
+      "lost": [],
+      "operator": "nonarrival",
+      "retained": 33
+    },
+    {
+      "after": "V2",
+      "before": "V1b",
+      "both_missed": 1,
+      "common_evaluable": 5,
+      "gained": [],
+      "lost": [],
+      "operator": "offset_early",
+      "retained": 4
+    },
+    {
+      "after": "V2",
+      "before": "V1b",
+      "both_missed": 1,
+      "common_evaluable": 5,
+      "gained": [],
+      "lost": [],
+      "operator": "offset_late",
+      "retained": 4
+    },
+    {
+      "after": "V3",
+      "before": "V2",
+      "both_missed": 33,
+      "common_evaluable": 33,
+      "gained": [],
+      "lost": [],
+      "operator": "fast",
+      "retained": 0
+    },
+    {
+      "after": "V3",
+      "before": "V2",
+      "both_missed": 0,
+      "common_evaluable": 33,
+      "gained": [],
+      "lost": [],
+      "operator": "slow",
+      "retained": 33
+    },
+    {
+      "after": "V3",
+      "before": "V2",
+      "both_missed": 0,
+      "common_evaluable": 33,
+      "gained": [],
+      "lost": [],
+      "operator": "nonarrival",
+      "retained": 33
+    },
+    {
+      "after": "V3",
+      "before": "V2",
+      "both_missed": 0,
+      "common_evaluable": 5,
+      "gained": [
+        "human-rtc_alarm_callback"
+      ],
+      "lost": [],
+      "operator": "offset_early",
+      "retained": 4
+    },
+    {
+      "after": "V3",
+      "before": "V2",
+      "both_missed": 0,
+      "common_evaluable": 5,
+      "gained": [
+        "human-rtc_alarm_callback"
+      ],
+      "lost": [],
+      "operator": "offset_late",
+      "retained": 4
+    }
+  ],
+  "expanded_categories_by_distinct_name": {
+    "a": [
+      "rtc_api.test_alarm"
+    ],
+    "b": [
+      "counter_basic.test_all_channels",
+      "rtc_api.test_alarm_callback",
+      "rtc_api.test_time_counting"
+    ],
+    "c": [
+      "counter_basic.test_single_shot_alarm_notop"
+    ],
+    "d": [
+      "seconds_counter.test_seconds_rate"
+    ]
+  },
+  "expanded_declared_distinct_case_names": 19,
+  "expanded_runnable_distinct_case_names": [
+    "counter_basic.test_all_channels",
+    "counter_basic.test_short_relative_alarm",
+    "counter_basic.test_single_shot_alarm_notop",
+    "counter_basic.test_valid_function_without_alarm",
+    "rtc_api.test_alarm",
+    "rtc_api.test_alarm_callback",
+    "rtc_api.test_set_get_calibration",
+    "rtc_api.test_set_get_time",
+    "rtc_api.test_time_counting",
+    "seconds_counter.test_seconds_rate"
+  ],
+  "inputs": {
+    "repair_per_variant.csv": "4c3aca087ad2998912afa435a3afc78ce3d988bd5df4b5c22ad6773c33eec8e7",
+    "repair_primary_index.csv": "77486ecccc18b76acb1aea288c2e724a751d831b55bb62aed779a6ae6f06742e",
+    "s2_per_case_with_references.csv": "a6d0e480e543ac2254b9202bf409089b3bf83fb421fc7e326cf4154de3b1dc77"
+  },
+  "no_new_experiments": true,
+  "primary_outcomes": {
+    "fail": 458,
+    "harness_error": 29,
+    "pass": 16888
+  },
+  "primary_record_hashes_checked": 17375,
+  "sensitive_subjects": [
+    "astra-range_absent-rtc_alarm_pending-r05",
+    "human-rtc_alarm_callback",
+    "human-rtc_alarm_pending",
+    "human-rtc_time_counting",
+    "sol-range_absent-rtc_alarm_pending-r01",
+    "sol-range_absent-rtc_alarm_pending-r03"
+  ],
+  "upstream_callback_median_simulated_seconds": {
+    "V0": 26.5,
+    "V1": 42.0,
+    "V1b": 42.0,
+    "V2": 20.75,
+    "V3": 20.75
+  },
+  "variants": [
+    {
+      "V0_failed_slots_after_variant": {
+        "fail": 112
+      },
+      "endpoint_fail": 6,
+      "endpoint_missing": 0,
+      "fast": {
+        "detected": 0,
+        "evaluable": 33
+      },
+      "median_simulated_seconds": 11.0,
+      "nonarrival": {
+        "detected": 32,
+        "evaluable": 32
+      },
+      "offset_early": {
+        "detected": 4,
+        "evaluable": 5
+      },
+      "offset_late": {
+        "detected": 4,
+        "evaluable": 5
+      },
+      "seeded_fail": 106,
+      "seeded_missing": 9,
+      "six_sensitive_subjects_legal_outcomes": {
+        "fail": 112,
+        "pass": 500
+      },
+      "six_sensitive_subjects_slow": {
+        "fail": 6
+      },
+      "slow": {
+        "detected": 21,
+        "evaluable": 33
+      },
+      "variant": "V0"
+    },
+    {
+      "V0_failed_slots_after_variant": {
+        "pass": 112
+      },
+      "endpoint_fail": 0,
+      "endpoint_missing": 0,
+      "fast": {
+        "detected": 0,
+        "evaluable": 33
+      },
+      "median_simulated_seconds": 11.0,
+      "nonarrival": {
+        "detected": 33,
+        "evaluable": 33
+      },
+      "offset_early": {
+        "detected": 4,
+        "evaluable": 5
+      },
+      "offset_late": {
+        "detected": 4,
+        "evaluable": 5
+      },
+      "seeded_fail": 0,
+      "seeded_missing": 7,
+      "six_sensitive_subjects_legal_outcomes": {
+        "pass": 612
+      },
+      "six_sensitive_subjects_slow": {
+        "fail": 6
+      },
+      "slow": {
+        "detected": 21,
+        "evaluable": 33
+      },
+      "variant": "V1"
+    },
+    {
+      "V0_failed_slots_after_variant": {
+        "pass": 112
+      },
+      "endpoint_fail": 0,
+      "endpoint_missing": 0,
+      "fast": {
+        "detected": 0,
+        "evaluable": 32
+      },
+      "median_simulated_seconds": 11.0,
+      "nonarrival": {
+        "detected": 33,
+        "evaluable": 33
+      },
+      "offset_early": {
+        "detected": 4,
+        "evaluable": 5
+      },
+      "offset_late": {
+        "detected": 4,
+        "evaluable": 5
+      },
+      "seeded_fail": 0,
+      "seeded_missing": 5,
+      "six_sensitive_subjects_legal_outcomes": {
+        "pass": 612
+      },
+      "six_sensitive_subjects_slow": {
+        "fail": 6
+      },
+      "slow": {
+        "detected": 32,
+        "evaluable": 32
+      },
+      "variant": "V1b"
+    },
+    {
+      "V0_failed_slots_after_variant": {
+        "pass": 112
+      },
+      "endpoint_fail": 0,
+      "endpoint_missing": 0,
+      "fast": {
+        "detected": 0,
+        "evaluable": 33
+      },
+      "median_simulated_seconds": 11.0,
+      "nonarrival": {
+        "detected": 33,
+        "evaluable": 33
+      },
+      "offset_early": {
+        "detected": 4,
+        "evaluable": 5
+      },
+      "offset_late": {
+        "detected": 4,
+        "evaluable": 5
+      },
+      "seeded_fail": 0,
+      "seeded_missing": 3,
+      "six_sensitive_subjects_legal_outcomes": {
+        "pass": 612
+      },
+      "six_sensitive_subjects_slow": {
+        "fail": 6
+      },
+      "slow": {
+        "detected": 33,
+        "evaluable": 33
+      },
+      "variant": "V2"
+    },
+    {
+      "V0_failed_slots_after_variant": {
+        "pass": 112
+      },
+      "endpoint_fail": 0,
+      "endpoint_missing": 0,
+      "fast": {
+        "detected": 0,
+        "evaluable": 33
+      },
+      "median_simulated_seconds": 11.0,
+      "nonarrival": {
+        "detected": 33,
+        "evaluable": 33
+      },
+      "offset_early": {
+        "detected": 5,
+        "evaluable": 5
+      },
+      "offset_late": {
+        "detected": 5,
+        "evaluable": 5
+      },
+      "seeded_fail": 0,
+      "seeded_missing": 2,
+      "six_sensitive_subjects_legal_outcomes": {
+        "pass": 612
+      },
+      "six_sensitive_subjects_slow": {
+        "fail": 6
+      },
+      "slow": {
+        "detected": 33,
+        "evaluable": 33
+      },
+      "variant": "V3"
+    }
+  ],
+  "within_setting_flakiness_claim": false
+}

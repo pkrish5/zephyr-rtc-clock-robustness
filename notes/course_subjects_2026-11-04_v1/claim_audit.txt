@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "numeric_claims": 35,
+  "original_table_hashes_match": 8,
+  "readable_table_hashes_match": 3,
+  "citation_keys_resolve": 13,
+  "manuscript_sha256": "0a7d9633a8021516086b517012e98d9aadd9691d12d2820d1364567ae34aca0c",
+  "raw_records_mutated": false,
+  "renode_runs": 0
+}
