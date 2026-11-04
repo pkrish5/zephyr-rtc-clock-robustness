@@ -1,0 +1,36 @@
+{
+  "account": "TRA25006",
+  "approval": "Approve recovery, combined ceiling 4.0 SUs",
+  "approved_combined_ceiling_su": 4.0,
+  "combined_estimated_su": 2.941906,
+  "fresh_estimated_su": 2.441906,
+  "fresh_reservation_ceiling_su": 3.5,
+  "jobs": {
+    "f4-counter": {
+      "estimated_node_hours": 1.714042,
+      "launches": 90,
+      "nodes": 1,
+      "partition": "development",
+      "reservation_su_ceiling": 2,
+      "task_wall_timeout_seconds": 1800,
+      "wall_limit": "02:00:00",
+      "workers": 32
+    },
+    "f4-rtc": {
+      "estimated_node_hours": 0.727864,
+      "launches": 90,
+      "nodes": 1,
+      "partition": "development",
+      "reservation_su_ceiling": 1.5,
+      "task_wall_timeout_seconds": 900,
+      "wall_limit": "01:30:00",
+      "workers": 32
+    }
+  },
+  "nodes_per_job": 1,
+  "partition": "development",
+  "prior_failed_attempts_estimated_minimum_su": 0.5,
+  "prior_failed_charges_are_estimated": true,
+  "registered_at_america_chicago": "2026-11-04T17:31:09.824733-06:00",
+  "workers_per_node": 32
+}

@@ -1772,3 +1772,30 @@ resubmission or alteration of3552460-3552463. No fourth-case manuscript result
 before that chain is collected and verified. An exact user-supplied follow-up
 prompt is retained for delivery after all four existing jobs finish. No normal
 queue repeatability job is covered by this development-only plan.
+
+## 2026-11-04 Approved path-only fixed-setting repeatability recovery (pre-execution)
+
+The user approved recovery and a combined4.0-SU ceiling. Jobs3552681/3552682
+failed at the actual SIF hash guard before any Launcher/Renode process or
+primary index. Both failed archives were independently verified with6entries,
+zero primary records and30,067 unchanged protected files. Retain them unchanged.
+All180selected indices are not started; no observed or finalized missing verdict
+is replaced. This is not a completed-study rerun.
+
+The original6cells/30repeats, archived ELFs, test sources, frequencies, simulation
+body, CPU/SysTick, quantum, observation step, timeouts and analysis rules stay
+unchanged. Reuse the original sealed plan9c19539dcdf8df60b945debfa2fc69e721021bf80b87e157a1a80dacaa93a613.
+Correct only the selected physical image from v9 to the existing calibrated v10
+path tacc_work/20261023-v10/images/rtc-ls6-v1.sif, preserving the already sealed
+94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1
+hash. Keep full compute-node image hashing. New submission helper and v2
+receipt/log paths are under notes/fixed_repeatability_recovery_2026-11-04_v1.
+Its approved protocol SHA256 is 06239964822bd2ccc75dd818da84b571da3ec2221d533feea939f20f1fa35466.
+
+Fresh development/TRA25006 jobs keep one node32workers, RTC1.5h and counter2h,
+3.5SU fresh reservation ceiling and2.441906SU fresh estimate. Estimated prior
+minimum charges0.5SU yield2.941906SU combined estimate and4.0SU approved
+combined ceiling; prior charges remain estimated pending accounting. All runtime
+and output packing safeguards remain. No counter-repair3552460-3552463 input,
+source, job or record is changed, resubmitted or canceled. No paper edit.
+A new mismatch is preserved and reported; no blind repeat or missing replacement.
