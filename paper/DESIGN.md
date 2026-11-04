@@ -1734,3 +1734,41 @@ release must not claim network retrieval until upload/download is verified.
 E2 and new scientific experiments remain held. Failed S2 rate references remain
 firmware/simulator/accuracy-contract investigations, F767 remains an F4
 configuration replica and the phase explanation remains supported, not measured.
+
+## 2026-11-04 Separate fixed-setting F4 repeatability study (pre-execution)
+
+The user authorized exactly30 fresh-process repeats in each of six cells:
+rtc_api.test_alarm_callback at23673,23847,32000Hz and
+counter_basic.test_all_channels at29143,29352,32000Hz. Run unchanged archived
+F4 full-application ELFs and unchanged S2 simulation instructions; no rebuild,
+source instrumentation, isolation, clock resampling, new driver or fault. The
+nominal32000Hz cells are verified against archived qualification, not the seeded
+production schedule. Both qualification and production use exactly the same
+ELFs. Boundary and nominal records, linked logs, input hashes and resource
+measurements were checked before sealing.
+
+Protocol: notes/fixed_repeatability_2026-11-04_v1/PROTOCOL.md, SHA256
+8871169a60dbb37b3be2aa52d668b5a5ba609a35aca8c16b5ca5b7c63ccd7da2.
+COST.json freezes two independent development/TRA25006 jobs, one node and32
+Launcher workers each,90 launches per job: RTC01:30:00 ceiling1.5SU; counter
+02:00:00 ceiling2SU. Estimated total2.441906SU, reservation ceiling3.5SU, excluding
+queue wait. Uses tacc-apptainer/1.4.1, launcher/3.10 and the existing calibrated
+SIF. Original CPU16MIPS, SysTick16MHz, quantum1000ns, observation step0.5virtual
+seconds, per-app timeouts, full application order and ELF bytes remain fixed.
+
+Keep all180 planned indices; report pass/fail/skip/missing separately per cell.
+Only complete error-free unambiguous application records supply primary selected
+verdicts. Missing/harness outcomes are retained, never replaced. Mixed explicit
+pass/fail within a cell supports observed same-setting flakiness in that cell;
+concordance means no observed same-setting flakiness, not exclusion of rare
+flakiness. No outcome-dependent repeats or stopping. Timelines distinguish UART
+kernel-reported duration, sampled simulator observation and source inference;
+callback-entry and subsecond-phase timestamps are not directly measured.
+
+New namespace only, SCRATCH/node-local runtime and per-job verified packed WORK
+archives with fresh headroom gates and before/after protected audits. Archived
+ELFs and active counter-repair inputs stay read only; no git clean, pruning,
+resubmission or alteration of3552460-3552463. No fourth-case manuscript result
+before that chain is collected and verified. An exact user-supplied follow-up
+prompt is retained for delivery after all four existing jobs finish. No normal
+queue repeatability job is covered by this development-only plan.
