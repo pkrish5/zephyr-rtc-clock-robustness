@@ -1,0 +1,41 @@
+{
+  "timestamp_america_chicago": "2026-11-04T17:34:35.233643-06:00",
+  "recovery_approved": true,
+  "account": "TRA25006",
+  "partition": "development",
+  "jobs": {
+    "f4-rtc": {
+      "job_id": "3552869",
+      "state": "accepted",
+      "wall_limit": "01:30:00",
+      "estimated_su": 0.727864,
+      "reservation_su_ceiling": 1.5
+    },
+    "f4-counter": {
+      "job_id": "3552870",
+      "state": "accepted",
+      "wall_limit": "02:00:00",
+      "estimated_su": 1.714042,
+      "reservation_su_ceiling": 2
+    }
+  },
+  "planned_fresh_launches": 180,
+  "estimated_fresh_su": 2.441906,
+  "fresh_reservation_ceiling_su": 3.5,
+  "estimated_prior_failed_su": 0.5,
+  "approved_combined_ceiling_su": 4.0,
+  "scientific_plan_sha256": "9c19539dcdf8df60b945debfa2fc69e721021bf80b87e157a1a80dacaa93a613",
+  "recovery_plan_sha256": "05e5e3020a86f0ca7fb3aa62fa8efbb957882873933ca17cf02a58802b6a0cd9",
+  "remote_submission_head": "eb2254ad5c565afdaff079d1f05471fac38ddc67",
+  "counter_guard_before_after_match": true,
+  "failed_jobs_preserved": [
+    "3552681",
+    "3552682"
+  ],
+  "counter_repair_jobs_untouched": [
+    "3552460",
+    "3552461",
+    "3552462",
+    "3552463"
+  ]
+}

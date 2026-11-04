@@ -1,5 +1,16 @@
 # Fixed-setting repeatability status, 2026-11-04
 
+## Current recovery checkpoint: accepted3552869/3552870
+
+The human approved path-only recovery and4.0SU combined ceiling. Registered
+recovery details and authoritative new receipts are in
+notes/fixed_repeatability_recovery_2026-11-04_v1/STATUS.md and submission_receipt.json.
+Old3552681/3552682 are verified preflight failures with zero started indices.
+Do not resubmit or reinterpret them as scientific verdicts. Original packet
+and frozen code stay unchanged. The new jobs use the intended v10image path.
+Earlier checkpoints below are historical.
+
+
 ## Latest manual check: repeat jobs FAILED at preflight; counter chain PENDING
 
 A human-requested BatchMode check succeeded. Both3552681 and3552682 are FAILED
