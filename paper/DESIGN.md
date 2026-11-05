@@ -1844,3 +1844,34 @@ scientific protocol copy in its new namespace. Its registered archive includes
 active runtime input files and saved kept build artifacts, without deleting any
 original. This correction precedes all diagnostic execution and changes no
 scientific worker, source, ELF, schedule, outcome, or original job.
+
+
+## 2026-11-05 Proposed counter execution recovery, awaiting normal approval
+
+Diagnostic3558303 completed and its 902-entry archive independently verified:
+02f6edcd2a6a42b29aa50bf7c8042f21d7b384293aacd1eb2c4b35c111b9f8aa.
+All four original counter builds/ELFs/config products passed, 764 active input
+seals and 30,067 protected files were unchanged, and zero primary records
+existed. Pinned modules/container startup worked on a different compute node;
+the failed original gate's exact system root cause is not established.
+
+Prepare a separate, approval-pending infrastructure plan at
+notes/counter_repair_execution_2026-11-05_v1/PROTOCOL.md and plan.json. Reuse
+original ELFs, scientific plan, worker/run body, exact334 unstarted task indices,
+and settings. No rebuild or V0 legal rerun. Preserve all original failed/pending
+jobs and records. Replace only host-side startup/storage orchestration with the
+pinned packed-output runtime, module readability checks, inherited task environment
+and SCRATCH/tmp output overlay. Logical source/model/ELF paths and container
+arguments remain equivalent; no new measurement intervention is introduced.
+
+Proposed normal/TRA25006 jobs, each one node32Launcher workers:20nominal gates
+in1h;153legal settings in3h;153legal settings in3h;8fault probes in1h. Estimated
+sum5.984790SU, maximum8SU, excluding the already completed diagnostic's0.25SU.
+The estimates use the largest measured original repeat process1300.38host s,
+15% runtime allowance and900host s/job setup/packing. They are not repair data.
+All20nominal gates must pass with complete case vectors before any downstream
+submission; each downstream job verifies the packed gate archive again on compute.
+Missing outcomes remain missing. Primary results still require original-protocol
+replays, references, fault activation and cascade verification before paper edits.
+No normal job is authorized or submitted until the human approves this exact work
+and ceiling. No source tuning, job cancellation, E2 or new scientific experiment.

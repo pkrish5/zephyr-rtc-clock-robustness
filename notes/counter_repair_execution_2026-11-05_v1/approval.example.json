@@ -1,0 +1,13 @@
+{
+  "approved": false,
+  "plan_sha256": "037f96a96a1596ced1e82e6a379641ca959a31d36aa3c24fb67b6649835fc1fc",
+  "account": "TRA25006",
+  "normal_ceiling_su": 8,
+  "allowed_groups": [
+    "gate",
+    "legal-a",
+    "legal-b",
+    "fault"
+  ],
+  "human_authorization": "PENDING: record the actual approval before submitting"
+}

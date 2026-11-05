@@ -1,0 +1,13 @@
+{
+  "job_id": "3558303",
+  "archive_sha256": "02f6edcd2a6a42b29aa50bf7c8042f21d7b384293aacd1eb2c4b35c111b9f8aa",
+  "exact_entries": 902,
+  "output_state": "complete",
+  "protected_files_unchanged": 30067,
+  "recovery_ready": true,
+  "saved_builds_verified": 4,
+  "existing_primary_records": 0,
+  "active_input_seals_unchanged": 764,
+  "module_container_probe_passed": true,
+  "node": "c302-006.ls6.tacc.utexas.edu"
+}

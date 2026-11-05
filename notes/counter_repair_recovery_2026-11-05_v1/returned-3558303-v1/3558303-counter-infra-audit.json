@@ -1,0 +1,21 @@
+{
+  "account": "TRA25006",
+  "apptainer_module": "tacc-apptainer/1.4.1",
+  "apptainer_version": "apptainer version 1.4.1-1.el8",
+  "archive": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3558303-counter-infra-audit.tar.gz",
+  "archive_entries": 902,
+  "archive_sha256": "02f6edcd2a6a42b29aa50bf7c8042f21d7b384293aacd1eb2c4b35c111b9f8aa",
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "exact_archive_coverage": true,
+  "extracted_stream_hashes_match": true,
+  "launcher_module": "launcher/3.10",
+  "manifest": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3558303-counter-infra-audit.manifest.json.gz",
+  "manifest_sha256": "f65cdd805fa68e3d90b56870a07aae43efd2492e4ebbbae70c66573a3d8d0f6c",
+  "node_name": "c302-006",
+  "original_files_deleted": 0,
+  "output_state": "complete",
+  "partition": "development",
+  "physical_loose_output": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/jobs/3558303/output",
+  "raw_bytes_unchanged": true,
+  "slurm_job_id": "3558303"
+}
