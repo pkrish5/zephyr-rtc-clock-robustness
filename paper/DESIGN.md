@@ -1799,3 +1799,34 @@ combined ceiling; prior charges remain estimated pending accounting. All runtime
 and output packing safeguards remain. No counter-repair3552460-3552463 input,
 source, job or record is changed, resubmitted or canceled. No paper edit.
 A new mismatch is preserved and reported; no blind repeat or missing replacement.
+
+
+## 2026-11-05 Counter-repair infrastructure diagnosis before recovery
+
+The separate fixed-setting repeatability study completed with 180 independently
+verified selected verdicts, no selected skips/missing outcomes, and no observed
+same-setting flakiness in its six cells. Its original archived inputs, 30,067
+protected files, and all 20 counter-repair sealed files are unchanged.
+
+Counter build 3552460 completed on c304-021. Gate 3552461 failed 127:0 after
+two seconds on c314-191: Lmod init/executable paths were unavailable and
+`apptainer` was not found. Original jobs 3552462/3552463 remain pending; no
+counter-repair scientific outcome is inferred from these Slurm states.
+
+Before any engineering recovery, register one read-only development/TRA25006
+compute audit, one node, 15-minute limit and 0.25-SU reservation ceiling.
+Protocol: notes/counter_repair_recovery_2026-11-05_v1/PROTOCOL.md. It verifies
+pinned modules and the calibrated SIF with /bin/true only, all original
+counter-plan/source/code hashes, saved build records/ELFs/logs/config products,
+existing primary indices, and before/after protected hashes. It does not run
+Renode, build, alter an input, cancel or resubmit an original job, or edit the
+manuscript. Loose diagnostic output uses SCRATCH/tmp and is archived and
+verified before publication to WORK; originals are retained without pruning.
+
+A compute-node module mount problem is a hypothesis, not yet a root-cause
+finding. The audit must verify the old gate's actual absence/presence of
+primary outcomes rather than assume no starts. Unexpected records or hash
+mismatches stop recovery planning. Retain failed evidence. A recovery needs a
+new engineering plan/output namespace, unchanged scientific worker/settings,
+and explicit approval of the new normal-job work, node count, wall limits and
+SU estimates. This note authorizes no replacement normal submission.
