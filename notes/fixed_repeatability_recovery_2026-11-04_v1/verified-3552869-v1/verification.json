@@ -1,0 +1,8 @@
+{
+  "job_id": "3552869",
+  "unit": "f4-rtc",
+  "archive_sha256": "91fa98c49ecd7f41d6edf054670fcc7a6c4f4034980b619f572504f1f861b308",
+  "exact_entries": 838,
+  "output_state": "complete",
+  "protected_files_unchanged": 30067
+}

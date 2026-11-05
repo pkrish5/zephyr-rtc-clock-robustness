@@ -1,0 +1,99 @@
+{
+  "job_id": "3552869",
+  "unit": "f4-rtc",
+  "status": "verified",
+  "archive_state": "complete",
+  "archive_sha256": "91fa98c49ecd7f41d6edf054670fcc7a6c4f4034980b619f572504f1f861b308",
+  "scheduled": 90,
+  "primary_records": 90,
+  "evaluable": 90,
+  "counts": {
+    "fail": 30,
+    "pass": 60
+  },
+  "cells": [
+    {
+      "cell_id": "f4-rtc-23673",
+      "case": "rtc_api.test_alarm_callback",
+      "frequency_hz": 23673,
+      "pass_count": 0,
+      "fail_count": 30,
+      "skip_count": 0,
+      "missing_count": 0,
+      "mixed_pass_fail": false,
+      "all30_explicit_agree": true,
+      "kernel_reported_case_seconds_span": [
+        26.002,
+        26.002
+      ],
+      "sampled_uart_verdict_observation_virtual_seconds_span": [
+        52.5,
+        52.5
+      ],
+      "host_wall_seconds_span": [
+        126.029,
+        141.312
+      ],
+      "unique_normalized_trace_count": 1
+    },
+    {
+      "cell_id": "f4-rtc-23847",
+      "case": "rtc_api.test_alarm_callback",
+      "frequency_hz": 23847,
+      "pass_count": 30,
+      "fail_count": 0,
+      "skip_count": 0,
+      "missing_count": 0,
+      "mixed_pass_fail": false,
+      "all30_explicit_agree": true,
+      "kernel_reported_case_seconds_span": [
+        26.001,
+        26.001
+      ],
+      "sampled_uart_verdict_observation_virtual_seconds_span": [
+        53.0,
+        53.0
+      ],
+      "host_wall_seconds_span": [
+        130.965,
+        144.924
+      ],
+      "unique_normalized_trace_count": 1
+    },
+    {
+      "cell_id": "f4-rtc-32000",
+      "case": "rtc_api.test_alarm_callback",
+      "frequency_hz": 32000,
+      "pass_count": 30,
+      "fail_count": 0,
+      "skip_count": 0,
+      "missing_count": 0,
+      "mixed_pass_fail": false,
+      "all30_explicit_agree": true,
+      "kernel_reported_case_seconds_span": [
+        26.001,
+        26.001
+      ],
+      "sampled_uart_verdict_observation_virtual_seconds_span": [
+        62.5,
+        62.5
+      ],
+      "host_wall_seconds_span": [
+        151.991,
+        178.45
+      ],
+      "unique_normalized_trace_count": 1
+    }
+  ],
+  "fixed_settings_verified": true,
+  "unique_nodes": [
+    "c309-005.ls6.tacc.utexas.edu"
+  ],
+  "all30_agree_each_cell": true,
+  "observed_mixed_pass_fail_cells": [],
+  "rare_flakiness_ruled_out": false,
+  "protected_files_unchanged": 30067,
+  "counter_inputs_unchanged": true,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "source_plan_sha256": "9c19539dcdf8df60b945debfa2fc69e721021bf80b87e157a1a80dacaa93a613"
+}

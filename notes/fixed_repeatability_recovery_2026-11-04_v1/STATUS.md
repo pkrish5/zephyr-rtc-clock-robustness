@@ -1,3 +1,39 @@
+# Verified RTC repeatability checkpoint, 2026-11-04 17:57 Central
+
+Job **3552869 completed 0:0**. Its four packed files were returned into
+`returned-3552869-v1/` and independently verified in `verified-3552869-v1/`:
+838 exact inventory entries; complete state; archive SHA256
+`91fa98c49ecd7f41d6edf054670fcc7a6c4f4034980b619f572504f1f861b308`.
+Both coordinator input guards passed. The archive's before/after protected-file
+checks retain all 30,067 files unchanged, including the counter input seal.
+
+The new offline `audit_unit.py` checked all 90 records and provenance,
+process exits, UART case vectors, trace/platform/log hashes and fixed settings.
+`rtc_report_v1/` retains one row per planned repeat plus every application case
+verdict. Selected `rtc_api.test_alarm_callback` outcomes:
+
+|Fixed clock|Pass|Fail|Skip|Missing|
+|---|---:|---:|---:|---:|
+|23.673 kHz|0|30|0|0|
+|23.847 kHz|30|0|0|0|
+|32 kHz|30|0|0|0|
+
+No observed same-setting flakiness in these three cells; rare flakiness is not
+ruled out. Cross-frequency differences remain timing sensitivity. Normalized
+traces also agree within each cell; this is supporting evidence, not a new
+nondeterminism claim. Kernel-reported durations and sampled UART exposure
+remain distinct and do not directly measure callback arrival or subsecond phase.
+
+Latest bounded BatchMode sacct: counter repeat job **3552870 RUNNING**;
+counter-repair build **3552460 COMPLETED 0:0**, with **3552461–3552463 PENDING**.
+Build termination is not build/gate/scientific verification. Do not deliver the
+counter follow-up until all four counter-repair jobs are terminal. No jobs were
+submitted, resubmitted, canceled or changed in this wake. No LS6 pull or source
+change. Old failed preflights remain separate with zero scientific launches.
+The watcher remains active for counter repeats and the eventual follow-up.
+
+---
+
 # Approved repeatability recovery: accepted jobs
 
 Recovery was registered before execution and submitted under the human's
