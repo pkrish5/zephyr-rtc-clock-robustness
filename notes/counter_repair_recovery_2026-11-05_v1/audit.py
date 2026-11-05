@@ -35,6 +35,7 @@ def main():
     seals = {}
     for relative, digest in registration['code_sha256'].items():
         assert sha(repo / relative) == digest, relative
+    assert sha(note / 'original_scientific_protocol.md') == registration['original_scientific_protocol_sha256']
     for relative, digest in registration['counter_inputs_sha256'].items():
         assert sha(repo / relative) == digest, relative
         seals['repo/' + relative] = digest
@@ -65,12 +66,16 @@ def main():
     def keep(source):
         relative = source.relative_to(repo)
         target = out / 'evidence' / relative
+        if target.exists():
+            assert sha(source) == sha(target)
+            return
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source, target)
         digest = sha(source)
         assert sha(target) == digest
         copies.append(dict(path=str(relative), sha256=digest))
-    for p in [plan_path, bundle / 'plan.sha256', note / 'PROTOCOL.md', note / 'audit_plan.json']:
+    for p in [plan_path, bundle / 'plan.sha256', note / 'PROTOCOL.md', note / 'audit_plan.json',
+              note / 'original_scientific_protocol.md']:
         keep(p)
     for relative in registration['counter_inputs_sha256']:
         keep(repo / relative)

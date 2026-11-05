@@ -1830,3 +1830,17 @@ mismatches stop recovery planning. Retain failed evidence. A recovery needs a
 new engineering plan/output namespace, unchanged scientific worker/settings,
 and explicit approval of the new normal-job work, node count, wall limits and
 SU estimates. This note authorizes no replacement normal submission.
+
+
+### 2026-11-05 Diagnostic packaging correction before its first submission
+
+The read-only pre-pull check encountered a Mac-only HANDOFF.md absent on LS6;
+no diagnostic was submitted, no observed digest changed, and no original file
+was repaired or replaced. The 20-file Mac source/document seal is distinct
+from the 764-file active LS6 execution/input seal frozen in the repeatability
+packet. The new infrastructure audit now checks the full active remote seal
+on compute, keeps the Mac-only seal checked locally, and carries a byte-identical
+scientific protocol copy in its new namespace. Its registered archive includes
+active runtime input files and saved kept build artifacts, without deleting any
+original. This correction precedes all diagnostic execution and changes no
+scientific worker, source, ELF, schedule, outcome, or original job.

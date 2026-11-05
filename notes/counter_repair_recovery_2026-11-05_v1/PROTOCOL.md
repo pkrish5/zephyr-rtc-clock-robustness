@@ -21,11 +21,22 @@ protected files before/after, then publishes a verified WORK archive. No prune.
 
 Verify the unchanged original counter plan
 `c5d2f7f515a59f2d45bcad665ab649b251051904704a1c96186610d08141ea8d`,
-all its input/code hashes, and the 20-file counter seal captured before the
-repeatability study. Check every saved build record, ELF, build log, recorded
+all its input/code hashes, and the 764-file active remote counter seal captured
+before the repeatability study. The separate 20-file Mac source/document seal
+is checked locally; those Mac-only documents were not runtime inputs on LS6.
+Check every saved build record, ELF, build log, recorded
 configuration/devicetree hash, compiled case list, and process exit. Keep copies
 of those artifacts, original source variants, configs, and original Slurm logs
-in this new archive. Intermediates are not selected and are not deleted.
+in this new archive, together with the active runtime input files. Intermediates
+are not selected and are not deleted. A byte-identical copy of the original
+scientific protocol is carried in this new namespace; the original is not edited.
+
+Pre-execution packaging correction, 2026-11-05: the first read-only pre-pull
+check incorrectly treated all Mac-only documents as LS6 files. It encountered
+the absent HANDOFF.md, not a measured digest mismatch. No job was submitted.
+The new diagnostic now distinguishes the 764-file active remote seal (from the
+unchanged repeatability packet) and 20-file Mac seal. All original seals and
+scientific inputs remain unchanged. This revision predates any diagnostic run.
 
 Inventory any existing primary records and stage process files. Record the
 actual indices and hashes; do not assume zero nominal launches from the job
