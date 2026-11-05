@@ -1,0 +1,9 @@
+{
+  "timestamp_pacific": "2026-11-05T15:21:30.133788-08:00",
+  "accepted_job_id": "3558303",
+  "receipt_returned": true,
+  "status_check_exit_code": 255,
+  "watcher_status_confirmed": "PAUSED",
+  "original_jobs_changed": false,
+  "no_duplicate_submission": true
+}

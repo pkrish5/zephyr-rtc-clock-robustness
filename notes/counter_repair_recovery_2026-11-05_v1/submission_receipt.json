@@ -1,0 +1,12 @@
+{
+  "job_id": "3558303",
+  "state": "accepted",
+  "account": "TRA25006",
+  "partition": "development",
+  "nodes": 1,
+  "wall_limit": "00:15:00",
+  "reservation_su_ceiling": 0.25,
+  "matching_mac_ls6_submission_head": "cbf77af0e8e9f27719a48c71b2f84b06e3bfeeea",
+  "active_counter_code_unchanged_before_after_pull": true,
+  "original_jobs_changed": false
+}
