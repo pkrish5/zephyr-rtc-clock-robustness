@@ -1,0 +1,7 @@
+# Executed locally; no simulation or build.
+python3 notes/fixed_repeatability_2026-11-04_v1/verify_archive.py --returned notes/fixed_repeatability_recovery_2026-11-04_v1/returned-3552870-v1 --job 3552870 --unit f4-counter --out notes/fixed_repeatability_recovery_2026-11-04_v1/verified-3552870-v1
+python3 notes/fixed_repeatability_recovery_2026-11-04_v1/audit_unit.py --verified notes/fixed_repeatability_recovery_2026-11-04_v1/verified-3552870-v1 --unit f4-counter --job 3552870 --out notes/fixed_repeatability_recovery_2026-11-04_v1/counter_report_v1
+python3 notes/fixed_repeatability_2026-11-04_v1/analyze.py --rtc notes/fixed_repeatability_recovery_2026-11-04_v1/verified-3552869-v1 --counter notes/fixed_repeatability_recovery_2026-11-04_v1/verified-3552870-v1 --out notes/fixed_repeatability_recovery_2026-11-04_v1/combined_report_v1
+python3 notes/fixed_repeatability_2026-11-04_v1/audit_inputs.py --out notes/fixed_repeatability_recovery_2026-11-04_v1/combined_report_v1/archived_inputs_recheck.json
+python3 notes/fixed_repeatability_recovery_2026-11-04_v1/finalize_report.py
+# Verification/extraction and analysis require fresh output directories. Existing output is never replaced.

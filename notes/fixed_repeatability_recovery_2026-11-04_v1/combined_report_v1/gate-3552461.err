@@ -1,0 +1,4 @@
+/etc/profile.d/z01_lmod.sh: line 22: /opt/apps/lmod/lmod/init/sh: No such file or directory
+/etc/tacc/tacc_functions: line 22: /opt/apps/lmod/lmod/libexec/lmod: No such file or directory
+/etc/tacc/tacc_functions: line 22: /opt/apps/lmod/lmod/libexec/lmod: No such file or directory
+/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/harness/tacc_phase1/common.sh: line 24: apptainer: command not found

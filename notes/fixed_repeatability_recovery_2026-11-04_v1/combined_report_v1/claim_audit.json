@@ -1,0 +1,16 @@
+{
+  "analysis_agreement": "180/180",
+  "archived_full_case_vector_matches": "180/180",
+  "selected_verdicts": {
+    "fail": 60,
+    "pass": 120
+  },
+  "source_hashes": {
+    "subjects/upstream/zephyr/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c": "be76132f5b520edadedd507a9129afc1ae6c9ff06ee86d3e33ae7b69bd89c792",
+    "subjects/upstream/zephyr/tests/drivers/counter/counter_basic_api/src/test_counter.c": "8f5e476627fd7386d2393c7fbc2140e67d6393308f86ba6e60c5a5cdba1ffde8",
+    "subjects/upstream/zephyr/drivers/counter/counter_ll_stm32_rtc.c": "19f51d71e8c0e184816161f44ef23c35e3f962eba3f540197339351b5139303c"
+  },
+  "old_preflight_attempts_launched": 0,
+  "old_preflight_attempts_are_scientific_results": false,
+  "original_records_replaced": false
+}

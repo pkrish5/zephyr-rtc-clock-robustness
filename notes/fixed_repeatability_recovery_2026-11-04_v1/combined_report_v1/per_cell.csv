@@ -1,0 +1,7 @@
+cell_id,case,frequency_hz,pass_count,fail_count,skip_count,missing_count,observed_mixed_pass_fail,all_30_explicit_agree
+f4-rtc-23673,rtc_api.test_alarm_callback,23673,0,30,0,0,False,True
+f4-rtc-23847,rtc_api.test_alarm_callback,23847,30,0,0,0,False,True
+f4-rtc-32000,rtc_api.test_alarm_callback,32000,30,0,0,0,False,True
+f4-counter-29143,counter_basic.test_all_channels,29143,0,30,0,0,False,True
+f4-counter-29352,counter_basic.test_all_channels,29352,30,0,0,0,False,True
+f4-counter-32000,counter_basic.test_all_channels,32000,30,0,0,0,False,True

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "cells": 6,
+  "archived_nominal_records": 10,
+  "archived_boundary_records": 4,
+  "unchanged_elves": 2,
+  "source_input_hashes_checked": 32,
+  "new_simulations": 0
+}

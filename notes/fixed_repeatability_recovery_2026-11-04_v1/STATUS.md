@@ -1,3 +1,62 @@
+# Repeatability verified; separate counter repair blocked
+
+Both repeatability recovery archives and all 180 primary records are now
+independently verified. `combined_report_v1/REPORT.md` and `TIMELINES.md` retain
+the six-cell results and source-linked measurement/inference timelines.
+Selected outcomes: 120 pass, 60 fail, zero skip, zero missing. Every cell has
+30 matching explicit verdicts: **no observed same-setting flakiness** in these
+cells; rare flakiness remains possible. Both independent audit paths agree on
+180/180 outcomes, and all 180 full-application vectors match an archived vector
+at the same frequency. All other case verdicts and capability skips are saved.
+
+The fresh archived-input audit rechecked 14 original records, 32 input hashes,
+and both unchanged ELFs. Both recovery archives have 838 verified entries and
+unchanged before/after checks over 30,067 protected files. Old preflight attempts
+remain separate and launched no scientific processes. No original outcome was
+replaced, and no new simulation or job was launched during verification.
+
+Counter archive 3552870 SHA256:
+`7a1a0e63c2a1152f50874a930f0c7433249f4cef4f50e6b8cfad9eaec6bf16ac`.
+RTC archive 3552869 SHA256:
+`91fa98c49ecd7f41d6edf054670fcc7a6c4f4034980b619f572504f1f861b308`.
+
+Separate counter-repair status: build 3552460 COMPLETED 0:0; nominal gate
+3552461 FAILED 127:0; legal 3552462 and fault 3552463 still PENDING.
+The exact stderr is in `combined_report_v1/gate-3552461.err`: unavailable Lmod
+files followed by `apptainer: command not found`. This is an environment
+blocker, not a repair verdict. No counter job/input was changed or resubmitted.
+The counter follow-up has NOT been delivered because all four are not terminal.
+The watcher remains PAUSED for this blocker; no automatic recovery or polling.
+See `combined_report_v1/COUNTER_BLOCKER.md`. Paper TeX and PDF are unchanged.
+
+---
+
+# Resume check rejected, 2026-11-04 21:13 Central
+
+After the human confirmed MFA reconnection, one bounded BatchMode sacct check
+again returned `Permission denied (publickey,keyboard-interactive)` before any
+job status. Remote access stopped immediately; the watcher is still confirmed
+PAUSED. No automatic retries, jobs, records or manuscript changes. Existing RTC
+verification remains valid; current counter job states are unknown.
+
+---
+
+# Access paused, 2026-11-04 18:27 Central
+
+The new bounded BatchMode status check failed authentication before returning
+any job states: `Permission denied (publickey,keyboard-interactive)` with TACC
+password/token instructions. Remote access stopped immediately. The automation
+update confirmed PAUSED. No retry, job mutation, transfer, code pull or new
+experiment occurred. The human must reconnect and explicitly confirm resume.
+
+RTC verification below remains complete. Counter repeat job 3552870 was last
+verified RUNNING; counter build 3552460 last COMPLETED 0:0 and 3552461–3552463
+last PENDING. These are historical states, not current verification. The counter
+follow-up has not been delivered because all four terminal states are not yet
+verified. No manuscript change. Local RTC report is committed as `6559977f`.
+
+---
+
 # Verified RTC repeatability checkpoint, 2026-11-04 17:57 Central
 
 Job **3552869 completed 0:0**. Its four packed files were returned into
