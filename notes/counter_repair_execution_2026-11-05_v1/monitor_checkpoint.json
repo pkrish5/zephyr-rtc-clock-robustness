@@ -1,0 +1,11 @@
+{
+  "job_id": "3569909",
+  "last_verified_state": "PENDING",
+  "automation_status_confirmed": "ACTIVE",
+  "interval_minutes": 30,
+  "monitor_can_submit_jobs": false,
+  "downstream_conditionally_approved": true,
+  "gate_verification_required": true,
+  "counter_mac_seals_unchanged": 20,
+  "manuscript_unchanged": true
+}

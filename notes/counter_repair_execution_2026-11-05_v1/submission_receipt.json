@@ -1,0 +1,17 @@
+{
+  "gate_job_id": "3569909",
+  "gate_state": "PENDING",
+  "account": "TRA25006",
+  "partition": "normal",
+  "nodes": 1,
+  "wall_limit": "01:00:00",
+  "launches": 20,
+  "estimated_su": 0.6653991666666667,
+  "gate_ceiling_su": 1,
+  "total_approved_ceiling_su": 8,
+  "downstream_submitted": false,
+  "submission_head": "93ab81e7d1f5b2de933e7576de0724190f53fba5",
+  "recovery_plan_sha256": "037f96a96a1596ced1e82e6a379641ca959a31d36aa3c24fb67b6649835fc1fc",
+  "original_counter_code_unchanged": true,
+  "original_jobs_changed": false
+}
