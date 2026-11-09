@@ -1875,3 +1875,18 @@ Missing outcomes remain missing. Primary results still require original-protocol
 replays, references, fault activation and cascade verification before paper edits.
 No normal job is authorized or submitted until the human approves this exact work
 and ceiling. No source tuning, job cancellation, E2 or new scientific experiment.
+
+
+## 2026-11-09 Conditional counter-recovery execution approval, before submission
+
+The human approved the concrete recovery with “yeah repair” after the four-job
+proposal and8-SU ceiling were reported. Approval.json binds the exact sealed
+recovery plan037f96a96a1596ced1e82e6a379641ca959a31d36aa3c24fb67b6649835fc1fc.
+Normal/TRA25006:one node32Launcher workers per job;20nominal gates1h,
+153legal3h,153legal3h,8fault1h. Estimate5.984790SU, ceiling8SU, excluding the
+already completed0.25SU diagnostic. All20nominal launches must pass independent
+archive/record/hash verification before any legal/fault submission. This is an
+infrastructure recovery of334unstarted registered indices, not new scientific
+conditions or a replacement for any measured outcome. Original jobs and records
+remain untouched. Sources, ELFs, scientific worker, clocks, limits and faults
+remain frozen. No source tuning, missing-outcome replacement, E2 or paper edit.

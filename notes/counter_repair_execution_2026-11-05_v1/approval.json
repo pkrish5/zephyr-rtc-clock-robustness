@@ -1,0 +1,16 @@
+{
+  "approved": true,
+  "plan_sha256": "037f96a96a1596ced1e82e6a379641ca959a31d36aa3c24fb67b6649835fc1fc",
+  "account": "TRA25006",
+  "normal_ceiling_su": 8,
+  "allowed_groups": [
+    "gate",
+    "legal-a",
+    "legal-b",
+    "fault"
+  ],
+  "human_authorization": "User: 'yeah repair', approving the immediately preceding conditional recovery proposal (~6 SUs estimated, 8-SU ceiling).",
+  "recorded_at_america_chicago": "2026-11-09T12:05:16.310349-06:00",
+  "downstream_requires_all_20_nominal_gates_verified": true,
+  "original_jobs_must_remain_unchanged": true
+}
