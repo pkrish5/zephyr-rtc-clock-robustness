@@ -1,0 +1,21 @@
+{
+  "account": "TRA25006",
+  "apptainer_module": "tacc-apptainer/1.4.1",
+  "apptainer_version": "apptainer version 1.4.1-1.el8",
+  "archive": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3570473-counter-recovery-legal-a.tar.gz",
+  "archive_entries": 1269,
+  "archive_sha256": "080d69a1958f62c73110287cf8e9e29c386f73aa843230ff8a82f33757f57ca4",
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "exact_archive_coverage": true,
+  "extracted_stream_hashes_match": true,
+  "launcher_module": "launcher/3.10",
+  "manifest": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3570473-counter-recovery-legal-a.manifest.json.gz",
+  "manifest_sha256": "d1b663c133dc2dc54ecdb220613710558177590c9d7e2cd75579d57f926c2d5c",
+  "node_name": "c314-201",
+  "original_files_deleted": 0,
+  "output_state": "complete",
+  "partition": "normal",
+  "physical_loose_output": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/jobs/3570473/output",
+  "raw_bytes_unchanged": true,
+  "slurm_job_id": "3570473"
+}

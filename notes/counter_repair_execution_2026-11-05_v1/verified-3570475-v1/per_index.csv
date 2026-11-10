@@ -1,0 +1,9 @@
+index,variant,condition,frequency_hz,selected_outcome,partial_selected,downstream_single_shot,reason,primary_record_sha256,process_exit_code
+326,V0,slow_fault,10000,fail,fail,fail,explicit verdict in complete verified application,ef277c63e6271f285f1117f361a89e853adaa691883655a653b3bdff2520d242,0
+327,V0,fast_fault,64000,pass,pass,pass,explicit verdict in complete verified application,c43a13916da9965e765ccb0ec37c37bc55b0eee56b5be486b392d48c4616a7c9,0
+328,V1,slow_fault,10000,pass,pass,fail,explicit verdict in complete verified application,1a456abd8fb67cf5d37256dbf00eab920d9af7187876de54c268351cfcb29209,0
+329,V1,fast_fault,64000,pass,pass,pass,explicit verdict in complete verified application,32bebbb35c6c6bbd50e3d3f586f5cb356df06b3099462681af0a429e03e43bc2,0
+330,V1b,slow_fault,10000,fail,fail,fail,explicit verdict in complete verified application,0ef3a04709441ce1d4d04faa3ae80191d383b17e14025381c53f8800f48ecb95,0
+331,V1b,fast_fault,64000,pass,pass,pass,explicit verdict in complete verified application,ffcb7c91a7eda41635516f35a305769db8cc0a0796dc28daf0070069a6ed48a4,0
+332,V2,slow_fault,10000,fail,fail,fail,explicit verdict in complete verified application,c28bbdd578245f929f82dca9965912510ed028c5d86d37c15e75a8e1dc13f4fa,0
+333,V2,fast_fault,64000,pass,pass,pass,explicit verdict in complete verified application,04a626302200a871d798a029335ed74ae4147299c67f72483b58b6b2004f8a03,0

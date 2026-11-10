@@ -1,0 +1,11 @@
+{
+  "sealed_recovery_code_files_unchanged": 13,
+  "original_counter_mac_files_unchanged": 20,
+  "all_three_input_guards_and_gate_archive_links_valid": true,
+  "original_primary_records_unchanged": true,
+  "manuscript_sha256": {
+    "main.tex": "0a7d9633a8021516086b517012e98d9aadd9691d12d2820d1364567ae34aca0c",
+    "main.pdf": "73488b9c4892f929404c835955f489f92028160b4107504d44bd4e3373cca95b"
+  },
+  "new_jobs_submitted": 0
+}

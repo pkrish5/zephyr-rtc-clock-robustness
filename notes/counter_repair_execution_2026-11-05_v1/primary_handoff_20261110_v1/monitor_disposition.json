@@ -1,0 +1,7 @@
+{
+  "status_confirmed": "PAUSED",
+  "reason": "all three accepted downstream jobs independently verified; scientific follow-up remains separate",
+  "deletion_review": "declined: original verbatim counter follow-up delivery condition not met",
+  "original_followup_delivered": false,
+  "new_jobs_submitted": 0
+}

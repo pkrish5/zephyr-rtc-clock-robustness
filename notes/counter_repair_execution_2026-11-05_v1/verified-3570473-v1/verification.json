@@ -1,0 +1,18 @@
+{
+  "job_id": "3570473",
+  "group": "legal-a",
+  "archive_sha256": "080d69a1958f62c73110287cf8e9e29c386f73aa843230ff8a82f33757f57ca4",
+  "exact_entries": 1269,
+  "output_state": "complete",
+  "protected_files_unchanged": 30067,
+  "planned": 153,
+  "primary_records": 153,
+  "counts": {
+    "pass": 153,
+    "fail": 0,
+    "skip": 0,
+    "missing": 0
+  },
+  "gate_qualified": false,
+  "fault_activation_and_references_still_required": false
+}

@@ -1,0 +1,18 @@
+{
+  "job_id": "3570475",
+  "group": "fault",
+  "archive_sha256": "eb28764a62db3071036cd75658e03c3261d1c9641259a208347f8ef8abe2d6cb",
+  "exact_entries": 109,
+  "output_state": "complete",
+  "protected_files_unchanged": 30067,
+  "planned": 8,
+  "primary_records": 8,
+  "counts": {
+    "pass": 5,
+    "fail": 3,
+    "skip": 0,
+    "missing": 0
+  },
+  "gate_qualified": false,
+  "fault_activation_and_references_still_required": true
+}

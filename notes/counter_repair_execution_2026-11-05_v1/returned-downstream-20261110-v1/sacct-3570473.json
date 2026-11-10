@@ -1,0 +1,11 @@
+{
+  "job_id": "3570473",
+  "group": "legal-a",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "01:49:49",
+  "start": "2026-11-10T07:45:23",
+  "end": "2026-11-10T09:35:12",
+  "slurm_reported_timezone": "America/Chicago",
+  "source": "sacct -X via successful bounded BatchMode check in this turn"
+}

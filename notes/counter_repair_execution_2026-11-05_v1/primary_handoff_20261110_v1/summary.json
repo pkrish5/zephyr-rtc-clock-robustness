@@ -1,0 +1,492 @@
+{
+  "groups": [
+    {
+      "job_id": "3570473",
+      "group": "legal-a",
+      "selected_counts": {
+        "pass": 153,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "downstream_counts": {
+        "pass": 131,
+        "fail": 22,
+        "skip": 0,
+        "missing": 0
+      },
+      "archive_sha256": "080d69a1958f62c73110287cf8e9e29c386f73aa843230ff8a82f33757f57ca4"
+    },
+    {
+      "job_id": "3570474",
+      "group": "legal-b",
+      "selected_counts": {
+        "pass": 153,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "downstream_counts": {
+        "pass": 130,
+        "fail": 23,
+        "skip": 0,
+        "missing": 0
+      },
+      "archive_sha256": "e189af95654d797bfb9e0d26e443a33bcbdf57b98e614820f6a0c8cac818aedf"
+    },
+    {
+      "job_id": "3570475",
+      "group": "fault",
+      "selected_counts": {
+        "pass": 5,
+        "fail": 3,
+        "skip": 0,
+        "missing": 0
+      },
+      "downstream_counts": {
+        "pass": 4,
+        "fail": 4,
+        "skip": 0,
+        "missing": 0
+      },
+      "archive_sha256": "eb28764a62db3071036cd75658e03c3261d1c9641259a208347f8ef8abe2d6cb"
+    }
+  ],
+  "variants": [
+    {
+      "variant": "V1",
+      "selected_counts": {
+        "pass": 102,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "short_relative_counts": {
+        "pass": 88,
+        "fail": 14,
+        "skip": 0,
+        "missing": 0
+      },
+      "downstream_counts": {
+        "pass": 87,
+        "fail": 15,
+        "skip": 0,
+        "missing": 0
+      },
+      "paired_transitions": {
+        "counter_basic.test_all_channels": {
+          "pass -> pass": 58,
+          "fail -> pass": 44
+        },
+        "counter_basic.test_single_shot_alarm_notop": {
+          "pass -> pass": 58,
+          "fail -> fail": 15,
+          "fail -> pass": 29
+        },
+        "counter_basic.test_short_relative_alarm": {
+          "pass -> pass": 58,
+          "skip -> fail": 14,
+          "skip -> pass": 30
+        }
+      },
+      "downstream_fail_and_short_relative_fail": 14
+    },
+    {
+      "variant": "V1b",
+      "selected_counts": {
+        "pass": 102,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "short_relative_counts": {
+        "pass": 88,
+        "fail": 14,
+        "skip": 0,
+        "missing": 0
+      },
+      "downstream_counts": {
+        "pass": 87,
+        "fail": 15,
+        "skip": 0,
+        "missing": 0
+      },
+      "paired_transitions": {
+        "counter_basic.test_all_channels": {
+          "pass -> pass": 58,
+          "fail -> pass": 44
+        },
+        "counter_basic.test_single_shot_alarm_notop": {
+          "pass -> pass": 58,
+          "fail -> pass": 29,
+          "fail -> fail": 15
+        },
+        "counter_basic.test_short_relative_alarm": {
+          "pass -> pass": 58,
+          "skip -> pass": 30,
+          "skip -> fail": 14
+        }
+      },
+      "downstream_fail_and_short_relative_fail": 14
+    },
+    {
+      "variant": "V2",
+      "selected_counts": {
+        "pass": 102,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "short_relative_counts": {
+        "pass": 88,
+        "fail": 14,
+        "skip": 0,
+        "missing": 0
+      },
+      "downstream_counts": {
+        "pass": 87,
+        "fail": 15,
+        "skip": 0,
+        "missing": 0
+      },
+      "paired_transitions": {
+        "counter_basic.test_all_channels": {
+          "pass -> pass": 58,
+          "fail -> pass": 44
+        },
+        "counter_basic.test_single_shot_alarm_notop": {
+          "pass -> pass": 58,
+          "fail -> fail": 15,
+          "fail -> pass": 29
+        },
+        "counter_basic.test_short_relative_alarm": {
+          "pass -> pass": 58,
+          "skip -> fail": 14,
+          "skip -> pass": 30
+        }
+      },
+      "downstream_fail_and_short_relative_fail": 14
+    }
+  ],
+  "fault_primary_outcomes": [
+    {
+      "index": 327,
+      "variant": "V0",
+      "condition": "fast_fault",
+      "frequency_hz": 64000,
+      "selected": "pass",
+      "downstream": "pass",
+      "short_relative": "pass",
+      "record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V0-fast_fault-327.json",
+      "record_sha256": "c43a13916da9965e765ccb0ec37c37bc55b0eee56b5be486b392d48c4616a7c9",
+      "uart_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/uart/f4-counter-V0-fast_fault-327.log",
+      "uart_sha256": "fc409039b521cf9b418b978459a833338e88761b0b10b0427d623ec571b89ea5"
+    },
+    {
+      "index": 326,
+      "variant": "V0",
+      "condition": "slow_fault",
+      "frequency_hz": 10000,
+      "selected": "fail",
+      "downstream": "fail",
+      "short_relative": "skip",
+      "record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V0-slow_fault-326.json",
+      "record_sha256": "ef277c63e6271f285f1117f361a89e853adaa691883655a653b3bdff2520d242",
+      "uart_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/uart/f4-counter-V0-slow_fault-326.log",
+      "uart_sha256": "dcce40f7b468dfd6d8b1d53ab14238fe9f62c975b473851f360027d542743429"
+    },
+    {
+      "index": 329,
+      "variant": "V1",
+      "condition": "fast_fault",
+      "frequency_hz": 64000,
+      "selected": "pass",
+      "downstream": "pass",
+      "short_relative": "pass",
+      "record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V1-fast_fault-329.json",
+      "record_sha256": "32bebbb35c6c6bbd50e3d3f586f5cb356df06b3099462681af0a429e03e43bc2",
+      "uart_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/uart/f4-counter-V1-fast_fault-329.log",
+      "uart_sha256": "feac1e2e8b116d4bea3d312ce1373e113a41b0fca6cc0ccb50d39302001fcbcb"
+    },
+    {
+      "index": 328,
+      "variant": "V1",
+      "condition": "slow_fault",
+      "frequency_hz": 10000,
+      "selected": "pass",
+      "downstream": "fail",
+      "short_relative": "fail",
+      "record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V1-slow_fault-328.json",
+      "record_sha256": "1a456abd8fb67cf5d37256dbf00eab920d9af7187876de54c268351cfcb29209",
+      "uart_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/uart/f4-counter-V1-slow_fault-328.log",
+      "uart_sha256": "e2ffb8843669af1f2f2d5b8ed833444512cf8ddcbf9a56b2128bd35946e60dda"
+    },
+    {
+      "index": 331,
+      "variant": "V1b",
+      "condition": "fast_fault",
+      "frequency_hz": 64000,
+      "selected": "pass",
+      "downstream": "pass",
+      "short_relative": "pass",
+      "record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V1b-fast_fault-331.json",
+      "record_sha256": "ffcb7c91a7eda41635516f35a305769db8cc0a0796dc28daf0070069a6ed48a4",
+      "uart_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/uart/f4-counter-V1b-fast_fault-331.log",
+      "uart_sha256": "2ba4a77b4944cd052d14c84d29d9132f37cf21a014f3fafb45e009ee2bafa1d4"
+    },
+    {
+      "index": 330,
+      "variant": "V1b",
+      "condition": "slow_fault",
+      "frequency_hz": 10000,
+      "selected": "fail",
+      "downstream": "fail",
+      "short_relative": "skip",
+      "record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V1b-slow_fault-330.json",
+      "record_sha256": "0ef3a04709441ce1d4d04faa3ae80191d383b17e14025381c53f8800f48ecb95",
+      "uart_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/uart/f4-counter-V1b-slow_fault-330.log",
+      "uart_sha256": "2cba97aeef20df072fec6ceeb87c4bd7f0edc7e878ec523185a83992a34e3f4a"
+    },
+    {
+      "index": 333,
+      "variant": "V2",
+      "condition": "fast_fault",
+      "frequency_hz": 64000,
+      "selected": "pass",
+      "downstream": "pass",
+      "short_relative": "pass",
+      "record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V2-fast_fault-333.json",
+      "record_sha256": "04a626302200a871d798a029335ed74ae4147299c67f72483b58b6b2004f8a03",
+      "uart_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/uart/f4-counter-V2-fast_fault-333.log",
+      "uart_sha256": "2704c0f62f337297be5aa86cf64c5c8fa56183862af372b925013ff92429732b"
+    },
+    {
+      "index": 332,
+      "variant": "V2",
+      "condition": "slow_fault",
+      "frequency_hz": 10000,
+      "selected": "fail",
+      "downstream": "fail",
+      "short_relative": "skip",
+      "record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V2-slow_fault-332.json",
+      "record_sha256": "c28bbdd578245f929f82dca9965912510ed028c5d86d37c15e75a8e1dc13f4fa",
+      "uart_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/uart/f4-counter-V2-slow_fault-332.log",
+      "uart_sha256": "7ed9a78efca135f160558356b937b805eeca67abdb0c776a492d1ac9048e03a4"
+    }
+  ],
+  "full_application_case_counts": {
+    "V1": {
+      "counter_basic.test_set_top_value_with_alarm": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_no_callback.test_set_top_value_without_alarm": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_single_shot_alarm_notop": {
+        "pass": 87,
+        "fail": 15,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_single_shot_alarm_top": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_multiple_alarms": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_all_channels": {
+        "pass": 102,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_valid_function_without_alarm": {
+        "pass": 102,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_late_alarm": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_late_alarm_error": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_short_relative_alarm": {
+        "pass": 88,
+        "fail": 14,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_cancelled_alarm_does_not_expire": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      }
+    },
+    "V1b": {
+      "counter_basic.test_set_top_value_with_alarm": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_no_callback.test_set_top_value_without_alarm": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_single_shot_alarm_notop": {
+        "pass": 87,
+        "fail": 15,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_single_shot_alarm_top": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_multiple_alarms": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_all_channels": {
+        "pass": 102,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_valid_function_without_alarm": {
+        "pass": 102,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_late_alarm": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_late_alarm_error": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_short_relative_alarm": {
+        "pass": 88,
+        "fail": 14,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_cancelled_alarm_does_not_expire": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      }
+    },
+    "V2": {
+      "counter_basic.test_set_top_value_with_alarm": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_no_callback.test_set_top_value_without_alarm": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_single_shot_alarm_notop": {
+        "pass": 87,
+        "fail": 15,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_single_shot_alarm_top": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_multiple_alarms": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_all_channels": {
+        "pass": 102,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_valid_function_without_alarm": {
+        "pass": 102,
+        "fail": 0,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_late_alarm": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_late_alarm_error": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      },
+      "counter_basic.test_short_relative_alarm": {
+        "pass": 88,
+        "fail": 14,
+        "skip": 0,
+        "missing": 0
+      },
+      "counter_basic.test_cancelled_alarm_does_not_expire": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 102,
+        "missing": 0
+      }
+    }
+  },
+  "remaining_checks": [
+    "legal failure replays",
+    "task-specific references",
+    "fault activation/control review",
+    "source-based attribution"
+  ],
+  "fourth_case_repair_success_claimed": false,
+  "original_records_replaced": false,
+  "protected_originals_unchanged": 30067
+}

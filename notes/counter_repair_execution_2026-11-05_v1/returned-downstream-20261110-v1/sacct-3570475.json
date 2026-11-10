@@ -1,0 +1,11 @@
+{
+  "job_id": "3570475",
+  "group": "fault",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:23:18",
+  "start": "2026-11-10T03:47:55",
+  "end": "2026-11-10T04:11:13",
+  "slurm_reported_timezone": "America/Chicago",
+  "source": "sacct -X via successful bounded BatchMode check in this turn"
+}
