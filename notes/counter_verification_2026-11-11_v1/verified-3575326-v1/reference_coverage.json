@@ -1,0 +1,1046 @@
+[
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-min-120.json",
+      "primary_record_sha256": "dcf0ddee7c509f614b13f3c4457ee228d5914f5798ba62b1c820bbf3f86c48b1",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-min-120.json",
+      "primary_record_sha256": "dcf0ddee7c509f614b13f3c4457ee228d5914f5798ba62b1c820bbf3f86c48b1",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-034.json",
+      "primary_record_sha256": "799a842c31ba125775d57c8157b27977bedfc135e45c4f93ccf52360780fd77b",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-034.json",
+      "primary_record_sha256": "799a842c31ba125775d57c8157b27977bedfc135e45c4f93ccf52360780fd77b",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-048.json",
+      "primary_record_sha256": "9d08b2329f54a24cf2003a0063c7139fdaf2845e2b6aafa34dac23ff4b1ea019",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-048.json",
+      "primary_record_sha256": "9d08b2329f54a24cf2003a0063c7139fdaf2845e2b6aafa34dac23ff4b1ea019",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-051.json",
+      "primary_record_sha256": "93947d5554113bd0a26e3f8ef86b5dd4dc462dbbff1b9e80074e35a35d480a6f",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-051.json",
+      "primary_record_sha256": "93947d5554113bd0a26e3f8ef86b5dd4dc462dbbff1b9e80074e35a35d480a6f",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-052.json",
+      "primary_record_sha256": "3887770803e463b3220bb48b16d151427f587f95804162355ea60a58a5d0af1a",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-052.json",
+      "primary_record_sha256": "3887770803e463b3220bb48b16d151427f587f95804162355ea60a58a5d0af1a",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-063.json",
+      "primary_record_sha256": "20dca2aa4487f54e0edbb126fde8a663e81777ef2a9522a912bec1df66a4a28a",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-063.json",
+      "primary_record_sha256": "20dca2aa4487f54e0edbb126fde8a663e81777ef2a9522a912bec1df66a4a28a",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-069.json",
+      "primary_record_sha256": "29f4c124b017d9758ff86d309f67cc944f35d7e108cd15b7111c99b39ae726a0",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-069.json",
+      "primary_record_sha256": "29f4c124b017d9758ff86d309f67cc944f35d7e108cd15b7111c99b39ae726a0",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-075.json",
+      "primary_record_sha256": "7423485327fd5a5623114a923e25300b997bab941377dcae535acb40c939b18c",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-075.json",
+      "primary_record_sha256": "7423485327fd5a5623114a923e25300b997bab941377dcae535acb40c939b18c",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-077.json",
+      "primary_record_sha256": "4fa1d2332975dcdb5e7810f4574faf856043977f6e79b2fbf0579c9d154eaedd",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-077.json",
+      "primary_record_sha256": "4fa1d2332975dcdb5e7810f4574faf856043977f6e79b2fbf0579c9d154eaedd",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-086.json",
+      "primary_record_sha256": "148e7842876b34574a7b39c28e02bdd24dab5f5cc10b149f844702d9dea613e2",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-086.json",
+      "primary_record_sha256": "148e7842876b34574a7b39c28e02bdd24dab5f5cc10b149f844702d9dea613e2",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-087.json",
+      "primary_record_sha256": "16b52595b49e3005e3f094e6db9d89978bc2cfc5d402ea5988f53f7ff18a81fa",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-087.json",
+      "primary_record_sha256": "16b52595b49e3005e3f094e6db9d89978bc2cfc5d402ea5988f53f7ff18a81fa",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-092.json",
+      "primary_record_sha256": "57005cb95df99ee36fe87e9615000d8773a1ef1788a3265e5ae602dbf597cab1",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-092.json",
+      "primary_record_sha256": "57005cb95df99ee36fe87e9615000d8773a1ef1788a3265e5ae602dbf597cab1",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 21742,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-102.json",
+      "primary_record_sha256": "4d338e2f2115e4e278e2100a30e2f3b4434638dffa4f2b01ee68dc86183612ab",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-109.json",
+      "primary_record_sha256": "e816356d4b7774f7557d3ee84a5ab35c7f72321b67a860025e2ef004ee595888",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-109.json",
+      "primary_record_sha256": "e816356d4b7774f7557d3ee84a5ab35c7f72321b67a860025e2ef004ee595888",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-111.json",
+      "primary_record_sha256": "4c211e2a5f5af46f33a890c820fdf0c1fcc8c81a4058ca2eb66bd142aef58c10",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-111.json",
+      "primary_record_sha256": "4c211e2a5f5af46f33a890c820fdf0c1fcc8c81a4058ca2eb66bd142aef58c10",
+      "variant": "V1"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-136.json",
+      "primary_record_sha256": "532689b75ecc46c07e0d285fc0a30859f2e57fece80858fcf4290f36d9d41c3c",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-136.json",
+      "primary_record_sha256": "532689b75ecc46c07e0d285fc0a30859f2e57fece80858fcf4290f36d9d41c3c",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 22405,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-143.json",
+      "primary_record_sha256": "1808d85152be59ad7b4ba721adbf010c061ad148dcdefa1356fc224078d3da50",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-150.json",
+      "primary_record_sha256": "0922fb08db2cb3626312e89dcdd4faf2e36621e24711b5579d5c5993c95b2e21",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-150.json",
+      "primary_record_sha256": "0922fb08db2cb3626312e89dcdd4faf2e36621e24711b5579d5c5993c95b2e21",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-153.json",
+      "primary_record_sha256": "ffe2fef8a3012ac917b475a9239f115012a3201ee0cac98b3b02de75e414020f",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-153.json",
+      "primary_record_sha256": "ffe2fef8a3012ac917b475a9239f115012a3201ee0cac98b3b02de75e414020f",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-154.json",
+      "primary_record_sha256": "14481f6baaa521b23a4889eae2f8835581b0cc0fbf08f127558bd4df971228c9",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-154.json",
+      "primary_record_sha256": "14481f6baaa521b23a4889eae2f8835581b0cc0fbf08f127558bd4df971228c9",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-165.json",
+      "primary_record_sha256": "e31f8ad84878bfd46149965bf96d20dfcdeb277a8c8df601bb14d3f647ca2e29",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-165.json",
+      "primary_record_sha256": "e31f8ad84878bfd46149965bf96d20dfcdeb277a8c8df601bb14d3f647ca2e29",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-171.json",
+      "primary_record_sha256": "81b704d7e198c0e951b39543c5cf7d83147dbe661d7a3099c8fadca0c0938b9c",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-171.json",
+      "primary_record_sha256": "81b704d7e198c0e951b39543c5cf7d83147dbe661d7a3099c8fadca0c0938b9c",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-min-222.json",
+      "primary_record_sha256": "4da0fbdf51cb1aab59af6c1855c28c9eb87fa4654677ea74ffb82dbf5b5fcd04",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-min-222.json",
+      "primary_record_sha256": "4da0fbdf51cb1aab59af6c1855c28c9eb87fa4654677ea74ffb82dbf5b5fcd04",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-177.json",
+      "primary_record_sha256": "946ccdd02a79749aba3d4f501c5769e92ef07409b4a4856c1a1ce6642adabd37",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-177.json",
+      "primary_record_sha256": "946ccdd02a79749aba3d4f501c5769e92ef07409b4a4856c1a1ce6642adabd37",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-179.json",
+      "primary_record_sha256": "705198d4389557d390c933edb46de350eebfbffd5d0d9126bc3684ee58e1582a",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-179.json",
+      "primary_record_sha256": "705198d4389557d390c933edb46de350eebfbffd5d0d9126bc3684ee58e1582a",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-188.json",
+      "primary_record_sha256": "caad5c05767258b6be20774e43877488400fea1c0e16a90b548510bb28423bf4",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-188.json",
+      "primary_record_sha256": "caad5c05767258b6be20774e43877488400fea1c0e16a90b548510bb28423bf4",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-189.json",
+      "primary_record_sha256": "a8591d2eb529c4b2a80b2cf4f287ffff4c1d0d1169192a91d8a1af0df3c952a6",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-189.json",
+      "primary_record_sha256": "a8591d2eb529c4b2a80b2cf4f287ffff4c1d0d1169192a91d8a1af0df3c952a6",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-194.json",
+      "primary_record_sha256": "b5c78601456dffcd93e340df3b60597e01f6e233475ba67cd19fca38f932daf4",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-194.json",
+      "primary_record_sha256": "b5c78601456dffcd93e340df3b60597e01f6e233475ba67cd19fca38f932daf4",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-211.json",
+      "primary_record_sha256": "c63a5eb43108d52e1d22c52e6f06f532524e2e49f0c3e5065d29911ae7d9cb14",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-211.json",
+      "primary_record_sha256": "c63a5eb43108d52e1d22c52e6f06f532524e2e49f0c3e5065d29911ae7d9cb14",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-213.json",
+      "primary_record_sha256": "f65624b1db1e9480eb028ff8ea03611508b515ed8c8158a9a8bbbe88791ebd00",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-213.json",
+      "primary_record_sha256": "f65624b1db1e9480eb028ff8ea03611508b515ed8c8158a9a8bbbe88791ebd00",
+      "variant": "V1b"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-min-324.json",
+      "primary_record_sha256": "2a8419b601a2df5fb155980aecbfbb749102bbf59a6de8af0c9ec206a70e45fa",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-min-324.json",
+      "primary_record_sha256": "2a8419b601a2df5fb155980aecbfbb749102bbf59a6de8af0c9ec206a70e45fa",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-238.json",
+      "primary_record_sha256": "5b56da1e4d2bf4d0bb793b83d67b5904547b128df93e086bd22520a8a6fade84",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-238.json",
+      "primary_record_sha256": "5b56da1e4d2bf4d0bb793b83d67b5904547b128df93e086bd22520a8a6fade84",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-252.json",
+      "primary_record_sha256": "ad79325234b2d218a6e15e94f701ece33103b6293a4dc01646fa2e70f7bdd304",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-252.json",
+      "primary_record_sha256": "ad79325234b2d218a6e15e94f701ece33103b6293a4dc01646fa2e70f7bdd304",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-255.json",
+      "primary_record_sha256": "d678a9dceb2e09d9c66d929dd37b05f48c697e154cc5271af087c3c00323abbf",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-255.json",
+      "primary_record_sha256": "d678a9dceb2e09d9c66d929dd37b05f48c697e154cc5271af087c3c00323abbf",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-256.json",
+      "primary_record_sha256": "f6d9df6186940b7154274e7012dee681f32d01ac8d3cbb5fa79b73fcf09173de",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-256.json",
+      "primary_record_sha256": "f6d9df6186940b7154274e7012dee681f32d01ac8d3cbb5fa79b73fcf09173de",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-267.json",
+      "primary_record_sha256": "f335d1acb3396695664de004b51a78ec0b999256d5074988c0126544eac8c16c",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-267.json",
+      "primary_record_sha256": "f335d1acb3396695664de004b51a78ec0b999256d5074988c0126544eac8c16c",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-273.json",
+      "primary_record_sha256": "efd331f8510acdb1bfa0710746b1201a7055304f1cdce04240fe2d5a5fedc522",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-273.json",
+      "primary_record_sha256": "efd331f8510acdb1bfa0710746b1201a7055304f1cdce04240fe2d5a5fedc522",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-279.json",
+      "primary_record_sha256": "de421bb0e423c3911439ffdf85c36bffe5c96cd05fbed728496bffa1238a9417",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-279.json",
+      "primary_record_sha256": "de421bb0e423c3911439ffdf85c36bffe5c96cd05fbed728496bffa1238a9417",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-281.json",
+      "primary_record_sha256": "33d4b5487c60f0a88816a79eb6dda451a551ab5b75868bdb0a963f0b68e01205",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-281.json",
+      "primary_record_sha256": "33d4b5487c60f0a88816a79eb6dda451a551ab5b75868bdb0a963f0b68e01205",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-290.json",
+      "primary_record_sha256": "f7ade8483ec20743ae7c3a8d2f32f17f6e45a1ba648a078e5637da620fedfaf3",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-290.json",
+      "primary_record_sha256": "f7ade8483ec20743ae7c3a8d2f32f17f6e45a1ba648a078e5637da620fedfaf3",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-291.json",
+      "primary_record_sha256": "664db318264ccf88b5aab25547981bf1d648a16ac7f6177fdc07bc67e8dd77c0",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-291.json",
+      "primary_record_sha256": "664db318264ccf88b5aab25547981bf1d648a16ac7f6177fdc07bc67e8dd77c0",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-296.json",
+      "primary_record_sha256": "62405d28373c2016174e09c29682f0c8a80e02ef39bde332dc344d638896d162",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-296.json",
+      "primary_record_sha256": "62405d28373c2016174e09c29682f0c8a80e02ef39bde332dc344d638896d162",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 21742,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-306.json",
+      "primary_record_sha256": "a321b98e061aece27a578a8e671139c088fbdaebc2e785763f2e96589f49a5b7",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-313.json",
+      "primary_record_sha256": "6c5ea9d05b42ccd1c0a6754e7fac98d01d6592d1e9d519ce2cd4ea9eab1042da",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-313.json",
+      "primary_record_sha256": "6c5ea9d05b42ccd1c0a6754e7fac98d01d6592d1e9d519ce2cd4ea9eab1042da",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-315.json",
+      "primary_record_sha256": "f42d742901008a9f2ccfd9ed15c176bae07b0ea55f3132b2b6e0d084ec37bc14",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_b_short_relative_alarm",
+    "reference_outcome": "pass"
+  },
+  {
+    "phase_equivalent": false,
+    "primary_slot": {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-315.json",
+      "primary_record_sha256": "f42d742901008a9f2ccfd9ed15c176bae07b0ea55f3132b2b6e0d084ec37bc14",
+      "variant": "V2"
+    },
+    "reference_case": "ref_counter_verify.test_c_single_shot_alarm_notop",
+    "reference_outcome": "pass"
+  }
+]

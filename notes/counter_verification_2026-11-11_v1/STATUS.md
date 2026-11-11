@@ -1,3 +1,26 @@
+# Diagnostics verified; slow-control discrepancy, 2026-11-11
+
+3575326 COMPLETED 0:0, 00:56:50, development / CCR26073. Four packed files returned
+into returned-3575326-20261111T205259Z; independent audit passed into
+verified-3575326-v1. All 46 processes complete, zero missing. All 17 replays match
+full vectors/UART/normalized traces. All 51 functional legal-reference case checks
+pass, covering 87 residual primary failure slots (42 short-relative, 45 single-shot).
+All 30,067 protected originals, 764 active seals and four original ELFs unchanged.
+
+BLOCKER: 10-kHz five-tick progress is 16,040 ms, above its preregistered tolerated
+upper bound of 16,022 ms by 18 ms. Nominal five repeats (5,012 ms) and fast control
+(2,516 ms) meet their bands. All seven progress ztests pass the broader 20-second
+ceiling; this does NOT mean all activation bands qualify. Keep the discrepancy
+and predeclared tolerance unchanged. No rerun, source tuning or paper edit.
+Do not finalize slow-fault detection/acceptance until independently resolved.
+
+See report-3575326-v1/HANDOFF.md and summary.json for all counts and evidence.
+The watcher's monitoring/collection is complete. The automation tool confirmed
+deletion of the completed monitor; no more automatic polling. Main-workflow
+review is still required. Original stranded jobs and exact-follow-up delivery condition unchanged.
+
+## Submitted checkpoint (historical)
+
 # Submitted CCR26073 diagnostic: 3575326, 2026-11-11
 
 Job 3575326 is accepted, development / CCR26073, one node, 32 Launcher workers,

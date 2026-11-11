@@ -1,0 +1,8 @@
+{
+  "automation_id": "verify-f4-repeatability-and-deliver-counter-repair-follow-up",
+  "action": "delete",
+  "confirmed": true,
+  "reason": "Accepted diagnostic is terminal, independently verified, and handed off with unresolved slow-control bound. No pending monitored work.",
+  "original_followup_delivery_condition_satisfied": false,
+  "original_jobs_modified": false
+}

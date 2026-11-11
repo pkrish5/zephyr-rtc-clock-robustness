@@ -1,0 +1,12 @@
+{
+  "job_id": "3575326",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:56:50",
+  "start": "2026-11-11T13:54:52",
+  "end": "2026-11-11T14:51:42",
+  "account": "ccr26073",
+  "partition": "development",
+  "checked_at_utc": "2026-11-11T20:52:59.010Z",
+  "source": "bounded BatchMode ssh ls6 sacct -X --parsable2"
+}

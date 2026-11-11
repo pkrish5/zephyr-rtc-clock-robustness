@@ -1,0 +1,136 @@
+{
+  "activation_controls": [
+    {
+      "complete": true,
+      "delta_ticks": 5,
+      "elapsed_ms": 5012,
+      "frequency_hz": 32000,
+      "index": 5,
+      "lower_ms": 3998.0,
+      "over_upper_ms": 0,
+      "passed": true,
+      "uart_path": "notes/counter_verification_2026-11-11_v1/verified-3575326-v1/output/references/uart/f4-progress-control-nominal-005.log",
+      "uart_sha256": "e30e007cb3405fb0c73410e816bcf6c032055133c7c06cbac0c26172d32c2169",
+      "upper_ms": 5022.0
+    },
+    {
+      "complete": true,
+      "delta_ticks": 5,
+      "elapsed_ms": 5012,
+      "frequency_hz": 32000,
+      "index": 6,
+      "lower_ms": 3998.0,
+      "over_upper_ms": 0,
+      "passed": true,
+      "uart_path": "notes/counter_verification_2026-11-11_v1/verified-3575326-v1/output/references/uart/f4-progress-control-nominal-006.log",
+      "uart_sha256": "e30e007cb3405fb0c73410e816bcf6c032055133c7c06cbac0c26172d32c2169",
+      "upper_ms": 5022.0
+    },
+    {
+      "complete": true,
+      "delta_ticks": 5,
+      "elapsed_ms": 5012,
+      "frequency_hz": 32000,
+      "index": 7,
+      "lower_ms": 3998.0,
+      "over_upper_ms": 0,
+      "passed": true,
+      "uart_path": "notes/counter_verification_2026-11-11_v1/verified-3575326-v1/output/references/uart/f4-progress-control-nominal-007.log",
+      "uart_sha256": "e30e007cb3405fb0c73410e816bcf6c032055133c7c06cbac0c26172d32c2169",
+      "upper_ms": 5022.0
+    },
+    {
+      "complete": true,
+      "delta_ticks": 5,
+      "elapsed_ms": 5012,
+      "frequency_hz": 32000,
+      "index": 8,
+      "lower_ms": 3998.0,
+      "over_upper_ms": 0,
+      "passed": true,
+      "uart_path": "notes/counter_verification_2026-11-11_v1/verified-3575326-v1/output/references/uart/f4-progress-control-nominal-008.log",
+      "uart_sha256": "e30e007cb3405fb0c73410e816bcf6c032055133c7c06cbac0c26172d32c2169",
+      "upper_ms": 5022.0
+    },
+    {
+      "complete": true,
+      "delta_ticks": 5,
+      "elapsed_ms": 5012,
+      "frequency_hz": 32000,
+      "index": 9,
+      "lower_ms": 3998.0,
+      "over_upper_ms": 0,
+      "passed": true,
+      "uart_path": "notes/counter_verification_2026-11-11_v1/verified-3575326-v1/output/references/uart/f4-progress-control-nominal-009.log",
+      "uart_sha256": "e30e007cb3405fb0c73410e816bcf6c032055133c7c06cbac0c26172d32c2169",
+      "upper_ms": 5022.0
+    },
+    {
+      "complete": true,
+      "delta_ticks": 5,
+      "elapsed_ms": 16040,
+      "frequency_hz": 10000,
+      "index": 27,
+      "lower_ms": 12798.0,
+      "over_upper_ms": 18.0,
+      "passed": false,
+      "uart_path": "notes/counter_verification_2026-11-11_v1/verified-3575326-v1/output/references/uart/f4-progress-control-slow_progress_control-027.log",
+      "uart_sha256": "0cd49f464d82cee8a31098e56e6f732ca0d7d209ce81f2ef21836c486c261626",
+      "upper_ms": 16022.0
+    },
+    {
+      "complete": true,
+      "delta_ticks": 5,
+      "elapsed_ms": 2516,
+      "frequency_hz": 64000,
+      "index": 28,
+      "lower_ms": 1998.0,
+      "over_upper_ms": 0,
+      "passed": true,
+      "uart_path": "notes/counter_verification_2026-11-11_v1/verified-3575326-v1/output/references/uart/f4-progress-control-fast_progress_control-028.log",
+      "uart_sha256": "66a8200db48034aebdba88e91955ec2c1080329497e1adb63bd44ebbe375bc41",
+      "upper_ms": 2522.0
+    }
+  ],
+  "activation_qualified": false,
+  "active_original_seals_unchanged": 764,
+  "archive_entries": 506,
+  "archive_sha256": "e7b18ff6518d97e319d657e4b30a82ea345dd7fb429a4013007d31c22d567787",
+  "complete_processes": 46,
+  "covered_primary_cases": {
+    "counter_basic.test_short_relative_alarm": 42,
+    "counter_basic.test_single_shot_alarm_notop": 45
+  },
+  "covered_primary_failure_slots": 87,
+  "elapsed": "00:56:50",
+  "functional_legal_case_counts": {
+    "fail": 0,
+    "missing": 0,
+    "pass": 51,
+    "skip": 0
+  },
+  "functional_legal_settings": 17,
+  "job_id": "3575326",
+  "manuscript_edited": false,
+  "missing_processes": 0,
+  "nominal_case_passes": 20,
+  "nominal_launches_passed": 10,
+  "original_outcomes_replaced": false,
+  "planned_processes": 46,
+  "protected_originals_unchanged": 30067,
+  "replay_full_case_counts": {
+    "fail": 17,
+    "pass": 48,
+    "skip": 122
+  },
+  "replay_launches_matched": 17,
+  "reused_original_elf_hashes_unchanged": 4,
+  "slow_fault_detection_or_acceptance_finalized": false,
+  "stop_reason": "The 10-kHz control exceeds its preregistered upper observer bound; no tolerance tuning or rerun.",
+  "ztest_progress_case_counts": {
+    "fail": 0,
+    "missing": 0,
+    "pass": 7,
+    "skip": 0
+  }
+}
