@@ -1,0 +1,7 @@
+{
+  "syntax_passed": true,
+  "activation_band_cross_clock_rejection_passed": true,
+  "sealed_execution_code_modified": false,
+  "verifier_sha256": "beea82f1ffeb8ffde5e1bf59cc58c6e973b6a447a403d07b9dc1d06c2d10c35b",
+  "activation_band_upper_bound_rejection_passed": true
+}

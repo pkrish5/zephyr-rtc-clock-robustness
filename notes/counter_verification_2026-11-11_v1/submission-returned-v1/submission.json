@@ -1,0 +1,29 @@
+{
+  "state": "accepted",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "-A",
+    "CCR26073",
+    "-p",
+    "development",
+    "-N",
+    "1",
+    "-n",
+    "128",
+    "-t",
+    "02:00:00",
+    "--chdir=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness",
+    "--output=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/counter-verification-20261111-v1/slurm/diagnostic-%j.out",
+    "--error=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/counter-verification-20261111-v1/slurm/diagnostic-%j.err",
+    "--export=ALL,RTC_REPO=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness,RTC_VERIFY_PACKET=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/notes/counter_verification_2026-11-11_v1/packet,RTC_COUNTER_BUNDLE=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261104-counter-repair-v1/bundle,RTC_IMAGE=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261023-v10/images/rtc-ls6-v1.sif",
+    "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/harness/tacc_counter_verification/job.sbatch"
+  ],
+  "account": "CCR26073",
+  "ceiling_su": 2,
+  "planned_processes": 46,
+  "returncode": 0,
+  "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login1)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (development)...OK\n--> Checking available allocation (CCR26073)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.01% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.42% allocated...OK\n3575326\n",
+  "stderr": "",
+  "job_id": "3575326"
+}

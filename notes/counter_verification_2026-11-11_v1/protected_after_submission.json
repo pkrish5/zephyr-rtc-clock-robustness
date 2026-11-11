@@ -1,0 +1,10 @@
+{
+  "count": 30067,
+  "changed": [],
+  "original_counter_files_unchanged": 20,
+  "manuscript_unchanged": true,
+  "main_tex_sha256": "0a7d9633a8021516086b517012e98d9aadd9691d12d2820d1364567ae34aca0c",
+  "main_pdf_sha256": "73488b9c4892f929404c835955f489f92028160b4107504d44bd4e3373cca95b",
+  "full_audit_sha256": "87c03515a2154eedfc3eb69f6324698cfb5e9dab3b1b956b936984c33d748af2",
+  "timestamp_utc": "2026-11-11T19:53:11.393754+00:00"
+}

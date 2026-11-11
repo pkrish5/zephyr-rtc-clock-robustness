@@ -1,3 +1,30 @@
+# Submitted CCR26073 diagnostic: 3575326, 2026-11-11
+
+Job 3575326 is accepted, development / CCR26073, one node, 32 Launcher workers,
+two-hour limit and 2-SU ceiling; estimated 1.667968 SUs. Last verified state:
+PENDING, 0:0, no start. The returned accepted receipt and exclusive intent are
+in submission-returned-v1; submission_receipt.json records their hashes.
+Do not call submit.py again.
+
+Matching clean Mac/LS6 execution HEAD d5a3bd21e3a6281cedbcc678e396cb0a1b6848c7
+and unchanged original counter scripts were verified after git pull --ff-only.
+No further LS6 pull or code mutation while the job is pending/running. Local
+reporting commits can advance separately. Protocol/execution seals below remain
+unchanged. Runtime outputs go to SCRATCH/tmp and verified packed archives to WORK.
+
+The existing 30-minute watcher is ACTIVE for this accepted job, with
+failed-runs-only notifications. It may monitor, collect terminal packed evidence,
+audit offline, report and pause. No new submissions, retries, pruning or paper
+edits. On any new access/authentication failure it must stop and pause.
+
+Independent verifier: verify_job.py (outside the sealed execution packet).
+Its preflight covers syntax and cross-clock activation-band rejection; no new
+simulation was run on the Mac. Use the exact command in README.md after return.
+All 30,067 protected originals and 20 Mac counter seals still match; manuscript
+TeX/PDF hashes are unchanged (protected_after_submission.json).
+
+## Preparation record, superseded by submitted status above
+
 # Prepared CCR26073 development verification, 2026-11-11
 
 The user asked to use the newly available allocation and continue the remaining

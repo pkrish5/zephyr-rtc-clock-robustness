@@ -1,0 +1,17 @@
+{
+  "job_id": "3575326",
+  "account": "CCR26073",
+  "partition": "development",
+  "nodes": 1,
+  "workers": 32,
+  "planned_processes": 46,
+  "new_diagnostic_builds": 2,
+  "estimated_su": 1.667968174836601,
+  "ceiling_su": 2,
+  "wall_limit": "02:00:00",
+  "submission_head": "d5a3bd21e3a6281cedbcc678e396cb0a1b6848c7",
+  "execution_sha256": "3380b6a28d9f4f160c1a1f4e0c11ef9a497e3be8ea40aeda29bfc2460bd03ae4",
+  "accepted_receipt_sha256": "ba5c3577adc49decc472c22e274a1403760a42847b70bf639f61c25f17570d9b",
+  "exclusive_intent_sha256": "70bcade3125c4cfcd0fc9ddf52b765e5dc0bd2bd3df815730e2a133334db2e43",
+  "timestamp_utc": "2026-11-11T19:52:01.039582+00:00"
+}

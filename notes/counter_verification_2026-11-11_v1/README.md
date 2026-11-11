@@ -39,3 +39,19 @@ All scientific conclusions and paper updates remain blocked until qualification,
 replays, functional references and activation controls have been independently
 reviewed. A reference or replay anomaly is data, never a reason to tune sources
 or replace primary outcomes. Original stranded jobs remain untouched.
+
+Accepted diagnostic: 3575326, submission HEAD d5a3bd21e3a6281cedbcc678e396cb0a1b6848c7.
+Do not invoke the submission helper again. Last state is saved in
+sacct-3575326-submission.json. The original preparation steps above are historical.
+
+Offline audit after terminal evidence return (fresh paths required):
+
+    python3 -B notes/counter_verification_2026-11-11_v1/verify_job.py \
+      --returned <fresh-returned-directory> --job 3575326 \
+      --sacct-json <authoritative-terminal-state.json> --out <fresh-verified-directory>
+
+The audit writes processes.csv, case_verdicts.csv, reference_coverage.json and
+verification.json, retaining partial observations and missing/unstarted outcomes.
+Review every functional reference failure and progress-control band before
+interpreting a primary selected-case fault verdict. Archive integrity or job
+completion alone does not finalize scientific attribution.

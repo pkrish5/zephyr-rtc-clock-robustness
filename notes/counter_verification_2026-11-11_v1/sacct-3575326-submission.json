@@ -1,0 +1,12 @@
+{
+  "job_id": "3575326",
+  "state": "PENDING",
+  "exit_code": "0:0",
+  "elapsed": "00:00:00",
+  "start": "Unknown",
+  "end": "Unknown",
+  "account": "ccr26073",
+  "partition": "development",
+  "source": "bounded BatchMode ssh ls6 sacct -X --parsable2",
+  "timestamp_utc": "2026-11-11T19:52:01.039857+00:00"
+}
