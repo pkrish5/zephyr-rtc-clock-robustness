@@ -1,0 +1,12 @@
+{
+  "all_passed": true,
+  "original_mac_counter_files_unchanged": 20,
+  "new_reference_source_files": 7,
+  "exact_replay_tasks": 17,
+  "reference_tasks": 29,
+  "normal_jobs_authorized": false,
+  "account": "CCR26073",
+  "ceiling_su": 2,
+  "execution_sha256": "3380b6a28d9f4f160c1a1f4e0c11ef9a497e3be8ea40aeda29bfc2460bd03ae4",
+  "all_sources_generated_after_protocol_registration": true
+}

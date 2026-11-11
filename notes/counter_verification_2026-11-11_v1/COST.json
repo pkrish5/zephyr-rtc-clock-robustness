@@ -1,0 +1,27 @@
+{
+  "account": "CCR26073",
+  "components_host_seconds": {
+    "concurrent_build_allowance": 600,
+    "nominal_phase": 1055.2,
+    "reference_evaluation_phase": 1964.0235294117647,
+    "replay_phase": 1485.4618999999998,
+    "setup_audit_publication_allowance": 900
+  },
+  "critical_path_estimated_host_seconds": 6004.685429411764,
+  "estimate_is_not_observed_reference_runtime": true,
+  "estimated_su": 1.667968174836601,
+  "evaluation_functional_references": 17,
+  "evaluation_progress_controls": 2,
+  "host_seconds_per_expected_virtual_second": 5,
+  "new_builds": 2,
+  "nodes": 1,
+  "normal_submission_authorized": false,
+  "partition": "development",
+  "qualification_processes": 10,
+  "replay_processes": 17,
+  "reservation_su_ceiling": 2.0,
+  "selection_sha256": "2799bf1eb2d77fee5f16c2013842f9533c60504e7f92708bbb7b100258d38bfc",
+  "total_new_processes": 46,
+  "wall_limit": "02:00:00",
+  "workers": 32
+}

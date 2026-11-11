@@ -1,0 +1,1835 @@
+{
+  "nominal_repeats_per_new_elf": 5,
+  "original_counter_plan_sha256": "c5d2f7f515a59f2d45bcad665ab649b251051904704a1c96186610d08141ea8d",
+  "progress_control_frequencies_hz": [
+    10000,
+    32000,
+    64000
+  ],
+  "protocol_sha256": "5bea7a65fdc67ec52bcd86c31d663fc86c48f548b7e618eb72ce9f872c9149cf",
+  "reference_failure_slots": [
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-min-120.json",
+      "primary_record_sha256": "dcf0ddee7c509f614b13f3c4457ee228d5914f5798ba62b1c820bbf3f86c48b1",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-min-120.json",
+      "primary_record_sha256": "dcf0ddee7c509f614b13f3c4457ee228d5914f5798ba62b1c820bbf3f86c48b1",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-034.json",
+      "primary_record_sha256": "799a842c31ba125775d57c8157b27977bedfc135e45c4f93ccf52360780fd77b",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-034.json",
+      "primary_record_sha256": "799a842c31ba125775d57c8157b27977bedfc135e45c4f93ccf52360780fd77b",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-048.json",
+      "primary_record_sha256": "9d08b2329f54a24cf2003a0063c7139fdaf2845e2b6aafa34dac23ff4b1ea019",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-048.json",
+      "primary_record_sha256": "9d08b2329f54a24cf2003a0063c7139fdaf2845e2b6aafa34dac23ff4b1ea019",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-051.json",
+      "primary_record_sha256": "93947d5554113bd0a26e3f8ef86b5dd4dc462dbbff1b9e80074e35a35d480a6f",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-051.json",
+      "primary_record_sha256": "93947d5554113bd0a26e3f8ef86b5dd4dc462dbbff1b9e80074e35a35d480a6f",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-052.json",
+      "primary_record_sha256": "3887770803e463b3220bb48b16d151427f587f95804162355ea60a58a5d0af1a",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-052.json",
+      "primary_record_sha256": "3887770803e463b3220bb48b16d151427f587f95804162355ea60a58a5d0af1a",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-063.json",
+      "primary_record_sha256": "20dca2aa4487f54e0edbb126fde8a663e81777ef2a9522a912bec1df66a4a28a",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-063.json",
+      "primary_record_sha256": "20dca2aa4487f54e0edbb126fde8a663e81777ef2a9522a912bec1df66a4a28a",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-069.json",
+      "primary_record_sha256": "29f4c124b017d9758ff86d309f67cc944f35d7e108cd15b7111c99b39ae726a0",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-069.json",
+      "primary_record_sha256": "29f4c124b017d9758ff86d309f67cc944f35d7e108cd15b7111c99b39ae726a0",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-075.json",
+      "primary_record_sha256": "7423485327fd5a5623114a923e25300b997bab941377dcae535acb40c939b18c",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-075.json",
+      "primary_record_sha256": "7423485327fd5a5623114a923e25300b997bab941377dcae535acb40c939b18c",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-077.json",
+      "primary_record_sha256": "4fa1d2332975dcdb5e7810f4574faf856043977f6e79b2fbf0579c9d154eaedd",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-077.json",
+      "primary_record_sha256": "4fa1d2332975dcdb5e7810f4574faf856043977f6e79b2fbf0579c9d154eaedd",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-086.json",
+      "primary_record_sha256": "148e7842876b34574a7b39c28e02bdd24dab5f5cc10b149f844702d9dea613e2",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-086.json",
+      "primary_record_sha256": "148e7842876b34574a7b39c28e02bdd24dab5f5cc10b149f844702d9dea613e2",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-087.json",
+      "primary_record_sha256": "16b52595b49e3005e3f094e6db9d89978bc2cfc5d402ea5988f53f7ff18a81fa",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-087.json",
+      "primary_record_sha256": "16b52595b49e3005e3f094e6db9d89978bc2cfc5d402ea5988f53f7ff18a81fa",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-092.json",
+      "primary_record_sha256": "57005cb95df99ee36fe87e9615000d8773a1ef1788a3265e5ae602dbf597cab1",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-092.json",
+      "primary_record_sha256": "57005cb95df99ee36fe87e9615000d8773a1ef1788a3265e5ae602dbf597cab1",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 21742,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-102.json",
+      "primary_record_sha256": "4d338e2f2115e4e278e2100a30e2f3b4434638dffa4f2b01ee68dc86183612ab",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-109.json",
+      "primary_record_sha256": "e816356d4b7774f7557d3ee84a5ab35c7f72321b67a860025e2ef004ee595888",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-109.json",
+      "primary_record_sha256": "e816356d4b7774f7557d3ee84a5ab35c7f72321b67a860025e2ef004ee595888",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-111.json",
+      "primary_record_sha256": "4c211e2a5f5af46f33a890c820fdf0c1fcc8c81a4058ca2eb66bd142aef58c10",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-111.json",
+      "primary_record_sha256": "4c211e2a5f5af46f33a890c820fdf0c1fcc8c81a4058ca2eb66bd142aef58c10",
+      "variant": "V1"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-136.json",
+      "primary_record_sha256": "532689b75ecc46c07e0d285fc0a30859f2e57fece80858fcf4290f36d9d41c3c",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-136.json",
+      "primary_record_sha256": "532689b75ecc46c07e0d285fc0a30859f2e57fece80858fcf4290f36d9d41c3c",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 22405,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-143.json",
+      "primary_record_sha256": "1808d85152be59ad7b4ba721adbf010c061ad148dcdefa1356fc224078d3da50",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-150.json",
+      "primary_record_sha256": "0922fb08db2cb3626312e89dcdd4faf2e36621e24711b5579d5c5993c95b2e21",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-150.json",
+      "primary_record_sha256": "0922fb08db2cb3626312e89dcdd4faf2e36621e24711b5579d5c5993c95b2e21",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-153.json",
+      "primary_record_sha256": "ffe2fef8a3012ac917b475a9239f115012a3201ee0cac98b3b02de75e414020f",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-153.json",
+      "primary_record_sha256": "ffe2fef8a3012ac917b475a9239f115012a3201ee0cac98b3b02de75e414020f",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-154.json",
+      "primary_record_sha256": "14481f6baaa521b23a4889eae2f8835581b0cc0fbf08f127558bd4df971228c9",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-154.json",
+      "primary_record_sha256": "14481f6baaa521b23a4889eae2f8835581b0cc0fbf08f127558bd4df971228c9",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-165.json",
+      "primary_record_sha256": "e31f8ad84878bfd46149965bf96d20dfcdeb277a8c8df601bb14d3f647ca2e29",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-165.json",
+      "primary_record_sha256": "e31f8ad84878bfd46149965bf96d20dfcdeb277a8c8df601bb14d3f647ca2e29",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-171.json",
+      "primary_record_sha256": "81b704d7e198c0e951b39543c5cf7d83147dbe661d7a3099c8fadca0c0938b9c",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-171.json",
+      "primary_record_sha256": "81b704d7e198c0e951b39543c5cf7d83147dbe661d7a3099c8fadca0c0938b9c",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-min-222.json",
+      "primary_record_sha256": "4da0fbdf51cb1aab59af6c1855c28c9eb87fa4654677ea74ffb82dbf5b5fcd04",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-min-222.json",
+      "primary_record_sha256": "4da0fbdf51cb1aab59af6c1855c28c9eb87fa4654677ea74ffb82dbf5b5fcd04",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-177.json",
+      "primary_record_sha256": "946ccdd02a79749aba3d4f501c5769e92ef07409b4a4856c1a1ce6642adabd37",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-177.json",
+      "primary_record_sha256": "946ccdd02a79749aba3d4f501c5769e92ef07409b4a4856c1a1ce6642adabd37",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-179.json",
+      "primary_record_sha256": "705198d4389557d390c933edb46de350eebfbffd5d0d9126bc3684ee58e1582a",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-179.json",
+      "primary_record_sha256": "705198d4389557d390c933edb46de350eebfbffd5d0d9126bc3684ee58e1582a",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-188.json",
+      "primary_record_sha256": "caad5c05767258b6be20774e43877488400fea1c0e16a90b548510bb28423bf4",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-188.json",
+      "primary_record_sha256": "caad5c05767258b6be20774e43877488400fea1c0e16a90b548510bb28423bf4",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-189.json",
+      "primary_record_sha256": "a8591d2eb529c4b2a80b2cf4f287ffff4c1d0d1169192a91d8a1af0df3c952a6",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-189.json",
+      "primary_record_sha256": "a8591d2eb529c4b2a80b2cf4f287ffff4c1d0d1169192a91d8a1af0df3c952a6",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-194.json",
+      "primary_record_sha256": "b5c78601456dffcd93e340df3b60597e01f6e233475ba67cd19fca38f932daf4",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-194.json",
+      "primary_record_sha256": "b5c78601456dffcd93e340df3b60597e01f6e233475ba67cd19fca38f932daf4",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-211.json",
+      "primary_record_sha256": "c63a5eb43108d52e1d22c52e6f06f532524e2e49f0c3e5065d29911ae7d9cb14",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-211.json",
+      "primary_record_sha256": "c63a5eb43108d52e1d22c52e6f06f532524e2e49f0c3e5065d29911ae7d9cb14",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-213.json",
+      "primary_record_sha256": "f65624b1db1e9480eb028ff8ea03611508b515ed8c8158a9a8bbbe88791ebd00",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-seeded-213.json",
+      "primary_record_sha256": "f65624b1db1e9480eb028ff8ea03611508b515ed8c8158a9a8bbbe88791ebd00",
+      "variant": "V1b"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-min-324.json",
+      "primary_record_sha256": "2a8419b601a2df5fb155980aecbfbb749102bbf59a6de8af0c9ec206a70e45fa",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17000,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-min-324.json",
+      "primary_record_sha256": "2a8419b601a2df5fb155980aecbfbb749102bbf59a6de8af0c9ec206a70e45fa",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-238.json",
+      "primary_record_sha256": "5b56da1e4d2bf4d0bb793b83d67b5904547b128df93e086bd22520a8a6fade84",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20500,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-238.json",
+      "primary_record_sha256": "5b56da1e4d2bf4d0bb793b83d67b5904547b128df93e086bd22520a8a6fade84",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-252.json",
+      "primary_record_sha256": "ad79325234b2d218a6e15e94f701ece33103b6293a4dc01646fa2e70f7bdd304",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 20701,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-252.json",
+      "primary_record_sha256": "ad79325234b2d218a6e15e94f701ece33103b6293a4dc01646fa2e70f7bdd304",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-255.json",
+      "primary_record_sha256": "d678a9dceb2e09d9c66d929dd37b05f48c697e154cc5271af087c3c00323abbf",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 17402,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-255.json",
+      "primary_record_sha256": "d678a9dceb2e09d9c66d929dd37b05f48c697e154cc5271af087c3c00323abbf",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-256.json",
+      "primary_record_sha256": "f6d9df6186940b7154274e7012dee681f32d01ac8d3cbb5fa79b73fcf09173de",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19536,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-256.json",
+      "primary_record_sha256": "f6d9df6186940b7154274e7012dee681f32d01ac8d3cbb5fa79b73fcf09173de",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-267.json",
+      "primary_record_sha256": "f335d1acb3396695664de004b51a78ec0b999256d5074988c0126544eac8c16c",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18263,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-267.json",
+      "primary_record_sha256": "f335d1acb3396695664de004b51a78ec0b999256d5074988c0126544eac8c16c",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-273.json",
+      "primary_record_sha256": "efd331f8510acdb1bfa0710746b1201a7055304f1cdce04240fe2d5a5fedc522",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19191,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-273.json",
+      "primary_record_sha256": "efd331f8510acdb1bfa0710746b1201a7055304f1cdce04240fe2d5a5fedc522",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-279.json",
+      "primary_record_sha256": "de421bb0e423c3911439ffdf85c36bffe5c96cd05fbed728496bffa1238a9417",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19960,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-279.json",
+      "primary_record_sha256": "de421bb0e423c3911439ffdf85c36bffe5c96cd05fbed728496bffa1238a9417",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-281.json",
+      "primary_record_sha256": "33d4b5487c60f0a88816a79eb6dda451a551ab5b75868bdb0a963f0b68e01205",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 18394,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-281.json",
+      "primary_record_sha256": "33d4b5487c60f0a88816a79eb6dda451a551ab5b75868bdb0a963f0b68e01205",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-290.json",
+      "primary_record_sha256": "f7ade8483ec20743ae7c3a8d2f32f17f6e45a1ba648a078e5637da620fedfaf3",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19320,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-290.json",
+      "primary_record_sha256": "f7ade8483ec20743ae7c3a8d2f32f17f6e45a1ba648a078e5637da620fedfaf3",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-291.json",
+      "primary_record_sha256": "664db318264ccf88b5aab25547981bf1d648a16ac7f6177fdc07bc67e8dd77c0",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19450,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-291.json",
+      "primary_record_sha256": "664db318264ccf88b5aab25547981bf1d648a16ac7f6177fdc07bc67e8dd77c0",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-296.json",
+      "primary_record_sha256": "62405d28373c2016174e09c29682f0c8a80e02ef39bde332dc344d638896d162",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19406,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-296.json",
+      "primary_record_sha256": "62405d28373c2016174e09c29682f0c8a80e02ef39bde332dc344d638896d162",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 21742,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-306.json",
+      "primary_record_sha256": "a321b98e061aece27a578a8e671139c088fbdaebc2e785763f2e96589f49a5b7",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-313.json",
+      "primary_record_sha256": "6c5ea9d05b42ccd1c0a6754e7fac98d01d6592d1e9d519ce2cd4ea9eab1042da",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19657,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-313.json",
+      "primary_record_sha256": "6c5ea9d05b42ccd1c0a6754e7fac98d01d6592d1e9d519ce2cd4ea9eab1042da",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-315.json",
+      "primary_record_sha256": "f42d742901008a9f2ccfd9ed15c176bae07b0ea55f3132b2b6e0d084ec37bc14",
+      "variant": "V2"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "frequency_hz": 19736,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-315.json",
+      "primary_record_sha256": "f42d742901008a9f2ccfd9ed15c176bae07b0ea55f3132b2b6e0d084ec37bc14",
+      "variant": "V2"
+    }
+  ],
+  "reference_legal_frequencies_hz": [
+    17000,
+    17402,
+    18263,
+    18394,
+    19191,
+    19320,
+    19406,
+    19450,
+    19536,
+    19657,
+    19736,
+    19960,
+    20500,
+    20701,
+    21742,
+    22405,
+    47000
+  ],
+  "replays": [
+    {
+      "build_record_sha256": "25a30561cab826d3c4fd5c30861f9ede4bacd684a54e5929322928ad96e44651",
+      "diagnostic_index": 0,
+      "elf_sha256": "34eba3b687923b91829b88f0e1f333863637ae2ce927bee6990eb8a2b9ddf8aa",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "febff7beda8d817fb5dd1ab05ed8f6125f6fa9aa37696b9bb76506466984d2c5",
+      "expected_uart_sha256": "f90b8f5bbf540dde0f3858d17f49e172867a88f541321fb8ebfe9e34b964d77d",
+      "frequency_hz": 17000,
+      "host_wall_seconds": 123.067,
+      "original_task": {
+        "condition": "min",
+        "frequency_hz": 17000,
+        "index": 120,
+        "stage": "legal",
+        "unit_id": "f4-counter-V1",
+        "variant": "V1"
+      },
+      "original_task_index": 120,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-min-120.json",
+      "primary_record_sha256": "dcf0ddee7c509f614b13f3c4457ee228d5914f5798ba62b1c820bbf3f86c48b1",
+      "primary_run_id": "f4-counter-V1-min-120",
+      "reason": "low-endpoint-short-and-cascade",
+      "variant": "V1"
+    },
+    {
+      "build_record_sha256": "25a30561cab826d3c4fd5c30861f9ede4bacd684a54e5929322928ad96e44651",
+      "diagnostic_index": 1,
+      "elf_sha256": "34eba3b687923b91829b88f0e1f333863637ae2ce927bee6990eb8a2b9ddf8aa",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "7fe11a727a263cef4ac05068c3230e5cbf73bec1930c3cb7e3e492828f5de37a",
+      "expected_uart_sha256": "c2db9084b4386d378f31e23227f159daa9cd2544ec27b1939668d712167e1944",
+      "frequency_hz": 21742,
+      "host_wall_seconds": 1291.706,
+      "original_task": {
+        "condition": "seeded",
+        "frequency_hz": 21742,
+        "index": 102,
+        "seed": 82,
+        "stage": "legal",
+        "unit_id": "f4-counter-V1",
+        "variant": "V1"
+      },
+      "original_task_index": 102,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-seeded-102.json",
+      "primary_record_sha256": "4d338e2f2115e4e278e2100a30e2f3b4434638dffa4f2b01ee68dc86183612ab",
+      "primary_run_id": "f4-counter-V1-seeded-102",
+      "reason": "independent-single-shot-count",
+      "variant": "V1"
+    },
+    {
+      "build_record_sha256": "25a30561cab826d3c4fd5c30861f9ede4bacd684a54e5929322928ad96e44651",
+      "diagnostic_index": 2,
+      "elf_sha256": "34eba3b687923b91829b88f0e1f333863637ae2ce927bee6990eb8a2b9ddf8aa",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "042817673312f145b8bb017b6e6cb1fa37fd3eddb877bee6b892269c5b2a40a9",
+      "expected_uart_sha256": "feac1e2e8b116d4bea3d312ce1373e113a41b0fca6cc0ccb50d39302001fcbcb",
+      "frequency_hz": 47000,
+      "host_wall_seconds": 1244.618,
+      "original_task": {
+        "condition": "max",
+        "frequency_hz": 47000,
+        "index": 121,
+        "stage": "legal",
+        "unit_id": "f4-counter-V1",
+        "variant": "V1"
+      },
+      "original_task_index": 121,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1-max-121.json",
+      "primary_record_sha256": "a5a6301670f209408d50b250cc5de4bd218c31f7c3b5c8a2eab7b0a244f044eb",
+      "primary_run_id": "f4-counter-V1-max-121",
+      "reason": "passing-high-endpoint",
+      "variant": "V1"
+    },
+    {
+      "build_record_sha256": "fa33755602e88cb49e101d333700948fb6ff9a0c235f8c53371de5fdf35c74a7",
+      "diagnostic_index": 3,
+      "elf_sha256": "1047ad8a1f07d989f2418160ac38b767f618a1392a2f29d566690184a4ae018f",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "796c15f461d8a3fe156e7539015ae9314a1ec552c6ec8af51929985d43a72ecb",
+      "expected_uart_sha256": "197a40aae549e3c496577ca17b5d8eb4edde2511231f8da1876ad4ed43dd2386",
+      "frequency_hz": 17000,
+      "host_wall_seconds": 109.324,
+      "original_task": {
+        "condition": "min",
+        "frequency_hz": 17000,
+        "index": 222,
+        "stage": "legal",
+        "unit_id": "f4-counter-V1b",
+        "variant": "V1b"
+      },
+      "original_task_index": 222,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-min-222.json",
+      "primary_record_sha256": "4da0fbdf51cb1aab59af6c1855c28c9eb87fa4654677ea74ffb82dbf5b5fcd04",
+      "primary_run_id": "f4-counter-V1b-min-222",
+      "reason": "low-endpoint-short-and-cascade",
+      "variant": "V1b"
+    },
+    {
+      "build_record_sha256": "fa33755602e88cb49e101d333700948fb6ff9a0c235f8c53371de5fdf35c74a7",
+      "diagnostic_index": 4,
+      "elf_sha256": "1047ad8a1f07d989f2418160ac38b767f618a1392a2f29d566690184a4ae018f",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "d0d13bfaf0653514502b35c59dd7dce348d466a199869c38391bf8b0a5b661ad",
+      "expected_uart_sha256": "8df2a2d97da774bf55e33e9f1ca4663ce9a225267cbaa344c7247dc0bf664bda",
+      "frequency_hz": 22405,
+      "host_wall_seconds": 1276.279,
+      "original_task": {
+        "condition": "seeded",
+        "frequency_hz": 22405,
+        "index": 143,
+        "seed": 21,
+        "stage": "legal",
+        "unit_id": "f4-counter-V1b",
+        "variant": "V1b"
+      },
+      "original_task_index": 143,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570473-v1/output/records/f4-counter-V1b-seeded-143.json",
+      "primary_record_sha256": "1808d85152be59ad7b4ba721adbf010c061ad148dcdefa1356fc224078d3da50",
+      "primary_run_id": "f4-counter-V1b-seeded-143",
+      "reason": "independent-single-shot-count",
+      "variant": "V1b"
+    },
+    {
+      "build_record_sha256": "fa33755602e88cb49e101d333700948fb6ff9a0c235f8c53371de5fdf35c74a7",
+      "diagnostic_index": 5,
+      "elf_sha256": "1047ad8a1f07d989f2418160ac38b767f618a1392a2f29d566690184a4ae018f",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "8445b04e82c945845d919455c84821b5cee532e26bfc358d474c39a354f98405",
+      "expected_uart_sha256": "2ba4a77b4944cd052d14c84d29d9132f37cf21a014f3fafb45e009ee2bafa1d4",
+      "frequency_hz": 47000,
+      "host_wall_seconds": 1259.658,
+      "original_task": {
+        "condition": "max",
+        "frequency_hz": 47000,
+        "index": 223,
+        "stage": "legal",
+        "unit_id": "f4-counter-V1b",
+        "variant": "V1b"
+      },
+      "original_task_index": 223,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V1b-max-223.json",
+      "primary_record_sha256": "068d77ddc6cd0511aac5291fd51fef27e3d6ab112a521ba69332713c069c6100",
+      "primary_run_id": "f4-counter-V1b-max-223",
+      "reason": "passing-high-endpoint",
+      "variant": "V1b"
+    },
+    {
+      "build_record_sha256": "2113c4c00728d3c5672315306d31daebfb729efce7dd3a0de993b07c3660dbba",
+      "diagnostic_index": 6,
+      "elf_sha256": "3fe8f99c33eaf5627a99c37fdd022aad88b02b1f36725252eb639876c891ac31",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "e15a14274bbbf91947be3ffc8a0f84fe55f33cd24eb56ed4817bc22a597689dd",
+      "expected_uart_sha256": "e824114ffcd1da4af6b3a76d8f08becd3b860a77c2bbcd99956b4b4ccf087199",
+      "frequency_hz": 17000,
+      "host_wall_seconds": 88.096,
+      "original_task": {
+        "condition": "min",
+        "frequency_hz": 17000,
+        "index": 324,
+        "stage": "legal",
+        "unit_id": "f4-counter-V2",
+        "variant": "V2"
+      },
+      "original_task_index": 324,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-min-324.json",
+      "primary_record_sha256": "2a8419b601a2df5fb155980aecbfbb749102bbf59a6de8af0c9ec206a70e45fa",
+      "primary_run_id": "f4-counter-V2-min-324",
+      "reason": "low-endpoint-short-and-cascade",
+      "variant": "V2"
+    },
+    {
+      "build_record_sha256": "2113c4c00728d3c5672315306d31daebfb729efce7dd3a0de993b07c3660dbba",
+      "diagnostic_index": 7,
+      "elf_sha256": "3fe8f99c33eaf5627a99c37fdd022aad88b02b1f36725252eb639876c891ac31",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "6ac2d74363dda3258328ef2ade46cc536b9ed65856e816c1fa7c529a70876551",
+      "expected_uart_sha256": "96f990f599721e32674ff2c0bb707ccf110df8f1aa613d5530b62c808274a14f",
+      "frequency_hz": 21742,
+      "host_wall_seconds": 1182.689,
+      "original_task": {
+        "condition": "seeded",
+        "frequency_hz": 21742,
+        "index": 306,
+        "seed": 82,
+        "stage": "legal",
+        "unit_id": "f4-counter-V2",
+        "variant": "V2"
+      },
+      "original_task_index": 306,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-seeded-306.json",
+      "primary_record_sha256": "a321b98e061aece27a578a8e671139c088fbdaebc2e785763f2e96589f49a5b7",
+      "primary_run_id": "f4-counter-V2-seeded-306",
+      "reason": "independent-single-shot-count",
+      "variant": "V2"
+    },
+    {
+      "build_record_sha256": "2113c4c00728d3c5672315306d31daebfb729efce7dd3a0de993b07c3660dbba",
+      "diagnostic_index": 8,
+      "elf_sha256": "3fe8f99c33eaf5627a99c37fdd022aad88b02b1f36725252eb639876c891ac31",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "b1a6d7424de0342750dd5826920566182c649dfbb282994291d8bd630d043c7b",
+      "expected_uart_sha256": "ad36f3a9f3db96eb15c7c0b7f892e9a77b31133402ec02050b2a1118e9da5f86",
+      "frequency_hz": 47000,
+      "host_wall_seconds": 1202.65,
+      "original_task": {
+        "condition": "max",
+        "frequency_hz": 47000,
+        "index": 325,
+        "stage": "legal",
+        "unit_id": "f4-counter-V2",
+        "variant": "V2"
+      },
+      "original_task_index": 325,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570474-v1/output/records/f4-counter-V2-max-325.json",
+      "primary_record_sha256": "b7551b69d629cddf8b574834161bd3ff3f5b36600a4f2dcc0421ba9702b85672",
+      "primary_run_id": "f4-counter-V2-max-325",
+      "reason": "passing-high-endpoint",
+      "variant": "V2"
+    },
+    {
+      "build_record_sha256": "23f2ccdc08d26ab9c1072e1a4fcdb8b7001fa13bf11e87c427256e41ae14e9b5",
+      "diagnostic_index": 9,
+      "elf_sha256": "14c37dd8707da3e3630942427685c237f2c015ea4f443f801770b50f55fd8147",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "e5cd229ff4acb0c8efd3c673aaaf11ebf206e55d8deec9ef59214eb858cb0bd3",
+      "expected_uart_sha256": "dcce40f7b468dfd6d8b1d53ab14238fe9f62c975b473851f360027d542743429",
+      "frequency_hz": 10000,
+      "host_wall_seconds": 26.357,
+      "original_task": {
+        "condition": "slow_fault",
+        "frequency_hz": 10000,
+        "index": 326,
+        "stage": "fault",
+        "unit_id": "f4-counter-V0",
+        "variant": "V0"
+      },
+      "original_task_index": 326,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V0-slow_fault-326.json",
+      "primary_record_sha256": "ef277c63e6271f285f1117f361a89e853adaa691883655a653b3bdff2520d242",
+      "primary_run_id": "f4-counter-V0-slow_fault-326",
+      "reason": "existing-oscillator-probe",
+      "variant": "V0"
+    },
+    {
+      "build_record_sha256": "23f2ccdc08d26ab9c1072e1a4fcdb8b7001fa13bf11e87c427256e41ae14e9b5",
+      "diagnostic_index": 10,
+      "elf_sha256": "14c37dd8707da3e3630942427685c237f2c015ea4f443f801770b50f55fd8147",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "131f2ebb688b7c8f40ee1ef8b5f1ca518c4d57d2c1a84c4d5463d5f745dc5818",
+      "expected_uart_sha256": "fc409039b521cf9b418b978459a833338e88761b0b10b0427d623ec571b89ea5",
+      "frequency_hz": 64000,
+      "host_wall_seconds": 1180.17,
+      "original_task": {
+        "condition": "fast_fault",
+        "frequency_hz": 64000,
+        "index": 327,
+        "stage": "fault",
+        "unit_id": "f4-counter-V0",
+        "variant": "V0"
+      },
+      "original_task_index": 327,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V0-fast_fault-327.json",
+      "primary_record_sha256": "c43a13916da9965e765ccb0ec37c37bc55b0eee56b5be486b392d48c4616a7c9",
+      "primary_run_id": "f4-counter-V0-fast_fault-327",
+      "reason": "existing-oscillator-probe",
+      "variant": "V0"
+    },
+    {
+      "build_record_sha256": "25a30561cab826d3c4fd5c30861f9ede4bacd684a54e5929322928ad96e44651",
+      "diagnostic_index": 11,
+      "elf_sha256": "34eba3b687923b91829b88f0e1f333863637ae2ce927bee6990eb8a2b9ddf8aa",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "dd5ba0176cd12f3e6c53eb1c505b4a5d3b11b182df294d4d2fbe31f2b88c8698",
+      "expected_uart_sha256": "e2ffb8843669af1f2f2d5b8ed833444512cf8ddcbf9a56b2128bd35946e60dda",
+      "frequency_hz": 10000,
+      "host_wall_seconds": 113.757,
+      "original_task": {
+        "condition": "slow_fault",
+        "frequency_hz": 10000,
+        "index": 328,
+        "stage": "fault",
+        "unit_id": "f4-counter-V1",
+        "variant": "V1"
+      },
+      "original_task_index": 328,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V1-slow_fault-328.json",
+      "primary_record_sha256": "1a456abd8fb67cf5d37256dbf00eab920d9af7187876de54c268351cfcb29209",
+      "primary_run_id": "f4-counter-V1-slow_fault-328",
+      "reason": "existing-oscillator-probe",
+      "variant": "V1"
+    },
+    {
+      "build_record_sha256": "25a30561cab826d3c4fd5c30861f9ede4bacd684a54e5929322928ad96e44651",
+      "diagnostic_index": 12,
+      "elf_sha256": "34eba3b687923b91829b88f0e1f333863637ae2ce927bee6990eb8a2b9ddf8aa",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "d415203b0ee0031c6275568186b784db5fc476db53a17a8fb1a88889026ee7a9",
+      "expected_uart_sha256": "feac1e2e8b116d4bea3d312ce1373e113a41b0fca6cc0ccb50d39302001fcbcb",
+      "frequency_hz": 64000,
+      "host_wall_seconds": 1235.748,
+      "original_task": {
+        "condition": "fast_fault",
+        "frequency_hz": 64000,
+        "index": 329,
+        "stage": "fault",
+        "unit_id": "f4-counter-V1",
+        "variant": "V1"
+      },
+      "original_task_index": 329,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V1-fast_fault-329.json",
+      "primary_record_sha256": "32bebbb35c6c6bbd50e3d3f586f5cb356df06b3099462681af0a429e03e43bc2",
+      "primary_run_id": "f4-counter-V1-fast_fault-329",
+      "reason": "existing-oscillator-probe",
+      "variant": "V1"
+    },
+    {
+      "build_record_sha256": "fa33755602e88cb49e101d333700948fb6ff9a0c235f8c53371de5fdf35c74a7",
+      "diagnostic_index": 13,
+      "elf_sha256": "1047ad8a1f07d989f2418160ac38b767f618a1392a2f29d566690184a4ae018f",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "e29eb8d97ab58379455099c36c3944038220cac74b326c49ea4a0fe8629fe515",
+      "expected_uart_sha256": "2cba97aeef20df072fec6ceeb87c4bd7f0edc7e878ec523185a83992a34e3f4a",
+      "frequency_hz": 10000,
+      "host_wall_seconds": 44.697,
+      "original_task": {
+        "condition": "slow_fault",
+        "frequency_hz": 10000,
+        "index": 330,
+        "stage": "fault",
+        "unit_id": "f4-counter-V1b",
+        "variant": "V1b"
+      },
+      "original_task_index": 330,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V1b-slow_fault-330.json",
+      "primary_record_sha256": "0ef3a04709441ce1d4d04faa3ae80191d383b17e14025381c53f8800f48ecb95",
+      "primary_run_id": "f4-counter-V1b-slow_fault-330",
+      "reason": "existing-oscillator-probe",
+      "variant": "V1b"
+    },
+    {
+      "build_record_sha256": "fa33755602e88cb49e101d333700948fb6ff9a0c235f8c53371de5fdf35c74a7",
+      "diagnostic_index": 14,
+      "elf_sha256": "1047ad8a1f07d989f2418160ac38b767f618a1392a2f29d566690184a4ae018f",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "c44d088d16985133e93fae0a126a06554dc7e1cfa5e3ef9a1a26f159bf44c984",
+      "expected_uart_sha256": "2ba4a77b4944cd052d14c84d29d9132f37cf21a014f3fafb45e009ee2bafa1d4",
+      "frequency_hz": 64000,
+      "host_wall_seconds": 1194.48,
+      "original_task": {
+        "condition": "fast_fault",
+        "frequency_hz": 64000,
+        "index": 331,
+        "stage": "fault",
+        "unit_id": "f4-counter-V1b",
+        "variant": "V1b"
+      },
+      "original_task_index": 331,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V1b-fast_fault-331.json",
+      "primary_record_sha256": "ffcb7c91a7eda41635516f35a305769db8cc0a0796dc28daf0070069a6ed48a4",
+      "primary_run_id": "f4-counter-V1b-fast_fault-331",
+      "reason": "existing-oscillator-probe",
+      "variant": "V1b"
+    },
+    {
+      "build_record_sha256": "2113c4c00728d3c5672315306d31daebfb729efce7dd3a0de993b07c3660dbba",
+      "diagnostic_index": 15,
+      "elf_sha256": "3fe8f99c33eaf5627a99c37fdd022aad88b02b1f36725252eb639876c891ac31",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "fail"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "0de6ba3f1886f34b6ecbfde07fc318a409235bde117267570c94b7afebe38025",
+      "expected_uart_sha256": "7ed9a78efca135f160558356b937b805eeca67abdb0c776a492d1ac9048e03a4",
+      "frequency_hz": 10000,
+      "host_wall_seconds": 33.493,
+      "original_task": {
+        "condition": "slow_fault",
+        "frequency_hz": 10000,
+        "index": 332,
+        "stage": "fault",
+        "unit_id": "f4-counter-V2",
+        "variant": "V2"
+      },
+      "original_task_index": 332,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V2-slow_fault-332.json",
+      "primary_record_sha256": "c28bbdd578245f929f82dca9965912510ed028c5d86d37c15e75a8e1dc13f4fa",
+      "primary_run_id": "f4-counter-V2-slow_fault-332",
+      "reason": "existing-oscillator-probe",
+      "variant": "V2"
+    },
+    {
+      "build_record_sha256": "2113c4c00728d3c5672315306d31daebfb729efce7dd3a0de993b07c3660dbba",
+      "diagnostic_index": 16,
+      "elf_sha256": "3fe8f99c33eaf5627a99c37fdd022aad88b02b1f36725252eb639876c891ac31",
+      "expected_cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "expected_outcome": "complete",
+      "expected_trace_sha256": "0b129155611d0b997d3e97cd123c1bc629fe5a63a8ab03641c60c7ba1529f420",
+      "expected_uart_sha256": "2704c0f62f337297be5aa86cf64c5c8fa56183862af372b925013ff92429732b",
+      "frequency_hz": 64000,
+      "host_wall_seconds": 1163.601,
+      "original_task": {
+        "condition": "fast_fault",
+        "frequency_hz": 64000,
+        "index": 333,
+        "stage": "fault",
+        "unit_id": "f4-counter-V2",
+        "variant": "V2"
+      },
+      "original_task_index": 333,
+      "primary_record_path": "notes/counter_repair_execution_2026-11-05_v1/verified-3570475-v1/output/records/f4-counter-V2-fast_fault-333.json",
+      "primary_record_sha256": "04a626302200a871d798a029335ed74ae4147299c67f72483b58b6b2004f8a03",
+      "primary_run_id": "f4-counter-V2-fast_fault-333",
+      "reason": "existing-oscillator-probe",
+      "variant": "V2"
+    }
+  ]
+}

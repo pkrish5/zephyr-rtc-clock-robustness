@@ -1890,3 +1890,35 @@ infrastructure recovery of334unstarted registered indices, not new scientific
 conditions or a replacement for any measured outcome. Original jobs and records
 remain untouched. Sources, ELFs, scientific worker, clocks, limits and faults
 remain frozen. No source tuning, missing-outcome replacement, E2 or paper edit.
+
+
+## 2026-11-11 Counter diagnostic replay/reference/activation verification
+
+Before generating new reference sources or running diagnostics, register
+notes/counter_verification_2026-11-11_v1/PROTOCOL.md. It completes the original
+counter-repair protocol's representative replays and task-specific reference /
+oscillator-activation checks; no primary source, ELF, setting or record changes.
+Select three legal representative full-application records per repaired variant
+(17kHz, sole independent single-shot count failure,47kHz) plus all eight saved
+oscillator probes:17fresh same-input replays. New clean-state functional references
+cover all16unique residual-failing legal frequencies plus47kHz, including100
+one-tick alarms, unchanged count/identity/context checks and bounded legal-clock
+waits. Independent five-tick progress controls use existing10/32/64kHz settings.
+Reference phase is not asserted equal to primary phase; no primary instrumentation.
+
+Five nominal launches for each of two new diagnostic ELFs precede replays and
+reference evaluation. A nominal or replay anomaly blocks later phases; preserve
+all missing/unstarted outcomes. Exact selections and source/code hashes are
+sealed before execution. No source tuning, new model/driver/fault/delay operator,
+E2, generation arm, hardware study or broad clock-schedule rerun.
+
+Use CCR26073 as the user requested for further allocation-funded work, with
+truthful account provenance. One development node,32Launcher workers,two-hour
+limit and2SU ceiling under standing development authorization. No normal job is
+authorized here. New runtime/wrapper copies change only the account guard and
+runtime source path; original harness files stay frozen. Original S2 build/run
+bodies and scientific settings are unchanged. SCRATCH/tmp runtime, verified
+packed WORK publication, headroom gates, protected30067 and active764 counter
+seals before/after, exclusive intents/receipts, no prune, bounded BatchMode and
+stop-on-access-failure rules remain. Keep the manuscript unchanged until the
+remaining scientific verification is complete.

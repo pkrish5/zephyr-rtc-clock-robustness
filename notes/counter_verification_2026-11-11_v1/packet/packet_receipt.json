@@ -1,0 +1,15 @@
+{
+  "account": "CCR26073",
+  "ceiling_su": 2,
+  "evaluation_launches": 19,
+  "execution_sha256": "3380b6a28d9f4f160c1a1f4e0c11ef9a497e3be8ea40aeda29bfc2460bd03ae4",
+  "new_reference_builds": 2,
+  "nodes": 1,
+  "original_case_failure_slots_covered": 87,
+  "original_inputs_modified": 0,
+  "partition": "development",
+  "qualification_launches": 10,
+  "reference_plan_sha256": "ac10ea82c08ced92b8a35d44eda516eaf1666c3db07ab07e3a2f32995deaa7be",
+  "replay_launches": 17,
+  "wall_limit": "02:00:00"
+}
