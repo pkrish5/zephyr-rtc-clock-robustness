@@ -1,0 +1,16 @@
+{
+  "all_pages_rendered_and_inspected": true,
+  "bracketed_processes": 11,
+  "counter_control_job": "3578143",
+  "counter_control_qualified": true,
+  "date": "2026-11-12",
+  "historical_18_ms_control_still_failed": true,
+  "numeric_claims_checked": 42,
+  "original_tables_rebuilt_and_hash_matched": 8,
+  "overfull_boxes": 0,
+  "pdf_pages_including_references": 5,
+  "pdf_sha256": "f2eb38dacca3500db9d4d6f612260b93c96e399e049a416bc86fa943b155656d",
+  "status": "PASS",
+  "tex_sha256": "943a5c6183374bae427a4530332f5e30882402b546541f4d3c6afcee9444930f",
+  "unresolved_citation_or_reference_diagnostics": 0
+}

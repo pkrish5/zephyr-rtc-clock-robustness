@@ -27,8 +27,11 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--returned', type=Path, required=True)
     ap.add_argument('--job', required=True)
+    ap.add_argument('--sacct-json', type=Path, required=True)
     ap.add_argument('--out', type=Path, required=True)
     args = ap.parse_args()
+    state = read(args.sacct_json)
+    assert state['job_id'] == args.job
     packet = HERE/'packet'
     ep = packet/'execution.json'
     assert sha(ep) == (packet/'execution.sha256').read_text().split()[0]
@@ -120,8 +123,12 @@ def main():
     for local,remote in zip(rows,summary['rows']):
         assert local['index']==remote['index'] and local['frequency_hz']==remote['frequency_hz']
         assert local['qualified']==(remote['status']=='qualified')
+    job_complete = (receipt['output_state']=='complete' and state['state']=='COMPLETED' and
+                    state['exit_code']=='0:0')
     result=dict(job_id=args.job,archive_sha256=sha(archive),output_state=receipt['output_state'],
-                all_qualified=all(r['qualified'] for r in rows),qualified_count=sum(r['qualified'] for r in rows),
+                sacct_state=state['state'],sacct_exit_code=state['exit_code'],job_complete=job_complete,
+                all_qualified=job_complete and all(r['qualified'] for r in rows),
+                qualified_count=sum(r['qualified'] for r in rows),
                 rows=rows,old_18_ms_control_still_failed=True,primary_records_replaced=False)
     with (args.out/'verification.json').open('x') as stream:
         json.dump(result,stream,sort_keys=True,indent=2);stream.write('\n')

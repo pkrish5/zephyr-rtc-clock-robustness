@@ -1,0 +1,11 @@
+{
+  "job_id": "3578143",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:03:52",
+  "start": "2026-11-12T15:53:10",
+  "end": "2026-11-12T15:57:02",
+  "alloc_tres": "billing=128,cpu=128,node=1",
+  "account": "CCR26073",
+  "partition": "development"
+}

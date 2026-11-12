@@ -1,0 +1,432 @@
+{
+  "all_qualified": true,
+  "archive_sha256": "02a4bee8b4ca79efe1874275aa8d2756960085481b562c23afab133c91ed1ef7",
+  "job_complete": true,
+  "job_id": "3578143",
+  "old_18_ms_control_still_failed": true,
+  "output_state": "complete",
+  "primary_records_replaced": false,
+  "qualified_count": 11,
+  "rows": [
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 32000,
+      "index": 0,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 10,
+        "v0": 0,
+        "v1": 10
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "7723221568dedbbcdc5c49ae3b549d3b73fd460e91c92e1f4351f9ef348c7d3e",
+      "status": "qualified",
+      "uart_sha256": "bac710983aeb345bbe4286a2e3f5ce3b1429fb0eb0fea0c21896e7906ec7cbeb"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 32000,
+      "index": 1,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 10,
+        "v0": 0,
+        "v1": 10
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "54128a3b260d2c796ed000821a7785e6e373bf59fffef41af43fd0812974f93b",
+      "status": "qualified",
+      "uart_sha256": "bac710983aeb345bbe4286a2e3f5ce3b1429fb0eb0fea0c21896e7906ec7cbeb"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 32000,
+      "index": 2,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 10,
+        "v0": 0,
+        "v1": 10
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "f7419e22fa81bb119ebab83ef463e598ae770e91a3b6a1d3ef5b046db098f5a3",
+      "status": "qualified",
+      "uart_sha256": "bac710983aeb345bbe4286a2e3f5ce3b1429fb0eb0fea0c21896e7906ec7cbeb"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 32000,
+      "index": 3,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 10,
+        "v0": 0,
+        "v1": 10
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "39568566639edbdf64bd1d2a6a1f422375292d520b0f0d5f2a81294a647a275c",
+      "status": "qualified",
+      "uart_sha256": "bac710983aeb345bbe4286a2e3f5ce3b1429fb0eb0fea0c21896e7906ec7cbeb"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 32000,
+      "index": 4,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 10,
+        "v0": 0,
+        "v1": 10
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "521074d740906ab3301d75098269fa927aa5875d3e79ca5f35cea37563457f11",
+      "status": "qualified",
+      "uart_sha256": "bac710983aeb345bbe4286a2e3f5ce3b1429fb0eb0fea0c21896e7906ec7cbeb"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 10000,
+      "index": 5,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 3,
+        "v0": 0,
+        "v1": 3
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "20969b44d3db5bb476348f741a453507d297b3aeae04f7235151dc68393ec679",
+      "status": "qualified",
+      "uart_sha256": "a72a3609f4f7acfdbc35086a7a17a49a8e57c75624e823e4f72a70cac08c0d2a"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 10000,
+      "index": 6,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 3,
+        "v0": 0,
+        "v1": 3
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "8f4d6913df56d3169dd1c49ae487d34c81dee79c9da32db7ace1335f4841637c",
+      "status": "qualified",
+      "uart_sha256": "a72a3609f4f7acfdbc35086a7a17a49a8e57c75624e823e4f72a70cac08c0d2a"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 10000,
+      "index": 7,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 3,
+        "v0": 0,
+        "v1": 3
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "04da57aae8b9b6ddc26c3a3cb72011ac677d2c83b59c45f19edddbe5a0450d21",
+      "status": "qualified",
+      "uart_sha256": "a72a3609f4f7acfdbc35086a7a17a49a8e57c75624e823e4f72a70cac08c0d2a"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 64000,
+      "index": 8,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 20,
+        "v0": 0,
+        "v1": 20
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "4edbc7a54e09b9703f0765461d59cc339e48eae14a6bca84c140e79017db7713",
+      "status": "qualified",
+      "uart_sha256": "6fff93d39c894ad1adafe0492831ea6cfa561b0150f4118e6e17a3ec73a54902"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 64000,
+      "index": 9,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 20,
+        "v0": 0,
+        "v1": 20
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "1738664e082b6bfdaede0a7804cddad944f53b298dfcebc9450c74a56554783b",
+      "status": "qualified",
+      "uart_sha256": "6fff93d39c894ad1adafe0492831ea6cfa561b0150f4118e6e17a3ec73a54902"
+    },
+    {
+      "bands": {
+        "10000": [
+          3,
+          4
+        ],
+        "32000": [
+          9,
+          11
+        ],
+        "64000": [
+          19,
+          21
+        ]
+      },
+      "cases": [
+        {
+          "case": "ref_counter_bracket.test_rate_window",
+          "status": "pass"
+        }
+      ],
+      "frequency_hz": 64000,
+      "index": 10,
+      "measurements": {
+        "a0": 0,
+        "a1": 10001,
+        "b0": 0,
+        "b1": 10001,
+        "delta": 20,
+        "v0": 0,
+        "v1": 20
+      },
+      "process_exit": 0,
+      "qualified": true,
+      "record_sha256": "7d0e69fd080873d0d1f7a1194771f6b209d640e1c1cbaeb5cf725daea0e507e0",
+      "status": "qualified",
+      "uart_sha256": "6fff93d39c894ad1adafe0492831ea6cfa561b0150f4118e6e17a3ec73a54902"
+    }
+  ],
+  "sacct_exit_code": "0:0",
+  "sacct_state": "COMPLETED"
+}

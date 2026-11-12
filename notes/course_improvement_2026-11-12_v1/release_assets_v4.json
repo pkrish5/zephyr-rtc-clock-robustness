@@ -1,0 +1,35 @@
+{
+  "assets": {
+    "CLAIM_AUDIT.md": {
+      "bytes": 3627,
+      "sha256": "4d2c53c8cfe39a285b50a48304ef351d1cda35d7dcbdad23af93e61752aa0464"
+    },
+    "RELEASE_NOTES.md": {
+      "bytes": 958,
+      "sha256": "da54d26748cacc8f50de2276422d3db66a8802a68f03177e80fe2c20cf12918a"
+    },
+    "clock-sensitive-waits-v4-source.zip": {
+      "bytes": 901287,
+      "sha256": "fece5bcf4e41e21e42cc38949579e95390b36f594d65517ec2e072ac3cbde34a"
+    },
+    "clock-sensitive-waits-v4-supplemental-evidence.zip": {
+      "bytes": 38134503,
+      "sha256": "055ed0f3a44ef796b1f7903c2c9de2b6e9dcd06e9e5ab4718fbf444c72bf64c8"
+    },
+    "clock-sensitive-waits-v4.pdf": {
+      "bytes": 110573,
+      "sha256": "f2eb38dacca3500db9d4d6f612260b93c96e399e049a416bc86fa943b155656d"
+    },
+    "final_validation_v4.json": {
+      "bytes": 606,
+      "sha256": "25b0d8140f13ccfcd7735ebbf51ce95f31fc67f2470ccb9385bf2d256a00bfae"
+    },
+    "main-v4.tex": {
+      "bytes": 32738,
+      "sha256": "943a5c6183374bae427a4530332f5e30882402b546541f4d3c6afcee9444930f"
+    }
+  },
+  "source_entries_verified": 487,
+  "status": "PASS",
+  "supplemental_archives_verified": 10
+}
