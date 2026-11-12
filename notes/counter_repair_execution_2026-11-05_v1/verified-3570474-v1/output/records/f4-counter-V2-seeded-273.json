@@ -1,0 +1,117 @@
+{
+  "application_completed": true,
+  "apptainer_module": "tacc-apptainer/1.4.1",
+  "apptainer_version": "apptainer version 1.4.1-1.el8",
+  "board": "stm32f4_disco",
+  "build_record_sha256": "2113c4c00728d3c5672315306d31daebfb729efce7dd3a0de993b07c3660dbba",
+  "cases": [
+    {
+      "case": "counter_basic.test_all_channels",
+      "status": "pass"
+    },
+    {
+      "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_late_alarm",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_late_alarm_error",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_multiple_alarms",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_set_top_value_with_alarm",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "status": "fail"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "status": "fail"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_top",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_valid_function_without_alarm",
+      "status": "pass"
+    },
+    {
+      "case": "counter_no_callback.test_set_top_value_without_alarm",
+      "status": "skip"
+    }
+  ],
+  "condition": "seeded",
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "duplicate_cases": [],
+  "elf_sha256": "3fe8f99c33eaf5627a99c37fdd022aad88b02b1f36725252eb639876c891ac31",
+  "error": null,
+  "expected_declared_cases": [
+    "counter_basic.test_set_top_value_with_alarm",
+    "counter_no_callback.test_set_top_value_without_alarm",
+    "counter_basic.test_single_shot_alarm_notop",
+    "counter_basic.test_single_shot_alarm_top",
+    "counter_basic.test_multiple_alarms",
+    "counter_basic.test_all_channels",
+    "counter_basic.test_valid_function_without_alarm",
+    "counter_basic.test_late_alarm",
+    "counter_basic.test_late_alarm_error",
+    "counter_basic.test_short_relative_alarm",
+    "counter_basic.test_cancelled_alarm_does_not_expire"
+  ],
+  "family": "counter",
+  "frequency_hz": 19191,
+  "index": 273,
+  "launcher_module": "launcher/3.10",
+  "log_sha256": {
+    "monitor": "171c55a5468a27a14f063942b7f02c84e45f1dc12b07531231be2cc949953847",
+    "traces": "c2c3dcc495c4425042219b999816312965b688995c3cb4da518f0fee996637db",
+    "uart": "5cc854294c3868a102b20342d2b82ed212d150115a293f149bb3b1c8c47e70c0"
+  },
+  "missing_cases": [],
+  "node_name": "c314-092.ls6.tacc.utexas.edu",
+  "outcome": "complete",
+  "plan_sha256": "c5d2f7f515a59f2d45bcad665ab649b251051904704a1c96186610d08141ea8d",
+  "platform_sha256": "c028c9d1c229dd3e8c13b64e0e31bddfc68c71996300d27c517b0741db82f0b6",
+  "registers": [
+    {
+      "dbg_idcode": 268461073,
+      "rtc_prer": 8323321,
+      "systick_property_error": "Renode command failed: nvic SystickFrequency\nnvic SystickFrequency\n\n\nThere was an error executing command 'nvic SystickFrequency': \n\n\nsysbus.nvic does not provide a field, method or property SystickFrequency.\n\n\n",
+      "virtual_ns": 500000000
+    },
+    {
+      "dbg_idcode": 268461073,
+      "rtc_prer": 0,
+      "systick_property_error": "Renode command failed: nvic SystickFrequency\nnvic SystickFrequency\n\n\nThere was an error executing command 'nvic SystickFrequency': \n\n\nsysbus.nvic does not provide a field, method or property SystickFrequency.\n\n\n",
+      "virtual_ns": 23500000000
+    }
+  ],
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "reset_waits": 0,
+  "rtc_divider_observations": [
+    32000,
+    1
+  ],
+  "run_id": "f4-counter-V2-seeded-273",
+  "seed": 49,
+  "slurm_job_id": "3570474",
+  "slurm_partition": "normal",
+  "stage": "legal",
+  "suite_starts": 2,
+  "timestamp_utc": "2026-11-10T14:32:45.961114+00:00",
+  "unit_id": "f4-counter-V2",
+  "variant": "V2",
+  "virtual_ns": 23500000000,
+  "wall_seconds": 89.668,
+  "watchdog_reboot_and_completion": null
+}

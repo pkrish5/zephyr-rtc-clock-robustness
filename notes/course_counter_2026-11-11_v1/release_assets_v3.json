@@ -1,0 +1,32 @@
+{
+  "assets": {
+    "CLAIM_AUDIT.md": {
+      "bytes": 6588,
+      "sha256": "208fb30525871008bc7f139fcfbef178b12cd0810c8d31b9df651108ef558f96"
+    },
+    "clock-sensitive-waits-v3-source.zip": {
+      "bytes": 663824,
+      "sha256": "c0b1724b5037aa0d43a638785bc6ff85aca1edeffa29df1434250f25ece4aff1"
+    },
+    "clock-sensitive-waits-v3-supplemental-evidence.zip": {
+      "bytes": 33485618,
+      "sha256": "3c8a80ff3698084e410e0da8f0620600439b687bfa02a39f0e675287bcdce174"
+    },
+    "clock-sensitive-waits-v3.pdf": {
+      "bytes": 110589,
+      "sha256": "1969d3c01a67eb1a04ed2b8a5e41f64fa89495b8857ba691594f7109b8effcb6"
+    },
+    "final_validation_v3.json": {
+      "bytes": 834,
+      "sha256": "0226fbbc397a25f843f666c7a75958107cf1ecc147c4bbed7d8dd70724552633"
+    },
+    "main-v3.tex": {
+      "bytes": 31601,
+      "sha256": "6769d5836e42b1bcfa3caffc1f6052a08d9dd9ea4b3c3f26c4e42f5f365f7754"
+    }
+  },
+  "original_evidence_archive_unchanged": true,
+  "source_entries_verified": 360,
+  "status": "PASS",
+  "supplemental_archives_verified": 6
+}

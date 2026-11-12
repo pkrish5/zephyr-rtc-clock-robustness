@@ -1,0 +1,21 @@
+{
+  "all_pages_rendered_and_inspected": true,
+  "citation_keys_resolve": 13,
+  "counter_fault_primary_records_checked": 8,
+  "counter_legal_primary_records_paired": 408,
+  "counter_slow_fault_activation_qualified": false,
+  "counter_table_hash_matched": true,
+  "date": "2026-11-11",
+  "numeric_claims_checked": 40,
+  "original_repair_primary_records_hashed": 17375,
+  "original_tables_rebuilt_and_hash_matched": 8,
+  "overfull_boxes": 0,
+  "pdf_pages_including_references": 5,
+  "pdf_sha256": "1969d3c01a67eb1a04ed2b8a5e41f64fa89495b8857ba691594f7109b8effcb6",
+  "readable_tables_hash_matched": 3,
+  "renode_runs_for_manuscript_revision": 0,
+  "repeatability_launches": 180,
+  "status": "PASS",
+  "tex_sha256": "6769d5836e42b1bcfa3caffc1f6052a08d9dd9ea4b3c3f26c4e42f5f365f7754",
+  "unresolved_citation_or_reference_diagnostics": 0
+}
