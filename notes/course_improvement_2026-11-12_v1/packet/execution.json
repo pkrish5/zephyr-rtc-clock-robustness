@@ -1,0 +1,29 @@
+{
+  "account": "CCR26073",
+  "code_sha256": {
+    "harness/tacc_bracket_control/coordinator.py": "133bda5f490f05793cc3adda7690c648df9be05dbeb74a6b8c58cc674b15a29d",
+    "harness/tacc_bracket_control/job.sbatch": "5804838233db794cb7b113aa948fa03abfc70d9daf8082d1f7ae81f09104a410",
+    "harness/tacc_bracket_control/submit.py": "a1f3c2dc30536ea95cda7e7c21c368ff8fa0938237b7143d46236b4ce7d3e65a",
+    "harness/tacc_bracket_control/task.sh": "84f9b51938d8c012a24de0d8c1329cfdf143acde2baa1bf9934af9488b8e68e1",
+    "harness/tacc_counter_verification/run_packed.sh": "8cb2b90ac29c2ff0059904e83e47cbc3a44b9e821776e4b8b258772dda844be1",
+    "harness/tacc_counter_verification/runtime.sh": "ca405bce035017f297efc5159bce1615179c486f7ba933896b0adc55e03bc097",
+    "harness/tacc_s2/worker.py": "a1737e8a973b8147f6834a443e544e736723e6045dd0e0c264bddb4e7b116f86",
+    "harness/tacc_s2_references/driver.py": "5d101105b03c46438542fa97142c1ddc700996670670db2102fad54cf731ade7"
+  },
+  "image_relative": "tacc_work/20261023-v10/images/rtc-ls6-v1.sif",
+  "image_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "original_bundle_relative": "tacc_work/20261104-counter-repair-v1/bundle",
+  "original_counter_plan_sha256": "c5d2f7f515a59f2d45bcad665ab649b251051904704a1c96186610d08141ea8d",
+  "partition": "development",
+  "plan_sha256": "130cf098b02bdc60d81b0193a88e5e9b07726e07cd01e1ebc4057a05549495f1",
+  "planned_processes": 11,
+  "protocol_sha256": "400c7a9c79eea9c73bdd52e63ab0e9fd0af87ff256d5003f1351990572c171c3",
+  "registered_date": "2026-11-12",
+  "reservation_su_ceiling": 1.0,
+  "schema": 1,
+  "source_sha256": {
+    "subjects/counter_bracket_20261112_v1/CMakeLists.txt": "ee82d223ae974ce1587d64a03f687fe66e70e3be9fd73242f9c24984c27449c5",
+    "subjects/counter_bracket_20261112_v1/prj.conf": "16432049220f635cdfcad02d957c5d1bfd9bb71674a6c572ffc758ae2aab358c",
+    "subjects/counter_bracket_20261112_v1/src/main.c": "7125cfd0ca3b3ec4297e62938e3764f29805b31af1f13d17523abaa241674a32"
+  }
+}

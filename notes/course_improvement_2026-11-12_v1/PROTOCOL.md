@@ -1,0 +1,23 @@
+# Preregistered bracketed counter-rate control, 2026-11-12
+
+Registered before creating the new control source, build, or run. The 2026-11-11 five-tick 10-kHz control remains failed at 16,040 ms against its 16,022-ms upper bound. This experiment uses a different observer and cannot repair that historical verdict. It tests activation of the *existing* slow/nominal/fast inputs for the fourth upstream counter case, not the case's assertion logic, callback delivery latency, hardware, or natural fault representativeness.
+
+## Fixed design
+
+Build one fresh ztest application under the same pinned Zephyr v4.3.0 commit, F4 Renode platform, non-stock RTC-only counter configuration, STM32 counter driver, Renode 1.17.0 image, CPU 16 MIPS, SysTick 16 MHz, 1000-ns synchronization quantum and 0.5-s observation step used in the existing counter diagnostics. The application starts the counter from a clean state and calls `counter_get_value` twice. Independently bracket *each* read with `k_uptime_get_32` immediately before and after. Sleep 10,000 SysTick milliseconds between the two reads. Print all four uptime stamps and both counter values on UART. Stop the counter. The ztest asserts successful operations and a nonzero observed tick delta; it does not assert an oscillator-specific band in the firmware. The source and all other inputs are hashed before submission.
+
+Run exactly eleven fresh processes: five at 32,000 Hz as a nominal qualification gate, then three at 10,000 Hz and three at 64,000 Hz. No replacement, adaptive rerun, altered allowance, or full 102-setting schedule. The 10/64-kHz probes reuse the original injected oscillator inputs. All processes start fresh; the original primary records, ELFs and diagnostic results are read-only.
+
+## Prespecified measurement and interpretation
+
+For each complete process, let `a0,b0` bracket the first read and `a1,b1` bracket the second. Let `d = (uint32_t)(v1-v0)` be the printed counter delta. Require ordered timestamps and 9,500 <= `a1-b0` <= 11,500 ms; otherwise the observation is a failure, not a reason to stretch the interval. Allow 2 ms for SysTick read quantization around the bracketing stamps. Thus the unknown actual read separation is in `[a1-b0-2, b1-a0+2]` ms. With the existing 32,000 prescaler and unknown RTC subsecond phase, the allowed integer delta for a candidate input frequency `f` is:
+
+`floor(f*(a1-b0-2)/(32,000*1,000)) <= d <= ceil(f*(b1-a0+2)/(32,000*1,000))`.
+
+The bounds use only printed values and the registered constants, with exact integer arithmetic. They do not use a post hoc tolerance estimated from results. For a roughly 10-s observation, the expected tick deltas are 3--4 at 10 kHz, about 10 at 32 kHz and about 20 at 64 kHz; exact bounds are evaluated from each record's own timestamps. Require the observed `d` to lie in its assigned band's range **and outside the other two candidate bands**. This establishes discrimination among the three tested settings under the pinned model. If source/ELF/platform hashes mismatch, a process lacks an unambiguous UART line/case verdict, a ztest fails, timestamps violate the gate, or any assigned/exclusion check fails, mark the control unqualified; preserve all raw output. Five nominal processes must pass before starting six fault-input processes. All eleven must pass to qualify the new activation measurement.
+
+Use saved UART and raw process records for audit; keep an independent local verifier outside the submitted code. A passing new control supports only a *new bracketed activation-control result*. The old 18-ms bound remains violated, and the fourth-case slow-fault conclusion must explicitly mention the historical discrepancy. In particular, the selected 10-kHz V1 pass alongside V1b/V2 failures shows repair choice affects this measured oracle; it is not a general preservation claim.
+
+## Resource and provenance envelope
+
+Use the previously verified SIF SHA-256 `94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1` on TACC LS6, account CCR26073, development partition, one node, 32 Launcher workers, one-hour hard wall, and at most 1 SU reserved. Estimate: one build <=600 host s, eleven approximately 10-s virtual runs at conservative 5 host s per virtual s divided across workers <=25 host s, plus 900 s setup/audit/packing: <=1,525 host s (0.424 SU), leaving margin. This is a budget, not a measured run time. Use the existing protected-file audit and packed archive publication. New work has a unique namespace and an exclusive submission intent; do not touch or retry the completed job 3575326. If authentication, allocation or headroom blocks submission, preserve the preregistered packet and report the paper with its control limitation.
