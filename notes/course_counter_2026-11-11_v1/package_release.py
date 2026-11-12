@@ -106,12 +106,13 @@ source_files += [
 ]
 for job in ["3570473", "3570474", "3570475"]:
     source_files += sorted((ROOT / f"notes/counter_repair_execution_2026-11-05_v1/verified-{job}-v1/output/records").glob("f4-counter-*.json"))
+source_files += sorted((ROOT / "artifacts/s2_production_20261026_v1/returned_20261027_v1/bundle/results/s2_production_20261026_v1/records").glob("f4-counter-*.json"))
 assert len(source_files) == len(set(source_files))
 assert all(p.is_file() for p in source_files), [str(p) for p in source_files if not p.is_file()]
 readme = """# Course manuscript v3, 2026-11-11
 
 The PDF is `clock-sensitive-waits-v3.pdf`. This source ZIP contains the TeX,
-table fragments, claim audit, 314 new counter primary records, diagnostic
+table fragments, claim audit, 102 original and 314 new counter primary records, diagnostic
 summary, and the six-cell repeatability summary. All clock times in the paper
 are Renode virtual time. The fourth counter slow-fault control is unresolved.
 

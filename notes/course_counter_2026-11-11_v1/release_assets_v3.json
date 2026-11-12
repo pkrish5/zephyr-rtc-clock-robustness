@@ -1,16 +1,16 @@
 {
   "assets": {
     "CLAIM_AUDIT.md": {
-      "bytes": 6588,
-      "sha256": "208fb30525871008bc7f139fcfbef178b12cd0810c8d31b9df651108ef558f96"
+      "bytes": 6609,
+      "sha256": "269370256908a59fc4d8b945671724e238894bd9946f5cec3a9ff961ee59ad6c"
     },
     "clock-sensitive-waits-v3-source.zip": {
-      "bytes": 663824,
-      "sha256": "c0b1724b5037aa0d43a638785bc6ff85aca1edeffa29df1434250f25ece4aff1"
+      "bytes": 840338,
+      "sha256": "a8857ba56fb8d0004f7bfa45c717a28aa66e23818cc7d4c76454a215e7fa066d"
     },
     "clock-sensitive-waits-v3-supplemental-evidence.zip": {
       "bytes": 33485618,
-      "sha256": "3c8a80ff3698084e410e0da8f0620600439b687bfa02a39f0e675287bcdce174"
+      "sha256": "759509befd1dc1229ae2db3acbc570a682490cd365cfaee83e6838b671fd1bb4"
     },
     "clock-sensitive-waits-v3.pdf": {
       "bytes": 110589,
@@ -26,7 +26,7 @@
     }
   },
   "original_evidence_archive_unchanged": true,
-  "source_entries_verified": 360,
+  "source_entries_verified": 462,
   "status": "PASS",
   "supplemental_archives_verified": 6
 }

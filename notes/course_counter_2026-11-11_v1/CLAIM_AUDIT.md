@@ -86,7 +86,7 @@ asset checksums are recorded separately after packaging.
 To reproduce the full v3 audit from a clean checkout, obtain the unchanged v1
 evidence archive and extract the v3 source bundle into the checkout, preserving
 paths. Then run `make course-tables EVIDENCE_ARCHIVE=/absolute/path/rtc-submission-evidence-v1.tar.gz`.
-The source bundle includes the new counter records, diagnostic and pilot
+The source bundle includes the 102 original and 314 new counter records, diagnostic and pilot
 summaries, scripts and table fragments. No TACC access or new experiment is
 needed for these checks.
 

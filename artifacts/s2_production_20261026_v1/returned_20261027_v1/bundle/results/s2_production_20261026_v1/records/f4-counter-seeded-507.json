@@ -1,0 +1,115 @@
+{
+  "application_completed": true,
+  "apptainer_module": "tacc-apptainer/1.4.1",
+  "apptainer_version": "apptainer version 1.4.1-1.el8",
+  "board": "stm32f4_disco",
+  "build_record_sha256": "bc0fa12119f76de9fdca63ebd149d36b79c057cc1f4f6bc023801bcf04a7e7be",
+  "cases": [
+    {
+      "case": "counter_basic.test_all_channels",
+      "status": "pass"
+    },
+    {
+      "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_late_alarm",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_late_alarm_error",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_multiple_alarms",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_set_top_value_with_alarm",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "status": "pass"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "status": "pass"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_top",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_valid_function_without_alarm",
+      "status": "pass"
+    },
+    {
+      "case": "counter_no_callback.test_set_top_value_without_alarm",
+      "status": "skip"
+    }
+  ],
+  "condition": "seeded",
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "duplicate_cases": [],
+  "elf_sha256": "ceda84d8a03383be5857e546d2ac87ecd2ed9c72c9e45bf0ca47661437c7ccb1",
+  "error": null,
+  "expected_declared_cases": [
+    "counter_basic.test_set_top_value_with_alarm",
+    "counter_no_callback.test_set_top_value_without_alarm",
+    "counter_basic.test_single_shot_alarm_notop",
+    "counter_basic.test_single_shot_alarm_top",
+    "counter_basic.test_multiple_alarms",
+    "counter_basic.test_all_channels",
+    "counter_basic.test_valid_function_without_alarm",
+    "counter_basic.test_late_alarm",
+    "counter_basic.test_late_alarm_error",
+    "counter_basic.test_short_relative_alarm",
+    "counter_basic.test_cancelled_alarm_does_not_expire"
+  ],
+  "family": "counter",
+  "frequency_hz": 46106,
+  "index": 507,
+  "launcher_module": "launcher/3.10",
+  "log_sha256": {
+    "monitor": "6520b4b6655ec69f9e024797fd829a1d13876c4450b914f24a29ab2f1ee02774",
+    "traces": "fe8a9f85bac40587fd5549138d7b7b20b8ddea7cb22c11fa77c5fe07cafa3d7d",
+    "uart": "fc409039b521cf9b418b978459a833338e88761b0b10b0427d623ec571b89ea5"
+  },
+  "missing_cases": [],
+  "node_name": "c309-016.ls6.tacc.utexas.edu",
+  "outcome": "complete",
+  "plan_sha256": "719b3bc42f2b93f44455a11eca3eacd69eacbbf4e8c714b90300d5a8343d0612",
+  "platform_sha256": "f94c25b51a0f59cbdeb427000c655861e443676b40704adaeb60179519746106",
+  "registers": [
+    {
+      "dbg_idcode": 268461073,
+      "rtc_prer": 8323321,
+      "systick_property_error": "Renode command failed: nvic SystickFrequency\nnvic SystickFrequency\n\n\nThere was an error executing command 'nvic SystickFrequency': \n\n\nsysbus.nvic does not provide a field, method or property SystickFrequency.\n\n\n",
+      "virtual_ns": 500000000
+    },
+    {
+      "dbg_idcode": 268461073,
+      "rtc_prer": 0,
+      "systick_property_error": "Renode command failed: nvic SystickFrequency\nnvic SystickFrequency\n\n\nThere was an error executing command 'nvic SystickFrequency': \n\n\nsysbus.nvic does not provide a field, method or property SystickFrequency.\n\n\n",
+      "virtual_ns": 323000000000
+    }
+  ],
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "reset_waits": 0,
+  "rtc_divider_observations": [
+    32000,
+    1
+  ],
+  "run_id": "f4-counter-seeded-507",
+  "seed": 46,
+  "slurm_job_id": "3535524",
+  "slurm_partition": "normal",
+  "suite_starts": 2,
+  "timestamp_utc": "2026-10-27T04:55:36.155271+00:00",
+  "unit_id": "f4-counter",
+  "virtual_ns": 323000000000,
+  "wall_seconds": 1211.374,
+  "watchdog_reboot_and_completion": null
+}
