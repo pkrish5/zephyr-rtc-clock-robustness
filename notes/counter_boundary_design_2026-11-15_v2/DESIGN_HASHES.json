@@ -1,0 +1,9 @@
+{
+  "status": "DESIGN_ONLY_NOT_EXECUTION_SEAL",
+  "sha256": {
+    "PROTOCOL_DRAFT.md": "2f220e592cf288facd625a186fe0e134f8cd866af2bbd3065fdfa175a10de2f0",
+    "PREDICTIONS.json": "5759fc8fe1ad7794ba97a942fc7f90e4e612f7ce0de4e695a360ab4edf003789",
+    "PREDICTIONS.csv": "ddb28e6b0fa0e2f5c8b6229380e0668f554cc6bb66548bf09b7638feded2d5a2",
+    "BOUNDARIES.csv": "43b34acb484a1abfd0c58675436baf98ffa0cd1132f7c635afd0a81de0b03bd9"
+  }
+}
