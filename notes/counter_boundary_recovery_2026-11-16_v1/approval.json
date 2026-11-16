@@ -1,0 +1,9 @@
+{
+  "user_instruction": "Can you submit the job what are you wating on?",
+  "approved_scope": "wall-time-only qualification recovery described in RECOVERY_PROPOSAL.md",
+  "total_study_ceiling_su": 10,
+  "recovery_reservation_su": 1,
+  "prior_conservative_consumption_su": 1,
+  "old_job_preserved": "3585400",
+  "parent_execution_sha256": "ddaa094ec7a4d9001f0ed388dfcb73a768f44146a49df1d307a5cdc48f8cf0b9"
+}
