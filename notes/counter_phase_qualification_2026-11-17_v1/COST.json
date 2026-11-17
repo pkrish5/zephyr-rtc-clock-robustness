@@ -1,0 +1,27 @@
+{
+  "account": "CCR26073",
+  "partition": "development",
+  "nodes": 1,
+  "walltime_seconds": 7200,
+  "reservation_su_ceiling": 2,
+  "total_study_ceiling_su": 50,
+  "previous_reservations_debited_su": 2,
+  "remaining_after_reservation_su": 46,
+  "new_builds": 8,
+  "new_processes": 84,
+  "nominal_processes": 42,
+  "timing_only_processes": 42,
+  "workers": 32,
+  "nominal_host_seconds_observed_prior_max": 1955.588,
+  "planning_seconds": {
+    "build": 240,
+    "nominal_2_batches_outer_caps": 4920,
+    "timing_2_batches_outer_caps": 800,
+    "setup_guards": 300,
+    "packing_reserve": 600
+  },
+  "planning_total_seconds": 6860,
+  "planning_node_hours": 1.9055555555555554,
+  "qualification_only": true,
+  "caveat": "Planning is extrapolated; hard cap may produce missing outcomes. Actual billed SUs require accounting. Remaining primary budget feasibility is a separate mandatory gate."
+}

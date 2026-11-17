@@ -1,0 +1,9 @@
+{
+  "user_instruction": "You dont have to cap like this, I dont mind if it takes a lot I have so much you can make the limit 50 if you really need.",
+  "study_total_ceiling_su": 50,
+  "previous_attempts_conservative_debit_su": 2,
+  "phase_qualification_reservation_su": 2,
+  "remaining_after_this_reservation_su": 46,
+  "preceding_observer_gate_sha256": "aa3d2b8080a0d02b40be6978824748745a2b9a77545dc5bd49b22305e2040147",
+  "scope": "build and controlled-phase qualification; no primary sweep in this job"
+}

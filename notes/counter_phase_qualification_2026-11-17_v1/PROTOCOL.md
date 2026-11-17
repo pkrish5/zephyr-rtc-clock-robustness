@@ -1,0 +1,31 @@
+# Controlled-phase qualification — sealed before any build or execution
+
+This stage qualifies apparatus, not repair efficacy. User approval is the latest 50-SU TOTAL ceiling, superseding 10 SU, and “okay go ahead”. Earlier observer attempts retain all records; conservative debit 2 SU. This single one-node CCR26073 development job reserves at most 2 SU (2 hours), leaving 46 SU. No primary sweep is submitted by this packet. No source, threshold, missing verdict or failed control may be tuned/replaced after outcomes.
+
+## Predictions and primary design retained
+
+The immutable `notes/counter_boundary_design_2026-11-15_v2/PREDICTIONS.json` specifies 294 intended primary cells: seven arms (original 3-second wait; fixed 6, 8, 10, 13 seconds; derived fixed 7.648 seconds; derived polling 7.648 seconds), 14 rates (4–14 kHz inclusive in 1-kHz steps, then 16, 17, 32 kHz), and elapsed phases 0.10, 0.45, 0.90. 17 kHz and 32 kHz are LEGAL controls. No 47-kHz endpoint or fast-fault claim is added by this stage.
+
+Ideal arrival is (3 − phase)*32000/f simulated seconds. At 10 kHz a 7.648-second deadline is predicted to reject phases .10/.45 and accept .90, with ideal crossing .61. Deadline length is the explanatory variable. This is not a contest between naive and derived labels. The model prediction ignores delivery/setup latency; measurements must qualify the stated approximation.
+
+## Apparatus and immutable inputs
+
+Use the pinned F4 RTC-only full counter application and existing Renode model, image SHA256 94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1. CPU 16 MIPS, SysTick 16 MHz, original simulation quantum/RunFor body and application order remain fixed. All original sources/ELFs/raw records remain untouched. Eight new source copies differ only by common phase apparatus and the selected all-channels wait/strategy. The eighth is a **30-second timing diagnostic**, not a primary arm or repair result.
+
+A read-only SSR polling helper runs after counter_start and before alarm programming. It waits for a subsecond wrap and then the requested elapsed fraction, polling every 100 microseconds, with an 18-second uptime timeout. It never writes RTC registers. Two .noinit RAM words select the target and a magic constant before firmware starts. Build validation requires both words in 4-byte NOBITS noinit storage. Monitor readback must equal the configuration. ELF symbols and disassembly identify case entry, the first scheduling rtc_stm32_read call/return and callback entry. CPU hooks only print virtual nanoseconds and SSR. Record exact source, ELF, build products, hook addresses, disassembly and runtime provenance.
+
+## Fixed qualification matrix and hard gates
+
+1. Build eight variants once, eight workers, compiler parallelism two. Any build/configuration error stops further stages.
+2. Run 42 nominal full applications: seven primary arms × three phases × observer OFF/ON at 32 kHz. Require every selected verdict PASS, all other declared cases PASS or capability SKIP, zero missing/duplicate/error, successful process exits and complete full applications. For each of 21 OFF/ON pairs require identical complete case vectors, raw UART hashes and normalized full trace hashes (only run_id removed). Instrumentation on/off comparisons use the same newly built ELF and phase. The earlier unchanged archived V0 natural-phase observer check remains separate evidence.
+3. Only after the nominal gate passes, run 42 observer-ON timing diagnostics: all 14 rates × three phases, using the separate 30-second selected wait. Stop after its explicit selected verdict, retaining observed logs; downstream cases are **not evaluated**, and application_completed is false. These cannot substitute for primary case or application outcomes. Require the selected explicit PASS, no errors/missing, and process exit zero.
+4. Every observer-ON nominal and timing process must meet: achieved elapsed phase at the scheduling read and return within ±.02 tick of target; nonwrapping read bracket at most .02 tick and .02 period; measured first callback delay from the scheduling read within ±(.02*32000/f + .020) seconds of (3 − achieved phase)*32000/f. Also report error against requested phase. No widening of tolerances. The allowance is an acceptance criterion, not a validated latency bound. Require ordered timestamps and SSR in 0..249.
+5. Independently verify archived bytes/inventory/extraction, all source/build/log/trace/platform/provenance hashes, before/after protection of 30,067 originals and 764 active seals, all 84 planned records and authoritative COMPLETED 0:0. Compute-side success alone is insufficient.
+
+A failed, missing or ambiguous gate blocks controlled-phase production. Preserve evidence, report, and assess the already described natural-phase fallback only in a separately sealed and budgeted packet; never silently substitute it. Qualification has no automatic replay/retry. The primary diagnostic-replay inventory and exact production schedule must be sealed before production, using remaining budget and measured qualification runtime. If they cannot fit, stop rather than reduce the matrix or exceed 50 SU.
+
+## Runtime and publication contract
+
+Build worker limit 180 seconds, outer 240. Nominal runner wall limit 2400 seconds (60 reserved internally), outer 2460; max virtual 400 seconds. Timing runner wall limit 360 seconds (60 reserved internally), outer 400; max virtual 50 seconds. Launcher uses 32 workers in separate nominal and timing stages. Timing diagnostic completion is intentionally selected-case-only. Hard batch reservation 7200 seconds; USR1 at 600 seconds remaining stops writers and packs complete/interrupted/failed evidence. These caps are not promises of completion. Missing outcomes remain missing.
+
+Use pinned tacc-apptainer/1.4.1 and launcher/3.10, read-only input binds, fresh SCRATCH and private /tmp paths, fresh headroom checks, protected before/after checks, verified packed WORK publication. Preserve new build intermediates in SCRATCH outside the packed output; do not prune. Only four packed files are returned to a fresh local namespace. No heavy login-node analysis/build/simulation. Submit helper writes exclusive intent and receipt; uncertain submission stops and is never retried blindly. Do not pull or mutate sealed LS6 execution code while active.

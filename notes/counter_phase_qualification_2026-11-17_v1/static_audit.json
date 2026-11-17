@@ -1,0 +1,1062 @@
+{
+  "passed": true,
+  "python_syntax": true,
+  "matrix_exact": true,
+  "code_seals": true,
+  "archived_timing_parser_pass": {
+    "phase_before": 0.3,
+    "phase_after": 0.3,
+    "target": 0.3,
+    "arrival_s": 2.698917625,
+    "predicted_from_achieved_phase_s": 2.7,
+    "predicted_from_requested_phase_s": 2.7,
+    "error_s": -0.0010823750000001908,
+    "tolerance_s": 0.04,
+    "events": [
+      {
+        "kind": "case_entry",
+        "ns": 302697125,
+        "ssr": 174
+      },
+      {
+        "kind": "read_before",
+        "ns": 302716500,
+        "ssr": 174
+      },
+      {
+        "kind": "read_after",
+        "ns": 302740875,
+        "ssr": 174
+      },
+      {
+        "kind": "callback",
+        "ns": 3001634125,
+        "ssr": 249
+      },
+      {
+        "kind": "read_before",
+        "ns": 3910432875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 3910457375,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 13911630250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 13911654625,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 16911701125,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 16911725625,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 19911772000,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 19911796375,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 22911842750,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 22911867250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 25911911000,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 25911935375,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 28911981750,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 28912006250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 31912052625,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 31912077000,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 34912123375,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 34912147875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 37912194250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 37912218625,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 40912265000,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 40912289500,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 43912335875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 43912360250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 46912406625,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 46912431125,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 49912474875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 49912499250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 52912545625,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 52912570125,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 55912616500,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 55912640875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 58912687250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 58912711750,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 61912758125,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 61912782500,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 64912828875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 64912853375,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 67912899875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 67912924250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 70912972250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 70912996750,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 73913043125,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 73913067500,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 76913113875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 76913138375,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 79913184875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 79913209250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 82913255625,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 82913280125,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 85913326500,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 85913350875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 88913397250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 88913421750,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 91913465500,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 91913489875,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 94913536250,
+        "ssr": 22
+      },
+      {
+        "kind": "read_after",
+        "ns": 94913560750,
+        "ssr": 22
+      },
+      {
+        "kind": "read_before",
+        "ns": 97913607125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 97913631500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 100913677875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 100913702375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 103913748750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 103913773125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 106913819500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 106913844000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 109913890375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 109913914750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 112913958500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 112913983000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 115914029375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 115914053750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 118914100125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 118914124625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 121914171000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 121914195375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 124914241750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 124914266250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 127914312625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 127914337000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 130914383375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 130914407875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 133914454250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 133914478625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 136914522375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 136914546875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 139914593250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 139914617625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 142914664000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 142914688500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 145914734875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 145914759250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 148914805625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 148914830125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 151914876500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 151914900875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 154914947375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 154914971875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 157915015625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 157915040000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 160915086375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 160915110875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 163915157250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 163915181625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 166915228125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 166915252625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 169915299000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 169915323375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 172915369750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 172915394250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 175915440625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 175915465000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 178915513000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 178915537500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 181915583875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 181915608250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 184915654625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 184915679125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 187915725500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 187915749875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 190915796250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 190915820750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 193915867125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 193915891500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 196915937875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 196915962375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 199916006125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 199916030500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 202916076875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 202916101375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 205916147750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 205916172125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 208916218500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 208916243000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 211916289375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 211916313750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 214916360125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 214916384625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 217916431125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 217916455500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 220916503500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 220916528000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 223916574500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 223916598875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 226916645250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 226916669750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 229916716125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 229916740500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 232916786875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 232916811375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 235916857750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 235916882125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 238916928500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 238916953000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 241916999375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 241917023750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 244917067500,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 244917092000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 247917138375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 247917162750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 250917209125,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 250917233625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 253917280000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 253917304375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 256917350750,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 256917375250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 259917421625,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 259917446000,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 262917492375,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 262917516875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 265917564875,
+        "ssr": 21
+      },
+      {
+        "kind": "read_after",
+        "ns": 265917589250,
+        "ssr": 21
+      },
+      {
+        "kind": "read_before",
+        "ns": 268917635625,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 268917660125,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 271917706500,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 271917730875,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 274917777250,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 274917801750,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 277917848125,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 277917872500,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 280917918875,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 280917943375,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 283917989750,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 283918014125,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 286918057875,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 286918082375,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 289918128750,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 289918153125,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 292918199500,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 292918224000,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 295918270375,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 295918294750,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 298918341125,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 298918365625,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 301918412000,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 301918436375,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 304918482875,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 304918507375,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 307918551125,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 307918575500,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 310918622000,
+        "ssr": 20
+      },
+      {
+        "kind": "read_after",
+        "ns": 310918646500,
+        "ssr": 20
+      },
+      {
+        "kind": "read_before",
+        "ns": 314019984250,
+        "ssr": 245
+      },
+      {
+        "kind": "read_after",
+        "ns": 314020008625,
+        "ssr": 245
+      }
+    ]
+  },
+  "wrong_phase_rejected": true,
+  "outside_selected_function_and_common_helper_unchanged": true,
+  "new_builds_or_simulations_run_locally": false,
+  "execution_sha256": "9a96e96c93ff4bf79bcc30756cba98a66f81084fa6b81e8b9cc969519d754d95"
+}
