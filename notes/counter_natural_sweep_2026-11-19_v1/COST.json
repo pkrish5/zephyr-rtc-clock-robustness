@@ -1,0 +1,19 @@
+{
+  "account": "CCR26073",
+  "partition": "normal",
+  "nodes": 1,
+  "walltime_seconds": 129600,
+  "reservation_su_ceiling": 36,
+  "total_study_ceiling_su": 50,
+  "prior_debit_su": 4,
+  "remaining_su": 10,
+  "builds": 7,
+  "nominal": 35,
+  "primary": 98,
+  "diagnostic_replay": 7,
+  "workers": 32,
+  "cap_based_scheduled_seconds": 114360,
+  "estimated_su_using_caps": 31.7666667,
+  "actual_use_unknown": true,
+  "allocation_verified_available_su": 1493
+}

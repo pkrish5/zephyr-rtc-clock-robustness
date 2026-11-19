@@ -1,0 +1,8 @@
+{
+  "user_authorization": "okay go ahead; latest total limit 50 SU; why arent you running it?",
+  "total_study_ceiling_su": 50,
+  "prior_conservative_debit_su": 4,
+  "this_reservation_su": 36,
+  "remaining_after_reservation_su": 10,
+  "scope": "previously authorized natural-phase fallback after failed controlled-phase qualification; no paper publication"
+}

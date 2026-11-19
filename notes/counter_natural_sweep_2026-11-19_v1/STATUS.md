@@ -1,0 +1,7 @@
+# Natural-phase fallback sealed; awaiting submission
+
+The user requested continuation on November 19. Controlled-phase job 3589708 failed its unchanged arrival gate; no tuning or replay replaces it. This new namespace implements the previously authorized natural-phase fallback: seven unaligned arms,35 nominal gates,98 primary cells,7 fixed10-kHz diagnostic replays. One node CCR26073 normal,36hours/36SU ceiling. Including4SU earlier conservative reservations,40/50SU committed if accepted;10SU uncommitted. Fresh allocation1493SU available; no active study job, only original stranded3552462/3552463 pending.
+
+Execution SHA256 be7ed51b743ac5170233fed0b7d5e899ba5263e90ef093dcf8574a0fe21cce24. Protocol, predictions, costs and exact tasks sealed before build/run. All source outside selected wait is byte-identical to upstream; original arm entirely byte-identical. No phase helper, monitor hooks, model/source alteration or paper publication. Full apps retained; skips/fails/missing never replaced. See PROTOCOL.md.
+
+After accepted receipt: never invoke submit.py again; no LS6 pull or execution code mutation while pending/running. Check exact job state with bounded BatchMode; any auth/drop/stall stops remote access until manual reconnection. Return four packed files to new directory; verify_return.py --returned ... --job ID --sacct-json ... --out fresh. Report nominal/primary/replay separately and every case/missing outcome. Job completion is not scientific verification.
