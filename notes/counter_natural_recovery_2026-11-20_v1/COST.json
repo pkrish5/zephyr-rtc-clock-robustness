@@ -1,0 +1,22 @@
+{
+  "total_study_ceiling_su": 50,
+  "preceding_attempts_conservative_debit_su": 4,
+  "failed_3596807_debit_su": 6,
+  "failed_job_elapsed_node_hours": 0.8022222222222222,
+  "failed_job_allocnodes": 1,
+  "failed_job_billed_su_not_independently_available": true,
+  "conservative_charge_basis": "entire observed CCR26073 available-balance decrease 1493 to1487, possibly includes other work; unused36SU reservation is not counted as consumed",
+  "new_reservation_su": 36,
+  "total_conservative_commitment_su": 46,
+  "remaining_su": 4,
+  "account": "CCR26073",
+  "partition": "normal",
+  "nodes": 1,
+  "walltime_seconds": 129600,
+  "nominal": 35,
+  "primary": 98,
+  "replays": 7,
+  "reused_elf_builds": 7,
+  "new_builds": 0,
+  "settings_unchanged": true
+}

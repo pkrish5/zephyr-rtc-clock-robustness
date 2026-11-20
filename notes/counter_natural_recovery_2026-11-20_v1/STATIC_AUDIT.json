@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "source_hashes_exact_parent": true,
+  "reused_build_files": 49,
+  "new_builds": 0,
+  "task_contract_regression_passed": true,
+  "only_task_metadata_family_removed": true,
+  "parent_missing_records_preserved": true,
+  "syntax_passed": true,
+  "execution_sha256": "09acb18ce6af1121ec08a40d0f73f04878887025e7f182ae7b549924ac58a82c"
+}

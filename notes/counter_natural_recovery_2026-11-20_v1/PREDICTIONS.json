@@ -1,0 +1,1574 @@
+{
+  "ideal_only": true,
+  "failed_timing_gate_preserved": true,
+  "rows": [
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 4000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        16.0,
+        24.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 5000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        12.8,
+        19.2
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 6000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        10.666666666666666,
+        16.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 7000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        9.142857142857142,
+        13.714285714285714
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 8000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        8.0,
+        12.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 9000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        7.111111111111111,
+        10.666666666666666
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 10000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        6.4,
+        9.6
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 11000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.818181818181818,
+        8.727272727272727
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 12000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.333333333333333,
+        8.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 13000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.923076923076923,
+        7.384615384615385
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 14000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.571428571428571,
+        6.857142857142857
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 16000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.0,
+        6.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 17000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        3.764705882352941,
+        5.647058823529412
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "original",
+      "deadline_s": 3,
+      "frequency_hz": 32000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        2.0,
+        3.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        21333.333333333332,
+        32000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 4000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        16.0,
+        24.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 5000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        12.8,
+        19.2
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 6000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        10.666666666666666,
+        16.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 7000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        9.142857142857142,
+        13.714285714285714
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 8000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        8.0,
+        12.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 9000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        7.111111111111111,
+        10.666666666666666
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 10000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        6.4,
+        9.6
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 11000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.818181818181818,
+        8.727272727272727
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 12000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.333333333333333,
+        8.0
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 13000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.923076923076923,
+        7.384615384615385
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 14000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.571428571428571,
+        6.857142857142857
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 16000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.0,
+        6.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 17000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        3.764705882352941,
+        5.647058823529412
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_6",
+      "deadline_s": 6,
+      "frequency_hz": 32000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        2.0,
+        3.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        10666.666666666666,
+        16000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 4000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        16.0,
+        24.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 5000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        12.8,
+        19.2
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 6000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        10.666666666666666,
+        16.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 7000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        9.142857142857142,
+        13.714285714285714
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 8000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        8.0,
+        12.0
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 9000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        7.111111111111111,
+        10.666666666666666
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 10000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        6.4,
+        9.6
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 11000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.818181818181818,
+        8.727272727272727
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 12000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.333333333333333,
+        8.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 13000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.923076923076923,
+        7.384615384615385
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 14000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.571428571428571,
+        6.857142857142857
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 16000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.0,
+        6.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 17000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        3.764705882352941,
+        5.647058823529412
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_8",
+      "deadline_s": 8,
+      "frequency_hz": 32000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        2.0,
+        3.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8000.0,
+        12000.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 4000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        16.0,
+        24.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 5000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        12.8,
+        19.2
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 6000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        10.666666666666666,
+        16.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 7000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        9.142857142857142,
+        13.714285714285714
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 8000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        8.0,
+        12.0
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 9000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        7.111111111111111,
+        10.666666666666666
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 10000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        6.4,
+        9.6
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 11000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.818181818181818,
+        8.727272727272727
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 12000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.333333333333333,
+        8.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 13000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.923076923076923,
+        7.384615384615385
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 14000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.571428571428571,
+        6.857142857142857
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 16000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.0,
+        6.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 17000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        3.764705882352941,
+        5.647058823529412
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_10",
+      "deadline_s": 10,
+      "frequency_hz": 32000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        2.0,
+        3.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        6400.0,
+        9600.0
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 4000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        16.0,
+        24.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 5000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        12.8,
+        19.2
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 6000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        10.666666666666666,
+        16.0
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 7000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        9.142857142857142,
+        13.714285714285714
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 8000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        8.0,
+        12.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 9000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        7.111111111111111,
+        10.666666666666666
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 10000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        6.4,
+        9.6
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 11000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.818181818181818,
+        8.727272727272727
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 12000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.333333333333333,
+        8.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 13000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.923076923076923,
+        7.384615384615385
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 14000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.571428571428571,
+        6.857142857142857
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 16000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.0,
+        6.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 17000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        3.764705882352941,
+        5.647058823529412
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "deadline_13",
+      "deadline_s": 13,
+      "frequency_hz": 32000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        2.0,
+        3.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        4923.076923076923,
+        7384.615384615385
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 4000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        16.0,
+        24.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 5000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        12.8,
+        19.2
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 6000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        10.666666666666666,
+        16.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 7000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        9.142857142857142,
+        13.714285714285714
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 8000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        8.0,
+        12.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 9000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        7.111111111111111,
+        10.666666666666666
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 10000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        6.4,
+        9.6
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 11000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.818181818181818,
+        8.727272727272727
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 12000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.333333333333333,
+        8.0
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 13000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.923076923076923,
+        7.384615384615385
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 14000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.571428571428571,
+        6.857142857142857
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 16000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.0,
+        6.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 17000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        3.764705882352941,
+        5.647058823529412
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_fixed",
+      "deadline_s": 7.648,
+      "frequency_hz": 32000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        2.0,
+        3.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 4000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        16.0,
+        24.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 5000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        12.8,
+        19.2
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 6000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        10.666666666666666,
+        16.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 7000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        9.142857142857142,
+        13.714285714285714
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 8000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        8.0,
+        12.0
+      ],
+      "ideal_classification": "all_reject",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 9000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        7.111111111111111,
+        10.666666666666666
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 10000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        6.4,
+        9.6
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 11000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.818181818181818,
+        8.727272727272727
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 12000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        5.333333333333333,
+        8.0
+      ],
+      "ideal_classification": "phase_dependent",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 13000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.923076923076923,
+        7.384615384615385
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 14000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.571428571428571,
+        6.857142857142857
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 16000,
+      "legal_control": false,
+      "ideal_arrival_band_s": [
+        4.0,
+        6.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 17000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        3.764705882352941,
+        5.647058823529412
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    },
+    {
+      "arm": "derived_poll",
+      "deadline_s": 7.648,
+      "frequency_hz": 32000,
+      "legal_control": true,
+      "ideal_arrival_band_s": [
+        2.0,
+        3.0
+      ],
+      "ideal_classification": "all_accept",
+      "actual_natural_phase_prediction": "unmeasured; no exact verdict prediction",
+      "ideal_boundary_band_hz": [
+        8368.200836820084,
+        12552.301255230126
+      ]
+    }
+  ]
+}
