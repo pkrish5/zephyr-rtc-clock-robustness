@@ -1,6 +1,6 @@
 # Clock-Sensitive Waits and Fault-Aware Repair in Zephyr RTC Tests
 
-> Current focused course paper: [manuscript v2 (2026-11-04)](https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-paper-2026-11-04-v2). The original evidence release is unchanged and contains an older PDF. See [claim audit](notes/course_subjects_2026-11-04_v1/CLAIM_AUDIT.md) and `make course-tables` for the subject-level revision.
+> Current course paper: [manuscript v5 source and PDF](paper/draft/main.pdf) (2026-11-21, not yet released), adding a natural-phase counter deadline sweep ([report](notes/counter_natural_recovery_2026-11-20_v1/report-3598828-v1/REPORT.md)). The latest released manuscript is [v4 (2026-11-12)](https://github.com/pkrish5/zephyr-rtc-clock-robustness/releases/tag/course-paper-2026-11-12-v4); the original evidence release is unchanged and contains an older PDF. `make course-tables` rebuilds every table and runs the [v5 claim audit](notes/manuscript_v5_2026-11-21_v1/CLAIM_AUDIT.md); `make counter-sweep` checks the sweep table alone.
 
 This repository accompanies [Clock-Sensitive Waits and Fault-Aware Repair in Zephyr RTC Tests](paper/draft/main.pdf). It contains the manuscript source, frozen protocols and prompts, all saved generated C test sources, experiment and analysis scripts, and non-binary run records.
 

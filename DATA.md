@@ -51,11 +51,12 @@ source excerpts needed for the final analyses. It excludes the SIF, full Zephyr
 checkout, caches and unrelated historical build trees. It is a new publication
 copy: no original data were removed or modified to create it.
 
-## Current manuscript v2 (2026-11-04)
+## Course manuscript tables and claim audit
 
 The original evidence release `course-submission-2026-11-03-v1` is immutable and
-contains an older PDF. The focused course manuscript and source are versioned
-separately as `course-paper-2026-11-04-v2`. The evidence archive and its pinned
+contains an older PDF. Course manuscripts are versioned separately
+(`course-paper-2026-11-04-v2` through `-v4` are released; the current v5 source
+in `paper/draft/` adds the natural-phase sweep and is not yet released). The evidence archive and its pinned
 SHA256 are unchanged. The eight detailed tables remain artifact tables; the
 current paper uses three readable views of the same reconciled records.
 
@@ -63,9 +64,14 @@ current paper uses three readable views of the same reconciled records.
 make course-tables EVIDENCE_ARCHIVE=/absolute/path/rtc-submission-evidence-v1.tar.gz
 ```
 
-This first runs the eight-table reproduction above, then builds the subject,
-repair-summary and expanded-scope views, hashes all 17,375 paired primary repair
-records, and runs the manuscript claim audit. It executes no firmware or Renode.
+This first runs the eight-table reproduction above and the counter-sweep check
+below, then builds the subject, repair-summary and expanded-scope views, hashes
+all 17,375 paired primary repair records, and runs the v5 manuscript claim audit
+(`notes/manuscript_v5_2026-11-21_v1/verify_manuscript_v5.py`). The audit checks
+each numeric claim against its source file and writes
+`claim_to_evidence_v5.csv` and `manuscript_numbers_v5.json` next to the script.
+Claims trimmed from the v5 text are still checked numerically and labelled
+"artifact only in v5". It executes no firmware or Renode.
 The versioned audit, subject identities, paired gains/losses and claim/column
 provenance are in `notes/course_subjects_2026-11-04_v1/`. All times are simulated
 seconds, oscillator inputs Hz (displayed kHz), and failure/detection cells counts,
@@ -77,6 +83,38 @@ recheck its raw files without modifying the historical summary, run
 `python3 notes/course_subjects_2026-11-04_v1/audit_hsi_context.py` before the claim
 audit. The committed read-only HSI audit output is included for reproducibility;
 the old HSI study is not rerun by either table command.
+
+## Counter deadline sweep (manuscript v5)
+
+```bash
+make counter-sweep
+```
+
+Re-runs `analyze_sweep.py` on the committed verified assessment of job 3598828,
+requires byte-identical `summary.json`, `primary_cells.csv` and
+`boundary_table.tex`, checks the 98 cited primary record hashes against
+`verified-3598828-v1/output/records/`, and checks
+`paper/draft/tables/counter_sweep_v1.tex`. It runs no firmware or Renode.
+
+- `notes/counter_natural_sweep_2026-11-19_v1/`: sealed protocol, predictions
+  (`PREDICTIONS.json`), costs and the failed first attempt 3596807 (metadata
+  defect; all 140 outcomes remain `missing`).
+- `notes/counter_natural_recovery_2026-11-20_v1/`: infrastructure-only rerun
+  3598828 with identical sources and builds. `report-3598828-v1/REPORT.md` is the
+  human summary; `primary_cells.csv` has one row per arm × rate (`arm`,
+  `frequency_hz`, `selected` pass/fail, `ideal_class` all_accept/all_reject/
+  phase_dependent, `record_sha256`, full-application case `pass/fail/skip/missing`
+  counts). Rates are oscillator inputs in Hz; 17 and 32 kHz are legal controls,
+  lower rates are out-of-envelope slow faults. Brackets are sampled outcomes,
+  not exact thresholds; phase was not measured.
+- `notes/counter_phase_qualification_2026-11-17_v1/`: failed controlled-phase
+  qualification 3589708 (`REPORT_3589708.md`, `timing_diagnosis_3589708_v1.json`:
+  9 of 42 arrivals outside the unchanged tolerance).
+
+Raw tarballs (`*.tar.gz`), full UART/trace/build outputs and the 8 MB
+protected-file snapshots are retained locally for the evidence release; their
+SHA256 values are in the committed `*.tar.gz.sha256`, manifests and
+`archive_verification.json` files.
 
 ## Complete file and field catalogue
 
