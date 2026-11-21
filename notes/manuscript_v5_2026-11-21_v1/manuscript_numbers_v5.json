@@ -922,7 +922,7 @@
       "claim": "Sweep predictions vs outcomes",
       "manuscript_tokens": [
         "All 38 predicted rejections fail and all 38 predicted acceptances pass",
-        "All 22 phase-dependent cells also fail",
+        "All 22 phase-dependent cells, all in the six lengthened waits, also fail",
         "All 76 sweep cells predicted"
       ],
       "source_sha256": {
@@ -951,6 +951,24 @@
           ],
           22
         ]
+      ]
+    },
+    {
+      "claim": "Lengthened-wait transitions imply >2.6--2.9 ticks",
+      "manuscript_tokens": [
+        "more than 2.6--2.9 ideal ticks",
+        "17--32-kHz bracket spans its whole band"
+      ],
+      "source_sha256": {
+        "notes/counter_natural_recovery_2026-11-20_v1/report-3598828-v1/summary.json": "2a8e613cf806b01de6d51dacb817aabd03d17a4efab61d148cad97f25ceeca3c"
+      },
+      "value": [
+        2.62,
+        2.87,
+        2.87,
+        2.75,
+        2.81,
+        2.84
       ]
     },
     {
@@ -1063,7 +1081,7 @@
       "manuscript_tokens": [
         "controlled-phase qualification (84 processes)",
         "9 of 42 timing diagnostics",
-        "up to 0.29 s late",
+        "all late, by 0.08--0.29 s",
         "We did not widen that tolerance"
       ],
       "source_sha256": {
@@ -1076,7 +1094,10 @@
         false,
         42,
         9,
-        0.29,
+        [
+          0.08,
+          0.29
+        ],
         true
       ]
     },
@@ -1099,8 +1120,8 @@
   ],
   "citation_keys_resolve": 17,
   "counter_table_hash_matches": true,
-  "manuscript_sha256": "b8cbf072a60d1ec69d40ce9aa9f570369d999bacbf1b1aa663d2dca74a3cb1b5",
-  "numeric_claims": 51,
+  "manuscript_sha256": "a52442a2acadd0c86e3f45e5c2d077a1f4fc6fb1b74bcad01e67182f094e0c6b",
+  "numeric_claims": 52,
   "original_table_hashes_match": 8,
   "raw_records_mutated": false,
   "readable_table_hashes_match": 3,
