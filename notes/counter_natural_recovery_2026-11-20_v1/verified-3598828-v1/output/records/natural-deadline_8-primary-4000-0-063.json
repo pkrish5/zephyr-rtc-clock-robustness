@@ -1,0 +1,121 @@
+{
+  "application_completed": true,
+  "apptainer_module": "tacc-apptainer/1.4.1",
+  "apptainer_version": "apptainer version 1.4.1-1.el8",
+  "board": "stm32f4_disco",
+  "board_id": "f4",
+  "build_record_sha256": "43ae6aff6bd2db2ab75f449c4320c4929c3957d7d15b46f315976dad7ad491a7",
+  "cases": [
+    {
+      "case": "counter_basic.test_all_channels",
+      "status": "fail"
+    },
+    {
+      "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_late_alarm",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_late_alarm_error",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_multiple_alarms",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_set_top_value_with_alarm",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "status": "fail"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_top",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_valid_function_without_alarm",
+      "status": "pass"
+    },
+    {
+      "case": "counter_no_callback.test_set_top_value_without_alarm",
+      "status": "skip"
+    }
+  ],
+  "condition": "primary-4000-0",
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "duplicate_cases": [],
+  "elf_sha256": "5586dc98980f3b48c58e8f042cd6226581766fa030aa929ae67d2f503ba86d64",
+  "error": null,
+  "expected_declared_cases": [
+    "counter_basic.test_set_top_value_with_alarm",
+    "counter_no_callback.test_set_top_value_without_alarm",
+    "counter_basic.test_single_shot_alarm_notop",
+    "counter_basic.test_single_shot_alarm_top",
+    "counter_basic.test_multiple_alarms",
+    "counter_basic.test_all_channels",
+    "counter_basic.test_valid_function_without_alarm",
+    "counter_basic.test_late_alarm",
+    "counter_basic.test_late_alarm_error",
+    "counter_basic.test_short_relative_alarm",
+    "counter_basic.test_cancelled_alarm_does_not_expire"
+  ],
+  "family": "counter",
+  "frequency_hz": 4000,
+  "index": 63,
+  "launcher_module": "launcher/3.10",
+  "log_sha256": {
+    "monitor": "ad4a3638699a923603a9236f13b6a2bc4e3de979a1085b711d7a7b1002089df7",
+    "traces": "402e803d724ae0a008f0f4d513a5f8ffb79ff27f5740945acd746322de5f8c81",
+    "uart": "0abda76607caca487095c130aa4e0502f3e35b63d029cb77677904bea78ea1dd"
+  },
+  "missing_cases": [],
+  "natural_execution_sha256": "09acb18ce6af1121ec08a40d0f73f04878887025e7f182ae7b549924ac58a82c",
+  "node_name": "c314-104.ls6.tacc.utexas.edu",
+  "observer": false,
+  "outcome": "complete",
+  "phase_control": false,
+  "plan_sha256": "10e9b9d86b517925e90b494070e9a4de6d201f6e9e87e8e51ad7bba93cef7f60",
+  "platform_sha256": "9d35aaaa7d1484a773357985346e18353f3ea33404e46166512caa796d5af16f",
+  "registers": [
+    {
+      "dbg_idcode": 268461073,
+      "rtc_prer": 8323321,
+      "systick_property_error": "Renode command failed: nvic SystickFrequency\nnvic SystickFrequency\n\n\nThere was an error executing command 'nvic SystickFrequency': \n\n\nsysbus.nvic does not provide a field, method or property SystickFrequency.\n\n\n",
+      "virtual_ns": 500000000
+    },
+    {
+      "dbg_idcode": 268461073,
+      "rtc_prer": 0,
+      "systick_property_error": "Renode command failed: nvic SystickFrequency\nnvic SystickFrequency\n\n\nThere was an error executing command 'nvic SystickFrequency': \n\n\nsysbus.nvic does not provide a field, method or property SystickFrequency.\n\n\n",
+      "virtual_ns": 11000000000
+    }
+  ],
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "repeat": 0,
+  "reset_waits": 0,
+  "rtc_divider_observations": [
+    32000,
+    1
+  ],
+  "run_id": "natural-deadline_8-primary-4000-0-063",
+  "slurm_job_id": "3598828",
+  "slurm_partition": "normal",
+  "stage": "primary",
+  "suite_starts": 2,
+  "timestamp_utc": "2026-11-20T16:33:42.472310+00:00",
+  "unit_id": "natural-deadline_8",
+  "variant": "deadline_8",
+  "virtual_ns": 11000000000,
+  "wall_seconds": 46.77,
+  "watchdog_reboot_and_completion": null
+}

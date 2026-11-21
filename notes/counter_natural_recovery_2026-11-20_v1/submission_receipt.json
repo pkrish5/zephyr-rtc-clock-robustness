@@ -1,0 +1,14 @@
+{
+  "job_id": "3598828",
+  "state": "accepted",
+  "submission_commit": "3dd3927a2808727a4556ce9b93fb7fe8421e480f",
+  "reservation_su": 36,
+  "study_total_ceiling_su": 50,
+  "prior_conservative_debit_su": 10,
+  "total_conservative_commitment_su": 46,
+  "remaining_su": 4,
+  "source": "Returned exclusive remote receipt and intent verified",
+  "time_utc": "2026-11-20T15:46:49.947171+00:00",
+  "receipt_transfer_state": "complete",
+  "latest_verified_job_state": "RUNNING"
+}

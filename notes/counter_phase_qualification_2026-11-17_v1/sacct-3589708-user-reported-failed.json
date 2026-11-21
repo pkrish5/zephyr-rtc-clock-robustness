@@ -1,0 +1,12 @@
+{
+  "job_id": "3589708",
+  "state": "FAILED",
+  "exit_code": "1:0",
+  "start": "2026-11-17T13:10:54",
+  "elapsed": "00:54:33",
+  "source": "user-pasted sacct output; remote independently verified state pending access restoration",
+  "duplicate_pasted_lines_are_one_job": true,
+  "qualification_passed": false,
+  "cause": "not yet determined",
+  "resubmitted": false
+}

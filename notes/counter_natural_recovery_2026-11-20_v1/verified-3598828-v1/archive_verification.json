@@ -1,0 +1,13 @@
+{
+  "job_id": "3598828",
+  "output_state": "complete",
+  "archive_sha256": "865c7636fed489d64407e9a84cb8cb8c99a90cb0b1f1a09b62cebfe98a7fa276",
+  "archive_entries": 1126,
+  "exact_inventory": true,
+  "protection_complete": true,
+  "protected_stages": {
+    "before": true,
+    "after": true
+  },
+  "scientific_gate_evaluated": false
+}

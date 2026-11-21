@@ -1,0 +1,1896 @@
+{
+  "scientific_gate_passed": false,
+  "records_reconstructed": false,
+  "rows": [
+    {
+      "index": 0,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 1,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 2,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 3,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 4,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 5,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 6,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 7,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 8,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 9,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 10,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 11,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 12,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 13,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 14,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 15,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 16,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 17,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 18,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 19,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 20,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 21,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 22,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 23,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 24,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 25,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 26,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 27,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 28,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 29,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 30,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 31,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 32,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 33,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    },
+    {
+      "index": 34,
+      "cases": [
+        {
+          "case": "counter_basic.test_all_channels",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_late_alarm_error",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_multiple_alarms",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_set_top_value_with_alarm",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_short_relative_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_notop",
+          "status": "pass"
+        },
+        {
+          "case": "counter_basic.test_single_shot_alarm_top",
+          "status": "skip"
+        },
+        {
+          "case": "counter_basic.test_valid_function_without_alarm",
+          "status": "pass"
+        },
+        {
+          "case": "counter_no_callback.test_set_top_value_without_alarm",
+          "status": "skip"
+        }
+      ],
+      "trace_complete": true,
+      "trace_outcome": "complete",
+      "trace_error": null,
+      "record_missing": true,
+      "process_exit": 1
+    }
+  ]
+}

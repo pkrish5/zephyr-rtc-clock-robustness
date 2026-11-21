@@ -1,0 +1,15 @@
+{
+  "job_id": "3598828",
+  "state": "RUNNING",
+  "exit_code": "0:0",
+  "elapsed": "00:10:18",
+  "start": "2026-11-20T09:41:56",
+  "end": "Unknown",
+  "checked_utc": "2026-11-20T15:53:03.737101+00:00",
+  "source": "bounded BatchMode sacct -X",
+  "input_guard_passed": true,
+  "active_seals": 764,
+  "saved_run_records_at_progress_check": 0,
+  "nominal_gate": "not yet complete",
+  "coordinator_stderr": "empty"
+}

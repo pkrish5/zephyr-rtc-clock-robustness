@@ -1,0 +1,9 @@
+{
+  "time_utc": "2026-11-20T15:47:42.553624+00:00",
+  "job_id": "3598828",
+  "submission_accepted": true,
+  "remote_retries_paused": true,
+  "reason": "receipt transfer timed out; broken pipe then authentication denied",
+  "remote_job_state": "unknown",
+  "resubmission_forbidden": true
+}

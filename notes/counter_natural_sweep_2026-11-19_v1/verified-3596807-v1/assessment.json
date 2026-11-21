@@ -1,0 +1,3142 @@
+{
+  "qualified": false,
+  "rows": [
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 0,
+        "repeat": 0,
+        "stage": "nominal",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-nominal-32000-0-000.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-1",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 1,
+        "repeat": 1,
+        "stage": "nominal",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-nominal-32000-1-001.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-2",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 2,
+        "repeat": 2,
+        "stage": "nominal",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-nominal-32000-2-002.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-3",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 3,
+        "repeat": 3,
+        "stage": "nominal",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-nominal-32000-3-003.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-4",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 4,
+        "repeat": 4,
+        "stage": "nominal",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-nominal-32000-4-004.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 5,
+        "repeat": 0,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-nominal-32000-0-005.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-1",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 6,
+        "repeat": 1,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-nominal-32000-1-006.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-2",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 7,
+        "repeat": 2,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-nominal-32000-2-007.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-3",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 8,
+        "repeat": 3,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-nominal-32000-3-008.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-4",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 9,
+        "repeat": 4,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-nominal-32000-4-009.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 10,
+        "repeat": 0,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-nominal-32000-0-010.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-1",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 11,
+        "repeat": 1,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-nominal-32000-1-011.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-2",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 12,
+        "repeat": 2,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-nominal-32000-2-012.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-3",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 13,
+        "repeat": 3,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-nominal-32000-3-013.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-4",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 14,
+        "repeat": 4,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-nominal-32000-4-014.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 15,
+        "repeat": 0,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-nominal-32000-0-015.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-1",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 16,
+        "repeat": 1,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-nominal-32000-1-016.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-2",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 17,
+        "repeat": 2,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-nominal-32000-2-017.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-3",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 18,
+        "repeat": 3,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-nominal-32000-3-018.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-4",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 19,
+        "repeat": 4,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-nominal-32000-4-019.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 20,
+        "repeat": 0,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-nominal-32000-0-020.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-1",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 21,
+        "repeat": 1,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-nominal-32000-1-021.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-2",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 22,
+        "repeat": 2,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-nominal-32000-2-022.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-3",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 23,
+        "repeat": 3,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-nominal-32000-3-023.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-4",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 24,
+        "repeat": 4,
+        "stage": "nominal",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-nominal-32000-4-024.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 25,
+        "repeat": 0,
+        "stage": "nominal",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-nominal-32000-0-025.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-1",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 26,
+        "repeat": 1,
+        "stage": "nominal",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-nominal-32000-1-026.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-2",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 27,
+        "repeat": 2,
+        "stage": "nominal",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-nominal-32000-2-027.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-3",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 28,
+        "repeat": 3,
+        "stage": "nominal",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-nominal-32000-3-028.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-4",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 29,
+        "repeat": 4,
+        "stage": "nominal",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-nominal-32000-4-029.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 30,
+        "repeat": 0,
+        "stage": "nominal",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-nominal-32000-0-030.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-1",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 31,
+        "repeat": 1,
+        "stage": "nominal",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-nominal-32000-1-031.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-2",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 32,
+        "repeat": 2,
+        "stage": "nominal",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-nominal-32000-2-032.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-3",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 33,
+        "repeat": 3,
+        "stage": "nominal",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-nominal-32000-3-033.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "nominal-32000-4",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 34,
+        "repeat": 4,
+        "stage": "nominal",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-nominal-32000-4-034.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-4000-0",
+        "family": "counter",
+        "frequency_hz": 4000,
+        "index": 35,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-4000-0-035.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-5000-0",
+        "family": "counter",
+        "frequency_hz": 5000,
+        "index": 36,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-5000-0-036.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-6000-0",
+        "family": "counter",
+        "frequency_hz": 6000,
+        "index": 37,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-6000-0-037.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-7000-0",
+        "family": "counter",
+        "frequency_hz": 7000,
+        "index": 38,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-7000-0-038.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-8000-0",
+        "family": "counter",
+        "frequency_hz": 8000,
+        "index": 39,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-8000-0-039.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-9000-0",
+        "family": "counter",
+        "frequency_hz": 9000,
+        "index": 40,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-9000-0-040.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 41,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-10000-0-041.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-11000-0",
+        "family": "counter",
+        "frequency_hz": 11000,
+        "index": 42,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-11000-0-042.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-12000-0",
+        "family": "counter",
+        "frequency_hz": 12000,
+        "index": 43,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-12000-0-043.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-13000-0",
+        "family": "counter",
+        "frequency_hz": 13000,
+        "index": 44,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-13000-0-044.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-14000-0",
+        "family": "counter",
+        "frequency_hz": 14000,
+        "index": 45,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-14000-0-045.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-16000-0",
+        "family": "counter",
+        "frequency_hz": 16000,
+        "index": 46,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-16000-0-046.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-17000-0",
+        "family": "counter",
+        "frequency_hz": 17000,
+        "index": 47,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-17000-0-047.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 48,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-primary-32000-0-048.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-4000-0",
+        "family": "counter",
+        "frequency_hz": 4000,
+        "index": 49,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-4000-0-049.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-5000-0",
+        "family": "counter",
+        "frequency_hz": 5000,
+        "index": 50,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-5000-0-050.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-6000-0",
+        "family": "counter",
+        "frequency_hz": 6000,
+        "index": 51,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-6000-0-051.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-7000-0",
+        "family": "counter",
+        "frequency_hz": 7000,
+        "index": 52,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-7000-0-052.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-8000-0",
+        "family": "counter",
+        "frequency_hz": 8000,
+        "index": 53,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-8000-0-053.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-9000-0",
+        "family": "counter",
+        "frequency_hz": 9000,
+        "index": 54,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-9000-0-054.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 55,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-10000-0-055.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-11000-0",
+        "family": "counter",
+        "frequency_hz": 11000,
+        "index": 56,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-11000-0-056.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-12000-0",
+        "family": "counter",
+        "frequency_hz": 12000,
+        "index": 57,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-12000-0-057.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-13000-0",
+        "family": "counter",
+        "frequency_hz": 13000,
+        "index": 58,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-13000-0-058.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-14000-0",
+        "family": "counter",
+        "frequency_hz": 14000,
+        "index": 59,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-14000-0-059.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-16000-0",
+        "family": "counter",
+        "frequency_hz": 16000,
+        "index": 60,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-16000-0-060.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-17000-0",
+        "family": "counter",
+        "frequency_hz": 17000,
+        "index": 61,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-17000-0-061.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 62,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-primary-32000-0-062.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-4000-0",
+        "family": "counter",
+        "frequency_hz": 4000,
+        "index": 63,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-4000-0-063.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-5000-0",
+        "family": "counter",
+        "frequency_hz": 5000,
+        "index": 64,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-5000-0-064.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-6000-0",
+        "family": "counter",
+        "frequency_hz": 6000,
+        "index": 65,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-6000-0-065.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-7000-0",
+        "family": "counter",
+        "frequency_hz": 7000,
+        "index": 66,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-7000-0-066.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-8000-0",
+        "family": "counter",
+        "frequency_hz": 8000,
+        "index": 67,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-8000-0-067.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-9000-0",
+        "family": "counter",
+        "frequency_hz": 9000,
+        "index": 68,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-9000-0-068.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 69,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-10000-0-069.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-11000-0",
+        "family": "counter",
+        "frequency_hz": 11000,
+        "index": 70,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-11000-0-070.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-12000-0",
+        "family": "counter",
+        "frequency_hz": 12000,
+        "index": 71,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-12000-0-071.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-13000-0",
+        "family": "counter",
+        "frequency_hz": 13000,
+        "index": 72,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-13000-0-072.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-14000-0",
+        "family": "counter",
+        "frequency_hz": 14000,
+        "index": 73,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-14000-0-073.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-16000-0",
+        "family": "counter",
+        "frequency_hz": 16000,
+        "index": 74,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-16000-0-074.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-17000-0",
+        "family": "counter",
+        "frequency_hz": 17000,
+        "index": 75,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-17000-0-075.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 76,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-primary-32000-0-076.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-4000-0",
+        "family": "counter",
+        "frequency_hz": 4000,
+        "index": 77,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-4000-0-077.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-5000-0",
+        "family": "counter",
+        "frequency_hz": 5000,
+        "index": 78,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-5000-0-078.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-6000-0",
+        "family": "counter",
+        "frequency_hz": 6000,
+        "index": 79,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-6000-0-079.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-7000-0",
+        "family": "counter",
+        "frequency_hz": 7000,
+        "index": 80,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-7000-0-080.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-8000-0",
+        "family": "counter",
+        "frequency_hz": 8000,
+        "index": 81,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-8000-0-081.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-9000-0",
+        "family": "counter",
+        "frequency_hz": 9000,
+        "index": 82,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-9000-0-082.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 83,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-10000-0-083.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-11000-0",
+        "family": "counter",
+        "frequency_hz": 11000,
+        "index": 84,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-11000-0-084.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-12000-0",
+        "family": "counter",
+        "frequency_hz": 12000,
+        "index": 85,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-12000-0-085.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-13000-0",
+        "family": "counter",
+        "frequency_hz": 13000,
+        "index": 86,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-13000-0-086.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-14000-0",
+        "family": "counter",
+        "frequency_hz": 14000,
+        "index": 87,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-14000-0-087.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-16000-0",
+        "family": "counter",
+        "frequency_hz": 16000,
+        "index": 88,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-16000-0-088.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-17000-0",
+        "family": "counter",
+        "frequency_hz": 17000,
+        "index": 89,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-17000-0-089.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 90,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-primary-32000-0-090.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-4000-0",
+        "family": "counter",
+        "frequency_hz": 4000,
+        "index": 91,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-4000-0-091.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-5000-0",
+        "family": "counter",
+        "frequency_hz": 5000,
+        "index": 92,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-5000-0-092.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-6000-0",
+        "family": "counter",
+        "frequency_hz": 6000,
+        "index": 93,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-6000-0-093.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-7000-0",
+        "family": "counter",
+        "frequency_hz": 7000,
+        "index": 94,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-7000-0-094.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-8000-0",
+        "family": "counter",
+        "frequency_hz": 8000,
+        "index": 95,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-8000-0-095.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-9000-0",
+        "family": "counter",
+        "frequency_hz": 9000,
+        "index": 96,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-9000-0-096.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 97,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-10000-0-097.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-11000-0",
+        "family": "counter",
+        "frequency_hz": 11000,
+        "index": 98,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-11000-0-098.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-12000-0",
+        "family": "counter",
+        "frequency_hz": 12000,
+        "index": 99,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-12000-0-099.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-13000-0",
+        "family": "counter",
+        "frequency_hz": 13000,
+        "index": 100,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-13000-0-100.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-14000-0",
+        "family": "counter",
+        "frequency_hz": 14000,
+        "index": 101,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-14000-0-101.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-16000-0",
+        "family": "counter",
+        "frequency_hz": 16000,
+        "index": 102,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-16000-0-102.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-17000-0",
+        "family": "counter",
+        "frequency_hz": 17000,
+        "index": 103,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-17000-0-103.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 104,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-primary-32000-0-104.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-4000-0",
+        "family": "counter",
+        "frequency_hz": 4000,
+        "index": 105,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-4000-0-105.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-5000-0",
+        "family": "counter",
+        "frequency_hz": 5000,
+        "index": 106,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-5000-0-106.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-6000-0",
+        "family": "counter",
+        "frequency_hz": 6000,
+        "index": 107,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-6000-0-107.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-7000-0",
+        "family": "counter",
+        "frequency_hz": 7000,
+        "index": 108,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-7000-0-108.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-8000-0",
+        "family": "counter",
+        "frequency_hz": 8000,
+        "index": 109,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-8000-0-109.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-9000-0",
+        "family": "counter",
+        "frequency_hz": 9000,
+        "index": 110,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-9000-0-110.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 111,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-10000-0-111.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-11000-0",
+        "family": "counter",
+        "frequency_hz": 11000,
+        "index": 112,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-11000-0-112.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-12000-0",
+        "family": "counter",
+        "frequency_hz": 12000,
+        "index": 113,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-12000-0-113.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-13000-0",
+        "family": "counter",
+        "frequency_hz": 13000,
+        "index": 114,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-13000-0-114.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-14000-0",
+        "family": "counter",
+        "frequency_hz": 14000,
+        "index": 115,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-14000-0-115.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-16000-0",
+        "family": "counter",
+        "frequency_hz": 16000,
+        "index": 116,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-16000-0-116.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-17000-0",
+        "family": "counter",
+        "frequency_hz": 17000,
+        "index": 117,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-17000-0-117.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 118,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-primary-32000-0-118.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-4000-0",
+        "family": "counter",
+        "frequency_hz": 4000,
+        "index": 119,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-4000-0-119.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-5000-0",
+        "family": "counter",
+        "frequency_hz": 5000,
+        "index": 120,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-5000-0-120.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-6000-0",
+        "family": "counter",
+        "frequency_hz": 6000,
+        "index": 121,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-6000-0-121.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-7000-0",
+        "family": "counter",
+        "frequency_hz": 7000,
+        "index": 122,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-7000-0-122.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-8000-0",
+        "family": "counter",
+        "frequency_hz": 8000,
+        "index": 123,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-8000-0-123.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-9000-0",
+        "family": "counter",
+        "frequency_hz": 9000,
+        "index": 124,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-9000-0-124.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 125,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-10000-0-125.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-11000-0",
+        "family": "counter",
+        "frequency_hz": 11000,
+        "index": 126,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-11000-0-126.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-12000-0",
+        "family": "counter",
+        "frequency_hz": 12000,
+        "index": 127,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-12000-0-127.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-13000-0",
+        "family": "counter",
+        "frequency_hz": 13000,
+        "index": 128,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-13000-0-128.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-14000-0",
+        "family": "counter",
+        "frequency_hz": 14000,
+        "index": 129,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-14000-0-129.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-16000-0",
+        "family": "counter",
+        "frequency_hz": 16000,
+        "index": 130,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-16000-0-130.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-17000-0",
+        "family": "counter",
+        "frequency_hz": 17000,
+        "index": 131,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-17000-0-131.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "primary-32000-0",
+        "family": "counter",
+        "frequency_hz": 32000,
+        "index": 132,
+        "repeat": 0,
+        "stage": "primary",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-primary-32000-0-132.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "diagnostic_replay-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 133,
+        "repeat": 0,
+        "stage": "diagnostic_replay",
+        "unit_id": "natural-original",
+        "variant": "original"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-original-diagnostic_replay-10000-0-133.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "diagnostic_replay-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 134,
+        "repeat": 0,
+        "stage": "diagnostic_replay",
+        "unit_id": "natural-deadline_6",
+        "variant": "deadline_6"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_6-diagnostic_replay-10000-0-134.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "diagnostic_replay-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 135,
+        "repeat": 0,
+        "stage": "diagnostic_replay",
+        "unit_id": "natural-deadline_8",
+        "variant": "deadline_8"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_8-diagnostic_replay-10000-0-135.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "diagnostic_replay-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 136,
+        "repeat": 0,
+        "stage": "diagnostic_replay",
+        "unit_id": "natural-deadline_10",
+        "variant": "deadline_10"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_10-diagnostic_replay-10000-0-136.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "diagnostic_replay-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 137,
+        "repeat": 0,
+        "stage": "diagnostic_replay",
+        "unit_id": "natural-deadline_13",
+        "variant": "deadline_13"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-deadline_13-diagnostic_replay-10000-0-137.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "diagnostic_replay-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 138,
+        "repeat": 0,
+        "stage": "diagnostic_replay",
+        "unit_id": "natural-derived_fixed",
+        "variant": "derived_fixed"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_fixed-diagnostic_replay-10000-0-138.json'"
+    },
+    {
+      "task": {
+        "board_id": "f4",
+        "condition": "diagnostic_replay-10000-0",
+        "family": "counter",
+        "frequency_hz": 10000,
+        "index": 139,
+        "repeat": 0,
+        "stage": "diagnostic_replay",
+        "unit_id": "natural-derived_poll",
+        "variant": "derived_poll"
+      },
+      "integrity": false,
+      "selected": "missing",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skip": 0,
+        "missing": 11
+      },
+      "audit_error": "FileNotFoundError: [Errno 2] No such file or directory: 'notes/counter_natural_sweep_2026-11-19_v1/verified-3596807-v1/output/records/natural-derived_poll-diagnostic_replay-10000-0-139.json'"
+    }
+  ],
+  "replay_comparisons": [
+    {
+      "unit_id": "natural-original",
+      "agreement": false
+    },
+    {
+      "unit_id": "natural-deadline_6",
+      "agreement": false
+    },
+    {
+      "unit_id": "natural-deadline_8",
+      "agreement": false
+    },
+    {
+      "unit_id": "natural-deadline_10",
+      "agreement": false
+    },
+    {
+      "unit_id": "natural-deadline_13",
+      "agreement": false
+    },
+    {
+      "unit_id": "natural-derived_fixed",
+      "agreement": false
+    },
+    {
+      "unit_id": "natural-derived_poll",
+      "agreement": false
+    }
+  ],
+  "primary_replaced_by_replay": false,
+  "archive": {
+    "job_id": "3596807",
+    "output_state": "failed",
+    "archive_sha256": "864806b1d6e66bef51686c3998ae04aecce735f2cf0e8753c020c799a8a93bd8",
+    "archive_entries": 366,
+    "exact_inventory": true,
+    "protection_complete": true,
+    "protected_stages": {
+      "before": true,
+      "after": true
+    },
+    "scientific_gate_evaluated": false
+  },
+  "sacct": {
+    "job_id": "3596807",
+    "state": "FAILED",
+    "exit_code": "1:0",
+    "elapsed": "00:48:08",
+    "start": "2026-11-19T14:36:22",
+    "end": "2026-11-19T15:24:30",
+    "source": "bounded BatchMode sacct -X",
+    "checked_utc": "2026-11-20T14:56:04.888537+00:00"
+  },
+  "input_guards": true,
+  "job_id": "3596807",
+  "verified_complete": false
+}

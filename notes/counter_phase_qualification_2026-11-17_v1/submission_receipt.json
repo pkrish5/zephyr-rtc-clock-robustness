@@ -1,0 +1,11 @@
+{
+  "job_id": "3589708",
+  "state": "accepted",
+  "submission_commit": "6053b004f3738800272a25ac2301c5e194909391",
+  "execution_sha256": "9a96e96c93ff4bf79bcc30756cba98a66f81084fa6b81e8b9cc969519d754d95",
+  "receipt": "submission-returned-v1/submission.json",
+  "reservation_su": 2,
+  "total_study_ceiling_su": 50,
+  "prior_conservative_debit_su": 2,
+  "remaining_uncommitted_su": 46
+}

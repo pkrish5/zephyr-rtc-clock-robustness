@@ -1,0 +1,12 @@
+{
+  "job_id": "3589708",
+  "state": "PENDING",
+  "exit_code": "0:0",
+  "elapsed": "00:00:00",
+  "start": "Unknown",
+  "end": "Unknown",
+  "check_time_utc": "2026-11-17T19:10:02.746782+00:00",
+  "source": "bounded BatchMode sacct -X",
+  "account": "ccr26073",
+  "partition": "development"
+}

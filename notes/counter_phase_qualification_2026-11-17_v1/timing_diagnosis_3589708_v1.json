@@ -1,0 +1,1077 @@
+{
+  "raw_data_modified": false,
+  "tolerances_unchanged": true,
+  "rows": [
+    {
+      "index": 1,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 2.8999835,
+      "predicted_s": 2.9,
+      "error_s": -1.650000000008589e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 3,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 2.548025625,
+      "predicted_s": 2.548,
+      "error_s": 2.562500000014012e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 5,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 2.0999735,
+      "predicted_s": 2.1,
+      "error_s": -2.6500000000151402e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 7,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 2.899984,
+      "predicted_s": 2.9,
+      "error_s": -1.6000000000016e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 9,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 2.54802225,
+      "predicted_s": 2.548,
+      "error_s": 2.224999999977939e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 11,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 2.09997425,
+      "predicted_s": 2.1,
+      "error_s": -2.5750000000268614e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 13,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 2.899984,
+      "predicted_s": 2.9,
+      "error_s": -1.6000000000016e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 15,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 2.54802225,
+      "predicted_s": 2.548,
+      "error_s": 2.224999999977939e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 17,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 2.09997425,
+      "predicted_s": 2.1,
+      "error_s": -2.5750000000268614e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 19,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 2.899984,
+      "predicted_s": 2.9,
+      "error_s": -1.6000000000016e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 21,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 2.54802225,
+      "predicted_s": 2.548,
+      "error_s": 2.224999999977939e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 23,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 2.09997425,
+      "predicted_s": 2.1,
+      "error_s": -2.5750000000268614e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 25,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 2.899984,
+      "predicted_s": 2.9,
+      "error_s": -1.6000000000016e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 27,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 2.54802225,
+      "predicted_s": 2.548,
+      "error_s": 2.224999999977939e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 29,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 2.09997425,
+      "predicted_s": 2.1,
+      "error_s": -2.5750000000268614e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 31,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 2.899984,
+      "predicted_s": 2.9,
+      "error_s": -1.6000000000016e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 33,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 2.54802225,
+      "predicted_s": 2.548,
+      "error_s": 2.224999999977939e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 35,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 2.09997425,
+      "predicted_s": 2.1,
+      "error_s": -2.5750000000268614e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 37,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 2.8999135,
+      "predicted_s": 2.9,
+      "error_s": -8.650000000010039e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 39,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 2.548017125,
+      "predicted_s": 2.548,
+      "error_s": 1.7124999999840185e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 41,
+      "stage": "nominal",
+      "frequency_hz": 32000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 2.099969375,
+      "predicted_s": 2.1,
+      "error_s": -3.062499999995083e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 42,
+      "stage": "timing",
+      "frequency_hz": 4000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 23.387040375,
+      "predicted_s": 23.2,
+      "error_s": 0.18704037500000226,
+      "tolerance_s": 0.18,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": false
+      }
+    },
+    {
+      "index": 43,
+      "stage": "timing",
+      "frequency_hz": 4000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 20.548332625,
+      "predicted_s": 20.384,
+      "error_s": 0.16433262500000012,
+      "tolerance_s": 0.18,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 44,
+      "stage": "timing",
+      "frequency_hz": 4000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 16.93542675,
+      "predicted_s": 16.8,
+      "error_s": 0.1354267500000006,
+      "tolerance_s": 0.18,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 45,
+      "stage": "timing",
+      "frequency_hz": 5000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 18.5897615,
+      "predicted_s": 18.56,
+      "error_s": 0.029761500000002883,
+      "tolerance_s": 0.148,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 46,
+      "stage": "timing",
+      "frequency_hz": 5000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 16.33327825,
+      "predicted_s": 16.3072,
+      "error_s": 0.026078249999997638,
+      "tolerance_s": 0.148,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 47,
+      "stage": "timing",
+      "frequency_hz": 5000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 13.46153275,
+      "predicted_s": 13.440000000000001,
+      "error_s": 0.021532749999998657,
+      "tolerance_s": 0.148,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 48,
+      "stage": "timing",
+      "frequency_hz": 6000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 15.760856,
+      "predicted_s": 15.466666666666665,
+      "error_s": 0.2941893333333354,
+      "tolerance_s": 0.12666666666666665,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": false
+      }
+    },
+    {
+      "index": 49,
+      "stage": "timing",
+      "frequency_hz": 6000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 13.8477555,
+      "predicted_s": 13.589333333333332,
+      "error_s": 0.2584221666666675,
+      "tolerance_s": 0.12666666666666665,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": false
+      }
+    },
+    {
+      "index": 50,
+      "stage": "timing",
+      "frequency_hz": 6000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 11.4130145,
+      "predicted_s": 11.2,
+      "error_s": 0.21301449999999988,
+      "tolerance_s": 0.12666666666666665,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": false
+      }
+    },
+    {
+      "index": 51,
+      "stage": "timing",
+      "frequency_hz": 7000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 13.4258665,
+      "predicted_s": 13.257142857142856,
+      "error_s": 0.16872364285714347,
+      "tolerance_s": 0.11142857142857143,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": false
+      }
+    },
+    {
+      "index": 52,
+      "stage": "timing",
+      "frequency_hz": 7000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 11.796249875,
+      "predicted_s": 11.648,
+      "error_s": 0.1482498750000012,
+      "tolerance_s": 0.11142857142857143,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": false
+      }
+    },
+    {
+      "index": 53,
+      "stage": "timing",
+      "frequency_hz": 7000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 9.72213825,
+      "predicted_s": 9.6,
+      "error_s": 0.12213825000000078,
+      "tolerance_s": 0.11142857142857143,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": false
+      }
+    },
+    {
+      "index": 54,
+      "stage": "timing",
+      "frequency_hz": 8000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 11.693576875,
+      "predicted_s": 11.6,
+      "error_s": 0.09357687500000011,
+      "tolerance_s": 0.1,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 55,
+      "stage": "timing",
+      "frequency_hz": 8000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 10.274181875,
+      "predicted_s": 10.192,
+      "error_s": 0.08218187499999985,
+      "tolerance_s": 0.1,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 56,
+      "stage": "timing",
+      "frequency_hz": 8000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 8.46776075,
+      "predicted_s": 8.4,
+      "error_s": 0.0677607499999997,
+      "tolerance_s": 0.1,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 57,
+      "stage": "timing",
+      "frequency_hz": 9000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 10.357137625,
+      "predicted_s": 10.31111111111111,
+      "error_s": 0.04602651388889001,
+      "tolerance_s": 0.09111111111111111,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 58,
+      "stage": "timing",
+      "frequency_hz": 9000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 9.099967875,
+      "predicted_s": 9.059555555555555,
+      "error_s": 0.0404123194444459,
+      "tolerance_s": 0.09111111111111111,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 59,
+      "stage": "timing",
+      "frequency_hz": 9000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 7.499960875,
+      "predicted_s": 7.466666666666667,
+      "error_s": 0.03329420833333341,
+      "tolerance_s": 0.09111111111111111,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 60,
+      "stage": "timing",
+      "frequency_hz": 10000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 9.294866125,
+      "predicted_s": 9.28,
+      "error_s": 0.014866125000001063,
+      "tolerance_s": 0.084,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 61,
+      "stage": "timing",
+      "frequency_hz": 10000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 8.166611625,
+      "predicted_s": 8.1536,
+      "error_s": 0.013011624999998972,
+      "tolerance_s": 0.084,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 62,
+      "stage": "timing",
+      "frequency_hz": 10000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 6.73072525,
+      "predicted_s": 6.720000000000001,
+      "error_s": 0.010725249999999242,
+      "tolerance_s": 0.084,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 63,
+      "stage": "timing",
+      "frequency_hz": 11000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 8.52943275,
+      "predicted_s": 8.436363636363636,
+      "error_s": 0.09306911363636416,
+      "tolerance_s": 0.07818181818181819,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": false
+      }
+    },
+    {
+      "index": 64,
+      "stage": "timing",
+      "frequency_hz": 11000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 7.49409575,
+      "predicted_s": 7.4123636363636365,
+      "error_s": 0.08173211363636312,
+      "tolerance_s": 0.07818181818181819,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": false
+      }
+    },
+    {
+      "index": 65,
+      "stage": "timing",
+      "frequency_hz": 11000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 6.176488625,
+      "predicted_s": 6.109090909090909,
+      "error_s": 0.06739771590909083,
+      "tolerance_s": 0.07818181818181819,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 66,
+      "stage": "timing",
+      "frequency_hz": 12000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 7.795629625,
+      "predicted_s": 7.7333333333333325,
+      "error_s": 0.062296291666667614,
+      "tolerance_s": 0.07333333333333333,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 67,
+      "stage": "timing",
+      "frequency_hz": 12000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 6.8493895,
+      "predicted_s": 6.794666666666666,
+      "error_s": 0.05472283333333383,
+      "tolerance_s": 0.07333333333333333,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 68,
+      "stage": "timing",
+      "frequency_hz": 12000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 5.64517075,
+      "predicted_s": 5.6,
+      "error_s": 0.04517075000000048,
+      "tolerance_s": 0.07333333333333333,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 69,
+      "stage": "timing",
+      "frequency_hz": 13000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 7.178138875,
+      "predicted_s": 7.138461538461539,
+      "error_s": 0.03967733653846128,
+      "tolerance_s": 0.06923076923076923,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 70,
+      "stage": "timing",
+      "frequency_hz": 13000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 6.306924,
+      "predicted_s": 6.272,
+      "error_s": 0.03492400000000018,
+      "tolerance_s": 0.06923076923076923,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 71,
+      "stage": "timing",
+      "frequency_hz": 13000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 5.197998375,
+      "predicted_s": 5.1692307692307695,
+      "error_s": 0.028767605769230542,
+      "tolerance_s": 0.06923076923076923,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 72,
+      "stage": "timing",
+      "frequency_hz": 14000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 6.65131825,
+      "predicted_s": 6.628571428571428,
+      "error_s": 0.022746821428571984,
+      "tolerance_s": 0.06571428571428571,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 73,
+      "stage": "timing",
+      "frequency_hz": 14000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 5.8439755,
+      "predicted_s": 5.824,
+      "error_s": 0.019975500000000146,
+      "tolerance_s": 0.06571428571428571,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 74,
+      "stage": "timing",
+      "frequency_hz": 14000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 4.816441875,
+      "predicted_s": 4.8,
+      "error_s": 0.01644187499999994,
+      "tolerance_s": 0.06571428571428571,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 75,
+      "stage": "timing",
+      "frequency_hz": 16000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 5.799958375,
+      "predicted_s": 5.8,
+      "error_s": -4.162499999971203e-05,
+      "tolerance_s": 0.06,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 76,
+      "stage": "timing",
+      "frequency_hz": 16000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 5.09594725,
+      "predicted_s": 5.096,
+      "error_s": -5.2750000000045816e-05,
+      "tolerance_s": 0.06,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 77,
+      "stage": "timing",
+      "frequency_hz": 16000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 4.1999645,
+      "predicted_s": 4.2,
+      "error_s": -3.5500000000077137e-05,
+      "tolerance_s": 0.06,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 78,
+      "stage": "timing",
+      "frequency_hz": 17000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 5.4924085,
+      "predicted_s": 5.458823529411765,
+      "error_s": 0.03358497058823495,
+      "tolerance_s": 0.05764705882352941,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 79,
+      "stage": "timing",
+      "frequency_hz": 17000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 4.825717125,
+      "predicted_s": 4.796235294117647,
+      "error_s": 0.02948183088235279,
+      "tolerance_s": 0.05764705882352941,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 80,
+      "stage": "timing",
+      "frequency_hz": 17000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 3.977235875,
+      "predicted_s": 3.9529411764705884,
+      "error_s": 0.024294698529411463,
+      "tolerance_s": 0.05764705882352941,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 81,
+      "stage": "timing",
+      "frequency_hz": 32000,
+      "target_phase": 0.1,
+      "achieved_phase": 0.1,
+      "return_phase": 0.1,
+      "arrival_s": 2.899984,
+      "predicted_s": 2.9,
+      "error_s": -1.6000000000016e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 82,
+      "stage": "timing",
+      "frequency_hz": 32000,
+      "target_phase": 0.45,
+      "achieved_phase": 0.452,
+      "return_phase": 0.452,
+      "arrival_s": 2.54802225,
+      "predicted_s": 2.548,
+      "error_s": 2.224999999977939e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    },
+    {
+      "index": 83,
+      "stage": "timing",
+      "frequency_hz": 32000,
+      "target_phase": 0.9,
+      "achieved_phase": 0.9,
+      "return_phase": 0.9,
+      "arrival_s": 2.09997425,
+      "predicted_s": 2.1,
+      "error_s": -2.5750000000268614e-05,
+      "tolerance_s": 0.04,
+      "checks": {
+        "phase": true,
+        "bracket": true,
+        "arrival": true
+      }
+    }
+  ]
+}

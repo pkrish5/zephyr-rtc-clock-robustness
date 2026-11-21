@@ -1,0 +1,10 @@
+{
+  "job_id": "3596807",
+  "state": "accepted",
+  "submission_commit": "8c71d05d7059b4f4620a7786d69ac2994bb58158",
+  "receipt": "submission-returned-v1/submission.json",
+  "reservation_su_ceiling": 36,
+  "prior_conservative_debit_su": 4,
+  "total_study_ceiling_su": 50,
+  "remaining_uncommitted_su": 10
+}

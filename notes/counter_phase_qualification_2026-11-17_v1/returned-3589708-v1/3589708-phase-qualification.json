@@ -1,0 +1,21 @@
+{
+  "account": "CCR26073",
+  "apptainer_module": "tacc-apptainer/1.4.1",
+  "apptainer_version": "apptainer version 1.4.1-1.el8",
+  "archive": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3589708-phase-qualification.tar.gz",
+  "archive_entries": 782,
+  "archive_sha256": "f729f9f87b503f488ad669017d4c4b96579524be5526ec19b38f0599db94dd0e",
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "exact_archive_coverage": true,
+  "extracted_stream_hashes_match": true,
+  "launcher_module": "launcher/3.10",
+  "manifest": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3589708-phase-qualification.manifest.json.gz",
+  "manifest_sha256": "5a559a3a0a35d2e63eeb3d411dccbe5d4e58b6454ebb0c6a0e79eb6461fb832b",
+  "node_name": "c306-006",
+  "original_files_deleted": 0,
+  "output_state": "failed",
+  "partition": "development",
+  "physical_loose_output": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/jobs/3589708/output",
+  "raw_bytes_unchanged": true,
+  "slurm_job_id": "3589708"
+}

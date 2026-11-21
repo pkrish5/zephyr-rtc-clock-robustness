@@ -1,0 +1,8 @@
+{
+  "time_utc": "2026-11-20T15:06:00.512416+00:00",
+  "stage": "guarded git pull",
+  "remote_head_after_pull": "unknown",
+  "recovery_submitted": false,
+  "automatic_remote_retries_paused": true,
+  "registration_commit": "3dd3927a"
+}

@@ -1,0 +1,10 @@
+{
+  "job_id": "3598828",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "01:20:17",
+  "start": "2026-11-20T09:41:56",
+  "end": "2026-11-20T11:02:13",
+  "source": "bounded BatchMode sacct -X",
+  "checked_utc": "2026-11-20T22:46:26.078181+00:00"
+}

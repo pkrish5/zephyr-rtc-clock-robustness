@@ -1,0 +1,28 @@
+{
+  "state": "accepted",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "-A",
+    "CCR26073",
+    "-p",
+    "normal",
+    "-N",
+    "1",
+    "-n",
+    "128",
+    "-t",
+    "36:00:00",
+    "--chdir=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness",
+    "--output=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/counter-natural-sweep-20261119-v1/slurm/natural-%j.out",
+    "--error=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/counter-natural-sweep-20261119-v1/slurm/natural-%j.err",
+    "--export=ALL,RTC_REPO=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness,RTC_IMAGE=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/20261023-v10/images/rtc-ls6-v1.sif",
+    "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/notes/counter_natural_sweep_2026-11-19_v1/job.sbatch"
+  ],
+  "reservation_su": 36,
+  "study_ceiling_su": 50,
+  "returncode": 0,
+  "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login2)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (normal)...OK\n--> Checking available allocation (CCR26073)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.01% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.43% allocated...OK\n3596807\n",
+  "stderr": "",
+  "job_id": "3596807"
+}
