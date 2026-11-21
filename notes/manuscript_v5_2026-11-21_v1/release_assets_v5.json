@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "CLAIM_AUDIT.md": {
+      "bytes": 3182,
+      "sha256": "5fb6d101c70d8fa40743c210303eb6a51f6a279a01d9a9d64eaa16291048c5c2"
+    },
+    "RELEASE_NOTES.md": {
+      "bytes": 1239,
+      "sha256": "bf5dd1bd8d7899fac4a009d3f33add47c8e6480fc6bae8db1ca56f4891773122"
+    },
+    "clock-sensitive-waits-v5-source.zip": {
+      "bytes": 1821939,
+      "sha256": "def7ffffe60d4fd917ec4a257cf122b4d9aceced500494c24bf4fc64c6fd7acc"
+    },
+    "clock-sensitive-waits-v5-supplemental-evidence.zip": {
+      "bytes": 67970160,
+      "sha256": "5bda87c958c7d0c911b8bf97e1e4e0091180460980b40ec6a79e8609a5392eac"
+    },
+    "clock-sensitive-waits-v5.pdf": {
+      "bytes": 123268,
+      "sha256": "8fcb95947a3a64bbfbcf9d4d5f13ed22b90e998a6e7072767cb52757d042996a"
+    },
+    "final_validation_v5.json": {
+      "bytes": 802,
+      "sha256": "3d4f17e598bf5b3b81f84aa2bb29f5b8ebbc9206eeeff86cabc882c673324dd3"
+    },
+    "main-v5.tex": {
+      "bytes": 39683,
+      "sha256": "18348a47cc95aaeba46238f4931e4e8ae100110526e69e89feb0069afd769d0e"
+    }
+  },
+  "source_entries_verified": 756,
+  "status": "PASS",
+  "supplemental_entries": 22,
+  "tag": "course-paper-2026-11-21-v5",
+  "v4_source_entries_no_longer_present": []
+}

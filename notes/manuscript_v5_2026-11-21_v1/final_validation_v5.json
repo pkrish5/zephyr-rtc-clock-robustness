@@ -1,0 +1,26 @@
+{
+  "all_pages_rendered_and_inspected": true,
+  "date": "2026-11-21",
+  "failed_metadata_attempt_job": "3596807",
+  "failed_phase_qualification_job": "3589708",
+  "historical_18_ms_control_still_failed": true,
+  "numeric_claims_checked": 52,
+  "original_tables_rebuilt_and_hash_matched": 8,
+  "overfull_boxes": 0,
+  "page_size_points_ghostscript": [
+    612,
+    792
+  ],
+  "pdf_pages_including_references": 6,
+  "pdf_sha256": "8fcb95947a3a64bbfbcf9d4d5f13ed22b90e998a6e7072767cb52757d042996a",
+  "status": "PASS",
+  "sweep_job": "3598828",
+  "sweep_primary_selected": {
+    "fail": 60,
+    "missing": 0,
+    "pass": 38
+  },
+  "tag": "course-paper-2026-11-21-v5",
+  "tex_sha256": "18348a47cc95aaeba46238f4931e4e8ae100110526e69e89feb0069afd769d0e",
+  "unresolved_citation_or_reference_diagnostics": 0
+}
