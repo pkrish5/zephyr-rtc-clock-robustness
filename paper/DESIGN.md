@@ -2060,3 +2060,68 @@ Deployment: isolated branch `exp/mutation-quality-joba-20261122` based on
 pulled on LS6; `main` is not pushed and no release is made. One submission with
 an exclusive intent and receipt; no retry. After Job A: report actual usage,
 coverage, exact mutant counts and revised Job B/C cost, then stop.
+
+### 2026-11-22 Job A outcome and Job B registration, before submission
+
+Job A (Slurm 3604920) completed in 3,694 s: 1.03 SU. Study usage is 5.15 SU by
+`sacct`, or 28.15 SU when the unexplained 23-SU balance drop is counted as spent.
+This registration budgets against the conservative figure so the 50-SU ceiling
+holds either way. Results are in `artifacts/mutation_joba_20261122_v1/REPORT.md`.
+Two Job A outcomes stay missing and are not replaced:
+- the traced runs of `astra-range_present-rtc_alarm_pending-r03` and `-r04`;
+- the counter_basic baseline and traced runs.
+
+Diagnosis of the missing traced runs: both simulations completed. The frozen
+session then sends `quit`, waits 5 s and force-terminates Renode, which left
+the gzip trace unterminated, and the worker's parser raised `EOFError`.
+Diagnosis of the missing counter runs: the counter reached only 306 of 600
+virtual s in its 1,800 s cap (about 5.9 s wall per virtual s).
+
+The user approved continuing with the next jobs. Job B uses account CCR26073
+on the normal partition, one node, `-t 15:00:00`, so at most 15 SU. The study
+total is then at most 43.15 SU (conservative). Sealed code is in
+`notes/mutation_quality_2026-11-21_v1/jobb/`. Job B is new measurement in a new
+output directory and does not rewrite Job A records.
+
+Job B stages, in order:
+1. Rebuild all 70 apps with the unmutated driver slot, as in Job A.
+2. Run one untraced in-job baseline for every RTC app.
+3. Run new traced coverage runs for the two apps whose Job A coverage is
+   missing. Before the session closes, the worker issues
+   `cpu DisableExecutionTracing` so the trace is flushed. A trace that still
+   cannot be read is recorded as `coverage_error`, not a crash.
+4. Run the counter_basic baseline and traced run in parallel with the other
+   stages: 600 virtual s; wall caps 5,400 s untraced and 7,200 s traced.
+5. Mutant runs: every covered, compiled, non-TCE-equivalent, first-of-duplicate
+   RTC mutant for every RTC app whose Job B baseline is complete.
+   - Pairs for the 67 apps with Job A coverage are fixed in advance in
+     `jobb/pairs.json`: 17,375 pairs, computed from the committed Job A TCE
+     rows and traced records by the Job A rule.
+   - Pairs for the two re-traced apps are computed in the job by the same rule.
+   - Pairs run in chunks of at most 40 mutants per app. Each chunk gets a fresh
+     build tree; each mutant gets an incremental single-driver rebuild and one
+     untraced run.
+   - Chunks run round-robin across apps, so a time-limit stop removes a spread
+     of pairs rather than whole apps.
+6. Replay 30 killed pairs, chosen by the smallest
+   sha256("mutation-quality-jobb-replay-v1" + app + mutant), in fresh builds.
+   Record whether each replay reproduces the outcome and case vector.
+
+Verdicts:
+- `killed`: the outcome or case vector differs from the in-job baseline.
+- `survived`: both match.
+- `harness_error` and `build_failure` are kept apart from both and are never
+  counted as killed or survived.
+- `killed` rows record whether the cause was a case difference, a virtual
+  timeout or the wall cap.
+
+Mutation score per suite = killed/(killed+survived) over its covered runnable
+mutants. Each test set is also reported as the union of its suites.
+
+Caps: RTC 60 virtual s, 600 s wall; incremental build 900 s. Unfinished pairs
+stay missing; at the time limit the frozen `run_packed.sh` publishes the partial
+output. Counter mutants are not run in Job B. Their cost will be reported from
+the Job B counter baseline and needs a separate decision, because about 11–12 SU
+would exceed the conservative remaining ceiling. Deployment is unchanged: the
+experiment branch, fast-forward pulled on LS6, one submission with an exclusive
+intent and receipt, and no retry. After Job B: report, then stop.

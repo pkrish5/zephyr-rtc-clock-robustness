@@ -1,0 +1,1179 @@
+{
+  "account": "CCR26073",
+  "apps": [
+    {
+      "config": "rtc_alarm",
+      "define": "CONFIG_TEST_RTC_ALARM_TIME_MASK=7",
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "upstream-rtc_alarm_callback",
+      "max_virtual_seconds": 60,
+      "prj_conf": "subjects/phase1_lsi_rtc/selected_alarm_callback/prj.conf",
+      "set": "upstream",
+      "sources": [
+        "ZEPHYR/tests/drivers/rtc/rtc_api/src/main.c",
+        "ZEPHYR/tests/drivers/rtc/rtc_api/src/test_alarm_callback.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": "CONFIG_TEST_RTC_ALARM_TIME_MASK=7",
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "upstream-rtc_alarm_pending",
+      "max_virtual_seconds": 60,
+      "prj_conf": "subjects/rtc_alarm_pending/selected_case/prj.conf",
+      "set": "upstream",
+      "sources": [
+        "ZEPHYR/tests/drivers/rtc/rtc_api/src/main.c",
+        "ZEPHYR/tests/drivers/rtc/rtc_api/src/test_alarm.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "upstream-rtc_time_counting",
+      "max_virtual_seconds": 60,
+      "prj_conf": "subjects/rtc_counting/selected_case/prj.conf",
+      "set": "upstream",
+      "sources": [
+        "ZEPHYR/tests/drivers/rtc/rtc_api/src/main.c",
+        "ZEPHYR/tests/drivers/rtc/rtc_api/src/test_time_incrementing.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "astra-range_absent-rtc_alarm_callback-r01",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r01/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "astra-range_absent-rtc_alarm_callback-r02",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r02/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "astra-range_absent-rtc_alarm_callback-r03",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r03/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "astra-range_absent-rtc_alarm_callback-r04",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r04/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "astra-range_absent-rtc_alarm_callback-r05",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r05/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_callback/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_absent-rtc_alarm_pending-r01",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r01/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_absent-rtc_alarm_pending-r02",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r02/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_absent-rtc_alarm_pending-r03",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r03/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_absent-rtc_alarm_pending-r04",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r04/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_absent-rtc_alarm_pending-r05",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r05/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_alarm_pending/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_absent-rtc_time_counting-r01",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r01/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_absent-rtc_time_counting-r02",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r02/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_absent-rtc_time_counting-r03",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r03/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_absent-rtc_time_counting-r04",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r04/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_absent-rtc_time_counting-r05",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r05/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_absent/rtc_time_counting/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "astra-range_present-rtc_alarm_callback-r02",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_callback/r02/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_callback/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "astra-range_present-rtc_alarm_callback-r03",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_callback/r03/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_callback/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "astra-range_present-rtc_alarm_callback-r04",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_callback/r04/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_callback/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "astra-range_present-rtc_alarm_callback-r05",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_callback/r05/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_callback/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_present-rtc_alarm_pending-r01",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r01/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_present-rtc_alarm_pending-r02",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r02/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_present-rtc_alarm_pending-r03",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r03/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_present-rtc_alarm_pending-r04",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r04/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "astra-range_present-rtc_alarm_pending-r05",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r05/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_alarm_pending/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_present-rtc_time_counting-r01",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r01/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_present-rtc_time_counting-r02",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r02/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_present-rtc_time_counting-r03",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r03/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_present-rtc_time_counting-r04",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r04/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "astra-range_present-rtc_time_counting-r05",
+      "max_virtual_seconds": 60,
+      "model": "astra",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r05/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/astra/range_present/rtc_time_counting/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "luna-range_absent-rtc_time_counting-r01",
+      "max_virtual_seconds": 60,
+      "model": "luna",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r01/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "luna-range_absent-rtc_time_counting-r02",
+      "max_virtual_seconds": 60,
+      "model": "luna",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r02/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "luna-range_absent-rtc_time_counting-r03",
+      "max_virtual_seconds": 60,
+      "model": "luna",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r03/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "luna-range_absent-rtc_time_counting-r05",
+      "max_virtual_seconds": 60,
+      "model": "luna",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r05/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/luna/range_absent/rtc_time_counting/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "luna-range_present-rtc_time_counting-r01",
+      "max_virtual_seconds": 60,
+      "model": "luna",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r01/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "luna-range_present-rtc_time_counting-r02",
+      "max_virtual_seconds": 60,
+      "model": "luna",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r02/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "luna-range_present-rtc_time_counting-r03",
+      "max_virtual_seconds": 60,
+      "model": "luna",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r03/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/luna/range_present/rtc_time_counting/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_absent-rtc_alarm_callback-r01",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r01/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_absent-rtc_alarm_callback-r02",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r02/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_absent-rtc_alarm_callback-r03",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r03/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_absent-rtc_alarm_callback-r04",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r04/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_absent-rtc_alarm_callback-r05",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r05/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_callback/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_absent-rtc_alarm_pending-r01",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r01/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_absent-rtc_alarm_pending-r02",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r02/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_absent-rtc_alarm_pending-r03",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r03/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_absent-rtc_alarm_pending-r04",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r04/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_absent-rtc_alarm_pending-r05",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r05/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_alarm_pending/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_absent-rtc_time_counting-r01",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r01/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_absent-rtc_time_counting-r02",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r02/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_absent-rtc_time_counting-r03",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r03/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_absent-rtc_time_counting-r04",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r04/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_absent-rtc_time_counting-r05",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r05/prj.conf",
+      "set": "base",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_absent/rtc_time_counting/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_present-rtc_alarm_callback-r01",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r01/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_present-rtc_alarm_callback-r02",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r02/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_present-rtc_alarm_callback-r03",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r03/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_present-rtc_alarm_callback-r04",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r04/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_callback",
+      "id": "sol-range_present-rtc_alarm_callback-r05",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r05/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_callback/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_present-rtc_alarm_pending-r01",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r01/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_present-rtc_alarm_pending-r02",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r02/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_present-rtc_alarm_pending-r03",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r03/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_present-rtc_alarm_pending-r04",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r04/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_alarm",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_alarm_pending",
+      "id": "sol-range_present-rtc_alarm_pending-r05",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r05/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_alarm_pending/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_present-rtc_time_counting-r01",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r01/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r01/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_present-rtc_time_counting-r02",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r02/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r02/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_present-rtc_time_counting-r03",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r03/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r03/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_present-rtc_time_counting-r04",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r04/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r04/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "config": "rtc_counting",
+      "define": null,
+      "driver": "rtc",
+      "family": "rtc_time_counting",
+      "id": "sol-range_present-rtc_time_counting-r05",
+      "max_virtual_seconds": 60,
+      "model": "sol",
+      "prj_conf": "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r05/prj.conf",
+      "set": "clock",
+      "sources": [
+        "generated/spec_context_factorial_v1/suites/sol/range_present/rtc_time_counting/r05/test.c"
+      ],
+      "traced_wall_seconds": 1200,
+      "wall_seconds": 600
+    },
+    {
+      "bundle_app": "apps/V0",
+      "bundle_config": "configs/counter.conf",
+      "bundle_overlay": "configs/f4.overlay",
+      "config": "counter",
+      "driver": "counter",
+      "family": "counter_basic",
+      "id": "upstream-counter_basic",
+      "max_virtual_seconds": 600,
+      "set": "counter",
+      "traced_wall_seconds": 7200,
+      "wall_seconds": 5400
+    }
+  ],
+  "build_timeout_seconds": 900,
+  "chunk_size": 40,
+  "chunk_task_timeout_seconds": 30000,
+  "compiler_parallelism": 2,
+  "counter_bundle": "tacc_work/20261104-counter-repair-v1/bundle",
+  "counter_plan_sha256": "c5d2f7f515a59f2d45bcad665ab649b251051904704a1c96186610d08141ea8d",
+  "counter_platform": "stm32f4_discovery.repl",
+  "cpu_mips": 16,
+  "image_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "job": "B",
+  "joba": {
+    "slurm_job_id": "3604920",
+    "summary_sha256": "58b8cc84a4507d8e375d6587f4846e74d8ec434b6d3ad9e1aac9f217be65d77a"
+  },
+  "kill_rule": "killed if outcome or case vector differs from the in-job untraced baseline; harness_error and build_failure are neither killed nor survived",
+  "mutants": "notes/mutation_quality_2026-11-21_v1/dryrun_v1/mutants.jsonl",
+  "mutants_sha256": "d4ae8bcc05d2182f4ccce0cef5a2b0b6dbde1f6c9257c605205c4aebc781644c",
+  "nodes": 1,
+  "nominal_hz": 32000,
+  "overlays": [
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay",
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay"
+  ],
+  "partition": "normal",
+  "platform": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_32000.repl",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "replay": {
+    "count": 30,
+    "rule": "After the mutant stage, take the 30 killed (app, mutant) pairs with the smallest sha256(seed+app_id+mutant_id); replay each in a fresh build; reproduced = same outcome and case vector.",
+    "seed": "mutation-quality-jobb-replay-v1"
+  },
+  "retrace": [
+    "astra-range_present-rtc_alarm_pending-r03",
+    "astra-range_present-rtc_alarm_pending-r04"
+  ],
+  "schema": 1,
+  "stages": [
+    "counter build + counter baseline/traced alongside",
+    "build",
+    "baseline (+ re-trace 2 apps)",
+    "mutants (round-robin chunks)",
+    "replay 30 kills"
+  ],
+  "step_ns": 500000000,
+  "stop": "Report usage, mutation score, coverage and the counter cost; submit nothing else.",
+  "study": "mutation_quality_2026-11-21_v1",
+  "su_cap": 15,
+  "tce_compile_timeout_seconds": 120,
+  "tce_reference_apps": {
+    "counter": "upstream-counter_basic",
+    "rtc_alarm": "upstream-rtc_alarm_callback",
+    "rtc_counting": "upstream-rtc_time_counting"
+  },
+  "walltime": "15:00:00",
+  "workers": 32,
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}
