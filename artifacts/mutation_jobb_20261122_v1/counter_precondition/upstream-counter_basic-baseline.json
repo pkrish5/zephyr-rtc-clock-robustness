@@ -1,0 +1,65 @@
+{
+  "app_id": "upstream-counter_basic",
+  "cases": [
+    {
+      "case": "counter_basic.test_all_channels",
+      "status": "pass"
+    },
+    {
+      "case": "counter_basic.test_cancelled_alarm_does_not_expire",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_late_alarm",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_late_alarm_error",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_multiple_alarms",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_set_top_value_with_alarm",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_short_relative_alarm",
+      "status": "pass"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_notop",
+      "status": "pass"
+    },
+    {
+      "case": "counter_basic.test_single_shot_alarm_top",
+      "status": "skip"
+    },
+    {
+      "case": "counter_basic.test_valid_function_without_alarm",
+      "status": "pass"
+    },
+    {
+      "case": "counter_no_callback.test_set_top_value_without_alarm",
+      "status": "skip"
+    }
+  ],
+  "completed": true,
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "elf_sha256": "6839ec6237238d7fa24cc76e68a35d5d9c0c77443cbc517cc1ee6408754a5a09",
+  "error": null,
+  "node": "c313-042.ls6.tacc.utexas.edu",
+  "outcome": "complete",
+  "plan_sha256": "2407218244e55d1484f0e28bd4745dd1813ebc39c3295a5362f72334d960ac1e",
+  "platform_sha256": "efd334b4bc40e304023e59ea2fabaf1ec950a8e8d18ee8f5e769b612ce4f5fb8",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream-counter_basic-baseline",
+  "slurm_job_id": "3605243",
+  "timestamp_utc": "2026-11-22T21:17:21.384657+00:00",
+  "traced": false,
+  "uart_sha256": "fc409039b521cf9b418b978459a833338e88761b0b10b0427d623ec571b89ea5",
+  "virtual_ns": 323000000000,
+  "wall_seconds": 1416.878
+}

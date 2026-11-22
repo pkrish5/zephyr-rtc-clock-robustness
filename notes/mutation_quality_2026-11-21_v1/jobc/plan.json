@@ -1,0 +1,66 @@
+{
+  "account": "CCR26073",
+  "apps": [
+    {
+      "bundle_app": "apps/V0",
+      "bundle_config": "configs/counter.conf",
+      "bundle_overlay": "configs/f4.overlay",
+      "config": "counter",
+      "driver": "counter",
+      "family": "counter_basic",
+      "id": "upstream-counter_basic",
+      "max_virtual_seconds": 600,
+      "set": "counter",
+      "traced_wall_seconds": 7200,
+      "wall_seconds": 5400
+    }
+  ],
+  "build_timeout_seconds": 900,
+  "chunk_task_timeout_seconds": 8100,
+  "compiler_parallelism": 2,
+  "counter_bundle": "tacc_work/20261104-counter-repair-v1/bundle",
+  "counter_plan_sha256": "c5d2f7f515a59f2d45bcad665ab649b251051904704a1c96186610d08141ea8d",
+  "counter_platform": "stm32f4_discovery.repl",
+  "cpu_mips": 16,
+  "image_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "job": "C",
+  "jobb": {
+    "precondition_sha256": {
+      "upstream-counter_basic-baseline.json": "71468712fd7546fdecfbf2a7337a19075fa9318f9d5a8d4f2df447517ea319ed",
+      "upstream-counter_basic-traced.json": "164732a457a2078b092bf3be606674531dbf81b089ccfb166a27dab473f958cb"
+    },
+    "slurm_job_id": "3605243"
+  },
+  "kill_rule": "verdicts computed afterwards: killed if outcome or case vector differs from the Job C in-job untraced baseline; harness_error and build_failure are neither",
+  "mutants": "notes/mutation_quality_2026-11-21_v1/dryrun_v1/mutants.jsonl",
+  "mutants_sha256": "d4ae8bcc05d2182f4ccce0cef5a2b0b6dbde1f6c9257c605205c4aebc781644c",
+  "nodes": 1,
+  "nominal_hz": 32000,
+  "overlays": [
+    "subjects/phase1_zephyr/config/stm32f4_hsi.overlay",
+    "subjects/phase1_lsi_rtc/rtc_alias.overlay"
+  ],
+  "partition": "normal",
+  "platform": "results/phase3_rtc/platforms/stm32f4_rtc_lsi_32000.repl",
+  "quantum_ns": 1000,
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "schema": 1,
+  "stages": [
+    "build counter",
+    "baseline alongside",
+    "one mutant per fresh build"
+  ],
+  "step_ns": 500000000,
+  "stop": "Report usage, counter mutation score and coverage; submit nothing else.",
+  "study": "mutation_quality_2026-11-21_v1",
+  "su_cap": 20,
+  "tce_compile_timeout_seconds": 120,
+  "tce_reference_apps": {
+    "counter": "upstream-counter_basic",
+    "rtc_alarm": "upstream-rtc_alarm_callback",
+    "rtc_counting": "upstream-rtc_time_counting"
+  },
+  "walltime": "20:00:00",
+  "workers": 32,
+  "zephyr_commit": "3568e1b6d5cdd51a6b964a2a1d6d29200fea2056"
+}

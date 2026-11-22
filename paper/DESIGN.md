@@ -2125,3 +2125,53 @@ the Job B counter baseline and needs a separate decision, because about 11–12 
 would exceed the conservative remaining ceiling. Deployment is unchanged: the
 experiment branch, fast-forward pulled on LS6, one submission with an exclusive
 intent and receipt, and no retry. After Job B: report, then stop.
+
+### 2026-11-22 Job C registration (counter-driver mutants), before submission
+
+The user approved the counter-mutant job ("yes go") and then raised the
+total study budget to 500 SU (user message, 2026-11-22). That replaces the
+50-SU ceiling, and spending is now tracked against 500. Because the old ceiling
+no longer binds, Job C is sized not to truncate rather than to fit about 12 SU:
+CCR26073, normal partition, one node, `-t` 20:00:00, so at most 20 SU. The
+resulting maximum is 28.15 + 15 + 20 = 63.15 SU conservative. No further job is
+implied by the larger budget; each new job is still registered here first.
+
+Job B (Slurm 3605243) is running. Its re-traced runs of the two pending suites
+completed, and their traces were readable after `cpu DisableExecutionTracing`.
+
+Preconditions, checked from Job B's loose output before Job C is sealed:
+- The counter_basic baseline completes.
+- The counter_basic traced run yields readable coverage.
+
+If either fails, Job C is not submitted and the reason is reported.
+
+Pairs: every counter mutant that is compiled, not TCE-equivalent and first of
+its duplicate class (the 253 from Job A), and whose line is executed in Job B's
+counter traced run. The list is sealed in `jobc/pairs.json` before submission.
+
+Stages, with sealed code in `notes/mutation_quality_2026-11-21_v1/jobc/`
+(the Job B worker and coordinator, adapted):
+1. Build counter_basic once.
+2. Run one in-job untraced counter baseline, alongside the mutant runs.
+3. Run each covered mutant once, one mutant per fresh build. Caps: 600 virtual
+   s and 5,400 s wall; incremental build 900 s.
+
+Workers record raw outcomes. Verdicts are computed afterwards against the Job C
+in-job baseline by the Job B kill rule, with Job B's baseline reported as a
+determinism check. If the Job C baseline is missing, verdicts stay missing.
+Unfinished mutants stay missing; at the time limit the frozen launcher
+publishes partial output. Deployment, single submission and receipts are as for
+Job B. After Jobs B and C: report, then stop.
+
+Precondition check and seal (2026-11-22, before submission). Job B's
+counter_basic baseline completed (1,417 s wall, 323 virtual s, 4 pass and
+7 skip). The traced run also completed: its UART hash matches the baseline,
+and its 503 MB gzip trace (3.21e9 instructions) read to the end without
+error. The resulting driver line coverage is 0.897 (156 of 174 addressed
+lines). The record's outcome is `harness_error` only because
+`cpu DisableExecutionTracing` timed out while flushing the large trace, and
+the frozen session then could not terminate Renode. The trace stream is
+complete, so the registered condition ("readable coverage") holds. This is
+reported, not hidden. Sealed pairs: 197 of 253 runnable counter mutants
+(56 are on unexecuted lines). Plan sha256 `74e5dfe9…`, execution sha256
+`ed36f62f…`, 32 workers.
