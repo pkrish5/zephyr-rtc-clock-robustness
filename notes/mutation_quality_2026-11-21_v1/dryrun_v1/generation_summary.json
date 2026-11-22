@@ -1,0 +1,144 @@
+{
+  "_libc_header_stubs_for_active_line_analysis": [
+    "errno.h",
+    "inttypes.h",
+    "stdio.h",
+    "string.h",
+    "time.h"
+  ],
+  "_ssdl_sites_not_generated": [
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "compound",
+      "line": 272,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "if",
+      "line": 272,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "compound",
+      "line": 293,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "if",
+      "line": 293,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "compound",
+      "line": 643,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "compound",
+      "line": 648,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "do",
+      "line": 648,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "do",
+      "line": 643,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "compound",
+      "line": 757,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "rtc_ll_stm32.c",
+      "kind": "if",
+      "line": 757,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "counter_ll_stm32_rtc.c",
+      "kind": "compound",
+      "line": 423,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "counter_ll_stm32_rtc.c",
+      "kind": "do",
+      "line": 423,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "counter_ll_stm32_rtc.c",
+      "kind": "compound",
+      "line": 697,
+      "reason": "statement spans a preprocessor directive"
+    },
+    {
+      "file": "counter_ll_stm32_rtc.c",
+      "kind": "if",
+      "line": 693,
+      "reason": "statement spans a preprocessor directive"
+    }
+  ],
+  "counter_ll_stm32_rtc.c": {
+    "active_lines_by_configuration": {
+      "counter_basic": 522
+    },
+    "active_lines_union": 522,
+    "by_operator": {
+      "OAAA": 8,
+      "OAAN": 28,
+      "OBBN": 10,
+      "OCNG": 19,
+      "OLLN": 1,
+      "OLNG": 3,
+      "ORRN": 90,
+      "SSDL": 187
+    },
+    "function_bodies": 23,
+    "generated": 346,
+    "mutants": 346,
+    "mutated_lines": 174,
+    "source": "subjects/upstream/zephyr/drivers/counter/counter_ll_stm32_rtc.c",
+    "source_sha256": "19f51d71e8c0e184816161f44ef23c35e3f962eba3f540197339351b5139303c",
+    "textual_duplicates_removed": 0,
+    "total_lines": 921
+  },
+  "rtc_ll_stm32.c": {
+    "active_lines_by_configuration": {
+      "rtc_alarm": 873,
+      "rtc_counting": 336
+    },
+    "active_lines_union": 873,
+    "by_operator": {
+      "OAAN": 40,
+      "OBBA": 18,
+      "OBBN": 20,
+      "OCNG": 76,
+      "OLLN": 7,
+      "OLNG": 18,
+      "ORRN": 350,
+      "SSDL": 380
+    },
+    "function_bodies": 23,
+    "generated": 912,
+    "mutants": 909,
+    "mutated_lines": 322,
+    "source": "subjects/upstream/zephyr/drivers/rtc/rtc_ll_stm32.c",
+    "source_sha256": "94616939fbb74bdce6b36341458a7d6d238f9adfce44c3e79899a148c4095070",
+    "textual_duplicates_removed": 3,
+    "total_lines": 1159
+  }
+}

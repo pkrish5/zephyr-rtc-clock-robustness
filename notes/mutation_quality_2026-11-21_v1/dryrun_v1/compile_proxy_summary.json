@@ -1,0 +1,86 @@
+{
+  "_proxy": {
+    "compiler": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+    "errno_shim": true,
+    "libc_headers": "subjects/upstream/zephyr/lib/libc/minimal/include",
+    "note": "proxy screen only; production GCC compile and TCE pending"
+  },
+  "counter_ll_stm32_rtc.c": {
+    "by_operator": {
+      "OAAA": {
+        "fail": 0,
+        "pass": 8
+      },
+      "OAAN": {
+        "fail": 0,
+        "pass": 28
+      },
+      "OBBN": {
+        "fail": 0,
+        "pass": 10
+      },
+      "OCNG": {
+        "fail": 0,
+        "pass": 19
+      },
+      "OLLN": {
+        "fail": 0,
+        "pass": 1
+      },
+      "OLNG": {
+        "fail": 0,
+        "pass": 3
+      },
+      "ORRN": {
+        "fail": 0,
+        "pass": 90
+      },
+      "SSDL": {
+        "fail": 0,
+        "pass": 187
+      }
+    },
+    "compile_proxy_fail": 0,
+    "compile_proxy_pass": 346,
+    "mutants": 346
+  },
+  "rtc_ll_stm32.c": {
+    "by_operator": {
+      "OAAN": {
+        "fail": 0,
+        "pass": 40
+      },
+      "OBBA": {
+        "fail": 0,
+        "pass": 18
+      },
+      "OBBN": {
+        "fail": 0,
+        "pass": 20
+      },
+      "OCNG": {
+        "fail": 0,
+        "pass": 76
+      },
+      "OLLN": {
+        "fail": 0,
+        "pass": 7
+      },
+      "OLNG": {
+        "fail": 0,
+        "pass": 18
+      },
+      "ORRN": {
+        "fail": 0,
+        "pass": 350
+      },
+      "SSDL": {
+        "fail": 0,
+        "pass": 380
+      }
+    },
+    "compile_proxy_fail": 0,
+    "compile_proxy_pass": 909,
+    "mutants": 909
+  }
+}
