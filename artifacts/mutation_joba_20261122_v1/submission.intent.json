@@ -1,0 +1,24 @@
+{
+  "time": "2026-11-22T18:18:57.748535+00:00",
+  "head": "a114fd417f0d987e4ed2cb720508da575aaf0916",
+  "execution_sha256": "568c93bebe73390ad6f39e67c359553aca6f97397bf3826a11c1088b2bbe6b77",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "-A",
+    "CCR26073",
+    "-p",
+    "development",
+    "-N",
+    "1",
+    "-n",
+    "128",
+    "-t",
+    "02:00:00",
+    "--chdir=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness",
+    "--output=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/mutation-joba-20261122-v1/slurm/joba-%j.out",
+    "--error=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/mutation-joba-20261122-v1/slurm/joba-%j.err",
+    "--export=ALL,RTC_REPO=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness",
+    "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/notes/mutation_quality_2026-11-21_v1/joba/job.sbatch"
+  ]
+}

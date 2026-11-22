@@ -1,0 +1,11 @@
+{
+  "args": [
+    "run",
+    "luna-range_present-rtc_time_counting-r03",
+    "baseline"
+  ],
+  "end_utc": "2026-11-22T18:39:34.075069+00:00",
+  "exit_code": 0,
+  "name": "run-luna-range_present-rtc_time_counting-r03-baseline",
+  "wall_seconds": 34.937
+}

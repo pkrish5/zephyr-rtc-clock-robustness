@@ -1,0 +1,25 @@
+{
+  "app_id": "astra-range_absent-rtc_time_counting-r02",
+  "cases": [
+    {
+      "case": "rtc_calendar.test_count_through_new_year",
+      "status": "pass"
+    }
+  ],
+  "completed": true,
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "elf_sha256": "3f27e3cec87aa8b71480189efb1f417405bcd6076b9203aaad208c862e3d27da",
+  "error": null,
+  "node": "c310-006.ls6.tacc.utexas.edu",
+  "outcome": "complete",
+  "plan_sha256": "aa4044b7bdd07865c8ba377decd0b41e08cfee5936cdb0edc53033efc9c4c102",
+  "platform_sha256": "4db691d8792bfc615551ffb9a8f88186bca4b256e2d53b0b968e794d211d203d",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "astra-range_absent-rtc_time_counting-r02-baseline",
+  "slurm_job_id": "3604920",
+  "timestamp_utc": "2026-11-22T18:38:19.468498+00:00",
+  "traced": false,
+  "uart_sha256": "346fb0f55851891756246b7ad6745566b34231938b6209b8c50125a5d302cc18",
+  "virtual_ns": 10500000000,
+  "wall_seconds": 43.616
+}

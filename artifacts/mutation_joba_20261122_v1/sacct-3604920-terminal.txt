@@ -1,0 +1,3 @@
+JobID|JobName|State|ExitCode|Start|End|Elapsed|ElapsedRaw|Account|Partition|NNodes|AllocCPUS
+3604920|rtc-mutation-joba|COMPLETED|0:0|2026-11-22T12:33:59|2026-11-22T13:35:33|01:01:34|3694|ccr26073|development|1|128
+3604920.batch|batch|COMPLETED|0:0|2026-11-22T12:33:59|2026-11-22T13:35:33|01:01:34|3694|ccr26073||1|128

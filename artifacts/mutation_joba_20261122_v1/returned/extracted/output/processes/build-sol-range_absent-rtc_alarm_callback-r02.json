@@ -1,0 +1,10 @@
+{
+  "args": [
+    "build",
+    "sol-range_absent-rtc_alarm_callback-r02"
+  ],
+  "end_utc": "2026-11-22T18:36:00.729972+00:00",
+  "exit_code": 0,
+  "name": "build-sol-range_absent-rtc_alarm_callback-r02",
+  "wall_seconds": 42.26
+}

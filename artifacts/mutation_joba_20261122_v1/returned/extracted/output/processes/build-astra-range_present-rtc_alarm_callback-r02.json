@@ -1,0 +1,10 @@
+{
+  "args": [
+    "build",
+    "astra-range_present-rtc_alarm_callback-r02"
+  ],
+  "end_utc": "2026-11-22T18:35:18.662891+00:00",
+  "exit_code": 0,
+  "name": "build-astra-range_present-rtc_alarm_callback-r02",
+  "wall_seconds": 55.975
+}

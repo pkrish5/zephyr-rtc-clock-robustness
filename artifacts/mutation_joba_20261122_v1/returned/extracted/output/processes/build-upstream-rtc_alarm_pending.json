@@ -1,0 +1,10 @@
+{
+  "args": [
+    "build",
+    "upstream-rtc_alarm_pending"
+  ],
+  "end_utc": "2026-11-22T18:35:18.264672+00:00",
+  "exit_code": 0,
+  "name": "build-upstream-rtc_alarm_pending",
+  "wall_seconds": 55.577
+}

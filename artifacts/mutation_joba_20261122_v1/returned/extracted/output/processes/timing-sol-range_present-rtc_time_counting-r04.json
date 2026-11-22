@@ -1,0 +1,11 @@
+{
+  "args": [
+    "timing",
+    "sol-range_present-rtc_time_counting-r04",
+    "rtc_ll_stm32-00503"
+  ],
+  "end_utc": "2026-11-22T19:28:31.167054+00:00",
+  "exit_code": 0,
+  "name": "timing-sol-range_present-rtc_time_counting-r04",
+  "wall_seconds": 49.713
+}

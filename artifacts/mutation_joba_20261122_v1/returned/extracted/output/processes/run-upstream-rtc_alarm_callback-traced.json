@@ -1,0 +1,11 @@
+{
+  "args": [
+    "run",
+    "upstream-rtc_alarm_callback",
+    "traced"
+  ],
+  "end_utc": "2026-11-22T18:39:22.224539+00:00",
+  "exit_code": 0,
+  "name": "run-upstream-rtc_alarm_callback-traced",
+  "wall_seconds": 108.742
+}

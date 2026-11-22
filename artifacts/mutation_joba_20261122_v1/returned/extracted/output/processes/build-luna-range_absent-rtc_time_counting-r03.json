@@ -1,0 +1,10 @@
+{
+  "args": [
+    "build",
+    "luna-range_absent-rtc_time_counting-r03"
+  ],
+  "end_utc": "2026-11-22T18:35:59.969611+00:00",
+  "exit_code": 0,
+  "name": "build-luna-range_absent-rtc_time_counting-r03",
+  "wall_seconds": 41.896
+}

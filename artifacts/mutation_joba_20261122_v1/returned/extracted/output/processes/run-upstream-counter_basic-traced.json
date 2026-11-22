@@ -1,0 +1,11 @@
+{
+  "args": [
+    "run",
+    "upstream-counter_basic",
+    "traced"
+  ],
+  "end_utc": "2026-11-22T19:27:33.484102+00:00",
+  "exit_code": 124,
+  "name": "run-upstream-counter_basic-traced",
+  "wall_seconds": 3000.011
+}

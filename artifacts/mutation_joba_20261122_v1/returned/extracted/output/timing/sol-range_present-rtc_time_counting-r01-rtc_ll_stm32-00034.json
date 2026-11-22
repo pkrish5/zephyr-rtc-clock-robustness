@@ -1,0 +1,28 @@
+{
+  "app_id": "sol-range_present-rtc_time_counting-r01",
+  "build_seconds": 8.234,
+  "cases": [
+    {
+      "case": "rtc_calendar.test_year_boundary_counting",
+      "status": "pass"
+    }
+  ],
+  "completed": true,
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "elf_sha256": "8787ea8ee795e958f686c5f2074db0730a69f7fd0ce1c3bf212b0761ec5f371c",
+  "error": null,
+  "mutant_id": "rtc_ll_stm32-00034",
+  "node": "c310-006.ls6.tacc.utexas.edu",
+  "outcome": "complete",
+  "plan_sha256": "aa4044b7bdd07865c8ba377decd0b41e08cfee5936cdb0edc53033efc9c4c102",
+  "platform_sha256": "4db691d8792bfc615551ffb9a8f88186bca4b256e2d53b0b968e794d211d203d",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "sol-range_present-rtc_time_counting-r01-rtc_ll_stm32-00034",
+  "slurm_job_id": "3604920",
+  "timestamp_utc": "2026-11-22T19:28:46.174185+00:00",
+  "traced": false,
+  "uart_sha256": "091c5c9680220fd5c74ffab68daf8505265eed311383f1df344763f6c35fb5cf",
+  "verdict": "survived",
+  "virtual_ns": 10500000000,
+  "wall_seconds": 37.767
+}

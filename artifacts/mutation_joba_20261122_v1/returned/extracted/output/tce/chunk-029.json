@@ -1,0 +1,546 @@
+{
+  "chunk": 29,
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "node": "c310-006.ls6.tacc.utexas.edu",
+  "plan_sha256": "aa4044b7bdd07865c8ba377decd0b41e08cfee5936cdb0edc53033efc9c4c102",
+  "rows": [
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00015",
+      "object_sha256": "cd68a37e33124f8d8b7bdca60a56c6a850ec0965a035748048a01c4c4b806d33",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00031",
+      "object_sha256": "ad6d413efb7908f2f810b349b43f6d08767fd4da51f427fbbe977cbffe18055d",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00047",
+      "object_sha256": "f69b78257f61df37bb865a4db461566ff68cf619f2d9202eb24fb3fb3d7ab711",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00063",
+      "object_sha256": "95003c099b99a4f5d9557ab8f075559c91973f0c1e953c6b6120a94379ca1ded",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00079",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00095",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00111",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00127",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00143",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00159",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00175",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00191",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00207",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00223",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00239",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00255",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00271",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00287",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00303",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00319",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00335",
+      "object_sha256": "f52867e82528d6c2838b1e3014c265adaeb488614a5f1433f03611e852727406",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00351",
+      "object_sha256": "f1f3c7776a656795b47b912fd4207243bb7468b00736bbb394aeec00977138a9",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00367",
+      "object_sha256": "3dce09913ee066133ef61f3f931923478da5390dd76ed5ea8eb11b07fdb1ec42",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00383",
+      "object_sha256": "a114a0a64ed8376f65f7977f3c9db658c960db65e0849ac747acd9e4a929122c",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00399",
+      "object_sha256": "89084db2dcf94fbdbf7bbede8ed84792972f66f41957f142e3e3751ce62227a3",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00415",
+      "object_sha256": "1cbdc319e47971263127e480d0d59c138b9461f33e8202344bee39e725f63234",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00431",
+      "object_sha256": "6f07f9ef67838c50cbcc54088f5cdb62b534fcb99ea6f15fcde7456ad31dff37",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00447",
+      "object_sha256": "42d3a983ab68b926d78bc5a5fd5239f8bae083f0868a4da6ef790934ecdd67b5",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00463",
+      "object_sha256": "04eddeb9b32669f64325846530ca0b2bbbe81bcded343cd1a39c210348d2dbd9",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00479",
+      "object_sha256": "34adb651cd96bc6b28eb35326b7ec7aff943dfc6f421f9dce25a0faa52de3114",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00495",
+      "object_sha256": "ed38acb58f3112758fdae609a24256e4449c4aa0844accd577aa378778cbefd4",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00511",
+      "object_sha256": "8147eb1ecba56d2fd82093834e68daba18b8ecf05304b4b01a584b1f98b5060e",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00527",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00543",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00559",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00575",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00591",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00607",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00623",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00639",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00655",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00671",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00687",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00703",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00719",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00735",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00751",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00767",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00783",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00799",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00815",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00831",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00847",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00863",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00879",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "rtc_counting",
+      "mutant_id": "rtc_ll_stm32-00895",
+      "object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "original_object_sha256": "7eb290dd5e29721b5a52f283e2d5bf9e01b61c4779111c572d4c8ff6db90780b",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00004",
+      "object_sha256": "93ed18ed935f61b6405b455377c992b1da49a7e3db576c01402749e7cbb1d8d3",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00036",
+      "object_sha256": "feac7bcfd02856aa871626f5e0650aa645743fa3c8402dcf577d6408695aa38c",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00068",
+      "object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00100",
+      "object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00132",
+      "object_sha256": "6049c95be5a53be1d8622f53901873d95a5850f2b9e4ecb6cb7faebd4a1d0979",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00164",
+      "object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": true
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00196",
+      "object_sha256": "49ee77e16e897346864a39e562cc179a48acab52ef453bec40310356294bd324",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00228",
+      "object_sha256": "4f892ffa021a076689cd55b2763d2f09b413ea11068f296b417a0ba8bba6bbbc",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00260",
+      "object_sha256": "901d74630720d43bfc0cb0c381c2fc1b0b5de9711b89bdde0ce9b22c652afb65",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00292",
+      "object_sha256": "c684255f2b06c640e75e20e74002f967a9dac61ebcff0dcfa6454b4693893cf8",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": false
+    },
+    {
+      "configuration": "counter",
+      "mutant_id": "counter_ll_stm32_rtc-00324",
+      "object_sha256": "1d9c1318bbf6270144379b75b04669571d73f1c5118e08330db7e2b39d0c10c4",
+      "original_object_sha256": "5bf26e0a40a84234174a7fb52dccc07a055ea9e974597345390f84bf9c810516",
+      "status": "compiled",
+      "tce_equivalent": false
+    }
+  ],
+  "slurm_job_id": "3604920",
+  "timestamp_utc": "2026-11-22T18:37:15.122125+00:00"
+}

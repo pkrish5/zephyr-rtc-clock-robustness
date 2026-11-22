@@ -1,0 +1,11 @@
+{
+  "args": [
+    "timing",
+    "luna-range_present-rtc_time_counting-r03",
+    "rtc_ll_stm32-00482"
+  ],
+  "end_utc": "2026-11-22T19:27:59.176818+00:00",
+  "exit_code": 0,
+  "name": "timing-luna-range_present-rtc_time_counting-r03",
+  "wall_seconds": 17.701
+}

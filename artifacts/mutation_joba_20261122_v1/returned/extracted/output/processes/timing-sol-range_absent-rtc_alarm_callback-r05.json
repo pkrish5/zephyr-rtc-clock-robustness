@@ -1,0 +1,11 @@
+{
+  "args": [
+    "timing",
+    "sol-range_absent-rtc_alarm_callback-r05",
+    "rtc_ll_stm32-00173"
+  ],
+  "end_utc": "2026-11-22T19:29:00.474024+00:00",
+  "exit_code": 0,
+  "name": "timing-sol-range_absent-rtc_alarm_callback-r05",
+  "wall_seconds": 78.951
+}

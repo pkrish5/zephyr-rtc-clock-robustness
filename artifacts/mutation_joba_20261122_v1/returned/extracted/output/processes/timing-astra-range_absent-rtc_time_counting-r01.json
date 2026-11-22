@@ -1,0 +1,11 @@
+{
+  "args": [
+    "timing",
+    "astra-range_absent-rtc_time_counting-r01",
+    "rtc_ll_stm32-00477"
+  ],
+  "end_utc": "2026-11-22T19:27:58.481969+00:00",
+  "exit_code": 0,
+  "name": "timing-astra-range_absent-rtc_time_counting-r01",
+  "wall_seconds": 16.904
+}

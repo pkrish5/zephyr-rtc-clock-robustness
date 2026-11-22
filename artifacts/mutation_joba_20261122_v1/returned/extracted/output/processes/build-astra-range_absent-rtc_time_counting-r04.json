@@ -1,0 +1,10 @@
+{
+  "args": [
+    "build",
+    "astra-range_absent-rtc_time_counting-r04"
+  ],
+  "end_utc": "2026-11-22T18:35:18.977723+00:00",
+  "exit_code": 0,
+  "name": "build-astra-range_absent-rtc_time_counting-r04",
+  "wall_seconds": 56.294
+}

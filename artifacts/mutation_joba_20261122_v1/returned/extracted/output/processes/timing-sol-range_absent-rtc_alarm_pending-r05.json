@@ -1,0 +1,11 @@
+{
+  "args": [
+    "timing",
+    "sol-range_absent-rtc_alarm_pending-r05",
+    "rtc_ll_stm32-00772"
+  ],
+  "end_utc": "2026-11-22T19:27:59.971534+00:00",
+  "exit_code": 0,
+  "name": "timing-sol-range_absent-rtc_alarm_pending-r05",
+  "wall_seconds": 18.507
+}

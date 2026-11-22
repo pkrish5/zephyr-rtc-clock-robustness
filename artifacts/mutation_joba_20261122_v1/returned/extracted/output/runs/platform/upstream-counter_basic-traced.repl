@@ -1,0 +1,5 @@
+using "/renode/platforms/boards/stm32f4_discovery.repl"
+rtc:
+    wakeupTimerFrequency: 32000
+nvic:
+    systickFrequency: 16000000

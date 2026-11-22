@@ -1,0 +1,10 @@
+{
+  "args": [
+    "build",
+    "upstream-counter_basic"
+  ],
+  "end_utc": "2026-11-22T18:35:28.933811+00:00",
+  "exit_code": 0,
+  "name": "build-upstream-counter_basic",
+  "wall_seconds": 66.246
+}

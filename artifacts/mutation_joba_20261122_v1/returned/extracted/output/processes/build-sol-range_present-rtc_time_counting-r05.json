@@ -1,0 +1,10 @@
+{
+  "args": [
+    "build",
+    "sol-range_present-rtc_time_counting-r05"
+  ],
+  "end_utc": "2026-11-22T18:36:38.271525+00:00",
+  "exit_code": 0,
+  "name": "build-sol-range_present-rtc_time_counting-r05",
+  "wall_seconds": 38.29
+}

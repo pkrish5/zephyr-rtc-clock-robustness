@@ -1,0 +1,11 @@
+{
+  "args": [
+    "timing",
+    "upstream-rtc_time_counting",
+    "rtc_ll_stm32-00352"
+  ],
+  "end_utc": "2026-11-22T19:28:44.766050+00:00",
+  "exit_code": 0,
+  "name": "timing-upstream-rtc_time_counting",
+  "wall_seconds": 48.607
+}

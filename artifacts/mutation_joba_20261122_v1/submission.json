@@ -1,0 +1,28 @@
+{
+  "state": "accepted",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "-A",
+    "CCR26073",
+    "-p",
+    "development",
+    "-N",
+    "1",
+    "-n",
+    "128",
+    "-t",
+    "02:00:00",
+    "--chdir=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness",
+    "--output=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/mutation-joba-20261122-v1/slurm/joba-%j.out",
+    "--error=/scratch/10970/pk23377/zephyr-rtc-clock-robustness/mutation-joba-20261122-v1/slurm/joba-%j.err",
+    "--export=ALL,RTC_REPO=/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness",
+    "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/notes/mutation_quality_2026-11-21_v1/joba/job.sbatch"
+  ],
+  "su_cap": 2,
+  "head": "a114fd417f0d987e4ed2cb720508da575aaf0916",
+  "returncode": 0,
+  "stdout": "\n-----------------------------------------------------------------\n           Welcome to the Lonestar6 Supercomputer                \n-----------------------------------------------------------------\n\nNo reservation for this job\n--> Verifying valid submit host (login1)...OK\n--> Verifying valid jobname...OK\n--> Verifying valid ssh keys...OK\n--> Verifying access to desired queue (development)...OK\n--> Checking available allocation (CCR26073)...OK\n--> Verifying that quota for filesystem /home1/10970/pk23377 is at  0.01% allocated...OK\n--> Verifying that quota for filesystem /work/10970/pk23377/ls6 is at  5.43% allocated...OK\n3604920\n",
+  "stderr": "",
+  "job_id": "3604920"
+}

@@ -1,0 +1,21 @@
+{
+  "account": "CCR26073",
+  "apptainer_module": "tacc-apptainer/1.4.1",
+  "apptainer_version": "apptainer version 1.4.1-1.el8",
+  "archive": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3604920-mutation-joba.tar.gz",
+  "archive_entries": 1625,
+  "archive_sha256": "2850d2b12f52047b1f834c4520618b456f8573d71c25b8cc4a0f92ff59521d97",
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "exact_archive_coverage": true,
+  "extracted_stream_hashes_match": true,
+  "launcher_module": "launcher/3.10",
+  "manifest": "/work/10970/pk23377/ls6/zephyr-rtc-clock-robustness/tacc_work/packed-results/3604920-mutation-joba.manifest.json.gz",
+  "manifest_sha256": "6129b1fce40a0da0655407dac0af8bfba31b6be12a90dea062e5a54625c260eb",
+  "node_name": "c310-006",
+  "original_files_deleted": 0,
+  "output_state": "complete",
+  "partition": "development",
+  "physical_loose_output": "/scratch/10970/pk23377/zephyr-rtc-clock-robustness/jobs/3604920/output",
+  "raw_bytes_unchanged": true,
+  "slurm_job_id": "3604920"
+}

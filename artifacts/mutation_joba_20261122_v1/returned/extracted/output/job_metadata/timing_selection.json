@@ -1,0 +1,166 @@
+{
+  "eligible_apps": 67,
+  "rule": "Among RTC apps whose baseline passed and whose coverage is available, take the 40 with the smallest sha256(seed+app_id); for each, run the covered, compiled, non-TCE-equivalent, non-duplicate mutant with the smallest sha256(seed+app_id+mutant_id); if fewer than 40 qualify, run all that do.",
+  "selected": [
+    {
+      "app_id": "sol-range_present-rtc_alarm_callback-r04",
+      "mutant_id": "rtc_ll_stm32-00079"
+    },
+    {
+      "app_id": "sol-range_absent-rtc_alarm_pending-r04",
+      "mutant_id": "rtc_ll_stm32-00518"
+    },
+    {
+      "app_id": "sol-range_absent-rtc_alarm_callback-r01",
+      "mutant_id": "rtc_ll_stm32-00880"
+    },
+    {
+      "app_id": "sol-range_present-rtc_time_counting-r04",
+      "mutant_id": "rtc_ll_stm32-00503"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_time_counting-r02",
+      "mutant_id": "rtc_ll_stm32-00405"
+    },
+    {
+      "app_id": "sol-range_absent-rtc_alarm_callback-r04",
+      "mutant_id": "rtc_ll_stm32-00514"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_alarm_callback-r01",
+      "mutant_id": "rtc_ll_stm32-00892"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_alarm_pending-r01",
+      "mutant_id": "rtc_ll_stm32-00387"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_alarm_pending-r02",
+      "mutant_id": "rtc_ll_stm32-00482"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_alarm_callback-r02",
+      "mutant_id": "rtc_ll_stm32-00066"
+    },
+    {
+      "app_id": "astra-range_present-rtc_alarm_callback-r05",
+      "mutant_id": "rtc_ll_stm32-00334"
+    },
+    {
+      "app_id": "sol-range_absent-rtc_alarm_pending-r05",
+      "mutant_id": "rtc_ll_stm32-00772"
+    },
+    {
+      "app_id": "sol-range_absent-rtc_time_counting-r05",
+      "mutant_id": "rtc_ll_stm32-00066"
+    },
+    {
+      "app_id": "luna-range_absent-rtc_time_counting-r01",
+      "mutant_id": "rtc_ll_stm32-00398"
+    },
+    {
+      "app_id": "luna-range_present-rtc_time_counting-r03",
+      "mutant_id": "rtc_ll_stm32-00482"
+    },
+    {
+      "app_id": "sol-range_present-rtc_alarm_pending-r02",
+      "mutant_id": "rtc_ll_stm32-00069"
+    },
+    {
+      "app_id": "sol-range_absent-rtc_time_counting-r04",
+      "mutant_id": "rtc_ll_stm32-00337"
+    },
+    {
+      "app_id": "astra-range_present-rtc_time_counting-r01",
+      "mutant_id": "rtc_ll_stm32-00391"
+    },
+    {
+      "app_id": "luna-range_present-rtc_time_counting-r01",
+      "mutant_id": "rtc_ll_stm32-00480"
+    },
+    {
+      "app_id": "astra-range_present-rtc_alarm_callback-r03",
+      "mutant_id": "rtc_ll_stm32-00729"
+    },
+    {
+      "app_id": "sol-range_present-rtc_alarm_pending-r05",
+      "mutant_id": "rtc_ll_stm32-00718"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_alarm_pending-r05",
+      "mutant_id": "rtc_ll_stm32-00571"
+    },
+    {
+      "app_id": "sol-range_present-rtc_alarm_pending-r01",
+      "mutant_id": "rtc_ll_stm32-00720"
+    },
+    {
+      "app_id": "sol-range_absent-rtc_alarm_callback-r05",
+      "mutant_id": "rtc_ll_stm32-00173"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_alarm_callback-r03",
+      "mutant_id": "rtc_ll_stm32-00130"
+    },
+    {
+      "app_id": "astra-range_present-rtc_alarm_pending-r02",
+      "mutant_id": "rtc_ll_stm32-00904"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_time_counting-r05",
+      "mutant_id": "rtc_ll_stm32-00478"
+    },
+    {
+      "app_id": "astra-range_present-rtc_alarm_callback-r02",
+      "mutant_id": "rtc_ll_stm32-00477"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_time_counting-r04",
+      "mutant_id": "rtc_ll_stm32-00463"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_alarm_callback-r05",
+      "mutant_id": "rtc_ll_stm32-00204"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_time_counting-r01",
+      "mutant_id": "rtc_ll_stm32-00477"
+    },
+    {
+      "app_id": "astra-range_present-rtc_alarm_callback-r04",
+      "mutant_id": "rtc_ll_stm32-00797"
+    },
+    {
+      "app_id": "upstream-rtc_time_counting",
+      "mutant_id": "rtc_ll_stm32-00352"
+    },
+    {
+      "app_id": "sol-range_present-rtc_alarm_pending-r04",
+      "mutant_id": "rtc_ll_stm32-00785"
+    },
+    {
+      "app_id": "sol-range_present-rtc_alarm_callback-r02",
+      "mutant_id": "rtc_ll_stm32-00796"
+    },
+    {
+      "app_id": "sol-range_present-rtc_alarm_callback-r01",
+      "mutant_id": "rtc_ll_stm32-00462"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_time_counting-r03",
+      "mutant_id": "rtc_ll_stm32-00365"
+    },
+    {
+      "app_id": "sol-range_present-rtc_time_counting-r01",
+      "mutant_id": "rtc_ll_stm32-00034"
+    },
+    {
+      "app_id": "astra-range_present-rtc_alarm_pending-r05",
+      "mutant_id": "rtc_ll_stm32-00271"
+    },
+    {
+      "app_id": "astra-range_absent-rtc_alarm_pending-r03",
+      "mutant_id": "rtc_ll_stm32-00012"
+    }
+  ]
+}

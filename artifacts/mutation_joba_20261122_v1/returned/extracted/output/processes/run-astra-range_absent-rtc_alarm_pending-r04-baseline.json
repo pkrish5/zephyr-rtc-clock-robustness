@@ -1,0 +1,11 @@
+{
+  "args": [
+    "run",
+    "astra-range_absent-rtc_alarm_pending-r04",
+    "baseline"
+  ],
+  "end_utc": "2026-11-22T18:38:14.906120+00:00",
+  "exit_code": 0,
+  "name": "run-astra-range_absent-rtc_alarm_pending-r04-baseline",
+  "wall_seconds": 41.344
+}

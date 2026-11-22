@@ -1,0 +1,11 @@
+{
+  "args": [
+    "run",
+    "astra-range_absent-rtc_alarm_callback-r01",
+    "traced"
+  ],
+  "end_utc": "2026-11-22T18:38:12.787223+00:00",
+  "exit_code": 0,
+  "name": "run-astra-range_absent-rtc_alarm_callback-r01-traced",
+  "wall_seconds": 39.294
+}

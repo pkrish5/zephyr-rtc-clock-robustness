@@ -1,0 +1,23 @@
+{
+  "app_id": "sol-range_present-rtc_alarm_callback-r04",
+  "build_seconds": 8.93,
+  "cases": [],
+  "completed": false,
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "elf_sha256": "f92858031f8ce2afa3925afc185167df5412eb14a8299a37823ba192d65cdf5a",
+  "error": "EOF: End Of File (EOF). Exception style platform.\n<pexpect.pty_spawn.spawn object at 0x145dfc7374a0>\ncommand: /opt/renode/renode-pinned\nargs: [b'/opt/renode/renode-pinned', b'--plain', b'--disable-gui', b'--hide-log', b'--console', b'-P', b'-1', b'--config', b'/tmp/phase0-renode-89yqq942/renode.cfg']\nbuffer (last 100 chars): ''\nbefore (last 100 chars): ' singleStep, Boolean skipThisRound)\\r\\n   at Antmicro.Renode.Peripherals.CPU.BaseCPU.CpuThreadBody()\\r\\n'\nafter: <class 'pexpect.exceptions.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: True\npid: 58\nchild_fd: 6\nclosed: False\ntimeout: 45\ndelimiter: <class 'pexpect.exceptions.EOF'>\nlogfile: None\nlogfile_read: <_io.TextIOWrapper name='/out/timing_runs/monitor/sol-range_present-rtc_alarm_callback-r04-rtc_ll_stm32-00079.log' mode='w' encoding='utf-8'>\nlogfile_send: None\nmaxread: 2000\nignorecase: False\nsearchwindowsize: None\ndelaybeforesend: 0.01\ndelayafterclose: 0.1\ndelayafterterminate: 0.1\nsearcher: searcher_re:\n    0: re.compile('\\\\((?:monitor|machine-0)\\\\) ')",
+  "mutant_id": "rtc_ll_stm32-00079",
+  "node": "c310-006.ls6.tacc.utexas.edu",
+  "outcome": "harness_error",
+  "plan_sha256": "aa4044b7bdd07865c8ba377decd0b41e08cfee5936cdb0edc53033efc9c4c102",
+  "platform_sha256": "4db691d8792bfc615551ffb9a8f88186bca4b256e2d53b0b968e794d211d203d",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "sol-range_present-rtc_alarm_callback-r04-rtc_ll_stm32-00079",
+  "slurm_job_id": "3604920",
+  "timestamp_utc": "2026-11-22T19:27:55.784009+00:00",
+  "traced": false,
+  "uart_sha256": "f5b03aff6ed692cc5fb6e96b11a820aceae49f697786e74e8b0f0a56429b6d68",
+  "verdict": "harness_error",
+  "virtual_ns": 0,
+  "wall_seconds": 4.635
+}

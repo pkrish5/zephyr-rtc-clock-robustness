@@ -1,0 +1,10 @@
+{
+  "args": [
+    "build",
+    "sol-range_present-rtc_alarm_pending-r01"
+  ],
+  "end_utc": "2026-11-22T18:35:59.807546+00:00",
+  "exit_code": 0,
+  "name": "build-sol-range_present-rtc_alarm_pending-r01",
+  "wall_seconds": 40.185
+}

@@ -1,0 +1,20 @@
+{
+  "app_id": "upstream-counter_basic",
+  "cases": [],
+  "completed": false,
+  "container_sha256": "94d7894eda71b918f3f9273f29e5c4db3e7d74597ca0b799dcb504027f30aaa1",
+  "elf_sha256": "6839ec6237238d7fa24cc76e68a35d5d9c0c77443cbc517cc1ee6408754a5a09",
+  "error": "wall cap reached",
+  "node": "c310-006.ls6.tacc.utexas.edu",
+  "outcome": "wall_cap",
+  "plan_sha256": "aa4044b7bdd07865c8ba377decd0b41e08cfee5936cdb0edc53033efc9c4c102",
+  "platform_sha256": "efd334b4bc40e304023e59ea2fabaf1ec950a8e8d18ee8f5e769b612ce4f5fb8",
+  "renode_version": "Renode v1.17.0\n  build: 1.17.0+20260907gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.21",
+  "run_id": "upstream-counter_basic-baseline",
+  "slurm_job_id": "3604920",
+  "timestamp_utc": "2026-11-22T19:07:36.683221+00:00",
+  "traced": false,
+  "uart_sha256": "019ac0870cec8becb38b6fa5ab0927535218fc3a97bfc421d28249a37f13bb42",
+  "virtual_ns": 306000000000,
+  "wall_seconds": 1800.626
+}

@@ -1,0 +1,11 @@
+{
+  "args": [
+    "run",
+    "astra-range_present-rtc_time_counting-r03",
+    "baseline"
+  ],
+  "end_utc": "2026-11-22T18:39:21.439224+00:00",
+  "exit_code": 0,
+  "name": "run-astra-range_present-rtc_time_counting-r03-baseline",
+  "wall_seconds": 32.084
+}

@@ -1,0 +1,10 @@
+{
+  "args": [
+    "build",
+    "astra-range_absent-rtc_alarm_pending-r02"
+  ],
+  "end_utc": "2026-11-22T18:35:19.127948+00:00",
+  "exit_code": 0,
+  "name": "build-astra-range_absent-rtc_alarm_pending-r02",
+  "wall_seconds": 56.443
+}

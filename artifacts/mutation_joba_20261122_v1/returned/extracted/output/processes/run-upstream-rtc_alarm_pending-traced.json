@@ -1,0 +1,11 @@
+{
+  "args": [
+    "run",
+    "upstream-rtc_alarm_pending",
+    "traced"
+  ],
+  "end_utc": "2026-11-22T18:38:54.469138+00:00",
+  "exit_code": 0,
+  "name": "run-upstream-rtc_alarm_pending-traced",
+  "wall_seconds": 80.982
+}

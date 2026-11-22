@@ -1,0 +1,11 @@
+{
+  "args": [
+    "timing",
+    "astra-range_absent-rtc_alarm_callback-r02",
+    "rtc_ll_stm32-00066"
+  ],
+  "end_utc": "2026-11-22T19:28:28.165089+00:00",
+  "exit_code": 0,
+  "name": "timing-astra-range_absent-rtc_alarm_callback-r02",
+  "wall_seconds": 46.688
+}
